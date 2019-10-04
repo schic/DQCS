@@ -3,6 +3,7 @@
 # 应用技术
 
 # 迭代计划
+<a href='https://github.com/schic/DQCS/issues/2'>2019年10月迭代计划</a>
 
 # 开发文档
 
