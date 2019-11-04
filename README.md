@@ -4,6 +4,7 @@
 
 # 迭代计划
 <a href='https://github.com/schic/DQCS/issues/2'>2019年10月迭代计划</a>
+<a href='https://github.com/schic/DQCS/issues/2'>2019年11月迭代计划</a>
 
 # 开发文档
 
