@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ow2.asm:asm:4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/com/org/ow2/asm/asm/4.1/asm-4.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/com/org/ow2/asm/asm/4.1/asm-4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/com/org/ow2/asm/asm/4.1/asm-4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="copyicons"  >
+<target name="copyicons">
+  <copy file="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/add_dark.png" tofile="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/add.png"/>
+  <copy file="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/close_dark.png" tofile="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/close.png"/>
+  <copy file="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/remove_dark.png" tofile="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/remove.png"/>
+  <copy file="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/save_dark.png" tofile="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/save.png"/>
+  <copy file="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/scrolldown_dark.png" tofile="D:\DataCleaner-DataCleaner-5.1.0\desktop\ui\target/classes/images/actions/scrolldown.png"/>
+</target>
+</project>

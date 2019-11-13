@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/basic-analyzers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/basic-filters" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/basic-transformers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/data-structures" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/date-gap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/el" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/fuse" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/grouper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/html-rendering" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/i18n" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/javascript" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/network-tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/pattern-finder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/reference-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/referential-integrity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/sample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/standard-components" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/standardizers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/uniqueness" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/value-distribution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/visualization" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/components/writers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/desktop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/desktop/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/desktop/ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/env" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/env/berkeleydb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/env/cluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/env/spark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/remote-components" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/rest-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/engine/xml-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/documentation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/completeness-analysis-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/copy-data-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/csv-datastore-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/excel-datastore-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/jdbc-datastore-wizards" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/pentaho-job-engine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/quick-analysis-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/salesforce-datastore-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/extensions/sugarcrm-datastore-wizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor/widgets" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/images" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/orderdb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testware" charset="UTF-8" />
+  </component>
+</project>

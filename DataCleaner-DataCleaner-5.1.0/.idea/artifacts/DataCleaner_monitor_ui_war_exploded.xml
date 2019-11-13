@@ -1,0 +1,401 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DataCleaner-monitor-ui:war exploded">
+    <output-path>$PROJECT_DIR$/monitor/ui/target/DataCleaner-monitor-ui-5.1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>DataCleaner-monitor-ui</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DataCleaner-monitor-ui" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.0.0.GA" />
+          <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.10" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.10" />
+          <element id="archive" name="DataCleaner-monitor-widgets-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-widgets" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-api-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-api" />
+          </element>
+          <element id="archive" name="DataCleaner-xml-config-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-xml-config" />
+          </element>
+          <element id="archive" name="DataCleaner-rest-client-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-rest-client" />
+          </element>
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.19" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jsonSchema:2.7.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.22" />
+          <element id="archive" name="DataCleaner-monitor-services-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-services" />
+          </element>
+          <element id="archive" name="DataCleaner-env-cluster-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-env-cluster" />
+          </element>
+          <element id="archive" name="DataCleaner-env-spark-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-env-spark" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-hadoop:4.5.4" />
+          <element id="library" level="project" name="Maven: net.sourceforge.findbugs:annotations:1.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-csv:4.5.4" />
+          <element id="library" level="project" name="Maven: net.sf.opencsv:opencsv:2.1" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-json:4.5.4" />
+          <element id="archive" name="DataCleaner-html-rendering-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-html-rendering" />
+          </element>
+          <element id="library" level="project" name="Maven: org.scala-lang:scala-library:2.11.4" />
+          <element id="library" level="project" name="Maven: org.scala-lang.modules:scala-xml_2.11:1.0.2" />
+          <element id="archive" name="DataCleaner-images-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-images" />
+          </element>
+          <element id="archive" name="DataCleaner-desktop-api-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-desktop-api" />
+          </element>
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-core:1.6.5-1" />
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-autocomplete:1.6.5-1" />
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-common:1.6.5-1" />
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-action:1.6.5-1" />
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-plaf:1.6.5-1" />
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-graphics:1.6.5-1" />
+          <element id="library" level="project" name="Maven: org.swinglabs.swingx:swingx-painters:1.6.5-1" />
+          <element id="library" level="project" name="Maven: com.fifesoft:rsyntaxtextarea:2.5.0" />
+          <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.0.17" />
+          <element id="library" level="project" name="Maven: org.jfree:jcommon:1.0.21" />
+          <element id="library" level="project" name="Maven: com.jgoodies:looks:2.2.2" />
+          <element id="library" level="project" name="Maven: com.google.inject:guice:3.0" />
+          <element id="archive" name="DataCleaner-engine-core-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-engine-core" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-hbase:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-common:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-annotations:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-math3:3.1.1" />
+          <element id="library" level="project" name="Maven: commons-net:commons-net:3.1" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Maven: net.java.dev.jets3t:jets3t:0.9.0" />
+          <element id="library" level="project" name="Maven: com.jamesmurty.utils:java-xmlbuilder:0.4" />
+          <element id="library" level="project" name="Maven: commons-configuration:commons-configuration:1.6" />
+          <element id="library" level="project" name="Maven: commons-digester:commons-digester:1.8" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.2" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.4" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-auth:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.directory.server:apacheds-kerberos-codec:2.0.0-M15" />
+          <element id="library" level="project" name="Maven: org.apache.directory.server:apacheds-i18n:2.0.0-M15" />
+          <element id="library" level="project" name="Maven: org.apache.directory.api:api-asn1-api:1.0.0-M20" />
+          <element id="library" level="project" name="Maven: org.apache.directory.api:api-util:1.0.0-M20" />
+          <element id="library" level="project" name="Maven: com.jcraft:jsch:0.1.42" />
+          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-client:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-annotations:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-common:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.hbase:hbase-protocol:1.1.1" />
+          <element id="library" level="project" name="Maven: org.jruby.jcodings:jcodings:1.0.8" />
+          <element id="library" level="project" name="Maven: org.jruby.joni:joni:2.1.2" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.7.1" />
+          <element id="library" level="project" name="Maven: org.eobjects.metamodel-extras:MetaModel-extras-sas:4.4.0" />
+          <element id="library" level="project" name="Maven: org.eobjects.metamodel-extras:MetaModel-extras-dbase:4.4.0" />
+          <element id="library" level="project" name="Maven: org.eobjects.metamodel-extras:MetaModel-extras-access:4.4.0" />
+          <element id="library" level="project" name="Maven: com.healthmarketscience.jackcess:jackcess:2.0.4" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-math:2.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-vfs2:2.0" />
+          <element id="library" level="project" name="Maven: commons-httpclient:commons-httpclient:3.1" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.8.1" />
+          <element id="library" level="project" name="Maven: com.googlecode.gentyref:gentyref:1.2.0" />
+          <element id="library" level="project" name="Maven: org.kohsuke:asm5:5.0.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.10" />
+          <element id="archive" name="DataCleaner-orderdb-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-orderdb" />
+          </element>
+          <element id="archive" name="DataCleaner-remote-components-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-remote-components" />
+          </element>
+          <element id="archive" name="DataCleaner-standard-components-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-standard-components" />
+          </element>
+          <element id="archive" name="DataCleaner-grouper-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-grouper" />
+          </element>
+          <element id="archive" name="DataCleaner-uniqueness-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-uniqueness" />
+          </element>
+          <element id="archive" name="DataCleaner-fuse-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-fuse" />
+          </element>
+          <element id="archive" name="DataCleaner-http-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-http" />
+          </element>
+          <element id="archive" name="DataCleaner-basic-transformers-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-basic-transformers" />
+          </element>
+          <element id="archive" name="DataCleaner-value-distribution-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-value-distribution" />
+          </element>
+          <element id="archive" name="DataCleaner-standardizers-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-standardizers" />
+          </element>
+          <element id="archive" name="DataCleaner-pattern-finder-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-pattern-finder" />
+          </element>
+          <element id="archive" name="DataCleaner-date-gap-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-date-gap" />
+          </element>
+          <element id="archive" name="DataCleaner-reference-data-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-reference-data" />
+          </element>
+          <element id="archive" name="DataCleaner-referential-integrity-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-referential-integrity" />
+          </element>
+          <element id="archive" name="DataCleaner-json-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-json" />
+          </element>
+          <element id="archive" name="DataCleaner-el-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-el" />
+          </element>
+          <element id="library" level="project" name="Maven: de.odysseus.juel:juel-impl:2.2.4" />
+          <element id="archive" name="DataCleaner-i18n-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-i18n" />
+          </element>
+          <element id="archive" name="DataCleaner-javascript-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-javascript" />
+          </element>
+          <element id="library" level="project" name="Maven: org.mozilla:rhino:1.7R4" />
+          <element id="archive" name="DataCleaner-network-tools-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-network-tools" />
+          </element>
+          <element id="archive" name="DataCleaner-visualization-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-visualization" />
+          </element>
+          <element id="archive" name="DataCleaner-data-structures-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-data-structures" />
+          </element>
+          <element id="library" level="project" name="Maven: com.google.gwt:gwt-servlet:2.7.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.1.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-cas:3.2.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.jasig.cas.client:cas-client-core:3.3.3" />
+          <element id="library" level="project" name="Maven: org.opensaml:opensaml:2.5.1-1" />
+          <element id="library" level="project" name="Maven: org.opensaml:openws:1.4.2-1" />
+          <element id="library" level="project" name="Maven: org.opensaml:xmltooling:1.3.2-1" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.6.1" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15:1.45" />
+          <element id="library" level="project" name="Maven: org.apache.santuario:xmlsec:1.4.4" />
+          <element id="library" level="project" name="Maven: ca.juliusdavies:not-yet-commons-ssl:0.3.9" />
+          <element id="library" level="project" name="Maven: velocity:velocity:1.5" />
+          <element id="library" level="project" name="Maven: org.owasp.esapi:esapi:2.0GA" />
+          <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
+          <element id="library" level="project" name="Maven: xalan:xalan:2.7.1" />
+          <element id="library" level="project" name="Maven: xalan:serializer:2.7.1" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.9.RELEASE" />
+          <element id="library" level="project" name="Maven: cglib:cglib-nodep:2.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.9.RELEASE" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.quartz-scheduler:quartz:2.1.7" />
+          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.1" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:16.0.1" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.4" />
+          <element id="archive" name="DataCleaner-monitor-documentation-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-documentation" />
+          </element>
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.3" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-hdfs:2.7.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-server:1.9" />
+          <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.2" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.7" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
+          <element id="library" level="project" name="Maven: commons-daemon:commons-daemon:1.0.13" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:2.5.0" />
+          <element id="library" level="project" name="Maven: xmlenc:xmlenc:0.52" />
+          <element id="library" level="project" name="Maven: io.netty:netty-all:4.0.23.Final" />
+          <element id="library" level="project" name="Maven: org.apache.htrace:htrace-core:3.1.0-incubating" />
+          <element id="library" level="project" name="Maven: org.fusesource.leveldbjni:leveldbjni-all:1.8" />
+          <element id="library" level="project" name="Maven: org.apache.spark:spark-launcher_2.11:1.6.1" />
+          <element id="archive" name="DataCleaner-monitor-completeness-analysis-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-completeness-analysis-wizard" />
+          </element>
+          <element id="archive" name="DataCleaner-basic-analyzers-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-basic-analyzers" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-copy-data-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-copy-data-wizard" />
+          </element>
+          <element id="archive" name="DataCleaner-basic-filters-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-basic-filters" />
+          </element>
+          <element id="archive" name="DataCleaner-writers-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-writers" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-csv-datastore-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-csv-datastore-wizard" />
+          </element>
+          <element id="archive" name="DataCleaner-engine-utils-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-engine-utils" />
+          </element>
+          <element id="library" level="project" name="Maven: com.ibm.icu:icu4j:55.1" />
+          <element id="archive" name="DataCleaner-monitor-excel-datastore-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-excel-datastore-wizard" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-jdbc-datastore-wizards-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-jdbc-datastore-wizards" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-pentaho-job-engine-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-pentaho-job-engine" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-quick-analysis-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-quick-analysis-wizard" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-salesforce-datastore-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-salesforce-datastore-wizard" />
+          </element>
+          <element id="archive" name="DataCleaner-monitor-sugarcrm-datastore-wizard-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-monitor-sugarcrm-datastore-wizard" />
+          </element>
+          <element id="library" level="project" name="Maven: net.sourceforge.jtds:jtds:1.3.1" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1102-jdbc4" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.3.176" />
+          <element id="library" level="project" name="Maven: org.apache.hive:hive-jdbc:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.hive:hive-common:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.4.1" />
+          <element id="library" level="project" name="Maven: org.tukaani:xz:1.0" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant:1.9.1" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.9.1" />
+          <element id="library" level="project" name="Maven: org.json:json:20090211" />
+          <element id="library" level="project" name="Maven: org.apache.hive:hive-service:1.2.1" />
+          <element id="library" level="project" name="Maven: net.sf.jpam:jpam:1.1" />
+          <element id="library" level="project" name="Maven: org.apache.thrift:libfb303:0.9.2" />
+          <element id="library" level="project" name="Maven: org.apache.curator:curator-recipes:2.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.hive:hive-serde:1.2.1" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.avro:avro:1.7.5" />
+          <element id="library" level="project" name="Maven: com.thoughtworks.paranamer:paranamer:2.3" />
+          <element id="library" level="project" name="Maven: org.xerial.snappy:snappy-java:1.0.5" />
+          <element id="library" level="project" name="Maven: com.twitter:parquet-hadoop-bundle:1.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.hive:hive-metastore:1.2.1" />
+          <element id="library" level="project" name="Maven: com.jolbox:bonecp:0.8.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derby:10.10.2.0" />
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-api-jdo:3.2.6" />
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-core:3.2.10" />
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-rdbms:3.2.9" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.6" />
+          <element id="library" level="project" name="Maven: javax.jdo:jdo-api:3.0.1" />
+          <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr-runtime:3.4" />
+          <element id="library" level="project" name="Maven: org.antlr:stringtemplate:3.2.1" />
+          <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
+          <element id="library" level="project" name="Maven: org.apache.hive:hive-shims:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.hive.shims:hive-shims-common:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.hive.shims:hive-shims-0.20S:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.hive.shims:hive-shims-0.23:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-server-resourcemanager:2.7.1" />
+          <element id="library" level="project" name="Maven: com.google.inject.extensions:guice-servlet:3.0" />
+          <element id="library" level="project" name="Maven: com.sun.jersey:jersey-json:1.9" />
+          <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-guice:1.9" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.7.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.1" />
+          <element id="library" level="project" name="Maven: org.mortbay.jetty:jetty-util:6.1.26" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-server-common:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-server-applicationhistoryservice:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.hadoop:hadoop-yarn-server-web-proxy:2.7.1" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:test-jar:tests:3.4.6" />
+          <element id="library" level="project" name="Maven: org.apache.hive.shims:hive-shims-scheduler:1.2.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.4.1" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.1" />
+          <element id="library" level="project" name="Maven: org.apache.thrift:libthrift:0.9.2" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" />
+          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+          <element id="library" level="project" name="Maven: io.netty:netty:3.7.0.Final" />
+          <element id="library" level="project" name="Maven: org.apache.curator:curator-framework:2.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.curator:curator-client:2.6.0" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.13" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.0.13" />
+          <element id="library" level="project" name="Maven: org.glassfish:javax.faces:2.2.11" />
+          <element id="library" level="project" name="Maven: org.ocpsoft.rewrite:rewrite-servlet:2.0.12.Final" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="archive" name="DataCleaner-api-5.1.0.jar">
+            <element id="module-output" name="DataCleaner-api" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-core:4.5.4" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-full:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-cassandra:4.5.4" />
+          <element id="library" level="project" name="Maven: com.datastax.cassandra:cassandra-driver-core:3.0.2" />
+          <element id="library" level="project" name="Maven: io.dropwizard.metrics:metrics-core:3.1.2" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-couchdb:4.5.4" />
+          <element id="library" level="project" name="Maven: org.ektorp:org.ektorp:1.4.2" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-cache:4.4.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.3" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-excel:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.13" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi:3.13" />
+          <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.13" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-neo4j:4.5.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-json-org:2.6.3" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-fixedwidth:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-jdbc:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-mongodb-mongo3:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-mongodb-common:4.5.4" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-mongodb-mongo2:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-openoffice:4.5.4" />
+          <element id="library" level="project" name="Maven: hsqldb:hsqldb:1.8.0.10" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-pojo:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-salesforce:4.5.4" />
+          <element id="library" level="project" name="Maven: com.force.api:force-partner-api:24.0.0" />
+          <element id="library" level="project" name="Maven: com.force.api:force-wsc:24.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-sugarcrm:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-xml:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-elasticsearch-rest:4.5.4" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-elasticsearch-common:4.5.4" />
+          <element id="library" level="project" name="Maven: io.searchbox:jest:2.0.2" />
+          <element id="library" level="project" name="Maven: io.searchbox:jest-common:2.0.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore-nio:4.4.4" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpasyncclient:4.1.1" />
+          <element id="library" level="project" name="Maven: org.elasticsearch:elasticsearch:1.4.4" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers-common:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queries:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-memory:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-highlighter:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queryparser:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-sandbox:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-suggest:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-misc:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-join:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-grouping:4.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-spatial:4.10.3" />
+          <element id="library" level="project" name="Maven: com.spatial4j:spatial4j:0.4.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:4.1" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm-commons:4.1" />
+          <element id="library" level="project" name="Maven: org.apache.metamodel:MetaModel-elasticsearch-native:4.5.4" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/monitor/ui/target/DataCleaner-monitor-ui-5.1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="DataCleaner-monitor-ui/web/Web" />
+      <element id="gwt-compiler-output" facet="DataCleaner-monitor-ui/gwt/GWT" />
+    </root>
+  </artifact>
+</component>

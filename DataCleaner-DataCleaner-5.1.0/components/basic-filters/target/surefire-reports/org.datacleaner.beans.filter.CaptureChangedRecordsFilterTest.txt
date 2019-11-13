@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.datacleaner.beans.filter.CaptureChangedRecordsFilterTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 sec - in org.datacleaner.beans.filter.CaptureChangedRecordsFilterTest

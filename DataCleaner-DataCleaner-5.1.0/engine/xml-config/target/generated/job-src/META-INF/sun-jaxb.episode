@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+在重新编译源模式时, 对此文件的所有修改都将丢失。
+生成时间: 2019.11.13 时间 02:22:47 PM CST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://eobjects.org/analyzerbeans/job/1.0">
+    <schemaBindings map="false">
+      <package name="org.datacleaner.job.jaxb"/>
+    </schemaBindings>
+    <bindings scd="~tns:configuredPropertiesType">
+      <class ref="org.datacleaner.job.jaxb.ConfiguredPropertiesType"/>
+    </bindings>
+    <bindings scd="~tns:metadataProperties">
+      <class ref="org.datacleaner.job.jaxb.MetadataProperties"/>
+    </bindings>
+    <bindings scd="tns:job">
+      <class ref="org.datacleaner.job.jaxb.Job"/>
+    </bindings>
+    <bindings scd="~tns:jobType">
+      <class ref="org.datacleaner.job.jaxb.JobType"/>
+    </bindings>
+    <bindings scd="~tns:jobMetadataType">
+      <class ref="org.datacleaner.job.jaxb.JobMetadataType"/>
+    </bindings>
+    <bindings scd="~tns:sourceType">
+      <class ref="org.datacleaner.job.jaxb.SourceType"/>
+    </bindings>
+    <bindings scd="~tns:transformationType">
+      <class ref="org.datacleaner.job.jaxb.TransformationType"/>
+    </bindings>
+    <bindings scd="~tns:analysisType">
+      <class ref="org.datacleaner.job.jaxb.AnalysisType"/>
+    </bindings>
+    <bindings scd="~tns:dataContextType">
+      <class ref="org.datacleaner.job.jaxb.DataContextType"/>
+    </bindings>
+    <bindings scd="~tns:columnsType">
+      <class ref="org.datacleaner.job.jaxb.ColumnsType"/>
+    </bindings>
+    <bindings scd="~tns:columnType">
+      <class ref="org.datacleaner.job.jaxb.ColumnType"/>
+    </bindings>
+    <bindings scd="~tns:variablesType">
+      <class ref="org.datacleaner.job.jaxb.VariablesType"/>
+    </bindings>
+    <bindings scd="~tns:variableType">
+      <class ref="org.datacleaner.job.jaxb.VariableType"/>
+    </bindings>
+    <bindings scd="~tns:componentType">
+      <class ref="org.datacleaner.job.jaxb.ComponentType"/>
+    </bindings>
+    <bindings scd="~tns:descriptorType">
+      <class ref="org.datacleaner.job.jaxb.DescriptorType"/>
+    </bindings>
+    <bindings scd="~tns:outputDataStreamType">
+      <class ref="org.datacleaner.job.jaxb.OutputDataStreamType"/>
+    </bindings>
+    <bindings scd="~tns:transformerType">
+      <class ref="org.datacleaner.job.jaxb.TransformerType"/>
+    </bindings>
+    <bindings scd="~tns:filterType">
+      <class ref="org.datacleaner.job.jaxb.FilterType"/>
+    </bindings>
+    <bindings scd="~tns:analyzerType">
+      <class ref="org.datacleaner.job.jaxb.AnalyzerType"/>
+    </bindings>
+    <bindings scd="~tns:inputType">
+      <class ref="org.datacleaner.job.jaxb.InputType"/>
+    </bindings>
+    <bindings scd="~tns:outputType">
+      <class ref="org.datacleaner.job.jaxb.OutputType"/>
+    </bindings>
+    <bindings scd="~tns:outcomeType">
+      <class ref="org.datacleaner.job.jaxb.OutcomeType"/>
+    </bindings>
+  </bindings>
+</bindings>
+

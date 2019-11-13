@@ -1,0 +1,4 @@
+foo,bar,extra1,insert_into_table_error_message,extra2
+f,b,e1,m,e2
+"blabla","hello int","","Could not convert hello int to number",""
+"blabla","hello int","","Could not convert hello int to number",""

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: de.odysseus.juel:juel-impl:2.2.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/com/de/odysseus/juel/juel-impl/2.2.4/juel-impl-2.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/com/de/odysseus/juel/juel-impl/2.2.4/juel-impl-2.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/com/de/odysseus/juel/juel-impl/2.2.4/juel-impl-2.2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

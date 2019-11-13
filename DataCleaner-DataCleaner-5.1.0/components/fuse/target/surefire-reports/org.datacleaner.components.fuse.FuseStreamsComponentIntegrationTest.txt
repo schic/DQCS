@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.datacleaner.components.fuse.FuseStreamsComponentIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.146 sec - in org.datacleaner.components.fuse.FuseStreamsComponentIntegrationTest

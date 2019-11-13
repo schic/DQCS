@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.datacleaner.test.scenario.OpenAnalysisJobTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.762 sec - in org.datacleaner.test.scenario.OpenAnalysisJobTest

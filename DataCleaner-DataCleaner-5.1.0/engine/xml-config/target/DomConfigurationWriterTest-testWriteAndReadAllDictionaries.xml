@@ -1,0 +1,22 @@
+﻿<configuration xmlns="http://eobjects.org/analyzerbeans/configuration/1.0">
+  <reference-data-catalog>
+    <dictionaries>
+      <value-list-dictionary name="simple dict">
+        <value>bar</value>
+        <value>foo</value>
+        <value>baz</value>
+        <case-sensitive>false</case-sensitive>
+      </value-list-dictionary>
+      <text-file-dictionary name="textfile dict">
+        <filename>/foo/bar.txt</filename>
+        <encoding>UTF8</encoding>
+        <case-sensitive>false</case-sensitive>
+      </text-file-dictionary>
+      <datastore-dictionary name="ds dict">
+        <datastore-name>orderdb</datastore-name>
+        <column-path>products.productname</column-path>
+        <load-into-memory>false</load-into-memory>
+      </datastore-dictionary>
+    </dictionaries>
+  </reference-data-catalog>
+</configuration>

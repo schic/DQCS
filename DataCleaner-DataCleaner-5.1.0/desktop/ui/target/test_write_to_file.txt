@@ -1,0 +1,72 @@
+SUCCESS!
+
+RESULT: First name patterns (First name)
+        Match count Sample      
+Aaaaaaa           7 John        
+<null>            1 <null>      
+
+
+RESULT: Value distribution (Email domain)
+SingleValueDistributionResult:
+ - Distinct count: 4
+ - Null count: 1
+ - Total count: 8
+ - Unique count: 1
+ - Value count (company.com): 4
+ - Value count (eobjects.org): 2
+
+RESULT: Value distribution (Lastname)
+SingleValueDistributionResult:
+ - Distinct count: 7
+ - Null count: 1
+ - Total count: 8
+ - Unique count: 5
+ - Value count (Doe): 2
+
+RESULT: Full name patterns (name)
+                 Match count Sample      
+Aaaaaaa Aaaaa              4 John Doe    
+Aaaaaaaa, Aaaaaa           2 Bar, Foo    
+Aaa. Aaaaaa Aaa            1 Mrs. Foobar Foo 
+Aaaaaaa                    1 Spammer     
+
+
+RESULT: Number analyzer (Age in days,Age in years)
+                    Age in days Age in years 
+Row count                     8            8 
+Null count                    1            1 
+Highest value            139109          380 
+Lowest value               7408           20 
+Sum                      255012          693 
+Mean                   36430.29           99 
+Geometric mean         21652.51        58.41 
+Standard deviation     47522.19       130.03 
+Variance           2258358985.24     16907.67 
+Second moment      13550153911.43       101446 
+Sum of squares      22840313932       170053 
+
+
+RESULT: String analyzer (5 columns)
+                                      Email username   Email domain     First name       Lastname     Titulation 
+Row count                                          8              8              8              8              8 
+Null count                                         1              1              1              1              7 
+Blank count                                        0              0              0              0              0 
+Entirely uppercase count                           0              0              0              0              0 
+Entirely lowercase count                           7              7              0              0              0 
+Total char count                                  51             77             35             30              3 
+Max chars                                         10             12              7              8              3 
+Min chars                                          5              9              3              3              3 
+Avg chars                                       7.29             11              5           4.29              3 
+Max white spaces                                   0              0              0              0              0 
+Min white spaces                                   0              0              0              0              0 
+Avg white spaces                                   0              0              0              0              0 
+Uppercase chars                                    0              0              7              7              1 
+Uppercase chars (excl. first letters)              0              0              0              0              0 
+Lowercase chars                                   47             70             28             23              2 
+Digit chars                                        0              0              0              0              0 
+Diacritic chars                                    0              0              1              1              0 
+Non-letter chars                                   4              7              0              0              0 
+Word count                                         7              7              7              7              1 
+Max words                                          1              1              1              1              1 
+Min words                                          1              1              1              1              1 
+
