@@ -6,6 +6,7 @@
 <a href='https://github.com/schic/DQCS/issues/2'>2019年10月迭代计划</a>
 
 # 开发文档
+<a href='https://github.com/schic/DQCS/wiki/DataClear%E6%96%87%E6%A1%A3%E8%B5%84%E6%96%99'>DataCleaner学习资料</a>
 
 # 重要说明
 
