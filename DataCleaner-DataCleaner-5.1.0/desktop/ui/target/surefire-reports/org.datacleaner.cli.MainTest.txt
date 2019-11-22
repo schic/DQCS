@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.datacleaner.cli.MainTest
--------------------------------------------------------------------------------
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.046 sec - in org.datacleaner.cli.MainTest
