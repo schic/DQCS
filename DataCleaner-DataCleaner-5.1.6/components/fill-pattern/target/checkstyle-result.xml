@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.2">
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\FillPattern.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\FillPatternAnalyzer.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\FillPatternGroup.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\FillPatternResult.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\FillPatternsBuilder.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\InspectionType.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\swing\FillPatternGroupListPanel.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\swing\FillPatternGroupTablePanel.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\main\java\org\datacleaner\components\fillpattern\swing\FillPatternResultSwingRenderer.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\test\java\org\datacleaner\components\fillpattern\DeserializationTest.java">
+</file>
+<file name="D:\opt\DataCleaner\components\fill-pattern\src\test\java\org\datacleaner\components\fillpattern\InspectionTypeTest.java">
+</file>
+</checkstyle>

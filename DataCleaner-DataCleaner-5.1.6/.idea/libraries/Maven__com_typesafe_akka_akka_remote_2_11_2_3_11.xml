@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.typesafe.akka:akka-remote_2.11:2.3.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/com/typesafe/akka/akka-remote_2.11/2.3.11/akka-remote_2.11-2.3.11.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/com/typesafe/akka/akka-remote_2.11/2.3.11/akka-remote_2.11-2.3.11-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/com/typesafe/akka/akka-remote_2.11/2.3.11/akka-remote_2.11-2.3.11-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

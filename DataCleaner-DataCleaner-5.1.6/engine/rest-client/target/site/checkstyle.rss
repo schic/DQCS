@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>DataCleaner-rest-client - Checkstyle report</title>
+    <link>https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client</link>
+    <description>DataCleaner-rest-client - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2019</copyright>
+    <item>
+      <title>File: 21,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ProcessResult.java">org/datacleaner/restclient/ProcessResult.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ProcessStatelessInput.java">org/datacleaner/restclient/ProcessStatelessInput.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ComponentRESTClient.java">org/datacleaner/restclient/ComponentRESTClient.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ProcessOutput.java">org/datacleaner/restclient/ProcessOutput.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.DataCloudUser.java">org/datacleaner/restclient/DataCloudUser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.RESTClientImplTest.java">org/datacleaner/restclient/RESTClientImplTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ComponentRESTClientTest.java">org/datacleaner/restclient/ComponentRESTClientTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ComponentConfiguration.java">org/datacleaner/restclient/ComponentConfiguration.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.Serializator.java">org/datacleaner/restclient/Serializator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.RESTClientImpl.java">org/datacleaner/restclient/RESTClientImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ComponentResultsProvider.java">org/datacleaner/restclient/ComponentResultsProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ComponentList.java">org/datacleaner/restclient/ComponentList.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.RESTClient.java">org/datacleaner/restclient/RESTClient.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.SerializatorTest.java">org/datacleaner/restclient/SerializatorTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.OutputColumns.java">org/datacleaner/restclient/OutputColumns.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ProcessStatelessOutput.java">org/datacleaner/restclient/ProcessStatelessOutput.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ProcessInput.java">org/datacleaner/restclient/ProcessInput.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.RESTClientException.java">org/datacleaner/restclient/RESTClientException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.CreateInput.java">org/datacleaner/restclient/CreateInput.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.NewsChannelRESTClient.java">org/datacleaner/restclient/NewsChannelRESTClient.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-engine/DataCleaner-rest-client/checkstyle.html#org.datacleaner.restclient.ComponentsRestClientUtils.java">org/datacleaner/restclient/ComponentsRestClientUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

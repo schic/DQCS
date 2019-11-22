@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>DataCleaner-monitor-referencedata-wizards - Checkstyle report</title>
+    <link>https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards</link>
+    <description>DataCleaner-monitor-referencedata-wizards - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2019</copyright>
+    <item>
+      <title>File: 71,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.simple.SimpleDictionaryReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/dictionary/simple/SimpleDictionaryReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.file.FileSynonymCatalogReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/synonymcatalog/file/FileSynonymCatalogReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageTableTest.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageTableTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageDatastore.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageDatastore.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageSchemaTest.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageSchemaTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageTable.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageTable.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regex.RegexStringPatternReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/stringpattern/regex/RegexStringPatternReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageSchema.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageSchema.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageTable.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageTable.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.simple.SimpleStringPatternReferenceDataPageTest.java">org/datacleaner/monitor/server/wizard/stringpattern/simple/SimpleStringPatternReferenceDataPageTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.simple.SimpleDictionaryReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/dictionary/simple/SimpleDictionaryReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.simple.SimpleDictionaryReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/dictionary/simple/SimpleDictionaryReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.file.FileDictionaryReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/dictionary/file/FileDictionaryReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageSynonymTest.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageSynonymTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageColumn.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageColumn.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageSchema.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageSchema.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.simple.SimpleDictionaryReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/dictionary/simple/SimpleDictionaryReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regex.RegexStringPatternReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regex/RegexStringPatternReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.file.FileSynonymCatalogReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/synonymcatalog/file/FileSynonymCatalogReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.simple.SimpleStringPatternReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/stringpattern/simple/SimpleStringPatternReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.simple.SimpleStringPatternReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/stringpattern/simple/SimpleStringPatternReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regex.RegexStringPatternReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regex/RegexStringPatternReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.file.FileWizardSession.java">org/datacleaner/monitor/server/wizard/shared/file/FileWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.simple.SimpleStringPatternReferenceDataPage.java">org/datacleaner/monitor/server/wizard/stringpattern/simple/SimpleStringPatternReferenceDataPage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastorePageSchema.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastorePageSchema.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataPageName.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataPageName.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageColumn.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageColumn.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageDatastoreTest.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageDatastoreTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageDatastoreTest.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageDatastoreTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageDatastore.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageDatastore.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regex.RegexStringPatternReferenceDataPageTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regex/RegexStringPatternReferenceDataPageTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.file.FileSynonymCatalogReferenceDataPage.java">org/datacleaner/monitor/server/wizard/synonymcatalog/file/FileSynonymCatalogReferenceDataPage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataPageSynonym.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataPageSynonym.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.TestHelper.java">org/datacleaner/monitor/server/wizard/shared/TestHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.simple.SimpleStringPatternReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/stringpattern/simple/SimpleStringPatternReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastoreWizardSession.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastoreWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.file.FileDictionaryReferenceDataPageTest.java">org/datacleaner/monitor/server/wizard/dictionary/file/FileDictionaryReferenceDataPageTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.datastore.DatastoreSynonymCatalogReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/synonymcatalog/datastore/DatastoreSynonymCatalogReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.file.FileDictionaryReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/dictionary/file/FileDictionaryReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.ReferenceDataHelper.java">org/datacleaner/monitor/server/wizard/shared/ReferenceDataHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.datastore.DatastoreDictionaryReferenceDataPageColumnTest.java">org/datacleaner/monitor/server/wizard/dictionary/datastore/DatastoreDictionaryReferenceDataPageColumnTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.simple.SimpleDictionaryReferenceDataPageTest.java">org/datacleaner/monitor/server/wizard/dictionary/simple/SimpleDictionaryReferenceDataPageTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.file.FileSynonymCatalogReferenceDataWizardSession.java">org/datacleaner/monitor/server/wizard/synonymcatalog/file/FileSynonymCatalogReferenceDataWizardSession.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.file.FileDictionaryReferenceDataWizardSessionTest.java">org/datacleaner/monitor/server/wizard/dictionary/file/FileDictionaryReferenceDataWizardSessionTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastorePageDatastore.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastorePageDatastore.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataPageCategory.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataPageCategory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.file.FileDictionaryReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/dictionary/file/FileDictionaryReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataWizardTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataWizardTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataPageNameTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataPageNameTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regexswap.RegexSwapStringPatternReferenceDataPageCategoryTest.java">org/datacleaner/monitor/server/wizard/stringpattern/regexswap/RegexSwapStringPatternReferenceDataPageCategoryTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastoreHelper.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastoreHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.file.FilePage.java">org/datacleaner/monitor/server/wizard/shared/file/FilePage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastorePageColumn.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastorePageColumn.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.synonymcatalog.file.FileSynonymCatalogReferenceDataPageTest.java">org/datacleaner/monitor/server/wizard/synonymcatalog/file/FileSynonymCatalogReferenceDataPageTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastorePageTable.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastorePageTable.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regex.RegexStringPatternReferenceDataPage.java">org/datacleaner/monitor/server/wizard/stringpattern/regex/RegexStringPatternReferenceDataPage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.simple.SimpleDictionaryReferenceDataPage.java">org/datacleaner/monitor/server/wizard/dictionary/simple/SimpleDictionaryReferenceDataPage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.regex.RegexStringPatternReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/stringpattern/regex/RegexStringPatternReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.shared.datastore.DatastoreHelperTest.java">org/datacleaner/monitor/server/wizard/shared/datastore/DatastoreHelperTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.dictionary.file.FileDictionaryReferenceDataPage.java">org/datacleaner/monitor/server/wizard/dictionary/file/FileDictionaryReferenceDataPage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.org/DataCleaner-monitor/DataCleaner-monitor-extensions/DataCleaner-monitor-referencedata-wizards/checkstyle.html#org.datacleaner.monitor.server.wizard.stringpattern.simple.SimpleStringPatternReferenceDataWizard.java">org/datacleaner/monitor/server/wizard/stringpattern/simple/SimpleStringPatternReferenceDataWizard.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

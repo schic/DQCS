@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.2">
+<file name="D:\opt\DataCleaner\components\groovy\src\main\java\org\datacleaner\components\groovy\GroovyAdvancedTransformer.java">
+</file>
+<file name="D:\opt\DataCleaner\components\groovy\src\main\java\org\datacleaner\components\groovy\GroovySimpleTransformer.java">
+</file>
+<file name="D:\opt\DataCleaner\components\groovy\src\test\java\org\datacleaner\components\groovy\GroovyAdvancedTransformerTest.java">
+</file>
+<file name="D:\opt\DataCleaner\components\groovy\src\test\java\org\datacleaner\components\groovy\GroovySimpleTransformerTest.java">
+</file>
+</checkstyle>

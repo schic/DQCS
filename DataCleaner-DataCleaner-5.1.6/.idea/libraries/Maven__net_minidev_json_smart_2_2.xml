@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.minidev:json-smart:2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/net/minidev/json-smart/2.2/json-smart-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/net/minidev/json-smart/2.2/json-smart-2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/net/minidev/json-smart/2.2/json-smart-2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

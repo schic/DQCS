@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.rest-assured:json-path:3.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/io/rest-assured/json-path/3.0.1/json-path-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/io/rest-assured/json-path/3.0.1/json-path-3.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/io/rest-assured/json-path/3.0.1/json-path-3.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

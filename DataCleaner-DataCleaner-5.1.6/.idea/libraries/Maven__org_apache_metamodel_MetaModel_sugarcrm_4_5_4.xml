@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.metamodel:MetaModel-sugarcrm:4.5.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/org/apache/metamodel/MetaModel-sugarcrm/4.5.4/MetaModel-sugarcrm-4.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/org/apache/metamodel/MetaModel-sugarcrm/4.5.4/MetaModel-sugarcrm-4.5.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/org/apache/metamodel/MetaModel-sugarcrm/4.5.4/MetaModel-sugarcrm-4.5.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

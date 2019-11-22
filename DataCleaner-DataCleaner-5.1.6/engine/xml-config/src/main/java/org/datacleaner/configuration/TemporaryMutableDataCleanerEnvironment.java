@@ -1,0 +1,91 @@
+/**
+ * DataCleaner (community edition)
+ * Copyright (C) 2014 Neopost - Customer Information Management
+ *
+ * This copyrighted material is made available to anyone wishing to use, modify,
+ * copy, or redistribute it subject to the terms and conditions of the GNU
+ * Lesser General Public License, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this distribution; if not, write to:
+ * Free Software Foundation, Inc.
+ * 51 Franklin Street, Fifth Floor
+ * Boston, MA  02110-1301  USA
+ */
+package org.datacleaner.configuration;
+
+import org.datacleaner.descriptors.DescriptorProvider;
+import org.datacleaner.job.concurrent.TaskRunner;
+import org.datacleaner.storage.StorageProvider;
+
+/**
+ * A temporary and mutable implementation of {@link DataCleanerEnvironment} -
+ * used only while building a {@link DataCleanerConfiguration} in
+ * {@link JaxbConfigurationReader}.
+ */
+final class TemporaryMutableDataCleanerEnvironment implements DataCleanerEnvironment {
+
+    private InjectionManagerFactory _injectionManagerFactory;
+    private StorageProvider _storageProvider;
+    private DescriptorProvider _descriptorProvider;
+    private TaskRunner _taskRunner;
+    private RemoteServerConfiguration _remoteServerConfiguration;
+
+    public TemporaryMutableDataCleanerEnvironment(final DataCleanerEnvironment baseEnvironment) {
+        _injectionManagerFactory = baseEnvironment.getInjectionManagerFactory();
+        _storageProvider = baseEnvironment.getStorageProvider();
+        _descriptorProvider = baseEnvironment.getDescriptorProvider();
+        _taskRunner = baseEnvironment.getTaskRunner();
+        _remoteServerConfiguration = baseEnvironment.getRemoteServerConfiguration();
+    }
+
+    @Override
+    public RemoteServerConfiguration getRemoteServerConfiguration() {
+        return _remoteServerConfiguration;
+    }
+
+    public void setRemoteServerConfiguration(final RemoteServerConfiguration remoteServerConfiguration) {
+        this._remoteServerConfiguration = remoteServerConfiguration;
+    }
+
+    @Override
+    public TaskRunner getTaskRunner() {
+        return _taskRunner;
+    }
+
+    public void setTaskRunner(final TaskRunner taskRunner) {
+        _taskRunner = taskRunner;
+    }
+
+    @Override
+    public DescriptorProvider getDescriptorProvider() {
+        return _descriptorProvider;
+    }
+
+    public void setDescriptorProvider(final DescriptorProvider descriptorProvider) {
+        _descriptorProvider = descriptorProvider;
+    }
+
+    @Override
+    public StorageProvider getStorageProvider() {
+        return _storageProvider;
+    }
+
+    public void setStorageProvider(final StorageProvider storageProvider) {
+        _storageProvider = storageProvider;
+    }
+
+    @Override
+    public InjectionManagerFactory getInjectionManagerFactory() {
+        return _injectionManagerFactory;
+    }
+
+    public void setInjectionManagerFactory(final InjectionManagerFactory injectionManagerFactory) {
+        _injectionManagerFactory = injectionManagerFactory;
+    }
+}

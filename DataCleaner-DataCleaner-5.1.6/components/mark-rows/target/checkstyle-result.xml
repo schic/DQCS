@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.2">
+<file name="D:\opt\DataCleaner\components\mark-rows\src\main\java\org\datacleaner\components\annotate\MarkRowsAnalyzer.java">
+</file>
+<file name="D:\opt\DataCleaner\components\mark-rows\src\main\java\org\datacleaner\components\annotate\MarkRowsAnalyzerResult.java">
+</file>
+<file name="D:\opt\DataCleaner\components\mark-rows\src\main\java\org\datacleaner\components\annotate\MarkRowsAnalyzerResultReducer.java">
+</file>
+<file name="D:\opt\DataCleaner\components\mark-rows\src\test\java\org\datacleaner\components\annotate\MarkRowsAnalyzerResultReducerTest.java">
+</file>
+</checkstyle>

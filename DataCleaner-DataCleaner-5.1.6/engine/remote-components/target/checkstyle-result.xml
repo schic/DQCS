@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.2">
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\components\remote\RemoteComponentException.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\components\remote\RemoteTransformer.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\components\remote\SingleValueErrorAwareCache.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\configuration\RemoteServerConfigurationImpl.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\configuration\RemoteServerDataImpl.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\descriptors\AnnotationProxy.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\descriptors\JsonSchemaConfiguredPropertyDescriptorImpl.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\descriptors\RemoteConfiguredPropertyDescriptor.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\descriptors\RemoteDescriptorProviderImpl.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\descriptors\RemoteTransformerDescriptorImpl.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\remote-components\src\main\java\org\datacleaner\descriptors\TypeBasedConfiguredPropertyDescriptorImpl.java">
+</file>
+</checkstyle>

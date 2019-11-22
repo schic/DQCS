@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>DataCleaner-oss-branding - Checkstyle report</title>
+    <link>https://datacleaner.github.io/DataCleaner-oss-branding</link>
+    <description>DataCleaner-oss-branding - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2018</copyright>
+    <item>
+      <title>File: 20,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.ImageLoadingPropertyResourceBundle.java">org/datacleaner/branding/ImageLoadingPropertyResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#model-images.properties">model-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.FileTypeResourceBundle.java">org/datacleaner/branding/FileTypeResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.ModelResourceBundle.java">org/datacleaner/branding/ModelResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.DesktopUiResourceBundle.java">org/datacleaner/branding/DesktopUiResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#component-type-images.properties">component-type-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.ImageLoadingResourceBundleTest.java">org/datacleaner/branding/ImageLoadingResourceBundleTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#filetype-images.properties">filetype-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#desktop-colors.properties">desktop-colors.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#component-images.properties">component-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#category-images.properties">category-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.ComponentTypeResourceBundle.java">org/datacleaner/branding/ComponentTypeResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#datastore-type-images.properties">datastore-type-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#desktop-ui-images.properties">desktop-ui-images.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.ComponentInstanceResourceBundle.java">org/datacleaner/branding/ComponentInstanceResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.ColorsResourceBundle.java">org/datacleaner/branding/ColorsResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.DatastoreTypeResourceBundle.java">org/datacleaner/branding/DatastoreTypeResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.DesktopColorsResourceBundle.java">org/datacleaner/branding/DesktopColorsResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.DesktopColorsResourceBundleTest.java">org/datacleaner/branding/DesktopColorsResourceBundleTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://datacleaner.github.io/DataCleaner-oss-branding/checkstyle.html#org.datacleaner.branding.CategoriesResourceBundle.java">org/datacleaner/branding/CategoriesResourceBundle.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+在重新编译源模式时, 对此文件的所有修改都将丢失。
+生成时间: 2018.01.03 时间 04:59:43 PM CST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://eobjects.org/analyzerbeans/configuration/1.0">
+    <schemaBindings map="false">
+      <package name="org.datacleaner.configuration.jaxb"/>
+    </schemaBindings>
+    <bindings scd="~tns:hadoopClusterType">
+      <class ref="org.datacleaner.configuration.jaxb.HadoopClusterType"/>
+    </bindings>
+    <bindings scd="~tns:valueListSynonymCatalogType">
+      <class ref="org.datacleaner.configuration.jaxb.ValueListSynonymCatalogType"/>
+    </bindings>
+    <bindings scd="~tns:xmlDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.XmlDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:excelDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.ExcelDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:fixedWidthDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.FixedWidthDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:couchdbDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.CouchdbDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:cassandraDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.CassandraDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:elasticSearchDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.ElasticSearchDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:mongodbDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.MongodbDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:hbaseDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.HbaseDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:pojoTableType">
+      <class ref="org.datacleaner.configuration.jaxb.PojoTableType"/>
+    </bindings>
+    <bindings scd="~tns:csvDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.CsvDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:jdbcDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.JdbcDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:classpathScannerType">
+      <class ref="org.datacleaner.configuration.jaxb.ClasspathScannerType"/>
+    </bindings>
+    <bindings scd="~tns:serversType">
+      <class ref="org.datacleaner.configuration.jaxb.ServersType"/>
+    </bindings>
+    <bindings scd="~tns:customElementType">
+      <class ref="org.datacleaner.configuration.jaxb.CustomElementType"/>
+    </bindings>
+    <bindings scd="~tns:referenceDataCatalogType">
+      <class ref="org.datacleaner.configuration.jaxb.ReferenceDataCatalogType"/>
+    </bindings>
+    <bindings scd="tns:configuration">
+      <class ref="org.datacleaner.configuration.jaxb.Configuration"/>
+    </bindings>
+    <bindings scd="~tns:configurationMetadataType">
+      <class ref="org.datacleaner.configuration.jaxb.ConfigurationMetadataType"/>
+    </bindings>
+    <bindings scd="~tns:datastoreCatalogType">
+      <class ref="org.datacleaner.configuration.jaxb.DatastoreCatalogType"/>
+    </bindings>
+    <bindings scd="~tns:multithreadedTaskrunnerType">
+      <class ref="org.datacleaner.configuration.jaxb.MultithreadedTaskrunnerType"/>
+    </bindings>
+    <bindings scd="~tns:singlethreadedTaskrunnerType">
+      <class ref="org.datacleaner.configuration.jaxb.SinglethreadedTaskrunnerType"/>
+    </bindings>
+    <bindings scd="~tns:storageProviderType">
+      <class ref="org.datacleaner.configuration.jaxb.StorageProviderType"/>
+    </bindings>
+    <bindings scd="~tns:descriptorProvidersType">
+      <class ref="org.datacleaner.configuration.jaxb.DescriptorProvidersType"/>
+    </bindings>
+    <bindings scd="~tns:abstractDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.AbstractDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:salesforceDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.SalesforceDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:sugarCrmDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.SugarCrmDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:neo4jDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.Neo4JDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:pojoDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.PojoDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:sasDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.SasDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:jsonDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.JsonDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:accessDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.AccessDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:compositeDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.CompositeDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:dbaseDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.DbaseDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:openOfficeDatabaseDatastoreType">
+      <class ref="org.datacleaner.configuration.jaxb.OpenOfficeDatabaseDatastoreType"/>
+    </bindings>
+    <bindings scd="~tns:regexSwapPatternType">
+      <class ref="org.datacleaner.configuration.jaxb.RegexSwapPatternType"/>
+    </bindings>
+    <bindings scd="~tns:regexPatternType">
+      <class ref="org.datacleaner.configuration.jaxb.RegexPatternType"/>
+    </bindings>
+    <bindings scd="~tns:simplePatternType">
+      <class ref="org.datacleaner.configuration.jaxb.SimplePatternType"/>
+    </bindings>
+    <bindings scd="~tns:textFileSynonymCatalogType">
+      <class ref="org.datacleaner.configuration.jaxb.TextFileSynonymCatalogType"/>
+    </bindings>
+    <bindings scd="~tns:datastoreSynonymCatalogType">
+      <class ref="org.datacleaner.configuration.jaxb.DatastoreSynonymCatalogType"/>
+    </bindings>
+    <bindings scd="~tns:textFileDictionaryType">
+      <class ref="org.datacleaner.configuration.jaxb.TextFileDictionaryType"/>
+    </bindings>
+    <bindings scd="~tns:valueListDictionaryType">
+      <class ref="org.datacleaner.configuration.jaxb.ValueListDictionaryType"/>
+    </bindings>
+    <bindings scd="~tns:datastoreDictionaryType">
+      <class ref="org.datacleaner.configuration.jaxb.DatastoreDictionaryType"/>
+    </bindings>
+    <bindings scd="~tns:inMemoryStorageProviderType">
+      <class ref="org.datacleaner.configuration.jaxb.InMemoryStorageProviderType"/>
+    </bindings>
+    <bindings scd="~tns:hsqldbStorageProviderType">
+      <class ref="org.datacleaner.configuration.jaxb.HsqldbStorageProviderType"/>
+    </bindings>
+    <bindings scd="~tns:h2StorageProviderType">
+      <class ref="org.datacleaner.configuration.jaxb.H2StorageProviderType"/>
+    </bindings>
+    <bindings scd="~tns:combinedStorageProviderType">
+      <class ref="org.datacleaner.configuration.jaxb.CombinedStorageProviderType"/>
+    </bindings>
+    <bindings scd="~tns:berkeleyDbStorageProviderType">
+      <class ref="org.datacleaner.configuration.jaxb.BerkeleyDbStorageProviderType"/>
+    </bindings>
+    <bindings scd="~tns:tableTypeEnum">
+      <typesafeEnumClass ref="org.datacleaner.configuration.jaxb.TableTypeEnum"/>
+    </bindings>
+  </bindings>
+</bindings>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.2">
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\CategoriesResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\ColorsResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\ComponentInstanceResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\ComponentTypeResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\DatastoreTypeResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\DesktopColorsResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\DesktopUiResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\FileTypeResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\ImageLoadingPropertyResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\java\org\datacleaner\branding\ModelResourceBundle.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\test\java\org\datacleaner\branding\DesktopColorsResourceBundleTest.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\test\java\org\datacleaner\branding\ImageLoadingResourceBundleTest.java">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\category-images.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\component-images.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\component-type-images.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\datastore-type-images.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\desktop-colors.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\desktop-ui-images.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\filetype-images.properties">
+</file>
+<file name="D:\opt\DataCleaner\oss-branding\src\main\resources\model-images.properties">
+</file>
+</checkstyle>

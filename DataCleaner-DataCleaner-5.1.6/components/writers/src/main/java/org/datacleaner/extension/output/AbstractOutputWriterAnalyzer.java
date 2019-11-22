@@ -1,0 +1,103 @@
+/**
+ * DataCleaner (community edition)
+ * Copyright (C) 2014 Neopost - Customer Information Management
+ *
+ * This copyrighted material is made available to anyone wishing to use, modify,
+ * copy, or redistribute it subject to the terms and conditions of the GNU
+ * Lesser General Public License, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this distribution; if not, write to:
+ * Free Software Foundation, Inc.
+ * 51 Franklin Street, Fifth Floor
+ * Boston, MA  02110-1301  USA
+ */
+package org.datacleaner.extension.output;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import org.datacleaner.api.Analyzer;
+import org.datacleaner.api.Configured;
+import org.datacleaner.api.Initialize;
+import org.datacleaner.api.InputColumn;
+import org.datacleaner.api.InputRow;
+import org.datacleaner.api.MappedProperty;
+import org.datacleaner.api.Validate;
+import org.datacleaner.beans.writers.WriteDataResult;
+import org.datacleaner.desktop.api.PrecedingComponentConsumer;
+import org.datacleaner.output.OutputRow;
+import org.datacleaner.output.OutputWriter;
+
+public abstract class AbstractOutputWriterAnalyzer implements Analyzer<WriteDataResult>, PrecedingComponentConsumer {
+
+    public static final String PROPERTY_COLUMNS = "Columns";
+    public static final String PROPERTY_FIELD_NAMES = "Fields";
+
+    private final AtomicInteger rowCount = new AtomicInteger(0);
+    protected OutputWriter outputWriter;
+    @Configured(PROPERTY_COLUMNS)
+    InputColumn<?>[] columns;
+    @Configured(value = PROPERTY_FIELD_NAMES, required = false)
+    @MappedProperty(PROPERTY_COLUMNS)
+    String[] fields;
+
+    @Validate
+    public final void validateFieldNames() {
+        if (fields != null) {
+            final Set<String> uniqueFieldNames = new HashSet<>();
+            for (final String fieldName : fields) {
+                final String normalizedFieldName = fieldName.trim().toLowerCase();
+                final boolean added = uniqueFieldNames.add(normalizedFieldName);
+                if (!added) {
+                    throw new IllegalStateException("Field names must be unique. Field name '" + normalizedFieldName
+                            + "' occurs multiple times.");
+                }
+            }
+        }
+    }
+
+    @Initialize
+    public final void init() {
+        outputWriter = createOutputWriter();
+    }
+
+    @Override
+    public final WriteDataResult getResult() {
+        outputWriter.close();
+        return getResultInternal(rowCount.get());
+    }
+
+    protected abstract WriteDataResult getResultInternal(int rowCount);
+
+    public abstract OutputWriter createOutputWriter();
+
+    @Override
+    public final void run(final InputRow row, final int distinctCount) {
+        writeRow(row, distinctCount);
+        rowCount.incrementAndGet();
+    }
+
+    protected void writeRow(final InputRow row, final int distinctCount) {
+        final OutputRow outputRow = outputWriter.createRow();
+        for (final InputColumn<?> col : columns) {
+            @SuppressWarnings("unchecked") final InputColumn<Object> objectCol = (InputColumn<Object>) col;
+            outputRow.setValue(objectCol, row.getValue(col));
+        }
+        outputRow.write();
+    }
+
+    public InputColumn<?>[] getColumns() {
+        return columns;
+    }
+
+    public void setColumns(final InputColumn<?>[] columns) {
+        this.columns = columns;
+    }
+}

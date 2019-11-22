@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: javax.faces:javax.faces-api:2.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/javax/faces/javax.faces-api/2.2/javax.faces-api-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/javax/faces/javax.faces-api/2.2/javax.faces-api-2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../m3/5.1.6/javax/faces/javax.faces-api/2.2/javax.faces-api-2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

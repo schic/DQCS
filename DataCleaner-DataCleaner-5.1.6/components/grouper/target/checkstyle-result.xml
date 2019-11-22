@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="7.2">
+<file name="D:\DataCleaner-DataCleaner-5.1.6\components\grouper\src\main\java\org\datacleaner\components\group\AbstractRowNumberAwareAggregateBuilder.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\components\grouper\src\main\java\org\datacleaner\components\group\ConcatAggregateBuilder.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\components\grouper\src\main\java\org\datacleaner\components\group\CreateListAggregateBuilder.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\components\grouper\src\main\java\org\datacleaner\components\group\GrouperTransformer.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\components\grouper\src\main\java\org\datacleaner\components\group\SortationType.java">
+</file>
+<file name="D:\DataCleaner-DataCleaner-5.1.6\components\grouper\src\test\java\org\datacleaner\components\group\GrouperTransformerTest.java">
+</file>
+</checkstyle>
