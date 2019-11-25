@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="7.2">
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\SimpleCORSFilter.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\SimpleCORSFilter.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerConfiguration.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerConfiguration.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerContact.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerContact.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerExternalDocs.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerExternalDocs.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerInfo.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerInfo.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerJSONController.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerJSONController.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerLicense.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerLicense.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerMethod.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerMethod.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerParameter.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerParameter.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerResponse.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerResponse.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerSchema.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerSchema.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerTag.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\documentation\src\main\java\org\datacleaner\documentation\swagger\SwaggerTag.java">
 </file>
 </checkstyle>

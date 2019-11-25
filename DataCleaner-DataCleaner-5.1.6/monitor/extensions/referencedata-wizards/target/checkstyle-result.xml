@@ -1,145 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="7.2">
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageColumn.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageColumn.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageDatastore.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageDatastore.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageSchema.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageSchema.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageTable.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageTable.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataPage.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataPage.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataPage.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataPage.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastoreHelper.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastoreHelper.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageColumn.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageColumn.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageDatastore.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageDatastore.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageSchema.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageSchema.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageTable.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastorePageTable.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastoreWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastoreWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\file\FilePage.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\file\FilePage.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\file\FileWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\file\FileWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\ReferenceDataHelper.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\shared\ReferenceDataHelper.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataPage.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataPage.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageCategory.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageCategory.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageName.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageName.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataPage.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataPage.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageColumn.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageColumn.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageDatastore.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageDatastore.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageSchema.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageSchema.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageSynonym.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageSynonym.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageTable.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageTable.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataPage.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataPage.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataWizard.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataWizard.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataWizardSession.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\main\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataWizardSession.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageColumnTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageColumnTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageDatastoreTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageDatastoreTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageSchemaTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageSchemaTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageTableTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataPageTableTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\datastore\DatastoreDictionaryReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataPageTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataPageTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\file\FileDictionaryReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataPageTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataPageTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\dictionary\simple\SimpleDictionaryReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastoreHelperTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\shared\datastore\DatastoreHelperTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\shared\TestHelper.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\shared\TestHelper.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataPageTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataPageTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regex\RegexStringPatternReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageCategoryTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageCategoryTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageNameTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataPageNameTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\regexswap\RegexSwapStringPatternReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataPageTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataPageTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\stringpattern\simple\SimpleStringPatternReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageDatastoreTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageDatastoreTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageSynonymTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataPageSynonymTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizardSessionTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizardSessionTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\datastore\DatastoreSynonymCatalogReferenceDataWizardTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataPageTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataPageTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataWizardTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\monitor\extensions\referencedata-wizards\src\test\java\org\datacleaner\monitor\server\wizard\synonymcatalog\file\FileSynonymCatalogReferenceDataWizardTest.java">
 </file>
 </checkstyle>

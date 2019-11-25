@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="7.2">
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentConfiguration.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentConfiguration.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentList.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentList.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentRESTClient.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentRESTClient.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentResultsProvider.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentResultsProvider.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentsRestClientUtils.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ComponentsRestClientUtils.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\CreateInput.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\CreateInput.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\DataCloudUser.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\DataCloudUser.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\NewsChannelRESTClient.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\NewsChannelRESTClient.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\OutputColumns.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\OutputColumns.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessInput.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessInput.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessOutput.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessOutput.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessResult.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessResult.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessStatelessInput.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessStatelessInput.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessStatelessOutput.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\ProcessStatelessOutput.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\RESTClient.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\RESTClient.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\RESTClientException.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\RESTClientException.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\RESTClientImpl.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\RESTClientImpl.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\Serializator.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\main\java\org\datacleaner\restclient\Serializator.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\test\java\org\datacleaner\restclient\ComponentRESTClientTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\test\java\org\datacleaner\restclient\ComponentRESTClientTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\test\java\org\datacleaner\restclient\RESTClientImplTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\test\java\org\datacleaner\restclient\RESTClientImplTest.java">
 </file>
-<file name="D:\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\test\java\org\datacleaner\restclient\SerializatorTest.java">
+<file name="D:\schic\11\DataCleaner-DataCleaner-5.1.6\engine\rest-client\src\test\java\org\datacleaner\restclient\SerializatorTest.java">
 </file>
 </checkstyle>

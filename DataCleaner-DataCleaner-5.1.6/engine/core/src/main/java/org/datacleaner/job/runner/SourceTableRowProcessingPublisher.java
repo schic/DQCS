@@ -134,20 +134,20 @@ public final class SourceTableRowProcessingPublisher extends AbstractRowProcessi
                     final DataContext dataContext = con.getDataContext();
 
                     final Column[] columnArray = _physicalColumns.toArray(new Column[_physicalColumns.size()]);
-                    InitFromBuilder query = dataContext.query();
+                    /*InitFromBuilder query = dataContext.query();
                     Table table = getTable();
                     String name = table.getName();
                     String schemaName = "d_dssapp";
                     TableFromBuilder from = query.from(schemaName,name);
                     SatisfiedSelectBuilder<?> select = from.select(columnArray);
-                    Query query1 = select.toQuery();
-                    //final Query baseQuery = dataContext.query().from(getTable()).select(columnArray).toQuery();
+                    Query query1 = select.toQuery();*/
+                    final Query baseQuery = dataContext.query().from(getTable()).select(columnArray).toQuery();
 
-                    //logger.debug("Base query for row processing: {}", baseQuery);
+                    logger.debug("Base query for row processing: {}", baseQuery);
 
                     // try to optimize
 
-                    return new RowProcessingQueryOptimizerImpl(datastore, getConsumersSorted(), query1);
+                    return new RowProcessingQueryOptimizerImpl(datastore, getConsumersSorted(), baseQuery);
                 } catch (final RuntimeException e) {
                     logger.error("Failed to build query optimizer! {}", e.getMessage(), e);
                     throw e;
