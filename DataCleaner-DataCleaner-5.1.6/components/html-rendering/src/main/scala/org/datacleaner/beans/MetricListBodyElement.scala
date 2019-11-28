@@ -41,8 +41,12 @@ class MetricListBodyElement(result: AnalyzerResult) extends BodyElement {
           if (m.isParameterizedByInputColumn()) {
             columns.map(col => {
               <div class="metric">
-                <span class="metricName">{ m.getName() } ({ col.getName() })</span>
-                <span class="metricValue">{ m.getValue(result, new MetricParameters(col)) }</span>
+                <span class="metricName">
+                  { m.getName() } ({ col.getName() })
+                </span>
+                <span class="metricValue">
+                  { m.getValue(result, new MetricParameters(col)) }
+                </span>
               </div>
             });
           } else {
