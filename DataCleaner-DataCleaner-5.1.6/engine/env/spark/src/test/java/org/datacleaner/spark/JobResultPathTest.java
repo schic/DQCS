@@ -114,8 +114,8 @@ public class JobResultPathTest {
             final Resource resultResource = ResultFilePathUtils.getResultResource(sparkContext, sparkJobContext);
             final int lastIndexOfDash = resultResource.getQualifiedPath().lastIndexOf("-");
             assertTrue(resultResource.getQualifiedPath().contains(analysisJobName));
-            /*assertTrue(resultResource.getQualifiedPath().substring(0, lastIndexOfDash)
-                    .endsWith("datacleaner" + File.separator + "results" + File.separator + "vanilla-job"));*/
+            assertTrue(resultResource.getQualifiedPath().substring(0, lastIndexOfDash)
+                    .endsWith("datacleaner" + File.separator + "results" + File.separator + "vanilla-job"));
         }
     }
 }

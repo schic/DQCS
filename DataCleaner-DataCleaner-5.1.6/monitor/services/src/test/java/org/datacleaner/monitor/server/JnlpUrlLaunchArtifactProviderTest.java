@@ -33,11 +33,11 @@ public class JnlpUrlLaunchArtifactProviderTest extends TestCase {
 
         final JnlpUrlLaunchArtifactProvider provider = new JnlpUrlLaunchArtifactProvider();
 
-        //assertTrue(provider.isAvailable());
+        assertTrue(provider.isAvailable());
 
         final List<String> jarFilenames = provider.getJarFilenames();
-        //assertFalse(jarFilenames.isEmpty());
+        assertFalse(jarFilenames.isEmpty());
 
-        //assertTrue(jarFilenames.toString().indexOf("MetaModel") != -1);
+        assertTrue(jarFilenames.toString().indexOf("MetaModel") != -1);
     }
 }

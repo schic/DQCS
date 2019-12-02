@@ -652,7 +652,7 @@ public class JaxbJobReaderTest extends TestCase {
         String absolutePath = propertyFile.getFile().getAbsolutePath();
         absolutePath = absolutePath.replace("\\", "/"); 
         absolutePath = absolutePath.replace("C:", "");
-        //assertEquals("/tmp/ignite/hotfolder/dc_input - 2016-12-12 14:14:56 - samples.csv", absolutePath);
+        assertEquals("/tmp/ignite/hotfolder/dc_input - 2016-12-12 14:14:56 - samples.csv", absolutePath);
     }
     
     public void testJobWithTemplateProperties2() throws IOException {
@@ -676,7 +676,7 @@ public class JaxbJobReaderTest extends TestCase {
         String absolutePath = propertyFile.getFile().getAbsolutePath();
         absolutePath = absolutePath.replace("\\", "/");
         absolutePath = absolutePath.replace("C:", "");
-        //assertEquals("/Users/claudiap/Documents/OutgoingHotFolder/myFile/1482244133378-samples.csv", absolutePath);
+        assertEquals("/Users/claudiap/Documents/OutgoingHotFolder/myFile/1482244133378-samples.csv", absolutePath);
     }
 
 }
