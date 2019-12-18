@@ -1,0 +1,606 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+BidiFormatterBase (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BidiFormatterBase (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BidiFormatterBase.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.Factory.html" title="class in com.google.gwt.i18n.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/shared/BidiFormatterBase.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BidiFormatterBase.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.i18n.shared</FONT>
+<BR>
+Class BidiFormatterBase</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.i18n.shared.BidiFormatterBase</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>BidiFormatterBase</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Base class for <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared"><CODE>BidiFormatter</CODE></A> and <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared"><CODE>SafeHtmlBidiFormatter</CODE></A> that
+ contains their common implementation.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.Factory.html" title="class in com.google.gwt.i18n.shared">BidiFormatterBase.Factory</A>&lt;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.Factory.html" title="type parameter in BidiFormatterBase.Factory">T</A> extends <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">BidiFormatterBase</A>&gt;</B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract factory class for BidiFormatterBase.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#BidiFormatterBase(com.google.gwt.i18n.client.HasDirection.Direction, boolean)">BidiFormatterBase</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir,
+                  boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#dirAttrBase(java.lang.String, boolean)">dirAttrBase</A></B>(java.lang.String&nbsp;str,
+            boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#endEdgeBase()">endEdgeBase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String)">estimateDirection</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String, boolean)"><CODE>estimateDirection(String, boolean)</CODE></A>, but assumes <code>isHtml</code> is false.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String, boolean)">estimateDirection</A></B>(java.lang.String&nbsp;str,
+                  boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estimates the direction of a string using the best known general-purpose
+ method, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#getAlwaysSpan()">getAlwaysSpan</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether the span structure added by the formatter should be stable,
+ i.e., spans added even when the direction does not need to be declared.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#getContextDir()">getContextDir</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#isRtlContext()">isRtlContext</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether the context direction is RTL.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#knownDirAttrBase(com.google.gwt.i18n.client.HasDirection.Direction)">knownDirAttrBase</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#markAfterBase(java.lang.String, boolean)">markAfterBase</A></B>(java.lang.String&nbsp;str,
+              boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#markBase()">markBase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#spanWrapBase(java.lang.String, boolean, boolean)">spanWrapBase</A></B>(java.lang.String&nbsp;str,
+             boolean&nbsp;isHtml,
+             boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#spanWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">spanWrapWithKnownDirBase</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                         java.lang.String&nbsp;str,
+                         boolean&nbsp;isHtml,
+                         boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#startEdgeBase()">startEdgeBase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#unicodeWrapBase(java.lang.String, boolean, boolean)">unicodeWrapBase</A></B>(java.lang.String&nbsp;str,
+                boolean&nbsp;isHtml,
+                boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#unicodeWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">unicodeWrapWithKnownDirBase</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                            java.lang.String&nbsp;str,
+                            boolean&nbsp;isHtml,
+                            boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="BidiFormatterBase(com.google.gwt.i18n.client.HasDirection.Direction, boolean)"><!-- --></A><H3>
+BidiFormatterBase</H3>
+<PRE>
+protected <B>BidiFormatterBase</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir,
+                            boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="estimateDirection(java.lang.String)"><!-- --></A><H3>
+estimateDirection</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A> <B>estimateDirection</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String, boolean)"><CODE>estimateDirection(String, boolean)</CODE></A>, but assumes <code>isHtml</code> is false.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String whose direction is to be estimated
+<DT><B>Returns:</B><DD><code>str</code>'s estimated overall direction</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateDirection(java.lang.String, boolean)"><!-- --></A><H3>
+estimateDirection</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A> <B>estimateDirection</B>(java.lang.String&nbsp;str,
+                                                boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Estimates the direction of a string using the best known general-purpose
+ method, i.e. using relative word counts. Direction.DEFAULT return value
+ indicates completely neutral input.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String whose direction is to be estimated<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD><code>str</code>'s estimated overall direction</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAlwaysSpan()"><!-- --></A><H3>
+getAlwaysSpan</H3>
+<PRE>
+public boolean <B>getAlwaysSpan</B>()</PRE>
+<DL>
+<DD>Returns whether the span structure added by the formatter should be stable,
+ i.e., spans added even when the direction does not need to be declared.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContextDir()"><!-- --></A><H3>
+getContextDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A> <B>getContextDir</B>()</PRE>
+<DL>
+<DD>Returns the context direction.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isRtlContext()"><!-- --></A><H3>
+isRtlContext</H3>
+<PRE>
+public boolean <B>isRtlContext</B>()</PRE>
+<DL>
+<DD>Returns whether the context direction is RTL.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dirAttrBase(java.lang.String, boolean)"><!-- --></A><H3>
+dirAttrBase</H3>
+<PRE>
+protected java.lang.String <B>dirAttrBase</B>(java.lang.String&nbsp;str,
+                                       boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String whose direction is to be estimated<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String, boolean)"><CODE>BidiFormatter.dirAttr(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endEdgeBase()"><!-- --></A><H3>
+endEdgeBase</H3>
+<PRE>
+protected java.lang.String <B>endEdgeBase</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#endEdge()"><CODE>BidiFormatter.endEdge()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="knownDirAttrBase(com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+knownDirAttrBase</H3>
+<PRE>
+protected java.lang.String <B>knownDirAttrBase</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - Given direction
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.<DT><B>See Also:</B><DD><CODE>BidiFormatter#knownDirAttr(Direction)</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="markAfterBase(java.lang.String, boolean)"><!-- --></A><H3>
+markAfterBase</H3>
+<PRE>
+protected java.lang.String <B>markAfterBase</B>(java.lang.String&nbsp;str,
+                                         boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String after which the mark may need to appear<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>LRM for RTL text in LTR context; RLM for LTR text in RTL context;
+         else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String, boolean)"><CODE>BidiFormatter.markAfter(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="markBase()"><!-- --></A><H3>
+markBase</H3>
+<PRE>
+protected java.lang.String <B>markBase</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#mark()"><CODE>BidiFormatter.mark()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapBase(java.lang.String, boolean, boolean)"><!-- --></A><H3>
+spanWrapBase</H3>
+<PRE>
+protected java.lang.String <B>spanWrapBase</B>(java.lang.String&nbsp;str,
+                                        boolean&nbsp;isHtml,
+                                        boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>BidiFormatter.spanWrap(String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><!-- --></A><H3>
+spanWrapWithKnownDirBase</H3>
+<PRE>
+protected java.lang.String <B>spanWrapWithKnownDirBase</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                                    java.lang.String&nbsp;str,
+                                                    boolean&nbsp;isHtml,
+                                                    boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><CODE>BidiFormatter#spanWrapWithKnownDir(Direction, String, boolean, boolean)</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startEdgeBase()"><!-- --></A><H3>
+startEdgeBase</H3>
+<PRE>
+protected java.lang.String <B>startEdgeBase</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#startEdge()"><CODE>BidiFormatter.startEdge()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapBase(java.lang.String, boolean, boolean)"><!-- --></A><H3>
+unicodeWrapBase</H3>
+<PRE>
+protected java.lang.String <B>unicodeWrapBase</B>(java.lang.String&nbsp;str,
+                                           boolean&nbsp;isHtml,
+                                           boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>BidiFormatter.unicodeWrap(String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><!-- --></A><H3>
+unicodeWrapWithKnownDirBase</H3>
+<PRE>
+protected java.lang.String <B>unicodeWrapWithKnownDirBase</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                                       java.lang.String&nbsp;str,
+                                                       boolean&nbsp;isHtml,
+                                                       boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><CODE>BidiFormatter#unicodeWrapWithKnownDir(Direction, String, boolean, boolean)</CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BidiFormatterBase.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.Factory.html" title="class in com.google.gwt.i18n.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/shared/BidiFormatterBase.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BidiFormatterBase.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

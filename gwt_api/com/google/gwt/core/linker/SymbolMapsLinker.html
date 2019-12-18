@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+SymbolMapsLinker (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SymbolMapsLinker (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SymbolMapsLinker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/SoycReportLinker.html" title="class in com.google.gwt.core.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/XSLinker.html" title="class in com.google.gwt.core.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/linker/SymbolMapsLinker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SymbolMapsLinker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.linker</FONT>
+<BR>
+Class SymbolMapsLinker</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">com.google.gwt.core.ext.Linker</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html" title="class in com.google.gwt.core.ext.linker">com.google.gwt.core.ext.linker.AbstractLinker</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.linker.SymbolMapsLinker</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="../../../../../com/google/gwt/core/ext/linker/LinkerOrder.html" title="annotation in com.google.gwt.core.ext.linker">@LinkerOrder</A>(<A HREF="../../../../../com/google/gwt/core/ext/linker/LinkerOrder.html#value()">value</A>=<A HREF="../../../../../com/google/gwt/core/ext/linker/LinkerOrder.Order.html#POST">POST</A>)
+<A HREF="../../../../../com/google/gwt/core/ext/linker/Shardable.html" title="annotation in com.google.gwt.core.ext.linker">@Shardable</A>
+</FONT>public class <B>SymbolMapsLinker</B><DT>extends <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html" title="class in com.google.gwt.core.ext.linker">AbstractLinker</A></DL>
+</PRE>
+
+<P>
+This Linker exports the symbol maps associated with each compilation result
+ as a private file. The names of the symbol maps files are computed by
+ appending <A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#STRONG_NAME_SUFFIX">".symbolMap"</A> to the value returned by
+ <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getStrongName()"><CODE>CompilationResult.getStrongName()</CODE></A>.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#STRONG_NAME_SUFFIX">STRONG_NAME_SUFFIX</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This value is appended to the strong name of the CompilationResult to form
+ the symbol map's filename.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#SymbolMapsLinker()">SymbolMapsLinker</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#doEmitSymbolMap(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.ArtifactSet, com.google.gwt.core.ext.linker.CompilationResult, java.io.ByteArrayOutputStream)">doEmitSymbolMap</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts,
+                <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;result,
+                java.io.ByteArrayOutputStream&nbsp;out)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override to change the manner in which the symbol map is emitted.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#doWriteSymbolMap(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.CompilationResult, java.io.PrintWriter)">doWriteSymbolMap</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                 <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;result,
+                 java.io.PrintWriter&nbsp;pw)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override to change the format of the symbol map.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#getDescription()">getDescription</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a human-readable String describing the Linker.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">link</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+     <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+     <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Included to support legacy non-shardable subclasses.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)">link</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+     <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+     <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts,
+     boolean&nbsp;onePermutation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ This method is invoked for linkers annotated with <A HREF="../../../../../com/google/gwt/core/ext/linker/Shardable.html" title="annotation in com.google.gwt.core.ext.linker"><CODE>Shardable</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html#propertyMapToString(java.util.Map)">propertyMapToString</A></B>(java.util.Map&lt;<A HREF="../../../../../com/google/gwt/core/ext/linker/SelectionProperty.html" title="interface in com.google.gwt.core.ext.linker">SelectionProperty</A>,java.lang.String&gt;&nbsp;propertyMap)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.linker.AbstractLinker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.linker.<A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html" title="class in com.google.gwt.core.ext.linker">AbstractLinker</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String)">emitBytes</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, long)">emitBytes</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String)">emitInputStream</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String, long)">emitInputStream</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)">emitString</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String, long)">emitString</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String)">emitWithStrongName</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String, long)">emitWithStrongName</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.Linker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.<A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#isShardable()">isShardable</A>, <A HREF="../../../../../com/google/gwt/core/ext/Linker.html#relink(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">relink</A>, <A HREF="../../../../../com/google/gwt/core/ext/Linker.html#supportsDevModeInJunit(com.google.gwt.core.ext.LinkerContext)">supportsDevModeInJunit</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="STRONG_NAME_SUFFIX"><!-- --></A><H3>
+STRONG_NAME_SUFFIX</H3>
+<PRE>
+public static final java.lang.String <B>STRONG_NAME_SUFFIX</B></PRE>
+<DL>
+<DD>This value is appended to the strong name of the CompilationResult to form
+ the symbol map's filename.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.core.linker.SymbolMapsLinker.STRONG_NAME_SUFFIX">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SymbolMapsLinker()"><!-- --></A><H3>
+SymbolMapsLinker</H3>
+<PRE>
+public <B>SymbolMapsLinker</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="propertyMapToString(java.util.Map)"><!-- --></A><H3>
+propertyMapToString</H3>
+<PRE>
+public static java.lang.String <B>propertyMapToString</B>(java.util.Map&lt;<A HREF="../../../../../com/google/gwt/core/ext/linker/SelectionProperty.html" title="interface in com.google.gwt.core.ext.linker">SelectionProperty</A>,java.lang.String&gt;&nbsp;propertyMap)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDescription()"><!-- --></A><H3>
+getDescription</H3>
+<PRE>
+public java.lang.String <B>getDescription</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#getDescription()">Linker</A></CODE></B></DD>
+<DD>Returns a human-readable String describing the Linker.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#getDescription()">getDescription</A></CODE> in class <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)"><!-- --></A><H3>
+link</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A> <B>link</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                        <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                        <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts)
+                 throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Included to support legacy non-shardable subclasses.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">link</A></CODE> in class <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - the TreeLogger to record to<DD><CODE>context</CODE> - provides access to the Linker's environment<DD><CODE>artifacts</CODE> - an unmodifiable view of the artifacts to link
+<DT><B>Returns:</B><DD>the artifacts that should be propagated through the linker chain
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE> - if compilation violates assumptions made
+           by the Linker or for errors encountered by the Linker</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)"><!-- --></A><H3>
+link</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A> <B>link</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                        <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                        <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts,
+                        boolean&nbsp;onePermutation)
+                 throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)">Linker</A></CODE></B></DD>
+<DD><p>
+ This method is invoked for linkers annotated with <A HREF="../../../../../com/google/gwt/core/ext/linker/Shardable.html" title="annotation in com.google.gwt.core.ext.linker"><CODE>Shardable</CODE></A>. It is
+ called at two points during compilation: after the compile of each
+ permutation, and after all compilation has finished. The
+ <code>onePermutation</code> is <code>true</code> for a per-permutation call
+ and <code>false</code> for a global final-link call.
+ 
+ <p>
+ For one-permutation calls, this method is passed all artifacts generated
+ for just the one permutation. For the global call at the end of
+ compilation, this method sees artifacts for the whole compilation, but with
+ two modifications intended to support builds on computer clusters:
+ <ol>
+ <li>All EmittedArtifacts have been converted to BinaryEmittedArtifacts
+ <li>All artifacts not marked as
+ <A HREF="../../../../../com/google/gwt/core/ext/linker/Transferable.html" title="annotation in com.google.gwt.core.ext.linker"><CODE>Transferable</CODE></A> have been discarded.
+ </ol>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)">link</A></CODE> in class <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - the TreeLogger to record to<DD><CODE>context</CODE> - provides access to the Linker's environment<DD><CODE>artifacts</CODE> - an unmodifiable view of the artifacts to link<DD><CODE>onePermutation</CODE> - true for a one-permutation call
+<DT><B>Returns:</B><DD>the artifacts that should be propagated through the linker chain
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE> - if compilation violates assumptions made
+           by the Linker or for errors encountered by the Linker</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doEmitSymbolMap(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.ArtifactSet, com.google.gwt.core.ext.linker.CompilationResult, java.io.ByteArrayOutputStream)"><!-- --></A><H3>
+doEmitSymbolMap</H3>
+<PRE>
+protected void <B>doEmitSymbolMap</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                               <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts,
+                               <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;result,
+                               java.io.ByteArrayOutputStream&nbsp;out)
+                        throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Override to change the manner in which the symbol map is emitted.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doWriteSymbolMap(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.CompilationResult, java.io.PrintWriter)"><!-- --></A><H3>
+doWriteSymbolMap</H3>
+<PRE>
+protected void <B>doWriteSymbolMap</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;result,
+                                java.io.PrintWriter&nbsp;pw)
+                         throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Override to change the format of the symbol map.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - the logger to write to<DD><CODE>result</CODE> - the compilation result<DD><CODE>pw</CODE> - the output PrintWriter
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE> - if an error occurs</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SymbolMapsLinker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/SoycReportLinker.html" title="class in com.google.gwt.core.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/XSLinker.html" title="class in com.google.gwt.core.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/linker/SymbolMapsLinker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SymbolMapsLinker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

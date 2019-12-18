@@ -1,0 +1,492 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+ColumnSortList (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ColumnSortList (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ColumnSortList.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.ListHandler.html" title="class in com.google.gwt.user.cellview.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/cellview/client/ColumnSortList.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ColumnSortList.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.cellview.client</FONT>
+<BR>
+Class ColumnSortList</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.cellview.client.ColumnSortList</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ColumnSortList</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+An ordered list containing the sort history of <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A>s in a table.
+ The 0th item is the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> of the most recently sorted
+ column.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information about the sort order of a specific column in a table.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortList.Delegate</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The delegate that handles modifications to the list.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#ColumnSortList()">ColumnSortList</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> without a <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.Delegate</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#ColumnSortList(com.google.gwt.user.cellview.client.ColumnSortList.Delegate)">ColumnSortList</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortList.Delegate</A>&nbsp;delegate)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.Delegate</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes all of the elements from this list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#equals(java.lang.Object)">equals</A></B>(java.lang.Object&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the specified object equals this list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#get(int)">get</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#insert(int, com.google.gwt.user.cellview.client.ColumnSortList.ColumnSortInfo)">insert</A></B>(int&nbsp;index,
+       <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A>&nbsp;sortInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> at the specified position in
+ this list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#push(com.google.gwt.user.cellview.client.Column)">push</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client">Column</A>&lt;?,?&gt;&nbsp;column)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Push a <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> onto the list at index zero, setting ascending to
+ true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#push(com.google.gwt.user.cellview.client.ColumnSortList.ColumnSortInfo)">push</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A>&nbsp;sortInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Push a <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> onto the list at index zero.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#remove(com.google.gwt.user.cellview.client.ColumnSortList.ColumnSortInfo)">remove</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A>&nbsp;sortInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove a <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> from the list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html#size()">size</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the size of the list.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ColumnSortList()"><!-- --></A><H3>
+ColumnSortList</H3>
+<PRE>
+public <B>ColumnSortList</B>()</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> without a <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.Delegate</CODE></A>.
+<P>
+</DL>
+<HR>
+
+<A NAME="ColumnSortList(com.google.gwt.user.cellview.client.ColumnSortList.Delegate)"><!-- --></A><H3>
+ColumnSortList</H3>
+<PRE>
+public <B>ColumnSortList</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortList.Delegate</A>&nbsp;delegate)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.Delegate</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>delegate</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.Delegate.html" title="interface in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.Delegate</CODE></A> to inform of modifications</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD>Removes all of the elements from this list.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(java.lang.Object&nbsp;obj)</PRE>
+<DL>
+<DD>Check if the specified object equals this list. Two <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A>
+ are equals if they are the same size, and all entries are
+ <code>equals</code> and in the same order.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>equals</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="get(int)"><!-- --></A><H3>
+get</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A> <B>get</B>(int&nbsp;index)</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> at the specified index.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - the index
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>hashCode</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insert(int, com.google.gwt.user.cellview.client.ColumnSortList.ColumnSortInfo)"><!-- --></A><H3>
+insert</H3>
+<PRE>
+public void <B>insert</B>(int&nbsp;index,
+                   <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A>&nbsp;sortInfo)</PRE>
+<DL>
+<DD>Inserts the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> at the specified position in
+ this list. If the column already exists in the sort info, the index will be
+ adjusted to account for any removed entries.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sortInfo</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> to add</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="push(com.google.gwt.user.cellview.client.Column)"><!-- --></A><H3>
+push</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A> <B>push</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client">Column</A>&lt;?,?&gt;&nbsp;column)</PRE>
+<DL>
+<DD>Push a <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> onto the list at index zero, setting ascending to
+ true. If the column already exists, it will be removed from its current
+ position and placed at the start of the list. If the Column is already at
+ the start of the list, its ascending bit will be flipped (ascending to
+ descending and vice versa).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>column</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> to push
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> that was pushed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="push(com.google.gwt.user.cellview.client.ColumnSortList.ColumnSortInfo)"><!-- --></A><H3>
+push</H3>
+<PRE>
+public void <B>push</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A>&nbsp;sortInfo)</PRE>
+<DL>
+<DD>Push a <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> onto the list at index zero. If the column
+ already exists, it will be removed from its current position and placed at
+ the start of the list.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sortInfo</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> to push</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="remove(com.google.gwt.user.cellview.client.ColumnSortList.ColumnSortInfo)"><!-- --></A><H3>
+remove</H3>
+<PRE>
+public boolean <B>remove</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList.ColumnSortInfo</A>&nbsp;sortInfo)</PRE>
+<DL>
+<DD>Remove a <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> from the list.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sortInfo</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> to remove</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="size()"><!-- --></A><H3>
+size</H3>
+<PRE>
+public int <B>size</B>()</PRE>
+<DL>
+<DD>Get the size of the list.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList.ColumnSortInfo</CODE></A> in the list</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ColumnSortList.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.ListHandler.html" title="class in com.google.gwt.user.cellview.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.ColumnSortInfo.html" title="class in com.google.gwt.user.cellview.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/cellview/client/ColumnSortList.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ColumnSortList.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

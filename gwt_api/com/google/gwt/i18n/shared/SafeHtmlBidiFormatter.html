@@ -1,0 +1,948 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+SafeHtmlBidiFormatter (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SafeHtmlBidiFormatter (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SafeHtmlBidiFormatter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/WordCountDirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SafeHtmlBidiFormatter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.i18n.shared</FONT>
+<BR>
+Class SafeHtmlBidiFormatter</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">com.google.gwt.i18n.shared.BidiFormatterBase</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.i18n.shared.SafeHtmlBidiFormatter</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>SafeHtmlBidiFormatter</B><DT>extends <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">BidiFormatterBase</A></DL>
+</PRE>
+
+<P>
+A wrapper to <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared"><CODE>BidiFormatter</CODE></A> whose methods return <code>SafeHtml</code>
+ instead of <code>String</code>.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#dirAttr(com.google.gwt.safehtml.shared.SafeHtml)">dirAttr</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#dirAttr(java.lang.String)">dirAttr</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#endEdge()">endEdge</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns "left" for RTL context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#estimateDirection(com.google.gwt.safehtml.shared.SafeHtml)">estimateDirection</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(boolean)">getInstance</A></B>(boolean&nbsp;rtlContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(boolean, boolean)">getInstance</A></B>(boolean&nbsp;rtlContext,
+            boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(com.google.gwt.i18n.client.HasDirection.Direction)">getInstance</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(com.google.gwt.i18n.client.HasDirection.Direction, boolean)">getInstance</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir,
+            boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstanceForCurrentLocale()">getInstanceForCurrentLocale</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of SafeHtmlBidiFormatter whose context
+ direction matches the current locale's direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstanceForCurrentLocale(boolean)">getInstanceForCurrentLocale</A></B>(boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of SafeHtmlBidiFormatter whose context
+ direction matches the current locale's direction, and given the desired
+ span wrapping behavior (see below).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#knownDirAttr(com.google.gwt.i18n.client.HasDirection.Direction)">knownDirAttr</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#mark()">mark</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#markAfter(com.google.gwt.safehtml.shared.SafeHtml)">markAfter</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#markAfter(java.lang.String)">markAfter</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)">spanWrap</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml, boolean)">spanWrap</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+         boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(java.lang.String)">spanWrap</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(java.lang.String, boolean)">spanWrap</A></B>(java.lang.String&nbsp;str,
+         boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml, boolean)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                     boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     java.lang.String&nbsp;str,
+                     boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#startEdge()">startEdge</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns "right" for RTL context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrap(com.google.gwt.safehtml.shared.SafeHtml)">unicodeWrap</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrap(com.google.gwt.safehtml.shared.SafeHtml, boolean)">unicodeWrap</A></B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+            boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrap(java.lang.String)">unicodeWrap</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrap(java.lang.String, boolean)">unicodeWrap</A></B>(java.lang.String&nbsp;str,
+            boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml, boolean)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                        boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        java.lang.String&nbsp;str,
+                        boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.i18n.shared.BidiFormatterBase"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.i18n.shared.<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">BidiFormatterBase</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#dirAttrBase(java.lang.String, boolean)">dirAttrBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#endEdgeBase()">endEdgeBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String)">estimateDirection</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String, boolean)">estimateDirection</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#getAlwaysSpan()">getAlwaysSpan</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#getContextDir()">getContextDir</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#isRtlContext()">isRtlContext</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#knownDirAttrBase(com.google.gwt.i18n.client.HasDirection.Direction)">knownDirAttrBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#markAfterBase(java.lang.String, boolean)">markAfterBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#markBase()">markBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#spanWrapBase(java.lang.String, boolean, boolean)">spanWrapBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#spanWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">spanWrapWithKnownDirBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#startEdgeBase()">startEdgeBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#unicodeWrapBase(java.lang.String, boolean, boolean)">unicodeWrapBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#unicodeWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">unicodeWrapWithKnownDirBase</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getInstance(boolean)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A> <B>getInstance</B>(boolean&nbsp;rtlContext)</PRE>
+<DL>
+<DD>Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction. The default behavior of <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>spanWrap(com.google.gwt.safehtml.shared.SafeHtml)</CODE></A> and its variations is
+ set to avoid span wrapping unless it's necessary ('dir' attribute needs to
+ be set).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>rtlContext</CODE> - Whether the context direction is RTL.
+          In one simple use case, the context direction would simply be the
+          locale direction, which can be retrieved using
+          <code>LocaleInfo.getCurrentLocale().isRTL()</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstance(boolean, boolean)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A> <B>getInstance</B>(boolean&nbsp;rtlContext,
+                                                boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+<DD>Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>rtlContext</CODE> - Whether the context direction is RTL. See an example of
+          a simple use case at <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(boolean)"><CODE>getInstance(boolean)</CODE></A><DD><CODE>alwaysSpan</CODE> - Whether <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>spanWrap(com.google.gwt.safehtml.shared.SafeHtml)</CODE></A> (and its variations) should
+          always use a 'span' tag, even when the input direction is neutral
+          or matches the context, so that the DOM structure of the output
+          does not depend on the combination of directions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstance(com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A> <B>getInstance</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir)</PRE>
+<DL>
+<DD>Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction. The default behavior of <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>spanWrap(com.google.gwt.safehtml.shared.SafeHtml)</CODE></A> and its variations is
+ set to avoid span wrapping unless it's necessary ('dir' attribute needs to
+ be set).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contextDir</CODE> - The context direction. See an example of a simple use
+          case at <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(boolean)"><CODE>getInstance(boolean)</CODE></A>. Note: Direction.DEFAULT
+          indicates unknown context direction. Try not to use it, since it
+          is impossible to reset the direction back to the context when it
+          is unknown</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstance(com.google.gwt.i18n.client.HasDirection.Direction, boolean)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A> <B>getInstance</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir,
+                                                boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+<DD>Factory for creating an instance of SafeHtmlBidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contextDir</CODE> - The context direction. See an example of a simple use
+          case at <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#getInstance(boolean)"><CODE>getInstance(boolean)</CODE></A>. Note: Direction.DEFAULT
+          indicates unknown context direction. Try not to use it, since it
+          is impossible to reset the direction back to the context when it
+          is unknown<DD><CODE>alwaysSpan</CODE> - Whether <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>spanWrap(com.google.gwt.safehtml.shared.SafeHtml)</CODE></A> (and its variations) should
+          always use a 'span' tag, even when the input direction is neutral
+          or matches the context, so that the DOM structure of the output
+          does not depend on the combination of directions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstanceForCurrentLocale()"><!-- --></A><H3>
+getInstanceForCurrentLocale</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A> <B>getInstanceForCurrentLocale</B>()</PRE>
+<DL>
+<DD>Factory for creating an instance of SafeHtmlBidiFormatter whose context
+ direction matches the current locale's direction. The default behavior of
+ <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>spanWrap(com.google.gwt.safehtml.shared.SafeHtml)</CODE></A> and its variations is set to avoid span wrapping unless
+ it's necessary ('dir' attribute needs to be set).
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstanceForCurrentLocale(boolean)"><!-- --></A><H3>
+getInstanceForCurrentLocale</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" title="class in com.google.gwt.i18n.shared">SafeHtmlBidiFormatter</A> <B>getInstanceForCurrentLocale</B>(boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+<DD>Factory for creating an instance of SafeHtmlBidiFormatter whose context
+ direction matches the current locale's direction, and given the desired
+ span wrapping behavior (see below).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>alwaysSpan</CODE> - Whether <A HREF="../../../../../com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html#spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>spanWrap(com.google.gwt.safehtml.shared.SafeHtml)</CODE></A> (and its variations) should
+          always use a 'span' tag, even when the input direction is neutral
+          or matches the context, so that the DOM structure of the output
+          does not depend on the combination of directions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dirAttr(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+dirAttr</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>dirAttr</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - Html whose direction is to be estimated
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String, boolean)"><CODE>BidiFormatter.dirAttr(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dirAttr(java.lang.String)"><!-- --></A><H3>
+dirAttr</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>dirAttr</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String whose direction is to be estimated
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String)"><CODE>BidiFormatter.dirAttr(java.lang.String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endEdge()"><!-- --></A><H3>
+endEdge</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>endEdge</B>()</PRE>
+<DL>
+<DD>Returns "left" for RTL context direction. Otherwise (LTR or default /
+ unknown context direction) returns "right".
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="estimateDirection(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+estimateDirection</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A> <B>estimateDirection</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - Html whose direction is to be estimated
+<DT><B>Returns:</B><DD><code>html</code>'s estimated overall direction<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String, boolean)"><CODE>BidiFormatterBase.estimateDirection(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="knownDirAttr(com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+knownDirAttr</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>knownDirAttr</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - Given direction
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#knownDirAttr(com.google.gwt.i18n.client.HasDirection.Direction)"><CODE>BidiFormatter.knownDirAttr(com.google.gwt.i18n.client.HasDirection.Direction)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mark()"><!-- --></A><H3>
+mark</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>mark</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#mark()"><CODE>BidiFormatter.mark()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="markAfter(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+markAfter</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>markAfter</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - Html after which the mark may need to appear
+<DT><B>Returns:</B><DD>LRM for RTL text in LTR context; RLM for LTR text in RTL context;
+         else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String)"><CODE>BidiFormatter.markAfter(java.lang.String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="markAfter(java.lang.String)"><!-- --></A><H3>
+markAfter</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>markAfter</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String after which the mark may need to appear
+<DT><B>Returns:</B><DD>LRM for RTL text in LTR context; RLM for LTR text in RTL context;
+         else, the empty string.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String)"><CODE>BidiFormatter.markAfter(java.lang.String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrap</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - The input html
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean)"><CODE>BidiFormatter.spanWrap(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(com.google.gwt.safehtml.shared.SafeHtml, boolean)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrap</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                         boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - The input html<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>html</code>
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>BidiFormatter.spanWrap(String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(java.lang.String)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrap</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>BidiFormatter.spanWrap(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(java.lang.String, boolean)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrap</B>(java.lang.String&nbsp;str,
+                         boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>BidiFormatter.spanWrap(String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                     <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>html</CODE> - The input html
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)"><CODE>BidiFormatter.spanWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml, boolean)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                     <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                                     boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>html</code>'s direction<DD><CODE>html</CODE> - The input html<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>html</code>
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>BidiFormatter.spanWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                     java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><CODE>BidiFormatter.spanWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                     java.lang.String&nbsp;str,
+                                     boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>BidiFormatter.spanWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startEdge()"><!-- --></A><H3>
+startEdge</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>startEdge</B>()</PRE>
+<DL>
+<DD>Returns "right" for RTL context direction. Otherwise (LTR or default /
+ unknown context direction) returns "left".
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrap</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - The input html
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean)"><CODE>BidiFormatter.unicodeWrap(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(com.google.gwt.safehtml.shared.SafeHtml, boolean)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrap</B>(<A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                            boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - The input html<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>html</code>
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>BidiFormatter.unicodeWrap(String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(java.lang.String)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrap</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String)"><CODE>BidiFormatter.unicodeWrap(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(java.lang.String, boolean)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrap</B>(java.lang.String&nbsp;str,
+                            boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>BidiFormatter.unicodeWrap(String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                        <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>html</code>'s direction<DD><CODE>html</CODE> - The input html
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)"><CODE>BidiFormatter.unicodeWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, com.google.gwt.safehtml.shared.SafeHtml, boolean)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                        <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                                        boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>html</code>'s direction<DD><CODE>html</CODE> - The input html<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>html</code>
+<DT><B>Returns:</B><DD>Input html after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>BidiFormatter.unicodeWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                        java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><CODE>BidiFormatter.unicodeWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                        java.lang.String&nbsp;str,
+                                        boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>BidiFormatter.unicodeWrapWithKnownDir(
+ com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SafeHtmlBidiFormatter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/WordCountDirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/shared/SafeHtmlBidiFormatter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SafeHtmlBidiFormatter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

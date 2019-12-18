@@ -1,0 +1,1528 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+MenuBar (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MenuBar (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MenuBar.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/LongBox.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/MenuBar.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MenuBar.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class MenuBar</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.UIObject</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Widget</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.MenuBar</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasAttachHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasAttachHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>MenuBar</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A><DT>implements <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;</DL>
+</PRE>
+
+<P>
+A standard menu bar widget. A menu bar can contain any number of menu items,
+ each of which can either fire a <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client"><CODE>Command</CODE></A> or
+ open a cascaded menu bar.
+
+ <p>
+ <img class='gallery' src='doc-files/MenuBar.png'/>
+ </p>
+
+ <h3>CSS Style Rules</h3>
+ <dl>
+ <dt>.gwt-MenuBar</dt>
+ <dd>the menu bar itself</dd>
+ <dt>.gwt-MenuBar-horizontal</dt>
+ <dd>dependent style applied to horizontal menu bars</dd>
+ <dt>.gwt-MenuBar-vertical</dt>
+ <dd>dependent style applied to vertical menu bars</dd>
+ <dt>.gwt-MenuBar .gwt-MenuItem</dt>
+ <dd>menu items</dd>
+ <dt>.gwt-MenuBar .gwt-MenuItem-selected</dt>
+ <dd>selected menu items</dd>
+ <dt>.gwt-MenuBar .gwt-MenuItemSeparator</dt>
+ <dd>section breaks between menu items</dd>
+ <dt>.gwt-MenuBar .gwt-MenuItemSeparator .menuSeparatorInner</dt>
+ <dd>inner component of section separators</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupTopLeft</dt>
+ <dd>the top left cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupTopLeftInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupTopCenter</dt>
+ <dd>the top center cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupTopCenterInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupTopRight</dt>
+ <dd>the top right cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupTopRightInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupMiddleLeft</dt>
+ <dd>the middle left cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupMiddleLeftInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupMiddleCenter</dt>
+ <dd>the middle center cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupMiddleCenterInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupMiddleRight</dt>
+ <dd>the middle right cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupMiddleRightInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupBottomLeft</dt>
+ <dd>the bottom left cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupBottomLeftInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupBottomCenter</dt>
+ <dd>the bottom center cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupBottomCenterInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupBottomRight</dt>
+ <dd>the bottom right cell</dd>
+ <dt>.gwt-MenuBarPopup .menuPopupBottomRightInner</dt>
+ <dd>the inner element of the cell</dd>
+ </dl>
+
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class MenuBarExample implements EntryPoint {
+
+  public void onModuleLoad() {
+    // Make a command that we will execute from all leaves.
+    Command cmd = new Command() {
+      public void execute() {
+        Window.alert("You selected a menu item!");
+      }
+    };
+
+    // Make some sub-menus that we will cascade from the top menu.
+    MenuBar fooMenu = new MenuBar(true);
+    fooMenu.addItem("the", cmd);
+    fooMenu.addItem("foo", cmd);
+    fooMenu.addItem("menu", cmd);
+
+    MenuBar barMenu = new MenuBar(true);
+    barMenu.addItem("the", cmd);
+    barMenu.addItem("bar", cmd);
+    barMenu.addItem("menu", cmd);
+
+    MenuBar bazMenu = new MenuBar(true);
+    bazMenu.addItem("the", cmd);
+    bazMenu.addItem("baz", cmd);
+    bazMenu.addItem("menu", cmd);
+
+    // Make a new menu bar, adding a few cascading menus to it.
+    MenuBar menu = new MenuBar();
+    menu.addItem("foo", fooMenu);
+    menu.addItem("bar", barMenu);
+    menu.addItem("baz", bazMenu);
+
+    // Add it to the root panel.
+    RootPanel.get().add(menu);
+  }
+}
+</pre></blockquote>
+ </p>
+
+ <h3>Use in UiBinder Templates</h3>
+ <p>
+ MenuBar elements in UiBinder template files can have a <code>vertical</code>
+ boolean attribute (which defaults to false), and may have only MenuItem
+ elements as children. MenuItems may contain HTML and MenuBars.
+ <p>
+ For example:
+
+ <pre>
+ &lt;g:MenuBar>
+   &lt;g:MenuItem>Higgledy
+     &lt;g:MenuBar vertical="true">
+       &lt;g:MenuItem>able&lt;/g:MenuItem>
+       &lt;g:MenuItem>baker&lt;/g:MenuItem>
+       &lt;g:MenuItem>charlie&lt;/g:MenuItem>
+     &lt;/g:MenuBar>
+   &lt;/g:MenuItem>
+   &lt;g:MenuItem>Piggledy
+     &lt;g:MenuBar vertical="true">
+       &lt;g:MenuItem>foo&lt;/g:MenuItem>
+       &lt;g:MenuItem>bar&lt;/g:MenuItem>
+       &lt;g:MenuItem>baz&lt;/g:MenuItem>
+     &lt;/g:MenuBar>
+   &lt;/g:MenuItem>
+   &lt;g:MenuItem>&lt;b>Pop!&lt;/b>
+     &lt;g:MenuBar vertical="true">
+       &lt;g:MenuItem>uno&lt;/g:MenuItem>
+       &lt;g:MenuItem>dos&lt;/g:MenuItem>
+       &lt;g:MenuItem>tres&lt;/g:MenuItem>
+     &lt;/g:MenuBar>
+   &lt;/g:MenuItem>
+ &lt;/g:MenuBar>
+ </pre>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui">MenuBar.MenuBarImages</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.Resources.html" title="interface in com.google.gwt.user.client.ui"><CODE>MenuBar.Resources</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.Resources.html" title="interface in com.google.gwt.user.client.ui">MenuBar.Resources</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ClientBundle that contains the default resources for this widget.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar()">MenuBar</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty horizontal menu bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(boolean)">MenuBar</A></B>(boolean&nbsp;vertical)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty menu bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(boolean, com.google.gwt.user.client.ui.MenuBar.MenuBarImages)">MenuBar</A></B>(boolean&nbsp;vertical,
+        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui">MenuBar.MenuBarImages</A>&nbsp;images)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(boolean, com.google.gwt.user.client.ui.MenuBar.Resources)"><CODE>MenuBar(boolean, Resources)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(boolean, com.google.gwt.user.client.ui.MenuBar.Resources)">MenuBar</A></B>(boolean&nbsp;vertical,
+        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.Resources.html" title="interface in com.google.gwt.user.client.ui">MenuBar.Resources</A>&nbsp;resources)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty menu bar that uses the specified ClientBundle for menu
+ images.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(com.google.gwt.user.client.ui.MenuBar.MenuBarImages)">MenuBar</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui">MenuBar.MenuBarImages</A>&nbsp;images)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(com.google.gwt.user.client.ui.MenuBar.Resources)"><CODE>MenuBar(Resources)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(com.google.gwt.user.client.ui.MenuBar.Resources)">MenuBar</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.Resources.html" title="interface in com.google.gwt.user.client.ui">MenuBar.Resources</A>&nbsp;resources)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty horizontal menu bar that uses the specified ClientBundle
+ for menu images.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">addCloseHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>CloseEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(com.google.gwt.user.client.ui.MenuItem)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.user.client.Command)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+        <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client">Command</A>&nbsp;cmd)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar containing SafeHtml, that will fire the given
+ command when it is selected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.user.client.ui.MenuBar)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui">MenuBar</A>&nbsp;popup)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar, that will open the specified menu when it is
+ selected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(java.lang.String, boolean, com.google.gwt.user.client.Command)">addItem</A></B>(java.lang.String&nbsp;text,
+        boolean&nbsp;asHTML,
+        <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client">Command</A>&nbsp;cmd)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar, that will fire the given command when it is
+ selected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(java.lang.String, boolean, com.google.gwt.user.client.ui.MenuBar)">addItem</A></B>(java.lang.String&nbsp;text,
+        boolean&nbsp;asHTML,
+        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui">MenuBar</A>&nbsp;popup)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar, that will open the specified menu when it is
+ selected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(java.lang.String, com.google.gwt.user.client.Command)">addItem</A></B>(java.lang.String&nbsp;text,
+        <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client">Command</A>&nbsp;cmd)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar, that will fire the given command when it is
+ selected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addItem(java.lang.String, com.google.gwt.user.client.ui.MenuBar)">addItem</A></B>(java.lang.String&nbsp;text,
+        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui">MenuBar</A>&nbsp;popup)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar, that will open the specified menu when it is
+ selected.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addSeparator()">addSeparator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addSeparator(com.google.gwt.user.client.ui.MenuItemSeparator)">addSeparator</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;separator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#clearItems()">clearItems</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes all menu items from this menu bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#closeAllChildren(boolean)">closeAllChildren</A></B>(boolean&nbsp;focus)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closes this menu and all child menu popups.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#focus()">focus</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Give this MenuBar focus.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#getAutoOpen()">getAutoOpen</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether this menu bar's child menus will open when the mouse is moved
+ over it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#getItemIndex(com.google.gwt.user.client.ui.MenuItem)">getItemIndex</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the index of a <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.util.List&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#getItems()">getItems</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a list containing the <code>MenuItem</code> objects in the menu
+ bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#getSelectedItem()">getSelectedItem</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <code>MenuItem</code> that is currently selected (highlighted)
+ by the user.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#getSeparatorIndex(com.google.gwt.user.client.ui.MenuItemSeparator)">getSeparatorIndex</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the index of a <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#insertItem(com.google.gwt.user.client.ui.MenuItem, int)">insertItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item,
+           int&nbsp;beforeIndex)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a menu item to the bar at a specific index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#insertSeparator(int)">insertSeparator</A></B>(int&nbsp;beforeIndex)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#insertSeparator(com.google.gwt.user.client.ui.MenuItemSeparator, int)">insertSeparator</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;separator,
+                int&nbsp;beforeIndex)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#isAnimationEnabled()">isAnimationEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if animations are enabled, false if not.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#isFocusOnHoverEnabled()">isFocusOnHoverEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check whether or not this widget will steal keyboard focus when the mouse
+ hovers over it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#moveSelectionDown()">moveSelectionDown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moves the menu selection down to the next item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#moveSelectionUp()">moveSelectionUp</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moves the menu selection up to the previous item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired whenever a browser event is received.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#onDetach()">onDetach</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ This method is called when a widget is detached from the browser's
+ document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></B>(java.lang.String&nbsp;baseID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Affected Elements:</b>
+ 
+ -item# = the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> at the specified index.
+ </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#onPopupClosed(com.google.gwt.user.client.ui.PopupPanel, boolean)">onPopupClosed</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&nbsp;sender,
+              boolean&nbsp;autoClosed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(CloseHandler)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#removeItem(com.google.gwt.user.client.ui.MenuItem)">removeItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the specified menu item from the bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#removeSeparator(com.google.gwt.user.client.ui.MenuItemSeparator)">removeSeparator</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;separator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the specified <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> from the bar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#selectItem(com.google.gwt.user.client.ui.MenuItem)">selectItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select the given MenuItem, which must be a direct child of this MenuBar.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></B>(boolean&nbsp;enable)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable animations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#setAutoOpen(boolean)">setAutoOpen</A></B>(boolean&nbsp;autoOpen)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether this menu bar's child menus will open when the mouse is moved
+ over it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#setFocusOnHoverEnabled(boolean)">setFocusOnHoverEnabled</A></B>(boolean&nbsp;enabled)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable auto focus when the mouse hovers over the MenuBar.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Widget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)">addAttachHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addBitlessDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addBitlessDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidget()">asWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidgetOrNull(com.google.gwt.user.client.ui.IsWidget)">asWidgetOrNull</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#createHandlerManager()">createHandlerManager</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#delegateEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.event.shared.GwtEvent)">delegateEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doAttachChildren()">doAttachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()">doDetachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getLayoutData()">getLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getParent()">getParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isAttached()">isAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isOrWasAttached()">isOrWasAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()">onAttach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">onLoad</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()">onUnload</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#removeFromParent()">removeFromParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#setLayoutData(java.lang.Object)">setLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">sinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.event.shared.HasHandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MenuBar()"><!-- --></A><H3>
+MenuBar</H3>
+<PRE>
+public <B>MenuBar</B>()</PRE>
+<DL>
+<DD>Creates an empty horizontal menu bar.
+<P>
+</DL>
+<HR>
+
+<A NAME="MenuBar(boolean)"><!-- --></A><H3>
+MenuBar</H3>
+<PRE>
+public <B>MenuBar</B>(boolean&nbsp;vertical)</PRE>
+<DL>
+<DD>Creates an empty menu bar.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>vertical</CODE> - <code>true</code> to orient the menu bar vertically</DL>
+</DL>
+<HR>
+
+<A NAME="MenuBar(boolean, com.google.gwt.user.client.ui.MenuBar.MenuBarImages)"><!-- --></A><H3>
+MenuBar</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public <B>MenuBar</B>(boolean&nbsp;vertical,
+                          <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui">MenuBar.MenuBarImages</A>&nbsp;images)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(boolean, com.google.gwt.user.client.ui.MenuBar.Resources)"><CODE>MenuBar(boolean, Resources)</CODE></A></I>
+<P>
+<DD>Creates an empty menu bar that uses the specified image bundle for menu
+ images.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>vertical</CODE> - <code>true</code> to orient the menu bar vertically<DD><CODE>images</CODE> - a bundle that provides images for this menu</DL>
+</DL>
+<HR>
+
+<A NAME="MenuBar(boolean, com.google.gwt.user.client.ui.MenuBar.Resources)"><!-- --></A><H3>
+MenuBar</H3>
+<PRE>
+public <B>MenuBar</B>(boolean&nbsp;vertical,
+               <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.Resources.html" title="interface in com.google.gwt.user.client.ui">MenuBar.Resources</A>&nbsp;resources)</PRE>
+<DL>
+<DD>Creates an empty menu bar that uses the specified ClientBundle for menu
+ images.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>vertical</CODE> - <code>true</code> to orient the menu bar vertically<DD><CODE>resources</CODE> - a bundle that provides images for this menu</DL>
+</DL>
+<HR>
+
+<A NAME="MenuBar(com.google.gwt.user.client.ui.MenuBar.MenuBarImages)"><!-- --></A><H3>
+MenuBar</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public <B>MenuBar</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui">MenuBar.MenuBarImages</A>&nbsp;images)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#MenuBar(com.google.gwt.user.client.ui.MenuBar.Resources)"><CODE>MenuBar(Resources)</CODE></A></I>
+<P>
+<DD>Creates an empty horizontal menu bar that uses the specified image bundle
+ for menu images.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>images</CODE> - a bundle that provides images for this menu</DL>
+</DL>
+<HR>
+
+<A NAME="MenuBar(com.google.gwt.user.client.ui.MenuBar.Resources)"><!-- --></A><H3>
+MenuBar</H3>
+<PRE>
+public <B>MenuBar</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.Resources.html" title="interface in com.google.gwt.user.client.ui">MenuBar.Resources</A>&nbsp;resources)</PRE>
+<DL>
+<DD>Creates an empty horizontal menu bar that uses the specified ClientBundle
+ for menu images.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>resources</CODE> - a bundle that provides images for this menu</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><!-- --></A><H3>
+addCloseHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addCloseHandler</B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">HasCloseHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>CloseEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">addCloseHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration for the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.user.client.ui.MenuItem)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Adds a menu item to the bar.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be added
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.user.client.Command)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                        <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client">Command</A>&nbsp;cmd)</PRE>
+<DL>
+<DD>Adds a menu item to the bar containing SafeHtml, that will fire the given
+ command when it is selected.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - the item's html text<DD><CODE>cmd</CODE> - the command to be fired
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(java.lang.String, boolean, com.google.gwt.user.client.Command)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(java.lang.String&nbsp;text,
+                        boolean&nbsp;asHTML,
+                        <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client">Command</A>&nbsp;cmd)</PRE>
+<DL>
+<DD>Adds a menu item to the bar, that will fire the given command when it is
+ selected.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the item's text<DD><CODE>asHTML</CODE> - <code>true</code> to treat the specified text as html<DD><CODE>cmd</CODE> - the command to be fired
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.user.client.ui.MenuBar)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui">MenuBar</A>&nbsp;popup)</PRE>
+<DL>
+<DD>Adds a menu item to the bar, that will open the specified menu when it is
+ selected.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - the item's html text<DD><CODE>popup</CODE> - the menu to be cascaded from it
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(java.lang.String, boolean, com.google.gwt.user.client.ui.MenuBar)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(java.lang.String&nbsp;text,
+                        boolean&nbsp;asHTML,
+                        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui">MenuBar</A>&nbsp;popup)</PRE>
+<DL>
+<DD>Adds a menu item to the bar, that will open the specified menu when it is
+ selected.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the item's text<DD><CODE>asHTML</CODE> - <code>true</code> to treat the specified text as html<DD><CODE>popup</CODE> - the menu to be cascaded from it
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(java.lang.String, com.google.gwt.user.client.Command)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(java.lang.String&nbsp;text,
+                        <A HREF="../../../../../../com/google/gwt/user/client/Command.html" title="interface in com.google.gwt.user.client">Command</A>&nbsp;cmd)</PRE>
+<DL>
+<DD>Adds a menu item to the bar, that will fire the given command when it is
+ selected.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the item's text<DD><CODE>cmd</CODE> - the command to be fired
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(java.lang.String, com.google.gwt.user.client.ui.MenuBar)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>addItem</B>(java.lang.String&nbsp;text,
+                        <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui">MenuBar</A>&nbsp;popup)</PRE>
+<DL>
+<DD>Adds a menu item to the bar, that will open the specified menu when it is
+ selected.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the item's text<DD><CODE>popup</CODE> - the menu to be cascaded from it
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addSeparator()"><!-- --></A><H3>
+addSeparator</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A> <B>addSeparator</B>()</PRE>
+<DL>
+<DD>Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> object created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addSeparator(com.google.gwt.user.client.ui.MenuItemSeparator)"><!-- --></A><H3>
+addSeparator</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A> <B>addSeparator</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;separator)</PRE>
+<DL>
+<DD>Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>separator</CODE> - the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> to be added
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearItems()"><!-- --></A><H3>
+clearItems</H3>
+<PRE>
+public void <B>clearItems</B>()</PRE>
+<DL>
+<DD>Removes all menu items from this menu bar.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="closeAllChildren(boolean)"><!-- --></A><H3>
+closeAllChildren</H3>
+<PRE>
+public void <B>closeAllChildren</B>(boolean&nbsp;focus)</PRE>
+<DL>
+<DD>Closes this menu and all child menu popups.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>focus</CODE> - true to move focus to the parent</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="focus()"><!-- --></A><H3>
+focus</H3>
+<PRE>
+public void <B>focus</B>()</PRE>
+<DL>
+<DD>Give this MenuBar focus.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAutoOpen()"><!-- --></A><H3>
+getAutoOpen</H3>
+<PRE>
+public boolean <B>getAutoOpen</B>()</PRE>
+<DL>
+<DD>Gets whether this menu bar's child menus will open when the mouse is moved
+ over it.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if child menus will auto-open</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getItemIndex(com.google.gwt.user.client.ui.MenuItem)"><!-- --></A><H3>
+getItemIndex</H3>
+<PRE>
+public int <B>getItemIndex</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Get the index of a <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the index of the item, or -1 if it is not contained by this MenuBar</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSeparatorIndex(com.google.gwt.user.client.ui.MenuItemSeparator)"><!-- --></A><H3>
+getSeparatorIndex</H3>
+<PRE>
+public int <B>getSeparatorIndex</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;item)</PRE>
+<DL>
+<DD>Get the index of a <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the index of the separator, or -1 if it is not contained by this
+         MenuBar</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertItem(com.google.gwt.user.client.ui.MenuItem, int)"><!-- --></A><H3>
+insertItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>insertItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item,
+                           int&nbsp;beforeIndex)
+                    throws java.lang.IndexOutOfBoundsException</PRE>
+<DL>
+<DD>Adds a menu item to the bar at a specific index.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be inserted<DD><CODE>beforeIndex</CODE> - the index where the item should be inserted
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> object
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if <code>beforeIndex</code> is out of
+           range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertSeparator(int)"><!-- --></A><H3>
+insertSeparator</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A> <B>insertSeparator</B>(int&nbsp;beforeIndex)</PRE>
+<DL>
+<DD>Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s at the specified index.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>beforeIndex</CODE> - the index where the separator should be inserted
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> object
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if <code>beforeIndex</code> is out of
+           range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertSeparator(com.google.gwt.user.client.ui.MenuItemSeparator, int)"><!-- --></A><H3>
+insertSeparator</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A> <B>insertSeparator</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;separator,
+                                         int&nbsp;beforeIndex)
+                                  throws java.lang.IndexOutOfBoundsException</PRE>
+<DL>
+<DD>Adds a thin line to the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuBar</CODE></A> to separate sections of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A>s at the specified index.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>separator</CODE> - the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> to be inserted<DD><CODE>beforeIndex</CODE> - the index where the separator should be inserted
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> object
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if <code>beforeIndex</code> is out of
+           range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAnimationEnabled()"><!-- --></A><H3>
+isAnimationEnabled</H3>
+<PRE>
+public boolean <B>isAnimationEnabled</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">HasAnimation</A></CODE></B></DD>
+<DD>Returns true if animations are enabled, false if not.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">isAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isFocusOnHoverEnabled()"><!-- --></A><H3>
+isFocusOnHoverEnabled</H3>
+<PRE>
+public boolean <B>isFocusOnHoverEnabled</B>()</PRE>
+<DL>
+<DD>Check whether or not this widget will steal keyboard focus when the mouse
+ hovers over it.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if enabled, false if disabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="moveSelectionDown()"><!-- --></A><H3>
+moveSelectionDown</H3>
+<PRE>
+public void <B>moveSelectionDown</B>()</PRE>
+<DL>
+<DD>Moves the menu selection down to the next item. If there is no selection,
+ selects the first item. If there are no items at all, does nothing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="moveSelectionUp()"><!-- --></A><H3>
+moveSelectionUp</H3>
+<PRE>
+public void <B>moveSelectionUp</B>()</PRE>
+<DL>
+<DD>Moves the menu selection up to the previous item. If there is no selection,
+ selects the first item. If there are no items at all, does nothing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onBrowserEvent(com.google.gwt.user.client.Event)"><!-- --></A><H3>
+onBrowserEvent</H3>
+<PRE>
+public void <B>onBrowserEvent</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/EventListener.html#onBrowserEvent(com.google.gwt.user.client.Event)">EventListener</A></CODE></B></DD>
+<DD>Fired whenever a browser event is received.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/EventListener.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event received</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onPopupClosed(com.google.gwt.user.client.ui.PopupPanel, boolean)"><!-- --></A><H3>
+onPopupClosed</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>onPopupClosed</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&nbsp;sender,
+                                     boolean&nbsp;autoClosed)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(CloseHandler)</CODE></A> instead</I>
+<P>
+<DD>Closes the menu bar.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html#onPopupClosed(com.google.gwt.user.client.ui.PopupPanel, boolean)">onPopupClosed</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - popup being closed.<DD><CODE>autoClosed</CODE> - <code>true</code> if the popup was automatically closed;
+          <code>false</code> if it was closed programmatically.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeItem(com.google.gwt.user.client.ui.MenuItem)"><!-- --></A><H3>
+removeItem</H3>
+<PRE>
+public void <B>removeItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Removes the specified menu item from the bar.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be removed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeSeparator(com.google.gwt.user.client.ui.MenuItemSeparator)"><!-- --></A><H3>
+removeSeparator</H3>
+<PRE>
+public void <B>removeSeparator</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>&nbsp;separator)</PRE>
+<DL>
+<DD>Removes the specified <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItemSeparator</CODE></A> from the bar.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>separator</CODE> - the separator to be removed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="selectItem(com.google.gwt.user.client.ui.MenuItem)"><!-- --></A><H3>
+selectItem</H3>
+<PRE>
+public void <B>selectItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Select the given MenuItem, which must be a direct child of this MenuBar.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the MenuItem to select, or null to clear selection</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAnimationEnabled(boolean)"><!-- --></A><H3>
+setAnimationEnabled</H3>
+<PRE>
+public void <B>setAnimationEnabled</B>(boolean&nbsp;enable)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">HasAnimation</A></CODE></B></DD>
+<DD>Enable or disable animations.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enable</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAutoOpen(boolean)"><!-- --></A><H3>
+setAutoOpen</H3>
+<PRE>
+public void <B>setAutoOpen</B>(boolean&nbsp;autoOpen)</PRE>
+<DL>
+<DD>Sets whether this menu bar's child menus will open when the mouse is moved
+ over it.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>autoOpen</CODE> - <code>true</code> to cause child menus to auto-open</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFocusOnHoverEnabled(boolean)"><!-- --></A><H3>
+setFocusOnHoverEnabled</H3>
+<PRE>
+public void <B>setFocusOnHoverEnabled</B>(boolean&nbsp;enabled)</PRE>
+<DL>
+<DD>Enable or disable auto focus when the mouse hovers over the MenuBar. This
+ allows the MenuBar to respond to keyboard events without the user having to
+ click on it, but it will steal focus from other elements on the page.
+ Enabled by default.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enabled</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getItems()"><!-- --></A><H3>
+getItems</H3>
+<PRE>
+protected java.util.List&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>&gt; <B>getItems</B>()</PRE>
+<DL>
+<DD>Returns a list containing the <code>MenuItem</code> objects in the menu
+ bar. If there are no items in the menu bar, then an empty <code>List</code>
+ object will be returned.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a list containing the <code>MenuItem</code> objects in the menu bar</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSelectedItem()"><!-- --></A><H3>
+getSelectedItem</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A> <B>getSelectedItem</B>()</PRE>
+<DL>
+<DD>Returns the <code>MenuItem</code> that is currently selected (highlighted)
+ by the user. If none of the items in the menu are currently selected, then
+ <code>null</code> will be returned.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the <code>MenuItem</code> that is currently selected, or
+         <code>null</code> if no items are currently selected</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onDetach()"><!-- --></A><H3>
+onDetach</H3>
+<PRE>
+protected void <B>onDetach</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">Widget</A></CODE></B></DD>
+<DD><p>
+ This method is called when a widget is detached from the browser's
+ document. To receive notification before a Widget is removed from the
+ document, override the <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()"><CODE>Widget.onUnload()</CODE></A> method or use <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)"><CODE>Widget.addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)</CODE></A>.
+ </p>
+ <p>
+ It is strongly recommended that you override <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()"><CODE>Widget.onUnload()</CODE></A> or
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()"><CODE>Widget.doDetachChildren()</CODE></A> instead of this method to avoid inconsistencies
+ between logical and physical attachment states.
+ </p>
+ <p>
+ Subclasses that override this method must call
+ <code>super.onDetach()</code> to ensure that the Widget has been detached
+ from the underlying Element. Failure to do so will result in application
+ memory leaks due to circular references between DOM Elements and JavaScript
+ objects.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">onDetach</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()"><CODE>Widget.onUnload()</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()"><CODE>Widget.doDetachChildren()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEnsureDebugId(java.lang.String)"><!-- --></A><H3>
+onEnsureDebugId</H3>
+<PRE>
+protected void <B>onEnsureDebugId</B>(java.lang.String&nbsp;baseID)</PRE>
+<DL>
+<DD><b>Affected Elements:</b>
+ <ul>
+ <li>-item# = the <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui"><CODE>MenuItem</CODE></A> at the specified index.</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseID</CODE> - the base ID used by the main element<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)"><CODE>UIObject.onEnsureDebugId(String)</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MenuBar.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/LongBox.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MenuBar.MenuBarImages.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/MenuBar.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MenuBar.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

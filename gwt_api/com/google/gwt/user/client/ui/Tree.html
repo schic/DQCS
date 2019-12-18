@@ -1,0 +1,2082 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Tree (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Tree (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Tree.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/ToggleButton.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/Tree.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Tree.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class Tree</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.UIObject</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Widget</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.Tree</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllFocusHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllFocusHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllKeyHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllKeyHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllMouseHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllMouseHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasBlurHandlers.html" title="interface in com.google.gwt.event.dom.client">HasBlurHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasFocusHandlers.html" title="interface in com.google.gwt.event.dom.client">HasFocusHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyDownHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyDownHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyPressHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyPressHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyUpHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyUpHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseDownHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseDownHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseMoveHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseMoveHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOutHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseOutHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOverHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseOverHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseUpHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseUpHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseWheelHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseWheelHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasAttachHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasAttachHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasOpenHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasOpenHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasSelectionHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasSelectionHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasFocus.html" title="interface in com.google.gwt.user.client.ui">HasFocus</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesFocusEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesKeyboardEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesMouseEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesTreeEvents</A>, java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>Tree</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A><DT>implements <A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesTreeEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasFocus.html" title="interface in com.google.gwt.user.client.ui">HasFocus</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllKeyHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllKeyHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllFocusHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllFocusHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasSelectionHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasSelectionHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasOpenHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasOpenHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesMouseEvents</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllMouseHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllMouseHandlers</A></DL>
+</PRE>
+
+<P>
+A standard hierarchical tree widget. The tree contains a hierarchy of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui"><CODE>TreeItems</CODE></A> that the user can
+ open, close, and select.
+ <p>
+ <img class='gallery' src='doc-files/Tree.png'/>
+ </p>
+ <h3>CSS Style Rules</h3>
+ <dl>
+ <dt>.gwt-Tree</dt>
+ <dd>the tree itself</dd>
+ <dt>.gwt-Tree .gwt-TreeItem</dt>
+ <dd>a tree item</dd>
+ <dt>.gwt-Tree .gwt-TreeItem-selected</dt>
+ <dd>a selected tree item</dd>
+ </dl>
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class TreeExample implements EntryPoint {
+
+  public void onModuleLoad() {
+    // Create a tree with a few items in it.
+    TreeItem root = new TreeItem("root");
+    root.addItem("item0");
+    root.addItem("item1");
+    root.addItem("item2");
+
+    // Add a CheckBox to the tree
+    TreeItem item = new TreeItem(new CheckBox("item3"));
+    root.addItem(item);
+
+    Tree t = new Tree();
+    t.addItem(root);
+
+    // Add it to the root panel.
+    RootPanel.get().add(t);
+  }
+}
+</pre></blockquote>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui">Tree.Resources</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ClientBundle that provides images for this widget.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.HasTreeItems"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems.ForIsWidget</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.HasWidgets"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree()">Tree</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs an empty tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.Tree.Resources)">Tree</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui">Tree.Resources</A>&nbsp;resources)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a tree that uses the specified ClientBundle for images.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.Tree.Resources, boolean)">Tree</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui">Tree.Resources</A>&nbsp;resources,
+     boolean&nbsp;useLeafImages)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a tree that uses the specified ClientBundle for images.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.TreeImages)">Tree</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeImages.html" title="interface in com.google.gwt.user.client.ui">TreeImages</A>&nbsp;images)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.Tree.Resources)"><CODE>Tree(Resources)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.TreeImages, boolean)">Tree</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeImages.html" title="interface in com.google.gwt.user.client.ui">TreeImages</A>&nbsp;images,
+     boolean&nbsp;useLeafImages)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.Tree.Resources, boolean)"><CODE>Tree(Resources, boolean)</CODE></A></I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#add(com.google.gwt.user.client.ui.IsWidget)">add</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overloaded version for IsWidget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#add(com.google.gwt.user.client.ui.Widget)">add</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds the widget as a root tree item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addBlurHandler(com.google.gwt.event.dom.client.BlurHandler)">addBlurHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/BlurHandler.html" title="interface in com.google.gwt.event.dom.client">BlurHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/BlurEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>BlurEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">addCloseHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>CloseEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)">addFocusHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/FocusHandler.html" title="interface in com.google.gwt.event.dom.client">FocusHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/FocusEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>FocusEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addFocusListener(com.google.gwt.user.client.ui.FocusListener)">addFocusListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/FocusListener.html" title="interface in com.google.gwt.user.client.ui">FocusListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)"><CODE>addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(com.google.gwt.user.client.ui.IsTreeItem)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsTreeItem.html" title="interface in com.google.gwt.user.client.ui">IsTreeItem</A>&nbsp;isItem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds an item to the root level of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(com.google.gwt.user.client.ui.IsWidget)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overloaded version for IsWidget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(com.google.gwt.safehtml.shared.SafeHtml)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;itemHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a simple tree item containing the specified html.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(java.lang.String)">addItem</A></B>(java.lang.String&nbsp;itemHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a simple tree item containing the specified html.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(com.google.gwt.user.client.ui.TreeItem)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds an item to the root level of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(com.google.gwt.user.client.ui.Widget)">addItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a new tree item containing the specified widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">addKeyboardListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)"><CODE>addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)"><CODE>addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)</CODE></A> and
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)"><CODE>addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)">addKeyDownHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownHandler.html" title="interface in com.google.gwt.event.dom.client">KeyDownHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyDownEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)">addKeyPressHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressHandler.html" title="interface in com.google.gwt.event.dom.client">KeyPressHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyPressEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)">addKeyUpHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpHandler.html" title="interface in com.google.gwt.event.dom.client">KeyUpHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyUpEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)">addMouseDownHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseDownHandler.html" title="interface in com.google.gwt.event.dom.client">MouseDownHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseDownEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseDownEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseListener(com.google.gwt.user.client.ui.MouseListener)">addMouseListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MouseListener.html" title="interface in com.google.gwt.user.client.ui">MouseListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)"><CODE>addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)</CODE></A> <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)"><CODE>addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)</CODE></A>,
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)"><CODE>addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)"><CODE>addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)</CODE></A> and
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)"><CODE>addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)">addMouseMoveHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseMoveHandler.html" title="interface in com.google.gwt.event.dom.client">MouseMoveHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseMoveEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseMoveEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)">addMouseOutHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOutHandler.html" title="interface in com.google.gwt.event.dom.client">MouseOutHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOutEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseOutEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)">addMouseOverHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOverHandler.html" title="interface in com.google.gwt.event.dom.client">MouseOverHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOverEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseOverEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)">addMouseUpHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseUpHandler.html" title="interface in com.google.gwt.event.dom.client">MouseUpHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseUpEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseUpEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseWheelHandler(com.google.gwt.event.dom.client.MouseWheelHandler)">addMouseWheelHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseWheelHandler.html" title="interface in com.google.gwt.event.dom.client">MouseWheelHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseWheelEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseWheelEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler)">addOpenHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenHandler.html" title="interface in com.google.gwt.event.logical.shared">OpenHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds an <A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>OpenEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler)">addSelectionHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionHandler.html" title="interface in com.google.gwt.event.logical.shared">SelectionHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>SelectionEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addTextItem(java.lang.String)">addTextItem</A></B>(java.lang.String&nbsp;itemText)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a simple tree item containing the specified text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addTreeListener(com.google.gwt.user.client.ui.TreeListener)">addTreeListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeListener.html" title="interface in com.google.gwt.user.client.ui">TreeListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler)"><CODE>addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler<com.google.gwt.user.client.ui.TreeItem>)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler)"><CODE>addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler<com.google.gwt.user.client.ui.TreeItem>)</CODE></A>, and
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler<com.google.gwt.user.client.ui.TreeItem>)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all tree items from the current tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#doAttachChildren()">doAttachChildren</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A> for each of its
+ child widgets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#doDetachChildren()">doDetachChildren</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()"><CODE>Widget.onDetach()</CODE></A> for each of its
+ child widgets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#ensureSelectedItemVisible()">ensureSelectedItemVisible</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensures that the currently-selected item is visible, opening its parents
+ and scrolling the tree as necessary.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#getItem(int)">getItem</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the top-level tree item at the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#getItemCount()">getItemCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the number of items contained at the root of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#getSelectedItem()">getSelectedItem</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the currently selected item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#getTabIndex()">getTabIndex</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the widget's position in the tab index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#insertItem(int, com.google.gwt.safehtml.shared.SafeHtml)">insertItem</A></B>(int&nbsp;beforeIndex,
+           <A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;itemHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts a child tree item at the specified index containing the specified
+ html.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#insertItem(int, java.lang.String)">insertItem</A></B>(int&nbsp;beforeIndex,
+           java.lang.String&nbsp;itemText)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts a child tree item at the specified index containing the specified
+ text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#insertItem(int, com.google.gwt.user.client.ui.TreeItem)">insertItem</A></B>(int&nbsp;beforeIndex,
+           <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts an item into the root level of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#insertItem(int, com.google.gwt.user.client.ui.Widget)">insertItem</A></B>(int&nbsp;beforeIndex,
+           <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts a child tree item at the specified index containing the specified
+ widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#isAnimationEnabled()">isAnimationEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if animations are enabled, false if not.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#isKeyboardNavigationEnabled(com.google.gwt.user.client.ui.TreeItem)">isKeyboardNavigationEnabled</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;currentItem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indicates if keyboard navigation is enabled for the Tree and for a given
+ TreeItem.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Iterator&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#iterator()">iterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets an iterator for the contained widgets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired whenever a browser event is received.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></B>(java.lang.String&nbsp;baseID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Affected Elements:</b>
+ 
+ -root = The root <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui"><CODE>TreeItem</CODE></A>.
+ </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#onLoad()">onLoad</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is called immediately after a widget becomes attached to the
+ browser's document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#remove(com.google.gwt.user.client.ui.IsWidget)">remove</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overloaded version for IsWidget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#remove(com.google.gwt.user.client.ui.Widget)">remove</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a child widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeFocusListener(com.google.gwt.user.client.ui.FocusListener)">removeFocusListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/FocusListener.html" title="interface in com.google.gwt.user.client.ui">FocusListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)"><CODE>addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeItem(com.google.gwt.user.client.ui.IsTreeItem)">removeItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsTreeItem.html" title="interface in com.google.gwt.user.client.ui">IsTreeItem</A>&nbsp;isItem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes an item from the root level of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeItem(com.google.gwt.user.client.ui.TreeItem)">removeItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes an item from the root level of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeItems()">removeItems</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes all items from the root level of this tree.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">removeKeyboardListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by an add*Handler method instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeMouseListener(com.google.gwt.user.client.ui.MouseListener)">removeMouseListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MouseListener.html" title="interface in com.google.gwt.user.client.ui">MouseListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by an add*Handler method instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#removeTreeListener(com.google.gwt.user.client.ui.TreeListener)">removeTreeListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeListener.html" title="interface in com.google.gwt.user.client.ui">TreeListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by an add*Handler method instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#setAccessKey(char)">setAccessKey</A></B>(char&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the widget's 'access key'.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></B>(boolean&nbsp;enable)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable animations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#setFocus(boolean)">setFocus</A></B>(boolean&nbsp;focus)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explicitly focus/unfocus this widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#setSelectedItem(com.google.gwt.user.client.ui.TreeItem)">setSelectedItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selects a specified item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#setSelectedItem(com.google.gwt.user.client.ui.TreeItem, boolean)">setSelectedItem</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item,
+                boolean&nbsp;fireEvents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selects a specified item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#setTabIndex(int)">setTabIndex</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the widget's position in the tab index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Iterator&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#treeItemIterator()">treeItemIterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iterator of tree items.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Widget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)">addAttachHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addBitlessDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addBitlessDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidget()">asWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidgetOrNull(com.google.gwt.user.client.ui.IsWidget)">asWidgetOrNull</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#createHandlerManager()">createHandlerManager</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#delegateEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.event.shared.GwtEvent)">delegateEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getLayoutData()">getLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getParent()">getParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isAttached()">isAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isOrWasAttached()">isOrWasAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()">onAttach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">onDetach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()">onUnload</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#removeFromParent()">removeFromParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#setLayoutData(java.lang.Object)">setLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">sinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.event.shared.HasHandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Tree()"><!-- --></A><H3>
+Tree</H3>
+<PRE>
+public <B>Tree</B>()</PRE>
+<DL>
+<DD>Constructs an empty tree.
+<P>
+</DL>
+<HR>
+
+<A NAME="Tree(com.google.gwt.user.client.ui.Tree.Resources)"><!-- --></A><H3>
+Tree</H3>
+<PRE>
+public <B>Tree</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui">Tree.Resources</A>&nbsp;resources)</PRE>
+<DL>
+<DD>Constructs a tree that uses the specified ClientBundle for images.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>resources</CODE> - a bundle that provides tree specific images</DL>
+</DL>
+<HR>
+
+<A NAME="Tree(com.google.gwt.user.client.ui.Tree.Resources, boolean)"><!-- --></A><H3>
+Tree</H3>
+<PRE>
+public <B>Tree</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui">Tree.Resources</A>&nbsp;resources,
+            boolean&nbsp;useLeafImages)</PRE>
+<DL>
+<DD>Constructs a tree that uses the specified ClientBundle for images. If this
+ tree does not use leaf images, the width of the Resources's leaf image will
+ control the leaf indent.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>resources</CODE> - a bundle that provides tree specific images<DD><CODE>useLeafImages</CODE> - use leaf images from bundle</DL>
+</DL>
+<HR>
+
+<A NAME="Tree(com.google.gwt.user.client.ui.TreeImages)"><!-- --></A><H3>
+Tree</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public <B>Tree</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeImages.html" title="interface in com.google.gwt.user.client.ui">TreeImages</A>&nbsp;images)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.Tree.Resources)"><CODE>Tree(Resources)</CODE></A></I>
+<P>
+<DD>Constructs a tree that uses the specified image bundle for images.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>images</CODE> - a bundle that provides tree specific images</DL>
+</DL>
+<HR>
+
+<A NAME="Tree(com.google.gwt.user.client.ui.TreeImages, boolean)"><!-- --></A><H3>
+Tree</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public <B>Tree</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeImages.html" title="interface in com.google.gwt.user.client.ui">TreeImages</A>&nbsp;images,
+                       boolean&nbsp;useLeafImages)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>replaced by <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#Tree(com.google.gwt.user.client.ui.Tree.Resources, boolean)"><CODE>Tree(Resources, boolean)</CODE></A></I>
+<P>
+<DD>Constructs a tree that uses the specified image bundle for images. If this
+ tree does not use leaf images, the width of the TreeImage's leaf image will
+ control the leaf indent.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>images</CODE> - a bundle that provides tree specific images<DD><CODE>useLeafImages</CODE> - use leaf images from bundle</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="add(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public void <B>add</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Adds the widget as a root tree item.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#add(com.google.gwt.user.client.ui.Widget)">add</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - widget to add.<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#add(com.google.gwt.user.client.ui.Widget)"><CODE>HasWidgets.add(com.google.gwt.user.client.ui.Widget)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(com.google.gwt.user.client.ui.IsWidget)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public void <B>add</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;w)</PRE>
+<DL>
+<DD>Overloaded version for IsWidget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html#add(com.google.gwt.user.client.ui.IsWidget)">add</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#add(com.google.gwt.user.client.ui.Widget)"><CODE>add(Widget)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addBlurHandler(com.google.gwt.event.dom.client.BlurHandler)"><!-- --></A><H3>
+addBlurHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addBlurHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/BlurHandler.html" title="interface in com.google.gwt.event.dom.client">BlurHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasBlurHandlers.html#addBlurHandler(com.google.gwt.event.dom.client.BlurHandler)">HasBlurHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/BlurEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>BlurEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasBlurHandlers.html#addBlurHandler(com.google.gwt.event.dom.client.BlurHandler)">addBlurHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasBlurHandlers.html" title="interface in com.google.gwt.event.dom.client">HasBlurHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the blur handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><!-- --></A><H3>
+addCloseHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addCloseHandler</B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">HasCloseHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>CloseEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">addCloseHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration for the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)"><!-- --></A><H3>
+addFocusHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addFocusHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/FocusHandler.html" title="interface in com.google.gwt.event.dom.client">FocusHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasFocusHandlers.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)">HasFocusHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/FocusEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>FocusEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasFocusHandlers.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)">addFocusHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasFocusHandlers.html" title="interface in com.google.gwt.event.dom.client">HasFocusHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the focus handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addFocusListener(com.google.gwt.user.client.ui.FocusListener)"><!-- --></A><H3>
+addFocusListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>addFocusListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/FocusListener.html" title="interface in com.google.gwt.user.client.ui">FocusListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)"><CODE>addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html#addFocusListener(com.google.gwt.user.client.ui.FocusListener)">SourcesFocusEvents</A></CODE></B></DD>
+<DD>Adds a listener interface to receive focus events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html#addFocusListener(com.google.gwt.user.client.ui.FocusListener)">addFocusListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesFocusEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to add</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(java.lang.String)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>addItem</B>(java.lang.String&nbsp;itemHtml)</PRE>
+<DL>
+<DD>Adds a simple tree item containing the specified html.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>itemHtml</CODE> - the text of the item to be added
+<DT><B>Returns:</B><DD>the item that was added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;itemHtml)</PRE>
+<DL>
+<DD>Adds a simple tree item containing the specified html.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#addItem(com.google.gwt.safehtml.shared.SafeHtml)">addItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>itemHtml</CODE> - the html of the item to be added
+<DT><B>Returns:</B><DD>the item that was added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.user.client.ui.TreeItem)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public void <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Adds an item to the root level of this tree.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#addItem(com.google.gwt.user.client.ui.TreeItem)">addItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.user.client.ui.IsTreeItem)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public void <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsTreeItem.html" title="interface in com.google.gwt.user.client.ui">IsTreeItem</A>&nbsp;isItem)</PRE>
+<DL>
+<DD>Adds an item to the root level of this tree.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#addItem(com.google.gwt.user.client.ui.IsTreeItem)">addItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>isItem</CODE> - the wrapper of item to be added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Adds a new tree item containing the specified widget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#addItem(com.google.gwt.user.client.ui.Widget)">addItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the widget to be added
+<DT><B>Returns:</B><DD>the new item</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addItem(com.google.gwt.user.client.ui.IsWidget)"><!-- --></A><H3>
+addItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>addItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;w)</PRE>
+<DL>
+<DD>Overloaded version for IsWidget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.ForIsWidget.html#addItem(com.google.gwt.user.client.ui.IsWidget)">addItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems.ForIsWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addItem(com.google.gwt.user.client.ui.Widget)"><CODE>addItem(Widget)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)"><!-- --></A><H3>
+addKeyboardListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>addKeyboardListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)"><CODE>addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)"><CODE>addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)</CODE></A> and
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)"><CODE>addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html#addKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">SourcesKeyboardEvents</A></CODE></B></DD>
+<DD>Adds a listener interface to receive keyboard events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html#addKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">addKeyboardListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesKeyboardEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to add</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)"><!-- --></A><H3>
+addKeyDownHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addKeyDownHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownHandler.html" title="interface in com.google.gwt.event.dom.client">KeyDownHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyDownHandlers.html#addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)">HasKeyDownHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyDownEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyDownHandlers.html#addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)">addKeyDownHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyDownHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyDownHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the key down handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)"><!-- --></A><H3>
+addKeyPressHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addKeyPressHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressHandler.html" title="interface in com.google.gwt.event.dom.client">KeyPressHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyPressHandlers.html#addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)">HasKeyPressHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyPressEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyPressHandlers.html#addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)">addKeyPressHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyPressHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyPressHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the key press handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)"><!-- --></A><H3>
+addKeyUpHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addKeyUpHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpHandler.html" title="interface in com.google.gwt.event.dom.client">KeyUpHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyUpHandlers.html#addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)">HasKeyUpHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyUpEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyUpHandlers.html#addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)">addKeyUpHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyUpHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyUpHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the key up handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)"><!-- --></A><H3>
+addMouseDownHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addMouseDownHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseDownHandler.html" title="interface in com.google.gwt.event.dom.client">MouseDownHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseDownHandlers.html#addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)">HasMouseDownHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseDownEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseDownEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseDownHandlers.html#addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)">addMouseDownHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseDownHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseDownHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the mouse down handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseListener(com.google.gwt.user.client.ui.MouseListener)"><!-- --></A><H3>
+addMouseListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>addMouseListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MouseListener.html" title="interface in com.google.gwt.user.client.ui">MouseListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)"><CODE>addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)</CODE></A> <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)"><CODE>addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)</CODE></A>,
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)"><CODE>addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)"><CODE>addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)</CODE></A> and
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)"><CODE>addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html#addMouseListener(com.google.gwt.user.client.ui.MouseListener)">SourcesMouseEvents</A></CODE></B></DD>
+<DD>Adds a listener interface to receive mouse events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html#addMouseListener(com.google.gwt.user.client.ui.MouseListener)">addMouseListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesMouseEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to add</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)"><!-- --></A><H3>
+addMouseMoveHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addMouseMoveHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseMoveHandler.html" title="interface in com.google.gwt.event.dom.client">MouseMoveHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseMoveHandlers.html#addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)">HasMouseMoveHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseMoveEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseMoveEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseMoveHandlers.html#addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)">addMouseMoveHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseMoveHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseMoveHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the mouse move handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)"><!-- --></A><H3>
+addMouseOutHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addMouseOutHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOutHandler.html" title="interface in com.google.gwt.event.dom.client">MouseOutHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOutHandlers.html#addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)">HasMouseOutHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOutEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseOutEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOutHandlers.html#addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)">addMouseOutHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOutHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseOutHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the mouse out handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)"><!-- --></A><H3>
+addMouseOverHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addMouseOverHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOverHandler.html" title="interface in com.google.gwt.event.dom.client">MouseOverHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOverHandlers.html#addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)">HasMouseOverHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseOverEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseOverEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOverHandlers.html#addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)">addMouseOverHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOverHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseOverHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the mouse over handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)"><!-- --></A><H3>
+addMouseUpHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addMouseUpHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseUpHandler.html" title="interface in com.google.gwt.event.dom.client">MouseUpHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseUpHandlers.html#addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)">HasMouseUpHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseUpEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseUpEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseUpHandlers.html#addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)">addMouseUpHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseUpHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseUpHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the mouse up handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addMouseWheelHandler(com.google.gwt.event.dom.client.MouseWheelHandler)"><!-- --></A><H3>
+addMouseWheelHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addMouseWheelHandler</B>(<A HREF="../../../../../../com/google/gwt/event/dom/client/MouseWheelHandler.html" title="interface in com.google.gwt.event.dom.client">MouseWheelHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseWheelHandlers.html#addMouseWheelHandler(com.google.gwt.event.dom.client.MouseWheelHandler)">HasMouseWheelHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/dom/client/MouseWheelEvent.html" title="class in com.google.gwt.event.dom.client"><CODE>MouseWheelEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseWheelHandlers.html#addMouseWheelHandler(com.google.gwt.event.dom.client.MouseWheelHandler)">addMouseWheelHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseWheelHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseWheelHandlers</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the mouse wheel handler
+<DT><B>Returns:</B><DD><A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler)"><!-- --></A><H3>
+addOpenHandler</H3>
+<PRE>
+public final <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addOpenHandler</B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenHandler.html" title="interface in com.google.gwt.event.logical.shared">OpenHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasOpenHandlers.html#addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler)">HasOpenHandlers</A></CODE></B></DD>
+<DD>Adds an <A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>OpenEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasOpenHandlers.html#addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler)">addOpenHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasOpenHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasOpenHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration for the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler)"><!-- --></A><H3>
+addSelectionHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addSelectionHandler</B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionHandler.html" title="interface in com.google.gwt.event.logical.shared">SelectionHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasSelectionHandlers.html#addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler)">HasSelectionHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>SelectionEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasSelectionHandlers.html#addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler)">addSelectionHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasSelectionHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasSelectionHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration for the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addTextItem(java.lang.String)"><!-- --></A><H3>
+addTextItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>addTextItem</B>(java.lang.String&nbsp;itemText)</PRE>
+<DL>
+<DD>Adds a simple tree item containing the specified text.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#addTextItem(java.lang.String)">addTextItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>itemText</CODE> - the text of the item to be added
+<DT><B>Returns:</B><DD>the item that was added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addTreeListener(com.google.gwt.user.client.ui.TreeListener)"><!-- --></A><H3>
+addTreeListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>addTreeListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeListener.html" title="interface in com.google.gwt.user.client.ui">TreeListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler)"><CODE>addSelectionHandler(com.google.gwt.event.logical.shared.SelectionHandler<com.google.gwt.user.client.ui.TreeItem>)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler)"><CODE>addOpenHandler(com.google.gwt.event.logical.shared.OpenHandler<com.google.gwt.user.client.ui.TreeItem>)</CODE></A>, and
+             <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler<com.google.gwt.user.client.ui.TreeItem>)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html#addTreeListener(com.google.gwt.user.client.ui.TreeListener)">SourcesTreeEvents</A></CODE></B></DD>
+<DD>Adds a listener interface to receive tree events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html#addTreeListener(com.google.gwt.user.client.ui.TreeListener)">addTreeListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesTreeEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to add</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD>Clears all tree items from the current tree.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#clear()">clear</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ensureSelectedItemVisible()"><!-- --></A><H3>
+ensureSelectedItemVisible</H3>
+<PRE>
+public void <B>ensureSelectedItemVisible</B>()</PRE>
+<DL>
+<DD>Ensures that the currently-selected item is visible, opening its parents
+ and scrolling the tree as necessary.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getItem(int)"><!-- --></A><H3>
+getItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>getItem</B>(int&nbsp;index)</PRE>
+<DL>
+<DD>Gets the top-level tree item at the specified index.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - the index to be retrieved
+<DT><B>Returns:</B><DD>the item at that index</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getItemCount()"><!-- --></A><H3>
+getItemCount</H3>
+<PRE>
+public int <B>getItemCount</B>()</PRE>
+<DL>
+<DD>Gets the number of items contained at the root of this tree.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>this tree's item count</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSelectedItem()"><!-- --></A><H3>
+getSelectedItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>getSelectedItem</B>()</PRE>
+<DL>
+<DD>Gets the currently selected item.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the selected item</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTabIndex()"><!-- --></A><H3>
+getTabIndex</H3>
+<PRE>
+public int <B>getTabIndex</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#getTabIndex()">Focusable</A></CODE></B></DD>
+<DD>Gets the widget's position in the tab index.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#getTabIndex()">getTabIndex</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the widget's tab index</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertItem(int, java.lang.String)"><!-- --></A><H3>
+insertItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>insertItem</B>(int&nbsp;beforeIndex,
+                           java.lang.String&nbsp;itemText)</PRE>
+<DL>
+<DD>Inserts a child tree item at the specified index containing the specified
+ text.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>beforeIndex</CODE> - the index where the item will be inserted<DD><CODE>itemText</CODE> - the text to be added
+<DT><B>Returns:</B><DD>the item that was added
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if the index is out of range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertItem(int, com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+insertItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>insertItem</B>(int&nbsp;beforeIndex,
+                           <A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;itemHtml)</PRE>
+<DL>
+<DD>Inserts a child tree item at the specified index containing the specified
+ html.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>beforeIndex</CODE> - the index where the item will be inserted<DD><CODE>itemHtml</CODE> - the html of the item to be added
+<DT><B>Returns:</B><DD>the item that was added
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if the index is out of range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertItem(int, com.google.gwt.user.client.ui.TreeItem)"><!-- --></A><H3>
+insertItem</H3>
+<PRE>
+public void <B>insertItem</B>(int&nbsp;beforeIndex,
+                       <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Inserts an item into the root level of this tree.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>beforeIndex</CODE> - the index where the item will be inserted<DD><CODE>item</CODE> - the item to be added
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if the index is out of range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertItem(int, com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+insertItem</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A> <B>insertItem</B>(int&nbsp;beforeIndex,
+                           <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Inserts a child tree item at the specified index containing the specified
+ widget.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>beforeIndex</CODE> - the index where the item will be inserted<DD><CODE>widget</CODE> - the widget to be added
+<DT><B>Returns:</B><DD>the item that was added
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if the index is out of range</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAnimationEnabled()"><!-- --></A><H3>
+isAnimationEnabled</H3>
+<PRE>
+public boolean <B>isAnimationEnabled</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">HasAnimation</A></CODE></B></DD>
+<DD>Returns true if animations are enabled, false if not.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">isAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="iterator()"><!-- --></A><H3>
+iterator</H3>
+<PRE>
+public java.util.Iterator&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&gt; <B>iterator</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#iterator()">HasWidgets</A></CODE></B></DD>
+<DD>Gets an iterator for the contained widgets. This iterator is required to
+ implement <CODE>Iterator.remove()</CODE>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#iterator()">iterator</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></CODE><DT><B>Specified by:</B><DD><CODE>iterator</CODE> in interface <CODE>java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onBrowserEvent(com.google.gwt.user.client.Event)"><!-- --></A><H3>
+onBrowserEvent</H3>
+<PRE>
+public void <B>onBrowserEvent</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/EventListener.html#onBrowserEvent(com.google.gwt.user.client.Event)">EventListener</A></CODE></B></DD>
+<DD>Fired whenever a browser event is received.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/EventListener.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event received</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="remove(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+remove</H3>
+<PRE>
+public boolean <B>remove</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#remove(com.google.gwt.user.client.ui.Widget)">HasWidgets</A></CODE></B></DD>
+<DD>Removes a child widget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#remove(com.google.gwt.user.client.ui.Widget)">remove</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget to be removed
+<DT><B>Returns:</B><DD><code>true</code> if the widget was present</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="remove(com.google.gwt.user.client.ui.IsWidget)"><!-- --></A><H3>
+remove</H3>
+<PRE>
+public boolean <B>remove</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;w)</PRE>
+<DL>
+<DD>Overloaded version for IsWidget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html#remove(com.google.gwt.user.client.ui.IsWidget)">remove</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#remove(com.google.gwt.user.client.ui.Widget)"><CODE>remove(Widget)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeFocusListener(com.google.gwt.user.client.ui.FocusListener)"><!-- --></A><H3>
+removeFocusListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>removeFocusListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/FocusListener.html" title="interface in com.google.gwt.user.client.ui">FocusListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by <A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)"><CODE>addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html#removeFocusListener(com.google.gwt.user.client.ui.FocusListener)">SourcesFocusEvents</A></CODE></B></DD>
+<DD>Removes a previously added listener interface.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html#removeFocusListener(com.google.gwt.user.client.ui.FocusListener)">removeFocusListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesFocusEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to remove</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeItem(com.google.gwt.user.client.ui.TreeItem)"><!-- --></A><H3>
+removeItem</H3>
+<PRE>
+public void <B>removeItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Removes an item from the root level of this tree.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#removeItem(com.google.gwt.user.client.ui.TreeItem)">removeItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be removed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeItem(com.google.gwt.user.client.ui.IsTreeItem)"><!-- --></A><H3>
+removeItem</H3>
+<PRE>
+public void <B>removeItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsTreeItem.html" title="interface in com.google.gwt.user.client.ui">IsTreeItem</A>&nbsp;isItem)</PRE>
+<DL>
+<DD>Removes an item from the root level of this tree.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#removeItem(com.google.gwt.user.client.ui.IsTreeItem)">removeItem</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>isItem</CODE> - the wrapper of item to be removed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeItems()"><!-- --></A><H3>
+removeItems</H3>
+<PRE>
+public void <B>removeItems</B>()</PRE>
+<DL>
+<DD>Removes all items from the root level of this tree.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html#removeItems()">removeItems</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasTreeItems.html" title="interface in com.google.gwt.user.client.ui">HasTreeItems</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)"><!-- --></A><H3>
+removeKeyboardListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>removeKeyboardListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by an add*Handler method instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html#removeKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">SourcesKeyboardEvents</A></CODE></B></DD>
+<DD>Removes a previously added listener interface.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html#removeKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">removeKeyboardListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesKeyboardEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to remove</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeMouseListener(com.google.gwt.user.client.ui.MouseListener)"><!-- --></A><H3>
+removeMouseListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>removeMouseListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/MouseListener.html" title="interface in com.google.gwt.user.client.ui">MouseListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by an add*Handler method instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html#removeMouseListener(com.google.gwt.user.client.ui.MouseListener)">SourcesMouseEvents</A></CODE></B></DD>
+<DD>Removes a previously added listener interface.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html#removeMouseListener(com.google.gwt.user.client.ui.MouseListener)">removeMouseListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesMouseEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to remove</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeTreeListener(com.google.gwt.user.client.ui.TreeListener)"><!-- --></A><H3>
+removeTreeListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>removeTreeListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeListener.html" title="interface in com.google.gwt.user.client.ui">TreeListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by an add*Handler method instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html#removeTreeListener(com.google.gwt.user.client.ui.TreeListener)">SourcesTreeEvents</A></CODE></B></DD>
+<DD>Removes a previously added listener interface.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html#removeTreeListener(com.google.gwt.user.client.ui.TreeListener)">removeTreeListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesTreeEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesTreeEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to remove</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAccessKey(char)"><!-- --></A><H3>
+setAccessKey</H3>
+<PRE>
+public void <B>setAccessKey</B>(char&nbsp;key)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setAccessKey(char)">Focusable</A></CODE></B></DD>
+<DD>Sets the widget's 'access key'. This key is used (in conjunction with a
+ browser-specific modifier key) to automatically focus the widget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setAccessKey(char)">setAccessKey</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the widget's access key</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAnimationEnabled(boolean)"><!-- --></A><H3>
+setAnimationEnabled</H3>
+<PRE>
+public void <B>setAnimationEnabled</B>(boolean&nbsp;enable)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">HasAnimation</A></CODE></B></DD>
+<DD>Enable or disable animations.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enable</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFocus(boolean)"><!-- --></A><H3>
+setFocus</H3>
+<PRE>
+public void <B>setFocus</B>(boolean&nbsp;focus)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setFocus(boolean)">Focusable</A></CODE></B></DD>
+<DD>Explicitly focus/unfocus this widget. Only one widget can have focus at a
+ time, and the widget that does will receive all keyboard events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setFocus(boolean)">setFocus</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>focus</CODE> - whether this widget should take focus or release it</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSelectedItem(com.google.gwt.user.client.ui.TreeItem)"><!-- --></A><H3>
+setSelectedItem</H3>
+<PRE>
+public void <B>setSelectedItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item)</PRE>
+<DL>
+<DD>Selects a specified item.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be selected, or <code>null</code> to deselect all
+          items</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSelectedItem(com.google.gwt.user.client.ui.TreeItem, boolean)"><!-- --></A><H3>
+setSelectedItem</H3>
+<PRE>
+public void <B>setSelectedItem</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;item,
+                            boolean&nbsp;fireEvents)</PRE>
+<DL>
+<DD>Selects a specified item.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the item to be selected, or <code>null</code> to deselect all
+          items<DD><CODE>fireEvents</CODE> - <code>true</code> to allow selection events to be fired</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTabIndex(int)"><!-- --></A><H3>
+setTabIndex</H3>
+<PRE>
+public void <B>setTabIndex</B>(int&nbsp;index)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setTabIndex(int)">Focusable</A></CODE></B></DD>
+<DD>Sets the widget's position in the tab index. If more than one widget has
+ the same tab index, each such widget will receive focus in an arbitrary
+ order. Setting the tab index to <code>-1</code> will cause this widget to
+ be removed from the tab order.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setTabIndex(int)">setTabIndex</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - the widget's tab index</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="treeItemIterator()"><!-- --></A><H3>
+treeItemIterator</H3>
+<PRE>
+public java.util.Iterator&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&gt; <B>treeItemIterator</B>()</PRE>
+<DL>
+<DD>Iterator of tree items.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the iterator</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doAttachChildren()"><!-- --></A><H3>
+doAttachChildren</H3>
+<PRE>
+protected void <B>doAttachChildren</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doAttachChildren()">Widget</A></CODE></B></DD>
+<DD>If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A> for each of its
+ child widgets.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doAttachChildren()">doAttachChildren</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doDetachChildren()"><!-- --></A><H3>
+doDetachChildren</H3>
+<PRE>
+protected void <B>doDetachChildren</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()">Widget</A></CODE></B></DD>
+<DD>If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()"><CODE>Widget.onDetach()</CODE></A> for each of its
+ child widgets.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()">doDetachChildren</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()"><CODE>Widget.onDetach()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isKeyboardNavigationEnabled(com.google.gwt.user.client.ui.TreeItem)"><!-- --></A><H3>
+isKeyboardNavigationEnabled</H3>
+<PRE>
+protected boolean <B>isKeyboardNavigationEnabled</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>&nbsp;currentItem)</PRE>
+<DL>
+<DD>Indicates if keyboard navigation is enabled for the Tree and for a given
+ TreeItem. Subclasses of Tree can override this function to selectively
+ enable or disable keyboard navigation.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>currentItem</CODE> - the currently selected TreeItem
+<DT><B>Returns:</B><DD><code>true</code> if the Tree will response to arrow keys by
+         changing the currently selected item</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEnsureDebugId(java.lang.String)"><!-- --></A><H3>
+onEnsureDebugId</H3>
+<PRE>
+protected void <B>onEnsureDebugId</B>(java.lang.String&nbsp;baseID)</PRE>
+<DL>
+<DD><b>Affected Elements:</b>
+ <ul>
+ <li>-root = The root <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui"><CODE>TreeItem</CODE></A>.</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseID</CODE> - the base ID used by the main element<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)"><CODE>UIObject.onEnsureDebugId(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onLoad()"><!-- --></A><H3>
+onLoad</H3>
+<PRE>
+protected void <B>onLoad</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">Widget</A></CODE></B></DD>
+<DD>This method is called immediately after a widget becomes attached to the
+ browser's document.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">onLoad</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Tree.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/ToggleButton.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Tree.Resources.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/Tree.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Tree.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

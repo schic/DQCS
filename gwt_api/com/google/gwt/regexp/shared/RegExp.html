@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+RegExp (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RegExp (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RegExp.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/MatchResult.html" title="class in com.google.gwt.regexp.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/SplitResult.html" title="class in com.google.gwt.regexp.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/regexp/shared/RegExp.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RegExp.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.regexp.shared</FONT>
+<BR>
+Class RegExp</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.regexp.shared.RegExp</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>RegExp</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+A class for regular expressions with features like Javascript's RegExp, plus
+ Javascript String's replace and split methods (which can take a RegExp
+ parameter). The pure Java implementation (for server-side use) uses Java's
+ Pattern class, unavailable under GWT. The super-sourced GWT implementation
+ simply calls on to the native Javascript classes.
+ <p>
+ There are a few small incompatibilities between the two implementations.
+ Java-specific constructs in the regular expression syntax (e.g. [a-z&&[^bc]],
+ (?<=foo), \A, \Q) work only in the pure Java implementation, not the GWT
+ implementation, and are not rejected by either. Also, the Javscript-specific
+ constructs $` and $' in the replacement expression work only in the GWT
+ implementation, not the pure Java implementation, which rejects them.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html" title="class in com.google.gwt.regexp.shared">RegExp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#compile(java.lang.String)">compile</A></B>(java.lang.String&nbsp;pattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a regular expression object from a pattern with no flags.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html" title="class in com.google.gwt.regexp.shared">RegExp</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#compile(java.lang.String, java.lang.String)">compile</A></B>(java.lang.String&nbsp;pattern,
+        java.lang.String&nbsp;flags)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a regular expression object from a pattern using the given flags.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/MatchResult.html" title="class in com.google.gwt.regexp.shared">MatchResult</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#exec(java.lang.String)">exec</A></B>(java.lang.String&nbsp;input)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Applies the regular expression to the given string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getGlobal()">getGlobal</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether the regular expression captures all occurrences of the
+ pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getIgnoreCase()">getIgnoreCase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether the regular expression ignores case.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getLastIndex()">getLastIndex</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the zero-based position at which to start the next match.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getMultiline()">getMultiline</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether '$' and '^' match line returns ('\n' and '\r') in addition
+ to the beginning or end of the string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getSource()">getSource</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the pattern string of the regular expression.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#replace(java.lang.String, java.lang.String)">replace</A></B>(java.lang.String&nbsp;input,
+        java.lang.String&nbsp;replacement)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the input string with the part(s) matching the regular expression
+ replaced with the replacement string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#setLastIndex(int)">setLastIndex</A></B>(int&nbsp;lastIndex)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the zero-based position at which to start the next match.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/SplitResult.html" title="class in com.google.gwt.regexp.shared">SplitResult</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#split(java.lang.String)">split</A></B>(java.lang.String&nbsp;input)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Splits the input string around matches of the regular expression.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/SplitResult.html" title="class in com.google.gwt.regexp.shared">SplitResult</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#split(java.lang.String, int)">split</A></B>(java.lang.String&nbsp;input,
+      int&nbsp;limit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Splits the input string around matches of the regular expression.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#test(java.lang.String)">test</A></B>(java.lang.String&nbsp;input)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines if the regular expression matches the given string.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="compile(java.lang.String)"><!-- --></A><H3>
+compile</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html" title="class in com.google.gwt.regexp.shared">RegExp</A> <B>compile</B>(java.lang.String&nbsp;pattern)</PRE>
+<DL>
+<DD>Creates a regular expression object from a pattern with no flags.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - the Javascript regular expression pattern to compile
+<DT><B>Returns:</B><DD>a new regular expression
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.RuntimeException</CODE> - if the pattern is invalid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compile(java.lang.String, java.lang.String)"><!-- --></A><H3>
+compile</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html" title="class in com.google.gwt.regexp.shared">RegExp</A> <B>compile</B>(java.lang.String&nbsp;pattern,
+                             java.lang.String&nbsp;flags)</PRE>
+<DL>
+<DD>Creates a regular expression object from a pattern using the given flags.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - the Javascript regular expression pattern to compile<DD><CODE>flags</CODE> - the flags string, containing at most one occurrence of <code>'g'</code> (<A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getGlobal()"><CODE>getGlobal()</CODE></A>), <code>'i'</code> (<A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getIgnoreCase()"><CODE>getIgnoreCase()</CODE></A>),
+        or <code>'m'</code> (<A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getMultiline()"><CODE>getMultiline()</CODE></A>).
+<DT><B>Returns:</B><DD>a new regular expression
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.RuntimeException</CODE> - if the pattern or the flags are invalid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="exec(java.lang.String)"><!-- --></A><H3>
+exec</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/regexp/shared/MatchResult.html" title="class in com.google.gwt.regexp.shared">MatchResult</A> <B>exec</B>(java.lang.String&nbsp;input)</PRE>
+<DL>
+<DD>Applies the regular expression to the given string. This call affects the
+ value returned by <A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getLastIndex()"><CODE>getLastIndex()</CODE></A> if the global flag is set.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - the string to apply the regular expression to
+<DT><B>Returns:</B><DD>a match result if the string matches, else <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getGlobal()"><!-- --></A><H3>
+getGlobal</H3>
+<PRE>
+public boolean <B>getGlobal</B>()</PRE>
+<DL>
+<DD>Returns whether the regular expression captures all occurrences of the
+ pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIgnoreCase()"><!-- --></A><H3>
+getIgnoreCase</H3>
+<PRE>
+public boolean <B>getIgnoreCase</B>()</PRE>
+<DL>
+<DD>Returns whether the regular expression ignores case.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLastIndex()"><!-- --></A><H3>
+getLastIndex</H3>
+<PRE>
+public int <B>getLastIndex</B>()</PRE>
+<DL>
+<DD>Returns the zero-based position at which to start the next match. The
+ return value is not defined if the global flag is not set. After a call
+ to <A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#exec(java.lang.String)"><CODE>exec(String)</CODE></A> or <A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#test(java.lang.String)"><CODE>test(String)</CODE></A>, this method returns
+ the next position following the most recent match.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getGlobal()"><CODE>getGlobal()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMultiline()"><!-- --></A><H3>
+getMultiline</H3>
+<PRE>
+public boolean <B>getMultiline</B>()</PRE>
+<DL>
+<DD>Returns whether '$' and '^' match line returns ('\n' and '\r') in addition
+ to the beginning or end of the string.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSource()"><!-- --></A><H3>
+getSource</H3>
+<PRE>
+public java.lang.String <B>getSource</B>()</PRE>
+<DL>
+<DD>Returns the pattern string of the regular expression.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replace(java.lang.String, java.lang.String)"><!-- --></A><H3>
+replace</H3>
+<PRE>
+public java.lang.String <B>replace</B>(java.lang.String&nbsp;input,
+                                java.lang.String&nbsp;replacement)</PRE>
+<DL>
+<DD>Returns the input string with the part(s) matching the regular expression
+ replaced with the replacement string. If the global flag is set, replaces
+ all matches of the regular expression. Otherwise, replaces the first match
+ of the regular expression. As per Javascript semantics, backslashes in the
+ replacement string get no special treatment, but the replacement string can
+ use the following special patterns:
+ <ul>
+ <li>$1, $2, ... $99 - inserts the n'th group matched by the regular
+ expression.
+ <li>$&amp; - inserts the entire string matched by the regular expression.
+ <li>$$ - inserts a $.
+ </ul>
+ Note: $` and $' are *not* supported in the pure Java implementation, and
+ throw an exception.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - the string in which the regular expression is to be searched.<DD><CODE>replacement</CODE> - the replacement string.
+<DT><B>Returns:</B><DD>the input string with the regular expression replaced by the
+         replacement string.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.RuntimeException</CODE> - if <code>replacement</code> is invalid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLastIndex(int)"><!-- --></A><H3>
+setLastIndex</H3>
+<PRE>
+public void <B>setLastIndex</B>(int&nbsp;lastIndex)</PRE>
+<DL>
+<DD>Sets the zero-based position at which to start the next match.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="split(java.lang.String)"><!-- --></A><H3>
+split</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/regexp/shared/SplitResult.html" title="class in com.google.gwt.regexp.shared">SplitResult</A> <B>split</B>(java.lang.String&nbsp;input)</PRE>
+<DL>
+<DD>Splits the input string around matches of the regular expression. If the
+ regular expression is completely empty, splits the input string into its
+ constituent characters. If the regular expression is not empty but matches
+ an empty string, the results are not well defined.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - the string to be split.
+<DT><B>Returns:</B><DD>the strings split off, any of which may be empty.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="split(java.lang.String, int)"><!-- --></A><H3>
+split</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/regexp/shared/SplitResult.html" title="class in com.google.gwt.regexp.shared">SplitResult</A> <B>split</B>(java.lang.String&nbsp;input,
+                         int&nbsp;limit)</PRE>
+<DL>
+<DD>Splits the input string around matches of the regular expression. If the
+ regular expression is completely empty, splits the input string into its
+ constituent characters. If the regular expression is not empty but matches
+ an empty string, the results are not well defined.
+
+ Note: There are some browser inconsistencies with this implementation, as
+ it is delegated to the browser, and no browser follows the spec completely.
+ A major difference is that IE will exclude empty strings in the result.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - the string to be split.<DD><CODE>limit</CODE> - the the maximum number of strings to split off and return,
+        ignoring the rest of the input string. If negative, there is no
+        limit.
+<DT><B>Returns:</B><DD>the strings split off, any of which may be empty.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="test(java.lang.String)"><!-- --></A><H3>
+test</H3>
+<PRE>
+public boolean <B>test</B>(java.lang.String&nbsp;input)</PRE>
+<DL>
+<DD>Determines if the regular expression matches the given string. This call
+ affects the value returned by <A HREF="../../../../../com/google/gwt/regexp/shared/RegExp.html#getLastIndex()"><CODE>getLastIndex()</CODE></A> if the global flag is
+ set. Equivalent to: <code>exec(input) != null</code>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>input</CODE> - the string to apply the regular expression to
+<DT><B>Returns:</B><DD>whether the regular expression matches the given string.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RegExp.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/MatchResult.html" title="class in com.google.gwt.regexp.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/regexp/shared/SplitResult.html" title="class in com.google.gwt.regexp.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/regexp/shared/RegExp.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RegExp.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,342 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+AsyncProxy (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AsyncProxy (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AsyncProxy.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.AllowNonVoid.html" title="annotation in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/AsyncProxy.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AsyncProxy.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client</FONT>
+<BR>
+Interface AsyncProxy&lt;T&gt;</H2>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the type of interface that must be implemented by the derivative
+          class.</DL>
+<HR>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.DefaultValue.html" title="annotation in com.google.gwt.user.client">@AsyncProxy.DefaultValue</A>
+</FONT>public interface <B>AsyncProxy&lt;T&gt;</B></DL>
+</PRE>
+
+<P>
+The AsyncProxy type is used to provide a reachability barrier between classes
+ intended to be used with runAsync while maintaining a simple,
+ deferred-synchronous API. The first invocation of an instance method on the
+ AsyncProxy will trigger the instantiation of a concrete object via runAsync.
+ All method invocations on the proxy will be recorded and played back on the
+ newly-instantiated object after the call to runAsync returns.
+ <p>
+ Once method playback has finished, the proxy will continue to forward
+ invocations onto the instantiated object.
+ 
+ <p>
+ Example use:
+ 
+ <pre>
+ interface IFoo {
+   void doSomething(int a, int b);
+   void anotherMethad(Object o);
+ }
+ class FooImpl implements IFoo { .... }
+ 
+ @ConcreteType(FooImpl.class)
+ interface FooProxy extends AsyncProxy&lt;IFoo&gt;, IFoo {}
+ 
+ class UserOfIFoo {
+   private IFoo foo = GWT.create(FooProxy.class);
+   
+   void makeTrouble() {
+     // This first call triggers a runAsync load
+     foo.doSomething(1, 2);
+     
+     // and this second will replayed after the call to doSomething()
+     foo.anotherMethod("A string");
+   }
+ }
+ </pre>
+ 
+ For cases where dispatch speed is critical, a ProxyCallback can be installed
+ in order to reassign the field containing the AsyncProxy instance with the
+ backing object:
+ 
+ <pre>
+ class UserOfIFoo {
+   private IFoo fooOrProxy = GWT.create(FooProxy.class);
+
+   public UserOfIFoo() {
+     // When the load, initialization, and playback are done, get rid of the proxy.
+     ((AsyncProxy&lt;IFoo&gt;) fooOrProxy).setProxyCallback(new ProxyCallback&lt;IFoo&gt;() {
+       public void onComplete(IFoo instance) {
+         fooOrProxy = instance;
+       }
+     });
+   }
+   
+   void makeTrouble() {
+     // This first call triggers a runAsync load
+     fooOrProxy.doSomething(1, 2);
+     
+     // and this second will also be replayed before the above onComplete is called
+     fooOrProxy.anotherMethod("A string");
+   }
+ }
+ </pre>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.AllowNonVoid.html" title="annotation in com.google.gwt.user.client">AsyncProxy.AllowNonVoid</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this annotation is applied to an AsyncProxy type, it will be legal for
+ the parameterized type <code>T</code> to declare non-void methods.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.ConcreteType.html" title="annotation in com.google.gwt.user.client">AsyncProxy.ConcreteType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This interface should be applied to the AsyncProxy subtype in order to
+ specify the Class literal that will be passed to <A HREF="../../../../../com/google/gwt/core/client/GWT.html#create(java.lang.Class)"><CODE>GWT.create(Class)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.DefaultValue.html" title="annotation in com.google.gwt.user.client">AsyncProxy.DefaultValue</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This annotation specifies the return value for primitive methods when the
+ <A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.AllowNonVoid.html" title="annotation in com.google.gwt.user.client"><CODE>AsyncProxy.AllowNonVoid</CODE></A> annotation has been applied to an AsyncProxy.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.ProxyCallback.html" title="class in com.google.gwt.user.client">AsyncProxy.ProxyCallback</A>&lt;<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.ProxyCallback.html" title="type parameter in AsyncProxy.ProxyCallback">T</A>&gt;</B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The callback used by <A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html#setProxyCallback(com.google.gwt.user.client.AsyncProxy.ProxyCallback)"><CODE>setProxyCallback(ProxyCallback)</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html" title="type parameter in AsyncProxy">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html#getProxiedInstance()">getProxiedInstance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the underlying proxied object if it has been instantiated or
+ <code>null</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html#setProxyCallback(com.google.gwt.user.client.AsyncProxy.ProxyCallback)">setProxyCallback</A></B>(<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.ProxyCallback.html" title="class in com.google.gwt.user.client">AsyncProxy.ProxyCallback</A>&lt;<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html" title="type parameter in AsyncProxy">T</A>&gt;&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets a callback that can be used to influence the initialization process.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getProxiedInstance()"><!-- --></A><H3>
+getProxiedInstance</H3>
+<PRE>
+<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html" title="type parameter in AsyncProxy">T</A> <B>getProxiedInstance</B>()</PRE>
+<DL>
+<DD>Returns the underlying proxied object if it has been instantiated or
+ <code>null</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProxyCallback(com.google.gwt.user.client.AsyncProxy.ProxyCallback)"><!-- --></A><H3>
+setProxyCallback</H3>
+<PRE>
+void <B>setProxyCallback</B>(<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.ProxyCallback.html" title="class in com.google.gwt.user.client">AsyncProxy.ProxyCallback</A>&lt;<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.html" title="type parameter in AsyncProxy">T</A>&gt;&nbsp;callback)</PRE>
+<DL>
+<DD>Sets a callback that can be used to influence the initialization process.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AsyncProxy.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/AsyncProxy.AllowNonVoid.html" title="annotation in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/AsyncProxy.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AsyncProxy.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

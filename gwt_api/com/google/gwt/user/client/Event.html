@@ -1,0 +1,1632 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Event (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Event (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Event.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/Event.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Event.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client</FONT>
+<BR>
+Class Event</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">com.google.gwt.core.client.JavaScriptObject</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">com.google.gwt.dom.client.NativeEvent</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.Event</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>Event</B><DT>extends <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A></DL>
+</PRE>
+
+<P>
+<p>
+ An opaque handle to a native DOM Event. An <code>Event</code> cannot be
+ created directly. Instead, use the <code>Event</code> type when returning a
+ native DOM event from JSNI methods. An <code>Event</code> passed back into
+ JSNI becomes the original DOM event the <code>Event</code> was created from,
+ and can be accessed in JavaScript code as expected. This is typically done by
+ calling methods in the <A HREF="../../../../../com/google/gwt/user/client/DOM.html" title="class in com.google.gwt.user.client"><CODE>DOM</CODE></A> class.
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client">Event.NativePreviewEvent</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Represents a preview of a native <A HREF="../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client"><CODE>Event</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client">Event.NativePreviewHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handler interface for <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A> events.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#FOCUSEVENTS">FOCUSEVENTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit-mask covering both focus events (focus and blur).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#GESTUREEVENTS">GESTUREEVENTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit-mask covering all gesture events (start, change, end).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#KEYEVENTS">KEYEVENTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit-mask covering all keyboard events (down, up, and press).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#MEDIAEVENTS">MEDIAEVENTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit-mask covering all media events.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#MOUSEEVENTS">MOUSEEVENTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit-mask covering all mouse events (down, up, move, over, and out), but
+ not click, dblclick, or wheel events.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONBLUR">ONBLUR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when an element loses keyboard focus.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONCANPLAYTHROUGH">ONCANPLAYTHROUGH</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when media is fully buffered and can be played through to the end.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONCHANGE">ONCHANGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the value of an input element changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONCLICK">ONCLICK</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user clicks on an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONCONTEXTMENU">ONCONTEXTMENU</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user requests an element's context menu (usually by
+ right-clicking).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONDBLCLICK">ONDBLCLICK</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user double-clicks on an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONENDED">ONENDED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when media stops playing.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONERROR">ONERROR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when an image encounters an error.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONFOCUS">ONFOCUS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when an element receives keyboard focus.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONGESTURECHANGE">ONGESTURECHANGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user gesture changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONGESTUREEND">ONGESTUREEND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user gesture ends.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONGESTURESTART">ONGESTURESTART</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user gesture starts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONKEYDOWN">ONKEYDOWN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user depresses a key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONKEYPRESS">ONKEYPRESS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the a character is generated from a keypress (either directly or
+ through auto-repeat).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONKEYUP">ONKEYUP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user releases a key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONLOAD">ONLOAD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when an element (normally an IMG) finishes loading.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONLOSECAPTURE">ONLOSECAPTURE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when an element that has mouse capture loses it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEDOWN">ONMOUSEDOWN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user depresses a mouse button over an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEMOVE">ONMOUSEMOVE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the mouse is moved within an element's area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEOUT">ONMOUSEOUT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the mouse is moved out of an element's area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEOVER">ONMOUSEOVER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the mouse is moved into an element's area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEUP">ONMOUSEUP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user releases a mouse button over an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEWHEEL">ONMOUSEWHEEL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user scrolls the mouse wheel over an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONPASTE">ONPASTE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user pastes text into an input element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONPROGRESS">ONPROGRESS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when progress is made downloading media.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONSCROLL">ONSCROLL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when a scrollable element's scroll offset changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONTOUCHCANCEL">ONTOUCHCANCEL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user cancels touching an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONTOUCHEND">ONTOUCHEND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user ends touching an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONTOUCHMOVE">ONTOUCHMOVE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user moves while touching an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#ONTOUCHSTART">ONTOUCHSTART</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fired when the user starts touching an element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#TOUCHEVENTS">TOUCHEVENTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit-mask covering all touch events (start, move, end, cancel).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#UNDEFINED">UNDEFINED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.dom.client.NativeEvent"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.dom.client.<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#BUTTON_LEFT">BUTTON_LEFT</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#BUTTON_MIDDLE">BUTTON_MIDDLE</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#BUTTON_RIGHT">BUTTON_RIGHT</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#Event()">Event</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not directly instantiable.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#addEventPreview(com.google.gwt.user.client.EventPreview)">addEventPreview</A></B>(<A HREF="../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A>&nbsp;preview)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>replaced by
+             <A HREF="../../../../../com/google/gwt/user/client/Event.html#addNativePreviewHandler(com.google.gwt.user.client.Event.NativePreviewHandler)"><CODE>addNativePreviewHandler(NativePreviewHandler)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#addNativePreviewHandler(com.google.gwt.user.client.Event.NativePreviewHandler)">addNativePreviewHandler</A></B>(<A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client">Event.NativePreviewHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Adds a <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client"><CODE>Event.NativePreviewHandler</CODE></A> that will receive all events before
+ they are fired to their handlers.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#as(com.google.gwt.dom.client.NativeEvent)">as</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Converts the <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client"><CODE>NativeEvent</CODE></A> to Event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#cancelBubble(boolean)">cancelBubble</A></B>(boolean&nbsp;cancel)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#stopPropagation()"><CODE>NativeEvent.stopPropagation()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#fireNativePreviewEvent(com.google.gwt.dom.client.NativeEvent)">fireNativePreviewEvent</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A>&nbsp;nativeEvent)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fire a <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A> for the native event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getCurrentEvent()">getCurrentEvent</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the current event that is being fired.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getCurrentTarget()">getCurrentTarget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getCurrentEventTarget()"><CODE>NativeEvent.getCurrentEventTarget()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getEventListener(com.google.gwt.dom.client.Element)">getEventListener</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client"><CODE>EventListener</CODE></A> that will receive events for the given
+ element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getEventsSunk(com.google.gwt.dom.client.Element)">getEventsSunk</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the current set of events sunk by a given element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getFromElement()">getFromElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()"><CODE>NativeEvent.getRelatedEventTarget()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getRelatedTarget()">getRelatedTarget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()"><CODE>NativeEvent.getRelatedEventTarget()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getRepeat()">getRepeat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>not supported on all browsers</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getTarget()">getTarget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getEventTarget()"><CODE>NativeEvent.getEventTarget()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getToElement()">getToElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()"><CODE>NativeEvent.getRelatedEventTarget()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getTypeInt()">getTypeInt</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the enumerated type of this event, as defined by <A HREF="../../../../../com/google/gwt/user/client/Event.html#ONCLICK"><CODE>ONCLICK</CODE></A>,
+ <A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEDOWN"><CODE>ONMOUSEDOWN</CODE></A>, and so forth.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#getTypeInt(java.lang.String)">getTypeInt</A></B>(java.lang.String&nbsp;typeName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the enumerated type of this event given a valid event type name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#releaseCapture(com.google.gwt.dom.client.Element)">releaseCapture</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Releases mouse capture on the given element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#removeEventPreview(com.google.gwt.user.client.EventPreview)">removeEventPreview</A></B>(<A HREF="../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A>&nbsp;preview)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> returned from
+             <A HREF="../../../../../com/google/gwt/user/client/Event.html#addNativePreviewHandler(com.google.gwt.user.client.Event.NativePreviewHandler)"><CODE>addNativePreviewHandler(NativePreviewHandler)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#setCapture(com.google.gwt.dom.client.Element)">setCapture</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets mouse-capture on the given element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#setEventListener(com.google.gwt.dom.client.Element, com.google.gwt.user.client.EventListener)">setEventListener</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                 <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client"><CODE>EventListener</CODE></A> to receive events for the given element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Event.html#sinkEvents(com.google.gwt.dom.client.Element, int)">sinkEvents</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+           int&nbsp;eventBits)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the current set of events sunk by a given element.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.dom.client.NativeEvent"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.dom.client.<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getAltKey()">getAltKey</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getButton()">getButton</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getChangedTouches()">getChangedTouches</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getCharCode()">getCharCode</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getClientX()">getClientX</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getClientY()">getClientY</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getCtrlKey()">getCtrlKey</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getCurrentEventTarget()">getCurrentEventTarget</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getEventTarget()">getEventTarget</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getKeyCode()">getKeyCode</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getMetaKey()">getMetaKey</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getMouseWheelVelocityY()">getMouseWheelVelocityY</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()">getRelatedEventTarget</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRotation()">getRotation</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getScale()">getScale</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getScreenX()">getScreenX</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getScreenY()">getScreenY</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getShiftKey()">getShiftKey</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getString()">getString</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getTargetTouches()">getTargetTouches</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getTouches()">getTouches</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getType()">getType</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#preventDefault()">preventDefault</A>, <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#stopPropagation()">stopPropagation</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.client.JavaScriptObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.client.<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#cast()">cast</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createArray()">createArray</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createFunction()">createFunction</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createObject()">createObject</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#hashCode()">hashCode</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toSource()">toSource</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ONBLUR"><!-- --></A><H3>
+ONBLUR</H3>
+<PRE>
+public static final int <B>ONBLUR</B></PRE>
+<DL>
+<DD>Fired when an element loses keyboard focus.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONBLUR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONCHANGE"><!-- --></A><H3>
+ONCHANGE</H3>
+<PRE>
+public static final int <B>ONCHANGE</B></PRE>
+<DL>
+<DD>Fired when the value of an input element changes.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONCHANGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONCLICK"><!-- --></A><H3>
+ONCLICK</H3>
+<PRE>
+public static final int <B>ONCLICK</B></PRE>
+<DL>
+<DD>Fired when the user clicks on an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONCLICK">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONDBLCLICK"><!-- --></A><H3>
+ONDBLCLICK</H3>
+<PRE>
+public static final int <B>ONDBLCLICK</B></PRE>
+<DL>
+<DD>Fired when the user double-clicks on an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONDBLCLICK">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONERROR"><!-- --></A><H3>
+ONERROR</H3>
+<PRE>
+public static final int <B>ONERROR</B></PRE>
+<DL>
+<DD>Fired when an image encounters an error.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONERROR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONFOCUS"><!-- --></A><H3>
+ONFOCUS</H3>
+<PRE>
+public static final int <B>ONFOCUS</B></PRE>
+<DL>
+<DD>Fired when an element receives keyboard focus.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONFOCUS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONGESTURECHANGE"><!-- --></A><H3>
+ONGESTURECHANGE</H3>
+<PRE>
+public static final int <B>ONGESTURECHANGE</B></PRE>
+<DL>
+<DD>Fired when the user gesture changes.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONGESTURECHANGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONGESTUREEND"><!-- --></A><H3>
+ONGESTUREEND</H3>
+<PRE>
+public static final int <B>ONGESTUREEND</B></PRE>
+<DL>
+<DD>Fired when the user gesture ends.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONGESTUREEND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONGESTURESTART"><!-- --></A><H3>
+ONGESTURESTART</H3>
+<PRE>
+public static final int <B>ONGESTURESTART</B></PRE>
+<DL>
+<DD>Fired when the user gesture starts.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONGESTURESTART">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONKEYDOWN"><!-- --></A><H3>
+ONKEYDOWN</H3>
+<PRE>
+public static final int <B>ONKEYDOWN</B></PRE>
+<DL>
+<DD>Fired when the user depresses a key.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONKEYDOWN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONKEYPRESS"><!-- --></A><H3>
+ONKEYPRESS</H3>
+<PRE>
+public static final int <B>ONKEYPRESS</B></PRE>
+<DL>
+<DD>Fired when the a character is generated from a keypress (either directly or
+ through auto-repeat).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONKEYPRESS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONKEYUP"><!-- --></A><H3>
+ONKEYUP</H3>
+<PRE>
+public static final int <B>ONKEYUP</B></PRE>
+<DL>
+<DD>Fired when the user releases a key.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONKEYUP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONLOAD"><!-- --></A><H3>
+ONLOAD</H3>
+<PRE>
+public static final int <B>ONLOAD</B></PRE>
+<DL>
+<DD>Fired when an element (normally an IMG) finishes loading.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONLOAD">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONLOSECAPTURE"><!-- --></A><H3>
+ONLOSECAPTURE</H3>
+<PRE>
+public static final int <B>ONLOSECAPTURE</B></PRE>
+<DL>
+<DD>Fired when an element that has mouse capture loses it.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONLOSECAPTURE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONMOUSEDOWN"><!-- --></A><H3>
+ONMOUSEDOWN</H3>
+<PRE>
+public static final int <B>ONMOUSEDOWN</B></PRE>
+<DL>
+<DD>Fired when the user depresses a mouse button over an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONMOUSEDOWN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONMOUSEMOVE"><!-- --></A><H3>
+ONMOUSEMOVE</H3>
+<PRE>
+public static final int <B>ONMOUSEMOVE</B></PRE>
+<DL>
+<DD>Fired when the mouse is moved within an element's area.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONMOUSEMOVE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONMOUSEOUT"><!-- --></A><H3>
+ONMOUSEOUT</H3>
+<PRE>
+public static final int <B>ONMOUSEOUT</B></PRE>
+<DL>
+<DD>Fired when the mouse is moved out of an element's area.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONMOUSEOUT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONMOUSEOVER"><!-- --></A><H3>
+ONMOUSEOVER</H3>
+<PRE>
+public static final int <B>ONMOUSEOVER</B></PRE>
+<DL>
+<DD>Fired when the mouse is moved into an element's area.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONMOUSEOVER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONMOUSEUP"><!-- --></A><H3>
+ONMOUSEUP</H3>
+<PRE>
+public static final int <B>ONMOUSEUP</B></PRE>
+<DL>
+<DD>Fired when the user releases a mouse button over an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONMOUSEUP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONMOUSEWHEEL"><!-- --></A><H3>
+ONMOUSEWHEEL</H3>
+<PRE>
+public static final int <B>ONMOUSEWHEEL</B></PRE>
+<DL>
+<DD>Fired when the user scrolls the mouse wheel over an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONMOUSEWHEEL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONPASTE"><!-- --></A><H3>
+ONPASTE</H3>
+<PRE>
+public static final int <B>ONPASTE</B></PRE>
+<DL>
+<DD>Fired when the user pastes text into an input element.
+ 
+ <p>
+ Note: This event is <em>not</em> supported on Firefox 2 and earlier, or
+ Opera 10 and earlier. Be aware that it will not fire on these browser
+ versions.
+ </p>
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONPASTE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONSCROLL"><!-- --></A><H3>
+ONSCROLL</H3>
+<PRE>
+public static final int <B>ONSCROLL</B></PRE>
+<DL>
+<DD>Fired when a scrollable element's scroll offset changes.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONSCROLL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONTOUCHCANCEL"><!-- --></A><H3>
+ONTOUCHCANCEL</H3>
+<PRE>
+public static final int <B>ONTOUCHCANCEL</B></PRE>
+<DL>
+<DD>Fired when the user cancels touching an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONTOUCHCANCEL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONTOUCHEND"><!-- --></A><H3>
+ONTOUCHEND</H3>
+<PRE>
+public static final int <B>ONTOUCHEND</B></PRE>
+<DL>
+<DD>Fired when the user ends touching an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONTOUCHEND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONTOUCHMOVE"><!-- --></A><H3>
+ONTOUCHMOVE</H3>
+<PRE>
+public static final int <B>ONTOUCHMOVE</B></PRE>
+<DL>
+<DD>Fired when the user moves while touching an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONTOUCHMOVE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONTOUCHSTART"><!-- --></A><H3>
+ONTOUCHSTART</H3>
+<PRE>
+public static final int <B>ONTOUCHSTART</B></PRE>
+<DL>
+<DD>Fired when the user starts touching an element.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONTOUCHSTART">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONCONTEXTMENU"><!-- --></A><H3>
+ONCONTEXTMENU</H3>
+<PRE>
+public static final int <B>ONCONTEXTMENU</B></PRE>
+<DL>
+<DD>Fired when the user requests an element's context menu (usually by
+ right-clicking).
+ 
+ Note that not all browsers will fire this event (notably Opera, as of 9.5).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONCONTEXTMENU">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="FOCUSEVENTS"><!-- --></A><H3>
+FOCUSEVENTS</H3>
+<PRE>
+public static final int <B>FOCUSEVENTS</B></PRE>
+<DL>
+<DD>A bit-mask covering both focus events (focus and blur).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.FOCUSEVENTS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEYEVENTS"><!-- --></A><H3>
+KEYEVENTS</H3>
+<PRE>
+public static final int <B>KEYEVENTS</B></PRE>
+<DL>
+<DD>A bit-mask covering all keyboard events (down, up, and press).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.KEYEVENTS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MOUSEEVENTS"><!-- --></A><H3>
+MOUSEEVENTS</H3>
+<PRE>
+public static final int <B>MOUSEEVENTS</B></PRE>
+<DL>
+<DD>A bit-mask covering all mouse events (down, up, move, over, and out), but
+ not click, dblclick, or wheel events.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.MOUSEEVENTS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="TOUCHEVENTS"><!-- --></A><H3>
+TOUCHEVENTS</H3>
+<PRE>
+public static final int <B>TOUCHEVENTS</B></PRE>
+<DL>
+<DD>A bit-mask covering all touch events (start, move, end, cancel).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.TOUCHEVENTS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="GESTUREEVENTS"><!-- --></A><H3>
+GESTUREEVENTS</H3>
+<PRE>
+public static final int <B>GESTUREEVENTS</B></PRE>
+<DL>
+<DD>A bit-mask covering all gesture events (start, change, end).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.GESTUREEVENTS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONCANPLAYTHROUGH"><!-- --></A><H3>
+ONCANPLAYTHROUGH</H3>
+<PRE>
+public static final int <B>ONCANPLAYTHROUGH</B></PRE>
+<DL>
+<DD>Fired when media is fully buffered and can be played through to the end.
+ 
+ <p>
+ <span style="color:red">Experimental API: This API is still under development
+ and is subject to change.
+ </span>
+ </p>
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONCANPLAYTHROUGH">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONENDED"><!-- --></A><H3>
+ONENDED</H3>
+<PRE>
+public static final int <B>ONENDED</B></PRE>
+<DL>
+<DD>Fired when media stops playing.
+ 
+ <p>
+ <span style="color:red">Experimental API: This API is still under development
+ and is subject to change.
+ </span>
+ </p>
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONENDED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ONPROGRESS"><!-- --></A><H3>
+ONPROGRESS</H3>
+<PRE>
+public static final int <B>ONPROGRESS</B></PRE>
+<DL>
+<DD>Fired when progress is made downloading media.
+ 
+ <p>
+ <span style="color:red">Experimental API: This API is still under development
+ and is subject to change.
+ </span>
+ </p>
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.ONPROGRESS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MEDIAEVENTS"><!-- --></A><H3>
+MEDIAEVENTS</H3>
+<PRE>
+public static final int <B>MEDIAEVENTS</B></PRE>
+<DL>
+<DD>A bit-mask covering all media events.
+ 
+ <p>
+ <span style="color:red">Experimental API: This API is still under development
+ and is subject to change.
+ </span>
+ </p>
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.MEDIAEVENTS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="UNDEFINED"><!-- --></A><H3>
+UNDEFINED</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static final int <B>UNDEFINED</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Value returned by accessors when the actual integer value is undefined. In
+ Development Mode, most accessors assert that the requested attribute is
+ reliable across all supported browsers.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A>, 
+<A HREF="../../../../../constant-values.html#com.google.gwt.user.client.Event.UNDEFINED">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Event()"><!-- --></A><H3>
+Event</H3>
+<PRE>
+protected <B>Event</B>()</PRE>
+<DL>
+<DD>Not directly instantiable. Subclasses should also define a protected no-arg
+ constructor to prevent client code from directly instantiating the class.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addEventPreview(com.google.gwt.user.client.EventPreview)"><!-- --></A><H3>
+addEventPreview</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static void <B>addEventPreview</B>(<A HREF="../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A>&nbsp;preview)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>replaced by
+             <A HREF="../../../../../com/google/gwt/user/client/Event.html#addNativePreviewHandler(com.google.gwt.user.client.Event.NativePreviewHandler)"><CODE>addNativePreviewHandler(NativePreviewHandler)</CODE></A></I>
+<P>
+<DD>Adds an event preview to the preview stack. As long as this preview remains
+ on the top of the stack, it will receive all events before they are fired
+ to their listeners. Note that the event preview will receive <u>all </u>
+ events, including those received due to bubbling, whereas normal event
+ handlers only receive explicitly sunk events.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>preview</CODE> - the event preview to be added to the stack.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addNativePreviewHandler(com.google.gwt.user.client.Event.NativePreviewHandler)"><!-- --></A><H3>
+addNativePreviewHandler</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addNativePreviewHandler</B>(<A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client">Event.NativePreviewHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><p>
+ Adds a <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client"><CODE>Event.NativePreviewHandler</CODE></A> that will receive all events before
+ they are fired to their handlers. Note that the handler will receive
+ <u>all</u> native events, including those received due to bubbling, whereas
+ normal event handlers only receive explicitly sunk events.
+ </p>
+ 
+ <p>
+ Unlike other event handlers, <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client"><CODE>Event.NativePreviewHandler</CODE></A> are fired in the
+ reverse order that they are added, such that the last
+ <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A> that was added is the first to be fired.
+ </p>
+ 
+ <p>
+ Please note that nondeterministic behavior will result if more than one GWT
+ application registers preview handlers. See <a href=
+ 'http://code.google.com/p/google-web-toolkit/issues/detail?id=3892'>issue
+ 3892</a> for details.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client"><CODE>Event.NativePreviewHandler</CODE></A>
+<DT><B>Returns:</B><DD><A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> used to remove this handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="as(com.google.gwt.dom.client.NativeEvent)"><!-- --></A><H3>
+as</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A> <B>as</B>(<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A>&nbsp;event)</PRE>
+<DL>
+<DD>Converts the <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client"><CODE>NativeEvent</CODE></A> to Event. This is always safe.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event to downcast</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireNativePreviewEvent(com.google.gwt.dom.client.NativeEvent)"><!-- --></A><H3>
+fireNativePreviewEvent</H3>
+<PRE>
+public static boolean <B>fireNativePreviewEvent</B>(<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A>&nbsp;nativeEvent)</PRE>
+<DL>
+<DD>Fire a <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A> for the native event.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>nativeEvent</CODE> - the native event
+<DT><B>Returns:</B><DD>true to fire the event normally, false to cancel the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentEvent()"><!-- --></A><H3>
+getCurrentEvent</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A> <B>getCurrentEvent</B>()</PRE>
+<DL>
+<DD>Gets the current event that is being fired. The current event is only
+ available within the lifetime of the onBrowserEvent function. Once the
+ onBrowserEvent method returns, the current event is reset to null.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the current event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEventListener(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+getEventListener</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A> <B>getEventListener</B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Gets the <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client"><CODE>EventListener</CODE></A> that will receive events for the given
+ element. Only one such listener may exist for a single element.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose listener is to be set
+<DT><B>Returns:</B><DD>the element's event listener</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEventsSunk(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+getEventsSunk</H3>
+<PRE>
+public static int <B>getEventsSunk</B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Gets the current set of events sunk by a given element.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose events are to be retrieved
+<DT><B>Returns:</B><DD>a bitfield describing the events sunk on this element (its possible
+         values are described in <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A>)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypeInt(java.lang.String)"><!-- --></A><H3>
+getTypeInt</H3>
+<PRE>
+public static int <B>getTypeInt</B>(java.lang.String&nbsp;typeName)</PRE>
+<DL>
+<DD>Gets the enumerated type of this event given a valid event type name.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typeName</CODE> - the typeName to be tested
+<DT><B>Returns:</B><DD>the event's enumerated type, or -1 if not defined</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="releaseCapture(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+releaseCapture</H3>
+<PRE>
+public static void <B>releaseCapture</B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Releases mouse capture on the given element. Calling this method has no
+ effect if the element does not currently have mouse capture.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element to release capture<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/user/client/Event.html#setCapture(com.google.gwt.dom.client.Element)"><CODE>setCapture(Element)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeEventPreview(com.google.gwt.user.client.EventPreview)"><!-- --></A><H3>
+removeEventPreview</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static void <B>removeEventPreview</B>(<A HREF="../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A>&nbsp;preview)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared"><CODE>HandlerRegistration</CODE></A> returned from
+             <A HREF="../../../../../com/google/gwt/user/client/Event.html#addNativePreviewHandler(com.google.gwt.user.client.Event.NativePreviewHandler)"><CODE>addNativePreviewHandler(NativePreviewHandler)</CODE></A></I>
+<P>
+<DD>Removes an element from the preview stack. This element will no longer
+ capture events, though any preview underneath it will begin to do so.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>preview</CODE> - the event preview to be removed from the stack</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCapture(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+setCapture</H3>
+<PRE>
+public static void <B>setCapture</B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Sets mouse-capture on the given element. This element will directly receive
+ all mouse events until <A HREF="../../../../../com/google/gwt/user/client/Event.html#releaseCapture(com.google.gwt.dom.client.Element)"><CODE>releaseCapture(Element)</CODE></A> is called on it.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element on which to set mouse capture</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEventListener(com.google.gwt.dom.client.Element, com.google.gwt.user.client.EventListener)"><!-- --></A><H3>
+setEventListener</H3>
+<PRE>
+public static void <B>setEventListener</B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                    <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD>Sets the <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client"><CODE>EventListener</CODE></A> to receive events for the given element.
+ Only one such listener may exist for a single element.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose listener is to be set<DD><CODE>listener</CODE> - the listener to receive <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>events</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sinkEvents(com.google.gwt.dom.client.Element, int)"><!-- --></A><H3>
+sinkEvents</H3>
+<PRE>
+public static void <B>sinkEvents</B>(<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                              int&nbsp;eventBits)</PRE>
+<DL>
+<DD>Sets the current set of events sunk by a given element. These events will
+ be fired to the nearest <A HREF="../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client"><CODE>EventListener</CODE></A> specified on any of the
+ element's parents.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose events are to be retrieved<DD><CODE>eventBits</CODE> - a bitfield describing the events sunk on this element (its
+          possible values are described in <A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><CODE>Event.NativePreviewEvent</CODE></A>)</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cancelBubble(boolean)"><!-- --></A><H3>
+cancelBubble</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final void <B>cancelBubble</B>(boolean&nbsp;cancel)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#stopPropagation()"><CODE>NativeEvent.stopPropagation()</CODE></A> instead</I>
+<P>
+<DD>Cancels bubbling for the given event. This will stop the event from being
+ propagated to parent elements.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>cancel</CODE> - <code>true</code> to cancel bubbling</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentTarget()"><!-- --></A><H3>
+getCurrentTarget</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getCurrentTarget</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getCurrentEventTarget()"><CODE>NativeEvent.getCurrentEventTarget()</CODE></A> instead</I>
+<P>
+<DD>Gets the current target element of this event. This is the element whose
+ listener fired last, not the element which fired the event initially.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the event's current target element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFromElement()"><!-- --></A><H3>
+getFromElement</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getFromElement</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()"><CODE>NativeEvent.getRelatedEventTarget()</CODE></A> instead</I>
+<P>
+<DD>Gets the element from which the mouse pointer was moved (only valid for
+ <A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEOVER"><CODE>ONMOUSEOVER</CODE></A>).
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the element from which the mouse pointer was moved</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRelatedTarget()"><!-- --></A><H3>
+getRelatedTarget</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getRelatedTarget</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()"><CODE>NativeEvent.getRelatedEventTarget()</CODE></A> instead</I>
+<P>
+<DD>Gets the related target for this event.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the related target</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRepeat()"><!-- --></A><H3>
+getRepeat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final boolean <B>getRepeat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>not supported on all browsers</I>
+<P>
+<DD>Gets the key-repeat state of this event.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if this key event was an auto-repeat</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTarget()"><!-- --></A><H3>
+getTarget</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getTarget</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getEventTarget()"><CODE>NativeEvent.getEventTarget()</CODE></A> instead</I>
+<P>
+<DD>Returns the element that was the actual target of the given event.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the target element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getToElement()"><!-- --></A><H3>
+getToElement</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getToElement</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html#getRelatedEventTarget()"><CODE>NativeEvent.getRelatedEventTarget()</CODE></A> instead</I>
+<P>
+<DD>Gets the element to which the mouse pointer was moved (only valid for
+ <A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEOUT"><CODE>ONMOUSEOUT</CODE></A>).
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the element to which the mouse pointer was moved</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypeInt()"><!-- --></A><H3>
+getTypeInt</H3>
+<PRE>
+public final int <B>getTypeInt</B>()</PRE>
+<DL>
+<DD>Gets the enumerated type of this event, as defined by <A HREF="../../../../../com/google/gwt/user/client/Event.html#ONCLICK"><CODE>ONCLICK</CODE></A>,
+ <A HREF="../../../../../com/google/gwt/user/client/Event.html#ONMOUSEDOWN"><CODE>ONMOUSEDOWN</CODE></A>, and so forth.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the event's enumerated type</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Event.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/Event.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Event.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

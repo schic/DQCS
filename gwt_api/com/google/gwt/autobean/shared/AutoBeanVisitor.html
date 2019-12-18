@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+AutoBeanVisitor (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AutoBeanVisitor (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AutoBeanVisitor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanUtils.html" title="class in com.google.gwt.autobean.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/autobean/shared/AutoBeanVisitor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AutoBeanVisitor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.autobean.shared</FONT>
+<BR>
+Class AutoBeanVisitor</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.autobean.shared.AutoBeanVisitor</B>
+</PRE>
+<HR>
+<B>Deprecated.</B>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1">@Deprecated
+</FONT>public class <B>AutoBeanVisitor</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Allows traversal of an AutoBean object graph.
+
+ <p><span style='color:red'>AutoBeans has moved to
+ <code>com.google.web.bindery.autobeans</code>.  This package will be
+ removed in a future version of GWT.</span></p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.CollectionPropertyContext</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.Context.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.Context</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.MapPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.MapPropertyContext</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.ParameterizationVisitor.html" title="class in com.google.gwt.autobean.shared">AutoBeanVisitor.ParameterizationVisitor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#AutoBeanVisitor()">AutoBeanVisitor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#endVisit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)">endVisit</A></B>(<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;bean,
+         <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.Context.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.Context</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called after visiting an <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared"><CODE>AutoBean</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#endVisitCollectionProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.CollectionPropertyContext)">endVisitCollectionProperty</A></B>(java.lang.String&nbsp;propertyName,
+                           <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Collection&lt;?&gt;&gt;&nbsp;value,
+                           <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.CollectionPropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called after visiting a reference property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#endVisitMapProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.MapPropertyContext)">endVisitMapProperty</A></B>(java.lang.String&nbsp;propertyName,
+                    <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Map&lt;?,?&gt;&gt;&nbsp;value,
+                    <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.MapPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.MapPropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called after visiting a reference property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#endVisitReferenceProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)">endVisitReferenceProperty</A></B>(java.lang.String&nbsp;propertyName,
+                          <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;value,
+                          <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called after visiting a reference property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#endVisitValueProperty(java.lang.String, java.lang.Object, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)">endVisitValueProperty</A></B>(java.lang.String&nbsp;propertyName,
+                      java.lang.Object&nbsp;value,
+                      <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called after visiting a value property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)">visit</A></B>(<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;bean,
+      <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.Context.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.Context</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called when visiting an <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared"><CODE>AutoBean</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visitCollectionProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.CollectionPropertyContext)">visitCollectionProperty</A></B>(java.lang.String&nbsp;propertyName,
+                        <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Collection&lt;?&gt;&gt;&nbsp;value,
+                        <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.CollectionPropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called every time, but <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><CODE>visit(AutoBean, Context)</CODE></A> will be called for
+ the value only the first time it is encountered.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visitMapProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.MapPropertyContext)">visitMapProperty</A></B>(java.lang.String&nbsp;propertyName,
+                 <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Map&lt;?,?&gt;&gt;&nbsp;value,
+                 <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.MapPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.MapPropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called every time, but <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><CODE>visit(AutoBean, Context)</CODE></A> will be called for
+ the value only the first time it is encountered.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visitReferenceProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)">visitReferenceProperty</A></B>(java.lang.String&nbsp;propertyName,
+                       <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;value,
+                       <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Called every time, but <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><CODE>visit(AutoBean, Context)</CODE></A> will be called for
+ the value only the first time it is encountered.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visitValueProperty(java.lang.String, java.lang.Object, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)">visitValueProperty</A></B>(java.lang.String&nbsp;propertyName,
+                   java.lang.Object&nbsp;value,
+                   <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;TODO: document.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AutoBeanVisitor()"><!-- --></A><H3>
+AutoBeanVisitor</H3>
+<PRE>
+public <B>AutoBeanVisitor</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="endVisit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><!-- --></A><H3>
+endVisit</H3>
+<PRE>
+public void <B>endVisit</B>(<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;bean,
+                     <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.Context.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.Context</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called after visiting an <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared"><CODE>AutoBean</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>bean</CODE> - an <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared"><CODE>AutoBean</CODE></A><DD><CODE>ctx</CODE> - a Context</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endVisitCollectionProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.CollectionPropertyContext)"><!-- --></A><H3>
+endVisitCollectionProperty</H3>
+<PRE>
+public void <B>endVisitCollectionProperty</B>(java.lang.String&nbsp;propertyName,
+                                       <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Collection&lt;?&gt;&gt;&nbsp;value,
+                                       <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.CollectionPropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called after visiting a reference property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endVisitMapProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.MapPropertyContext)"><!-- --></A><H3>
+endVisitMapProperty</H3>
+<PRE>
+public void <B>endVisitMapProperty</B>(java.lang.String&nbsp;propertyName,
+                                <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Map&lt;?,?&gt;&gt;&nbsp;value,
+                                <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.MapPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.MapPropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called after visiting a reference property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endVisitReferenceProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)"><!-- --></A><H3>
+endVisitReferenceProperty</H3>
+<PRE>
+public void <B>endVisitReferenceProperty</B>(java.lang.String&nbsp;propertyName,
+                                      <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;value,
+                                      <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called after visiting a reference property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endVisitValueProperty(java.lang.String, java.lang.Object, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)"><!-- --></A><H3>
+endVisitValueProperty</H3>
+<PRE>
+public void <B>endVisitValueProperty</B>(java.lang.String&nbsp;propertyName,
+                                  java.lang.Object&nbsp;value,
+                                  <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called after visiting a value property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><!-- --></A><H3>
+visit</H3>
+<PRE>
+public boolean <B>visit</B>(<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;bean,
+                     <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.Context.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.Context</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called when visiting an <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared"><CODE>AutoBean</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>bean</CODE> - an <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared"><CODE>AutoBean</CODE></A><DD><CODE>ctx</CODE> - a Context</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitCollectionProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.CollectionPropertyContext)"><!-- --></A><H3>
+visitCollectionProperty</H3>
+<PRE>
+public boolean <B>visitCollectionProperty</B>(java.lang.String&nbsp;propertyName,
+                                       <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Collection&lt;?&gt;&gt;&nbsp;value,
+                                       <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.CollectionPropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called every time, but <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><CODE>visit(AutoBean, Context)</CODE></A> will be called for
+ the value only the first time it is encountered.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitMapProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.MapPropertyContext)"><!-- --></A><H3>
+visitMapProperty</H3>
+<PRE>
+public boolean <B>visitMapProperty</B>(java.lang.String&nbsp;propertyName,
+                                <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;java.util.Map&lt;?,?&gt;&gt;&nbsp;value,
+                                <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.MapPropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.MapPropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called every time, but <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><CODE>visit(AutoBean, Context)</CODE></A> will be called for
+ the value only the first time it is encountered.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitReferenceProperty(java.lang.String, com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)"><!-- --></A><H3>
+visitReferenceProperty</H3>
+<PRE>
+public boolean <B>visitReferenceProperty</B>(java.lang.String&nbsp;propertyName,
+                                      <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBean.html" title="interface in com.google.gwt.autobean.shared">AutoBean</A>&lt;?&gt;&nbsp;value,
+                                      <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Called every time, but <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.html#visit(com.google.gwt.autobean.shared.AutoBean, com.google.gwt.autobean.shared.AutoBeanVisitor.Context)"><CODE>visit(AutoBean, Context)</CODE></A> will be called for
+ the value only the first time it is encountered.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitValueProperty(java.lang.String, java.lang.Object, com.google.gwt.autobean.shared.AutoBeanVisitor.PropertyContext)"><!-- --></A><H3>
+visitValueProperty</H3>
+<PRE>
+public boolean <B>visitValueProperty</B>(java.lang.String&nbsp;propertyName,
+                                  java.lang.Object&nbsp;value,
+                                  <A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.PropertyContext.html" title="interface in com.google.gwt.autobean.shared">AutoBeanVisitor.PropertyContext</A>&nbsp;ctx)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>TODO: document.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>propertyName</CODE> - the property name, as a String<DD><CODE>value</CODE> - the property value<DD><CODE>ctx</CODE> - a PropertyContext</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AutoBeanVisitor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanUtils.html" title="class in com.google.gwt.autobean.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/autobean/shared/AutoBeanVisitor.CollectionPropertyContext.html" title="interface in com.google.gwt.autobean.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/autobean/shared/AutoBeanVisitor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AutoBeanVisitor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,1068 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Uses of Class com.google.gwt.event.shared.GwtEvent.Type (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class com.google.gwt.event.shared.GwtEvent.Type (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/event/shared//class-useGwtEvent.Type.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GwtEvent.Type.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>com.google.gwt.event.shared.GwtEvent.Type</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.event.dom.client"><B>com.google.gwt.event.dom.client</B></A></TD>
+<TD>Types related to DOM events.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.event.logical.shared"><B>com.google.gwt.event.logical.shared</B></A></TD>
+<TD>Types related to logical events that do not have direct analogues to DOM
+ events and which can be used in contexts other than web browsers.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.event.shared"><B>com.google.gwt.event.shared</B></A></TD>
+<TD>Shared infrastructure underlying both browser and non-browser events.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.event.shared.testing"><B>com.google.gwt.event.shared.testing</B></A></TD>
+<TD>Classes used for testing the GWT event bus.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.place.shared"><B>com.google.gwt.place.shared</B></A></TD>
+<TD>A package for managing bookmarkable locations in an application.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.requestfactory.shared"><B>com.google.gwt.requestfactory.shared</B></A></TD>
+<TD>Shared classes used on both the client and the server side for
+ transmitting data between the sever and the client in JSON format.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.user.cellview.client"><B>com.google.gwt.user.cellview.client</B></A></TD>
+<TD>The "cellview" widget set.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.user.client"><B>com.google.gwt.user.client</B></A></TD>
+<TD>Fundamental user-interface classes used in client-side GWT code.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.user.client.ui"><B>com.google.gwt.user.client.ui</B></A></TD>
+<TD>Widgets, Panels, and other user-interface classes.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.view.client"><B>com.google.gwt.view.client</B></A></TD>
+<TD>Classes and interfaces used by the
+ <A HREF="../../../../../../com/google/gwt/user/cellview/client/package-summary.html"><CODE>cellview</CODE></A> widget set.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.event.dom.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/event/dom/client/package-summary.html">com.google.gwt.event.dom.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/event/dom/client/package-summary.html">com.google.gwt.event.dom.client</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/event/dom/client/DomEvent.Type.html" title="class in com.google.gwt.event.dom.client">DomEvent.Type&lt;H extends EventHandler&gt;</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type class used by dom event subclasses.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.event.logical.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/event/logical/shared/package-summary.html">com.google.gwt.event.logical.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/event/logical/shared/package-summary.html">com.google.gwt.event.logical.shared</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/AttachEvent.Handler.html" title="interface in com.google.gwt.event.logical.shared">AttachEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AttachEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/AttachEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/BeforeSelectionHandler.html" title="interface in com.google.gwt.event.logical.shared">BeforeSelectionHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/BeforeSelectionEvent.html" title="type parameter in BeforeSelectionEvent">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BeforeSelectionEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/BeforeSelectionEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="type parameter in CloseEvent">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>CloseEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/HighlightHandler.html" title="interface in com.google.gwt.event.logical.shared">HighlightHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/HighlightEvent.html" title="type parameter in HighlightEvent">V</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>HighlightEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/HighlightEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/InitializeHandler.html" title="interface in com.google.gwt.event.logical.shared">InitializeHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>InitializeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/InitializeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenHandler.html" title="interface in com.google.gwt.event.logical.shared">OpenHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenEvent.html" title="type parameter in OpenEvent">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>OpenEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ResizeHandler.html" title="interface in com.google.gwt.event.logical.shared">ResizeHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>ResizeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/ResizeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionHandler.html" title="interface in com.google.gwt.event.logical.shared">SelectionHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionEvent.html" title="type parameter in SelectionEvent">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>SelectionEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ShowRangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ShowRangeHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ShowRangeEvent.html" title="type parameter in ShowRangeEvent">V</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>ShowRangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/ShowRangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ValueChangeHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="type parameter in ValueChangeEvent">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>ValueChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/AttachEvent.Handler.html" title="interface in com.google.gwt.event.logical.shared">AttachEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AttachEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/AttachEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensures the existence of the handler hook and then returns it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/BeforeSelectionHandler.html" title="interface in com.google.gwt.event.logical.shared">BeforeSelectionHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>BeforeSelectionEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/BeforeSelectionEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>CloseEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/HighlightHandler.html" title="interface in com.google.gwt.event.logical.shared">HighlightHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>HighlightEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/HighlightEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/InitializeHandler.html" title="interface in com.google.gwt.event.logical.shared">InitializeHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>InitializeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/InitializeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensures the existence of the handler hook and then returns it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenHandler.html" title="interface in com.google.gwt.event.logical.shared">OpenHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>OpenEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/OpenEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ResizeHandler.html" title="interface in com.google.gwt.event.logical.shared">ResizeHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>ResizeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/ResizeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensures the existence of the handler hook and then returns it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionHandler.html" title="interface in com.google.gwt.event.logical.shared">SelectionHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>SelectionEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/SelectionEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ShowRangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ShowRangeHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>ShowRangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/ShowRangeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ValueChangeHandler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>ValueChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.event.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="type parameter in GwtEvent">H</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>GwtEvent.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A> with parameters of type <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/EventBus.html#addHandler(com.google.gwt.event.shared.GwtEvent.Type, H)">addHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>HandlerManager.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html#addHandler(com.google.gwt.event.shared.GwtEvent.Type, H)">addHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ResettableEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/ResettableEventBus.html#addHandler(com.google.gwt.event.shared.GwtEvent.Type, H)">addHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>SimpleEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/SimpleEventBus.html#addHandler(com.google.gwt.event.shared.GwtEvent.Type, H)">addHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/EventBus.html#addHandlerToSource(com.google.gwt.event.shared.GwtEvent.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ResettableEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/ResettableEventBus.html#addHandlerToSource(com.google.gwt.event.shared.GwtEvent.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>SimpleEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/SimpleEventBus.html#addHandlerToSource(com.google.gwt.event.shared.GwtEvent.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+H</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>HandlerManager.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html#getHandler(com.google.gwt.event.shared.GwtEvent.Type, int)">getHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+           int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the handler at the given index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B>HandlerManager.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;?&gt;&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the number of handlers listening to the event type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>HandlerManager.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html#isEventHandled(com.google.gwt.event.shared.GwtEvent.Type)">isEventHandled</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;?&gt;&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Does this handler manager handle the given event type?</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+void</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>HandlerManager.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html#removeHandler(com.google.gwt.event.shared.GwtEvent.Type, H)">removeHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+              H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the given handler from the specified event type.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A> with parameters of type <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/event/shared/DefaultHandlerRegistration.html#DefaultHandlerRegistration(com.google.gwt.event.shared.HandlerManager, com.google.gwt.event.shared.GwtEvent.Type, H)">DefaultHandlerRegistration</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html" title="class in com.google.gwt.event.shared">HandlerManager</A>&nbsp;manager,
+                           <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+                           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Creates a new handler registration.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.event.shared.testing"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/event/shared/testing/package-summary.html">com.google.gwt.event.shared.testing</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/event/shared/testing/package-summary.html">com.google.gwt.event.shared.testing</A> with parameters of type <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/testing/CountingEventBus.html#addHandler(com.google.gwt.event.shared.GwtEvent.Type, H)">addHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/testing/CountingEventBus.html#addHandlerToSource(com.google.gwt.event.shared.GwtEvent.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../com/google/gwt/event/shared/testing/CountingEventBus.html#getCount(com.google.gwt.event.shared.GwtEvent.Type)">getCount</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;?&gt;&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.place.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/place/shared/package-summary.html">com.google.gwt.place.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../../com/google/gwt/place/shared/package-summary.html">com.google.gwt.place.shared</A> declared as <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeEvent.Handler.html" title="interface in com.google.gwt.place.shared">PlaceChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>PlaceChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeEvent.html#TYPE">TYPE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A singleton instance of Type&lt;Handler&gt;.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeRequestEvent.Handler.html" title="interface in com.google.gwt.place.shared">PlaceChangeRequestEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>PlaceChangeRequestEvent.</B><B><A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeRequestEvent.html#TYPE">TYPE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A singleton instance of Type&lt;Handler&gt;.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/place/shared/package-summary.html">com.google.gwt.place.shared</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeEvent.Handler.html" title="interface in com.google.gwt.place.shared">PlaceChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>PlaceChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeRequestEvent.Handler.html" title="interface in com.google.gwt.place.shared">PlaceChangeRequestEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>PlaceChangeRequestEvent.</B><B><A HREF="../../../../../../com/google/gwt/place/shared/PlaceChangeRequestEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.requestfactory.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/requestfactory/shared/package-summary.html">com.google.gwt.requestfactory.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/requestfactory/shared/package-summary.html">com.google.gwt.requestfactory.shared</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/requestfactory/shared/EntityProxyChange.Handler.html" title="interface in com.google.gwt.requestfactory.shared">EntityProxyChange.Handler</A>&lt;<A HREF="../../../../../../com/google/gwt/requestfactory/shared/EntityProxyChange.html" title="type parameter in EntityProxyChange">P</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>EntityProxyChange.</B><B><A HREF="../../../../../../com/google/gwt/requestfactory/shared/EntityProxyChange.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns the type associated with this instance.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.user.cellview.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/user/cellview/client/package-summary.html">com.google.gwt.user.cellview.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../../com/google/gwt/user/cellview/client/package-summary.html">com.google.gwt.user.cellview.client</A> declared as <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/LoadingStateChangeEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">LoadingStateChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>LoadingStateChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/LoadingStateChangeEvent.html#TYPE">TYPE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A singleton instance of Type.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/user/cellview/client/package-summary.html">com.google.gwt.user.cellview.client</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>ColumnSortEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/LoadingStateChangeEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">LoadingStateChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>LoadingStateChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/LoadingStateChangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>ColumnSortEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.user.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/user/client/package-summary.html">com.google.gwt.user.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/user/client/package-summary.html">com.google.gwt.user.client</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client">Event.NativePreviewHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Event.NativePreviewEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/Window.ClosingHandler.html" title="interface in com.google.gwt.user.client">Window.ClosingHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Window.ClosingEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/client/Window.ClosingEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/Window.ScrollHandler.html" title="interface in com.google.gwt.user.client">Window.ScrollHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Window.ScrollEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/client/Window.ScrollEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/Event.NativePreviewHandler.html" title="interface in com.google.gwt.user.client">Event.NativePreviewHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>Event.NativePreviewEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/user/client/package-summary.html">com.google.gwt.user.client</A> with parameters of type <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+void</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>BaseListenerWrapper.</B><B><A HREF="../../../../../../com/google/gwt/user/client/BaseListenerWrapper.html#baseRemove(com.google.gwt.event.shared.HandlerManager, java.lang.Object, com.google.gwt.event.shared.GwtEvent.Type...)">baseRemove</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html" title="class in com.google.gwt.event.shared">HandlerManager</A>&nbsp;manager,
+           java.lang.Object&nbsp;listener,
+           <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>...&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Helper method to remove all wrapped listeners from the given event types.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.user.client.ui"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/user/client/ui/package-summary.html">com.google.gwt.user.client.ui</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/user/client/ui/package-summary.html">com.google.gwt.user.client.ui</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/FormPanel.SubmitCompleteHandler.html" title="interface in com.google.gwt.user.client.ui">FormPanel.SubmitCompleteHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>FormPanel.SubmitCompleteEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/client/ui/FormPanel.SubmitCompleteEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/FormPanel.SubmitHandler.html" title="interface in com.google.gwt.user.client.ui">FormPanel.SubmitHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>FormPanel.SubmitEvent.</B><B><A HREF="../../../../../../com/google/gwt/user/client/ui/FormPanel.SubmitEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/user/client/ui/package-summary.html">com.google.gwt.user.client.ui</A> with parameters of type <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>Widget.</B><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A></B>(H&nbsp;handler,
+           <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;H&gt;&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds this handler to the widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H extends <A HREF="../../../../../../com/google/gwt/event/shared/EventHandler.html" title="interface in com.google.gwt.event.shared">EventHandler</A>&gt; 
+<BR>
+void</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ListenerWrapper.</B><B><A HREF="../../../../../../com/google/gwt/user/client/ui/ListenerWrapper.html#baseRemove(com.google.gwt.user.client.ui.Widget, java.util.EventListener, com.google.gwt.event.shared.GwtEvent.Type...)">baseRemove</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;eventSource,
+           java.util.EventListener&nbsp;listener,
+           <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>...&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Convenience method to remove wrapped handlers from a widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B>Widget.</B><B><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;?&gt;&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the number of handlers listening to the event type.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.view.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A> in <A HREF="../../../../../../com/google/gwt/view/client/package-summary.html">com.google.gwt.view.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../com/google/gwt/view/client/package-summary.html">com.google.gwt.view.client</A> that return <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/CellPreviewEvent.Handler.html" title="interface in com.google.gwt.view.client">CellPreviewEvent.Handler</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/CellPreviewEvent.html" title="type parameter in CellPreviewEvent">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>CellPreviewEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/CellPreviewEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/RangeChangeEvent.Handler.html" title="interface in com.google.gwt.view.client">RangeChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>RangeChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/RangeChangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/RowCountChangeEvent.Handler.html" title="interface in com.google.gwt.view.client">RowCountChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>RowCountChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/RowCountChangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/SelectionChangeEvent.Handler.html" title="interface in com.google.gwt.view.client">SelectionChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SelectionChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/SelectionChangeEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/CellPreviewEvent.Handler.html" title="interface in com.google.gwt.view.client">CellPreviewEvent.Handler</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B>CellPreviewEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/CellPreviewEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/RangeChangeEvent.Handler.html" title="interface in com.google.gwt.view.client">RangeChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>RangeChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/RangeChangeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/RowCountChangeEvent.Handler.html" title="interface in com.google.gwt.view.client">RowCountChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>RowCountChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/RowCountChangeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/view/client/SelectionChangeEvent.Handler.html" title="interface in com.google.gwt.view.client">SelectionChangeEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>SelectionChangeEvent.</B><B><A HREF="../../../../../../com/google/gwt/view/client/SelectionChangeEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/event/shared//class-useGwtEvent.Type.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GwtEvent.Type.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,1317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+NumberFormat (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="NumberFormat (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/NumberFormat.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/Messages.Select.html" title="annotation in com.google.gwt.i18n.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/PluralRule.html" title="interface in com.google.gwt.i18n.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/client/NumberFormat.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="NumberFormat.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.i18n.client</FONT>
+<BR>
+Class NumberFormat</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.i18n.client.NumberFormat</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>NumberFormat</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Formats and parses numbers using locale-sensitive patterns.
+
+ This class provides comprehensive and flexible support for a wide variety of
+ localized formats, including
+ <ul>
+ <li><b>Locale-specific symbols</b> such as decimal point, group separator,
+ digit representation, currency symbol, percent, and permill</li>
+ <li><b>Numeric variations</b> including integers ("123"), fixed-point
+ numbers ("123.4"), scientific notation ("1.23E4"), percentages ("12%"), and
+ currency amounts ("$123")</li>
+ <li><b>Predefined standard patterns</b> that can be used both for parsing
+ and formatting, including <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getDecimalFormat()"><CODE>decimal</CODE></A>,
+ <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getCurrencyFormat()"><CODE>currency</CODE></A>,
+ <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getPercentFormat()"><CODE>percentages</CODE></A>, and
+ <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getScientificFormat()"><CODE>scientific</CODE></A></li>
+ <li><b>Custom patterns</b> and supporting features designed to make it
+ possible to parse and format numbers in any locale, including support for
+ Western, Arabic, and Indic digits</li>
+ </ul>
+
+ <h3>Patterns</h3>
+ <p>
+ Formatting and parsing are based on customizable patterns that can include a
+ combination of literal characters and special characters that act as
+ placeholders and are replaced by their localized counterparts. Many
+ characters in a pattern are taken literally; they are matched during parsing
+ and output unchanged during formatting. Special characters, on the other
+ hand, stand for other characters, strings, or classes of characters. For
+ example, the '<code>#</code>' character is replaced by a localized digit.
+ </p>
+
+ <p>
+ Often the replacement character is the same as the pattern character. In the
+ U.S. locale, for example, the '<code>,</code>' grouping character is
+ replaced by the same character '<code>,</code>'. However, the replacement
+ is still actually happening, and in a different locale, the grouping
+ character may change to a different character, such as '<code>.</code>'.
+ Some special characters affect the behavior of the formatter by their
+ presence. For example, if the percent character is seen, then the value is
+ multiplied by 100 before being displayed.
+ </p>
+
+ <p>
+ The characters listed below are used in patterns. Localized symbols use the
+ corresponding characters taken from corresponding locale symbol collection,
+ which can be found in the properties files residing in the
+ <code><nobr>com.google.gwt.i18n.client.constants</nobr></code>. To insert
+ a special character in a pattern as a literal (that is, without any special
+ meaning) the character must be quoted. There are some exceptions to this
+ which are noted below.
+ </p>
+
+ <table>
+ <tr>
+ <th>Symbol</th>
+ <th>Location</th>
+ <th>Localized?</th>
+ <th>Meaning</th>
+ </tr>
+
+ <tr>
+ <td><code>0</code></td>
+ <td>Number</td>
+ <td>Yes</td>
+ <td>Digit</td>
+ </tr>
+
+ <tr>
+ <td><code>#</code></td>
+ <td>Number</td>
+ <td>Yes</td>
+ <td>Digit, zero shows as absent</td>
+ </tr>
+
+ <tr>
+ <td><code>.</code></td>
+ <td>Number</td>
+ <td>Yes</td>
+ <td>Decimal separator or monetary decimal separator</td>
+ </tr>
+
+ <tr>
+ <td><code>-</code></td>
+ <td>Number</td>
+ <td>Yes</td>
+ <td>Minus sign</td>
+ </tr>
+
+ <tr>
+ <td><code>,</code></td>
+ <td>Number</td>
+ <td>Yes</td>
+ <td>Grouping separator</td>
+ </tr>
+
+ <tr>
+ <td><code>E</code></td>
+ <td>Number</td>
+ <td>Yes</td>
+ <td>Separates mantissa and exponent in scientific notation; need not be
+ quoted in prefix or suffix</td>
+ </tr>
+
+ <tr>
+ <td><code>;</code></td>
+ <td>Subpattern boundary</td>
+ <td>Yes</td>
+ <td>Separates positive and negative subpatterns</td>
+ </tr>
+
+ <tr>
+ <td><code>%</code></td>
+ <td>Prefix or suffix</td>
+ <td>Yes</td>
+ <td>Multiply by 100 and show as percentage</td>
+ </tr>
+
+ <tr>
+ <td><nobr><code>‰</code> (\u2030)</nobr></td>
+ <td>Prefix or suffix</td>
+ <td>Yes</td>
+ <td>Multiply by 1000 and show as per mille</td>
+ </tr>
+
+ <tr>
+ <td><nobr><code>¤</code> (\u00A4)</nobr></td>
+ <td>Prefix or suffix</td>
+ <td>No</td>
+ <td>Currency sign, replaced by currency symbol; if doubled, replaced by
+ international currency symbol; if present in a pattern, the monetary decimal
+ separator is used instead of the decimal separator</td>
+ </tr>
+
+ <tr>
+ <td><code>'</code></td>
+ <td>Prefix or suffix</td>
+ <td>No</td>
+ <td>Used to quote special characters in a prefix or suffix; for example,
+ <code>"'#'#"</code> formats <code>123</code> to <code>"#123"</code>;
+ to create a single quote itself, use two in succession, such as
+ <code>"# o''clock"</code></td>
+ </tr>
+
+ </table>
+
+ <p>
+ A <code>NumberFormat</code> pattern contains a postive and negative
+ subpattern separated by a semicolon, such as
+ <code>"#,##0.00;(#,##0.00)"</code>. Each subpattern has a prefix, a
+ numeric part, and a suffix. If there is no explicit negative subpattern, the
+ negative subpattern is the localized minus sign prefixed to the positive
+ subpattern. That is, <code>"0.00"</code> alone is equivalent to
+ <code>"0.00;-0.00"</code>. If there is an explicit negative subpattern, it
+ serves only to specify the negative prefix and suffix; the number of digits,
+ minimal digits, and other characteristics are ignored in the negative
+ subpattern. That means that <code>"#,##0.0#;(#)"</code> has precisely the
+ same result as <code>"#,##0.0#;(#,##0.0#)"</code>.
+ </p>
+
+ <p>
+ The prefixes, suffixes, and various symbols used for infinity, digits,
+ thousands separators, decimal separators, etc. may be set to arbitrary
+ values, and they will appear properly during formatting. However, care must
+ be taken that the symbols and strings do not conflict, or parsing will be
+ unreliable. For example, the decimal separator and thousands separator should
+ be distinct characters, or parsing will be impossible.
+ </p>
+
+ <p>
+ The grouping separator is a character that separates clusters of integer
+ digits to make large numbers more legible. It commonly used for thousands,
+ but in some locales it separates ten-thousands. The grouping size is the
+ number of digits between the grouping separators, such as 3 for "100,000,000"
+ or 4 for "1 0000 0000".
+ </p>
+
+ <h3>Pattern Grammar (BNF)</h3>
+ <p>
+ The pattern itself uses the following grammar:
+ </p>
+
+ <table>
+ <tr>
+ <td>pattern</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">subpattern ('<code>;</code>'
+ subpattern)?</td>
+ </tr>
+ <tr>
+ <td>subpattern</td>
+ <td>:=</td>
+ <td>prefix? number exponent? suffix?</td>
+ </tr>
+ <tr>
+ <td>number</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">(integer ('<code>.</code>' fraction)?) |
+ sigDigits</td>
+ </tr>
+ <tr>
+ <td>prefix</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>\u0000</code>'..'<code>\uFFFD</code>' -
+ specialCharacters</td>
+ </tr>
+ <tr>
+ <td>suffix</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>\u0000</code>'..'<code>\uFFFD</code>' -
+ specialCharacters</td>
+ </tr>
+ <tr>
+ <td>integer</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>#</code>'* '<code>0</code>'*'<code>0</code>'</td>
+ </tr>
+ <tr>
+ <td>fraction</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>0</code>'* '<code>#</code>'*</td>
+ </tr>
+ <tr>
+ <td>sigDigits</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>#</code>'* '<code>@</code>''<code>@</code>'* '<code>#</code>'*</td>
+ </tr>
+ <tr>
+ <td>exponent</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>E</code>' '<code>+</code>'? '<code>0</code>'* '<code>0</code>'</td>
+ </tr>
+ <tr>
+ <td>padSpec</td>
+ <td>:=</td>
+ <td style="white-space: nowrap">'<code>*</code>' padChar</td>
+ </tr>
+ <tr>
+ <td>padChar</td>
+ <td>:=</td>
+ <td>'<code>\u0000</code>'..'<code>\uFFFD</code>' - quote</td>
+ </tr>
+ </table>
+
+ <p>
+ Notation:
+ </p>
+
+ <table>
+ <tr>
+ <td>X*</td>
+ <td style="white-space: nowrap">0 or more instances of X</td>
+ </tr>
+
+ <tr>
+ <td>X?</td>
+ <td style="white-space: nowrap">0 or 1 instances of X</td>
+ </tr>
+
+ <tr>
+ <td>X|Y</td>
+ <td style="white-space: nowrap">either X or Y</td>
+ </tr>
+
+ <tr>
+ <td>C..D</td>
+ <td style="white-space: nowrap">any character from C up to D, inclusive</td>
+ </tr>
+
+ <tr>
+ <td>S-T</td>
+ <td style="white-space: nowrap">characters in S, except those in T</td>
+ </tr>
+ </table>
+
+ <p>
+ The first subpattern is for positive numbers. The second (optional)
+ subpattern is for negative numbers.
+ </p>
+
+  <h3>Example</h3> <blockquote><pre>public class NumberFormatExample implements EntryPoint {
+
+  public void onModuleLoad() {
+    NumberFormat fmt = NumberFormat.getDecimalFormat();
+    double value = 12345.6789;
+    String formatted = fmt.format(value);
+    // Prints 1,2345.6789 in the default locale
+    GWT.log("Formatted string is" + formatted);
+
+    // Turn a string back into a double
+    value = NumberFormat.getDecimalFormat().parse("12345.6789");
+    GWT.log("Parsed value is" + value);
+
+    // Scientific notation
+    value = 12345.6789;
+    formatted = NumberFormat.getScientificFormat().format(value);
+    // prints 1.2345E4 in the default locale
+    GWT.log("Formatted string is" + formatted);
+
+    // Currency
+    fmt = NumberFormat.getCurrencyFormat();
+    formatted = fmt.format(123456.7899);
+    // prints US$123,456.79 in the default locale or $123,456.79 in the en_US
+    // locale
+    GWT.log("Formatted currency is" + formatted);
+    
+    // Custom format
+    value = 12345.6789;
+    formatted = NumberFormat.getFormat("000000.000000").format(value);
+    // prints 012345.678900 in the default locale
+    GWT.log("Formatted string is" + formatted);
+  }
+}
+</pre></blockquote>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#defaultNumberConstants">defaultNumberConstants</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Current NumberConstants interface to use, see
+ <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#setForcedLatinDigits(boolean)"><CODE>setForcedLatinDigits(boolean)</CODE></A> for changing it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#localizedNumberConstants">localizedNumberConstants</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#NumberFormat(com.google.gwt.i18n.client.constants.NumberConstants, java.lang.String, com.google.gwt.i18n.client.CurrencyData, boolean)">NumberFormat</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A>&nbsp;numberConstants,
+             java.lang.String&nbsp;pattern,
+             <A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;cdata,
+             boolean&nbsp;userSuppliedPattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a format object based on the specified settings.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#NumberFormat(java.lang.String, com.google.gwt.i18n.client.CurrencyData, boolean)">NumberFormat</A></B>(java.lang.String&nbsp;pattern,
+             <A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;cdata,
+             boolean&nbsp;userSuppliedPattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a format object for the default locale based on the specified
+ settings.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#createLatinNumberConstants(com.google.gwt.i18n.client.constants.NumberConstants)">createLatinNumberConstants</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A>&nbsp;orig)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a delocalized NumberConstants instance from a localized one.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#forcedLatinDigits()">forcedLatinDigits</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if all new NumberFormat instances will use latin digits and
+ related characters rather than the localized ones.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#format(boolean, java.lang.StringBuilder, int)">format</A></B>(boolean&nbsp;isNegative,
+       java.lang.StringBuilder&nbsp;digits,
+       int&nbsp;scale)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format a number with its significant digits already represented in string
+ form.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#format(double)">format</A></B>(double&nbsp;number)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method formats a double to produce a string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#format(long, int)">format</A></B>(long&nbsp;value,
+       int&nbsp;scale)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format a possibly scaled long value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#format(java.lang.Number)">format</A></B>(java.lang.Number&nbsp;number)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method formats a Number to produce a string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getCurrencyFormat()">getCurrencyFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides the standard currency format for the default locale.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getCurrencyFormat(com.google.gwt.i18n.client.CurrencyData)">getCurrencyFormat</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;currencyData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides the standard currency format for the default locale using a
+ specified currency.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getCurrencyFormat(java.lang.String)">getCurrencyFormat</A></B>(java.lang.String&nbsp;currencyCode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides the standard currency format for the default locale using a
+ specified currency.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getDecimalFormat()">getDecimalFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides the standard decimal format for the default locale.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getFormat(java.lang.String)">getFormat</A></B>(java.lang.String&nbsp;pattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a <code>NumberFormat</code> instance for the default locale using
+ the specified pattern and the default currencyCode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getFormat(java.lang.String, com.google.gwt.i18n.client.CurrencyData)">getFormat</A></B>(java.lang.String&nbsp;pattern,
+          <A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;currencyData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a custom <code>NumberFormat</code> instance for the default locale
+ using the specified pattern and currency code.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getFormat(java.lang.String, java.lang.String)">getFormat</A></B>(java.lang.String&nbsp;pattern,
+          java.lang.String&nbsp;currencyCode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a custom <code>NumberFormat</code> instance for the default locale
+ using the specified pattern and currency code.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getGroupingSize()">getGroupingSize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the number of digits between grouping separators in the integer
+ portion of a number.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getNegativePrefix()">getNegativePrefix</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the prefix to use for negative values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getNegativeSuffix()">getNegativeSuffix</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the suffix to use for negative values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getNumberConstants()">getNumberConstants</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the NumberConstants instance for this formatter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getPattern()">getPattern</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the pattern used by this number format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getPercentFormat()">getPercentFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides the standard percent format for the default locale.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getPositivePrefix()">getPositivePrefix</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the prefix to use for positive values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getPositiveSuffix()">getPositiveSuffix</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the suffix to use for positive values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#getScientificFormat()">getScientificFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides the standard scientific format for the default locale.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#isDecimalSeparatorAlwaysShown()">isDecimalSeparatorAlwaysShown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the decimal separator should always be shown.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#parse(java.lang.String)">parse</A></B>(java.lang.String&nbsp;text)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses text to produce a numeric value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#parse(java.lang.String, int[])">parse</A></B>(java.lang.String&nbsp;text,
+      int[]&nbsp;inOutPos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses text to produce a numeric value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#remapSeparator(java.lang.String)">remapSeparator</A></B>(java.lang.String&nbsp;separator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remap a localized separator to an equivalent latin one.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#setForcedLatinDigits(boolean)">setForcedLatinDigits</A></B>(boolean&nbsp;useLatinDigits)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specify whether all new NumberFormat instances will use latin digits
+ and related characters rather than the localized ones.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="localizedNumberConstants"><!-- --></A><H3>
+localizedNumberConstants</H3>
+<PRE>
+protected static final <A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A> <B>localizedNumberConstants</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="defaultNumberConstants"><!-- --></A><H3>
+defaultNumberConstants</H3>
+<PRE>
+protected static <A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A> <B>defaultNumberConstants</B></PRE>
+<DL>
+<DD>Current NumberConstants interface to use, see
+ <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#setForcedLatinDigits(boolean)"><CODE>setForcedLatinDigits(boolean)</CODE></A> for changing it.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="NumberFormat(com.google.gwt.i18n.client.constants.NumberConstants, java.lang.String, com.google.gwt.i18n.client.CurrencyData, boolean)"><!-- --></A><H3>
+NumberFormat</H3>
+<PRE>
+protected <B>NumberFormat</B>(<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A>&nbsp;numberConstants,
+                       java.lang.String&nbsp;pattern,
+                       <A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;cdata,
+                       boolean&nbsp;userSuppliedPattern)</PRE>
+<DL>
+<DD>Constructs a format object based on the specified settings.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>numberConstants</CODE> - the locale-specific number constants to use for this
+          format -- **NOTE** subclasses passing their own instance here
+          should pay attention to <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#forcedLatinDigits()"><CODE>forcedLatinDigits()</CODE></A> and remap
+          localized symbols using
+          <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html#createLatinNumberConstants(com.google.gwt.i18n.client.constants.NumberConstants)"><CODE>createLatinNumberConstants(NumberConstants)</CODE></A><DD><CODE>pattern</CODE> - pattern that specify how number should be formatted<DD><CODE>cdata</CODE> - currency data that should be used<DD><CODE>userSuppliedPattern</CODE> - true if the pattern was supplied by the user</DL>
+</DL>
+<HR>
+
+<A NAME="NumberFormat(java.lang.String, com.google.gwt.i18n.client.CurrencyData, boolean)"><!-- --></A><H3>
+NumberFormat</H3>
+<PRE>
+protected <B>NumberFormat</B>(java.lang.String&nbsp;pattern,
+                       <A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;cdata,
+                       boolean&nbsp;userSuppliedPattern)</PRE>
+<DL>
+<DD>Constructs a format object for the default locale based on the specified
+ settings.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - pattern that specify how number should be formatted<DD><CODE>cdata</CODE> - currency data that should be used<DD><CODE>userSuppliedPattern</CODE> - true if the pattern was supplied by the user</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="forcedLatinDigits()"><!-- --></A><H3>
+forcedLatinDigits</H3>
+<PRE>
+public static boolean <B>forcedLatinDigits</B>()</PRE>
+<DL>
+<DD>Returns true if all new NumberFormat instances will use latin digits and
+ related characters rather than the localized ones.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrencyFormat()"><!-- --></A><H3>
+getCurrencyFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getCurrencyFormat</B>()</PRE>
+<DL>
+<DD>Provides the standard currency format for the default locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <code>NumberFormat</code> capable of producing and consuming
+         currency format for the default locale</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrencyFormat(com.google.gwt.i18n.client.CurrencyData)"><!-- --></A><H3>
+getCurrencyFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getCurrencyFormat</B>(<A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;currencyData)</PRE>
+<DL>
+<DD>Provides the standard currency format for the default locale using a
+ specified currency.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>currencyData</CODE> - currency data to use
+<DT><B>Returns:</B><DD>a <code>NumberFormat</code> capable of producing and consuming
+         currency format for the default locale</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrencyFormat(java.lang.String)"><!-- --></A><H3>
+getCurrencyFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getCurrencyFormat</B>(java.lang.String&nbsp;currencyCode)</PRE>
+<DL>
+<DD>Provides the standard currency format for the default locale using a
+ specified currency.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>currencyCode</CODE> - valid currency code, as defined in
+     com.google.gwt.i18n.client.constants.CurrencyCodeMapConstants.properties
+<DT><B>Returns:</B><DD>a <code>NumberFormat</code> capable of producing and consuming
+         currency format for the default locale
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the currency code is unknown</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDecimalFormat()"><!-- --></A><H3>
+getDecimalFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getDecimalFormat</B>()</PRE>
+<DL>
+<DD>Provides the standard decimal format for the default locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <code>NumberFormat</code> capable of producing and consuming
+         decimal format for the default locale</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFormat(java.lang.String)"><!-- --></A><H3>
+getFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getFormat</B>(java.lang.String&nbsp;pattern)</PRE>
+<DL>
+<DD>Gets a <code>NumberFormat</code> instance for the default locale using
+ the specified pattern and the default currencyCode.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - pattern for this formatter
+<DT><B>Returns:</B><DD>a NumberFormat instance
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the specified pattern is invalid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFormat(java.lang.String, com.google.gwt.i18n.client.CurrencyData)"><!-- --></A><H3>
+getFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getFormat</B>(java.lang.String&nbsp;pattern,
+                                     <A HREF="../../../../../com/google/gwt/i18n/client/CurrencyData.html" title="interface in com.google.gwt.i18n.client">CurrencyData</A>&nbsp;currencyData)</PRE>
+<DL>
+<DD>Gets a custom <code>NumberFormat</code> instance for the default locale
+ using the specified pattern and currency code.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - pattern for this formatter<DD><CODE>currencyData</CODE> - currency data
+<DT><B>Returns:</B><DD>a NumberFormat instance
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the specified pattern is invalid</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFormat(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getFormat</B>(java.lang.String&nbsp;pattern,
+                                     java.lang.String&nbsp;currencyCode)</PRE>
+<DL>
+<DD>Gets a custom <code>NumberFormat</code> instance for the default locale
+ using the specified pattern and currency code.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - pattern for this formatter<DD><CODE>currencyCode</CODE> - international currency code
+<DT><B>Returns:</B><DD>a NumberFormat instance
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the specified pattern is invalid
+     or the currency code is unknown</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPercentFormat()"><!-- --></A><H3>
+getPercentFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getPercentFormat</B>()</PRE>
+<DL>
+<DD>Provides the standard percent format for the default locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <code>NumberFormat</code> capable of producing and consuming
+         percent format for the default locale</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getScientificFormat()"><!-- --></A><H3>
+getScientificFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/NumberFormat.html" title="class in com.google.gwt.i18n.client">NumberFormat</A> <B>getScientificFormat</B>()</PRE>
+<DL>
+<DD>Provides the standard scientific format for the default locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <code>NumberFormat</code> capable of producing and consuming
+         scientific format for the default locale</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setForcedLatinDigits(boolean)"><!-- --></A><H3>
+setForcedLatinDigits</H3>
+<PRE>
+public static void <B>setForcedLatinDigits</B>(boolean&nbsp;useLatinDigits)</PRE>
+<DL>
+<DD>Specify whether all new NumberFormat instances will use latin digits
+ and related characters rather than the localized ones.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>useLatinDigits</CODE> - true if latin digits/etc should be used, false if
+    localized digits/etc should be used.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createLatinNumberConstants(com.google.gwt.i18n.client.constants.NumberConstants)"><!-- --></A><H3>
+createLatinNumberConstants</H3>
+<PRE>
+protected static <A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A> <B>createLatinNumberConstants</B>(<A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A>&nbsp;orig)</PRE>
+<DL>
+<DD>Create a delocalized NumberConstants instance from a localized one.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>orig</CODE> - localized NumberConstants instance
+<DT><B>Returns:</B><DD>NumberConstants instance using latin digits/etc</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="remapSeparator(java.lang.String)"><!-- --></A><H3>
+remapSeparator</H3>
+<PRE>
+protected static java.lang.String <B>remapSeparator</B>(java.lang.String&nbsp;separator)</PRE>
+<DL>
+<DD>Remap a localized separator to an equivalent latin one.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>separator</CODE> - 
+<DT><B>Returns:</B><DD>delocalized separator character</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="format(double)"><!-- --></A><H3>
+format</H3>
+<PRE>
+public java.lang.String <B>format</B>(double&nbsp;number)</PRE>
+<DL>
+<DD>This method formats a double to produce a string.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>number</CODE> - The double to format
+<DT><B>Returns:</B><DD>the formatted number string</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="format(java.lang.Number)"><!-- --></A><H3>
+format</H3>
+<PRE>
+public java.lang.String <B>format</B>(java.lang.Number&nbsp;number)</PRE>
+<DL>
+<DD>This method formats a Number to produce a string.
+ <p>
+ Any <CODE>Number</CODE> which is not a <CODE>BigDecimal</CODE>, <CODE>BigInteger</CODE>,
+ or <CODE>Long</CODE> instance is formatted as a <code>double</code> value.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>number</CODE> - The Number instance to format
+<DT><B>Returns:</B><DD>the formatted number string</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPattern()"><!-- --></A><H3>
+getPattern</H3>
+<PRE>
+public java.lang.String <B>getPattern</B>()</PRE>
+<DL>
+<DD>Returns the pattern used by this number format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parse(java.lang.String)"><!-- --></A><H3>
+parse</H3>
+<PRE>
+public double <B>parse</B>(java.lang.String&nbsp;text)
+             throws java.lang.NumberFormatException</PRE>
+<DL>
+<DD>Parses text to produce a numeric value. A <CODE>NumberFormatException</CODE> is
+ thrown if either the text is empty or if the parse does not consume all
+ characters of the text.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the string being parsed
+<DT><B>Returns:</B><DD>a double value representing the parsed number
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.NumberFormatException</CODE> - if the entire text could not be converted
+     into a double</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parse(java.lang.String, int[])"><!-- --></A><H3>
+parse</H3>
+<PRE>
+public double <B>parse</B>(java.lang.String&nbsp;text,
+                    int[]&nbsp;inOutPos)
+             throws java.lang.NumberFormatException</PRE>
+<DL>
+<DD>Parses text to produce a numeric value.
+
+ <p>
+ The method attempts to parse text starting at the index given by pos. If
+ parsing succeeds, then the index of <code>pos</code> is updated to the
+ index after the last character used (parsing does not necessarily use all
+ characters up to the end of the string), and the parsed number is returned.
+ The updated <code>pos</code> can be used to indicate the starting point
+ for the next call to this method. If an error occurs, then the index of
+ <code>pos</code> is not changed.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the string to be parsed<DD><CODE>inOutPos</CODE> - position to pass in and get back
+<DT><B>Returns:</B><DD>a double value representing the parsed number
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.NumberFormatException</CODE> - if the text segment could not be converted
+     into a double</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="format(boolean, java.lang.StringBuilder, int)"><!-- --></A><H3>
+format</H3>
+<PRE>
+protected void <B>format</B>(boolean&nbsp;isNegative,
+                      java.lang.StringBuilder&nbsp;digits,
+                      int&nbsp;scale)</PRE>
+<DL>
+<DD>Format a number with its significant digits already represented in string
+ form.  This is done so both double and BigInteger/Decimal formatting can
+ share code without requiring all users to pay the code size penalty for
+ BigDecimal/etc.
+ <p>
+ Example values passed in:
+ <ul>
+ <li>-13e2
+ <br><code>isNegative=true, digits="13", scale=2</code>
+ <li>3.14158
+ <br><code>isNegative=false, digits="314158", scale=-5</code>
+ <li>.0001
+ <br><code>isNegative=false, digits="1" ("0001" would be ok), scale=-4</code>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>isNegative</CODE> - true if the value to be formatted is negative<DD><CODE>digits</CODE> - a StringBuilder containing just the significant digits in
+     the value to be formatted, the formatted result will be left here<DD><CODE>scale</CODE> - the number of places to the right the decimal point should
+     be moved in the digit string -- negative means the value contains
+     fractional digits</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="format(long, int)"><!-- --></A><H3>
+format</H3>
+<PRE>
+protected java.lang.String <B>format</B>(long&nbsp;value,
+                                  int&nbsp;scale)</PRE>
+<DL>
+<DD>Format a possibly scaled long value.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - value to format<DD><CODE>scale</CODE> - the number of places to the right the decimal point should
+     be moved in the digit string -- negative means the value contains
+     fractional digits
+<DT><B>Returns:</B><DD>formatted value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getGroupingSize()"><!-- --></A><H3>
+getGroupingSize</H3>
+<PRE>
+protected int <B>getGroupingSize</B>()</PRE>
+<DL>
+<DD>Returns the number of digits between grouping separators in the integer
+ portion of a number.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNegativePrefix()"><!-- --></A><H3>
+getNegativePrefix</H3>
+<PRE>
+protected java.lang.String <B>getNegativePrefix</B>()</PRE>
+<DL>
+<DD>Returns the prefix to use for negative values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNegativeSuffix()"><!-- --></A><H3>
+getNegativeSuffix</H3>
+<PRE>
+protected java.lang.String <B>getNegativeSuffix</B>()</PRE>
+<DL>
+<DD>Returns the suffix to use for negative values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNumberConstants()"><!-- --></A><H3>
+getNumberConstants</H3>
+<PRE>
+protected <A HREF="../../../../../com/google/gwt/i18n/client/constants/NumberConstants.html" title="interface in com.google.gwt.i18n.client.constants">NumberConstants</A> <B>getNumberConstants</B>()</PRE>
+<DL>
+<DD>Returns the NumberConstants instance for this formatter.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPositivePrefix()"><!-- --></A><H3>
+getPositivePrefix</H3>
+<PRE>
+protected java.lang.String <B>getPositivePrefix</B>()</PRE>
+<DL>
+<DD>Returns the prefix to use for positive values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPositiveSuffix()"><!-- --></A><H3>
+getPositiveSuffix</H3>
+<PRE>
+protected java.lang.String <B>getPositiveSuffix</B>()</PRE>
+<DL>
+<DD>Returns the suffix to use for positive values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isDecimalSeparatorAlwaysShown()"><!-- --></A><H3>
+isDecimalSeparatorAlwaysShown</H3>
+<PRE>
+protected boolean <B>isDecimalSeparatorAlwaysShown</B>()</PRE>
+<DL>
+<DD>Returns true if the decimal separator should always be shown.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/NumberFormat.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/Messages.Select.html" title="annotation in com.google.gwt.i18n.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/PluralRule.html" title="interface in com.google.gwt.i18n.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/client/NumberFormat.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="NumberFormat.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

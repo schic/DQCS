@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+KeyboardListenerCollection (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="KeyboardListenerCollection (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/KeyboardListenerCollection.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerAdapter.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Label.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/KeyboardListenerCollection.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="KeyboardListenerCollection.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_java.util.AbstractList">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class KeyboardListenerCollection</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">java.util.AbstractCollection&lt;E&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">java.util.AbstractList&lt;E&gt;
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">java.util.ArrayList&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&gt;
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.KeyboardListenerCollection</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>java.io.Serializable, java.lang.Cloneable, java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&gt;, java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&gt;, java.util.List&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&gt;, java.util.RandomAccess</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/user/client/ui/DelegatingKeyboardListenerCollection.html" title="class in com.google.gwt.user.client.ui">DelegatingKeyboardListenerCollection</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>Widgets should now manage their own handlers via <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)"><CODE>Widget.addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type<H>)</CODE></A></I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1">@Deprecated
+</FONT>public class <B>KeyboardListenerCollection</B><DT>extends java.util.ArrayList&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui">KeyboardListener</A>&gt;</DL>
+</PRE>
+
+<P>
+A helper class for implementers of the SourcesKeyboardEvents interface. This
+ subclass of <CODE>ArrayList</CODE> assumes that all objects added to it will be of
+ type <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui"><CODE>KeyboardListener</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#com.google.gwt.user.client.ui.KeyboardListenerCollection">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_java.util.AbstractList"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class java.util.AbstractList</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>modCount</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerCollection.html#KeyboardListenerCollection()">KeyboardListenerCollection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerCollection.html#fireKeyboardEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Event)">fireKeyboardEvent</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                  <A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Automatically fires the appropriate keyboard event to all listeners.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerCollection.html#fireKeyDown(com.google.gwt.user.client.ui.Widget, char, int)">fireKeyDown</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+            char&nbsp;keyCode,
+            int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Fires a keyDown event to all listeners.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerCollection.html#fireKeyPress(com.google.gwt.user.client.ui.Widget, char, int)">fireKeyPress</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+             char&nbsp;key,
+             int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Fires a keyDown event to all listeners.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerCollection.html#fireKeyUp(com.google.gwt.user.client.ui.Widget, char, int)">fireKeyUp</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+          char&nbsp;keyCode,
+          int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Fires a keyDown event to all listeners.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerCollection.html#getKeyboardModifiers(com.google.gwt.user.client.Event)">getKeyboardModifiers</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Gets the keyboard modifiers associated with a DOMEvent.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.util.ArrayList"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.util.ArrayList</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>add, add, addAll, addAll, clear, clone, contains, ensureCapacity, get, indexOf, isEmpty, iterator, lastIndexOf, listIterator, listIterator, remove, remove, removeAll, removeRange, retainAll, set, size, subList, toArray, toArray, trimToSize</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.util.AbstractList"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.util.AbstractList</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>equals, hashCode</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.util.AbstractCollection"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.util.AbstractCollection</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>containsAll, toString</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.util.List"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface java.util.List</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>containsAll, equals, hashCode</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="KeyboardListenerCollection()"><!-- --></A><H3>
+KeyboardListenerCollection</H3>
+<PRE>
+public <B>KeyboardListenerCollection</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getKeyboardModifiers(com.google.gwt.user.client.Event)"><!-- --></A><H3>
+getKeyboardModifiers</H3>
+<PRE>
+public static int <B>getKeyboardModifiers</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Gets the keyboard modifiers associated with a DOMEvent.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event.
+<DT><B>Returns:</B><DD>the modifiers as defined in <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html" title="interface in com.google.gwt.user.client.ui"><CODE>KeyboardListener</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireKeyboardEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Event)"><!-- --></A><H3>
+fireKeyboardEvent</H3>
+<PRE>
+public void <B>fireKeyboardEvent</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                              <A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Automatically fires the appropriate keyboard event to all listeners. If the
+ given event is not a keyboard event, no action will be performed.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget sending the event.<DD><CODE>event</CODE> - the Event received by the widget.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireKeyDown(com.google.gwt.user.client.ui.Widget, char, int)"><!-- --></A><H3>
+fireKeyDown</H3>
+<PRE>
+public void <B>fireKeyDown</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                        char&nbsp;keyCode,
+                        int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Fires a keyDown event to all listeners.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget sending the event.<DD><CODE>keyCode</CODE> - the keyCode to send with the event.<DD><CODE>modifiers</CODE> - the modifier keys pressed at when the event occurred. This
+          value is a combination of the bits defined by
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT"><CODE>KeyboardListener.MODIFIER_SHIFT</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL"><CODE>KeyboardListener.MODIFIER_CTRL</CODE></A>, and
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT"><CODE>KeyboardListener.MODIFIER_ALT</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireKeyPress(com.google.gwt.user.client.ui.Widget, char, int)"><!-- --></A><H3>
+fireKeyPress</H3>
+<PRE>
+public void <B>fireKeyPress</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                         char&nbsp;key,
+                         int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Fires a keyDown event to all listeners.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget sending the event.<DD><CODE>key</CODE> - the key to send with the event.<DD><CODE>modifiers</CODE> - the modifier keys pressed at when the event occurred. This
+          value is a combination of the bits defined by
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT"><CODE>KeyboardListener.MODIFIER_SHIFT</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL"><CODE>KeyboardListener.MODIFIER_CTRL</CODE></A>, and
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT"><CODE>KeyboardListener.MODIFIER_ALT</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireKeyUp(com.google.gwt.user.client.ui.Widget, char, int)"><!-- --></A><H3>
+fireKeyUp</H3>
+<PRE>
+public void <B>fireKeyUp</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                      char&nbsp;keyCode,
+                      int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Fires a keyDown event to all listeners.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget sending the event.<DD><CODE>keyCode</CODE> - the keyCode to send with the event.<DD><CODE>modifiers</CODE> - the modifier keys pressed at when the event occurred. This
+          value is a combination of the bits defined by
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT"><CODE>KeyboardListener.MODIFIER_SHIFT</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL"><CODE>KeyboardListener.MODIFIER_CTRL</CODE></A>, and
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT"><CODE>KeyboardListener.MODIFIER_ALT</CODE></A>.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/KeyboardListenerCollection.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerAdapter.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Label.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/KeyboardListenerCollection.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="KeyboardListenerCollection.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_java.util.AbstractList">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

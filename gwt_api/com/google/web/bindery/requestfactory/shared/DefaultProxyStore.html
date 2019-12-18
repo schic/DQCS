@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+DefaultProxyStore (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DefaultProxyStore (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DefaultProxyStore.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/BaseProxy.html" title="interface in com.google.web.bindery.requestfactory.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/EntityProxy.html" title="interface in com.google.web.bindery.requestfactory.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DefaultProxyStore.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.web.bindery.requestfactory.shared</FONT>
+<BR>
+Class DefaultProxyStore</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.web.bindery.requestfactory.shared.DefaultProxyStore</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html" title="interface in com.google.web.bindery.requestfactory.shared">ProxyStore</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>DefaultProxyStore</B><DT>extends java.lang.Object<DT>implements <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html" title="interface in com.google.web.bindery.requestfactory.shared">ProxyStore</A></DL>
+</PRE>
+
+<P>
+An in-memory ProxyStore store that can encode its state as a JSON object
+ literal.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#DefaultProxyStore()">DefaultProxyStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct an empty DefaultProxyStore.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#DefaultProxyStore(java.lang.String)">DefaultProxyStore</A></B>(java.lang.String&nbsp;payload)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a DefaultProxyStore using the a value returned from
+ <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#encode()"><CODE>encode()</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#encode()">encode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return a JSON object literal with the contents of the store.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/web/bindery/autobean/shared/Splittable.html" title="interface in com.google.web.bindery.autobean.shared">Splittable</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#get(java.lang.String)">get</A></B>(java.lang.String&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called by <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxySerializer.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>ProxySerializer</CODE></A> to retrieve a value previously provided
+ to <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#put(java.lang.String, com.google.web.bindery.autobean.shared.Splittable)"><CODE>ProxyStore.put(String, Splittable)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#nextId()">nextId</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a non-negative sequence number.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#put(java.lang.String, com.google.web.bindery.autobean.shared.Splittable)">put</A></B>(java.lang.String&nbsp;key,
+    <A HREF="../../../../../../com/google/web/bindery/autobean/shared/Splittable.html" title="interface in com.google.web.bindery.autobean.shared">Splittable</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called by <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxySerializer.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>ProxySerializer</CODE></A> to store a value.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DefaultProxyStore()"><!-- --></A><H3>
+DefaultProxyStore</H3>
+<PRE>
+public <B>DefaultProxyStore</B>()</PRE>
+<DL>
+<DD>Construct an empty DefaultProxyStore.
+<P>
+</DL>
+<HR>
+
+<A NAME="DefaultProxyStore(java.lang.String)"><!-- --></A><H3>
+DefaultProxyStore</H3>
+<PRE>
+public <B>DefaultProxyStore</B>(java.lang.String&nbsp;payload)
+                  throws java.lang.IllegalArgumentException</PRE>
+<DL>
+<DD>Construct a DefaultProxyStore using the a value returned from
+ <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#encode()"><CODE>encode()</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>payload</CODE> - a String previously returned from <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html#encode()"><CODE>encode()</CODE></A>
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the payload cannot be parsed</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="encode()"><!-- --></A><H3>
+encode</H3>
+<PRE>
+public java.lang.String <B>encode</B>()</PRE>
+<DL>
+<DD>Return a JSON object literal with the contents of the store.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="get(java.lang.String)"><!-- --></A><H3>
+get</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/web/bindery/autobean/shared/Splittable.html" title="interface in com.google.web.bindery.autobean.shared">Splittable</A> <B>get</B>(java.lang.String&nbsp;key)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#get(java.lang.String)">ProxyStore</A></CODE></B></DD>
+<DD>Called by <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxySerializer.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>ProxySerializer</CODE></A> to retrieve a value previously provided
+ to <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#put(java.lang.String, com.google.web.bindery.autobean.shared.Splittable)"><CODE>ProxyStore.put(String, Splittable)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#get(java.lang.String)">get</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html" title="interface in com.google.web.bindery.requestfactory.shared">ProxyStore</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the key
+<DT><B>Returns:</B><DD>the associated value or <code>null</code> if <code>key</code> is unknown</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="nextId()"><!-- --></A><H3>
+nextId</H3>
+<PRE>
+public int <B>nextId</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#nextId()">ProxyStore</A></CODE></B></DD>
+<DD>Returns a non-negative sequence number. The actual sequence of values
+ returned by this method is unimportant, as long as the numbers in the
+ sequence are unique.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#nextId()">nextId</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html" title="interface in com.google.web.bindery.requestfactory.shared">ProxyStore</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="put(java.lang.String, com.google.web.bindery.autobean.shared.Splittable)"><!-- --></A><H3>
+put</H3>
+<PRE>
+public void <B>put</B>(java.lang.String&nbsp;key,
+                <A HREF="../../../../../../com/google/web/bindery/autobean/shared/Splittable.html" title="interface in com.google.web.bindery.autobean.shared">Splittable</A>&nbsp;value)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#put(java.lang.String, com.google.web.bindery.autobean.shared.Splittable)">ProxyStore</A></CODE></B></DD>
+<DD>Called by <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxySerializer.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>ProxySerializer</CODE></A> to store a value.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#put(java.lang.String, com.google.web.bindery.autobean.shared.Splittable)">put</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html" title="interface in com.google.web.bindery.requestfactory.shared">ProxyStore</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - a key value that will be passed to <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/ProxyStore.html#get(java.lang.String)"><CODE>ProxyStore.get(String)</CODE></A><DD><CODE>value</CODE> - the data to store<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/web/bindery/autobean/shared/Splittable.html#getPayload()"><CODE>Splittable.getPayload()</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DefaultProxyStore.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/BaseProxy.html" title="interface in com.google.web.bindery.requestfactory.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/EntityProxy.html" title="interface in com.google.web.bindery.requestfactory.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/web/bindery/requestfactory/shared/DefaultProxyStore.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DefaultProxyStore.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

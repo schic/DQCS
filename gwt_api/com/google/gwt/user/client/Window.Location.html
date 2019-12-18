@@ -1,0 +1,520 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Window.Location (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Window.Location (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Window.Location.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Window.ClosingHandler.html" title="interface in com.google.gwt.user.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Window.Navigator.html" title="class in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/Window.Location.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Window.Location.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client</FONT>
+<BR>
+Class Window.Location</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.Window.Location</B>
+</PRE>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../../com/google/gwt/user/client/Window.html" title="class in com.google.gwt.user.client">Window</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public static class <B>Window.Location</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+This class provides access to the browser's location's object. The location
+ object contains information about the current URL and methods to manipulate
+ it. <code>Location</code> is a very simple wrapper, so not all browser
+ quirks are hidden from the user.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#assign(java.lang.String)">assign</A></B>(java.lang.String&nbsp;newURL)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assigns the window to a new URL.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/http/client/UrlBuilder.html" title="class in com.google.gwt.http.client">UrlBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#createUrlBuilder()">createUrlBuilder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a <A HREF="../../../../../com/google/gwt/http/client/UrlBuilder.html" title="class in com.google.gwt.http.client"><CODE>UrlBuilder</CODE></A> based on this <A HREF="../../../../../com/google/gwt/user/client/Window.Location.html" title="class in com.google.gwt.user.client"><CODE>Window.Location</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getHash()">getHash</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the string to the right of the URL's hash.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getHost()">getHost</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the URL's host and port name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getHostName()">getHostName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the URL's host name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getHref()">getHref</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the entire URL.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getParameter(java.lang.String)">getParameter</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the URL's parameter of the specified name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.util.Map&lt;java.lang.String,java.util.List&lt;java.lang.String&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getParameterMap()">getParameterMap</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Map of the URL query parameters for the host page; since
+ changing the map would not change the window's location, the map returned
+ is immutable.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getPath()">getPath</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the path to the URL.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getPort()">getPort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the URL's port.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getProtocol()">getProtocol</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the URL's protocol.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#getQueryString()">getQueryString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the URL's query string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#reload()">reload</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reloads the current browser window.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/Window.Location.html#replace(java.lang.String)">replace</A></B>(java.lang.String&nbsp;newURL)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the current URL with a new one.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="assign(java.lang.String)"><!-- --></A><H3>
+assign</H3>
+<PRE>
+public static void <B>assign</B>(java.lang.String&nbsp;newURL)</PRE>
+<DL>
+<DD>Assigns the window to a new URL. All GWT state will be lost.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>newURL</CODE> - the new URL</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createUrlBuilder()"><!-- --></A><H3>
+createUrlBuilder</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/http/client/UrlBuilder.html" title="class in com.google.gwt.http.client">UrlBuilder</A> <B>createUrlBuilder</B>()</PRE>
+<DL>
+<DD>Create a <A HREF="../../../../../com/google/gwt/http/client/UrlBuilder.html" title="class in com.google.gwt.http.client"><CODE>UrlBuilder</CODE></A> based on this <A HREF="../../../../../com/google/gwt/user/client/Window.Location.html" title="class in com.google.gwt.user.client"><CODE>Window.Location</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the new builder</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHash()"><!-- --></A><H3>
+getHash</H3>
+<PRE>
+public static java.lang.String <B>getHash</B>()</PRE>
+<DL>
+<DD>Gets the string to the right of the URL's hash.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the string to the right of the URL's hash.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHost()"><!-- --></A><H3>
+getHost</H3>
+<PRE>
+public static java.lang.String <B>getHost</B>()</PRE>
+<DL>
+<DD>Gets the URL's host and port name.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the host and port name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHostName()"><!-- --></A><H3>
+getHostName</H3>
+<PRE>
+public static java.lang.String <B>getHostName</B>()</PRE>
+<DL>
+<DD>Gets the URL's host name.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the host name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHref()"><!-- --></A><H3>
+getHref</H3>
+<PRE>
+public static java.lang.String <B>getHref</B>()</PRE>
+<DL>
+<DD>Gets the entire URL.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the URL</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameter(java.lang.String)"><!-- --></A><H3>
+getParameter</H3>
+<PRE>
+public static java.lang.String <B>getParameter</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD>Gets the URL's parameter of the specified name. Note that if multiple
+ parameters have been specified with the same name, the last one will be
+ returned.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - the name of the URL's parameter
+<DT><B>Returns:</B><DD>the value of the URL's parameter</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameterMap()"><!-- --></A><H3>
+getParameterMap</H3>
+<PRE>
+public static java.util.Map&lt;java.lang.String,java.util.List&lt;java.lang.String&gt;&gt; <B>getParameterMap</B>()</PRE>
+<DL>
+<DD>Returns a Map of the URL query parameters for the host page; since
+ changing the map would not change the window's location, the map returned
+ is immutable.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a map from URL query parameter names to a list of values</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPath()"><!-- --></A><H3>
+getPath</H3>
+<PRE>
+public static java.lang.String <B>getPath</B>()</PRE>
+<DL>
+<DD>Gets the path to the URL.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the path to the URL.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPort()"><!-- --></A><H3>
+getPort</H3>
+<PRE>
+public static java.lang.String <B>getPort</B>()</PRE>
+<DL>
+<DD>Gets the URL's port.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the URL's port</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProtocol()"><!-- --></A><H3>
+getProtocol</H3>
+<PRE>
+public static java.lang.String <B>getProtocol</B>()</PRE>
+<DL>
+<DD>Gets the URL's protocol.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the URL's protocol.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getQueryString()"><!-- --></A><H3>
+getQueryString</H3>
+<PRE>
+public static java.lang.String <B>getQueryString</B>()</PRE>
+<DL>
+<DD>Gets the URL's query string.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the URL's query string</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reload()"><!-- --></A><H3>
+reload</H3>
+<PRE>
+public static void <B>reload</B>()</PRE>
+<DL>
+<DD>Reloads the current browser window. All GWT state will be lost.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replace(java.lang.String)"><!-- --></A><H3>
+replace</H3>
+<PRE>
+public static void <B>replace</B>(java.lang.String&nbsp;newURL)</PRE>
+<DL>
+<DD>Replaces the current URL with a new one. All GWT state will be lost. In
+ the browser's history, the current URL will be replaced by the new URL.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>newURL</CODE> - the new URL</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Window.Location.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Window.ClosingHandler.html" title="interface in com.google.gwt.user.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/Window.Navigator.html" title="class in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/Window.Location.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Window.Location.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

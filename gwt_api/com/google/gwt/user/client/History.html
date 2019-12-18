@@ -1,0 +1,555 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+History (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="History (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/History.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/HistoryListener.html" title="interface in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/History.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="History.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client</FONT>
+<BR>
+Class History</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.History</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>History</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+This class allows you to interact with the browser's history stack. Each
+ "item" on the stack is represented by a single string, referred to as a
+ "token". You can create new history items (which have a token associated with
+ them when they are created), and you can programmatically force the current
+ history to move back or forward.
+ 
+ <p>
+ In order to receive notification of user-directed changes to the current
+ history item, implement the <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared"><CODE>ValueChangeHandler</CODE></A> interface and attach
+ it via <A HREF="../../../../../com/google/gwt/user/client/History.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)"><CODE>addValueChangeHandler(ValueChangeHandler)</CODE></A>.
+ </p>
+ 
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class HistoryExample implements EntryPoint, ValueChangeHandler&lt;String&gt; {
+
+  private Label lbl = new Label();
+
+  public void onModuleLoad() {
+    // Create three hyperlinks that change the application's history.
+    Hyperlink link0 = new Hyperlink("link to foo", "foo");
+    Hyperlink link1 = new Hyperlink("link to bar", "bar");
+    Hyperlink link2 = new Hyperlink("link to baz", "baz");
+
+    // If the application starts with no history token, redirect to a new
+    // 'baz' state.
+    String initToken = History.getToken();
+    if (initToken.length() == 0) {
+      History.newItem("baz");
+    }
+
+    // Add widgets to the root panel.
+    VerticalPanel panel = new VerticalPanel();
+    panel.add(lbl);
+    panel.add(link0);
+    panel.add(link1);
+    panel.add(link2);
+    RootPanel.get().add(panel);
+
+    // Add history listener
+    History.addValueChangeHandler(this);
+
+    // Now that we've setup our listener, fire the initial history state.
+    History.fireCurrentHistoryState();
+  }
+
+  public void onValueChange(ValueChangeEvent&lt;String&gt; event) {
+    // This method is called whenever the application's history changes. Set
+    // the label to reflect the current history token.
+    lbl.setText("The current history token is: " + event.getValue());
+  }
+}
+</pre></blockquote>
+ </p>
+ 
+ <p>
+ <h3>URL Encoding</h3>
+ Any valid characters may be used in the history token and will survive
+ round-trips through <A HREF="../../../../../com/google/gwt/user/client/History.html#newItem(java.lang.String)"><CODE>newItem(String)</CODE></A> to <A HREF="../../../../../com/google/gwt/user/client/History.html#getToken()"><CODE>getToken()</CODE></A>/
+ <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+ , but most will be encoded in the user-visible URL. The following US-ASCII
+ characters are not encoded on any currently supported browser (but may be in
+ the future due to future browser changes):
+ <ul>
+ <li>a-z
+ <li>A-Z
+ <li>0-9
+ <li>;,/?:@&=+$-_.!~*()
+ </ul>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#History()">History</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#addHistoryListener(com.google.gwt.user.client.HistoryListener)">addHistoryListener</A></B>(<A HREF="../../../../../com/google/gwt/user/client/HistoryListener.html" title="interface in com.google.gwt.user.client">HistoryListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/user/client/History.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)"><CODE>addValueChangeHandler(ValueChangeHandler)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)">addValueChangeHandler</A></B>(<A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ValueChangeHandler</A>&lt;java.lang.String&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A> handler
+ to be informed of changes to the browser's history stack.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#back()">back</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programmatic equivalent to the user pressing the browser's 'back' button.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#fireCurrentHistoryState()">fireCurrentHistoryState</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fire
+ <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+ events with the current history state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#forward()">forward</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programmatic equivalent to the user pressing the browser's 'forward'
+ button.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the current history token.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#newItem(java.lang.String)">newItem</A></B>(java.lang.String&nbsp;historyToken)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a new browser history entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#newItem(java.lang.String, boolean)">newItem</A></B>(java.lang.String&nbsp;historyToken,
+        boolean&nbsp;issueEvent)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a new browser history entry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#onHistoryChanged(java.lang.String)">onHistoryChanged</A></B>(java.lang.String&nbsp;historyToken)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/user/client/History.html#fireCurrentHistoryState()"><CODE>fireCurrentHistoryState()</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/user/client/History.html#removeHistoryListener(com.google.gwt.user.client.HistoryListener)">removeHistoryListener</A></B>(<A HREF="../../../../../com/google/gwt/user/client/HistoryListener.html" title="interface in com.google.gwt.user.client">HistoryListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="History()"><!-- --></A><H3>
+History</H3>
+<PRE>
+public <B>History</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addHistoryListener(com.google.gwt.user.client.HistoryListener)"><!-- --></A><H3>
+addHistoryListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static void <B>addHistoryListener</B>(<A HREF="../../../../../com/google/gwt/user/client/HistoryListener.html" title="interface in com.google.gwt.user.client">HistoryListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/user/client/History.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)"><CODE>addValueChangeHandler(ValueChangeHandler)</CODE></A> instead</I>
+<P>
+<DD>Adds a listener to be informed of changes to the browser's history stack.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener to be added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)"><!-- --></A><H3>
+addValueChangeHandler</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addValueChangeHandler</B>(<A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ValueChangeHandler</A>&lt;java.lang.String&gt;&nbsp;handler)</PRE>
+<DL>
+<DD>Adds a <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A> handler
+ to be informed of changes to the browser's history stack.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration used to remove this value change handler</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="back()"><!-- --></A><H3>
+back</H3>
+<PRE>
+public static void <B>back</B>()</PRE>
+<DL>
+<DD>Programmatic equivalent to the user pressing the browser's 'back' button.
+ 
+ Note that this does not work correctly on Safari 2.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireCurrentHistoryState()"><!-- --></A><H3>
+fireCurrentHistoryState</H3>
+<PRE>
+public static void <B>fireCurrentHistoryState</B>()</PRE>
+<DL>
+<DD>Fire
+ <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+ events with the current history state. This is most often called at the end
+ of an application's
+ <A HREF="../../../../../com/google/gwt/core/client/EntryPoint.html#onModuleLoad()"><CODE>EntryPoint.onModuleLoad()</CODE></A> to inform
+ history handlers of the initial application state.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="forward()"><!-- --></A><H3>
+forward</H3>
+<PRE>
+public static void <B>forward</B>()</PRE>
+<DL>
+<DD>Programmatic equivalent to the user pressing the browser's 'forward'
+ button.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getToken()"><!-- --></A><H3>
+getToken</H3>
+<PRE>
+public static java.lang.String <B>getToken</B>()</PRE>
+<DL>
+<DD>Gets the current history token. The handler will not receive a
+ <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+ event for the initial token; requiring that an application request the
+ token explicitly on startup gives it an opportunity to run different
+ initialization code in the presence or absence of an initial token.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the initial token, or the empty string if none is present.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newItem(java.lang.String)"><!-- --></A><H3>
+newItem</H3>
+<PRE>
+public static void <B>newItem</B>(java.lang.String&nbsp;historyToken)</PRE>
+<DL>
+<DD>Adds a new browser history entry. Calling this method will cause
+ <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+ to be called as well.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>historyToken</CODE> - the token to associate with the new history item</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newItem(java.lang.String, boolean)"><!-- --></A><H3>
+newItem</H3>
+<PRE>
+public static void <B>newItem</B>(java.lang.String&nbsp;historyToken,
+                           boolean&nbsp;issueEvent)</PRE>
+<DL>
+<DD>Adds a new browser history entry. Calling this method will cause
+ <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+ to be called as well if and only if issueEvent is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>historyToken</CODE> - the token to associate with the new history item<DD><CODE>issueEvent</CODE> - true if a
+          <A HREF="../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html#onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)"><CODE>ValueChangeHandler.onValueChange(com.google.gwt.event.logical.shared.ValueChangeEvent)</CODE></A>
+          event should be issued</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onHistoryChanged(java.lang.String)"><!-- --></A><H3>
+onHistoryChanged</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static void <B>onHistoryChanged</B>(java.lang.String&nbsp;historyToken)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/user/client/History.html#fireCurrentHistoryState()"><CODE>fireCurrentHistoryState()</CODE></A> instead.</I>
+<P>
+<DD>Call all history handlers with the specified token. Note that this does not
+ change the history system's idea of the current state and is only kept for
+ backward compatibility. To fire history events for the initial state of the
+ application, instead call <A HREF="../../../../../com/google/gwt/user/client/History.html#fireCurrentHistoryState()"><CODE>fireCurrentHistoryState()</CODE></A> from the
+ application <A HREF="../../../../../com/google/gwt/core/client/EntryPoint.html#onModuleLoad()"><CODE>EntryPoint.onModuleLoad()</CODE></A>
+ method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>historyToken</CODE> - history token to fire events for</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeHistoryListener(com.google.gwt.user.client.HistoryListener)"><!-- --></A><H3>
+removeHistoryListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static void <B>removeHistoryListener</B>(<A HREF="../../../../../com/google/gwt/user/client/HistoryListener.html" title="interface in com.google.gwt.user.client">HistoryListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;
+<P>
+<DD>Removes a history listener.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener to be removed</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/History.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/user/client/HistoryListener.html" title="interface in com.google.gwt.user.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/user/client/History.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="History.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

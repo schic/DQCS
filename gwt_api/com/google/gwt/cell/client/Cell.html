@@ -1,0 +1,490 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Cell (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Cell (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Cell.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/ButtonCell.html" title="class in com.google.gwt.cell.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/cell/client/Cell.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Cell.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.cell.client</FONT>
+<BR>
+Interface Cell&lt;C&gt;</H2>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>C</CODE> - the type that this Cell represents</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client">AbstractCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="class in com.google.gwt.cell.client">AbstractEditableCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractInputCell.html" title="class in com.google.gwt.cell.client">AbstractInputCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractSafeHtmlCell.html" title="class in com.google.gwt.cell.client">AbstractSafeHtmlCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/ActionCell.html" title="class in com.google.gwt.cell.client">ActionCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/ButtonCell.html" title="class in com.google.gwt.cell.client">ButtonCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/CheckboxCell.html" title="class in com.google.gwt.cell.client">CheckboxCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/ClickableTextCell.html" title="class in com.google.gwt.cell.client">ClickableTextCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/CompositeCell.html" title="class in com.google.gwt.cell.client">CompositeCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/DateCell.html" title="class in com.google.gwt.cell.client">DateCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/DatePickerCell.html" title="class in com.google.gwt.cell.client">DatePickerCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/EditTextCell.html" title="class in com.google.gwt.cell.client">EditTextCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/IconCellDecorator.html" title="class in com.google.gwt.cell.client">IconCellDecorator</A>, <A HREF="../../../../../com/google/gwt/cell/client/ImageCell.html" title="class in com.google.gwt.cell.client">ImageCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/ImageLoadingCell.html" title="class in com.google.gwt.cell.client">ImageLoadingCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/ImageResourceCell.html" title="class in com.google.gwt.cell.client">ImageResourceCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/NumberCell.html" title="class in com.google.gwt.cell.client">NumberCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/SafeHtmlCell.html" title="class in com.google.gwt.cell.client">SafeHtmlCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/SelectionCell.html" title="class in com.google.gwt.cell.client">SelectionCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/TextCell.html" title="class in com.google.gwt.cell.client">TextCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/TextInputCell.html" title="class in com.google.gwt.cell.client">TextInputCell</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>Cell&lt;C&gt;</B></DL>
+</PRE>
+
+<P>
+A light weight representation of a renderable object.
+ 
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class CellExample implements EntryPoint {
+
+  /**
+   * A custom {@link Cell} used to render a string that contains the name of a
+   * color.
+   */
+  private static class ColorCell extends AbstractCell&lt;String&gt; {
+
+    @Override
+    public void render(Context context, String value, SafeHtmlBuilder sb) {
+      /*
+       * Always do a null check on the value. Cell widgets can pass null to
+       * cells if the underlying data contains a null, or if the data arrives
+       * out of order.
+       */
+      if (value == null) {
+        return;
+      }
+
+      // If the value comes from the user, we escape it to avoid XSS attacks.
+      SafeHtml safeValue = SafeHtmlUtils.fromString(value);
+
+      // Append some HTML that sets the text color.
+      sb.appendHtmlConstant("&lt;div style=\"color:" + safeValue.asString()
+          + "\"&gt;");
+      sb.append(safeValue);
+      sb.appendHtmlConstant("&lt;/div&gt;");
+    }
+  }
+
+  /**
+   * The list of data to display.
+   */
+  private static final List&lt;String&gt; COLORS = Arrays.asList("red", "green",
+      "blue", "violet", "black", "gray");
+
+  public void onModuleLoad() {
+    // Create a cell to render each value.
+    ColorCell cell = new ColorCell();
+
+    // Use the cell in a CellList.
+    CellList&lt;String&gt; cellList = new CellList&lt;String&gt;(cell);
+
+    // Push the data into the widget.
+    cellList.setRowData(0, COLORS);
+
+    // Add it to the root panel.
+    RootPanel.get().add(cellList);
+  }
+}
+</pre></blockquote>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contains information about the context of the Cell.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#dependsOnSelection()">dependsOnSelection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if this cell depends on the selection state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Set&lt;java.lang.String&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#getConsumedEvents()">getConsumedEvents</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the set of events that this cell consumes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#handlesSelection()">handlesSelection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if this cell handles selection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#isEditing(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">isEditing</A></B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+          <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+          <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the cell is currently editing the data identified by the
+ given element and key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#onBrowserEvent(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C, com.google.gwt.dom.client.NativeEvent, com.google.gwt.cell.client.ValueUpdater)">onBrowserEvent</A></B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+               <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+               <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value,
+               <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A>&nbsp;event,
+               <A HREF="../../../../../com/google/gwt/cell/client/ValueUpdater.html" title="interface in com.google.gwt.cell.client">ValueUpdater</A>&lt;<A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&gt;&nbsp;valueUpdater)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handle a browser event that took place within the cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#render(com.google.gwt.cell.client.Cell.Context, C, com.google.gwt.safehtml.shared.SafeHtmlBuilder)">render</A></B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+       <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value,
+       <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared">SafeHtmlBuilder</A>&nbsp;sb)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Render a cell as HTML into a <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared"><CODE>SafeHtmlBuilder</CODE></A>, suitable for passing
+ to <A HREF="../../../../../com/google/gwt/dom/client/Element.html#setInnerHTML(java.lang.String)"><CODE>Element.setInnerHTML(String)</CODE></A> on a container element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#resetFocus(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">resetFocus</A></B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+           <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+           <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset focus on the Cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#setValue(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">setValue</A></B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+         <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+         <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method may be used by cell containers to set the value on a single
+ cell directly, rather than using <A HREF="../../../../../com/google/gwt/dom/client/Element.html#setInnerHTML(java.lang.String)"><CODE>Element.setInnerHTML(String)</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="dependsOnSelection()"><!-- --></A><H3>
+dependsOnSelection</H3>
+<PRE>
+boolean <B>dependsOnSelection</B>()</PRE>
+<DL>
+<DD>Check if this cell depends on the selection state.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if dependent on selection, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConsumedEvents()"><!-- --></A><H3>
+getConsumedEvents</H3>
+<PRE>
+java.util.Set&lt;java.lang.String&gt; <B>getConsumedEvents</B>()</PRE>
+<DL>
+<DD>Get the set of events that this cell consumes. The container that uses this
+ cell should only pass these events to
+ <CODE>#onBrowserEvent(Context, Element, Object, NativeEvent, ValueUpdater))</CODE>
+ when the event occurs.
+ 
+ <p>
+ The returned value should not be modified, and may be an unmodifiable set.
+ Changes to the return value may not be reflected in the cell.
+ </p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the consumed events, or null if no events are consumed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="handlesSelection()"><!-- --></A><H3>
+handlesSelection</H3>
+<PRE>
+boolean <B>handlesSelection</B>()</PRE>
+<DL>
+<DD>Check if this cell handles selection. If the cell handles selection, then
+ its container should not automatically handle selection.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the cell handles selection, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isEditing(com.google.gwt.cell.client.Cell.Context,com.google.gwt.dom.client.Element,java.lang.Object)"><!-- --></A><A NAME="isEditing(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)"><!-- --></A><H3>
+isEditing</H3>
+<PRE>
+boolean <B>isEditing</B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+                  <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+                  <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value)</PRE>
+<DL>
+<DD>Returns true if the cell is currently editing the data identified by the
+ given element and key. While a cell is editing, widgets containing the cell
+ may choose to pass keystrokes directly to the cell rather than using them
+ for navigation purposes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>parent</CODE> - the parent Element<DD><CODE>value</CODE> - the value associated with the cell
+<DT><B>Returns:</B><DD>true if the cell is in edit mode</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onBrowserEvent(com.google.gwt.cell.client.Cell.Context,com.google.gwt.dom.client.Element,java.lang.Object,com.google.gwt.dom.client.NativeEvent,com.google.gwt.cell.client.ValueUpdater)"><!-- --></A><A NAME="onBrowserEvent(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C, com.google.gwt.dom.client.NativeEvent, com.google.gwt.cell.client.ValueUpdater)"><!-- --></A><H3>
+onBrowserEvent</H3>
+<PRE>
+void <B>onBrowserEvent</B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+                    <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+                    <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value,
+                    <A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client">NativeEvent</A>&nbsp;event,
+                    <A HREF="../../../../../com/google/gwt/cell/client/ValueUpdater.html" title="interface in com.google.gwt.cell.client">ValueUpdater</A>&lt;<A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&gt;&nbsp;valueUpdater)</PRE>
+<DL>
+<DD>Handle a browser event that took place within the cell. The default
+ implementation returns null.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>parent</CODE> - the parent Element<DD><CODE>value</CODE> - the value associated with the cell<DD><CODE>event</CODE> - the native browser event<DD><CODE>valueUpdater</CODE> - a <A HREF="../../../../../com/google/gwt/cell/client/ValueUpdater.html" title="interface in com.google.gwt.cell.client"><CODE>ValueUpdater</CODE></A>, or null if not specified</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="render(com.google.gwt.cell.client.Cell.Context,java.lang.Object,com.google.gwt.safehtml.shared.SafeHtmlBuilder)"><!-- --></A><A NAME="render(com.google.gwt.cell.client.Cell.Context, C, com.google.gwt.safehtml.shared.SafeHtmlBuilder)"><!-- --></A><H3>
+render</H3>
+<PRE>
+void <B>render</B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+            <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value,
+            <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared">SafeHtmlBuilder</A>&nbsp;sb)</PRE>
+<DL>
+<DD>Render a cell as HTML into a <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared"><CODE>SafeHtmlBuilder</CODE></A>, suitable for passing
+ to <A HREF="../../../../../com/google/gwt/dom/client/Element.html#setInnerHTML(java.lang.String)"><CODE>Element.setInnerHTML(String)</CODE></A> on a container element.
+ 
+ <p>
+ Note: If your cell contains natively focusable elements, such as buttons or
+ input elements, be sure to set the tabIndex to -1 so that they do not steal
+ focus away from the containing widget.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>value</CODE> - the cell value to be rendered<DD><CODE>sb</CODE> - the <A HREF="../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared"><CODE>SafeHtmlBuilder</CODE></A> to be written to</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resetFocus(com.google.gwt.cell.client.Cell.Context,com.google.gwt.dom.client.Element,java.lang.Object)"><!-- --></A><A NAME="resetFocus(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)"><!-- --></A><H3>
+resetFocus</H3>
+<PRE>
+boolean <B>resetFocus</B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+                   <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+                   <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value)</PRE>
+<DL>
+<DD>Reset focus on the Cell. This method is called if the cell has focus when
+ it is refreshed.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>parent</CODE> - the parent Element<DD><CODE>value</CODE> - the value associated with the cell
+<DT><B>Returns:</B><DD>true if focus is taken, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValue(com.google.gwt.cell.client.Cell.Context,com.google.gwt.dom.client.Element,java.lang.Object)"><!-- --></A><A NAME="setValue(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)"><!-- --></A><H3>
+setValue</H3>
+<PRE>
+void <B>setValue</B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+              <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+              <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="type parameter in Cell">C</A>&nbsp;value)</PRE>
+<DL>
+<DD>This method may be used by cell containers to set the value on a single
+ cell directly, rather than using <A HREF="../../../../../com/google/gwt/dom/client/Element.html#setInnerHTML(java.lang.String)"><CODE>Element.setInnerHTML(String)</CODE></A>. See
+ <CODE>AbstractCell#setValue(Context)</CODE> for a default implementation that
+ uses <CODE>#render(Context, SafeHtmlBuilder))</CODE>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>parent</CODE> - the parent Element<DD><CODE>value</CODE> - the value associated with the cell</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Cell.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/ButtonCell.html" title="class in com.google.gwt.cell.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/cell/client/Cell.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Cell.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

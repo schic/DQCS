@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+AbstractRemoteServiceServlet (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractRemoteServiceServlet (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractRemoteServiceServlet.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractRemoteServiceServlet.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.server.rpc</FONT>
+<BR>
+Class AbstractRemoteServiceServlet</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">javax.servlet.GenericServlet
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">javax.servlet.http.HttpServlet
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>java.io.Serializable, javax.servlet.Servlet, javax.servlet.ServletConfig</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">RemoteServiceServlet</A>, <A HREF="../../../../../../com/google/gwt/rpc/server/RpcServlet.html" title="class in com.google.gwt.rpc.server">RpcServlet</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractRemoteServiceServlet</B><DT>extends javax.servlet.http.HttpServlet</DL>
+</PRE>
+
+<P>
+An abstract base class containing utility methods.
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.ThreadLocal&lt;javax.servlet.http.HttpServletRequest&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#perThreadRequest">perThreadRequest</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.ThreadLocal&lt;javax.servlet.http.HttpServletResponse&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#perThreadResponse">perThreadResponse</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#AbstractRemoteServiceServlet()">AbstractRemoteServiceServlet</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">doPost</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+       javax.servlet.http.HttpServletResponse&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Standard HttpServlet method: handle the POST.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doUnexpectedFailure(java.lang.Throwable)">doUnexpectedFailure</A></B>(java.lang.Throwable&nbsp;e)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to control what should happen when an exception
+ escapes the <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><CODE>doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)</CODE></A> method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#getPermutationStrongName()">getPermutationStrongName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the strong name of the permutation, as reported by the client that
+ issued the request, or <code>null</code> if it could not be determined.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;javax.servlet.http.HttpServletRequest</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#getThreadLocalRequest()">getThreadLocalRequest</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the <code>HttpServletRequest</code> object for the current call.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;javax.servlet.http.HttpServletResponse</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#getThreadLocalResponse()">getThreadLocalResponse</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the <code>HttpServletResponse</code> object for the current call.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#onAfterRequestDeserialized(com.google.gwt.user.server.rpc.RPCRequest)">onAfterRequestDeserialized</A></B>(<A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCRequest.html" title="class in com.google.gwt.user.server.rpc">RPCRequest</A>&nbsp;rpcRequest)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to examine the deserialized version of the request
+ before the call to the servlet method is made.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#processPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">processPost</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+            javax.servlet.http.HttpServletResponse&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called by <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><CODE>doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)</CODE></A> for type-specific processing of the request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#readContent(javax.servlet.http.HttpServletRequest)">readContent</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method in order to control the parsing of the incoming
+ request.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.servlet.http.HttpServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class javax.servlet.http.HttpServlet</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>doDelete, doGet, doHead, doOptions, doPut, doTrace, getLastModified, service, service</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.servlet.GenericServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class javax.servlet.GenericServlet</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>destroy, getInitParameter, getInitParameterNames, getServletConfig, getServletContext, getServletInfo, getServletName, init, init, log, log</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="perThreadRequest"><!-- --></A><H3>
+perThreadRequest</H3>
+<PRE>
+protected transient java.lang.ThreadLocal&lt;javax.servlet.http.HttpServletRequest&gt; <B>perThreadRequest</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="perThreadResponse"><!-- --></A><H3>
+perThreadResponse</H3>
+<PRE>
+protected transient java.lang.ThreadLocal&lt;javax.servlet.http.HttpServletResponse&gt; <B>perThreadResponse</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractRemoteServiceServlet()"><!-- --></A><H3>
+AbstractRemoteServiceServlet</H3>
+<PRE>
+public <B>AbstractRemoteServiceServlet</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><!-- --></A><H3>
+doPost</H3>
+<PRE>
+public final void <B>doPost</B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                         javax.servlet.http.HttpServletResponse&nbsp;response)</PRE>
+<DL>
+<DD>Standard HttpServlet method: handle the POST. Delegates to
+ <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#processPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><CODE>processPost(HttpServletRequest, HttpServletResponse)</CODE></A>.
+ 
+ This doPost method swallows ALL exceptions, logs them in the
+ ServletContext, and returns a GENERIC_FAILURE_MSG response with status code
+ 500.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>doPost</CODE> in class <CODE>javax.servlet.http.HttpServlet</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doUnexpectedFailure(java.lang.Throwable)"><!-- --></A><H3>
+doUnexpectedFailure</H3>
+<PRE>
+protected void <B>doUnexpectedFailure</B>(java.lang.Throwable&nbsp;e)</PRE>
+<DL>
+<DD>Override this method to control what should happen when an exception
+ escapes the <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><CODE>doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)</CODE></A> method. The default implementation will log the
+ failure and send a generic failure response to the client.
+ <p>
+ An "expected failure" is an exception thrown by a service method that is
+ declared in the signature of the service method. These exceptions are
+ serialized back to the client, and are not passed to this method. This
+ method is called only for exceptions or errors that are not part of the
+ service method's signature, or that result from SecurityExceptions,
+ SerializationExceptions, or other failures within the RPC framework.
+ <p>
+ Note that if the desired behavior is to both send the GENERIC_FAILURE_MSG
+ response AND to rethrow the exception, then this method should first send
+ the GENERIC_FAILURE_MSG response itself (using getThreadLocalResponse), and
+ then rethrow the exception. Rethrowing the exception will cause it to
+ escape into the servlet container.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>e</CODE> - the exception which was thrown</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPermutationStrongName()"><!-- --></A><H3>
+getPermutationStrongName</H3>
+<PRE>
+protected final java.lang.String <B>getPermutationStrongName</B>()</PRE>
+<DL>
+<DD>Returns the strong name of the permutation, as reported by the client that
+ issued the request, or <code>null</code> if it could not be determined.
+ This information is encoded in the
+ <A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcRequestBuilder.html#STRONG_NAME_HEADER">"X-GWT-Permutation"</A>
+ HTTP header.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getThreadLocalRequest()"><!-- --></A><H3>
+getThreadLocalRequest</H3>
+<PRE>
+protected final javax.servlet.http.HttpServletRequest <B>getThreadLocalRequest</B>()</PRE>
+<DL>
+<DD>Gets the <code>HttpServletRequest</code> object for the current call. It is
+ stored thread-locally so that simultaneous invocations can have different
+ request objects.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getThreadLocalResponse()"><!-- --></A><H3>
+getThreadLocalResponse</H3>
+<PRE>
+protected final javax.servlet.http.HttpServletResponse <B>getThreadLocalResponse</B>()</PRE>
+<DL>
+<DD>Gets the <code>HttpServletResponse</code> object for the current call. It
+ is stored thread-locally so that simultaneous invocations can have
+ different response objects.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onAfterRequestDeserialized(com.google.gwt.user.server.rpc.RPCRequest)"><!-- --></A><H3>
+onAfterRequestDeserialized</H3>
+<PRE>
+protected void <B>onAfterRequestDeserialized</B>(<A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCRequest.html" title="class in com.google.gwt.user.server.rpc">RPCRequest</A>&nbsp;rpcRequest)</PRE>
+<DL>
+<DD>Override this method to examine the deserialized version of the request
+ before the call to the servlet method is made. The default implementation
+ does nothing and need not be called by subclasses.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>rpcRequest</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><!-- --></A><H3>
+processPost</H3>
+<PRE>
+protected abstract void <B>processPost</B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                                    javax.servlet.http.HttpServletResponse&nbsp;response)
+                             throws java.lang.Throwable</PRE>
+<DL>
+<DD>Called by <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><CODE>doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)</CODE></A> for type-specific processing of the request.
+ Because <code>doPost</code> swallows all <code>Throwables</code>, this
+ method may throw any exception the implementor wishes.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Throwable</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readContent(javax.servlet.http.HttpServletRequest)"><!-- --></A><H3>
+readContent</H3>
+<PRE>
+protected java.lang.String <B>readContent</B>(javax.servlet.http.HttpServletRequest&nbsp;request)
+                                throws javax.servlet.ServletException,
+                                       java.io.IOException</PRE>
+<DL>
+<DD>Override this method in order to control the parsing of the incoming
+ request. For example, you may want to bypass the check of the Content-Type
+ and character encoding headers in the request, as some proxies re-write the
+ request headers. Note that bypassing these checks may expose the servlet to
+ some cross-site vulnerabilities. Your implementation should comply with the
+ HTTP/1.1 specification, which includes handling both requests which include
+ a Content-Length header and requests utilizing <code>Transfer-Encoding:
+ chuncked</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the incoming request
+<DT><B>Returns:</B><DD>the content of the incoming request encoded as a string.
+<DT><B>Throws:</B>
+<DD><CODE>javax.servlet.ServletException</CODE>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractRemoteServiceServlet.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractRemoteServiceServlet.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

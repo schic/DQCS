@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+ListDataProvider (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ListDataProvider (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ListDataProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/view/client/HasRows.html" title="interface in com.google.gwt.view.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/view/client/MultiSelectionModel.html" title="class in com.google.gwt.view.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/view/client/ListDataProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ListDataProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.view.client</FONT>
+<BR>
+Class ListDataProvider&lt;T&gt;</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html" title="class in com.google.gwt.view.client">com.google.gwt.view.client.AbstractDataProvider</A>&lt;T&gt;
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.view.client.ListDataProvider&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the data type of the list</DL>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;T&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>ListDataProvider&lt;T&gt;</B><DT>extends <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html" title="class in com.google.gwt.view.client">AbstractDataProvider</A>&lt;T&gt;</DL>
+</PRE>
+
+<P>
+A concrete subclass of <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html" title="class in com.google.gwt.view.client"><CODE>AbstractDataProvider</CODE></A> that is backed by an
+ in-memory list.
+
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class ListDataProviderExample implements EntryPoint {
+
+  public void onModuleLoad() {
+    // Create a CellList.
+    CellList&lt;String&gt; cellList = new CellList&lt;String&gt;(new TextCell());
+
+    // Create a list data provider.
+    final ListDataProvider&lt;String&gt; dataProvider = new ListDataProvider&lt;String&gt;();
+
+    // Add the cellList to the dataProvider.
+    dataProvider.addDataDisplay(cellList);
+
+    // Create a form to add values to the data provider.
+    final TextBox valueBox = new TextBox();
+    valueBox.setText("Enter new value");
+    Button addButton = new Button("Add value", new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        // Get the value from the text box.
+        String newValue = valueBox.getText();
+
+        // Get the underlying list from data dataProvider.
+        List&lt;String&gt; list = dataProvider.getList();
+
+        // Add the value to the list. The dataProvider will update the cellList.
+        list.add(newValue);
+      }
+    });
+
+    // Add the widgets to the root panel.
+    VerticalPanel vPanel = new VerticalPanel();
+    vPanel.add(valueBox);
+    vPanel.add(addButton);
+    vPanel.add(cellList);
+    RootPanel.get().add(vPanel);
+  }
+}
+</pre></blockquote>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#ListDataProvider()">ListDataProvider</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#ListDataProvider(java.util.List)">ListDataProvider</A></B>(java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;listToWrap)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a list model that wraps the given list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#ListDataProvider(java.util.List, com.google.gwt.view.client.ProvidesKey)">ListDataProvider</A></B>(java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;listToWrap,
+                 <A HREF="../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;keyProvider)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a list model that wraps the given list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#ListDataProvider(com.google.gwt.view.client.ProvidesKey)">ListDataProvider</A></B>(<A HREF="../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;keyProvider)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty list model that wraps the given collection.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#flush()">flush</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flush pending list changes to the displays.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#getList()">getList</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the list that backs this model.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#onRangeChanged(com.google.gwt.view.client.HasData)">onRangeChanged</A></B>(<A HREF="../../../../../com/google/gwt/view/client/HasData.html" title="interface in com.google.gwt.view.client">HasData</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;display)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when a display changes its range of interest.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#refresh()">refresh</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refresh all of the displays listening to this adapter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#setList(java.util.List)">setList</A></B>(java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;listToWrap)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace this model's list.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.view.client.AbstractDataProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.view.client.<A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html" title="class in com.google.gwt.view.client">AbstractDataProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#addDataDisplay(com.google.gwt.view.client.HasData)">addDataDisplay</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#getDataDisplays()">getDataDisplays</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#getKey(T)">getKey</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#getKeyProvider()">getKeyProvider</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#getRanges()">getRanges</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#removeDataDisplay(com.google.gwt.view.client.HasData)">removeDataDisplay</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#updateRowCount(int, boolean)">updateRowCount</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#updateRowData(com.google.gwt.view.client.HasData, int, java.util.List)">updateRowData</A>, <A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#updateRowData(int, java.util.List)">updateRowData</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ListDataProvider()"><!-- --></A><H3>
+ListDataProvider</H3>
+<PRE>
+public <B>ListDataProvider</B>()</PRE>
+<DL>
+<DD>Creates an empty model.
+<P>
+</DL>
+<HR>
+
+<A NAME="ListDataProvider(java.util.List)"><!-- --></A><H3>
+ListDataProvider</H3>
+<PRE>
+public <B>ListDataProvider</B>(java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;listToWrap)</PRE>
+<DL>
+<DD>Creates a list model that wraps the given list. Changes to the
+ wrapped list must be made via this model in order to be correctly applied
+ to displays.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>listToWrap</CODE> - the List to be wrapped</DL>
+</DL>
+<HR>
+
+<A NAME="ListDataProvider(com.google.gwt.view.client.ProvidesKey)"><!-- --></A><H3>
+ListDataProvider</H3>
+<PRE>
+public <B>ListDataProvider</B>(<A HREF="../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;keyProvider)</PRE>
+<DL>
+<DD>Creates an empty list model that wraps the given collection.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>keyProvider</CODE> - an instance of ProvidesKey<T>, or null if the record
+        object should act as its own key</DL>
+</DL>
+<HR>
+
+<A NAME="ListDataProvider(java.util.List, com.google.gwt.view.client.ProvidesKey)"><!-- --></A><H3>
+ListDataProvider</H3>
+<PRE>
+public <B>ListDataProvider</B>(java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;listToWrap,
+                        <A HREF="../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;keyProvider)</PRE>
+<DL>
+<DD>Creates a list model that wraps the given list. Changes to the
+ wrapped list must be made via this model in order to be correctly applied
+ to displays.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>listToWrap</CODE> - the List to be wrapped<DD><CODE>keyProvider</CODE> - an instance of ProvidesKey<T>, or null if the record
+        object should act as its own key</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="flush()"><!-- --></A><H3>
+flush</H3>
+<PRE>
+public void <B>flush</B>()</PRE>
+<DL>
+<DD>Flush pending list changes to the displays. By default, displays are
+ informed of modifications to the underlying list at the end of the current
+ event loop, which makes it possible to perform multiple operations
+ synchronously without repeatedly refreshing the displays. This method can
+ be called to flush the changes immediately instead of waiting until the end
+ of the current event loop.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getList()"><!-- --></A><H3>
+getList</H3>
+<PRE>
+public java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt; <B>getList</B>()</PRE>
+<DL>
+<DD>Get the list that backs this model. Changes to the list will be reflected
+ in the model.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the list<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#setList(java.util.List)"><CODE>setList(List)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="refresh()"><!-- --></A><H3>
+refresh</H3>
+<PRE>
+public void <B>refresh</B>()</PRE>
+<DL>
+<DD>Refresh all of the displays listening to this adapter.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setList(java.util.List)"><!-- --></A><H3>
+setList</H3>
+<PRE>
+public void <B>setList</B>(java.util.List&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;listToWrap)</PRE>
+<DL>
+<DD>Replace this model's list.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listToWrap</CODE> - the model's new list<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html#getList()"><CODE>getList()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onRangeChanged(com.google.gwt.view.client.HasData)"><!-- --></A><H3>
+onRangeChanged</H3>
+<PRE>
+protected void <B>onRangeChanged</B>(<A HREF="../../../../../com/google/gwt/view/client/HasData.html" title="interface in com.google.gwt.view.client">HasData</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;&nbsp;display)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#onRangeChanged(com.google.gwt.view.client.HasData)">AbstractDataProvider</A></CODE></B></DD>
+<DD>Called when a display changes its range of interest.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html#onRangeChanged(com.google.gwt.view.client.HasData)">onRangeChanged</A></CODE> in class <CODE><A HREF="../../../../../com/google/gwt/view/client/AbstractDataProvider.html" title="class in com.google.gwt.view.client">AbstractDataProvider</A>&lt;<A HREF="../../../../../com/google/gwt/view/client/ListDataProvider.html" title="type parameter in ListDataProvider">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>display</CODE> - the display whose range has changed</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ListDataProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/view/client/HasRows.html" title="interface in com.google.gwt.view.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/view/client/MultiSelectionModel.html" title="class in com.google.gwt.view.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/view/client/ListDataProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ListDataProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

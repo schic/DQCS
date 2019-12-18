@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+CustomFieldSerializer (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CustomFieldSerializer (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CustomFieldSerializer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/rpc/AsyncCallback.html" title="interface in com.google.gwt.user.client.rpc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/rpc/GwtTransient.html" title="annotation in com.google.gwt.user.client.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/rpc/CustomFieldSerializer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CustomFieldSerializer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.rpc</FONT>
+<BR>
+Class CustomFieldSerializer&lt;T&gt;</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.rpc.CustomFieldSerializer&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the type of the object being serialized</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>CustomFieldSerializer&lt;T&gt;</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+An interface that may be implemented by class-based custom field serializers
+ which will reduce the amount of server-side reflection during serialization,
+ hence improving their serialization performance.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#CustomFieldSerializer()">CustomFieldSerializer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#deserializeInstance(com.google.gwt.user.client.rpc.SerializationStreamReader, T)">deserializeInstance</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc">SerializationStreamReader</A>&nbsp;streamReader,
+                    <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html" title="type parameter in CustomFieldSerializer">T</A>&nbsp;instance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deserializes the content of the object from the
+ <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#hasCustomInstantiateInstance()">hasCustomInstantiateInstance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html" title="type parameter in CustomFieldSerializer">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#instantiateInstance(com.google.gwt.user.client.rpc.SerializationStreamReader)">instantiateInstance</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc">SerializationStreamReader</A>&nbsp;streamReader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiates an object from the <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#serializeInstance(com.google.gwt.user.client.rpc.SerializationStreamWriter, T)">serializeInstance</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamWriter.html" title="interface in com.google.gwt.user.client.rpc">SerializationStreamWriter</A>&nbsp;streamWriter,
+                  <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html" title="type parameter in CustomFieldSerializer">T</A>&nbsp;instance)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serializes the content of the object into the
+ <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamWriter.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamWriter</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="CustomFieldSerializer()"><!-- --></A><H3>
+CustomFieldSerializer</H3>
+<PRE>
+public <B>CustomFieldSerializer</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="deserializeInstance(com.google.gwt.user.client.rpc.SerializationStreamReader,java.lang.Object)"><!-- --></A><A NAME="deserializeInstance(com.google.gwt.user.client.rpc.SerializationStreamReader, T)"><!-- --></A><H3>
+deserializeInstance</H3>
+<PRE>
+public abstract void <B>deserializeInstance</B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc">SerializationStreamReader</A>&nbsp;streamReader,
+                                         <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html" title="type parameter in CustomFieldSerializer">T</A>&nbsp;instance)
+                                  throws <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationException.html" title="class in com.google.gwt.user.client.rpc">SerializationException</A></PRE>
+<DL>
+<DD>Deserializes the content of the object from the
+ <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>streamReader</CODE> - the <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A> to read the
+        object's content from<DD><CODE>instance</CODE> - the object instance to deserialize
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationException.html" title="class in com.google.gwt.user.client.rpc">SerializationException</A></CODE> - if the deserialization operation is not
+        successful</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hasCustomInstantiateInstance()"><!-- --></A><H3>
+hasCustomInstantiateInstance</H3>
+<PRE>
+public boolean <B>hasCustomInstantiateInstance</B>()</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if a specialist <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#instantiateInstance(com.google.gwt.user.client.rpc.SerializationStreamReader)"><CODE>instantiateInstance(com.google.gwt.user.client.rpc.SerializationStreamReader)</CODE></A> is
+         implemented; <code>false</code> otherwise</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="instantiateInstance(com.google.gwt.user.client.rpc.SerializationStreamReader)"><!-- --></A><H3>
+instantiateInstance</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html" title="type parameter in CustomFieldSerializer">T</A> <B>instantiateInstance</B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc">SerializationStreamReader</A>&nbsp;streamReader)
+                      throws <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationException.html" title="class in com.google.gwt.user.client.rpc">SerializationException</A></PRE>
+<DL>
+<DD>Instantiates an object from the <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A>.
+ <p>
+ Most of the time, this can be left unimplemented and the framework
+ will instantiate the instance itself.  This is typically used when the
+ object being deserialized is immutable, hence it has to be created with
+ its state already set.
+ <p>
+ If this is overridden, the <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html#hasCustomInstantiateInstance()"><CODE>hasCustomInstantiateInstance()</CODE></A> method
+ must return <code>true</code> in order for the framework to know to call
+ it.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>streamReader</CODE> - the <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A> to read the
+        object's content from
+<DT><B>Returns:</B><DD>an object that has been loaded from the
+         <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamReader.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamReader</CODE></A>
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationException.html" title="class in com.google.gwt.user.client.rpc">SerializationException</A></CODE> - if the instantiation operation is not
+        successful</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="serializeInstance(com.google.gwt.user.client.rpc.SerializationStreamWriter,java.lang.Object)"><!-- --></A><A NAME="serializeInstance(com.google.gwt.user.client.rpc.SerializationStreamWriter, T)"><!-- --></A><H3>
+serializeInstance</H3>
+<PRE>
+public abstract void <B>serializeInstance</B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamWriter.html" title="interface in com.google.gwt.user.client.rpc">SerializationStreamWriter</A>&nbsp;streamWriter,
+                                       <A HREF="../../../../../../com/google/gwt/user/client/rpc/CustomFieldSerializer.html" title="type parameter in CustomFieldSerializer">T</A>&nbsp;instance)
+                                throws <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationException.html" title="class in com.google.gwt.user.client.rpc">SerializationException</A></PRE>
+<DL>
+<DD>Serializes the content of the object into the
+ <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamWriter.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamWriter</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>streamWriter</CODE> - the <A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationStreamWriter.html" title="interface in com.google.gwt.user.client.rpc"><CODE>SerializationStreamWriter</CODE></A> to write the
+        object's content to<DD><CODE>instance</CODE> - the object instance to serialize
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/rpc/SerializationException.html" title="class in com.google.gwt.user.client.rpc">SerializationException</A></CODE> - if the serialization operation is not
+        successful</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CustomFieldSerializer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/rpc/AsyncCallback.html" title="interface in com.google.gwt.user.client.rpc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/rpc/GwtTransient.html" title="annotation in com.google.gwt.user.client.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/rpc/CustomFieldSerializer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CustomFieldSerializer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

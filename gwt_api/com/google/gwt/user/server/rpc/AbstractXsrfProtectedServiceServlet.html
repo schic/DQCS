@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+AbstractXsrfProtectedServiceServlet (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractXsrfProtectedServiceServlet (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractXsrfProtectedServiceServlet.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/HybridServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractXsrfProtectedServiceServlet.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.server.rpc</FONT>
+<BR>
+Class AbstractXsrfProtectedServiceServlet</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">javax.servlet.GenericServlet
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by ">javax.servlet.http.HttpServlet
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet</A>
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">com.google.gwt.user.server.rpc.RemoteServiceServlet</A>
+                  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.server.rpc.AbstractXsrfProtectedServiceServlet</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/user/server/rpc/SerializationPolicyProvider.html" title="interface in com.google.gwt.user.server.rpc">SerializationPolicyProvider</A>, java.io.Serializable, javax.servlet.Servlet, javax.servlet.ServletConfig</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/user/server/rpc/XsrfProtectedServiceServlet.html" title="class in com.google.gwt.user.server.rpc">XsrfProtectedServiceServlet</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractXsrfProtectedServiceServlet</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">RemoteServiceServlet</A></DL>
+</PRE>
+
+<P>
+An abstract class for XSRF protected RPC service implementations, which
+ decides if XSRF protection should be enforced on a method invocation based
+ on the following logic:
+ <ul>
+  <li>RPC interface or method can be annotated with either <A HREF="../../../../../../com/google/gwt/user/server/rpc/XsrfProtect.html" title="annotation in com.google.gwt.user.server.rpc"><CODE>XsrfProtect</CODE></A>
+      or <A HREF="../../../../../../com/google/gwt/user/server/rpc/NoXsrfProtect.html" title="annotation in com.google.gwt.user.server.rpc"><CODE>NoXsrfProtect</CODE></A> annotation to enable or disable XSRF protection
+      on all methods of an RPC interface or a single method correspondingly.
+  <li>RPC interface level annotation can be overridden by a method level
+      annotation.
+  <li>If no annotations are present and RPC interface contains method that
+      returns <A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcToken.html" title="interface in com.google.gwt.user.client.rpc"><CODE>RpcToken</CODE></A> or its implementation, then XSRF token
+      validation is performed on all methods of that interface except for the
+      method returning <A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcToken.html" title="interface in com.google.gwt.user.client.rpc"><CODE>RpcToken</CODE></A>.
+ </ul>
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/server/rpc/XsrfProtectedServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><CODE>XsrfProtectedServiceServlet</CODE></A>, 
+<A HREF="../../../../../../serialized-form.html#com.google.gwt.user.server.rpc.AbstractXsrfProtectedServiceServlet">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.server.rpc.<A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">AbstractRemoteServiceServlet</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#perThreadRequest">perThreadRequest</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#perThreadResponse">perThreadResponse</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html#AbstractXsrfProtectedServiceServlet()">AbstractXsrfProtectedServiceServlet</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The default constructor used by service implementations that
+ extend this class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html#AbstractXsrfProtectedServiceServlet(java.lang.Object)">AbstractXsrfProtectedServiceServlet</A></B>(java.lang.Object&nbsp;delegate)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The wrapping constructor used by service implementations that are
+ separate from this class.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html#onAfterRequestDeserialized(com.google.gwt.user.server.rpc.RPCRequest)">onAfterRequestDeserialized</A></B>(<A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCRequest.html" title="class in com.google.gwt.user.server.rpc">RPCRequest</A>&nbsp;rpcRequest)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to examine the deserialized version of the request
+ before the call to the servlet method is made.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html#shouldValidateXsrfToken(java.lang.reflect.Method)">shouldValidateXsrfToken</A></B>(java.lang.reflect.Method&nbsp;method)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to change default XSRF enforcement logic.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html#validateXsrfToken(com.google.gwt.user.client.rpc.RpcToken, java.lang.reflect.Method)">validateXsrfToken</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcToken.html" title="interface in com.google.gwt.user.client.rpc">RpcToken</A>&nbsp;token,
+                  java.lang.reflect.Method&nbsp;method)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to perform XSRF token verification.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.server.rpc.RemoteServiceServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.server.rpc.<A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">RemoteServiceServlet</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#checkPermutationStrongName()">checkPermutationStrongName</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#doGetSerializationPolicy(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)">doGetSerializationPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#getSerializationPolicy(java.lang.String, java.lang.String)">getSerializationPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#onAfterResponseSerialized(java.lang.String)">onAfterResponseSerialized</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#onBeforeRequestDeserialized(java.lang.String)">onBeforeRequestDeserialized</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#processCall(java.lang.String)">processCall</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#processPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">processPost</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/RemoteServiceServlet.html#shouldCompressResponse(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, java.lang.String)">shouldCompressResponse</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.server.rpc.<A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">AbstractRemoteServiceServlet</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">doPost</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#doUnexpectedFailure(java.lang.Throwable)">doUnexpectedFailure</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#getPermutationStrongName()">getPermutationStrongName</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#getThreadLocalRequest()">getThreadLocalRequest</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#getThreadLocalResponse()">getThreadLocalResponse</A>, <A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#readContent(javax.servlet.http.HttpServletRequest)">readContent</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.servlet.http.HttpServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class javax.servlet.http.HttpServlet</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>doDelete, doGet, doHead, doOptions, doPut, doTrace, getLastModified, service, service</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.servlet.GenericServlet"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class javax.servlet.GenericServlet</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>destroy, getInitParameter, getInitParameterNames, getServletConfig, getServletContext, getServletInfo, getServletName, init, init, log, log</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractXsrfProtectedServiceServlet()"><!-- --></A><H3>
+AbstractXsrfProtectedServiceServlet</H3>
+<PRE>
+public <B>AbstractXsrfProtectedServiceServlet</B>()</PRE>
+<DL>
+<DD>The default constructor used by service implementations that
+ extend this class.  The servlet will delegate AJAX requests to
+ the appropriate method in the subclass.
+<P>
+</DL>
+<HR>
+
+<A NAME="AbstractXsrfProtectedServiceServlet(java.lang.Object)"><!-- --></A><H3>
+AbstractXsrfProtectedServiceServlet</H3>
+<PRE>
+public <B>AbstractXsrfProtectedServiceServlet</B>(java.lang.Object&nbsp;delegate)</PRE>
+<DL>
+<DD>The wrapping constructor used by service implementations that are
+ separate from this class.  The servlet will delegate AJAX
+ requests to the appropriate method in the given object.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="onAfterRequestDeserialized(com.google.gwt.user.server.rpc.RPCRequest)"><!-- --></A><H3>
+onAfterRequestDeserialized</H3>
+<PRE>
+protected void <B>onAfterRequestDeserialized</B>(<A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCRequest.html" title="class in com.google.gwt.user.server.rpc">RPCRequest</A>&nbsp;rpcRequest)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#onAfterRequestDeserialized(com.google.gwt.user.server.rpc.RPCRequest)">AbstractRemoteServiceServlet</A></CODE></B></DD>
+<DD>Override this method to examine the deserialized version of the request
+ before the call to the servlet method is made. The default implementation
+ does nothing and need not be called by subclasses.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html#onAfterRequestDeserialized(com.google.gwt.user.server.rpc.RPCRequest)">onAfterRequestDeserialized</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc">AbstractRemoteServiceServlet</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="shouldValidateXsrfToken(java.lang.reflect.Method)"><!-- --></A><H3>
+shouldValidateXsrfToken</H3>
+<PRE>
+protected boolean <B>shouldValidateXsrfToken</B>(java.lang.reflect.Method&nbsp;method)</PRE>
+<DL>
+<DD>Override this method to change default XSRF enforcement logic.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>method</CODE> - Method being invoked
+<DT><B>Returns:</B><DD><code>true</code> if XSRF token should be verified, <code>false</code>
+         otherwise</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateXsrfToken(com.google.gwt.user.client.rpc.RpcToken, java.lang.reflect.Method)"><!-- --></A><H3>
+validateXsrfToken</H3>
+<PRE>
+protected abstract void <B>validateXsrfToken</B>(<A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcToken.html" title="interface in com.google.gwt.user.client.rpc">RpcToken</A>&nbsp;token,
+                                          java.lang.reflect.Method&nbsp;method)
+                                   throws <A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcTokenException.html" title="class in com.google.gwt.user.client.rpc">RpcTokenException</A></PRE>
+<DL>
+<DD>Override this method to perform XSRF token verification.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>token</CODE> - <A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcToken.html" title="interface in com.google.gwt.user.client.rpc"><CODE>RpcToken</CODE></A> included with an RPC request.<DD><CODE>method</CODE> - method being invoked via this RPC call.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/rpc/RpcTokenException.html" title="class in com.google.gwt.user.client.rpc">RpcTokenException</A></CODE> - if token verification failed.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractXsrfProtectedServiceServlet.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/AbstractRemoteServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/HybridServiceServlet.html" title="class in com.google.gwt.user.server.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/server/rpc/AbstractXsrfProtectedServiceServlet.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractXsrfProtectedServiceServlet.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.server.rpc.AbstractRemoteServiceServlet">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

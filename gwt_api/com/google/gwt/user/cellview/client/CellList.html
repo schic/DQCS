@@ -1,0 +1,1271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+CellList (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CellList (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CellList.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellBrowser.Style.html" title="interface in com.google.gwt.user.cellview.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/cellview/client/CellList.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CellList.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.cellview.client</FONT>
+<BR>
+Class CellList&lt;T&gt;</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.UIObject</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Widget</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">com.google.gwt.user.cellview.client.AbstractHasData</A>&lt;T&gt;
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.cellview.client.CellList&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the data type of list items</DL>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasAttachHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasAttachHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/HasKeyboardPagingPolicy.html" title="interface in com.google.gwt.user.cellview.client">HasKeyboardPagingPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/HasKeyboardSelectionPolicy.html" title="interface in com.google.gwt.user.cellview.client">HasKeyboardSelectionPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>, <A HREF="../../../../../../com/google/gwt/view/client/HasCellPreviewHandlers.html" title="interface in com.google.gwt.view.client">HasCellPreviewHandlers</A>&lt;T&gt;, <A HREF="../../../../../../com/google/gwt/view/client/HasData.html" title="interface in com.google.gwt.view.client">HasData</A>&lt;T&gt;, <A HREF="../../../../../../com/google/gwt/view/client/HasKeyProvider.html" title="interface in com.google.gwt.view.client">HasKeyProvider</A>&lt;T&gt;, <A HREF="../../../../../../com/google/gwt/view/client/HasRows.html" title="interface in com.google.gwt.view.client">HasRows</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>CellList&lt;T&gt;</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;T&gt;</DL>
+</PRE>
+
+<P>
+A single column list of cells.
+ 
+ <p>
+ <h3>Examples</h3>
+ <dl>
+ <dt>Trivial example</dt>
+ <dd><blockquote><pre>public class CellListExample implements EntryPoint {
+
+  /**
+   * The list of data to display.
+   */
+  private static final List&lt;String&gt; DAYS = Arrays.asList("Sunday", "Monday",
+      "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+
+  public void onModuleLoad() {
+    // Create a cell to render each value.
+    TextCell textCell = new TextCell();
+
+    // Create a CellList that uses the cell.
+    CellList&lt;String&gt; cellList = new CellList&lt;String&gt;(textCell);
+    cellList.setKeyboardSelectionPolicy(KeyboardSelectionPolicy.ENABLED);
+
+    // Add a selection model to handle user selection.
+    final SingleSelectionModel&lt;String&gt; selectionModel = new SingleSelectionModel&lt;String&gt;();
+    cellList.setSelectionModel(selectionModel);
+    selectionModel.addSelectionChangeHandler(new SelectionChangeEvent.Handler() {
+      public void onSelectionChange(SelectionChangeEvent event) {
+        String selected = selectionModel.getSelectedObject();
+        if (selected != null) {
+          Window.alert("You selected: " + selected);
+        }
+      }
+    });
+
+    // Set the total row count. This isn't strictly necessary, but it affects
+    // paging calculations, so its good habit to keep the row count up to date.
+    cellList.setRowCount(DAYS.size(), true);
+
+    // Push the data into the widget.
+    cellList.setRowData(0, DAYS);
+
+    // Add it to the root panel.
+    RootPanel.get().add(cellList);
+  }
+}
+</pre></blockquote></dd>
+ <dt>ValueUpdater example</dt>
+ <dd><blockquote><pre>public class CellListValueUpdaterExample implements EntryPoint {
+
+  /**
+   * The list of data to display.
+   */
+  private static final List&lt;String&gt; DAYS = Arrays.asList("Sunday", "Monday",
+      "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+
+  public void onModuleLoad() {
+    // Create a cell that will interact with a value updater.
+    TextInputCell inputCell = new TextInputCell();
+
+    // Create a CellList that uses the cell.
+    CellList&lt;String&gt; cellList = new CellList&lt;String&gt;(inputCell);
+
+    // Create a value updater that will be called when the value in a cell
+    // changes.
+    ValueUpdater&lt;String&gt; valueUpdater = new ValueUpdater&lt;String&gt;() {
+      public void update(String newValue) {
+        Window.alert("You typed: " + newValue);
+      }
+    };
+
+    // Add the value updater to the cellList.
+    cellList.setValueUpdater(valueUpdater);
+
+    // Set the total row count. This isn't strictly necessary, but it affects
+    // paging calculations, so its good habit to keep the row count up to date.
+    cellList.setRowCount(DAYS.size(), true);
+
+    // Push the data into the widget.
+    cellList.setRowData(0, DAYS);
+
+    // Add it to the root panel.
+    RootPanel.get().add(cellList);
+  }
+}
+</pre></blockquote></dd>
+ <dt>Key provider example</dt>
+ <dd><blockquote><pre>public class KeyProviderExample implements EntryPoint {
+
+  /**
+   * A simple data type that represents a contact.
+   */
+  private static class Contact {
+    private static int nextId = 0;
+
+    private final int id;
+    private String name;
+
+    public Contact(String name) {
+      nextId++;
+      this.id = nextId;
+      this.name = name;
+    }
+  }
+
+  /**
+   * A custom {@link Cell} used to render a {@link Contact}.
+   */
+  private static class ContactCell extends AbstractCell&lt;Contact&gt; {
+    @Override
+    public void render(Context context, Contact value, SafeHtmlBuilder sb) {
+      if (value != null) {
+        sb.appendEscaped(value.name);
+      }
+    }
+  }
+
+  /**
+   * The list of data to display.
+   */
+  private static final List&lt;Contact&gt; CONTACTS = Arrays.asList(new Contact(
+      "John"), new Contact("Joe"), new Contact("Michael"),
+      new Contact("Sarah"), new Contact("George"));
+
+  public void onModuleLoad() {
+    /*
+     * Define a key provider for a Contact. We use the unique ID as the key,
+     * which allows to maintain selection even if the name changes.
+     */
+    ProvidesKey&lt;Contact&gt; keyProvider = new ProvidesKey&lt;Contact&gt;() {
+      public Object getKey(Contact item) {
+        // Always do a null check.
+        return (item == null) ? null : item.id;
+      }
+    };
+
+    // Create a CellList using the keyProvider.
+    CellList&lt;Contact&gt; cellList = new CellList&lt;Contact&gt;(new ContactCell(),
+        keyProvider);
+
+    // Push data into the CellList.
+    cellList.setRowCount(CONTACTS.size(), true);
+    cellList.setRowData(0, CONTACTS);
+
+    // Add a selection model using the same keyProvider.
+    SelectionModel&lt;Contact&gt; selectionModel = new SingleSelectionModel&lt;Contact&gt;(
+        keyProvider);
+    cellList.setSelectionModel(selectionModel);
+
+    /*
+     * Select a contact. The selectionModel will select based on the ID because
+     * we used a keyProvider.
+     */
+    Contact sarah = CONTACTS.get(3);
+    selectionModel.setSelected(sarah, true);
+
+    // Modify the name of the contact.
+    sarah.name = "Sara";
+
+    /*
+     * Redraw the CellList. Sarah/Sara will still be selected because we
+     * identify her by ID. If we did not use a keyProvider, Sara would not be
+     * selected.
+     */
+    cellList.redraw();
+
+    // Add the widgets to the root panel.
+    RootPanel.get().add(cellList);
+  }
+}
+</pre></blockquote></dd>
+ </dl>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client">CellList.Resources</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A ClientBundle that provides images for this widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Style.html" title="interface in com.google.gwt.user.cellview.client">CellList.Style</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Styles used by this widget.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.cellview.client.HasKeyboardPagingPolicy"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.cellview.client.<A HREF="../../../../../../com/google/gwt/user/cellview/client/HasKeyboardPagingPolicy.html" title="interface in com.google.gwt.user.cellview.client">HasKeyboardPagingPolicy</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/HasKeyboardPagingPolicy.KeyboardPagingPolicy.html" title="enum in com.google.gwt.user.cellview.client">HasKeyboardPagingPolicy.KeyboardPagingPolicy</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.cellview.client.HasKeyboardSelectionPolicy"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.cellview.client.<A HREF="../../../../../../com/google/gwt/user/cellview/client/HasKeyboardSelectionPolicy.html" title="interface in com.google.gwt.user.cellview.client">HasKeyboardSelectionPolicy</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/HasKeyboardSelectionPolicy.KeyboardSelectionPolicy.html" title="enum in com.google.gwt.user.cellview.client">HasKeyboardSelectionPolicy.KeyboardSelectionPolicy</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#CellList(com.google.gwt.cell.client.Cell)">CellList</A></B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#CellList(com.google.gwt.cell.client.Cell, com.google.gwt.user.cellview.client.CellList.Resources)">CellList</A></B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell,
+         <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client">CellList.Resources</A>&nbsp;resources)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client"><CODE>CellList.Resources</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#CellList(com.google.gwt.cell.client.Cell, com.google.gwt.user.cellview.client.CellList.Resources, com.google.gwt.view.client.ProvidesKey)">CellList</A></B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell,
+         <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client">CellList.Resources</A>&nbsp;resources,
+         <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;keyProvider)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client"><CODE>CellList.Resources</CODE></A> and
+ <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client"><CODE>key provider</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#CellList(com.google.gwt.cell.client.Cell, com.google.gwt.view.client.ProvidesKey)">CellList</A></B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell,
+         <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;keyProvider)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client"><CODE>key
+ provider</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#dependsOnSelection()">dependsOnSelection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check whether or not the cells in the view depend on the selection state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#doAttachChildren()">doAttachChildren</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A> for each of its
+ child widgets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#doDetachChildren()">doDetachChildren</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()"><CODE>Widget.onDetach()</CODE></A> for each of its
+ child widgets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#doSelection(com.google.gwt.user.client.Event, T, int)">doSelection</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event,
+            <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&nbsp;value,
+            int&nbsp;indexOnPage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#addCellPreviewHandler(com.google.gwt.view.client.CellPreviewEvent.Handler)"><CODE>AbstractHasData.addCellPreviewHandler(com.google.gwt.view.client.CellPreviewEvent.Handler)</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#fireEventToCell(com.google.gwt.cell.client.Cell.Context, com.google.gwt.user.client.Event, com.google.gwt.dom.client.Element, T)">fireEventToCell</A></B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+                <A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event,
+                <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+                <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fire an event to the cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getCell()">getCell</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the cell used to render each item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getCellParent(com.google.gwt.dom.client.Element)">getCellParent</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;item)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the parent element that wraps the cell from the list item.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getChildContainer()">getChildContainer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the element that holds the rendered cells.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getEmptyListMessage()">getEmptyListMessage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of GWT 2.3, use <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getEmptyListWidget()"><CODE>getEmptyListWidget()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getEmptyListWidget()">getEmptyListWidget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the widget displayed when the list has no rows.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getKeyboardSelectedElement()">getKeyboardSelectedElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the element that has keyboard selection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getLoadingIndicator()">getLoadingIndicator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the widget displayed when the data is loading.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getRowElement(int)">getRowElement</A></B>(int&nbsp;indexOnPage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A> for the specified index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#isKeyboardNavigationSuppressed()">isKeyboardNavigationSuppressed</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if keyboard navigation is being suppressed, such as when the user is
+ editing a cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#onBlur()">onBlur</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the widget is blurred.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#onBrowserEvent2(com.google.gwt.user.client.Event)">onBrowserEvent2</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called after <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBrowserEvent(com.google.gwt.user.client.Event)"><CODE>AbstractHasData.onBrowserEvent(Event)</CODE></A> completes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#onFocus()">onFocus</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the widget is focused.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#onLoadingStateChanged(com.google.gwt.user.cellview.client.LoadingStateChangeEvent.LoadingState)">onLoadingStateChanged</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/LoadingStateChangeEvent.LoadingState.html" title="interface in com.google.gwt.user.cellview.client">LoadingStateChangeEvent.LoadingState</A>&nbsp;state)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the loading state changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#renderRowValues(com.google.gwt.safehtml.shared.SafeHtmlBuilder, java.util.List, int, com.google.gwt.view.client.SelectionModel)">renderRowValues</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared">SafeHtmlBuilder</A>&nbsp;sb,
+                java.util.List&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;values,
+                int&nbsp;start,
+                <A HREF="../../../../../../com/google/gwt/view/client/SelectionModel.html" title="interface in com.google.gwt.view.client">SelectionModel</A>&lt;? super <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;selectionModel)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Render all row values into the specified <A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared"><CODE>SafeHtmlBuilder</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#resetFocusOnCell()">resetFocusOnCell</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reset focus on the currently focused cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setEmptyListMessage(com.google.gwt.safehtml.shared.SafeHtml)">setEmptyListMessage</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>as of GWT 2.3, use
+             <CODE>#setEmptyDataWidget(com.google.gwt.user.client.ui.Widget)</CODE>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setEmptyListWidget(com.google.gwt.user.client.ui.Widget)">setEmptyListWidget</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the widget to display when the list has no rows.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setKeyboardSelected(int, boolean, boolean)">setKeyboardSelected</A></B>(int&nbsp;index,
+                    boolean&nbsp;selected,
+                    boolean&nbsp;stealFocus)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update an element to reflect its keyboard selected state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setLoadingIndicator(com.google.gwt.user.client.ui.Widget)">setLoadingIndicator</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the widget to display when the data is loading.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setSelected(com.google.gwt.dom.client.Element, boolean)">setSelected</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+            boolean&nbsp;selected)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>this method is never called by AbstractHasData, render the
+             selected styles in
+             <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#renderRowValues(com.google.gwt.safehtml.shared.SafeHtmlBuilder, java.util.List, int, com.google.gwt.view.client.SelectionModel)"><CODE>renderRowValues(SafeHtmlBuilder, List, int, SelectionModel)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setValueUpdater(com.google.gwt.cell.client.ValueUpdater)">setValueUpdater</A></B>(<A HREF="../../../../../../com/google/gwt/cell/client/ValueUpdater.html" title="interface in com.google.gwt.cell.client">ValueUpdater</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;valueUpdater)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the value updater to use when cells modify items.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.cellview.client.AbstractHasData"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.cellview.client.<A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#addCellPreviewHandler(com.google.gwt.view.client.CellPreviewEvent.Handler)">addCellPreviewHandler</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#addLoadingStateChangeHandler(com.google.gwt.user.cellview.client.LoadingStateChangeEvent.Handler)">addLoadingStateChangeHandler</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#addRangeChangeHandler(com.google.gwt.view.client.RangeChangeEvent.Handler)">addRangeChangeHandler</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#addRowCountChangeHandler(com.google.gwt.view.client.RowCountChangeEvent.Handler)">addRowCountChangeHandler</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#cellConsumesEventType(com.google.gwt.cell.client.Cell, java.lang.String)">cellConsumesEventType</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#checkRowBounds(int)">checkRowBounds</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#convertToElements(com.google.gwt.safehtml.shared.SafeHtml)">convertToElements</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getAccessKey()">getAccessKey</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getDisplayedItem(int)">getDisplayedItem</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getDisplayedItems()">getDisplayedItems</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getKeyboardPagingPolicy()">getKeyboardPagingPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getKeyboardSelectedRow()">getKeyboardSelectedRow</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getKeyboardSelectionPolicy()">getKeyboardSelectionPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getKeyProvider()">getKeyProvider</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getPageSize()">getPageSize</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getPageStart()">getPageStart</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getRowContainer()">getRowContainer</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getRowCount()">getRowCount</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getSelectionModel()">getSelectionModel</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getTabIndex()">getTabIndex</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getValueKey(T)">getValueKey</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getVisibleItem(int)">getVisibleItem</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getVisibleItemCount()">getVisibleItemCount</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getVisibleItems()">getVisibleItems</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getVisibleRange()">getVisibleRange</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#isRowCountExact()">isRowCountExact</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#isRowWithinBounds(int)">isRowWithinBounds</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onUnload()">onUnload</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onUpdateSelection()">onUpdateSelection</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#redraw()">redraw</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#replaceAllChildren(java.util.List, com.google.gwt.safehtml.shared.SafeHtml)">replaceAllChildren</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#replaceChildren(java.util.List, int, com.google.gwt.safehtml.shared.SafeHtml)">replaceChildren</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setAccessKey(char)">setAccessKey</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setFocus(boolean)">setFocus</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setFocusable(com.google.gwt.dom.client.Element, boolean)">setFocusable</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setKeyboardPagingPolicy(com.google.gwt.user.cellview.client.HasKeyboardPagingPolicy.KeyboardPagingPolicy)">setKeyboardPagingPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setKeyboardSelectionPolicy(com.google.gwt.user.cellview.client.HasKeyboardSelectionPolicy.KeyboardSelectionPolicy)">setKeyboardSelectionPolicy</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setPageSize(int)">setPageSize</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setPageStart(int)">setPageStart</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setRowCount(int)">setRowCount</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setRowCount(int, boolean)">setRowCount</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setRowData(int, java.util.List)">setRowData</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setRowData(java.util.List)">setRowData</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setSelectionModel(com.google.gwt.view.client.SelectionModel)">setSelectionModel</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setSelectionModel(com.google.gwt.view.client.SelectionModel, com.google.gwt.view.client.CellPreviewEvent.Handler)">setSelectionModel</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setTabIndex(int)">setTabIndex</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setVisibleRange(int, int)">setVisibleRange</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setVisibleRange(com.google.gwt.view.client.Range)">setVisibleRange</A>, <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setVisibleRangeAndClearData(com.google.gwt.view.client.Range, boolean)">setVisibleRangeAndClearData</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Widget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)">addAttachHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addBitlessDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addBitlessDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidget()">asWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidgetOrNull(com.google.gwt.user.client.ui.IsWidget)">asWidgetOrNull</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#createHandlerManager()">createHandlerManager</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#delegateEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.event.shared.GwtEvent)">delegateEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getLayoutData()">getLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getParent()">getParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isAttached()">isAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isOrWasAttached()">isOrWasAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()">onAttach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">onDetach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">onLoad</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#removeFromParent()">removeFromParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#setLayoutData(java.lang.Object)">setLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">sinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.event.shared.HasHandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="CellList(com.google.gwt.cell.client.Cell)"><!-- --></A><H3>
+CellList</H3>
+<PRE>
+public <B>CellList</B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>cell</CODE> - the cell used to render each item</DL>
+</DL>
+<HR>
+
+<A NAME="CellList(com.google.gwt.cell.client.Cell, com.google.gwt.user.cellview.client.CellList.Resources)"><!-- --></A><H3>
+CellList</H3>
+<PRE>
+public <B>CellList</B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell,
+                <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client">CellList.Resources</A>&nbsp;resources)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client"><CODE>CellList.Resources</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>cell</CODE> - the cell used to render each item<DD><CODE>resources</CODE> - the resources used for this widget</DL>
+</DL>
+<HR>
+
+<A NAME="CellList(com.google.gwt.cell.client.Cell, com.google.gwt.view.client.ProvidesKey)"><!-- --></A><H3>
+CellList</H3>
+<PRE>
+public <B>CellList</B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell,
+                <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;keyProvider)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client"><CODE>key
+ provider</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>cell</CODE> - the cell used to render each item<DD><CODE>keyProvider</CODE> - an instance of ProvidesKey<T>, or null if the record
+          object should act as its own key</DL>
+</DL>
+<HR>
+
+<A NAME="CellList(com.google.gwt.cell.client.Cell, com.google.gwt.user.cellview.client.CellList.Resources, com.google.gwt.view.client.ProvidesKey)"><!-- --></A><H3>
+CellList</H3>
+<PRE>
+public <B>CellList</B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;cell,
+                <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client">CellList.Resources</A>&nbsp;resources,
+                <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client">ProvidesKey</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;keyProvider)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="class in com.google.gwt.user.cellview.client"><CODE>CellList</CODE></A> with the specified <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client"><CODE>CellList.Resources</CODE></A> and
+ <A HREF="../../../../../../com/google/gwt/view/client/ProvidesKey.html" title="interface in com.google.gwt.view.client"><CODE>key provider</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>cell</CODE> - the cell used to render each item<DD><CODE>resources</CODE> - the resources used for this widget<DD><CODE>keyProvider</CODE> - an instance of ProvidesKey<T>, or null if the record
+          object should act as its own key</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getEmptyListMessage()"><!-- --></A><H3>
+getEmptyListMessage</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public <A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A> <B>getEmptyListMessage</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>as of GWT 2.3, use <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getEmptyListWidget()"><CODE>getEmptyListWidget()</CODE></A> instead</I>
+<P>
+<DD>Get the message that is displayed when there is no data.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the empty message<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#setEmptyListMessage(com.google.gwt.safehtml.shared.SafeHtml)"><CODE>setEmptyListMessage(SafeHtml)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEmptyListWidget()"><!-- --></A><H3>
+getEmptyListWidget</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A> <B>getEmptyListWidget</B>()</PRE>
+<DL>
+<DD>Get the widget displayed when the list has no rows.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the empty list widget</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLoadingIndicator()"><!-- --></A><H3>
+getLoadingIndicator</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A> <B>getLoadingIndicator</B>()</PRE>
+<DL>
+<DD>Get the widget displayed when the data is loading.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the loading indicator</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRowElement(int)"><!-- --></A><H3>
+getRowElement</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getRowElement</B>(int&nbsp;indexOnPage)</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A> for the specified index. If the element has not
+ been created, null is returned.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>indexOnPage</CODE> - the index on the page
+<DT><B>Returns:</B><DD>the element, or null if it doesn't exists
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IndexOutOfBoundsException</CODE> - if the index is outside of the current
+           page</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEmptyListMessage(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+setEmptyListMessage</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>setEmptyListMessage</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>as of GWT 2.3, use
+             <CODE>#setEmptyDataWidget(com.google.gwt.user.client.ui.Widget)</CODE>
+             instead</I>
+<P>
+<DD>Set the message to display when there is no data.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - the message to display when there are no results<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#getEmptyListMessage()"><CODE>getEmptyListMessage()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEmptyListWidget(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+setEmptyListWidget</H3>
+<PRE>
+public void <B>setEmptyListWidget</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Set the widget to display when the list has no rows.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the empty data widget</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLoadingIndicator(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+setLoadingIndicator</H3>
+<PRE>
+public void <B>setLoadingIndicator</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Set the widget to display when the data is loading.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the loading indicator</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValueUpdater(com.google.gwt.cell.client.ValueUpdater)"><!-- --></A><H3>
+setValueUpdater</H3>
+<PRE>
+public void <B>setValueUpdater</B>(<A HREF="../../../../../../com/google/gwt/cell/client/ValueUpdater.html" title="interface in com.google.gwt.cell.client">ValueUpdater</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;valueUpdater)</PRE>
+<DL>
+<DD>Set the value updater to use when cells modify items.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>valueUpdater</CODE> - the <A HREF="../../../../../../com/google/gwt/cell/client/ValueUpdater.html" title="interface in com.google.gwt.cell.client"><CODE>ValueUpdater</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dependsOnSelection()"><!-- --></A><H3>
+dependsOnSelection</H3>
+<PRE>
+protected boolean <B>dependsOnSelection</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#dependsOnSelection()">AbstractHasData</A></CODE></B></DD>
+<DD>Check whether or not the cells in the view depend on the selection state.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#dependsOnSelection()">dependsOnSelection</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if cells depend on selection, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doAttachChildren()"><!-- --></A><H3>
+doAttachChildren</H3>
+<PRE>
+protected void <B>doAttachChildren</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doAttachChildren()">Widget</A></CODE></B></DD>
+<DD>If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A> for each of its
+ child widgets.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doAttachChildren()">doAttachChildren</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doDetachChildren()"><!-- --></A><H3>
+doDetachChildren</H3>
+<PRE>
+protected void <B>doDetachChildren</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()">Widget</A></CODE></B></DD>
+<DD>If a widget contains one or more child widgets that are not in the logical
+ widget hierarchy (the child is physically connected only on the DOM level),
+ it must override this method and call <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()"><CODE>Widget.onDetach()</CODE></A> for each of its
+ child widgets.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()">doDetachChildren</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()"><CODE>Widget.onDetach()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doSelection(com.google.gwt.user.client.Event,java.lang.Object,int)"><!-- --></A><A NAME="doSelection(com.google.gwt.user.client.Event, T, int)"><!-- --></A><H3>
+doSelection</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>protected void <B>doSelection</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event,
+                                      <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&nbsp;value,
+                                      int&nbsp;indexOnPage)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#addCellPreviewHandler(com.google.gwt.view.client.CellPreviewEvent.Handler)"><CODE>AbstractHasData.addCellPreviewHandler(com.google.gwt.view.client.CellPreviewEvent.Handler)</CODE></A>
+             instead</I>
+<P>
+<DD>Called when a user action triggers selection.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event that triggered selection<DD><CODE>value</CODE> - the value that was selected<DD><CODE>indexOnPage</CODE> - the index of the value on the page</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fireEventToCell(com.google.gwt.cell.client.Cell.Context,com.google.gwt.user.client.Event,com.google.gwt.dom.client.Element,java.lang.Object)"><!-- --></A><A NAME="fireEventToCell(com.google.gwt.cell.client.Cell.Context, com.google.gwt.user.client.Event, com.google.gwt.dom.client.Element, T)"><!-- --></A><H3>
+fireEventToCell</H3>
+<PRE>
+protected void <B>fireEventToCell</B>(<A HREF="../../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+                               <A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event,
+                               <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+                               <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&nbsp;value)</PRE>
+<DL>
+<DD>Fire an event to the cell.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>event</CODE> - the event that was fired<DD><CODE>parent</CODE> - the parent of the cell<DD><CODE>value</CODE> - the value of the cell</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCell()"><!-- --></A><H3>
+getCell</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt; <B>getCell</B>()</PRE>
+<DL>
+<DD>Return the cell used to render each item.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCellParent(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+getCellParent</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getCellParent</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;item)</PRE>
+<DL>
+<DD>Get the parent element that wraps the cell from the list item. Override
+ this method if you add structure to the element.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>item</CODE> - the row element that wraps the list item
+<DT><B>Returns:</B><DD>the parent element of the cell</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChildContainer()"><!-- --></A><H3>
+getChildContainer</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getChildContainer</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getChildContainer()">AbstractHasData</A></CODE></B></DD>
+<DD>Return the element that holds the rendered cells.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getChildContainer()">getChildContainer</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the container <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getKeyboardSelectedElement()"><!-- --></A><H3>
+getKeyboardSelectedElement</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getKeyboardSelectedElement</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getKeyboardSelectedElement()">AbstractHasData</A></CODE></B></DD>
+<DD>Get the element that has keyboard selection.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#getKeyboardSelectedElement()">getKeyboardSelectedElement</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the keyboard selected element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isKeyboardNavigationSuppressed()"><!-- --></A><H3>
+isKeyboardNavigationSuppressed</H3>
+<PRE>
+protected boolean <B>isKeyboardNavigationSuppressed</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#isKeyboardNavigationSuppressed()">AbstractHasData</A></CODE></B></DD>
+<DD>Check if keyboard navigation is being suppressed, such as when the user is
+ editing a cell.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#isKeyboardNavigationSuppressed()">isKeyboardNavigationSuppressed</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if suppressed, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onBlur()"><!-- --></A><H3>
+onBlur</H3>
+<PRE>
+protected void <B>onBlur</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBlur()">AbstractHasData</A></CODE></B></DD>
+<DD>Called when the widget is blurred.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBlur()">onBlur</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onBrowserEvent2(com.google.gwt.user.client.Event)"><!-- --></A><H3>
+onBrowserEvent2</H3>
+<PRE>
+protected void <B>onBrowserEvent2</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBrowserEvent2(com.google.gwt.user.client.Event)">AbstractHasData</A></CODE></B></DD>
+<DD>Called after <A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBrowserEvent(com.google.gwt.user.client.Event)"><CODE>AbstractHasData.onBrowserEvent(Event)</CODE></A> completes.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onBrowserEvent2(com.google.gwt.user.client.Event)">onBrowserEvent2</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event that was fired</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onFocus()"><!-- --></A><H3>
+onFocus</H3>
+<PRE>
+protected void <B>onFocus</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onFocus()">AbstractHasData</A></CODE></B></DD>
+<DD>Called when the widget is focused.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onFocus()">onFocus</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onLoadingStateChanged(com.google.gwt.user.cellview.client.LoadingStateChangeEvent.LoadingState)"><!-- --></A><H3>
+onLoadingStateChanged</H3>
+<PRE>
+protected void <B>onLoadingStateChanged</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/LoadingStateChangeEvent.LoadingState.html" title="interface in com.google.gwt.user.cellview.client">LoadingStateChangeEvent.LoadingState</A>&nbsp;state)</PRE>
+<DL>
+<DD>Called when the loading state changes.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#onLoadingStateChanged(com.google.gwt.user.cellview.client.LoadingStateChangeEvent.LoadingState)">onLoadingStateChanged</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>state</CODE> - the new loading state</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="renderRowValues(com.google.gwt.safehtml.shared.SafeHtmlBuilder, java.util.List, int, com.google.gwt.view.client.SelectionModel)"><!-- --></A><H3>
+renderRowValues</H3>
+<PRE>
+protected void <B>renderRowValues</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared">SafeHtmlBuilder</A>&nbsp;sb,
+                               java.util.List&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;values,
+                               int&nbsp;start,
+                               <A HREF="../../../../../../com/google/gwt/view/client/SelectionModel.html" title="interface in com.google.gwt.view.client">SelectionModel</A>&lt;? super <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;&nbsp;selectionModel)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#renderRowValues(com.google.gwt.safehtml.shared.SafeHtmlBuilder, java.util.List, int, com.google.gwt.view.client.SelectionModel)">AbstractHasData</A></CODE></B></DD>
+<DD>Render all row values into the specified <A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared"><CODE>SafeHtmlBuilder</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#renderRowValues(com.google.gwt.safehtml.shared.SafeHtmlBuilder, java.util.List, int, com.google.gwt.view.client.SelectionModel)">renderRowValues</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sb</CODE> - the <A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtmlBuilder.html" title="class in com.google.gwt.safehtml.shared"><CODE>SafeHtmlBuilder</CODE></A> to render into<DD><CODE>values</CODE> - the row values<DD><CODE>start</CODE> - the absolute start index of the values<DD><CODE>selectionModel</CODE> - the <A HREF="../../../../../../com/google/gwt/view/client/SelectionModel.html" title="interface in com.google.gwt.view.client"><CODE>SelectionModel</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resetFocusOnCell()"><!-- --></A><H3>
+resetFocusOnCell</H3>
+<PRE>
+protected boolean <B>resetFocusOnCell</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#resetFocusOnCell()">AbstractHasData</A></CODE></B></DD>
+<DD>Reset focus on the currently focused cell.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#resetFocusOnCell()">resetFocusOnCell</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if focus is taken, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setKeyboardSelected(int, boolean, boolean)"><!-- --></A><H3>
+setKeyboardSelected</H3>
+<PRE>
+protected void <B>setKeyboardSelected</B>(int&nbsp;index,
+                                   boolean&nbsp;selected,
+                                   boolean&nbsp;stealFocus)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setKeyboardSelected(int, boolean, boolean)">AbstractHasData</A></CODE></B></DD>
+<DD>Update an element to reflect its keyboard selected state.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setKeyboardSelected(int, boolean, boolean)">setKeyboardSelected</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - the index of the element<DD><CODE>selected</CODE> - true if selected, false if not<DD><CODE>stealFocus</CODE> - true if the row should steal focus, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSelected(com.google.gwt.dom.client.Element, boolean)"><!-- --></A><H3>
+setSelected</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>protected void <B>setSelected</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                      boolean&nbsp;selected)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>this method is never called by AbstractHasData, render the
+             selected styles in
+             <A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html#renderRowValues(com.google.gwt.safehtml.shared.SafeHtmlBuilder, java.util.List, int, com.google.gwt.view.client.SelectionModel)"><CODE>renderRowValues(SafeHtmlBuilder, List, int, SelectionModel)</CODE></A></I>
+<P>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setSelected(com.google.gwt.dom.client.Element, boolean)">AbstractHasData</A></CODE></B></DD>
+<DD>Update an element to reflect its selected state.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html#setSelected(com.google.gwt.dom.client.Element, boolean)">setSelected</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/cellview/client/AbstractHasData.html" title="class in com.google.gwt.user.cellview.client">AbstractHasData</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.html" title="type parameter in CellList">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element to update<DD><CODE>selected</CODE> - true if selected, false if not</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CellList.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellBrowser.Style.html" title="interface in com.google.gwt.user.cellview.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/CellList.Resources.html" title="interface in com.google.gwt.user.cellview.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/cellview/client/CellList.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CellList.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

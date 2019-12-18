@@ -1,0 +1,498 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+StyleInjector (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StyleInjector (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StyleInjector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.StyleInjectorImpl.html" title="class in com.google.gwt.dom.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/dom/client/StyleInjector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StyleInjector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.dom.client</FONT>
+<BR>
+Class StyleInjector</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.dom.client.StyleInjector</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>StyleInjector</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Used to add stylesheets to the document. The one-argument versions of
+ <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(java.lang.String)</CODE></A>, <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectAtEnd(java.lang.String)"><CODE>injectAtEnd(java.lang.String)</CODE></A>, and <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectAtStart(java.lang.String)"><CODE>injectAtStart(java.lang.String)</CODE></A> use
+ <A HREF="../../../../../com/google/gwt/core/client/Scheduler.html#scheduleFinally(com.google.gwt.core.client.Scheduler.RepeatingCommand)"><CODE>Scheduler.scheduleFinally(com.google.gwt.core.client.Scheduler.RepeatingCommand)</CODE></A> to minimize the number of individual style
+ elements created.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.StyleInjectorImpl.html" title="class in com.google.gwt.dom.client">StyleInjector.StyleInjectorImpl</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The DOM-compatible way of adding stylesheets.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.StyleInjectorImplIE.html" title="class in com.google.gwt.dom.client">StyleInjector.StyleInjectorImplIE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IE doesn't allow manipulation of a style element through DOM methods.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)">inject</A></B>(java.lang.String&nbsp;css)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a stylesheet to the document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String, boolean)">inject</A></B>(java.lang.String&nbsp;css,
+       boolean&nbsp;immediate)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add a stylesheet to the document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectAtEnd(java.lang.String)">injectAtEnd</A></B>(java.lang.String&nbsp;css)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add stylesheet data to the document as though it were declared after all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectAtEnd(java.lang.String, boolean)">injectAtEnd</A></B>(java.lang.String&nbsp;css,
+            boolean&nbsp;immediate)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add stylesheet data to the document as though it were declared after all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectAtStart(java.lang.String)">injectAtStart</A></B>(java.lang.String&nbsp;css)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add stylesheet data to the document as though it were declared before all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectAtStart(java.lang.String, boolean)">injectAtStart</A></B>(java.lang.String&nbsp;css,
+              boolean&nbsp;immediate)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add stylesheet data to the document as though it were declared before all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectStylesheet(java.lang.String)">injectStylesheet</A></B>(java.lang.String&nbsp;contents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>The returned StyleElement cannot be implemented consistently
+             across all browsers</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectStylesheetAtEnd(java.lang.String)">injectStylesheetAtEnd</A></B>(java.lang.String&nbsp;contents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>The returned StyleElement cannot be implemented consistently
+             across all browsers</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectStylesheetAtStart(java.lang.String)">injectStylesheetAtStart</A></B>(java.lang.String&nbsp;contents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>The returned StyleElement cannot be implemented consistently
+             across all browsers</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#setContents(com.google.gwt.dom.client.StyleElement, java.lang.String)">setContents</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A>&nbsp;style,
+            java.lang.String&nbsp;contents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>The associated StyleElement cannot be implemented consistently
+             across all browsers</I></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="inject(java.lang.String)"><!-- --></A><H3>
+inject</H3>
+<PRE>
+public static void <B>inject</B>(java.lang.String&nbsp;css)</PRE>
+<DL>
+<DD>Add a stylesheet to the document.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>css</CODE> - the CSS contents of the stylesheet</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="inject(java.lang.String, boolean)"><!-- --></A><H3>
+inject</H3>
+<PRE>
+public static void <B>inject</B>(java.lang.String&nbsp;css,
+                          boolean&nbsp;immediate)</PRE>
+<DL>
+<DD>Add a stylesheet to the document.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>css</CODE> - the CSS contents of the stylesheet<DD><CODE>immediate</CODE> - if <code>true</code> the DOM will be updated immediately
+          instead of just before returning to the event loop. Using this
+          option excessively will decrease performance, especially if used
+          with an inject-css-on-init coding pattern</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectAtEnd(java.lang.String)"><!-- --></A><H3>
+injectAtEnd</H3>
+<PRE>
+public static void <B>injectAtEnd</B>(java.lang.String&nbsp;css)</PRE>
+<DL>
+<DD>Add stylesheet data to the document as though it were declared after all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>css</CODE> - the CSS contents of the stylesheet</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectAtEnd(java.lang.String, boolean)"><!-- --></A><H3>
+injectAtEnd</H3>
+<PRE>
+public static void <B>injectAtEnd</B>(java.lang.String&nbsp;css,
+                               boolean&nbsp;immediate)</PRE>
+<DL>
+<DD>Add stylesheet data to the document as though it were declared after all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>css</CODE> - the CSS contents of the stylesheet<DD><CODE>immediate</CODE> - if <code>true</code> the DOM will be updated immediately
+          instead of just before returning to the event loop. Using this
+          option excessively will decrease performance, especially if used
+          with an inject-css-on-init coding pattern</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectAtStart(java.lang.String)"><!-- --></A><H3>
+injectAtStart</H3>
+<PRE>
+public static void <B>injectAtStart</B>(java.lang.String&nbsp;css)</PRE>
+<DL>
+<DD>Add stylesheet data to the document as though it were declared before all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>css</CODE> - the CSS contents of the stylesheet</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectAtStart(java.lang.String, boolean)"><!-- --></A><H3>
+injectAtStart</H3>
+<PRE>
+public static void <B>injectAtStart</B>(java.lang.String&nbsp;css,
+                                 boolean&nbsp;immediate)</PRE>
+<DL>
+<DD>Add stylesheet data to the document as though it were declared before all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#inject(java.lang.String)"><CODE>inject(String)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>css</CODE> - the CSS contents of the stylesheet<DD><CODE>immediate</CODE> - if <code>true</code> the DOM will be updated immediately
+          instead of just before returning to the event loop. Using this
+          option excessively will decrease performance, especially if used
+          with an inject-css-on-init coding pattern</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectStylesheet(java.lang.String)"><!-- --></A><H3>
+injectStylesheet</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A> <B>injectStylesheet</B>(java.lang.String&nbsp;contents)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>The returned StyleElement cannot be implemented consistently
+             across all browsers</I>
+<P>
+<DD>Add a stylesheet to the document. The StyleElement returned by this method
+ is not guaranteed to be unique.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contents</CODE> - the CSS contents of the stylesheet
+<DT><B>Returns:</B><DD>the StyleElement that contains the newly-injected CSS</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectStylesheetAtEnd(java.lang.String)"><!-- --></A><H3>
+injectStylesheetAtEnd</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A> <B>injectStylesheetAtEnd</B>(java.lang.String&nbsp;contents)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>The returned StyleElement cannot be implemented consistently
+             across all browsers</I>
+<P>
+<DD>Add stylesheet data to the document as though it were declared after all
+ stylesheets previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectStylesheet(java.lang.String)"><CODE>injectStylesheet(String)</CODE></A>. The
+ StyleElement returned by this method is not guaranteed to be unique.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contents</CODE> - the CSS contents of the stylesheet
+<DT><B>Returns:</B><DD>the StyleElement that contains the newly-injected CSS</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectStylesheetAtStart(java.lang.String)"><!-- --></A><H3>
+injectStylesheetAtStart</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A> <B>injectStylesheetAtStart</B>(java.lang.String&nbsp;contents)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>The returned StyleElement cannot be implemented consistently
+             across all browsers</I>
+<P>
+<DD>Add stylesheet data to the document as though it were declared before any
+ stylesheet previously created by <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectStylesheet(java.lang.String)"><CODE>injectStylesheet(String)</CODE></A>. The
+ StyleElement returned by this method is not guaranteed to be unique.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contents</CODE> - the CSS contents of the stylesheet
+<DT><B>Returns:</B><DD>the StyleElement that contains the newly-injected CSS</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setContents(com.google.gwt.dom.client.StyleElement, java.lang.String)"><!-- --></A><H3>
+setContents</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static void <B>setContents</B>(<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client">StyleElement</A>&nbsp;style,
+                                          java.lang.String&nbsp;contents)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>The associated StyleElement cannot be implemented consistently
+             across all browsers</I>
+<P>
+<DD>Replace the contents of a previously-injected stylesheet. Updating the
+ stylesheet in-place is typically more efficient than removing a
+ previously-created element and adding a new one. This method should be used
+ with some caution as StyleInjector may recycle StyleElements on certain
+ browsers.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - a StyleElement previously-returned from
+          <A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.html#injectStylesheet(java.lang.String)"><CODE>injectStylesheet(String)</CODE></A>.<DD><CODE>contents</CODE> - the new contents of the stylesheet.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StyleInjector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleElement.html" title="class in com.google.gwt.dom.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/StyleInjector.StyleInjectorImpl.html" title="class in com.google.gwt.dom.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/dom/client/StyleInjector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StyleInjector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

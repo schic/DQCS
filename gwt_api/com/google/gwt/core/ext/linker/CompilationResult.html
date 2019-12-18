@@ -1,0 +1,523 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+CompilationResult (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CompilationResult (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CompilationResult.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationMetricsArtifact.html" title="class in com.google.gwt.core.ext.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/ConfigurationProperty.html" title="interface in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/CompilationResult.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CompilationResult.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.ext.linker</FONT>
+<BR>
+Class CompilationResult</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">com.google.gwt.core.ext.linker.Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.ext.linker.CompilationResult</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>java.io.Serializable, java.lang.Comparable&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>CompilationResult</B><DT>extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;</DL>
+</PRE>
+
+<P>
+Represents a unique compilation of the module. Multiple permutations may
+ result in identical JavaScript.
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#com.google.gwt.core.ext.linker.CompilationResult">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#CompilationResult(java.lang.Class)">CompilationResult</A></B>(java.lang.Class&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A>&gt;&nbsp;linkerType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#compareToComparableArtifact(com.google.gwt.core.ext.linker.CompilationResult)">compareToComparableArtifact</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs comparison with an artifact of a compatible base type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.Class&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getComparableArtifactType()">getComparableArtifactType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the base type to use for comparisons between Artifacts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getJavaScript()">getJavaScript</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the JavaScript compilation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getPermutationId()">getPermutationId</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the permutation ID.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.util.SortedSet&lt;java.util.SortedMap&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SelectionProperty.html" title="interface in com.google.gwt.core.ext.linker">SelectionProperty</A>,java.lang.String&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getPropertyMap()">getPropertyMap</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides values for <A HREF="../../../../../../com/google/gwt/core/ext/linker/SelectionProperty.html" title="interface in com.google.gwt.core.ext.linker"><CODE>SelectionProperty</CODE></A> instances that are not
+ explicitly set during the compilation phase.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SoftPermutation.html" title="class in com.google.gwt.core.ext.linker">SoftPermutation</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getSoftPermutations()">getSoftPermutations</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the permutations of the collapsed deferred-binding property values
+ that are compiled into the CompilationResult.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/StatementRanges.html" title="interface in com.google.gwt.core.ext.linker">StatementRanges</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getStatementRanges()">getStatementRanges</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the statement ranges for the JavaScript returned by
+ <A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getJavaScript()"><CODE>getJavaScript()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getStrongName()">getStrongName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return a string that uniquely identifies this compilation result.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SymbolData.html" title="interface in com.google.gwt.core.ext.linker">SymbolData</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getSymbolMap()">getSymbolMap</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a sorted array of obfuscated symbol names in the compilation to
+ metadata about the symbol.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The class which is returned from <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()"><CODE>Artifact.getComparableArtifactType()</CODE></A> must
+ declare a final implementation which returns the same hash code for objects
+ for which <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)"><CODE>Artifact.compareToComparableArtifact(Artifact)</CODE></A> returns 0.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.linker.Artifact"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.linker.<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareTo(com.google.gwt.core.ext.linker.Artifact)">compareTo</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getLinker()">getLinker</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#isTransferableFromShards()">isTransferableFromShards</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="CompilationResult(java.lang.Class)"><!-- --></A><H3>
+CompilationResult</H3>
+<PRE>
+protected <B>CompilationResult</B>(java.lang.Class&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A>&gt;&nbsp;linkerType)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getJavaScript()"><!-- --></A><H3>
+getJavaScript</H3>
+<PRE>
+public abstract java.lang.String[] <B>getJavaScript</B>()</PRE>
+<DL>
+<DD>Returns the JavaScript compilation. The first element of the array contains
+ the code that should be run when the application starts up. The remaining
+ elements are loaded via
+ <A HREF="../../../../../../com/google/gwt/core/client/GWT.html#runAsync(com.google.gwt.core.client.RunAsyncCallback)"><CODE>GWT.runAsync</CODE></A>. See
+ <CODE>AsyncFragmentLoader</CODE> for details on the necessary linker support for
+ runAsync.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPermutationId()"><!-- --></A><H3>
+getPermutationId</H3>
+<PRE>
+public abstract int <B>getPermutationId</B>()</PRE>
+<DL>
+<DD>Returns the permutation ID.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPropertyMap()"><!-- --></A><H3>
+getPropertyMap</H3>
+<PRE>
+public abstract java.util.SortedSet&lt;java.util.SortedMap&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SelectionProperty.html" title="interface in com.google.gwt.core.ext.linker">SelectionProperty</A>,java.lang.String&gt;&gt; <B>getPropertyMap</B>()</PRE>
+<DL>
+<DD>Provides values for <A HREF="../../../../../../com/google/gwt/core/ext/linker/SelectionProperty.html" title="interface in com.google.gwt.core.ext.linker"><CODE>SelectionProperty</CODE></A> instances that are not
+ explicitly set during the compilation phase. This method will return
+ multiple mappings, one for each permutation that resulted in the
+ compilation.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSoftPermutations()"><!-- --></A><H3>
+getSoftPermutations</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/linker/SoftPermutation.html" title="class in com.google.gwt.core.ext.linker">SoftPermutation</A>[] <B>getSoftPermutations</B>()</PRE>
+<DL>
+<DD>Returns the permutations of the collapsed deferred-binding property values
+ that are compiled into the CompilationResult.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatementRanges()"><!-- --></A><H3>
+getStatementRanges</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/core/ext/linker/StatementRanges.html" title="interface in com.google.gwt.core.ext.linker">StatementRanges</A>[] <B>getStatementRanges</B>()</PRE>
+<DL>
+<DD>Returns the statement ranges for the JavaScript returned by
+ <A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html#getJavaScript()"><CODE>getJavaScript()</CODE></A>. Some subclasses return <code>null</code>, in
+ which case there is no statement range information available.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStrongName()"><!-- --></A><H3>
+getStrongName</H3>
+<PRE>
+public abstract java.lang.String <B>getStrongName</B>()</PRE>
+<DL>
+<DD>Return a string that uniquely identifies this compilation result. Typically
+ this is a cryptographic hash of the compiled data.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSymbolMap()"><!-- --></A><H3>
+getSymbolMap</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/linker/SymbolData.html" title="interface in com.google.gwt.core.ext.linker">SymbolData</A>[] <B>getSymbolMap</B>()</PRE>
+<DL>
+<DD>Returns a sorted array of obfuscated symbol names in the compilation to
+ metadata about the symbol. This data can allow for on-the-fly deobfuscation
+ of stack trace information or to allow server components to have in-depth
+ knowledge of the runtime structure of compiled objects.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public final int <B>hashCode</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#hashCode()">Artifact</A></CODE></B></DD>
+<DD>The class which is returned from <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()"><CODE>Artifact.getComparableArtifactType()</CODE></A> must
+ declare a final implementation which returns the same hash code for objects
+ for which <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)"><CODE>Artifact.compareToComparableArtifact(Artifact)</CODE></A> returns 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#hashCode()">hashCode</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public java.lang.String <B>toString</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#toString()">toString</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareToComparableArtifact(com.google.gwt.core.ext.linker.CompilationResult)"><!-- --></A><H3>
+compareToComparableArtifact</H3>
+<PRE>
+protected final int <B>compareToComparableArtifact</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;o)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)">Artifact</A></CODE></B></DD>
+<DD>Performs comparison with an artifact of a compatible base type. Objects
+ which compare to 0 are assumed equal, and must return the same
+ <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#hashCode()"><CODE>Artifact.hashCode()</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)">compareToComparableArtifact</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getComparableArtifactType()"><!-- --></A><H3>
+getComparableArtifactType</H3>
+<PRE>
+protected final java.lang.Class&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt; <B>getComparableArtifactType</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()">Artifact</A></CODE></B></DD>
+<DD>Returns the base type to use for comparisons between Artifacts. All
+ concrete implementations of this methods must be final.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()">getComparableArtifactType</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CompilationResult.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/CompilationMetricsArtifact.html" title="class in com.google.gwt.core.ext.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/ConfigurationProperty.html" title="interface in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/CompilationResult.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CompilationResult.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

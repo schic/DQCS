@@ -1,0 +1,1443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+DateTimeFormatInfo (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DateTimeFormatInfo (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DateTimeFormatInfo.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DefaultCurrencyData.html" title="class in com.google.gwt.i18n.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/client/DateTimeFormatInfo.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DateTimeFormatInfo.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.i18n.client</FONT>
+<BR>
+Interface DateTimeFormatInfo</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../com/google/gwt/i18n/client/DefaultDateTimeFormatInfo.html" title="class in com.google.gwt.i18n.client">DefaultDateTimeFormatInfo</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>DateTimeFormatInfo</B></DL>
+</PRE>
+
+<P>
+Information required for formatting and parsing localized date/time values.
+
+ <p>Implementors should subclass <A HREF="../../../../../com/google/gwt/i18n/client/DefaultDateTimeFormatInfo.html" title="class in com.google.gwt.i18n.client"><CODE>DefaultDateTimeFormatInfo</CODE></A> so when
+ methods are added they will get reasonable defaults and not break.  See the
+ same class for example values returned by these methods.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#ampms()">ampms</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns array of strings containing abbreviations for Ante Meridiem and
+ Post Meridiem.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateFormat()">dateFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a safe default date format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateFormatFull()">dateFormatFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "full" date format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateFormatLong()">dateFormatLong</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "long" date format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateFormatMedium()">dateFormatMedium</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "medium" date format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateFormatShort()">dateFormatShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "short" date format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateTime(java.lang.String, java.lang.String)">dateTime</A></B>(java.lang.String&nbsp;timePattern,
+         java.lang.String&nbsp;datePattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date/time format from a date format pattern and a time format
+ pattern, using the locale default joining.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateTimeFull(java.lang.String, java.lang.String)">dateTimeFull</A></B>(java.lang.String&nbsp;timePattern,
+             java.lang.String&nbsp;datePattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateTimeLong(java.lang.String, java.lang.String)">dateTimeLong</A></B>(java.lang.String&nbsp;timePattern,
+             java.lang.String&nbsp;datePattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateTimeMedium(java.lang.String, java.lang.String)">dateTimeMedium</A></B>(java.lang.String&nbsp;timePattern,
+               java.lang.String&nbsp;datePattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#dateTimeShort(java.lang.String, java.lang.String)">dateTimeShort</A></B>(java.lang.String&nbsp;timePattern,
+              java.lang.String&nbsp;datePattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#erasFull()">erasFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the full era names.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#erasShort()">erasShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns abbreviations of the era names.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#firstDayOfTheWeek()">firstDayOfTheWeek</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day which generally comes first in a weekly calendar view, as
+ an index into the return value of <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()"><CODE>weekdaysFull()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatDay()">formatDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "d" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatHour12Minute()">formatHour12Minute</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "hm" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatHour12MinuteSecond()">formatHour12MinuteSecond</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "hms" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatHour24Minute()">formatHour24Minute</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "Hm" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatHour24MinuteSecond()">formatHour24MinuteSecond</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "Hms" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMinuteSecond()">formatMinuteSecond</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "ms" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMonthAbbrev()">formatMonthAbbrev</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "MMM" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMonthAbbrevDay()">formatMonthAbbrevDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "MMMd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMonthFull()">formatMonthFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "MMMM" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMonthFullDay()">formatMonthFullDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "MMMMd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMonthFullWeekdayDay()">formatMonthFullWeekdayDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "MMMMEEEEd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatMonthNumDay()">formatMonthNumDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "Md" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYear()">formatYear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "y" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthAbbrev()">formatYearMonthAbbrev</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yMMM" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthAbbrevDay()">formatYearMonthAbbrevDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yMMMd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthFull()">formatYearMonthFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yMMMM" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthFullDay()">formatYearMonthFullDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yMMMMd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthNum()">formatYearMonthNum</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yM" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthNumDay()">formatYearMonthNumDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yMd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearMonthWeekdayDay()">formatYearMonthWeekdayDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yMMMEEEd" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearQuarterFull()">formatYearQuarterFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yQQQQ" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#formatYearQuarterShort()">formatYearQuarterShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns localized format equivalent to the "yQ" skeleton pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#monthsFull()">monthsFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of full month names.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#monthsFullStandalone()">monthsFullStandalone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of month names for use in a stand-alone context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#monthsNarrow()">monthsNarrow</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the shortest abbreviations for months, typically a
+ single character and not guaranteed to be unique.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#monthsNarrowStandalone()">monthsNarrowStandalone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the shortest abbreviations for months suitable for use
+ in a stand-alone context, typically a single character and not guaranteed
+ to be unique.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#monthsShort()">monthsShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of month abbreviations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#monthsShortStandalone()">monthsShortStandalone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of month abbreviations, suitable for use in a stand-alone
+ context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#quartersFull()">quartersFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of full quarter names.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#quartersShort()">quartersShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of abbreviations for quarters.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#timeFormat()">timeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a safe default time format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#timeFormatFull()">timeFormatFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "full" time format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#timeFormatLong()">timeFormatLong</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "long" time format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#timeFormatMedium()">timeFormatMedium</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "medium" time format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#timeFormatShort()">timeFormatShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a "short" time format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()">weekdaysFull</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the full names of weekdays.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFullStandalone()">weekdaysFullStandalone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the full names of weekdays, suitable for use in a
+ stand-alone context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysNarrow()">weekdaysNarrow</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the shortest abbreviations for weekdays, typically a
+ single character and not guaranteed to be unique.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysNarrowStandalone()">weekdaysNarrowStandalone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of the shortest abbreviations for weekdays suitable for
+ use in a stand-alone context, typically a single character and not
+ guaranteed to be unique.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysShort()">weekdaysShort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of abbreviations for weekdays.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysShortStandalone()">weekdaysShortStandalone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of abbreviations for weekdays, suitable for use in a
+ stand-alone context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekendEnd()">weekendEnd</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day which ends the weekend, as an index into the return value
+ of <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()"><CODE>weekdaysFull()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekendStart()">weekendStart</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day which starts the weekend, as an index into the return value
+ of <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()"><CODE>weekdaysFull()</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ampms()"><!-- --></A><H3>
+ampms</H3>
+<PRE>
+java.lang.String[] <B>ampms</B>()</PRE>
+<DL>
+<DD>Returns array of strings containing abbreviations for Ante Meridiem and
+ Post Meridiem.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateFormat()"><!-- --></A><H3>
+dateFormat</H3>
+<PRE>
+java.lang.String <B>dateFormat</B>()</PRE>
+<DL>
+<DD>Returns a safe default date format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateFormatFull()"><!-- --></A><H3>
+dateFormatFull</H3>
+<PRE>
+java.lang.String <B>dateFormatFull</B>()</PRE>
+<DL>
+<DD>Returns a "full" date format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateFormatLong()"><!-- --></A><H3>
+dateFormatLong</H3>
+<PRE>
+java.lang.String <B>dateFormatLong</B>()</PRE>
+<DL>
+<DD>Returns a "long" date format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateFormatMedium()"><!-- --></A><H3>
+dateFormatMedium</H3>
+<PRE>
+java.lang.String <B>dateFormatMedium</B>()</PRE>
+<DL>
+<DD>Returns a "medium" date format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateFormatShort()"><!-- --></A><H3>
+dateFormatShort</H3>
+<PRE>
+java.lang.String <B>dateFormatShort</B>()</PRE>
+<DL>
+<DD>Returns a "short" date format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateTime(java.lang.String, java.lang.String)"><!-- --></A><H3>
+dateTime</H3>
+<PRE>
+java.lang.String <B>dateTime</B>(java.lang.String&nbsp;timePattern,
+                          java.lang.String&nbsp;datePattern)</PRE>
+<DL>
+<DD>Returns a date/time format from a date format pattern and a time format
+ pattern, using the locale default joining.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timePattern</CODE> - the time pattern String<DD><CODE>datePattern</CODE> - the data pattern String</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateTimeFull(java.lang.String, java.lang.String)"><!-- --></A><H3>
+dateTimeFull</H3>
+<PRE>
+java.lang.String <B>dateTimeFull</B>(java.lang.String&nbsp;timePattern,
+                              java.lang.String&nbsp;datePattern)</PRE>
+<DL>
+<DD>Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timePattern</CODE> - the time pattern String<DD><CODE>datePattern</CODE> - the data pattern String</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateTimeLong(java.lang.String, java.lang.String)"><!-- --></A><H3>
+dateTimeLong</H3>
+<PRE>
+java.lang.String <B>dateTimeLong</B>(java.lang.String&nbsp;timePattern,
+                              java.lang.String&nbsp;datePattern)</PRE>
+<DL>
+<DD>Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timePattern</CODE> - the time pattern String<DD><CODE>datePattern</CODE> - the data pattern String</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateTimeMedium(java.lang.String, java.lang.String)"><!-- --></A><H3>
+dateTimeMedium</H3>
+<PRE>
+java.lang.String <B>dateTimeMedium</B>(java.lang.String&nbsp;timePattern,
+                                java.lang.String&nbsp;datePattern)</PRE>
+<DL>
+<DD>Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timePattern</CODE> - the time pattern String<DD><CODE>datePattern</CODE> - the data pattern String</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dateTimeShort(java.lang.String, java.lang.String)"><!-- --></A><H3>
+dateTimeShort</H3>
+<PRE>
+java.lang.String <B>dateTimeShort</B>(java.lang.String&nbsp;timePattern,
+                               java.lang.String&nbsp;datePattern)</PRE>
+<DL>
+<DD>Returns a date/time format from a date format pattern and a time format
+ pattern, using "full" joining.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timePattern</CODE> - the time pattern String<DD><CODE>datePattern</CODE> - the data pattern String</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="erasFull()"><!-- --></A><H3>
+erasFull</H3>
+<PRE>
+java.lang.String[] <B>erasFull</B>()</PRE>
+<DL>
+<DD>Returns an array of the full era names.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="erasShort()"><!-- --></A><H3>
+erasShort</H3>
+<PRE>
+java.lang.String[] <B>erasShort</B>()</PRE>
+<DL>
+<DD>Returns abbreviations of the era names.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="firstDayOfTheWeek()"><!-- --></A><H3>
+firstDayOfTheWeek</H3>
+<PRE>
+int <B>firstDayOfTheWeek</B>()</PRE>
+<DL>
+<DD>Returns the day which generally comes first in a weekly calendar view, as
+ an index into the return value of <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()"><CODE>weekdaysFull()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatDay()"><!-- --></A><H3>
+formatDay</H3>
+<PRE>
+java.lang.String <B>formatDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "d" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatHour12Minute()"><!-- --></A><H3>
+formatHour12Minute</H3>
+<PRE>
+java.lang.String <B>formatHour12Minute</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "hm" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatHour12MinuteSecond()"><!-- --></A><H3>
+formatHour12MinuteSecond</H3>
+<PRE>
+java.lang.String <B>formatHour12MinuteSecond</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "hms" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatHour24Minute()"><!-- --></A><H3>
+formatHour24Minute</H3>
+<PRE>
+java.lang.String <B>formatHour24Minute</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "Hm" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatHour24MinuteSecond()"><!-- --></A><H3>
+formatHour24MinuteSecond</H3>
+<PRE>
+java.lang.String <B>formatHour24MinuteSecond</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "Hms" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMinuteSecond()"><!-- --></A><H3>
+formatMinuteSecond</H3>
+<PRE>
+java.lang.String <B>formatMinuteSecond</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "ms" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMonthAbbrev()"><!-- --></A><H3>
+formatMonthAbbrev</H3>
+<PRE>
+java.lang.String <B>formatMonthAbbrev</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "MMM" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMonthAbbrevDay()"><!-- --></A><H3>
+formatMonthAbbrevDay</H3>
+<PRE>
+java.lang.String <B>formatMonthAbbrevDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "MMMd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMonthFull()"><!-- --></A><H3>
+formatMonthFull</H3>
+<PRE>
+java.lang.String <B>formatMonthFull</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "MMMM" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMonthFullDay()"><!-- --></A><H3>
+formatMonthFullDay</H3>
+<PRE>
+java.lang.String <B>formatMonthFullDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "MMMMd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMonthFullWeekdayDay()"><!-- --></A><H3>
+formatMonthFullWeekdayDay</H3>
+<PRE>
+java.lang.String <B>formatMonthFullWeekdayDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "MMMMEEEEd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatMonthNumDay()"><!-- --></A><H3>
+formatMonthNumDay</H3>
+<PRE>
+java.lang.String <B>formatMonthNumDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "Md" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYear()"><!-- --></A><H3>
+formatYear</H3>
+<PRE>
+java.lang.String <B>formatYear</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "y" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthAbbrev()"><!-- --></A><H3>
+formatYearMonthAbbrev</H3>
+<PRE>
+java.lang.String <B>formatYearMonthAbbrev</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yMMM" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthAbbrevDay()"><!-- --></A><H3>
+formatYearMonthAbbrevDay</H3>
+<PRE>
+java.lang.String <B>formatYearMonthAbbrevDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yMMMd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthFull()"><!-- --></A><H3>
+formatYearMonthFull</H3>
+<PRE>
+java.lang.String <B>formatYearMonthFull</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yMMMM" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthFullDay()"><!-- --></A><H3>
+formatYearMonthFullDay</H3>
+<PRE>
+java.lang.String <B>formatYearMonthFullDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yMMMMd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthNum()"><!-- --></A><H3>
+formatYearMonthNum</H3>
+<PRE>
+java.lang.String <B>formatYearMonthNum</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yM" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthNumDay()"><!-- --></A><H3>
+formatYearMonthNumDay</H3>
+<PRE>
+java.lang.String <B>formatYearMonthNumDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yMd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearMonthWeekdayDay()"><!-- --></A><H3>
+formatYearMonthWeekdayDay</H3>
+<PRE>
+java.lang.String <B>formatYearMonthWeekdayDay</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yMMMEEEd" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearQuarterFull()"><!-- --></A><H3>
+formatYearQuarterFull</H3>
+<PRE>
+java.lang.String <B>formatYearQuarterFull</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yQQQQ" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="formatYearQuarterShort()"><!-- --></A><H3>
+formatYearQuarterShort</H3>
+<PRE>
+java.lang.String <B>formatYearQuarterShort</B>()</PRE>
+<DL>
+<DD>Returns localized format equivalent to the "yQ" skeleton pattern.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="monthsFull()"><!-- --></A><H3>
+monthsFull</H3>
+<PRE>
+java.lang.String[] <B>monthsFull</B>()</PRE>
+<DL>
+<DD>Returns an array of full month names.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="monthsFullStandalone()"><!-- --></A><H3>
+monthsFullStandalone</H3>
+<PRE>
+java.lang.String[] <B>monthsFullStandalone</B>()</PRE>
+<DL>
+<DD>Returns an array of month names for use in a stand-alone context.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="monthsNarrow()"><!-- --></A><H3>
+monthsNarrow</H3>
+<PRE>
+java.lang.String[] <B>monthsNarrow</B>()</PRE>
+<DL>
+<DD>Returns an array of the shortest abbreviations for months, typically a
+ single character and not guaranteed to be unique.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="monthsNarrowStandalone()"><!-- --></A><H3>
+monthsNarrowStandalone</H3>
+<PRE>
+java.lang.String[] <B>monthsNarrowStandalone</B>()</PRE>
+<DL>
+<DD>Returns an array of the shortest abbreviations for months suitable for use
+ in a stand-alone context, typically a single character and not guaranteed
+ to be unique.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="monthsShort()"><!-- --></A><H3>
+monthsShort</H3>
+<PRE>
+java.lang.String[] <B>monthsShort</B>()</PRE>
+<DL>
+<DD>Returns an array of month abbreviations.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="monthsShortStandalone()"><!-- --></A><H3>
+monthsShortStandalone</H3>
+<PRE>
+java.lang.String[] <B>monthsShortStandalone</B>()</PRE>
+<DL>
+<DD>Returns an array of month abbreviations, suitable for use in a stand-alone
+ context.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="quartersFull()"><!-- --></A><H3>
+quartersFull</H3>
+<PRE>
+java.lang.String[] <B>quartersFull</B>()</PRE>
+<DL>
+<DD>Returns an array of full quarter names.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="quartersShort()"><!-- --></A><H3>
+quartersShort</H3>
+<PRE>
+java.lang.String[] <B>quartersShort</B>()</PRE>
+<DL>
+<DD>Returns an array of abbreviations for quarters.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="timeFormat()"><!-- --></A><H3>
+timeFormat</H3>
+<PRE>
+java.lang.String <B>timeFormat</B>()</PRE>
+<DL>
+<DD>Returns a safe default time format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="timeFormatFull()"><!-- --></A><H3>
+timeFormatFull</H3>
+<PRE>
+java.lang.String <B>timeFormatFull</B>()</PRE>
+<DL>
+<DD>Returns a "full" time format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="timeFormatLong()"><!-- --></A><H3>
+timeFormatLong</H3>
+<PRE>
+java.lang.String <B>timeFormatLong</B>()</PRE>
+<DL>
+<DD>Returns a "long" time format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="timeFormatMedium()"><!-- --></A><H3>
+timeFormatMedium</H3>
+<PRE>
+java.lang.String <B>timeFormatMedium</B>()</PRE>
+<DL>
+<DD>Returns a "medium" time format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="timeFormatShort()"><!-- --></A><H3>
+timeFormatShort</H3>
+<PRE>
+java.lang.String <B>timeFormatShort</B>()</PRE>
+<DL>
+<DD>Returns a "short" time format.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekdaysFull()"><!-- --></A><H3>
+weekdaysFull</H3>
+<PRE>
+java.lang.String[] <B>weekdaysFull</B>()</PRE>
+<DL>
+<DD>Returns an array of the full names of weekdays.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekdaysFullStandalone()"><!-- --></A><H3>
+weekdaysFullStandalone</H3>
+<PRE>
+java.lang.String[] <B>weekdaysFullStandalone</B>()</PRE>
+<DL>
+<DD>Returns an array of the full names of weekdays, suitable for use in a
+ stand-alone context.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekdaysNarrow()"><!-- --></A><H3>
+weekdaysNarrow</H3>
+<PRE>
+java.lang.String[] <B>weekdaysNarrow</B>()</PRE>
+<DL>
+<DD>Returns an array of the shortest abbreviations for weekdays, typically a
+ single character and not guaranteed to be unique.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekdaysNarrowStandalone()"><!-- --></A><H3>
+weekdaysNarrowStandalone</H3>
+<PRE>
+java.lang.String[] <B>weekdaysNarrowStandalone</B>()</PRE>
+<DL>
+<DD>Returns an array of the shortest abbreviations for weekdays suitable for
+ use in a stand-alone context, typically a single character and not
+ guaranteed to be unique.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekdaysShort()"><!-- --></A><H3>
+weekdaysShort</H3>
+<PRE>
+java.lang.String[] <B>weekdaysShort</B>()</PRE>
+<DL>
+<DD>Returns an array of abbreviations for weekdays.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekdaysShortStandalone()"><!-- --></A><H3>
+weekdaysShortStandalone</H3>
+<PRE>
+java.lang.String[] <B>weekdaysShortStandalone</B>()</PRE>
+<DL>
+<DD>Returns an array of abbreviations for weekdays, suitable for use in a
+ stand-alone context.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekendEnd()"><!-- --></A><H3>
+weekendEnd</H3>
+<PRE>
+int <B>weekendEnd</B>()</PRE>
+<DL>
+<DD>Returns the day which ends the weekend, as an index into the return value
+ of <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()"><CODE>weekdaysFull()</CODE></A>.
+
+ <p>Note that this value may be numerically less than
+ <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekendStart()"><CODE>weekendStart()</CODE></A> - for example, <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekendStart()"><CODE>weekendStart()</CODE></A> of 6 and
+ <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekendEnd()"><CODE>weekendEnd()</CODE></A> of 0 means Saturday and Sunday are the weekend.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="weekendStart()"><!-- --></A><H3>
+weekendStart</H3>
+<PRE>
+int <B>weekendStart</B>()</PRE>
+<DL>
+<DD>Returns the day which starts the weekend, as an index into the return value
+ of <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html#weekdaysFull()"><CODE>weekdaysFull()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DateTimeFormatInfo.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DefaultCurrencyData.html" title="class in com.google.gwt.i18n.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/client/DateTimeFormatInfo.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DateTimeFormatInfo.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

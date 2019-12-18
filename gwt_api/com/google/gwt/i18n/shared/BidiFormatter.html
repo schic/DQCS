@@ -1,0 +1,1010 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+BidiFormatter (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="BidiFormatter (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BidiFormatter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/AnyRtlDirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/shared/BidiFormatter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BidiFormatter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.i18n.shared</FONT>
+<BR>
+Class BidiFormatter</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">com.google.gwt.i18n.shared.BidiFormatterBase</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.i18n.shared.BidiFormatter</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>BidiFormatter</B><DT>extends <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">BidiFormatterBase</A></DL>
+</PRE>
+
+<P>
+Utility class for formatting text for display in a potentially
+ opposite-direction context without garbling. The direction of the context is
+ set at formatter creation and the direction of the text can be either
+ estimated or passed in when known. Provides the following functionality:
+ <p>
+ 1. BiDi Wrapping: When text in one language is mixed into a document in
+ another, opposite-direction language, e.g. when an English business name is
+ embedded in a Hebrew web page, both the inserted string and the text
+ following it may be displayed incorrectly unless the inserted string is
+ explicitly separated from the surrounding text in a "wrapper" that declares
+ its direction at the start and then resets it back at the end. This wrapping
+ can be done in HTML mark-up (e.g. a 'span dir=rtl' tag) or - only in contexts
+ where mark-up cannot be used - in Unicode BiDi formatting codes (LRE|RLE and
+ PDF). Optionally, the mark-up can be inserted even when the direction is the
+ same, in order to keep the DOM structure more stable. Providing such wrapping
+ services is the basic purpose of the BiDi formatter.
+ <p>
+ 2. Direction estimation: How does one know whether a string about to be
+ inserted into surrounding text has the same direction? Well, in many cases,
+ one knows that this must be the case when writing the code doing the
+ insertion, e.g. when a localized message is inserted into a localized page.
+ In such cases there is no need to involve the BiDi formatter at all. In some
+ other cases, it need not be the same as the context, but is either constant
+ (e.g. urls are always LTR) or otherwise known. In the remaining cases, e.g.
+ when the string is user-entered or comes from a database, the language of the
+ string (and thus its direction) is not known a priori, and must be estimated
+ at run-time. The BiDi formatter can do this automatically.
+ <p>
+ 3. Escaping: When wrapping plain text - i.e. text that is not already HTML or
+ HTML-escaped - in HTML mark-up, the text must first be HTML-escaped to
+ prevent XSS attacks and other nasty business. This of course is always true,
+ but the escaping can not be done after the string has already been wrapped in
+ mark-up, so the BiDi formatter also serves as a last chance and includes
+ escaping services.
+ <p>
+ Thus, in a single call, the formatter will escape the input string as
+ specified, determine its direction, and wrap it as necessary. It is then up
+ to the caller to insert the return value in the output.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String)">dirAttr</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String, boolean)"><CODE>dirAttr(String, boolean)</CODE></A>, but assumes <code>isHtml</code> is
+ false.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String, boolean)">dirAttr</A></B>(java.lang.String&nbsp;str,
+        boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns "dir=ltr" or "dir=rtl", depending on <code>str</code>'s estimated
+ direction, if it is not the same as the context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#endEdge()">endEdge</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns "left" for RTL context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(boolean)">getInstance</A></B>(boolean&nbsp;rtlContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of BidiFormatter given the context
+ direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(boolean, boolean)">getInstance</A></B>(boolean&nbsp;rtlContext,
+            boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of BidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(com.google.gwt.i18n.client.HasDirection.Direction)">getInstance</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of BidiFormatter given the context
+ direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(com.google.gwt.i18n.client.HasDirection.Direction, boolean)">getInstance</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir,
+            boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of BidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstanceForCurrentLocale()">getInstanceForCurrentLocale</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of BidiFormatter whose context direction
+ matches the current locale's direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstanceForCurrentLocale(boolean)">getInstanceForCurrentLocale</A></B>(boolean&nbsp;alwaysSpan)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factory for creating an instance of BidiFormatter whose context direction
+ matches the current locale's direction, and given the desired span wrapping
+ behavior (see below).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#knownDirAttr(com.google.gwt.i18n.client.HasDirection.Direction)">knownDirAttr</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns "dir=ltr" or "dir=rtl", depending on the given direction, if it is
+ not the same as the context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#mark()">mark</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Unicode BiDi mark matching the context direction (LRM for LTR
+ context direction, RLM for RTL context direction), or the empty string for
+ default / unknown context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String)">markAfter</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String, boolean)"><CODE>markAfter(String, boolean)</CODE></A>, but assumes <code>isHtml</code> is
+ false.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String, boolean)">markAfter</A></B>(java.lang.String&nbsp;str,
+          boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a Unicode BiDi mark matching the context direction (LRM or RLM) if
+ either the direction or the exit direction of <code>str</code> is opposite to
+ the context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)">spanWrap</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>spanWrap(String, boolean, boolean)</CODE></A>, but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean)">spanWrap</A></B>(java.lang.String&nbsp;str,
+         boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>spanWrap(String, boolean, boolean)</CODE></A>, but assumes <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)">spanWrap</A></B>(java.lang.String&nbsp;str,
+         boolean&nbsp;isHtml,
+         boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a string of unknown direction for use in HTML output of the context
+ direction, so an opposite-direction string is neither garbled nor garbles
+ what follows it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     java.lang.String&nbsp;str,
+                     boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">spanWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                     java.lang.String&nbsp;str,
+                     boolean&nbsp;isHtml,
+                     boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a string of given direction for use in HTML output of the context
+ direction, so an opposite-direction string is neither garbled nor garbles
+ what follows it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#startEdge()">startEdge</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns "right" for RTL context direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String)">unicodeWrap</A></B>(java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>unicodeWrap(String, boolean, boolean)</CODE></A>, but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean)">unicodeWrap</A></B>(java.lang.String&nbsp;str,
+            boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>unicodeWrap(String, boolean, boolean)</CODE></A>, but assumes <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)">unicodeWrap</A></B>(java.lang.String&nbsp;str,
+            boolean&nbsp;isHtml,
+            boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a string of unknown direction for use in plain-text output of the
+ context direction, so an opposite-direction string is neither garbled nor
+ garbles what follows it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        java.lang.String&nbsp;str)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        java.lang.String&nbsp;str,
+                        boolean&nbsp;isHtml)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>dirReset</code> is true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">unicodeWrapWithKnownDir</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                        java.lang.String&nbsp;str,
+                        boolean&nbsp;isHtml,
+                        boolean&nbsp;dirReset)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formats a string of given direction for use in plain-text output of the
+ context direction, so an opposite-direction string is neither garbled nor
+ garbles what follows it.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.i18n.shared.BidiFormatterBase"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.i18n.shared.<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared">BidiFormatterBase</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#dirAttrBase(java.lang.String, boolean)">dirAttrBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#endEdgeBase()">endEdgeBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String)">estimateDirection</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#estimateDirection(java.lang.String, boolean)">estimateDirection</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#getAlwaysSpan()">getAlwaysSpan</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#getContextDir()">getContextDir</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#isRtlContext()">isRtlContext</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#knownDirAttrBase(com.google.gwt.i18n.client.HasDirection.Direction)">knownDirAttrBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#markAfterBase(java.lang.String, boolean)">markAfterBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#markBase()">markBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#spanWrapBase(java.lang.String, boolean, boolean)">spanWrapBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#spanWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">spanWrapWithKnownDirBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#startEdgeBase()">startEdgeBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#unicodeWrapBase(java.lang.String, boolean, boolean)">unicodeWrapBase</A>, <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html#unicodeWrapWithKnownDirBase(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)">unicodeWrapWithKnownDirBase</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getInstance(boolean)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A> <B>getInstance</B>(boolean&nbsp;rtlContext)</PRE>
+<DL>
+<DD>Factory for creating an instance of BidiFormatter given the context
+ direction. The default behavior of <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A> and its variations is
+ set to avoid span wrapping unless it's necessary ('dir' attribute needs to
+ be set).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>rtlContext</CODE> - Whether the context direction is RTL.
+          In one simple use case, the context direction would simply be the
+          locale direction, which can be retrieved using
+          <code>LocaleInfo.getCurrentLocale().isRTL()</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstance(boolean, boolean)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A> <B>getInstance</B>(boolean&nbsp;rtlContext,
+                                        boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+<DD>Factory for creating an instance of BidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>rtlContext</CODE> - Whether the context direction is RTL. See an example of
+          a simple use case at <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(boolean)"><CODE>getInstance(boolean)</CODE></A><DD><CODE>alwaysSpan</CODE> - Whether <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A> (and its variations) should
+          always use a 'span' tag, even when the input direction is neutral
+          or matches the context, so that the DOM structure of the output
+          does not depend on the combination of directions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstance(com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A> <B>getInstance</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir)</PRE>
+<DL>
+<DD>Factory for creating an instance of BidiFormatter given the context
+ direction. The default behavior of <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A> and its variations is
+ set to avoid span wrapping unless it's necessary ('dir' attribute needs to
+ be set).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contextDir</CODE> - The context direction. See an example of a simple use
+          case at <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(boolean)"><CODE>getInstance(boolean)</CODE></A>. Note: Direction.DEFAULT
+          indicates unknown context direction. Try not to use it, since it
+          is impossible to reset the direction back to the context when it
+          is unknown</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstance(com.google.gwt.i18n.client.HasDirection.Direction, boolean)"><!-- --></A><H3>
+getInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A> <B>getInstance</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;contextDir,
+                                        boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+<DD>Factory for creating an instance of BidiFormatter given the context
+ direction and the desired span wrapping behavior (see below).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>contextDir</CODE> - The context direction. See an example of a simple use
+          case at <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#getInstance(boolean)"><CODE>getInstance(boolean)</CODE></A>. Note: Direction.DEFAULT
+          indicates unknown context direction. Try not to use it, since it
+          is impossible to reset the direction back to the context when it
+          is unknown<DD><CODE>alwaysSpan</CODE> - Whether <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A> (and its variations) should
+          always use a 'span' tag, even when the input direction is neutral
+          or matches the context, so that the DOM structure of the output
+          does not depend on the combination of directions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstanceForCurrentLocale()"><!-- --></A><H3>
+getInstanceForCurrentLocale</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A> <B>getInstanceForCurrentLocale</B>()</PRE>
+<DL>
+<DD>Factory for creating an instance of BidiFormatter whose context direction
+ matches the current locale's direction. The default behavior of <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A> and its variations is set to avoid span wrapping unless it's
+ necessary ('dir' attribute needs to be set).
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInstanceForCurrentLocale(boolean)"><!-- --></A><H3>
+getInstanceForCurrentLocale</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html" title="class in com.google.gwt.i18n.shared">BidiFormatter</A> <B>getInstanceForCurrentLocale</B>(boolean&nbsp;alwaysSpan)</PRE>
+<DL>
+<DD>Factory for creating an instance of BidiFormatter whose context direction
+ matches the current locale's direction, and given the desired span wrapping
+ behavior (see below).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>alwaysSpan</CODE> - Whether <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A> (and its variations) should
+          always use a 'span' tag, even when the input direction is neutral
+          or matches the context, so that the DOM structure of the output
+          does not depend on the combination of directions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dirAttr(java.lang.String)"><!-- --></A><H3>
+dirAttr</H3>
+<PRE>
+public java.lang.String <B>dirAttr</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#dirAttr(java.lang.String, boolean)"><CODE>dirAttr(String, boolean)</CODE></A>, but assumes <code>isHtml</code> is
+ false.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String whose direction is to be estimated
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dirAttr(java.lang.String, boolean)"><!-- --></A><H3>
+dirAttr</H3>
+<PRE>
+public java.lang.String <B>dirAttr</B>(java.lang.String&nbsp;str,
+                                boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Returns "dir=ltr" or "dir=rtl", depending on <code>str</code>'s estimated
+ direction, if it is not the same as the context direction. Otherwise,
+ returns the empty string.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String whose direction is to be estimated<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="endEdge()"><!-- --></A><H3>
+endEdge</H3>
+<PRE>
+public java.lang.String <B>endEdge</B>()</PRE>
+<DL>
+<DD>Returns "left" for RTL context direction. Otherwise (LTR or default /
+ unknown context direction) returns "right".
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="knownDirAttr(com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+knownDirAttr</H3>
+<PRE>
+public java.lang.String <B>knownDirAttr</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD>Returns "dir=ltr" or "dir=rtl", depending on the given direction, if it is
+ not the same as the context direction. Otherwise, returns the empty string.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - Given direction
+<DT><B>Returns:</B><DD>"dir=rtl" for RTL text in non-RTL context; "dir=ltr" for LTR text
+         in non-LTR context; else, the empty string.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mark()"><!-- --></A><H3>
+mark</H3>
+<PRE>
+public java.lang.String <B>mark</B>()</PRE>
+<DL>
+<DD>Returns the Unicode BiDi mark matching the context direction (LRM for LTR
+ context direction, RLM for RTL context direction), or the empty string for
+ default / unknown context direction.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="markAfter(java.lang.String)"><!-- --></A><H3>
+markAfter</H3>
+<PRE>
+public java.lang.String <B>markAfter</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#markAfter(java.lang.String, boolean)"><CODE>markAfter(String, boolean)</CODE></A>, but assumes <code>isHtml</code> is
+ false.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String after which the mark may need to appear
+<DT><B>Returns:</B><DD>LRM for RTL text in LTR context; RLM for LTR text in RTL context;
+         else, the empty string.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="markAfter(java.lang.String, boolean)"><!-- --></A><H3>
+markAfter</H3>
+<PRE>
+public java.lang.String <B>markAfter</B>(java.lang.String&nbsp;str,
+                                  boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Returns a Unicode BiDi mark matching the context direction (LRM or RLM) if
+ either the direction or the exit direction of <code>str</code> is opposite to
+ the context direction. Otherwise returns the empty string.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - String after which the mark may need to appear<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>LRM for RTL text in LTR context; RLM for LTR text in RTL context;
+         else, the empty string.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(java.lang.String)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public java.lang.String <B>spanWrap</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>spanWrap(String, boolean, boolean)</CODE></A>, but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(java.lang.String, boolean)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public java.lang.String <B>spanWrap</B>(java.lang.String&nbsp;str,
+                                 boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String, boolean, boolean)"><CODE>spanWrap(String, boolean, boolean)</CODE></A>, but assumes <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrap(java.lang.String, boolean, boolean)"><!-- --></A><H3>
+spanWrap</H3>
+<PRE>
+public java.lang.String <B>spanWrap</B>(java.lang.String&nbsp;str,
+                                 boolean&nbsp;isHtml,
+                                 boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD>Formats a string of unknown direction for use in HTML output of the context
+ direction, so an opposite-direction string is neither garbled nor garbles
+ what follows it.
+ <p>
+ The algorithm: estimates the direction of input argument <code>str</code>. In
+ case its direction doesn't match the context direction, wraps it with a
+ 'span' tag and adds a "dir" attribute (either 'dir=rtl' or 'dir=ltr').
+ <p>
+ If <code>setAlwaysSpan(true)</code> was used, the input is always wrapped with
+ 'span', skipping just the dir attribute when it's not needed.
+ <p>
+ If <code>dirReset</code>, and if the overall direction or the exit direction of
+ <code>str</code> are opposite to the context direction, a trailing unicode BiDi
+ mark matching the context direction is appended (LRM or RLM).
+ <p>
+ If !<code>isHtml</code>, HTML-escapes <code>str</code> regardless of wrapping.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public java.lang.String <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                             java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public java.lang.String <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                             java.lang.String&nbsp;str,
+                                             boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><!-- --></A><H3>
+spanWrapWithKnownDir</H3>
+<PRE>
+public java.lang.String <B>spanWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                             java.lang.String&nbsp;str,
+                                             boolean&nbsp;isHtml,
+                                             boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD>Formats a string of given direction for use in HTML output of the context
+ direction, so an opposite-direction string is neither garbled nor garbles
+ what follows it.
+ <p>
+ The algorithm: estimates the direction of input argument <code>str</code>. In
+ case its direction doesn't match the context direction, wraps it with a
+ 'span' tag and adds a "dir" attribute (either 'dir=rtl' or 'dir=ltr').
+ <p>
+ If <code>setAlwaysSpan(true)</code> was used, the input is always wrapped with
+ 'span', skipping just the dir attribute when it's not needed.
+ <p>
+ If <code>dirReset</code>, and if the overall direction or the exit direction of
+ <code>str</code> are opposite to the context direction, a trailing unicode BiDi
+ mark matching the context direction is appended (LRM or RLM).
+ <p>
+ If !<code>isHtml</code>, HTML-escapes <code>str</code> regardless of wrapping.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startEdge()"><!-- --></A><H3>
+startEdge</H3>
+<PRE>
+public java.lang.String <B>startEdge</B>()</PRE>
+<DL>
+<DD>Returns "right" for RTL context direction. Otherwise (LTR or default /
+ unknown context direction) returns "left".
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(java.lang.String)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public java.lang.String <B>unicodeWrap</B>(java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>unicodeWrap(String, boolean, boolean)</CODE></A>, but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(java.lang.String, boolean)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public java.lang.String <B>unicodeWrap</B>(java.lang.String&nbsp;str,
+                                    boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Like <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrap(java.lang.String, boolean, boolean)"><CODE>unicodeWrap(String, boolean, boolean)</CODE></A>, but assumes <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrap(java.lang.String, boolean, boolean)"><!-- --></A><H3>
+unicodeWrap</H3>
+<PRE>
+public java.lang.String <B>unicodeWrap</B>(java.lang.String&nbsp;str,
+                                    boolean&nbsp;isHtml,
+                                    boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD>Formats a string of unknown direction for use in plain-text output of the
+ context direction, so an opposite-direction string is neither garbled nor
+ garbles what follows it. As opposed to <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrap(java.lang.String)"><CODE>spanWrap(java.lang.String)</CODE></A>, this makes use of
+ Unicode BiDi formatting characters. In HTML, its *only* valid use is inside
+ of elements that do not allow mark-up, e.g. an 'option' tag.
+ <p>
+ The algorithm: estimates the direction of input argument <code>str</code>. In
+ case it doesn't match the context direction, wraps it with Unicode BiDi
+ formatting characters: RLE+<code>str</code>+PDF for RTL text, or LRE+ <code>str</code>+PDF for LTR text.
+ <p>
+ If <code>opt_dirReset</code>, and if the overall direction or the exit direction
+ of <code>str</code> are opposite to the context direction, a trailing unicode
+ BiDi mark matching the context direction is appended (LRM or RLM).
+ <p>
+ Does *not* do HTML-escaping regardless of the value of <code>isHtml</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public java.lang.String <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                                java.lang.String&nbsp;str)</PRE>
+<DL>
+<DD>Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>isHtml</code> is false and <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public java.lang.String <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                                java.lang.String&nbsp;str,
+                                                boolean&nbsp;isHtml)</PRE>
+<DL>
+<DD>Like
+ <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><CODE>unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, String, boolean, boolean)</CODE></A>,
+ but assumes <code>dirReset</code> is true.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unicodeWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String, boolean, boolean)"><!-- --></A><H3>
+unicodeWrapWithKnownDir</H3>
+<PRE>
+public java.lang.String <B>unicodeWrapWithKnownDir</B>(<A HREF="../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir,
+                                                java.lang.String&nbsp;str,
+                                                boolean&nbsp;isHtml,
+                                                boolean&nbsp;dirReset)</PRE>
+<DL>
+<DD>Formats a string of given direction for use in plain-text output of the
+ context direction, so an opposite-direction string is neither garbled nor
+ garbles what follows it. As opposed to <A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatter.html#spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)"><CODE>spanWrapWithKnownDir(com.google.gwt.i18n.client.HasDirection.Direction, java.lang.String)</CODE></A>, this
+ makes use of unicode BiDi formatting characters. In HTML, its *only* valid
+ use is inside of elements that do not allow mark-up, e.g. an 'option' tag.
+ <p>
+ The algorithm: estimates the direction of input argument <code>str</code>. In
+ case it doesn't match the context direction, wraps it with Unicode BiDi
+ formatting characters: RLE+<code>str</code>+PDF for RTL text, or LRE+ <code>str</code>+PDF for LTR text.
+ <p>
+ If <code>opt_dirReset</code>, and if the overall direction or the exit direction
+ of <code>str</code> are opposite to the context direction, a trailing unicode
+ BiDi mark matching the context direction is appended (LRM or RLM).
+ <p>
+ Does *not* do HTML-escaping regardless of the value of <code>isHtml</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dir</CODE> - <code>str</code>'s direction<DD><CODE>str</CODE> - The input string<DD><CODE>isHtml</CODE> - Whether <code>str</code> is HTML / HTML-escaped<DD><CODE>dirReset</CODE> - Whether to append a trailing unicode bidi mark matching the
+          context direction, when needed, to prevent the possible garbling
+          of whatever may follow <code>str</code>
+<DT><B>Returns:</B><DD>Input string after applying the above processing.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/BidiFormatter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/AnyRtlDirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/shared/BidiFormatterBase.html" title="class in com.google.gwt.i18n.shared"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/shared/BidiFormatter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="BidiFormatter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

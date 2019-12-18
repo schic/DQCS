@@ -1,0 +1,1088 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Response (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Response (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Response.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestTimeoutException.html" title="class in com.google.gwt.http.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/URL.html" title="class in com.google.gwt.http.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/http/client/Response.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Response.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.http.client</FONT>
+<BR>
+Class Response</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.http.client.Response</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>Response</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Wrapper which provides access to the components of an HTTP response.
+ 
+ <h3>Required Module</h3>
+ Modules that use this class should inherit
+ <code>com.google.gwt.http.HTTP</code>.
+ 
+ <blockquote><pre>&lt;module&gt;
+  &lt;!-- other inherited modules, such as com.google.gwt.user.User --&gt;
+  &lt;inherits name="com.google.gwt.http.HTTP"/&gt;
+  &lt;!-- additional module settings --&gt;
+&lt;/module&gt;
+</pre></blockquote>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_ACCEPTED">SC_ACCEPTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_BAD_GATEWAY">SC_BAD_GATEWAY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_BAD_REQUEST">SC_BAD_REQUEST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_CONFLICT">SC_CONFLICT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_CONTINUE">SC_CONTINUE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_CREATED">SC_CREATED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_EXPECTATION_FAILED">SC_EXPECTATION_FAILED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_FORBIDDEN">SC_FORBIDDEN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_GATEWAY_TIMEOUT">SC_GATEWAY_TIMEOUT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_GONE">SC_GONE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_HTTP_VERSION_NOT_SUPPORTED">SC_HTTP_VERSION_NOT_SUPPORTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_INTERNAL_SERVER_ERROR">SC_INTERNAL_SERVER_ERROR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_LENGTH_REQUIRED">SC_LENGTH_REQUIRED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_METHOD_NOT_ALLOWED">SC_METHOD_NOT_ALLOWED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_MOVED_PERMANENTLY">SC_MOVED_PERMANENTLY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_MOVED_TEMPORARILY">SC_MOVED_TEMPORARILY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_MULTIPLE_CHOICES">SC_MULTIPLE_CHOICES</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_NO_CONTENT">SC_NO_CONTENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_NON_AUTHORITATIVE_INFORMATION">SC_NON_AUTHORITATIVE_INFORMATION</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_NOT_ACCEPTABLE">SC_NOT_ACCEPTABLE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_NOT_FOUND">SC_NOT_FOUND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_NOT_IMPLEMENTED">SC_NOT_IMPLEMENTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_NOT_MODIFIED">SC_NOT_MODIFIED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_OK">SC_OK</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_PARTIAL_CONTENT">SC_PARTIAL_CONTENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_PAYMENT_REQUIRED">SC_PAYMENT_REQUIRED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_PRECONDITION_FAILED">SC_PRECONDITION_FAILED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_PROXY_AUTHENTICATION_REQUIRED">SC_PROXY_AUTHENTICATION_REQUIRED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_REQUEST_ENTITY_TOO_LARGE">SC_REQUEST_ENTITY_TOO_LARGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_REQUESTED_RANGE_NOT_SATISFIABLE">SC_REQUESTED_RANGE_NOT_SATISFIABLE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_RESET_CONTENT">SC_RESET_CONTENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_SEE_OTHER">SC_SEE_OTHER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_SERVICE_UNAVAILABLE">SC_SERVICE_UNAVAILABLE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_SWITCHING_PROTOCOLS">SC_SWITCHING_PROTOCOLS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_TEMPORARY_REDIRECT">SC_TEMPORARY_REDIRECT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_UNAUTHORIZED">SC_UNAUTHORIZED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_UNSUPPORTED_MEDIA_TYPE">SC_UNSUPPORTED_MEDIA_TYPE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#SC_USE_PROXY">SC_USE_PROXY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#Response()">Response</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#getHeader(java.lang.String)">getHeader</A></B>(java.lang.String&nbsp;header)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the value of the requested header or null if the header was not
+ specified.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../com/google/gwt/http/client/Header.html" title="class in com.google.gwt.http.client">Header</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#getHeaders()">getHeaders</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an array of HTTP headers associated with this response.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#getHeadersAsString()">getHeadersAsString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns all headers as a single string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#getStatusCode()">getStatusCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the HTTP status code that is part of this response.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#getStatusText()">getStatusText</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the HTTP status message text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/Response.html#getText()">getText</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the text associated with the response.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SC_ACCEPTED"><!-- --></A><H3>
+SC_ACCEPTED</H3>
+<PRE>
+public static final int <B>SC_ACCEPTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_ACCEPTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_BAD_GATEWAY"><!-- --></A><H3>
+SC_BAD_GATEWAY</H3>
+<PRE>
+public static final int <B>SC_BAD_GATEWAY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_BAD_GATEWAY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_BAD_REQUEST"><!-- --></A><H3>
+SC_BAD_REQUEST</H3>
+<PRE>
+public static final int <B>SC_BAD_REQUEST</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_BAD_REQUEST">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_CONFLICT"><!-- --></A><H3>
+SC_CONFLICT</H3>
+<PRE>
+public static final int <B>SC_CONFLICT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_CONFLICT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_CONTINUE"><!-- --></A><H3>
+SC_CONTINUE</H3>
+<PRE>
+public static final int <B>SC_CONTINUE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_CONTINUE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_CREATED"><!-- --></A><H3>
+SC_CREATED</H3>
+<PRE>
+public static final int <B>SC_CREATED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_CREATED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_EXPECTATION_FAILED"><!-- --></A><H3>
+SC_EXPECTATION_FAILED</H3>
+<PRE>
+public static final int <B>SC_EXPECTATION_FAILED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_EXPECTATION_FAILED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_FORBIDDEN"><!-- --></A><H3>
+SC_FORBIDDEN</H3>
+<PRE>
+public static final int <B>SC_FORBIDDEN</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_FORBIDDEN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_GATEWAY_TIMEOUT"><!-- --></A><H3>
+SC_GATEWAY_TIMEOUT</H3>
+<PRE>
+public static final int <B>SC_GATEWAY_TIMEOUT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_GATEWAY_TIMEOUT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_GONE"><!-- --></A><H3>
+SC_GONE</H3>
+<PRE>
+public static final int <B>SC_GONE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_GONE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_HTTP_VERSION_NOT_SUPPORTED"><!-- --></A><H3>
+SC_HTTP_VERSION_NOT_SUPPORTED</H3>
+<PRE>
+public static final int <B>SC_HTTP_VERSION_NOT_SUPPORTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_HTTP_VERSION_NOT_SUPPORTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_INTERNAL_SERVER_ERROR"><!-- --></A><H3>
+SC_INTERNAL_SERVER_ERROR</H3>
+<PRE>
+public static final int <B>SC_INTERNAL_SERVER_ERROR</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_INTERNAL_SERVER_ERROR">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_LENGTH_REQUIRED"><!-- --></A><H3>
+SC_LENGTH_REQUIRED</H3>
+<PRE>
+public static final int <B>SC_LENGTH_REQUIRED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_LENGTH_REQUIRED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_METHOD_NOT_ALLOWED"><!-- --></A><H3>
+SC_METHOD_NOT_ALLOWED</H3>
+<PRE>
+public static final int <B>SC_METHOD_NOT_ALLOWED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_METHOD_NOT_ALLOWED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_MOVED_PERMANENTLY"><!-- --></A><H3>
+SC_MOVED_PERMANENTLY</H3>
+<PRE>
+public static final int <B>SC_MOVED_PERMANENTLY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_MOVED_PERMANENTLY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_MOVED_TEMPORARILY"><!-- --></A><H3>
+SC_MOVED_TEMPORARILY</H3>
+<PRE>
+public static final int <B>SC_MOVED_TEMPORARILY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_MOVED_TEMPORARILY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_MULTIPLE_CHOICES"><!-- --></A><H3>
+SC_MULTIPLE_CHOICES</H3>
+<PRE>
+public static final int <B>SC_MULTIPLE_CHOICES</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_MULTIPLE_CHOICES">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_NO_CONTENT"><!-- --></A><H3>
+SC_NO_CONTENT</H3>
+<PRE>
+public static final int <B>SC_NO_CONTENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_NO_CONTENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_NON_AUTHORITATIVE_INFORMATION"><!-- --></A><H3>
+SC_NON_AUTHORITATIVE_INFORMATION</H3>
+<PRE>
+public static final int <B>SC_NON_AUTHORITATIVE_INFORMATION</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_NON_AUTHORITATIVE_INFORMATION">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_NOT_ACCEPTABLE"><!-- --></A><H3>
+SC_NOT_ACCEPTABLE</H3>
+<PRE>
+public static final int <B>SC_NOT_ACCEPTABLE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_NOT_ACCEPTABLE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_NOT_FOUND"><!-- --></A><H3>
+SC_NOT_FOUND</H3>
+<PRE>
+public static final int <B>SC_NOT_FOUND</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_NOT_FOUND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_NOT_IMPLEMENTED"><!-- --></A><H3>
+SC_NOT_IMPLEMENTED</H3>
+<PRE>
+public static final int <B>SC_NOT_IMPLEMENTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_NOT_IMPLEMENTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_NOT_MODIFIED"><!-- --></A><H3>
+SC_NOT_MODIFIED</H3>
+<PRE>
+public static final int <B>SC_NOT_MODIFIED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_NOT_MODIFIED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_OK"><!-- --></A><H3>
+SC_OK</H3>
+<PRE>
+public static final int <B>SC_OK</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_OK">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_PARTIAL_CONTENT"><!-- --></A><H3>
+SC_PARTIAL_CONTENT</H3>
+<PRE>
+public static final int <B>SC_PARTIAL_CONTENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_PARTIAL_CONTENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_PAYMENT_REQUIRED"><!-- --></A><H3>
+SC_PAYMENT_REQUIRED</H3>
+<PRE>
+public static final int <B>SC_PAYMENT_REQUIRED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_PAYMENT_REQUIRED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_PRECONDITION_FAILED"><!-- --></A><H3>
+SC_PRECONDITION_FAILED</H3>
+<PRE>
+public static final int <B>SC_PRECONDITION_FAILED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_PRECONDITION_FAILED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_PROXY_AUTHENTICATION_REQUIRED"><!-- --></A><H3>
+SC_PROXY_AUTHENTICATION_REQUIRED</H3>
+<PRE>
+public static final int <B>SC_PROXY_AUTHENTICATION_REQUIRED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_PROXY_AUTHENTICATION_REQUIRED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_REQUEST_ENTITY_TOO_LARGE"><!-- --></A><H3>
+SC_REQUEST_ENTITY_TOO_LARGE</H3>
+<PRE>
+public static final int <B>SC_REQUEST_ENTITY_TOO_LARGE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_REQUEST_ENTITY_TOO_LARGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_REQUESTED_RANGE_NOT_SATISFIABLE"><!-- --></A><H3>
+SC_REQUESTED_RANGE_NOT_SATISFIABLE</H3>
+<PRE>
+public static final int <B>SC_REQUESTED_RANGE_NOT_SATISFIABLE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_REQUESTED_RANGE_NOT_SATISFIABLE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_RESET_CONTENT"><!-- --></A><H3>
+SC_RESET_CONTENT</H3>
+<PRE>
+public static final int <B>SC_RESET_CONTENT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_RESET_CONTENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_SEE_OTHER"><!-- --></A><H3>
+SC_SEE_OTHER</H3>
+<PRE>
+public static final int <B>SC_SEE_OTHER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_SEE_OTHER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_SERVICE_UNAVAILABLE"><!-- --></A><H3>
+SC_SERVICE_UNAVAILABLE</H3>
+<PRE>
+public static final int <B>SC_SERVICE_UNAVAILABLE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_SERVICE_UNAVAILABLE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_SWITCHING_PROTOCOLS"><!-- --></A><H3>
+SC_SWITCHING_PROTOCOLS</H3>
+<PRE>
+public static final int <B>SC_SWITCHING_PROTOCOLS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_SWITCHING_PROTOCOLS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_TEMPORARY_REDIRECT"><!-- --></A><H3>
+SC_TEMPORARY_REDIRECT</H3>
+<PRE>
+public static final int <B>SC_TEMPORARY_REDIRECT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_TEMPORARY_REDIRECT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_UNAUTHORIZED"><!-- --></A><H3>
+SC_UNAUTHORIZED</H3>
+<PRE>
+public static final int <B>SC_UNAUTHORIZED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_UNAUTHORIZED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_UNSUPPORTED_MEDIA_TYPE"><!-- --></A><H3>
+SC_UNSUPPORTED_MEDIA_TYPE</H3>
+<PRE>
+public static final int <B>SC_UNSUPPORTED_MEDIA_TYPE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_UNSUPPORTED_MEDIA_TYPE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SC_USE_PROXY"><!-- --></A><H3>
+SC_USE_PROXY</H3>
+<PRE>
+public static final int <B>SC_USE_PROXY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.http.client.Response.SC_USE_PROXY">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Response()"><!-- --></A><H3>
+Response</H3>
+<PRE>
+public <B>Response</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getHeader(java.lang.String)"><!-- --></A><H3>
+getHeader</H3>
+<PRE>
+public abstract java.lang.String <B>getHeader</B>(java.lang.String&nbsp;header)</PRE>
+<DL>
+<DD>Returns the value of the requested header or null if the header was not
+ specified.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>header</CODE> - the header to query for
+<DT><B>Returns:</B><DD>the value of response header
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the header name is empty
+<DD><CODE>java.lang.NullPointerException</CODE> - if the header name is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHeaders()"><!-- --></A><H3>
+getHeaders</H3>
+<PRE>
+public abstract <A HREF="../../../../../com/google/gwt/http/client/Header.html" title="class in com.google.gwt.http.client">Header</A>[] <B>getHeaders</B>()</PRE>
+<DL>
+<DD>Returns an array of HTTP headers associated with this response.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>array of HTTP headers; returns zero length array if there are no
+         headers</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHeadersAsString()"><!-- --></A><H3>
+getHeadersAsString</H3>
+<PRE>
+public abstract java.lang.String <B>getHeadersAsString</B>()</PRE>
+<DL>
+<DD>Returns all headers as a single string. The individual headers are
+ delimited by a CR (U+000D) LF (U+000A) pair. An individual header is
+ formatted according to <a href="http://ietf.org/rfc/rfc2616"> RFC 2616</a>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>all headers as a single string delimited by CRLF pairs</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatusCode()"><!-- --></A><H3>
+getStatusCode</H3>
+<PRE>
+public abstract int <B>getStatusCode</B>()</PRE>
+<DL>
+<DD>Returns the HTTP status code that is part of this response.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the HTTP status code</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatusText()"><!-- --></A><H3>
+getStatusText</H3>
+<PRE>
+public abstract java.lang.String <B>getStatusText</B>()</PRE>
+<DL>
+<DD>Returns the HTTP status message text.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the HTTP status message text</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getText()"><!-- --></A><H3>
+getText</H3>
+<PRE>
+public abstract java.lang.String <B>getText</B>()</PRE>
+<DL>
+<DD>Returns the text associated with the response.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the response text</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Response.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestTimeoutException.html" title="class in com.google.gwt.http.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/URL.html" title="class in com.google.gwt.http.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/http/client/Response.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Response.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

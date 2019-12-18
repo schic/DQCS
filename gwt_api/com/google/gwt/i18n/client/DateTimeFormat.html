@@ -1,0 +1,1311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+DateTimeFormat (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DateTimeFormat (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DateTimeFormat.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/CustomDateTimeFormat.Pattern.html" title="annotation in com.google.gwt.i18n.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/client/DateTimeFormat.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DateTimeFormat.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.i18n.client</FONT>
+<BR>
+Class DateTimeFormat</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.i18n.client.DateTimeFormat</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>DateTimeFormat</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Formats and parses dates and times using locale-sensitive patterns.
+ 
+ <h3>Patterns</h3>
+ 
+ <table>
+ <tr>
+ <th>Symbol</th>
+ <th>Meaning</th>
+ <th>Presentation</th>
+ <th>Example</th>
+ </tr>
+ 
+ <tr>
+ <td><code>G</code></td>
+ <td>era designator</td>
+ <td>Text</td>
+ <td><code>AD</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>y</code></td>
+ <td>year</td>
+ <td>Number</td>
+ <td><code>1996</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>L</code></td>
+ <td>standalone month in year</td>
+ <td>Text or Number</td>
+ <td><code>July (or) 07</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>M</code></td>
+ <td>month in year</td>
+ <td>Text or Number</td>
+ <td><code>July (or) 07</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>d</code></td>
+ <td>day in month</td>
+ <td>Number</td>
+ <td><code>10</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>h</code></td>
+ <td>hour in am/pm (1-12)</td>
+ <td>Number</td>
+ <td><code>12</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>H</code></td>
+ <td>hour in day (0-23)</td>
+ <td>Number</td>
+ <td><code>0</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>m</code></td>
+ <td>minute in hour</td>
+ <td>Number</td>
+ <td><code>30</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>s</code></td>
+ <td>second in minute</td>
+ <td>Number</td>
+ <td><code>55</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>S</code></td>
+ <td>fractional second</td>
+ <td>Number</td>
+ <td><code>978</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>E</code></td>
+ <td>day of week</td>
+ <td>Text</td>
+ <td><code>Tuesday</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>c</code></td>
+ <td>standalone day of week</td>
+ <td>Text</td>
+ <td><code>Tuesday</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>a</code></td>
+ <td>am/pm marker</td>
+ <td>Text</td>
+ <td><code>PM</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>k</code></td>
+ <td>hour in day (1-24)</td>
+ <td>Number</td>
+ <td><code>24</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>K</code></td>
+ <td>hour in am/pm (0-11)</td>
+ <td>Number</td>
+ <td><code>0</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>z</code></td>
+ <td>time zone</td>
+ <td>Text</td>
+ <td><code>Pacific Standard Time(see comment)</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>Z</code></td>
+ <td>time zone (RFC 822)</td>
+ <td>Text</td>
+ <td><code>-0800(See comment)</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>v</code></td>
+ <td>time zone id</td>
+ <td>Text</td>
+ <td><code>America/Los_Angeles(See comment)</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>'</code></td>
+ <td>escape for text</td>
+ <td>Delimiter</td>
+ <td><code>'Date='</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>''</code></td>
+ <td>single quote</td>
+ <td>Literal</td>
+ <td><code>'o''clock'</code></td>
+ </tr>
+ </table>
+ 
+ <p>
+ The number of pattern letters influences the format, as follows:
+ </p>
+ 
+ <dl>
+ <dt>Text</dt>
+ <dd>if 4 or more, then use the full form; if less than 4, use short or
+ abbreviated form if it exists (e.g., <code>"EEEE"</code> produces
+ <code>"Monday"</code>, <code>"EEE"</code> produces <code>"Mon"</code>)</dd>
+ 
+ <dt>Number</dt>
+ <dd>the minimum number of digits. Shorter numbers are zero-padded to this
+ amount (e.g. if <code>"m"</code> produces <code>"6"</code>, <code>"mm"</code>
+ produces <code>"06"</code>). Year is handled specially; that is, if the count
+ of 'y' is 2, the Year will be truncated to 2 digits. (e.g., if
+ <code>"yyyy"</code> produces <code>"1997"</code>, <code>"yy"</code> produces
+ <code>"97"</code>.) Unlike other fields, fractional seconds are padded on the
+ right with zero.</dd>
+ 
+ <dt>Text or Number</dt>
+ <dd>3 or more, use text, otherwise use number. (e.g. <code>"M"</code>
+ produces <code>"1"</code>, <code>"MM"</code> produces <code>"01"</code>,
+ <code>"MMM"</code> produces <code>"Jan"</code>, and <code>"MMMM"</code>
+ produces <code>"January"</code>.  Some pattern letters also treat a count
+ of 5 specially, meaning a single-letter abbreviation: <code>L</code>,
+ <code>M</code>, <code>E</code>, and <code>c</code>.</dd>
+ </dl>
+ 
+ <p>
+ Any characters in the pattern that are not in the ranges of ['<code>a</code>
+ '..'<code>z</code>'] and ['<code>A</code>'..'<code>Z</code>'] will be treated
+ as quoted text. For instance, characters like '<code>:</code>', '
+ <code>.</code>', '<code> </code>' (space), '<code>#</code>' and '
+ <code>@</code>' will appear in the resulting time text even they are not
+ embraced within single quotes.
+ </p>
+ 
+ <p>
+ [Time Zone Handling] Web browsers don't provide all the information we need
+ for proper time zone formating -- so GWT has a copy of the required data, for
+ your convenience. For simpler cases, one can also use a fallback
+ implementation that only keeps track of the current timezone offset. These
+ two approaches are called, respectively, Common TimeZones and Simple
+ TimeZones, although both are implemented with the same TimeZone class.
+ 
+ "TimeZone createTimeZone(String timezoneData)" returns a Common TimeZone
+ object, and "TimeZone createTimeZone(int timeZoneOffsetInMinutes)" returns a
+ Simple TimeZone object. The one provided by OS fall into to Simple TimeZone
+ category. For formatting purpose, following table shows the behavior of GWT
+ DateTimeFormat.
+ </p>
+ <table>
+ <tr>
+ <th>Pattern</th>
+ <th>Common TimeZone</th>
+ <th>Simple TimeZone</th>
+ </tr>
+ <tr>
+ <td>z, zz, zzz</td>
+ <td>PDT</td>
+ <td>UTC-7</td>
+ </tr>
+ <tr>
+ <td>zzzz</td>
+ <td>Pacific Daylight Time</td>
+ <td>UTC-7</td>
+ </tr>
+ <tr>
+ <td>Z, ZZ</td>
+ <td>-0700</td>
+ <td>-0700</td>
+ </tr>
+ <tr>
+ <td>ZZZ</td>
+ <td>-07:00</td>
+ <td>-07:00</td>
+ </tr>
+ <tr>
+ <td>ZZZZ</td>
+ <td>GMT-07:00</td>
+ <td>GMT-07:00</td>
+ </tr>
+ <tr>
+ <td>v, vv, vvv, vvvv</td>
+ <td>America/Los_Angeles</td>
+ <td>Etc/GMT+7</td>
+ </tr>
+ </table>
+ 
+ <h3>Parsing Dates and Times</h3>
+ <p>
+ The pattern does not need to specify every field.  If the year, month, or
+ day is missing from the pattern, the corresponding value will be taken from
+ the current date.  If the month is specified but the day is not, the day will
+ be constrained to the last day within the specified month.  If the hour,
+ minute, or second is missing, the value defaults to zero.
+ </p>
+ 
+ <p>
+ As with formatting (described above), the count of pattern letters determines
+ the parsing behavior.
+ </p>
+ 
+ <dl>
+ <dt>Text</dt>
+ <dd>4 or more pattern letters--use full form, less than 4--use short or
+ abbreviated form if one exists. In parsing, we will always try long format,
+ then short.</dd>
+ 
+ <dt>Number</dt>
+ <dd>the minimum number of digits.</dd>
+ 
+ <dt>Text or Number</dt>
+ <dd>3 or more characters means use text, otherwise use number</dd>
+ </dl>
+ 
+ <p>
+ Although the current pattern specification doesn't not specify behavior for
+ all letters, it may in the future. It is strongly discouraged to use
+ unspecified letters as literal text without quoting them.
+ </p>
+ <p>
+ [Note on TimeZone] The time zone support for parsing is limited. Only
+ standard GMT and RFC format are supported. Time zone specification using time
+ zone id (like America/Los_Angeles), time zone names (like PST, Pacific
+ Standard Time) are not supported. Normally, it is too much a burden for a
+ client application to load all the time zone symbols. And in almost all those
+ cases, it is a better choice to do such parsing on server side through
+ certain RPC mechanism. This decision is based on particular use cases we have
+ studied; in principle, it could be changed in future versions.
+ </p>
+ 
+ <h3>Examples</h3>
+ <table>
+ <tr>
+ <th>Pattern</th>
+ <th>Formatted Text</th>
+ </tr>
+ 
+ <tr>
+ <td><code>"yyyy.MM.dd G 'at' HH:mm:ss vvvv"</code></td>
+ <td><code>1996.07.10 AD at 15:08:56 America/Los_Angeles</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>"EEE, MMM d, ''yy"</code></td>
+ <td><code>Wed, July 10, '96</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>"h:mm a"</code></td>
+ <td><code>12:08 PM</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>"hh 'o''clock' a, zzzz"</code></td>
+ <td><code> 12 o'clock PM, Pacific Daylight Time</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>"K:mm a, vvvv"</code></td>
+ <td><code> 0:00 PM, America/Los_Angeles</code></td>
+ </tr>
+ 
+ <tr>
+ <td><code>"yyyyy.MMMMM.dd GGG hh:mm aaa"</code></td>
+ <td><code>01996.July.10 AD 12:08 PM</code></td>
+ </tr>
+ </table>
+ 
+ <h3>Additional Parsing Considerations</h3>
+ <p>
+ When parsing a date string using the abbreviated year pattern (
+ <code>"yy"</code>), the parser must interpret the abbreviated year relative
+ to some century. It does this by adjusting dates to be within 80 years before
+ and 20 years after the time the parser instance is created. For example,
+ using a pattern of <code>"MM/dd/yy"</code> and a <code>DateTimeFormat</code>
+ object created on Jan 1, 1997, the string <code>"01/11/12"</code> would be
+ interpreted as Jan 11, 2012 while the string <code>"05/04/64"</code> would be
+ interpreted as May 4, 1964. During parsing, only strings consisting of
+ exactly two digits, as defined by <CODE>Character.isDigit(char)</CODE>,
+ will be parsed into the default century. If the year pattern does not have
+ exactly two 'y' characters, the year is interpreted literally, regardless of
+ the number of digits. For example, using the pattern
+ <code>"MM/dd/yyyy"</code>, "01/11/12" parses to Jan 11, 12 A.D.
+ </p>
+ 
+ <p>
+ When numeric fields abut one another directly, with no intervening delimiter
+ characters, they constitute a run of abutting numeric fields. Such runs are
+ parsed specially. For example, the format "HHmmss" parses the input text
+ "123456" to 12:34:56, parses the input text "12345" to 1:23:45, and fails to
+ parse "1234". In other words, the leftmost field of the run is flexible,
+ while the others keep a fixed width. If the parse fails anywhere in the run,
+ then the leftmost field is shortened by one character, and the entire run is
+ parsed again. This is repeated until either the parse succeeds or the
+ leftmost field is one character in length. If the parse still fails at that
+ point, the parse of the run fails.
+ </p>
+ 
+ <p>
+ In the current implementation, timezone parsing only supports
+ <code>GMT:hhmm</code>, <code>GMT:+hhmm</code>, and <code>GMT:-hhmm</code>.
+ </p>
+ 
+ <h3>Example</h3> <blockquote><pre>public class DateTimeFormatExample implements EntryPoint {
+
+  public void onModuleLoad() {
+    Date today = new Date();
+
+    // prints Tue Dec 18 12:01:26 GMT-500 2007 in the default locale.
+    GWT.log(today.toString());
+
+    // prints 12/18/07 in the default locale
+    GWT.log(DateTimeFormat.getShortDateFormat().format(today));
+
+    // prints December 18, 2007 in the default locale
+    GWT.log(DateTimeFormat.getLongDateFormat().format(today));
+
+    // prints 12:01 PM in the default locale
+    GWT.log(DateTimeFormat.getShortTimeFormat().format(today));
+
+    // prints 12:01:26 PM GMT-05:00 in the default locale
+    GWT.log(DateTimeFormat.getLongTimeFormat().format(today));
+
+    // prints Dec 18, 2007 12:01:26 PM in the default locale
+    GWT.log(DateTimeFormat.getMediumDateTimeFormat().format(today));
+    
+    // A custom date format
+    DateTimeFormat fmt = DateTimeFormat.getFormat("EEEE, MMMM dd, yyyy");
+    // prints Monday, December 17, 2007 in the default locale
+    GWT.log(fmt.format(today));
+  }
+}
+</pre></blockquote>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client">DateTimeFormat.PredefinedFormat</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Predefined date/time formats -- see <A HREF="../../../../../com/google/gwt/i18n/client/CustomDateTimeFormat.html" title="interface in com.google.gwt.i18n.client"><CODE>CustomDateTimeFormat</CODE></A> if you
+ need some format that isn't supplied here.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#DateTimeFormat(java.lang.String)">DateTimeFormat</A></B>(java.lang.String&nbsp;pattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a format object using the specified pattern and the date time
+ constants for the default locale.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#DateTimeFormat(java.lang.String, com.google.gwt.i18n.client.constants.DateTimeConstants)">DateTimeFormat</A></B>(java.lang.String&nbsp;pattern,
+               <A HREF="../../../../../com/google/gwt/i18n/client/constants/DateTimeConstants.html" title="interface in com.google.gwt.i18n.client.constants">DateTimeConstants</A>&nbsp;dateTimeConstants)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#DateTimeFormat(java.lang.String, com.google.gwt.i18n.client.DateTimeFormatInfo)"><CODE>DateTimeFormat(String, DateTimeFormatInfo)</CODE></A></I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#DateTimeFormat(java.lang.String, com.google.gwt.i18n.client.DateTimeFormatInfo)">DateTimeFormat</A></B>(java.lang.String&nbsp;pattern,
+               <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html" title="interface in com.google.gwt.i18n.client">DateTimeFormatInfo</A>&nbsp;dtfi)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a format object using the specified pattern and user-supplied
+ date time constants.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#format(java.util.Date)">format</A></B>(java.util.Date&nbsp;date)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format a date object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#format(java.util.Date, com.google.gwt.i18n.client.TimeZone)">format</A></B>(java.util.Date&nbsp;date,
+       <A HREF="../../../../../com/google/gwt/i18n/client/TimeZone.html" title="class in com.google.gwt.i18n.client">TimeZone</A>&nbsp;timeZone)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format a date object using specified time zone.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)">getFormat</A></B>(<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client">DateTimeFormat.PredefinedFormat</A>&nbsp;predef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a DateTimeFormat instance for a predefined format.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(java.lang.String)">getFormat</A></B>(java.lang.String&nbsp;pattern)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a DateTimeFormat object using the specified pattern.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(java.lang.String, com.google.gwt.i18n.client.DateTimeFormatInfo)">getFormat</A></B>(java.lang.String&nbsp;pattern,
+          <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html" title="interface in com.google.gwt.i18n.client">DateTimeFormatInfo</A>&nbsp;dtfi)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal factory method that provides caching.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFullDateFormat()">getFullDateFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_FULL"><CODE>DateTimeFormat.PredefinedFormat.DATE_FULL</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFullDateTimeFormat()">getFullDateTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_FULL"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_FULL</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFullTimeFormat()">getFullTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_FULL"><CODE>DateTimeFormat.PredefinedFormat.TIME_FULL</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getLongDateFormat()">getLongDateFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_LONG"><CODE>DateTimeFormat.PredefinedFormat.DATE_LONG</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getLongDateTimeFormat()">getLongDateTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_LONG"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_LONG</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getLongTimeFormat()">getLongTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_LONG"><CODE>DateTimeFormat.PredefinedFormat.TIME_LONG</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getMediumDateFormat()">getMediumDateFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_MEDIUM"><CODE>DateTimeFormat.PredefinedFormat.DATE_MEDIUM</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getMediumDateTimeFormat()">getMediumDateTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_MEDIUM"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_MEDIUM</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getMediumTimeFormat()">getMediumTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_MEDIUM"><CODE>DateTimeFormat.PredefinedFormat.TIME_MEDIUM</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getPattern()">getPattern</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the pattern used in this DateTimeFormat object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getShortDateFormat()">getShortDateFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_SHORT"><CODE>DateTimeFormat.PredefinedFormat.DATE_SHORT</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getShortDateTimeFormat()">getShortDateTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_SHORT"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_SHORT</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getShortTimeFormat()">getShortTimeFormat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_SHORT"><CODE>DateTimeFormat.PredefinedFormat.TIME_SHORT</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Date</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#parse(java.lang.String)">parse</A></B>(java.lang.String&nbsp;text)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses text to produce a <CODE>Date</CODE> value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#parse(java.lang.String, int, java.util.Date)">parse</A></B>(java.lang.String&nbsp;text,
+      int&nbsp;start,
+      java.util.Date&nbsp;date)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method modifies a <CODE>Date</CODE> object to reflect the date that is
+ parsed from an input string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Date</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#parseStrict(java.lang.String)">parseStrict</A></B>(java.lang.String&nbsp;text)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses text to produce a <CODE>Date</CODE> value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#parseStrict(java.lang.String, int, java.util.Date)">parseStrict</A></B>(java.lang.String&nbsp;text,
+            int&nbsp;start,
+            java.util.Date&nbsp;date)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method modifies a <CODE>Date</CODE> object to reflect the date that is
+ parsed from an input string.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DateTimeFormat(java.lang.String)"><!-- --></A><H3>
+DateTimeFormat</H3>
+<PRE>
+protected <B>DateTimeFormat</B>(java.lang.String&nbsp;pattern)</PRE>
+<DL>
+<DD>Constructs a format object using the specified pattern and the date time
+ constants for the default locale.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - string pattern specification</DL>
+</DL>
+<HR>
+
+<A NAME="DateTimeFormat(java.lang.String, com.google.gwt.i18n.client.constants.DateTimeConstants)"><!-- --></A><H3>
+DateTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>protected <B>DateTimeFormat</B>(java.lang.String&nbsp;pattern,
+                                    <A HREF="../../../../../com/google/gwt/i18n/client/constants/DateTimeConstants.html" title="interface in com.google.gwt.i18n.client.constants">DateTimeConstants</A>&nbsp;dateTimeConstants)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#DateTimeFormat(java.lang.String, com.google.gwt.i18n.client.DateTimeFormatInfo)"><CODE>DateTimeFormat(String, DateTimeFormatInfo)</CODE></A></I>
+<P>
+<DD>Constructs a format object using the specified pattern and user-supplied
+ date time constants.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - string pattern specification<DD><CODE>dateTimeConstants</CODE> - locale specific symbol collection</DL>
+</DL>
+<HR>
+
+<A NAME="DateTimeFormat(java.lang.String, com.google.gwt.i18n.client.DateTimeFormatInfo)"><!-- --></A><H3>
+DateTimeFormat</H3>
+<PRE>
+protected <B>DateTimeFormat</B>(java.lang.String&nbsp;pattern,
+                         <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html" title="interface in com.google.gwt.i18n.client">DateTimeFormatInfo</A>&nbsp;dtfi)</PRE>
+<DL>
+<DD>Constructs a format object using the specified pattern and user-supplied
+ date time constants.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - string pattern specification<DD><CODE>dtfi</CODE> - DateTimeFormatInfo instance to use</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><!-- --></A><H3>
+getFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getFormat</B>(<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client">DateTimeFormat.PredefinedFormat</A>&nbsp;predef)</PRE>
+<DL>
+<DD>Get a DateTimeFormat instance for a predefined format.
+ 
+ <p>See <A HREF="../../../../../com/google/gwt/i18n/client/CustomDateTimeFormat.html" title="interface in com.google.gwt.i18n.client"><CODE>CustomDateTimeFormat</CODE></A> if you need a localized format that is
+ not supported here.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>predef</CODE> - <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client"><CODE>DateTimeFormat.PredefinedFormat</CODE></A> describing desired format
+<DT><B>Returns:</B><DD>a DateTimeFormat instance for the specified format</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFormat(java.lang.String)"><!-- --></A><H3>
+getFormat</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getFormat</B>(java.lang.String&nbsp;pattern)</PRE>
+<DL>
+<DD>Returns a DateTimeFormat object using the specified pattern. If you need to
+ format or parse repeatedly using the same pattern, it is highly recommended
+ that you cache the returned <code>DateTimeFormat</code> object and reuse it
+ rather than calling this method repeatedly.
+ 
+ <p>Note that the pattern supplied is used as-is -- for example, if you
+ supply "MM/dd/yyyy" as the pattern, that is the order you will get the
+ fields, even in locales where the order is different.  It is recommended to
+ use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> instead -- if you use this method,
+ you are taking responsibility for localizing the patterns yourself.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - string to specify how the date should be formatted
+<DT><B>Returns:</B><DD>a <code>DateTimeFormat</code> object that can be used for format or
+         parse date/time values matching the specified pattern
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the specified pattern could not be
+           parsed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFullDateFormat()"><!-- --></A><H3>
+getFullDateFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getFullDateFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_FULL"><CODE>DateTimeFormat.PredefinedFormat.DATE_FULL</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for full date format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFullDateTimeFormat()"><!-- --></A><H3>
+getFullDateTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getFullDateTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_FULL"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_FULL</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for full date and time format. The
+ pattern for this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFullTimeFormat()"><!-- --></A><H3>
+getFullTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getFullTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_FULL"><CODE>DateTimeFormat.PredefinedFormat.TIME_FULL</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for full time format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLongDateFormat()"><!-- --></A><H3>
+getLongDateFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getLongDateFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_LONG"><CODE>DateTimeFormat.PredefinedFormat.DATE_LONG</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for long date format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLongDateTimeFormat()"><!-- --></A><H3>
+getLongDateTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getLongDateTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_LONG"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_LONG</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for long date and time format. The
+ pattern for this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLongTimeFormat()"><!-- --></A><H3>
+getLongTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getLongTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_LONG"><CODE>DateTimeFormat.PredefinedFormat.TIME_LONG</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for long time format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMediumDateFormat()"><!-- --></A><H3>
+getMediumDateFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getMediumDateFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_MEDIUM"><CODE>DateTimeFormat.PredefinedFormat.DATE_MEDIUM</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for medium date format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMediumDateTimeFormat()"><!-- --></A><H3>
+getMediumDateTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getMediumDateTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_MEDIUM"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_MEDIUM</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for medium date and time format. The
+ pattern for this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMediumTimeFormat()"><!-- --></A><H3>
+getMediumTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getMediumTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_MEDIUM"><CODE>DateTimeFormat.PredefinedFormat.TIME_MEDIUM</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for medium time format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getShortDateFormat()"><!-- --></A><H3>
+getShortDateFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getShortDateFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_SHORT"><CODE>DateTimeFormat.PredefinedFormat.DATE_SHORT</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for short date format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getShortDateTimeFormat()"><!-- --></A><H3>
+getShortDateTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getShortDateTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#DATE_TIME_SHORT"><CODE>DateTimeFormat.PredefinedFormat.DATE_TIME_SHORT</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for short date and time format. The
+ pattern for this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getShortTimeFormat()"><!-- --></A><H3>
+getShortTimeFormat</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getShortTimeFormat</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html#getFormat(com.google.gwt.i18n.client.DateTimeFormat.PredefinedFormat)"><CODE>getFormat(PredefinedFormat)</CODE></A> with
+     <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html#TIME_SHORT"><CODE>DateTimeFormat.PredefinedFormat.TIME_SHORT</CODE></A> instead</I>
+<P>
+<DD>Retrieve the DateTimeFormat object for short time format. The pattern for
+ this format is predefined for each locale.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A DateTimeFormat object.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFormat(java.lang.String, com.google.gwt.i18n.client.DateTimeFormatInfo)"><!-- --></A><H3>
+getFormat</H3>
+<PRE>
+protected static <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.html" title="class in com.google.gwt.i18n.client">DateTimeFormat</A> <B>getFormat</B>(java.lang.String&nbsp;pattern,
+                                          <A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormatInfo.html" title="interface in com.google.gwt.i18n.client">DateTimeFormatInfo</A>&nbsp;dtfi)</PRE>
+<DL>
+<DD>Internal factory method that provides caching.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pattern</CODE> - <DD><CODE>dtfi</CODE> - 
+<DT><B>Returns:</B><DD>DateTimeFormat instance</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="format(java.util.Date)"><!-- --></A><H3>
+format</H3>
+<PRE>
+public java.lang.String <B>format</B>(java.util.Date&nbsp;date)</PRE>
+<DL>
+<DD>Format a date object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>date</CODE> - the date object being formatted
+<DT><B>Returns:</B><DD>string representation for this date in desired format</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="format(java.util.Date, com.google.gwt.i18n.client.TimeZone)"><!-- --></A><H3>
+format</H3>
+<PRE>
+public java.lang.String <B>format</B>(java.util.Date&nbsp;date,
+                               <A HREF="../../../../../com/google/gwt/i18n/client/TimeZone.html" title="class in com.google.gwt.i18n.client">TimeZone</A>&nbsp;timeZone)</PRE>
+<DL>
+<DD>Format a date object using specified time zone.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>date</CODE> - the date object being formatted<DD><CODE>timeZone</CODE> - a TimeZone object that holds time zone information
+<DT><B>Returns:</B><DD>string representation for this date in the format defined by this
+         object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPattern()"><!-- --></A><H3>
+getPattern</H3>
+<PRE>
+public java.lang.String <B>getPattern</B>()</PRE>
+<DL>
+<DD>Retrieve the pattern used in this DateTimeFormat object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>pattern string</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parse(java.lang.String)"><!-- --></A><H3>
+parse</H3>
+<PRE>
+public java.util.Date <B>parse</B>(java.lang.String&nbsp;text)
+                     throws java.lang.IllegalArgumentException</PRE>
+<DL>
+<DD>Parses text to produce a <CODE>Date</CODE> value. An
+ <CODE>IllegalArgumentException</CODE> is thrown if either the text is empty or
+ if the parse does not consume all characters of the text.
+ 
+ Dates are parsed leniently, so invalid dates will be wrapped around as
+ needed. For example, February 30 will wrap to March 2.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the string being parsed
+<DT><B>Returns:</B><DD>a parsed date/time value
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the entire text could not be converted
+           into a number</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parse(java.lang.String, int, java.util.Date)"><!-- --></A><H3>
+parse</H3>
+<PRE>
+public int <B>parse</B>(java.lang.String&nbsp;text,
+                 int&nbsp;start,
+                 java.util.Date&nbsp;date)</PRE>
+<DL>
+<DD>This method modifies a <CODE>Date</CODE> object to reflect the date that is
+ parsed from an input string.
+ 
+ Dates are parsed leniently, so invalid dates will be wrapped around as
+ needed. For example, February 30 will wrap to March 2.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the string that need to be parsed<DD><CODE>start</CODE> - the character position in "text" where parsing should start<DD><CODE>date</CODE> - the date object that will hold parsed value
+<DT><B>Returns:</B><DD>0 if parsing failed, otherwise the number of characters advanced</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parseStrict(java.lang.String)"><!-- --></A><H3>
+parseStrict</H3>
+<PRE>
+public java.util.Date <B>parseStrict</B>(java.lang.String&nbsp;text)
+                           throws java.lang.IllegalArgumentException</PRE>
+<DL>
+<DD>Parses text to produce a <CODE>Date</CODE> value. An
+ <CODE>IllegalArgumentException</CODE> is thrown if either the text is empty or
+ if the parse does not consume all characters of the text.
+ 
+ Dates are parsed strictly, so invalid dates will result in an
+ <CODE>IllegalArgumentException</CODE>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the string being parsed
+<DT><B>Returns:</B><DD>a parsed date/time value
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the entire text could not be converted
+           into a number</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parseStrict(java.lang.String, int, java.util.Date)"><!-- --></A><H3>
+parseStrict</H3>
+<PRE>
+public int <B>parseStrict</B>(java.lang.String&nbsp;text,
+                       int&nbsp;start,
+                       java.util.Date&nbsp;date)</PRE>
+<DL>
+<DD>This method modifies a <CODE>Date</CODE> object to reflect the date that is
+ parsed from an input string.
+ 
+ Dates are parsed strictly, so invalid dates will return 0. For example,
+ February 30 will return 0 because February only has 28 days.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the string that need to be parsed<DD><CODE>start</CODE> - the character position in "text" where parsing should start<DD><CODE>date</CODE> - the date object that will hold parsed value
+<DT><B>Returns:</B><DD>0 if parsing failed, otherwise the number of characters advanced</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DateTimeFormat.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/CustomDateTimeFormat.Pattern.html" title="annotation in com.google.gwt.i18n.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/i18n/client/DateTimeFormat.PredefinedFormat.html" title="enum in com.google.gwt.i18n.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/i18n/client/DateTimeFormat.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DateTimeFormat.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

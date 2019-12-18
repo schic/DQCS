@@ -1,0 +1,1013 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GWTTestCase (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="GWTTestCase (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/GWTTestCase.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/junit/client/GWTTestCase.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GWTTestCase.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.junit.client</FONT>
+<BR>
+Class GWTTestCase</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by ">junit.framework.Assert
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by ">junit.framework.TestCase
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.junit.client.GWTTestCase</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>junit.framework.Test</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../com/google/gwt/benchmarks/client/Benchmark.html" title="class in com.google.gwt.benchmarks.client">Benchmark</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>GWTTestCase</B><DT>extends junit.framework.TestCase</DL>
+</PRE>
+
+<P>
+Acts as a bridge between the JUnit environment and the GWT environment. We
+ hook the run method and stash the TestResult object for later communication
+ between the test runner and the unit test shell that drives the test case
+ inside a hosted browser.
+
+ <p>
+ There are two versions of this class. This version is the binary version that
+ derives from JUnit's <CODE>TestCase</CODE> and handles all the work of starting up
+ the GWT environment. The other version is a translatable class that is used
+ within the browser. See the <code>translatable</code> subpackage for the
+ translatable implementation.
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client">GWTTestCase.BaseStrategy</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The base class for strategies to use for tests.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.TestModuleInfo.html" title="class in com.google.gwt.junit.client">GWTTestCase.TestModuleInfo</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information about a synthetic module used for testing.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.util.Map&lt;java.lang.String,<A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.TestModuleInfo.html" title="class in com.google.gwt.junit.client">GWTTestCase.TestModuleInfo</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#ALL_GWT_TESTS">ALL_GWT_TESTS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Records all live GWTTestCases by synthetic module name so we can optimize
+ run they are compiled and run.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;junit.framework.TestResult</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#testResult">testResult</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Object that collects the results of this test case execution.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#GWTTestCase()">GWTTestCase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A new instance of your subclass is constructed for each test method that is
+ to be run.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#addCheckpoint(java.lang.String)">addCheckpoint</A></B>(java.lang.String&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>implementation removed</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#catchExceptions()">catchExceptions</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not exceptions will be caught by the test fixture.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#clearCheckpoints()">clearCheckpoints</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>implementation removed</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;com.google.gwt.junit.JUnitShell.Strategy</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#createStrategy()">createStrategy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates the test strategy to use (see <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getStrategy()"><CODE>getStrategy()</CODE></A>).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#delayTestFinish(int)">delayTestFinish</A></B>(int&nbsp;timeoutMillis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Put the current test in asynchronous mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#finishTest()">finishTest</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cause this test to succeed during asynchronous mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getAllTestModuleNames()">getAllTestModuleNames</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the names of all test modules.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getCheckpoints()">getCheckpoints</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>implementation removed</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getModuleCount()">getModuleCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the number of modules.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getModuleName()">getModuleName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies a module to use when running this test case.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.google.gwt.junit.JUnitShell.Strategy</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getStrategy()">getStrategy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><CODE>GWTTestCase.BaseStrategy</CODE></A> to use when compiling and running this test.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getSyntheticModuleName()">getSyntheticModuleName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the synthetic module name, which includes the synthetic extension
+ defined by the <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><CODE>GWTTestCase.BaseStrategy</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.TestModuleInfo.html" title="class in com.google.gwt.junit.client">GWTTestCase.TestModuleInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getTestsForModule(java.lang.String)">getTestsForModule</A></B>(java.lang.String&nbsp;syntheticModuleName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the set of all <CODE>JUnitHost.TestInfo</CODE> for the specified module.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#gwtSetUp()">gwtSetUp</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A replacement for JUnit's <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setUp()"><CODE>setUp()</CODE></A> method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#gwtTearDown()">gwtTearDown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A replacement for JUnit's <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#tearDown()"><CODE>tearDown()</CODE></A> method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#isPureJava()">isPureJava</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether this test case should be run in pure Java mode (non-GWT).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#run(junit.framework.TestResult)">run</A></B>(junit.framework.TestResult&nbsp;result)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stashes <code>result</code> so that it can be accessed during
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#runTest()"><CODE>runTest()</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#runTest()">runTest</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runs the test via the <CODE>JUnitShell</CODE> environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setForcePureJava(boolean)">setForcePureJava</A></B>(boolean&nbsp;forcePureJava)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies whether this test case should be always run in pure Java mode
+ (non-GWT).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setName(java.lang.String)">setName</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setUp()">setUp</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method has been made final to prevent you from accidentally running
+ client code outside of the GWT environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#supportsAsync()">supportsAsync</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if this test case supports asynchronous mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#tearDown()">tearDown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method has been made final to prevent you from accidentally running
+ client code outside of the GWT environment.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_junit.framework.TestCase"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class junit.framework.TestCase</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>countTestCases, createResult, getName, run, runBare, toString</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_junit.framework.Assert"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class junit.framework.Assert</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertEquals, assertFalse, assertFalse, assertNotNull, assertNotNull, assertNotSame, assertNotSame, assertNull, assertNull, assertSame, assertSame, assertTrue, assertTrue, fail, fail, failNotEquals, failNotSame, failSame, format</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ALL_GWT_TESTS"><!-- --></A><H3>
+ALL_GWT_TESTS</H3>
+<PRE>
+public static final java.util.Map&lt;java.lang.String,<A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.TestModuleInfo.html" title="class in com.google.gwt.junit.client">GWTTestCase.TestModuleInfo</A>&gt; <B>ALL_GWT_TESTS</B></PRE>
+<DL>
+<DD>Records all live GWTTestCases by synthetic module name so we can optimize
+ run they are compiled and run.  Ordered so that we can precompile the
+ modules in the order that they will run.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="testResult"><!-- --></A><H3>
+testResult</H3>
+<PRE>
+protected junit.framework.TestResult <B>testResult</B></PRE>
+<DL>
+<DD>Object that collects the results of this test case execution.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="GWTTestCase()"><!-- --></A><H3>
+GWTTestCase</H3>
+<PRE>
+public <B>GWTTestCase</B>()</PRE>
+<DL>
+<DD>A new instance of your subclass is constructed for each test method that is
+ to be run. You should avoid running code in your subclass constructor,
+ initializer blocks, and field initializations, because if those code blocks
+ must be runnable outside of the GWT environment. As an example of what
+ could go wrong if you run code there, trying to run a JSNI method could
+ generate an <CODE>UnsatisfiedLinkError</CODE>, and trying to call
+ <A HREF="../../../../../com/google/gwt/core/client/GWT.html#create(java.lang.Class)"><CODE>GWT.create(Class)</CODE></A> could throw an
+ <CODE>UnsupportedOperationException</CODE>. Instead, override
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#gwtSetUp()"><CODE>gwtSetUp()</CODE></A> and perform any initialization code there.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getAllTestModuleNames()"><!-- --></A><H3>
+getAllTestModuleNames</H3>
+<PRE>
+public static java.lang.String[] <B>getAllTestModuleNames</B>()</PRE>
+<DL>
+<DD>Get the names of all test modules.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>all test module names</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getModuleCount()"><!-- --></A><H3>
+getModuleCount</H3>
+<PRE>
+public static int <B>getModuleCount</B>()</PRE>
+<DL>
+<DD>Get the number of modules.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the module count.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTestsForModule(java.lang.String)"><!-- --></A><H3>
+getTestsForModule</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.TestModuleInfo.html" title="class in com.google.gwt.junit.client">GWTTestCase.TestModuleInfo</A> <B>getTestsForModule</B>(java.lang.String&nbsp;syntheticModuleName)</PRE>
+<DL>
+<DD>Get the set of all <CODE>JUnitHost.TestInfo</CODE> for the specified module.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>syntheticModuleName</CODE> - the synthetic module name
+<DT><B>Returns:</B><DD>all tests for the module</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addCheckpoint(java.lang.String)"><!-- --></A><H3>
+addCheckpoint</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final void <B>addCheckpoint</B>(java.lang.String&nbsp;msg)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>implementation removed</I>
+<P>
+<DD>Does nothing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="catchExceptions()"><!-- --></A><H3>
+catchExceptions</H3>
+<PRE>
+public boolean <B>catchExceptions</B>()</PRE>
+<DL>
+<DD>Determines whether or not exceptions will be caught by the test fixture.
+ Override this method and return <code>false</code> to let exceptions escape
+ to the browser. This will break the normal JUnit reporting functionality,
+ but can be useful in Production Mode with a JavaScript debugger to pin down
+ where exceptions are originating.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> for normal JUnit behavior, or <code>false</code>
+         to disable normal JUnit getException reporting</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearCheckpoints()"><!-- --></A><H3>
+clearCheckpoints</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final void <B>clearCheckpoints</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>implementation removed</I>
+<P>
+<DD>Does nothing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCheckpoints()"><!-- --></A><H3>
+getCheckpoints</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final java.lang.String[] <B>getCheckpoints</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>implementation removed</I>
+<P>
+<DD>Returns a zero-length array.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getModuleName()"><!-- --></A><H3>
+getModuleName</H3>
+<PRE>
+public abstract java.lang.String <B>getModuleName</B>()</PRE>
+<DL>
+<DD>Specifies a module to use when running this test case. Subclasses must
+ return the name of a module that will cause the source for that subclass to
+ be included.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the fully qualified name of a module, or <code>null</code> to run
+         as a pure Java (non-GWT) test case (same effect as passing
+         <code>true</code> to <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setForcePureJava(boolean)"><CODE>setForcePureJava(boolean)</CODE></A>)<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#isPureJava()"><CODE>isPureJava()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStrategy()"><!-- --></A><H3>
+getStrategy</H3>
+<PRE>
+public com.google.gwt.junit.JUnitShell.Strategy <B>getStrategy</B>()</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><CODE>GWTTestCase.BaseStrategy</CODE></A> to use when compiling and running this test.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the test <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><CODE>GWTTestCase.BaseStrategy</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSyntheticModuleName()"><!-- --></A><H3>
+getSyntheticModuleName</H3>
+<PRE>
+public final java.lang.String <B>getSyntheticModuleName</B>()</PRE>
+<DL>
+<DD>Get the synthetic module name, which includes the synthetic extension
+ defined by the <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><CODE>GWTTestCase.BaseStrategy</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the synthetic module name, or <code>null</code> if this test case
+         is run in pure Java mode (non-GWT)<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#isPureJava()"><CODE>isPureJava()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPureJava()"><!-- --></A><H3>
+isPureJava</H3>
+<PRE>
+public boolean <B>isPureJava</B>()</PRE>
+<DL>
+<DD>Returns whether this test case should be run in pure Java mode (non-GWT).
+ Returns <code>true</code> if and only if <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getModuleName()"><CODE>getModuleName()</CODE></A> returns
+ <code>null</code>, or <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setForcePureJava(boolean)"><CODE>setForcePureJava(boolean)</CODE></A> was last invoked with
+ <code>true</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="run(junit.framework.TestResult)"><!-- --></A><H3>
+run</H3>
+<PRE>
+public final void <B>run</B>(junit.framework.TestResult&nbsp;result)</PRE>
+<DL>
+<DD>Stashes <code>result</code> so that it can be accessed during
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#runTest()"><CODE>runTest()</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>run</CODE> in interface <CODE>junit.framework.Test</CODE><DT><B>Overrides:</B><DD><CODE>run</CODE> in class <CODE>junit.framework.TestCase</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setForcePureJava(boolean)"><!-- --></A><H3>
+setForcePureJava</H3>
+<PRE>
+public void <B>setForcePureJava</B>(boolean&nbsp;forcePureJava)</PRE>
+<DL>
+<DD>Specifies whether this test case should be always run in pure Java mode
+ (non-GWT). Passing <code>true</code> has the same effect as returning
+ <code>null</code> in <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getModuleName()"><CODE>getModuleName()</CODE></A>. The setting is
+ <code>false</code> by default.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>forcePureJava</CODE> - <code>true</code> to always run this test case in pure
+        Java mode (non-GWT); <code>false</code> to run this test case in GWT
+        mode if <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getModuleName()"><CODE>getModuleName()</CODE></A> does not return <code>null</code><DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#isPureJava()"><CODE>isPureJava()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setName(java.lang.String)"><!-- --></A><H3>
+setName</H3>
+<PRE>
+public void <B>setName</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>setName</CODE> in class <CODE>junit.framework.TestCase</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createStrategy()"><!-- --></A><H3>
+createStrategy</H3>
+<PRE>
+protected com.google.gwt.junit.JUnitShell.Strategy <B>createStrategy</B>()</PRE>
+<DL>
+<DD>Creates the test strategy to use (see <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#getStrategy()"><CODE>getStrategy()</CODE></A>).
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="delayTestFinish(int)"><!-- --></A><H3>
+delayTestFinish</H3>
+<PRE>
+protected final void <B>delayTestFinish</B>(int&nbsp;timeoutMillis)</PRE>
+<DL>
+<DD>Put the current test in asynchronous mode. If the test method completes
+ normally, this test will not immediately succeed. Instead, a <i>delay
+ period</i> begins. During the delay period, the test system will wait for
+ one of three things to happen:
+
+ <ol>
+ <li> If <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#finishTest()"><CODE>finishTest()</CODE></A> is called before the delay period expires,
+ the test will succeed.</li>
+ <li> If any getException escapes from an event handler during the delay
+ period, the test will error with the thrown getException.</li>
+ <li> If the delay period expires and neither of the above has happened, the
+ test will error with a <A HREF="../../../../../com/google/gwt/junit/client/TimeoutException.html" title="class in com.google.gwt.junit.client"><CODE>TimeoutException</CODE></A>. </li>
+ </ol>
+
+ <p>
+ This method is typically used to test event driven functionality.
+ </p>
+
+ <p>
+ <b>Example:</b>
+ <blockquote><pre>public void testTimer() {
+
+  // Set a delay period significantly longer than the
+  // event is expected to take.
+  delayTestFinish(500);
+
+  // Setup an asynchronous event handler.
+  Timer timer = new Timer() {
+    @Override
+    public void run() {
+      // do some validation logic
+
+      // tell the test system the test is now done
+      finishTest();
+    }
+  };
+
+  // Schedule the event and return control to the test system.
+  timer.schedule(100);
+}
+</pre></blockquote>
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timeoutMillis</CODE> - how long to wait before the current test will time out
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.UnsupportedOperationException</CODE> - if <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#supportsAsync()"><CODE>supportsAsync()</CODE></A> is false<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#finishTest()"><CODE>finishTest()</CODE></A><DT><B>Tip:</B></DT><DD>Subsequent calls to this method reset the timeout.</DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="finishTest()"><!-- --></A><H3>
+finishTest</H3>
+<PRE>
+protected final void <B>finishTest</B>()</PRE>
+<DL>
+<DD>Cause this test to succeed during asynchronous mode. After calling
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#delayTestFinish(int)"><CODE>delayTestFinish(int)</CODE></A>, call this method during the delay period to
+ cause this test to succeed. This method is typically called from an event
+ handler some time after the test method returns control to the caller.
+
+ <p>
+ Calling this method before the test method completes, will undo the effect
+ of having called <code>delayTestFinish()</code>. The test will revert to
+ normal, non-asynchronous mode.
+ </p>
+
+ <p>
+ <b>Example:</b>
+ <blockquote><pre>public void testTimer() {
+
+  // Set a delay period significantly longer than the
+  // event is expected to take.
+  delayTestFinish(500);
+
+  // Setup an asynchronous event handler.
+  Timer timer = new Timer() {
+    @Override
+    public void run() {
+      // do some validation logic
+
+      // tell the test system the test is now done
+      finishTest();
+    }
+  };
+
+  // Schedule the event and return control to the test system.
+  timer.schedule(100);
+}
+</pre></blockquote>
+ </p>
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalStateException</CODE> - if this test is not in asynchronous mode
+<DD><CODE>java.lang.UnsupportedOperationException</CODE> - if <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#supportsAsync()"><CODE>supportsAsync()</CODE></A> is false<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#delayTestFinish(int)"><CODE>delayTestFinish(int)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="gwtSetUp()"><!-- --></A><H3>
+gwtSetUp</H3>
+<PRE>
+protected void <B>gwtSetUp</B>()
+                 throws java.lang.Exception</PRE>
+<DL>
+<DD>A replacement for JUnit's <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setUp()"><CODE>setUp()</CODE></A> method. This method runs once
+ per test method in your subclass, just before your each test method runs
+ and can be used to perform initialization. Override this method instead of
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setUp()"><CODE>setUp()</CODE></A>. This method is run even in pure Java mode (non-GWT).
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE><DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setForcePureJava(boolean)"><CODE>setForcePureJava(boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="gwtTearDown()"><!-- --></A><H3>
+gwtTearDown</H3>
+<PRE>
+protected void <B>gwtTearDown</B>()
+                    throws java.lang.Exception</PRE>
+<DL>
+<DD>A replacement for JUnit's <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#tearDown()"><CODE>tearDown()</CODE></A> method. This method runs once
+ per test method in your subclass, just after your each test method runs and
+ can be used to perform cleanup. Override this method instead of
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#tearDown()"><CODE>tearDown()</CODE></A>. This method is run even in pure Java mode (non-GWT).
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE><DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#setForcePureJava(boolean)"><CODE>setForcePureJava(boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="runTest()"><!-- --></A><H3>
+runTest</H3>
+<PRE>
+protected void <B>runTest</B>()
+                throws java.lang.Throwable</PRE>
+<DL>
+<DD>Runs the test via the <CODE>JUnitShell</CODE> environment. Do not override or
+ call this method.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>runTest</CODE> in class <CODE>junit.framework.TestCase</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Throwable</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUp()"><!-- --></A><H3>
+setUp</H3>
+<PRE>
+protected final void <B>setUp</B>()
+                    throws java.lang.Exception</PRE>
+<DL>
+<DD>This method has been made final to prevent you from accidentally running
+ client code outside of the GWT environment. Please override
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#gwtSetUp()"><CODE>gwtSetUp()</CODE></A> instead.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>setUp</CODE> in class <CODE>junit.framework.TestCase</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="supportsAsync()"><!-- --></A><H3>
+supportsAsync</H3>
+<PRE>
+protected boolean <B>supportsAsync</B>()</PRE>
+<DL>
+<DD>Returns true if this test case supports asynchronous mode. By default, this
+ is set to true.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tearDown()"><!-- --></A><H3>
+tearDown</H3>
+<PRE>
+protected final void <B>tearDown</B>()
+                       throws java.lang.Exception</PRE>
+<DL>
+<DD>This method has been made final to prevent you from accidentally running
+ client code outside of the GWT environment. Please override
+ <A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.html#gwtTearDown()"><CODE>gwtTearDown()</CODE></A> instead.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>tearDown</CODE> in class <CODE>junit.framework.TestCase</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.Exception</CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/GWTTestCase.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/junit/client/GWTTestCase.BaseStrategy.html" title="class in com.google.gwt.junit.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/junit/client/GWTTestCase.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GWTTestCase.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

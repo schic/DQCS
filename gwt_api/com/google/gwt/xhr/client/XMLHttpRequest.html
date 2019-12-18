@@ -1,0 +1,790 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+XMLHttpRequest (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="XMLHttpRequest (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/XMLHttpRequest.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/xhr/client/XMLHttpRequest.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="XMLHttpRequest.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.xhr.client</FONT>
+<BR>
+Class XMLHttpRequest</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">com.google.gwt.core.client.JavaScriptObject</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.xhr.client.XMLHttpRequest</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>XMLHttpRequest</B><DT>extends <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></DL>
+</PRE>
+
+<P>
+The native XMLHttpRequest object. Most applications should use the higher-
+ level <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html" title="class in com.google.gwt.http.client"><CODE>RequestBuilder</CODE></A> class unless they
+ need specific functionality provided by the XMLHttpRequest object.
+ 
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/"
+ >http://www.w3.org/TR/XMLHttpRequest/</a>/
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#DONE">DONE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The DONE state is the state of the object when either the data transfer has
+ been completed or something went wrong during the transfer (infinite
+ redirects for instance).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#HEADERS_RECEIVED">HEADERS_RECEIVED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The HEADERS_RECEIVED state is the state of the object when all response
+ headers have been received.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#LOADING">LOADING</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The LOADING state is the state of the object when the response entity body
+ is being received.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#OPENED">OPENED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The OPENED state is the state of the object when the open() method has been
+ successfully invoked.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#UNSENT">UNSENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When constructed, the XMLHttpRequest object must be in the UNSENT state.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#XMLHttpRequest()">XMLHttpRequest</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#abort()">abort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aborts the current request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#clearOnReadyStateChange()">clearOnReadyStateChange</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the <A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client"><CODE>ReadyStateChangeHandler</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html" title="class in com.google.gwt.xhr.client">XMLHttpRequest</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#create()">create</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an XMLHttpRequest object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#getAllResponseHeaders()">getAllResponseHeaders</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets all the HTTP response headers, as a single string.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#getReadyState()">getReadyState</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get's the current ready-state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#getResponseHeader(java.lang.String)">getResponseHeader</A></B>(java.lang.String&nbsp;header)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets an HTTP response header.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#getResponseText()">getResponseText</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the response text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#getStatus()">getStatus</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the status code.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#getStatusText()">getStatusText</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the status text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#open(java.lang.String, java.lang.String)">open</A></B>(java.lang.String&nbsp;httpMethod,
+     java.lang.String&nbsp;url)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens an asynchronous connection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#open(java.lang.String, java.lang.String, java.lang.String)">open</A></B>(java.lang.String&nbsp;httpMethod,
+     java.lang.String&nbsp;url,
+     java.lang.String&nbsp;user)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens an asynchronous connection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#open(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">open</A></B>(java.lang.String&nbsp;httpMethod,
+     java.lang.String&nbsp;url,
+     java.lang.String&nbsp;user,
+     java.lang.String&nbsp;password)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opens an asynchronous connection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#send()">send</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initiates a request with no request data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#send(java.lang.String)">send</A></B>(java.lang.String&nbsp;requestData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Initiates a request with data.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#setOnReadyStateChange(com.google.gwt.xhr.client.ReadyStateChangeHandler)">setOnReadyStateChange</A></B>(<A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client">ReadyStateChangeHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the <A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client"><CODE>ReadyStateChangeHandler</CODE></A> to be notified when the object's
+ ready-state changes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#setRequestHeader(java.lang.String, java.lang.String)">setRequestHeader</A></B>(java.lang.String&nbsp;header,
+                 java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets a request header.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.client.JavaScriptObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.client.<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#cast()">cast</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createArray()">createArray</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createFunction()">createFunction</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createObject()">createObject</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#hashCode()">hashCode</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toSource()">toSource</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="UNSENT"><!-- --></A><H3>
+UNSENT</H3>
+<PRE>
+public static final int <B>UNSENT</B></PRE>
+<DL>
+<DD>When constructed, the XMLHttpRequest object must be in the UNSENT state.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.xhr.client.XMLHttpRequest.UNSENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="OPENED"><!-- --></A><H3>
+OPENED</H3>
+<PRE>
+public static final int <B>OPENED</B></PRE>
+<DL>
+<DD>The OPENED state is the state of the object when the open() method has been
+ successfully invoked. During this state request headers can be set using
+ setRequestHeader() and the request can be made using send().
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.xhr.client.XMLHttpRequest.OPENED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="HEADERS_RECEIVED"><!-- --></A><H3>
+HEADERS_RECEIVED</H3>
+<PRE>
+public static final int <B>HEADERS_RECEIVED</B></PRE>
+<DL>
+<DD>The HEADERS_RECEIVED state is the state of the object when all response
+ headers have been received.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.xhr.client.XMLHttpRequest.HEADERS_RECEIVED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="LOADING"><!-- --></A><H3>
+LOADING</H3>
+<PRE>
+public static final int <B>LOADING</B></PRE>
+<DL>
+<DD>The LOADING state is the state of the object when the response entity body
+ is being received.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.xhr.client.XMLHttpRequest.LOADING">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="DONE"><!-- --></A><H3>
+DONE</H3>
+<PRE>
+public static final int <B>DONE</B></PRE>
+<DL>
+<DD>The DONE state is the state of the object when either the data transfer has
+ been completed or something went wrong during the transfer (infinite
+ redirects for instance).
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.xhr.client.XMLHttpRequest.DONE">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="XMLHttpRequest()"><!-- --></A><H3>
+XMLHttpRequest</H3>
+<PRE>
+protected <B>XMLHttpRequest</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="create()"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html" title="class in com.google.gwt.xhr.client">XMLHttpRequest</A> <B>create</B>()</PRE>
+<DL>
+<DD>Creates an XMLHttpRequest object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the created object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="abort()"><!-- --></A><H3>
+abort</H3>
+<PRE>
+public final void <B>abort</B>()</PRE>
+<DL>
+<DD>Aborts the current request.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#abort"
+ >http://www.w3.org/TR/XMLHttpRequest/#abort</a>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearOnReadyStateChange()"><!-- --></A><H3>
+clearOnReadyStateChange</H3>
+<PRE>
+public final void <B>clearOnReadyStateChange</B>()</PRE>
+<DL>
+<DD>Clears the <A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client"><CODE>ReadyStateChangeHandler</CODE></A>.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#onreadystatechange"
+ >http://www.w3.org/TR/XMLHttpRequest/#onreadystatechange</a>.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#clearOnReadyStateChange()"><CODE>clearOnReadyStateChange()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAllResponseHeaders()"><!-- --></A><H3>
+getAllResponseHeaders</H3>
+<PRE>
+public final java.lang.String <B>getAllResponseHeaders</B>()</PRE>
+<DL>
+<DD>Gets all the HTTP response headers, as a single string.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#getallresponseheaders"
+ >http://www.w3.org/TR/XMLHttpRequest/#getallresponseheaders</a>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the response headers.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getReadyState()"><!-- --></A><H3>
+getReadyState</H3>
+<PRE>
+public final int <B>getReadyState</B>()</PRE>
+<DL>
+<DD>Get's the current ready-state.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#readystate"
+ >http://www.w3.org/TR/XMLHttpRequest/#readystate</a>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the ready-state constant</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResponseHeader(java.lang.String)"><!-- --></A><H3>
+getResponseHeader</H3>
+<PRE>
+public final java.lang.String <B>getResponseHeader</B>(java.lang.String&nbsp;header)</PRE>
+<DL>
+<DD>Gets an HTTP response header.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#getresponseheader"
+ >http://www.w3.org/TR/XMLHttpRequest/#getresponseheader</a>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>header</CODE> - the response header to be retrieved
+<DT><B>Returns:</B><DD>the header value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResponseText()"><!-- --></A><H3>
+getResponseText</H3>
+<PRE>
+public final java.lang.String <B>getResponseText</B>()</PRE>
+<DL>
+<DD>Gets the response text.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#responsetext"
+ >http://www.w3.org/TR/XMLHttpRequest/#responsetext</a>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the response text</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatus()"><!-- --></A><H3>
+getStatus</H3>
+<PRE>
+public final int <B>getStatus</B>()</PRE>
+<DL>
+<DD>Gets the status code.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#status"
+ >http://www.w3.org/TR/XMLHttpRequest/#status</a>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the status code</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatusText()"><!-- --></A><H3>
+getStatusText</H3>
+<PRE>
+public final java.lang.String <B>getStatusText</B>()</PRE>
+<DL>
+<DD>Gets the status text.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#statustext"
+ >http://www.w3.org/TR/XMLHttpRequest/#statustext</a>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the status text</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="open(java.lang.String, java.lang.String)"><!-- --></A><H3>
+open</H3>
+<PRE>
+public final void <B>open</B>(java.lang.String&nbsp;httpMethod,
+                       java.lang.String&nbsp;url)</PRE>
+<DL>
+<DD>Opens an asynchronous connection.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#open"
+ >http://www.w3.org/TR/XMLHttpRequest/#open</a>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>httpMethod</CODE> - the HTTP method to use<DD><CODE>url</CODE> - the URL to be opened</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="open(java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+open</H3>
+<PRE>
+public final void <B>open</B>(java.lang.String&nbsp;httpMethod,
+                       java.lang.String&nbsp;url,
+                       java.lang.String&nbsp;user)</PRE>
+<DL>
+<DD>Opens an asynchronous connection.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#open"
+ >http://www.w3.org/TR/XMLHttpRequest/#open</a>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>httpMethod</CODE> - the HTTP method to use<DD><CODE>url</CODE> - the URL to be opened<DD><CODE>user</CODE> - user to use in the URL</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="open(java.lang.String, java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+open</H3>
+<PRE>
+public final void <B>open</B>(java.lang.String&nbsp;httpMethod,
+                       java.lang.String&nbsp;url,
+                       java.lang.String&nbsp;user,
+                       java.lang.String&nbsp;password)</PRE>
+<DL>
+<DD>Opens an asynchronous connection.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#open"
+ >http://www.w3.org/TR/XMLHttpRequest/#open</a>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>httpMethod</CODE> - the HTTP method to use<DD><CODE>url</CODE> - the URL to be opened<DD><CODE>user</CODE> - user to use in the URL<DD><CODE>password</CODE> - password to use in the URL</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="send()"><!-- --></A><H3>
+send</H3>
+<PRE>
+public final void <B>send</B>()</PRE>
+<DL>
+<DD>Initiates a request with no request data. This simply calls
+ <A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#send(java.lang.String)"><CODE>send(String)</CODE></A> with <code>null</code> as an argument, because the
+ no-argument <code>send()</code> method is unavailable on Firefox.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="send(java.lang.String)"><!-- --></A><H3>
+send</H3>
+<PRE>
+public final void <B>send</B>(java.lang.String&nbsp;requestData)</PRE>
+<DL>
+<DD>Initiates a request with data.  If there is no data, specify null.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#send"
+ >http://www.w3.org/TR/XMLHttpRequest/#send</a>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>requestData</CODE> - the data to be sent with the request</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOnReadyStateChange(com.google.gwt.xhr.client.ReadyStateChangeHandler)"><!-- --></A><H3>
+setOnReadyStateChange</H3>
+<PRE>
+public final void <B>setOnReadyStateChange</B>(<A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client">ReadyStateChangeHandler</A>&nbsp;handler)</PRE>
+<DL>
+<DD>Sets the <A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client"><CODE>ReadyStateChangeHandler</CODE></A> to be notified when the object's
+ ready-state changes.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#onreadystatechange"
+ >http://www.w3.org/TR/XMLHttpRequest/#onreadystatechange</a>.
+ 
+ <p>
+ Note: Applications <em>must</em> call <A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#clearOnReadyStateChange()"><CODE>clearOnReadyStateChange()</CODE></A>
+ when they no longer need this object, to ensure that it is cleaned up
+ properly. Failure to do so will result in memory leaks on some browsers.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler to be called when the ready state changes<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/xhr/client/XMLHttpRequest.html#clearOnReadyStateChange()"><CODE>clearOnReadyStateChange()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRequestHeader(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setRequestHeader</H3>
+<PRE>
+public final void <B>setRequestHeader</B>(java.lang.String&nbsp;header,
+                                   java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Sets a request header.
+ <p>
+ See <a href="http://www.w3.org/TR/XMLHttpRequest/#setrequestheader"
+ >http://www.w3.org/TR/XMLHttpRequest/#setrequestheader</a>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>header</CODE> - the header to be set<DD><CODE>value</CODE> - the header's value</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/XMLHttpRequest.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/xhr/client/ReadyStateChangeHandler.html" title="interface in com.google.gwt.xhr.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/xhr/client/XMLHttpRequest.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="XMLHttpRequest.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

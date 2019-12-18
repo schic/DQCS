@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+TouchScroller (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TouchScroller (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TouchScroller.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/touch/client/Point.html" title="class in com.google.gwt.touch.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/touch/client/TouchScroller.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TouchScroller.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.touch.client</FONT>
+<BR>
+Class TouchScroller</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.touch.client.TouchScroller</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>TouchScroller</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Adds touch based scrolling to a scroll panel.
+ 
+ <p>
+ Touch based scrolling is only supported on devices that support touch events
+ and do not implement native touch based scrolling.
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#TouchScroller()">TouchScroller</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client">TouchScroller</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#createIfSupported()">createIfSupported</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client">TouchScroller</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#createIfSupported(com.google.gwt.user.client.ui.HasScrolling)">createIfSupported</A></B>(<A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui">HasScrolling</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A> that augments the specified scrollable
+ widget if supported, and null otherwise.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client">Momentum</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#getMomentum()">getMomentum</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client"><CODE>Momentum</CODE></A> that controls scrolling after the user completes a
+ gesture.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui">HasScrolling</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#getTargetWidget()">getTargetWidget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the target <A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui"><CODE>HasScrolling</CODE></A> widget that this scroller affects.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Touch.html" title="class in com.google.gwt.dom.client">Touch</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#getTouchFromEvent(com.google.gwt.event.dom.client.TouchEvent)">getTouchFromEvent</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get touch from event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#isSupported()">isSupported</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Runtime check for whether touch scrolling is supported in this browser.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onDragEnd(com.google.gwt.event.dom.client.TouchEvent)">onDragEnd</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the object's drag sequence is complete.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onDragMove(com.google.gwt.event.dom.client.TouchEvent)">onDragMove</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the object has been dragged to a new position.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onDragStart(com.google.gwt.event.dom.client.TouchEvent)">onDragStart</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the object has started dragging.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onTouchCancel(com.google.gwt.event.dom.client.TouchEvent)">onTouchCancel</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the user cancels a touch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onTouchEnd(com.google.gwt.event.dom.client.TouchEvent)">onTouchEnd</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the user releases a touch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onTouchMove(com.google.gwt.event.dom.client.TouchEvent)">onTouchMove</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the user moves a touch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#onTouchStart(com.google.gwt.event.dom.client.TouchEvent)">onTouchStart</A></B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the user starts a touch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#setMomentum(com.google.gwt.touch.client.Momentum)">setMomentum</A></B>(<A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client">Momentum</A>&nbsp;momentum)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client"><CODE>Momentum</CODE></A> that controls scrolling after the user completes a
+ gesture.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#setTargetWidget(com.google.gwt.user.client.ui.HasScrolling)">setTargetWidget</A></B>(<A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui">HasScrolling</A>&nbsp;widget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the target <A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui"><CODE>HasScrolling</CODE></A> widget that this scroller affects.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="TouchScroller()"><!-- --></A><H3>
+TouchScroller</H3>
+<PRE>
+protected <B>TouchScroller</B>()</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A>. This constructor should be called
+ using the static method <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#createIfSupported()"><CODE>createIfSupported()</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the widget to augment<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html#createIfSupported()"><CODE>createIfSupported()</CODE></A></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createIfSupported()"><!-- --></A><H3>
+createIfSupported</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client">TouchScroller</A> <B>createIfSupported</B>()</PRE>
+<DL>
+<DD>Return a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A> if supported, and null otherwise</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createIfSupported(com.google.gwt.user.client.ui.HasScrolling)"><!-- --></A><H3>
+createIfSupported</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client">TouchScroller</A> <B>createIfSupported</B>(<A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui">HasScrolling</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Return a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A> that augments the specified scrollable
+ widget if supported, and null otherwise.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the scrollable widget
+<DT><B>Returns:</B><DD>a new <A HREF="../../../../../com/google/gwt/touch/client/TouchScroller.html" title="class in com.google.gwt.touch.client"><CODE>TouchScroller</CODE></A> if supported, and null otherwise</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSupported()"><!-- --></A><H3>
+isSupported</H3>
+<PRE>
+public static boolean <B>isSupported</B>()</PRE>
+<DL>
+<DD>Runtime check for whether touch scrolling is supported in this browser.
+ Returns true if touch events are supported but touch based scrolling is not
+ natively supported.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if touch scrolling is supported, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMomentum()"><!-- --></A><H3>
+getMomentum</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client">Momentum</A> <B>getMomentum</B>()</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client"><CODE>Momentum</CODE></A> that controls scrolling after the user completes a
+ gesture.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the scrolling <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client"><CODE>Momentum</CODE></A>, or null if disabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTargetWidget()"><!-- --></A><H3>
+getTargetWidget</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui">HasScrolling</A> <B>getTargetWidget</B>()</PRE>
+<DL>
+<DD>Get the target <A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui"><CODE>HasScrolling</CODE></A> widget that this scroller affects.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the target widget</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMomentum(com.google.gwt.touch.client.Momentum)"><!-- --></A><H3>
+setMomentum</H3>
+<PRE>
+public void <B>setMomentum</B>(<A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client">Momentum</A>&nbsp;momentum)</PRE>
+<DL>
+<DD>Set the <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client"><CODE>Momentum</CODE></A> that controls scrolling after the user completes a
+ gesture.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>momentum</CODE> - the scrolling <A HREF="../../../../../com/google/gwt/touch/client/Momentum.html" title="interface in com.google.gwt.touch.client"><CODE>Momentum</CODE></A>, or null to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTargetWidget(com.google.gwt.user.client.ui.HasScrolling)"><!-- --></A><H3>
+setTargetWidget</H3>
+<PRE>
+public void <B>setTargetWidget</B>(<A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui">HasScrolling</A>&nbsp;widget)</PRE>
+<DL>
+<DD>Set the target <A HREF="../../../../../com/google/gwt/user/client/ui/HasScrolling.html" title="interface in com.google.gwt.user.client.ui"><CODE>HasScrolling</CODE></A> widget that this scroller affects.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the target widget, or null to disbale</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTouchFromEvent(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+getTouchFromEvent</H3>
+<PRE>
+protected <A HREF="../../../../../com/google/gwt/dom/client/Touch.html" title="class in com.google.gwt.dom.client">Touch</A> <B>getTouchFromEvent</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Get touch from event.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the event
+<DT><B>Returns:</B><DD>the touch object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onDragEnd(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onDragEnd</H3>
+<PRE>
+protected void <B>onDragEnd</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the object's drag sequence is complete.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onDragMove(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onDragMove</H3>
+<PRE>
+protected void <B>onDragMove</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the object has been dragged to a new position.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onDragStart(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onDragStart</H3>
+<PRE>
+protected void <B>onDragStart</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the object has started dragging.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onTouchCancel(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onTouchCancel</H3>
+<PRE>
+protected void <B>onTouchCancel</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the user cancels a touch. This can happen if the user touches
+ the screen with too many fingers.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onTouchEnd(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onTouchEnd</H3>
+<PRE>
+protected void <B>onTouchEnd</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the user releases a touch.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onTouchMove(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onTouchMove</H3>
+<PRE>
+protected void <B>onTouchMove</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the user moves a touch.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onTouchStart(com.google.gwt.event.dom.client.TouchEvent)"><!-- --></A><H3>
+onTouchStart</H3>
+<PRE>
+protected void <B>onTouchStart</B>(<A HREF="../../../../../com/google/gwt/event/dom/client/TouchEvent.html" title="class in com.google.gwt.event.dom.client">TouchEvent</A>&lt;?&gt;&nbsp;event)</PRE>
+<DL>
+<DD>Called when the user starts a touch.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the touch event</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TouchScroller.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/touch/client/Point.html" title="class in com.google.gwt.touch.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/touch/client/TouchScroller.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TouchScroller.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

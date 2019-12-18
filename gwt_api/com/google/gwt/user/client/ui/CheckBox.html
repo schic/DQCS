@@ -1,0 +1,1544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+CheckBox (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CheckBox (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CheckBox.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/ChangeListenerCollection.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/ClickListener.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/CheckBox.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CheckBox.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class CheckBox</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.UIObject</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Widget</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.FocusWidget</A>
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.ButtonBase</A>
+                  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.CheckBox</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/editor/client/IsEditor.html" title="interface in com.google.gwt.editor.client">IsEditor</A>&lt;<A HREF="../../../../../../com/google/gwt/editor/client/LeafValueEditor.html" title="interface in com.google.gwt.editor.client">LeafValueEditor</A>&lt;java.lang.Boolean&gt;&gt;, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllFocusHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllFocusHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllGestureHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllGestureHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllKeyHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllKeyHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllMouseHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllMouseHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasAllTouchHandlers.html" title="interface in com.google.gwt.event.dom.client">HasAllTouchHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasBlurHandlers.html" title="interface in com.google.gwt.event.dom.client">HasBlurHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasClickHandlers.html" title="interface in com.google.gwt.event.dom.client">HasClickHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasDoubleClickHandlers.html" title="interface in com.google.gwt.event.dom.client">HasDoubleClickHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasFocusHandlers.html" title="interface in com.google.gwt.event.dom.client">HasFocusHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasGestureChangeHandlers.html" title="interface in com.google.gwt.event.dom.client">HasGestureChangeHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasGestureEndHandlers.html" title="interface in com.google.gwt.event.dom.client">HasGestureEndHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasGestureStartHandlers.html" title="interface in com.google.gwt.event.dom.client">HasGestureStartHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyDownHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyDownHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyPressHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyPressHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasKeyUpHandlers.html" title="interface in com.google.gwt.event.dom.client">HasKeyUpHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseDownHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseDownHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseMoveHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseMoveHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOutHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseOutHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseOverHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseOverHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseUpHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseUpHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasMouseWheelHandlers.html" title="interface in com.google.gwt.event.dom.client">HasMouseWheelHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasTouchCancelHandlers.html" title="interface in com.google.gwt.event.dom.client">HasTouchCancelHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasTouchEndHandlers.html" title="interface in com.google.gwt.event.dom.client">HasTouchEndHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasTouchMoveHandlers.html" title="interface in com.google.gwt.event.dom.client">HasTouchMoveHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/dom/client/HasTouchStartHandlers.html" title="interface in com.google.gwt.event.dom.client">HasTouchStartHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasAttachHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasAttachHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasValueChangeHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasValueChangeHandlers</A>&lt;java.lang.Boolean&gt;, <A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>, <A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared">HasDirectionEstimator</A>, <A HREF="../../../../../../com/google/gwt/safehtml/client/HasSafeHtml.html" title="interface in com.google.gwt.safehtml.client">HasSafeHtml</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html" title="interface in com.google.gwt.user.client">TakesValue</A>&lt;java.lang.Boolean&gt;, <A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalSafeHtml.html" title="interface in com.google.gwt.user.client.ui">HasDirectionalSafeHtml</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html" title="interface in com.google.gwt.user.client.ui">HasDirectionalText</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasEnabled.html" title="interface in com.google.gwt.user.client.ui">HasEnabled</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasFocus.html" title="interface in com.google.gwt.user.client.ui">HasFocus</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html" title="interface in com.google.gwt.user.client.ui">HasHTML</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html" title="interface in com.google.gwt.user.client.ui">HasName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html" title="interface in com.google.gwt.user.client.ui">HasText</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html" title="interface in com.google.gwt.user.client.ui">HasValue</A>&lt;java.lang.Boolean&gt;, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html" title="interface in com.google.gwt.user.client.ui">HasWordWrap</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesClickEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesClickEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesFocusEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesFocusEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesKeyboardEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesKeyboardEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesMouseEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesMouseEvents</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/user/client/ui/RadioButton.html" title="class in com.google.gwt.user.client.ui">RadioButton</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>CheckBox</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">ButtonBase</A><DT>implements <A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html" title="interface in com.google.gwt.user.client.ui">HasName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html" title="interface in com.google.gwt.user.client.ui">HasValue</A>&lt;java.lang.Boolean&gt;, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html" title="interface in com.google.gwt.user.client.ui">HasWordWrap</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalSafeHtml.html" title="interface in com.google.gwt.user.client.ui">HasDirectionalSafeHtml</A>, <A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared">HasDirectionEstimator</A>, <A HREF="../../../../../../com/google/gwt/editor/client/IsEditor.html" title="interface in com.google.gwt.editor.client">IsEditor</A>&lt;<A HREF="../../../../../../com/google/gwt/editor/client/LeafValueEditor.html" title="interface in com.google.gwt.editor.client">LeafValueEditor</A>&lt;java.lang.Boolean&gt;&gt;</DL>
+</PRE>
+
+<P>
+A standard check box widget.
+ 
+ This class also serves as a base class for
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/RadioButton.html" title="class in com.google.gwt.user.client.ui"><CODE>RadioButton</CODE></A>.
+ 
+ <p>
+ <img class='gallery' src='doc-files/CheckBox.png'/>
+ </p>
+
+ <p>
+ <h3>Built-in Bidi Text Support</h3>
+ This widget is capable of automatically adjusting its direction according to
+ its content. This feature is controlled by <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setDirectionEstimator(boolean)"><CODE>setDirectionEstimator(boolean)</CODE></A> or
+ passing a DirectionEstimator parameter to the constructor, and is off by
+ default.
+ </p>
+
+ <h3>CSS Style Rules</h3>
+ <dl>
+ <dt>.gwt-CheckBox</dt>
+ <dd>the outer element</dd>
+ <dt>.gwt-CheckBox-disabled</dt>
+ <dd>applied when Checkbox is disabled</dd>
+ </dl>
+ 
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class CheckBoxExample implements EntryPoint {
+
+  public void onModuleLoad() {
+    // Make a new check box, and select it by default.
+    CheckBox cb = new CheckBox("Foo");
+    cb.setChecked(true);
+
+    // Hook up a handler to find out when it's clicked.
+    cb.addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        boolean checked = ((CheckBox) event.getSource()).isChecked();
+        Window.alert("It is " + (checked ? "" : "not ") + "checked");
+      }
+    });
+
+    // Add it to the root panel.
+    RootPanel.get().add(cb);
+  }
+}
+</pre></blockquote>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#DEFAULT_DIRECTION_ESTIMATOR">DEFAULT_DIRECTION_ESTIMATOR</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox()">CheckBox</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with no label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(com.google.gwt.user.client.Element)">CheckBox</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(com.google.gwt.safehtml.shared.SafeHtml)">CheckBox</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;label)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with the specified text label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.shared.DirectionEstimator)">CheckBox</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;label,
+         <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A>&nbsp;directionEstimator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with the specified text label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.client.HasDirection.Direction)">CheckBox</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;label,
+         <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with the specified text label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(java.lang.String)">CheckBox</A></B>(java.lang.String&nbsp;label)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with the specified text label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(java.lang.String, boolean)">CheckBox</A></B>(java.lang.String&nbsp;label,
+         boolean&nbsp;asHTML)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with the specified text label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(java.lang.String, com.google.gwt.i18n.shared.DirectionEstimator)">CheckBox</A></B>(java.lang.String&nbsp;label,
+         <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A>&nbsp;directionEstimator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a label with the specified text and a default direction estimator.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#CheckBox(java.lang.String, com.google.gwt.i18n.client.HasDirection.Direction)">CheckBox</A></B>(java.lang.String&nbsp;label,
+         <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a check box with the specified text label.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)">addValueChangeHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ValueChangeHandler</A>&lt;java.lang.Boolean&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/editor/client/LeafValueEditor.html" title="interface in com.google.gwt.editor.client">LeafValueEditor</A>&lt;java.lang.Boolean&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#asEditor()">asEditor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the Editor encapsulated by the view object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#ensureDomEventHandlers()">ensureDomEventHandlers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getDirectionEstimator()">getDirectionEstimator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <code>DirectionEstimator</code> object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getFormValue()">getFormValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the value property of the input element that backs this widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getHTML()">getHTML</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets this object's contents as HTML.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getName()">getName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the widget's name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getTabIndex()">getTabIndex</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the tab index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getText()">getText</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets this object's text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getTextDirection()">getTextDirection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the direction of this object's text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getValue()">getValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether this check box is currently checked.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getWordWrap()">getWordWrap</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether word-wrapping is enabled.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#isChecked()">isChecked</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getValue()"><CODE>getValue()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#isEnabled()">isEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets whether this widget is enabled.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></B>(java.lang.String&nbsp;baseID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Affected Elements:</b>
+ 
+ -label = label next to checkbox.
+ </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#onLoad()">onLoad</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is called when a widget is attached to the browser's document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#onUnload()">onUnload</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is called when a widget is detached from the browser's
+ document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#replaceInputElement(com.google.gwt.user.client.Element)">replaceInputElement</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replace the current input element with a new one.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setAccessKey(char)">setAccessKey</A></B>(char&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the widget's 'access key'.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setChecked(boolean)">setChecked</A></B>(boolean&nbsp;checked)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setValue(java.lang.Boolean)"><CODE>setValue(Boolean)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setDirectionEstimator(boolean)">setDirectionEstimator</A></B>(boolean&nbsp;enabled)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toggles on / off direction estimation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setDirectionEstimator(com.google.gwt.i18n.shared.DirectionEstimator)">setDirectionEstimator</A></B>(<A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A>&nbsp;directionEstimator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><CODE>DirectionEstimator</CODE></A> object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setEnabled(boolean)">setEnabled</A></B>(boolean&nbsp;enabled)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether this widget is enabled.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setFocus(boolean)">setFocus</A></B>(boolean&nbsp;focused)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explicitly focus/unfocus this widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setFormValue(java.lang.String)">setFormValue</A></B>(java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the value property on the input element that backs this widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setHTML(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.client.HasDirection.Direction)">setHTML</A></B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+        <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this object's html, also declaring its direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setHTML(java.lang.String)">setHTML</A></B>(java.lang.String&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this object's contents via HTML.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setName(java.lang.String)">setName</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the widget's name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setTabIndex(int)">setTabIndex</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the widget's position in the tab index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setText(java.lang.String)">setText</A></B>(java.lang.String&nbsp;text)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this object's text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setText(java.lang.String, com.google.gwt.i18n.client.HasDirection.Direction)">setText</A></B>(java.lang.String&nbsp;text,
+        <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this object's text, also declaring its direction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setValue(java.lang.Boolean)">setValue</A></B>(java.lang.Boolean&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks or unchecks the check box.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setValue(java.lang.Boolean, boolean)">setValue</A></B>(java.lang.Boolean&nbsp;value,
+         boolean&nbsp;fireEvents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks or unchecks the check box, firing <A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A> if
+ appropriate.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setWordWrap(boolean)">setWordWrap</A></B>(boolean&nbsp;wrap)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether word-wrapping is enabled.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#sinkEvents(int)">sinkEvents</A></B>(int&nbsp;eventBitsToAdd)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overridden to defer the call to super.sinkEvents until the first time this
+ widget is attached to the dom, as a performance enhancement.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.ButtonBase"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">ButtonBase</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html#setHTML(com.google.gwt.safehtml.shared.SafeHtml)">setHTML</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.FocusWidget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addBlurHandler(com.google.gwt.event.dom.client.BlurHandler)">addBlurHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addClickHandler(com.google.gwt.event.dom.client.ClickHandler)">addClickHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addClickListener(com.google.gwt.user.client.ui.ClickListener)">addClickListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addDoubleClickHandler(com.google.gwt.event.dom.client.DoubleClickHandler)">addDoubleClickHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addFocusHandler(com.google.gwt.event.dom.client.FocusHandler)">addFocusHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addFocusListener(com.google.gwt.user.client.ui.FocusListener)">addFocusListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addGestureChangeHandler(com.google.gwt.event.dom.client.GestureChangeHandler)">addGestureChangeHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addGestureEndHandler(com.google.gwt.event.dom.client.GestureEndHandler)">addGestureEndHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addGestureStartHandler(com.google.gwt.event.dom.client.GestureStartHandler)">addGestureStartHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">addKeyboardListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addKeyDownHandler(com.google.gwt.event.dom.client.KeyDownHandler)">addKeyDownHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addKeyPressHandler(com.google.gwt.event.dom.client.KeyPressHandler)">addKeyPressHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addKeyUpHandler(com.google.gwt.event.dom.client.KeyUpHandler)">addKeyUpHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseDownHandler(com.google.gwt.event.dom.client.MouseDownHandler)">addMouseDownHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseListener(com.google.gwt.user.client.ui.MouseListener)">addMouseListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseMoveHandler(com.google.gwt.event.dom.client.MouseMoveHandler)">addMouseMoveHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseOutHandler(com.google.gwt.event.dom.client.MouseOutHandler)">addMouseOutHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseOverHandler(com.google.gwt.event.dom.client.MouseOverHandler)">addMouseOverHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseUpHandler(com.google.gwt.event.dom.client.MouseUpHandler)">addMouseUpHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseWheelHandler(com.google.gwt.event.dom.client.MouseWheelHandler)">addMouseWheelHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addMouseWheelListener(com.google.gwt.user.client.ui.MouseWheelListener)">addMouseWheelListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addTouchCancelHandler(com.google.gwt.event.dom.client.TouchCancelHandler)">addTouchCancelHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addTouchEndHandler(com.google.gwt.event.dom.client.TouchEndHandler)">addTouchEndHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addTouchMoveHandler(com.google.gwt.event.dom.client.TouchMoveHandler)">addTouchMoveHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#addTouchStartHandler(com.google.gwt.event.dom.client.TouchStartHandler)">addTouchStartHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#getFocusImpl()">getFocusImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#onAttach()">onAttach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#removeClickListener(com.google.gwt.user.client.ui.ClickListener)">removeClickListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#removeFocusListener(com.google.gwt.user.client.ui.FocusListener)">removeFocusListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#removeKeyboardListener(com.google.gwt.user.client.ui.KeyboardListener)">removeKeyboardListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#removeMouseListener(com.google.gwt.user.client.ui.MouseListener)">removeMouseListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#removeMouseWheelListener(com.google.gwt.user.client.ui.MouseWheelListener)">removeMouseWheelListener</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Widget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)">addAttachHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addBitlessDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addBitlessDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidget()">asWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidgetOrNull(com.google.gwt.user.client.ui.IsWidget)">asWidgetOrNull</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#createHandlerManager()">createHandlerManager</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#delegateEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.event.shared.GwtEvent)">delegateEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doAttachChildren()">doAttachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#doDetachChildren()">doDetachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getLayoutData()">getLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getParent()">getParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isAttached()">isAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isOrWasAttached()">isOrWasAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">onDetach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#removeFromParent()">removeFromParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#setLayoutData(java.lang.Object)">setLayoutData</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.event.shared.HasHandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.safehtml.client.HasSafeHtml"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.safehtml.client.<A HREF="../../../../../../com/google/gwt/safehtml/client/HasSafeHtml.html" title="interface in com.google.gwt.safehtml.client">HasSafeHtml</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/safehtml/client/HasSafeHtml.html#setHTML(com.google.gwt.safehtml.shared.SafeHtml)">setHTML</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DEFAULT_DIRECTION_ESTIMATOR"><!-- --></A><H3>
+DEFAULT_DIRECTION_ESTIMATOR</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A> <B>DEFAULT_DIRECTION_ESTIMATOR</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="CheckBox()"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>()</PRE>
+<DL>
+<DD>Creates a check box with no label.
+<P>
+</DL>
+<HR>
+
+<A NAME="CheckBox(com.google.gwt.safehtml.shared.SafeHtml)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;label)</PRE>
+<DL>
+<DD>Creates a check box with the specified text label.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;label,
+                <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD>Creates a check box with the specified text label.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label<DD><CODE>dir</CODE> - the text's direction. Note that <code>DEFAULT</code> means direction
+          should be inherited from the widget's parent element.</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.shared.DirectionEstimator)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;label,
+                <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A>&nbsp;directionEstimator)</PRE>
+<DL>
+<DD>Creates a check box with the specified text label.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label<DD><CODE>directionEstimator</CODE> - A DirectionEstimator object used for automatic
+          direction adjustment. For convenience,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#DEFAULT_DIRECTION_ESTIMATOR"><CODE>DEFAULT_DIRECTION_ESTIMATOR</CODE></A> can be used.</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(java.lang.String)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(java.lang.String&nbsp;label)</PRE>
+<DL>
+<DD>Creates a check box with the specified text label.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(java.lang.String, com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(java.lang.String&nbsp;label,
+                <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD>Creates a check box with the specified text label.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label<DD><CODE>dir</CODE> - the text's direction. Note that <code>DEFAULT</code> means direction
+          should be inherited from the widget's parent element.</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(java.lang.String, com.google.gwt.i18n.shared.DirectionEstimator)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(java.lang.String&nbsp;label,
+                <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A>&nbsp;directionEstimator)</PRE>
+<DL>
+<DD>Creates a label with the specified text and a default direction estimator.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label<DD><CODE>directionEstimator</CODE> - A DirectionEstimator object used for automatic
+          direction adjustment. For convenience,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#DEFAULT_DIRECTION_ESTIMATOR"><CODE>DEFAULT_DIRECTION_ESTIMATOR</CODE></A> can be used.</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(java.lang.String, boolean)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+public <B>CheckBox</B>(java.lang.String&nbsp;label,
+                boolean&nbsp;asHTML)</PRE>
+<DL>
+<DD>Creates a check box with the specified text label.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - the check box's label<DD><CODE>asHTML</CODE> - <code>true</code> to treat the specified label as html</DL>
+</DL>
+<HR>
+
+<A NAME="CheckBox(com.google.gwt.user.client.Element)"><!-- --></A><H3>
+CheckBox</H3>
+<PRE>
+protected <B>CheckBox</B>(<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)"><!-- --></A><H3>
+addValueChangeHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addValueChangeHandler</B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeHandler.html" title="interface in com.google.gwt.event.logical.shared">ValueChangeHandler</A>&lt;java.lang.Boolean&gt;&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasValueChangeHandlers.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)">HasValueChangeHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasValueChangeHandlers.html#addValueChangeHandler(com.google.gwt.event.logical.shared.ValueChangeHandler)">addValueChangeHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasValueChangeHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasValueChangeHandlers</A>&lt;java.lang.Boolean&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration for the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="asEditor()"><!-- --></A><H3>
+asEditor</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/editor/client/LeafValueEditor.html" title="interface in com.google.gwt.editor.client">LeafValueEditor</A>&lt;java.lang.Boolean&gt; <B>asEditor</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/editor/client/IsEditor.html#asEditor()">IsEditor</A></CODE></B></DD>
+<DD>Returns the Editor encapsulated by the view object.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/editor/client/IsEditor.html#asEditor()">asEditor</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/editor/client/IsEditor.html" title="interface in com.google.gwt.editor.client">IsEditor</A>&lt;<A HREF="../../../../../../com/google/gwt/editor/client/LeafValueEditor.html" title="interface in com.google.gwt.editor.client">LeafValueEditor</A>&lt;java.lang.Boolean&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an <A HREF="../../../../../../com/google/gwt/editor/client/Editor.html" title="interface in com.google.gwt.editor.client"><CODE>Editor</CODE></A> of type E</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDirectionEstimator()"><!-- --></A><H3>
+getDirectionEstimator</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A> <B>getDirectionEstimator</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html#getDirectionEstimator()">HasDirectionEstimator</A></CODE></B></DD>
+<DD>Returns the <code>DirectionEstimator</code> object.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html#getDirectionEstimator()">getDirectionEstimator</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared">HasDirectionEstimator</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFormValue()"><!-- --></A><H3>
+getFormValue</H3>
+<PRE>
+public java.lang.String <B>getFormValue</B>()</PRE>
+<DL>
+<DD>Returns the value property of the input element that backs this widget.
+ This is the value that will be associated with the CheckBox name and
+ submitted to the server if a <A HREF="../../../../../../com/google/gwt/user/client/ui/FormPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>FormPanel</CODE></A> that holds it is submitted
+ and the box is checked.
+ <p>
+ Don't confuse this with <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getValue()"><CODE>getValue()</CODE></A>, which returns true or false if
+ the widget is checked.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHTML()"><!-- --></A><H3>
+getHTML</H3>
+<PRE>
+public java.lang.String <B>getHTML</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html#getHTML()">HasHTML</A></CODE></B></DD>
+<DD>Gets this object's contents as HTML.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html#getHTML()">getHTML</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html" title="interface in com.google.gwt.user.client.ui">HasHTML</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html#getHTML()">getHTML</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">ButtonBase</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's HTML</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getName()"><!-- --></A><H3>
+getName</H3>
+<PRE>
+public java.lang.String <B>getName</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html#getName()">HasName</A></CODE></B></DD>
+<DD>Gets the widget's name.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html#getName()">getName</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html" title="interface in com.google.gwt.user.client.ui">HasName</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the widget's name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTabIndex()"><!-- --></A><H3>
+getTabIndex</H3>
+<PRE>
+public int <B>getTabIndex</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#getTabIndex()">FocusWidget</A></CODE></B></DD>
+<DD>Gets the tab index.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#getTabIndex()">getTabIndex</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#getTabIndex()">getTabIndex</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the tab index</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getText()"><!-- --></A><H3>
+getText</H3>
+<PRE>
+public java.lang.String <B>getText</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html#getText()">HasText</A></CODE></B></DD>
+<DD>Gets this object's text.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html#getText()">getText</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html" title="interface in com.google.gwt.user.client.ui">HasText</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html#getText()">getText</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">ButtonBase</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's text</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTextDirection()"><!-- --></A><H3>
+getTextDirection</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A> <B>getTextDirection</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html#getTextDirection()">HasDirectionalText</A></CODE></B></DD>
+<DD>Gets the direction of this object's text.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html#getTextDirection()">getTextDirection</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html" title="interface in com.google.gwt.user.client.ui">HasDirectionalText</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the direction of this object's text</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getValue()"><!-- --></A><H3>
+getValue</H3>
+<PRE>
+public java.lang.Boolean <B>getValue</B>()</PRE>
+<DL>
+<DD>Determines whether this check box is currently checked.
+ <p>
+ Note that this <em>does not</em> return the value property of the checkbox
+ input element wrapped by this widget. For access to that property, see
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getFormValue()"><CODE>getFormValue()</CODE></A>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html#getValue()">getValue</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html" title="interface in com.google.gwt.user.client">TakesValue</A>&lt;java.lang.Boolean&gt;</CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html#getValue()">getValue</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html" title="interface in com.google.gwt.user.client.ui">HasValue</A>&lt;java.lang.Boolean&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the check box is checked, false otherwise.
+         Will not return null<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html#setValue(V)"><CODE>TakesValue.setValue(V)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWordWrap()"><!-- --></A><H3>
+getWordWrap</H3>
+<PRE>
+public boolean <B>getWordWrap</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html#getWordWrap()">HasWordWrap</A></CODE></B></DD>
+<DD>Gets whether word-wrapping is enabled.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html#getWordWrap()">getWordWrap</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html" title="interface in com.google.gwt.user.client.ui">HasWordWrap</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if word-wrapping is enabled.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isChecked()"><!-- --></A><H3>
+isChecked</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public boolean <B>isChecked</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#getValue()"><CODE>getValue()</CODE></A> instead</I>
+<P>
+<DD>Determines whether this check box is currently checked.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the check box is checked</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isEnabled()"><!-- --></A><H3>
+isEnabled</H3>
+<PRE>
+public boolean <B>isEnabled</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#isEnabled()">FocusWidget</A></CODE></B></DD>
+<DD>Gets whether this widget is enabled.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasEnabled.html#isEnabled()">isEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasEnabled.html" title="interface in com.google.gwt.user.client.ui">HasEnabled</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#isEnabled()">isEnabled</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the widget is enabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAccessKey(char)"><!-- --></A><H3>
+setAccessKey</H3>
+<PRE>
+public void <B>setAccessKey</B>(char&nbsp;key)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setAccessKey(char)">Focusable</A></CODE></B></DD>
+<DD>Sets the widget's 'access key'. This key is used (in conjunction with a
+ browser-specific modifier key) to automatically focus the widget.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setAccessKey(char)">setAccessKey</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#setAccessKey(char)">setAccessKey</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the widget's access key</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setChecked(boolean)"><!-- --></A><H3>
+setChecked</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>setChecked</B>(boolean&nbsp;checked)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setValue(java.lang.Boolean)"><CODE>setValue(Boolean)</CODE></A> instead</I>
+<P>
+<DD>Checks or unchecks this check box. Does not fire <A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A>.
+ (If you want the event to fire, use <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setValue(java.lang.Boolean, boolean)"><CODE>setValue(Boolean, boolean)</CODE></A>)
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>checked</CODE> - <code>true</code> to check the check box.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDirectionEstimator(boolean)"><!-- --></A><H3>
+setDirectionEstimator</H3>
+<PRE>
+public void <B>setDirectionEstimator</B>(boolean&nbsp;enabled)</PRE>
+<DL>
+<DD>Toggles on / off direction estimation.
+ <p>
+ See note at <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setDirectionEstimator(com.google.gwt.i18n.shared.DirectionEstimator)"><CODE>setDirectionEstimator(DirectionEstimator)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html#setDirectionEstimator(boolean)">setDirectionEstimator</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared">HasDirectionEstimator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enabled</CODE> - Whether to enable direction estimation. If <code>true</code>,
+          sets the <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><CODE>DirectionEstimator</CODE></A> object to a default
+          <code>DirectionEstimator</code>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDirectionEstimator(com.google.gwt.i18n.shared.DirectionEstimator)"><!-- --></A><H3>
+setDirectionEstimator</H3>
+<PRE>
+public void <B>setDirectionEstimator</B>(<A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared">DirectionEstimator</A>&nbsp;directionEstimator)</PRE>
+<DL>
+<DD>Sets the <A HREF="../../../../../../com/google/gwt/i18n/shared/DirectionEstimator.html" title="class in com.google.gwt.i18n.shared"><CODE>DirectionEstimator</CODE></A> object.
+ <p>
+ Note: DirectionEstimator should be set before the label has any content;
+ it's highly recommended to set it using a constructor. Reason: if the
+ label already has non-empty content, this will update its direction
+ according to the new estimator's result. This may cause flicker, and thus
+ should be avoided.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html#setDirectionEstimator(com.google.gwt.i18n.shared.DirectionEstimator)">setDirectionEstimator</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/i18n/shared/HasDirectionEstimator.html" title="interface in com.google.gwt.i18n.shared">HasDirectionEstimator</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>directionEstimator</CODE> - The <code>DirectionEstimator</code> to be set. <code>null</code> means turning off direction estimation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEnabled(boolean)"><!-- --></A><H3>
+setEnabled</H3>
+<PRE>
+public void <B>setEnabled</B>(boolean&nbsp;enabled)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#setEnabled(boolean)">FocusWidget</A></CODE></B></DD>
+<DD>Sets whether this widget is enabled.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasEnabled.html#setEnabled(boolean)">setEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasEnabled.html" title="interface in com.google.gwt.user.client.ui">HasEnabled</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#setEnabled(boolean)">setEnabled</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enabled</CODE> - <code>true</code> to enable the widget, <code>false</code>
+          to disable it</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFocus(boolean)"><!-- --></A><H3>
+setFocus</H3>
+<PRE>
+public void <B>setFocus</B>(boolean&nbsp;focused)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setFocus(boolean)">Focusable</A></CODE></B></DD>
+<DD>Explicitly focus/unfocus this widget. Only one widget can have focus at a
+ time, and the widget that does will receive all keyboard events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setFocus(boolean)">setFocus</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#setFocus(boolean)">setFocus</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>focused</CODE> - whether this widget should take focus or release it</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFormValue(java.lang.String)"><!-- --></A><H3>
+setFormValue</H3>
+<PRE>
+public void <B>setFormValue</B>(java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Set the value property on the input element that backs this widget. This is
+ the value that will be associated with the CheckBox's name and submitted to
+ the server if a <A HREF="../../../../../../com/google/gwt/user/client/ui/FormPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>FormPanel</CODE></A> that holds it is submitted and the box is
+ checked.
+ <p>
+ Don't confuse this with <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setValue(java.lang.Boolean)"><CODE>setValue(java.lang.Boolean)</CODE></A>, which actually checks and
+ unchecks the box.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHTML(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+setHTML</H3>
+<PRE>
+public void <B>setHTML</B>(<A HREF="../../../../../../com/google/gwt/safehtml/shared/SafeHtml.html" title="interface in com.google.gwt.safehtml.shared">SafeHtml</A>&nbsp;html,
+                    <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalSafeHtml.html#setHTML(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.client.HasDirection.Direction)">HasDirectionalSafeHtml</A></CODE></B></DD>
+<DD>Sets this object's html, also declaring its direction.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalSafeHtml.html#setHTML(com.google.gwt.safehtml.shared.SafeHtml, com.google.gwt.i18n.client.HasDirection.Direction)">setHTML</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalSafeHtml.html" title="interface in com.google.gwt.user.client.ui">HasDirectionalSafeHtml</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - the object's new html<DD><CODE>dir</CODE> - the html's direction</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHTML(java.lang.String)"><!-- --></A><H3>
+setHTML</H3>
+<PRE>
+public void <B>setHTML</B>(java.lang.String&nbsp;html)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html#setHTML(java.lang.String)">HasHTML</A></CODE></B></DD>
+<DD>Sets this object's contents via HTML. Use care when setting an object's
+ HTML; it is an easy way to expose script-based security problems. Consider
+ using <A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html#setText(java.lang.String)"><CODE>HasText.setText(String)</CODE></A> whenever possible.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html#setHTML(java.lang.String)">setHTML</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHTML.html" title="interface in com.google.gwt.user.client.ui">HasHTML</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html#setHTML(java.lang.String)">setHTML</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">ButtonBase</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - the object's new HTML</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setName(java.lang.String)"><!-- --></A><H3>
+setName</H3>
+<PRE>
+public void <B>setName</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html#setName(java.lang.String)">HasName</A></CODE></B></DD>
+<DD>Sets the widget's name.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html#setName(java.lang.String)">setName</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasName.html" title="interface in com.google.gwt.user.client.ui">HasName</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - the widget's new name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTabIndex(int)"><!-- --></A><H3>
+setTabIndex</H3>
+<PRE>
+public void <B>setTabIndex</B>(int&nbsp;index)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setTabIndex(int)">Focusable</A></CODE></B></DD>
+<DD>Sets the widget's position in the tab index. If more than one widget has
+ the same tab index, each such widget will receive focus in an arbitrary
+ order. Setting the tab index to <code>-1</code> will cause this widget to
+ be removed from the tab order.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html#setTabIndex(int)">setTabIndex</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Focusable.html" title="interface in com.google.gwt.user.client.ui">Focusable</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html#setTabIndex(int)">setTabIndex</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/FocusWidget.html" title="class in com.google.gwt.user.client.ui">FocusWidget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - the widget's tab index</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setText(java.lang.String)"><!-- --></A><H3>
+setText</H3>
+<PRE>
+public void <B>setText</B>(java.lang.String&nbsp;text)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html#setText(java.lang.String)">HasText</A></CODE></B></DD>
+<DD>Sets this object's text.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html#setText(java.lang.String)">setText</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasText.html" title="interface in com.google.gwt.user.client.ui">HasText</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html#setText(java.lang.String)">setText</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ButtonBase.html" title="class in com.google.gwt.user.client.ui">ButtonBase</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the object's new text</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setText(java.lang.String, com.google.gwt.i18n.client.HasDirection.Direction)"><!-- --></A><H3>
+setText</H3>
+<PRE>
+public void <B>setText</B>(java.lang.String&nbsp;text,
+                    <A HREF="../../../../../../com/google/gwt/i18n/client/HasDirection.Direction.html" title="enum in com.google.gwt.i18n.client">HasDirection.Direction</A>&nbsp;dir)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html#setText(java.lang.String, com.google.gwt.i18n.client.HasDirection.Direction)">HasDirectionalText</A></CODE></B></DD>
+<DD>Sets this object's text, also declaring its direction.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html#setText(java.lang.String, com.google.gwt.i18n.client.HasDirection.Direction)">setText</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasDirectionalText.html" title="interface in com.google.gwt.user.client.ui">HasDirectionalText</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>text</CODE> - the object's new text<DD><CODE>dir</CODE> - the text's direction</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValue(java.lang.Boolean)"><!-- --></A><H3>
+setValue</H3>
+<PRE>
+public void <B>setValue</B>(java.lang.Boolean&nbsp;value)</PRE>
+<DL>
+<DD>Checks or unchecks the check box.
+ <p>
+ Note that this <em>does not</em> set the value property of the checkbox
+ input element wrapped by this widget. For access to that property, see
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setFormValue(java.lang.String)"><CODE>setFormValue(String)</CODE></A>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html#setValue(V)">setValue</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html" title="interface in com.google.gwt.user.client">TakesValue</A>&lt;java.lang.Boolean&gt;</CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html#setValue(T)">setValue</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html" title="interface in com.google.gwt.user.client.ui">HasValue</A>&lt;java.lang.Boolean&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - true to check, false to uncheck; null value implies false<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/TakesValue.html#getValue()"><CODE>TakesValue.getValue()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValue(java.lang.Boolean, boolean)"><!-- --></A><H3>
+setValue</H3>
+<PRE>
+public void <B>setValue</B>(java.lang.Boolean&nbsp;value,
+                     boolean&nbsp;fireEvents)</PRE>
+<DL>
+<DD>Checks or unchecks the check box, firing <A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A> if
+ appropriate.
+ <p>
+ Note that this <em>does not</em> set the value property of the checkbox
+ input element wrapped by this widget. For access to that property, see
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/CheckBox.html#setFormValue(java.lang.String)"><CODE>setFormValue(String)</CODE></A>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html#setValue(T, boolean)">setValue</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasValue.html" title="interface in com.google.gwt.user.client.ui">HasValue</A>&lt;java.lang.Boolean&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - true to check, false to uncheck; null value implies false<DD><CODE>fireEvents</CODE> - If true, and value has changed, fire a
+          <A HREF="../../../../../../com/google/gwt/event/logical/shared/ValueChangeEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>ValueChangeEvent</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setWordWrap(boolean)"><!-- --></A><H3>
+setWordWrap</H3>
+<PRE>
+public void <B>setWordWrap</B>(boolean&nbsp;wrap)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html#setWordWrap(boolean)">HasWordWrap</A></CODE></B></DD>
+<DD>Sets whether word-wrapping is enabled.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html#setWordWrap(boolean)">setWordWrap</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWordWrap.html" title="interface in com.google.gwt.user.client.ui">HasWordWrap</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>wrap</CODE> - <code>true</code> to enable word-wrapping.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sinkEvents(int)"><!-- --></A><H3>
+sinkEvents</H3>
+<PRE>
+public void <B>sinkEvents</B>(int&nbsp;eventBitsToAdd)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">Widget</A></CODE></B></DD>
+<DD>Overridden to defer the call to super.sinkEvents until the first time this
+ widget is attached to the dom, as a performance enhancement. Subclasses
+ wishing to customize sinkEvents can preserve this deferred sink behavior by
+ putting their implementation behind a check of
+ <code>isOrWasAttached()</code>:
+
+ <pre>
+ @Override
+ public void sinkEvents(int eventBitsToAdd) {
+   if (isOrWasAttached()) {
+     /* customized sink code goes here */
+   } else {
+     super.sinkEvents(eventBitsToAdd);
+  }
+} </pre>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">sinkEvents</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>eventBitsToAdd</CODE> - a bitfield representing the set of events to be added
+          to this element's event set<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client"><CODE>Event</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ensureDomEventHandlers()"><!-- --></A><H3>
+ensureDomEventHandlers</H3>
+<PRE>
+protected void <B>ensureDomEventHandlers</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEnsureDebugId(java.lang.String)"><!-- --></A><H3>
+onEnsureDebugId</H3>
+<PRE>
+protected void <B>onEnsureDebugId</B>(java.lang.String&nbsp;baseID)</PRE>
+<DL>
+<DD><b>Affected Elements:</b>
+ <ul>
+ <li>-label = label next to checkbox.</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseID</CODE> - the base ID used by the main element<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)"><CODE>UIObject.onEnsureDebugId(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onLoad()"><!-- --></A><H3>
+onLoad</H3>
+<PRE>
+protected void <B>onLoad</B>()</PRE>
+<DL>
+<DD>This method is called when a widget is attached to the browser's document.
+ onAttach needs special handling for the CheckBox case. Must still call
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()"><CODE>Widget.onAttach()</CODE></A> to preserve the <code>onAttach</code> contract.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">onLoad</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onUnload()"><!-- --></A><H3>
+onUnload</H3>
+<PRE>
+protected void <B>onUnload</B>()</PRE>
+<DL>
+<DD>This method is called when a widget is detached from the browser's
+ document. Overridden because of IE bug that throws away checked state and
+ in order to clear the event listener off of the <code>inputElem</code>.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()">onUnload</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceInputElement(com.google.gwt.user.client.Element)"><!-- --></A><H3>
+replaceInputElement</H3>
+<PRE>
+protected void <B>replaceInputElement</B>(<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Replace the current input element with a new one. Preserves all state
+ except for the name property, for nasty reasons related to radio button
+ grouping. (See implementation of <A HREF="../../../../../../com/google/gwt/user/client/ui/RadioButton.html#setName(java.lang.String)"><CODE>RadioButton.setName(java.lang.String)</CODE></A>.)
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the new input element</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/CheckBox.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/ChangeListenerCollection.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/ClickListener.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/CheckBox.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CheckBox.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

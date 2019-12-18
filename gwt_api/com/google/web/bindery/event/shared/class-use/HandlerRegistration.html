@@ -1,0 +1,588 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Uses of Interface com.google.web.bindery.event.shared.HandlerRegistration (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface com.google.web.bindery.event.shared.HandlerRegistration (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?com/google/web/bindery/event/shared//class-useHandlerRegistration.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="HandlerRegistration.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>com.google.web.bindery.event.shared.HandlerRegistration</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.event.shared"><B>com.google.gwt.event.shared</B></A></TD>
+<TD>Shared infrastructure underlying both browser and non-browser events.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.gwt.event.shared.testing"><B>com.google.gwt.event.shared.testing</B></A></TD>
+<TD>Classes used for testing the GWT event bus.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.web.bindery.event.shared"><B>com.google.web.bindery.event.shared</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.web.bindery.event.shared.testing"><B>com.google.web.bindery.event.shared.testing</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#com.google.web.bindery.requestfactory.shared"><B>com.google.web.bindery.requestfactory.shared</B></A></TD>
+<TD>Shared classes used on both the client and the server side for transmitting data between the
+ server and the client in JSON format.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.event.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A> in <A HREF="../../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subinterfaces of <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A> in <A HREF="../../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extends {com.google.bindery.event.shared.HandlerRegistration} for legacy
+ compatibility.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A> that implement <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../com/google/gwt/event/shared/DefaultHandlerRegistration.html" title="class in com.google.gwt.event.shared">DefaultHandlerRegistration</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>with no replacement; this class is no longer used by any GWT code</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A> that return <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/EventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ResettableEventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/ResettableEventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>SimpleEventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/SimpleEventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/EventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ResettableEventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/ResettableEventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>SimpleEventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/SimpleEventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../com/google/gwt/event/shared/package-summary.html">com.google.gwt.event.shared</A> with parameters of type <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/EventBus.html#wrap(com.google.web.bindery.event.shared.HandlerRegistration)">wrap</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A>&nbsp;reg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.gwt.event.shared.testing"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A> in <A HREF="../../../../../../../com/google/gwt/event/shared/testing/package-summary.html">com.google.gwt.event.shared.testing</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../com/google/gwt/event/shared/testing/package-summary.html">com.google.gwt.event.shared.testing</A> that return <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/testing/CountingEventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../../com/google/gwt/event/shared/testing/CountingEventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.web.bindery.event.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A> in <A HREF="../../../../../../../com/google/web/bindery/event/shared/package-summary.html">com.google.web.bindery.event.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../com/google/web/bindery/event/shared/package-summary.html">com.google.web.bindery.event.shared</A> that return <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/EventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds an unfiltered handler to receive events of this type from all sources.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ResettableEventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/ResettableEventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>SimpleEventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/SimpleEventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/EventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a handler to receive events of this type from the given source.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>ResettableEventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/ResettableEventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>SimpleEventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/SimpleEventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.web.bindery.event.shared.testing"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A> in <A HREF="../../../../../../../com/google/web/bindery/event/shared/testing/package-summary.html">com.google.web.bindery.event.shared.testing</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../com/google/web/bindery/event/shared/testing/package-summary.html">com.google.web.bindery.event.shared.testing</A> that return <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/testing/CountingEventBus.html#addHandler(com.google.web.bindery.event.shared.Event.Type, H)">addHandler</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+           H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;H&gt; <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>CountingEventBus.</B><B><A HREF="../../../../../../../com/google/web/bindery/event/shared/testing/CountingEventBus.html#addHandlerToSource(com.google.web.bindery.event.shared.Event.Type, java.lang.Object, H)">addHandlerToSource</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared">Event.Type</A>&lt;H&gt;&nbsp;type,
+                   java.lang.Object&nbsp;source,
+                   H&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="com.google.web.bindery.requestfactory.shared"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A> in <A HREF="../../../../../../../com/google/web/bindery/requestfactory/shared/package-summary.html">com.google.web.bindery.requestfactory.shared</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../com/google/web/bindery/requestfactory/shared/package-summary.html">com.google.web.bindery.requestfactory.shared</A> that return <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;P extends <A HREF="../../../../../../../com/google/web/bindery/requestfactory/shared/EntityProxy.html" title="interface in com.google.web.bindery.requestfactory.shared">EntityProxy</A>&gt; 
+<BR>
+<A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>EntityProxyChange.</B><B><A HREF="../../../../../../../com/google/web/bindery/requestfactory/shared/EntityProxyChange.html#registerForProxyType(com.google.web.bindery.event.shared.EventBus, java.lang.Class, com.google.web.bindery.requestfactory.shared.EntityProxyChange.Handler)">registerForProxyType</A></B>(<A HREF="../../../../../../../com/google/web/bindery/event/shared/EventBus.html" title="class in com.google.web.bindery.event.shared">EventBus</A>&nbsp;eventBus,
+                     java.lang.Class&lt;P&gt;&nbsp;proxyType,
+                     <A HREF="../../../../../../../com/google/web/bindery/requestfactory/shared/EntityProxyChange.Handler.html" title="interface in com.google.web.bindery.requestfactory.shared">EntityProxyChange.Handler</A>&lt;P&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register a handler for a EntityProxyChange events for a particular proxy
+ class.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html" title="interface in com.google.web.bindery.event.shared"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?com/google/web/bindery/event/shared//class-useHandlerRegistration.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="HandlerRegistration.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

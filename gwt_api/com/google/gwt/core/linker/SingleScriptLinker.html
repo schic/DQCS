@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+SingleScriptLinker (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SingleScriptLinker (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SingleScriptLinker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/IFrameLinker.html" title="class in com.google.gwt.core.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/SoycReportLinker.html" title="class in com.google.gwt.core.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/linker/SingleScriptLinker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SingleScriptLinker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.core.ext.linker.impl.SelectionScriptLinker">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.linker</FONT>
+<BR>
+Class SingleScriptLinker</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">com.google.gwt.core.ext.Linker</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html" title="class in com.google.gwt.core.ext.linker">com.google.gwt.core.ext.linker.AbstractLinker</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by ">com.google.gwt.core.ext.linker.impl.SelectionScriptLinker
+              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.linker.SingleScriptLinker</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE><FONT SIZE="-1"><A HREF="../../../../../com/google/gwt/core/ext/linker/LinkerOrder.html" title="annotation in com.google.gwt.core.ext.linker">@LinkerOrder</A>(<A HREF="../../../../../com/google/gwt/core/ext/linker/LinkerOrder.html#value()">value</A>=<A HREF="../../../../../com/google/gwt/core/ext/linker/LinkerOrder.Order.html#PRIMARY">PRIMARY</A>)
+<A HREF="../../../../../com/google/gwt/core/ext/linker/Shardable.html" title="annotation in com.google.gwt.core.ext.linker">@Shardable</A>
+</FONT>public class <B>SingleScriptLinker</B><DT>extends com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</DL>
+</PRE>
+
+<P>
+A Linker for producing a single JavaScript file from a GWT module. The use of
+ this Linker requires that the module has exactly one distinct compilation
+ result.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.core.ext.linker.impl.SelectionScriptLinker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>COMPUTE_SCRIPT_BASE_JS, FRAGMENT_EXTENSION, FRAGMENT_SUBDIR, permutationsUtil, PROCESS_METAS_JS</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#SingleScriptLinker()">SingleScriptLinker</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.util.Collection&lt;<A HREF="../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#doEmitCompilation(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.CompilationResult, com.google.gwt.core.ext.linker.ArtifactSet)">doEmitCompilation</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                  <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                  <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;result,
+                  <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#emitSelectionScript(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">emitSelectionScript</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                    <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                    <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#getCompilationExtension(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext)">getCompilationExtension</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                        <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unimplemented.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#getDescription()">getDescription</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a human-readable String describing the Linker.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#getModulePrefix(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, java.lang.String)">getModulePrefix</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                java.lang.String&nbsp;strongName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unimplemented.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#getModuleSuffix(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext)">getModuleSuffix</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unimplemented.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#getSelectionScriptTemplate(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext)">getSelectionScriptTemplate</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                           <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/linker/SingleScriptLinker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)">link</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+     <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+     <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts,
+     boolean&nbsp;onePermutation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ This method is invoked for linkers annotated with <A HREF="../../../../../com/google/gwt/core/ext/linker/Shardable.html" title="annotation in com.google.gwt.core.ext.linker"><CODE>Shardable</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.linker.impl.SelectionScriptLinker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>fillSelectionScriptTemplate, generateDeferredFragment, generatePrimaryFragment, generatePrimaryFragmentString, generateSelectionScript, generateSelectionScript, getHostedFilename, getModulePrefix, link, maybeAddHostedModeFile, maybeOutputPropertyMap, readFileToStringBuffer, replaceAll, supportsDevModeInJunit, wrapPrimaryFragment</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.linker.AbstractLinker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.linker.<A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html" title="class in com.google.gwt.core.ext.linker">AbstractLinker</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String)">emitBytes</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, long)">emitBytes</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String)">emitInputStream</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String, long)">emitInputStream</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)">emitString</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String, long)">emitString</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String)">emitWithStrongName</A>, <A HREF="../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String, long)">emitWithStrongName</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.Linker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.<A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#isShardable()">isShardable</A>, <A HREF="../../../../../com/google/gwt/core/ext/Linker.html#relink(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">relink</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SingleScriptLinker()"><!-- --></A><H3>
+SingleScriptLinker</H3>
+<PRE>
+public <B>SingleScriptLinker</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getDescription()"><!-- --></A><H3>
+getDescription</H3>
+<PRE>
+public java.lang.String <B>getDescription</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#getDescription()">Linker</A></CODE></B></DD>
+<DD>Returns a human-readable String describing the Linker.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#getDescription()">getDescription</A></CODE> in class <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)"><!-- --></A><H3>
+link</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A> <B>link</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                        <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                        <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts,
+                        boolean&nbsp;onePermutation)
+                 throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../com/google/gwt/core/ext/Linker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)">Linker</A></CODE></B></DD>
+<DD><p>
+ This method is invoked for linkers annotated with <A HREF="../../../../../com/google/gwt/core/ext/linker/Shardable.html" title="annotation in com.google.gwt.core.ext.linker"><CODE>Shardable</CODE></A>. It is
+ called at two points during compilation: after the compile of each
+ permutation, and after all compilation has finished. The
+ <code>onePermutation</code> is <code>true</code> for a per-permutation call
+ and <code>false</code> for a global final-link call.
+ 
+ <p>
+ For one-permutation calls, this method is passed all artifacts generated
+ for just the one permutation. For the global call at the end of
+ compilation, this method sees artifacts for the whole compilation, but with
+ two modifications intended to support builds on computer clusters:
+ <ol>
+ <li>All EmittedArtifacts have been converted to BinaryEmittedArtifacts
+ <li>All artifacts not marked as
+ <A HREF="../../../../../com/google/gwt/core/ext/linker/Transferable.html" title="annotation in com.google.gwt.core.ext.linker"><CODE>Transferable</CODE></A> have been discarded.
+ </ol>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>link</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - the TreeLogger to record to<DD><CODE>context</CODE> - provides access to the Linker's environment<DD><CODE>artifacts</CODE> - an unmodifiable view of the artifacts to link<DD><CODE>onePermutation</CODE> - true for a one-permutation call
+<DT><B>Returns:</B><DD>the artifacts that should be propagated through the linker chain
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE> - if compilation violates assumptions made
+           by the Linker or for errors encountered by the Linker</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doEmitCompilation(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.CompilationResult, com.google.gwt.core.ext.linker.ArtifactSet)"><!-- --></A><H3>
+doEmitCompilation</H3>
+<PRE>
+protected java.util.Collection&lt;<A HREF="../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt; <B>doEmitCompilation</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                              <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                                                              <A HREF="../../../../../com/google/gwt/core/ext/linker/CompilationResult.html" title="class in com.google.gwt.core.ext.linker">CompilationResult</A>&nbsp;result,
+                                                              <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts)
+                                                       throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>doEmitCompilation</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitSelectionScript(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)"><!-- --></A><H3>
+emitSelectionScript</H3>
+<PRE>
+protected <A HREF="../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A> <B>emitSelectionScript</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                              <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                                              <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker">ArtifactSet</A>&nbsp;artifacts)
+                                       throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>emitSelectionScript</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCompilationExtension(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext)"><!-- --></A><H3>
+getCompilationExtension</H3>
+<PRE>
+protected java.lang.String <B>getCompilationExtension</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                   <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context)
+                                            throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Unimplemented. Normally required by
+ <CODE>#doEmitCompilation(TreeLogger, LinkerContext, CompilationResult)</CODE>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getCompilationExtension</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getModulePrefix(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, java.lang.String)"><!-- --></A><H3>
+getModulePrefix</H3>
+<PRE>
+protected java.lang.String <B>getModulePrefix</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                           <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context,
+                                           java.lang.String&nbsp;strongName)
+                                    throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Unimplemented. Normally required by
+ <CODE>#doEmitCompilation(TreeLogger, LinkerContext, CompilationResult)</CODE>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getModulePrefix</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getModuleSuffix(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext)"><!-- --></A><H3>
+getModuleSuffix</H3>
+<PRE>
+protected java.lang.String <B>getModuleSuffix</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                           <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context)
+                                    throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Unimplemented. Normally required by
+ <CODE>#doEmitCompilation(TreeLogger, LinkerContext, CompilationResult)</CODE>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getModuleSuffix</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSelectionScriptTemplate(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext)"><!-- --></A><H3>
+getSelectionScriptTemplate</H3>
+<PRE>
+protected java.lang.String <B>getSelectionScriptTemplate</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                      <A HREF="../../../../../com/google/gwt/core/ext/LinkerContext.html" title="interface in com.google.gwt.core.ext">LinkerContext</A>&nbsp;context)
+                                               throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getSelectionScriptTemplate</CODE> in class <CODE>com.google.gwt.core.ext.linker.impl.SelectionScriptLinker</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SingleScriptLinker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/IFrameLinker.html" title="class in com.google.gwt.core.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/linker/SoycReportLinker.html" title="class in com.google.gwt.core.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/linker/SingleScriptLinker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SingleScriptLinker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.core.ext.linker.impl.SelectionScriptLinker">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

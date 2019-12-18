@@ -1,0 +1,501 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Layout.Layer (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Layout.Layer (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Layout.Layer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/layout/client/Layout.AnimationCallback.html" title="interface in com.google.gwt.layout.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/layout/client/LayoutImplIE8.html" title="class in com.google.gwt.layout.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/layout/client/Layout.Layer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Layout.Layer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.layout.client</FONT>
+<BR>
+Class Layout.Layer</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.layout.client.Layout.Layer</B>
+</PRE>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../../com/google/gwt/layout/client/Layout.html" title="class in com.google.gwt.layout.client">Layout</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>Layout.Layer</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+This class is used to set the position and size of child elements.
+ 
+ <p>
+ Each child element has three values associated with each axis: {left,
+ right, width} on the horizontal axis, and {top, bottom, height} on the
+ vertical axis. Precisely two of three values may be set at a time, or the
+ system will be over- or under-contrained. For this reason, the following
+ methods are provided for setting these values:
+ <ul>
+ <li><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setLeftRight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><CODE>setLeftRight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)</CODE></A></li>
+ <li><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setLeftWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><CODE>setLeftWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)</CODE></A></li>
+ <li><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setRightWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><CODE>setRightWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)</CODE></A></li>
+ <li><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setTopBottom(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><CODE>setTopBottom(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)</CODE></A></li>
+ <li><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setTopHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><CODE>setTopHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)</CODE></A></li>
+ <li><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setBottomHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><CODE>setBottomHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)</CODE></A></li>
+ </ul>
+ </p>
+ 
+ <p>
+ By default, each layer is set to fill the entire parent (i.e., {left, top,
+ right, bottom} = {0, 0, 0, 0}).
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#getContainerElement()">getContainerElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the container element associated with this layer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Object</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#getUserObject()">getUserObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the user-data associated with this layer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setBottomHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)">setBottomHeight</A></B>(double&nbsp;bottom,
+                <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;bottomUnit,
+                double&nbsp;height,
+                <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;heightUnit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's bottom and height values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setChildHorizontalPosition(com.google.gwt.layout.client.Layout.Alignment)">setChildHorizontalPosition</A></B>(<A HREF="../../../../../com/google/gwt/layout/client/Layout.Alignment.html" title="enum in com.google.gwt.layout.client">Layout.Alignment</A>&nbsp;position)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the child element's horizontal position within the layer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setChildVerticalPosition(com.google.gwt.layout.client.Layout.Alignment)">setChildVerticalPosition</A></B>(<A HREF="../../../../../com/google/gwt/layout/client/Layout.Alignment.html" title="enum in com.google.gwt.layout.client">Layout.Alignment</A>&nbsp;position)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the child element's vertical position within the layer.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setLeftRight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)">setLeftRight</A></B>(double&nbsp;left,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;leftUnit,
+             double&nbsp;right,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;rightUnit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's left and right values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setLeftWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)">setLeftWidth</A></B>(double&nbsp;left,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;leftUnit,
+             double&nbsp;width,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;widthUnit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's left and width values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setRightWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)">setRightWidth</A></B>(double&nbsp;right,
+              <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;rightUnit,
+              double&nbsp;width,
+              <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;widthUnit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's right and width values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setTopBottom(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)">setTopBottom</A></B>(double&nbsp;top,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;topUnit,
+             double&nbsp;bottom,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;bottomUnit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's top and bottom values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setTopHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)">setTopHeight</A></B>(double&nbsp;top,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;topUnit,
+             double&nbsp;height,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;heightUnit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's top and height values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/layout/client/Layout.Layer.html#setVisible(boolean)">setVisible</A></B>(boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the layer's visibility.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getContainerElement()"><!-- --></A><H3>
+getContainerElement</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getContainerElement</B>()</PRE>
+<DL>
+<DD>Gets the container element associated with this layer.
+ 
+ <p>
+ This is the element that sits between the parent and child elements. It
+ is normally necessary to operate on this element only when you need to
+ modify CSS properties that are not directly modeled by the Layer class.
+ </p>
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the container element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUserObject()"><!-- --></A><H3>
+getUserObject</H3>
+<PRE>
+public java.lang.Object <B>getUserObject</B>()</PRE>
+<DL>
+<DD>Gets the user-data associated with this layer.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the layer's user-data object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBottomHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setBottomHeight</H3>
+<PRE>
+public void <B>setBottomHeight</B>(double&nbsp;bottom,
+                            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;bottomUnit,
+                            double&nbsp;height,
+                            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;heightUnit)</PRE>
+<DL>
+<DD>Sets the layer's bottom and height values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>bottom</CODE> - <DD><CODE>bottomUnit</CODE> - <DD><CODE>height</CODE> - <DD><CODE>heightUnit</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setChildHorizontalPosition(com.google.gwt.layout.client.Layout.Alignment)"><!-- --></A><H3>
+setChildHorizontalPosition</H3>
+<PRE>
+public void <B>setChildHorizontalPosition</B>(<A HREF="../../../../../com/google/gwt/layout/client/Layout.Alignment.html" title="enum in com.google.gwt.layout.client">Layout.Alignment</A>&nbsp;position)</PRE>
+<DL>
+<DD>Sets the child element's horizontal position within the layer.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>position</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setChildVerticalPosition(com.google.gwt.layout.client.Layout.Alignment)"><!-- --></A><H3>
+setChildVerticalPosition</H3>
+<PRE>
+public void <B>setChildVerticalPosition</B>(<A HREF="../../../../../com/google/gwt/layout/client/Layout.Alignment.html" title="enum in com.google.gwt.layout.client">Layout.Alignment</A>&nbsp;position)</PRE>
+<DL>
+<DD>Sets the child element's vertical position within the layer.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>position</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLeftRight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setLeftRight</H3>
+<PRE>
+public void <B>setLeftRight</B>(double&nbsp;left,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;leftUnit,
+                         double&nbsp;right,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;rightUnit)</PRE>
+<DL>
+<DD>Sets the layer's left and right values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>left</CODE> - <DD><CODE>leftUnit</CODE> - <DD><CODE>right</CODE> - <DD><CODE>rightUnit</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLeftWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setLeftWidth</H3>
+<PRE>
+public void <B>setLeftWidth</B>(double&nbsp;left,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;leftUnit,
+                         double&nbsp;width,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;widthUnit)</PRE>
+<DL>
+<DD>Sets the layer's left and width values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>left</CODE> - <DD><CODE>leftUnit</CODE> - <DD><CODE>width</CODE> - <DD><CODE>widthUnit</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRightWidth(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setRightWidth</H3>
+<PRE>
+public void <B>setRightWidth</B>(double&nbsp;right,
+                          <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;rightUnit,
+                          double&nbsp;width,
+                          <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;widthUnit)</PRE>
+<DL>
+<DD>Sets the layer's right and width values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>right</CODE> - <DD><CODE>rightUnit</CODE> - <DD><CODE>width</CODE> - <DD><CODE>widthUnit</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTopBottom(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setTopBottom</H3>
+<PRE>
+public void <B>setTopBottom</B>(double&nbsp;top,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;topUnit,
+                         double&nbsp;bottom,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;bottomUnit)</PRE>
+<DL>
+<DD>Sets the layer's top and bottom values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>top</CODE> - <DD><CODE>topUnit</CODE> - <DD><CODE>bottom</CODE> - <DD><CODE>bottomUnit</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTopHeight(double, com.google.gwt.dom.client.Style.Unit, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setTopHeight</H3>
+<PRE>
+public void <B>setTopHeight</B>(double&nbsp;top,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;topUnit,
+                         double&nbsp;height,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;heightUnit)</PRE>
+<DL>
+<DD>Sets the layer's top and height values.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>top</CODE> - <DD><CODE>topUnit</CODE> - <DD><CODE>height</CODE> - <DD><CODE>heightUnit</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVisible(boolean)"><!-- --></A><H3>
+setVisible</H3>
+<PRE>
+public void <B>setVisible</B>(boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Sets the layer's visibility.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visible</CODE> - </DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Layout.Layer.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/layout/client/Layout.AnimationCallback.html" title="interface in com.google.gwt.layout.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/layout/client/LayoutImplIE8.html" title="class in com.google.gwt.layout.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/layout/client/Layout.Layer.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Layout.Layer.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

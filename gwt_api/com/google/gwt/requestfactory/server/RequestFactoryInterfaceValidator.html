@@ -1,0 +1,538 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+RequestFactoryInterfaceValidator (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RequestFactoryInterfaceValidator (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RequestFactoryInterfaceValidator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/requestfactory/server/Logging.html" title="class in com.google.gwt.requestfactory.server"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.ClassLoaderLoader.html" title="class in com.google.gwt.requestfactory.server"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RequestFactoryInterfaceValidator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.requestfactory.server</FONT>
+<BR>
+Class RequestFactoryInterfaceValidator</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.requestfactory.server.RequestFactoryInterfaceValidator</B>
+</PRE>
+<HR>
+<B>Deprecated.</B>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1">@Deprecated
+</FONT>public class <B>RequestFactoryInterfaceValidator</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Encapsulates validation logic to determine if a <A HREF="../../../../../com/google/gwt/requestfactory/shared/RequestFactory.html" title="interface in com.google.gwt.requestfactory.shared"><CODE>RequestFactory</CODE></A>
+ interface, its <A HREF="../../../../../com/google/gwt/requestfactory/shared/RequestContext.html" title="interface in com.google.gwt.requestfactory.shared"><CODE>RequestContext</CODE></A>, and associated <A HREF="../../../../../com/google/gwt/requestfactory/shared/EntityProxy.html" title="interface in com.google.gwt.requestfactory.shared"><CODE>EntityProxy</CODE></A>
+ interfaces match their domain counterparts. This implementation examines the
+ classfiles directly in order to avoid the need to load the types into the
+ JVM.
+ <p>
+ This class is amenable to being used as a unit test:
+
+ <pre>
+ public void testRequestFactory() {
+   Logger logger = Logger.getLogger("");
+   RequestFactoryInterfaceValidator v = new RequestFactoryInterfaceValidator(
+     logger, new ClassLoaderLoader(MyRequestContext.class.getClassLoader()));
+   v.validateRequestContext(MyRequestContext.class.getName());
+   assertFalse(v.isPoisoned());
+ }
+ </pre>
+ This class also has a <code>main</code> method and can be used as a build-time
+ tool:
+
+ <pre>
+ java -cp gwt-servlet.jar:your-code.jar \
+   com.google.gwt.requestfactory.server.RequestFactoryInterfaceValidator \
+   com.example.MyRequestFactory
+ </pre>
+
+ <p><span style='color:red'>RequestFactory has moved to
+ <code>com.google.web.bindery.requestfactory</code>.  This package will be
+ removed in a future version of GWT.</span></p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.ClassLoaderLoader.html" title="class in com.google.gwt.requestfactory.server">RequestFactoryInterfaceValidator.ClassLoaderLoader</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.Loader.html" title="interface in com.google.gwt.requestfactory.server">RequestFactoryInterfaceValidator.Loader</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#RequestFactoryInterfaceValidator(java.util.logging.Logger, com.google.gwt.requestfactory.server.RequestFactoryInterfaceValidator.Loader)">RequestFactoryInterfaceValidator</A></B>(java.util.logging.Logger&nbsp;logger,
+                                 <A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.Loader.html" title="interface in com.google.gwt.requestfactory.server">RequestFactoryInterfaceValidator.Loader</A>&nbsp;loader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#antidote()">antidote</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Reset the poisoned status of the validator so that it may be reused without
+ destroying cached state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#isPoisoned()">isPoisoned</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Returns true if validation failed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#main(java.lang.String[])">main</A></B>(java.lang.String[]&nbsp;args)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateEntityProxy(java.lang.String)">validateEntityProxy</A></B>(java.lang.String&nbsp;binaryName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;This method checks an EntityProxy interface against its peer domain object
+ to determine if the server code would be able to process a request using
+ the methods defined in the EntityProxy interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateProxy(java.lang.String)">validateProxy</A></B>(java.lang.String&nbsp;binaryName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;Determine if the specified type implements a proxy interface and apply the
+ appropriate validations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateRequestContext(java.lang.String)">validateRequestContext</A></B>(java.lang.String&nbsp;binaryName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;This method checks a RequestContext interface against its peer domain
+ domain object to determine if the server code would be able to process a
+ request using the the methods defined in the RequestContext interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateRequestFactory(java.lang.String)">validateRequestFactory</A></B>(java.lang.String&nbsp;binaryName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;This method checks a RequestFactory interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateValueProxy(java.lang.String)">validateValueProxy</A></B>(java.lang.String&nbsp;binaryName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;This method checks a ValueProxy interface against its peer domain object to
+ determine if the server code would be able to process a request using the
+ methods defined in the ValueProxy interface.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="RequestFactoryInterfaceValidator(java.util.logging.Logger, com.google.gwt.requestfactory.server.RequestFactoryInterfaceValidator.Loader)"><!-- --></A><H3>
+RequestFactoryInterfaceValidator</H3>
+<PRE>
+public <B>RequestFactoryInterfaceValidator</B>(java.util.logging.Logger&nbsp;logger,
+                                        <A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.Loader.html" title="interface in com.google.gwt.requestfactory.server">RequestFactoryInterfaceValidator.Loader</A>&nbsp;loader)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="main(java.lang.String[])"><!-- --></A><H3>
+main</H3>
+<PRE>
+public static void <B>main</B>(java.lang.String[]&nbsp;args)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="antidote()"><!-- --></A><H3>
+antidote</H3>
+<PRE>
+public void <B>antidote</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Reset the poisoned status of the validator so that it may be reused without
+ destroying cached state.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPoisoned()"><!-- --></A><H3>
+isPoisoned</H3>
+<PRE>
+public boolean <B>isPoisoned</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Returns true if validation failed.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateEntityProxy(java.lang.String)"><!-- --></A><H3>
+validateEntityProxy</H3>
+<PRE>
+public void <B>validateEntityProxy</B>(java.lang.String&nbsp;binaryName)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>This method checks an EntityProxy interface against its peer domain object
+ to determine if the server code would be able to process a request using
+ the methods defined in the EntityProxy interface. It does not perform any
+ checks as to whether or not the EntityProxy could actually be generated by
+ the Generator.
+ <p>
+ This method may be called repeatedly on a single instance of the validator.
+ Doing so will amortize type calculation costs.
+ <p>
+ Checks implemented:
+ <ul>
+ <li> <code>binaryName</code> implements EntityProxy</li>
+ <li><code>binaryName</code> has a <A HREF="../../../../../com/google/gwt/requestfactory/shared/ProxyFor.html" title="annotation in com.google.gwt.requestfactory.shared"><CODE>ProxyFor</CODE></A> or <A HREF="../../../../../com/google/gwt/requestfactory/shared/ProxyForName.html" title="annotation in com.google.gwt.requestfactory.shared"><CODE>ProxyForName</CODE></A>
+ annotation</li>
+ <li>The domain object has getId() and getVersion() methods</li>
+ <li>All property methods in the EntityProxy can be mapped onto an
+ equivalent domain method</li>
+ <li>All referenced proxy types are valid</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>binaryName</CODE> - the binary name (e.g. <CODE>Class.getName()</CODE>) of the
+          EntityProxy subtype</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateProxy(java.lang.String)"><!-- --></A><H3>
+validateProxy</H3>
+<PRE>
+public void <B>validateProxy</B>(java.lang.String&nbsp;binaryName)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>Determine if the specified type implements a proxy interface and apply the
+ appropriate validations. This can be used as a general-purpose entry method
+ when writing unit tests.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>binaryName</CODE> - the binary name (e.g. <CODE>Class.getName()</CODE>) of the
+          EntityProxy or ValueProxy subtype</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateRequestContext(java.lang.String)"><!-- --></A><H3>
+validateRequestContext</H3>
+<PRE>
+public void <B>validateRequestContext</B>(java.lang.String&nbsp;binaryName)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>This method checks a RequestContext interface against its peer domain
+ domain object to determine if the server code would be able to process a
+ request using the the methods defined in the RequestContext interface. It
+ does not perform any checks as to whether or not the RequestContext could
+ actually be generated by the Generator.
+ <p>
+ This method may be called repeatedly on a single instance of the validator.
+ Doing so will amortize type calculation costs.
+ <p>
+ Checks implemented:
+ <ul>
+ <li> <code>binaryName</code> implements RequestContext</li>
+ <li><code>binaryName</code> has a <A HREF="../../../../../com/google/gwt/requestfactory/shared/Service.html" title="annotation in com.google.gwt.requestfactory.shared"><CODE>Service</CODE></A> or <A HREF="../../../../../com/google/gwt/requestfactory/shared/ServiceName.html" title="annotation in com.google.gwt.requestfactory.shared"><CODE>ServiceName</CODE></A>
+ annotation</li>
+ <li>All service methods in the RequestContext can be mapped onto an
+ equivalent domain method</li>
+ <li>All referenced EntityProxy types are valid</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>binaryName</CODE> - the binary name (e.g. <CODE>Class.getName()</CODE>) of the
+          RequestContext subtype<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateEntityProxy(java.lang.String)"><CODE>validateEntityProxy(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateRequestFactory(java.lang.String)"><!-- --></A><H3>
+validateRequestFactory</H3>
+<PRE>
+public void <B>validateRequestFactory</B>(java.lang.String&nbsp;binaryName)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>This method checks a RequestFactory interface.
+ <p>
+ This method may be called repeatedly on a single instance of the validator.
+ Doing so will amortize type calculation costs. It does not perform any
+ checks as to whether or not the RequestContext could actually be generated
+ by the Generator.
+ <p>
+ Checks implemented:
+ <ul>
+ <li> <code>binaryName</code> implements RequestFactory</li>
+ <li>All referenced RequestContext types are valid</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>binaryName</CODE> - the binary name (e.g. <CODE>Class.getName()</CODE>) of the
+          RequestContext subtype<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html#validateRequestContext(java.lang.String)"><CODE>validateRequestContext(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateValueProxy(java.lang.String)"><!-- --></A><H3>
+validateValueProxy</H3>
+<PRE>
+public void <B>validateValueProxy</B>(java.lang.String&nbsp;binaryName)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<DD>This method checks a ValueProxy interface against its peer domain object to
+ determine if the server code would be able to process a request using the
+ methods defined in the ValueProxy interface. It does not perform any checks
+ as to whether or not the ValueProxy could actually be generated by the
+ Generator.
+ <p>
+ This method may be called repeatedly on a single instance of the validator.
+ Doing so will amortize type calculation costs.
+ <p>
+ Checks implemented:
+ <ul>
+ <li> <code>binaryName</code> implements ValueProxy</li>
+ <li><code>binaryName</code> has a <A HREF="../../../../../com/google/gwt/requestfactory/shared/ProxyFor.html" title="annotation in com.google.gwt.requestfactory.shared"><CODE>ProxyFor</CODE></A> or <A HREF="../../../../../com/google/gwt/requestfactory/shared/ProxyForName.html" title="annotation in com.google.gwt.requestfactory.shared"><CODE>ProxyForName</CODE></A>
+ annotation</li>
+ <li>All property methods in the EntityProxy can be mapped onto an
+ equivalent domain method</li>
+ <li>All referenced proxy types are valid</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>binaryName</CODE> - the binary name (e.g. <CODE>Class.getName()</CODE>) of the
+          EntityProxy subtype</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RequestFactoryInterfaceValidator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/requestfactory/server/Logging.html" title="class in com.google.gwt.requestfactory.server"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.ClassLoaderLoader.html" title="class in com.google.gwt.requestfactory.server"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/requestfactory/server/RequestFactoryInterfaceValidator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RequestFactoryInterfaceValidator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

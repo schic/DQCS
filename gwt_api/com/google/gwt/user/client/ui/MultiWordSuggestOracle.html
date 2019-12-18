@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+MultiWordSuggestOracle (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MultiWordSuggestOracle (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultiWordSuggestOracle.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MouseWheelVelocity.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.MultiWordSuggestion.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/MultiWordSuggestOracle.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultiWordSuggestOracle.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class MultiWordSuggestOracle</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.SuggestOracle</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.MultiWordSuggestOracle</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>MultiWordSuggestOracle</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui">SuggestOracle</A></DL>
+</PRE>
+
+<P>
+The default <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle</CODE></A>. The default
+ oracle returns potential suggestions based on breaking the query into
+ separate words and looking for matches. It also modifies the returned text to
+ show which prefix matched the query term. The matching is case insensitive.
+ All suggestions are sorted before being passed into a response.
+ <p>
+ Example Table
+ </p>
+ <p>
+ <table width = "100%" border = "1">
+ <tr>
+ <td><b> All Suggestions </b></td>
+ <td><b>Query string</b></td>
+ <td><b>Matching Suggestions</b></td>
+ </tr>
+ <tr>
+ <td>John Smith, Joe Brown, Jane Doe, Jane Smith, Bob Jones</td>
+ <td>Jo</td>
+ <td>John Smith, Joe Brown, Bob Jones</td>
+ </tr>
+ <tr>
+ <td>John Smith, Joe Brown, Jane Doe, Jane Smith, Bob Jones</td>
+ <td>Smith</td>
+ <td>John Smith, Jane Smith</td>
+ </tr>
+ <tr>
+ <td>Georgia, New York, California</td>
+ <td>g</td>
+ <td>Georgia</td>
+ </tr>
+ </table>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.MultiWordSuggestion.html" title="class in com.google.gwt.user.client.ui">MultiWordSuggestOracle.MultiWordSuggestion</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suggestion class for <A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html" title="class in com.google.gwt.user.client.ui"><CODE>MultiWordSuggestOracle</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.SuggestOracle"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui">SuggestOracle</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Callback</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui">SuggestOracle.Request</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui">SuggestOracle.Response</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#MultiWordSuggestOracle()">MultiWordSuggestOracle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor for <code>MultiWordSuggestOracle</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#MultiWordSuggestOracle(java.lang.String)">MultiWordSuggestOracle</A></B>(java.lang.String&nbsp;whitespaceChars)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor for <code>MultiWordSuggestOracle</code> which takes in a set of
+ whitespace chars that filter its input.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#add(java.lang.String)">add</A></B>(java.lang.String&nbsp;suggestion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a suggestion to the oracle.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#addAll(java.util.Collection)">addAll</A></B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;collection)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds all suggestions specified.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes all of the suggestions from the oracle.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.MultiWordSuggestion.html" title="class in com.google.gwt.user.client.ui">MultiWordSuggestOracle.MultiWordSuggestion</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#createSuggestion(java.lang.String, java.lang.String)">createSuggestion</A></B>(java.lang.String&nbsp;replacementString,
+                 java.lang.String&nbsp;displayString)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates the suggestion based on the given replacement and display strings.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#isDisplayStringHTML()">isDisplayStringHTML</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Should <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Suggestion</CODE></A> display strings be treated as HTML? If true, this
+ all suggestions' display strings will be interpreted as HTML, otherwise as
+ text.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#requestDefaultSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)">requestDefaultSuggestions</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui">SuggestOracle.Request</A>&nbsp;request,
+                          <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Callback</A>&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generate a <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Response</CODE></A> based on a default request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#requestSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)">requestSuggestions</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui">SuggestOracle.Request</A>&nbsp;request,
+                   <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Callback</A>&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generate a <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Response</CODE></A> based on a specific <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Request</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#setDefaultSuggestions(java.util.Collection)">setDefaultSuggestions</A></B>(java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A>&gt;&nbsp;suggestionList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the default suggestion collection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#setDefaultSuggestionsFromText(java.util.Collection)">setDefaultSuggestionsFromText</A></B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;suggestionList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A convenience method to set default suggestions using plain text strings.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MultiWordSuggestOracle()"><!-- --></A><H3>
+MultiWordSuggestOracle</H3>
+<PRE>
+public <B>MultiWordSuggestOracle</B>()</PRE>
+<DL>
+<DD>Constructor for <code>MultiWordSuggestOracle</code>. This uses a space as
+ the whitespace character.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.html#MultiWordSuggestOracle(java.lang.String)"><CODE>MultiWordSuggestOracle(String)</CODE></A></DL>
+</DL>
+<HR>
+
+<A NAME="MultiWordSuggestOracle(java.lang.String)"><!-- --></A><H3>
+MultiWordSuggestOracle</H3>
+<PRE>
+public <B>MultiWordSuggestOracle</B>(java.lang.String&nbsp;whitespaceChars)</PRE>
+<DL>
+<DD>Constructor for <code>MultiWordSuggestOracle</code> which takes in a set of
+ whitespace chars that filter its input.
+ <p>
+ Example: If <code>".,"</code> is passed in as whitespace, then the string
+ "foo.bar" would match the queries "foo", "bar", "foo.bar", "foo...bar", and
+ "foo, bar". If the empty string is used, then all characters are used in
+ matching. For example, the query "bar" would match "bar", but not "foo
+ bar".
+ </p>
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>whitespaceChars</CODE> - the characters to treat as word separators</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="add(java.lang.String)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public void <B>add</B>(java.lang.String&nbsp;suggestion)</PRE>
+<DL>
+<DD>Adds a suggestion to the oracle. Each suggestion must be plain text.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>suggestion</CODE> - the suggestion</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addAll(java.util.Collection)"><!-- --></A><H3>
+addAll</H3>
+<PRE>
+public final void <B>addAll</B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;collection)</PRE>
+<DL>
+<DD>Adds all suggestions specified. Each suggestion must be plain text.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>collection</CODE> - the collection</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD>Removes all of the suggestions from the oracle.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isDisplayStringHTML()"><!-- --></A><H3>
+isDisplayStringHTML</H3>
+<PRE>
+public boolean <B>isDisplayStringHTML</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html#isDisplayStringHTML()">SuggestOracle</A></CODE></B></DD>
+<DD>Should <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Suggestion</CODE></A> display strings be treated as HTML? If true, this
+ all suggestions' display strings will be interpreted as HTML, otherwise as
+ text.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html#isDisplayStringHTML()">isDisplayStringHTML</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui">SuggestOracle</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>by default, returns false</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="requestDefaultSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)"><!-- --></A><H3>
+requestDefaultSuggestions</H3>
+<PRE>
+public void <B>requestDefaultSuggestions</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui">SuggestOracle.Request</A>&nbsp;request,
+                                      <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Callback</A>&nbsp;callback)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html#requestDefaultSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)">SuggestOracle</A></CODE></B></DD>
+<DD>Generate a <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Response</CODE></A> based on a default request. The request query
+ must be null as it represents the results the oracle should return based on
+ no query string.
+ <p>
+ After the <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Response</CODE></A> is created, it is passed into
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html#onSuggestionsReady(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Response)"><CODE>SuggestOracle.Callback.onSuggestionsReady(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Response)</CODE></A>
+ .
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html#requestDefaultSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)">requestDefaultSuggestions</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui">SuggestOracle</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the request<DD><CODE>callback</CODE> - the callback to use for the response</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="requestSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)"><!-- --></A><H3>
+requestSuggestions</H3>
+<PRE>
+public void <B>requestSuggestions</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui">SuggestOracle.Request</A>&nbsp;request,
+                               <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Callback</A>&nbsp;callback)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html#requestSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)">SuggestOracle</A></CODE></B></DD>
+<DD>Generate a <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Response</CODE></A> based on a specific <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Request.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Request</CODE></A>. After the
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Response.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Response</CODE></A> is created, it is passed into
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Callback.html#onSuggestionsReady(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Response)"><CODE>SuggestOracle.Callback.onSuggestionsReady(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Response)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html#requestSuggestions(com.google.gwt.user.client.ui.SuggestOracle.Request, com.google.gwt.user.client.ui.SuggestOracle.Callback)">requestSuggestions</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.html" title="class in com.google.gwt.user.client.ui">SuggestOracle</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the request<DD><CODE>callback</CODE> - the callback to use for the response</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDefaultSuggestions(java.util.Collection)"><!-- --></A><H3>
+setDefaultSuggestions</H3>
+<PRE>
+public void <B>setDefaultSuggestions</B>(java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A>&gt;&nbsp;suggestionList)</PRE>
+<DL>
+<DD>Sets the default suggestion collection.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>suggestionList</CODE> - the default list of suggestions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDefaultSuggestionsFromText(java.util.Collection)"><!-- --></A><H3>
+setDefaultSuggestionsFromText</H3>
+<PRE>
+public final void <B>setDefaultSuggestionsFromText</B>(java.util.Collection&lt;java.lang.String&gt;&nbsp;suggestionList)</PRE>
+<DL>
+<DD>A convenience method to set default suggestions using plain text strings.
+
+ Note to use this method each default suggestion must be plain text.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>suggestionList</CODE> - the default list of suggestions</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSuggestion(java.lang.String, java.lang.String)"><!-- --></A><H3>
+createSuggestion</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.MultiWordSuggestion.html" title="class in com.google.gwt.user.client.ui">MultiWordSuggestOracle.MultiWordSuggestion</A> <B>createSuggestion</B>(java.lang.String&nbsp;replacementString,
+                                                                      java.lang.String&nbsp;displayString)</PRE>
+<DL>
+<DD>Creates the suggestion based on the given replacement and display strings.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>replacementString</CODE> - the string to enter into the SuggestBox's text box
+          if the suggestion is chosen<DD><CODE>displayString</CODE> - the display string
+<DT><B>Returns:</B><DD>the suggestion created</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MultiWordSuggestOracle.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MouseWheelVelocity.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/MultiWordSuggestOracle.MultiWordSuggestion.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/MultiWordSuggestOracle.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MultiWordSuggestOracle.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

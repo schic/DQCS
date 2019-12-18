@@ -1,0 +1,861 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+TypeOracle (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TypeOracle (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TypeOracle.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/ParseException.html" title="class in com.google.gwt.core.ext.typeinfo"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracleException.html" title="class in com.google.gwt.core.ext.typeinfo"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/typeinfo/TypeOracle.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TypeOracle.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.ext.typeinfo</FONT>
+<BR>
+Class TypeOracle</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.ext.typeinfo.TypeOracle</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>TypeOracle</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Provides type-related information about a set of source files.
+ <p>
+ All type objects exposed, such as
+ <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo"><CODE>JClassType</CODE></A> and others, have a stable
+ identity relative to this type oracle instance. Consequently, you can
+ reliably compare object identity of any objects this type oracle produces.
+ For example, the following code relies on this stable identity guarantee:
+
+ <pre>
+ JClassType o = typeOracle.getJavaLangObject();
+ JClassType s1 = typeOracle.getType(&quot;java.lang.String&quot;);
+ JClassType s2 = typeOracle.getType(&quot;java.lang.String&quot;);
+ assert (s1 == s2);
+ assert (o == s1.getSuperclass());
+ JParameterizedType ls = typeOracle.parse(&quot;java.util.List&lt;java.lang.String&gt;&quot;);
+ assert (ls.getTypeArgs()[0] == s1);
+ </pre>
+
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#TAG_TYPEARGS">TAG_TYPEARGS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>gwt.typeArgs is not longer supported</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#TypeOracle()">TypeOracle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#findPackage(java.lang.String)">findPackage</A></B>(java.lang.String&nbsp;pkgName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attempts to find a package by name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#findType(java.lang.String)">findType</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finds a class or interface given its fully-qualified name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#findType(java.lang.String, java.lang.String)">findType</A></B>(java.lang.String&nbsp;pkgName,
+         java.lang.String&nbsp;typeName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finds a type given its package-relative name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JArrayType.html" title="interface in com.google.gwt.core.ext.typeinfo">JArrayType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getArrayType(com.google.gwt.core.ext.typeinfo.JType)">getArrayType</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JType.html" title="interface in com.google.gwt.core.ext.typeinfo">JType</A>&nbsp;componentType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type object that represents an array of the specified type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getJavaLangObject()">getJavaLangObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a reference to the type object representing
+ <code>java.lang.Object</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getOrCreatePackage(java.lang.String)">getOrCreatePackage</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure that a package with the specified name exists as well as its parent
+ packages.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getPackage(java.lang.String)">getPackage</A></B>(java.lang.String&nbsp;pkgName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a package by name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getPackages()">getPackages</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets an array of all packages known to this type oracle.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JParameterizedType.html" title="interface in com.google.gwt.core.ext.typeinfo">JParameterizedType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getParameterizedType(com.google.gwt.core.ext.typeinfo.JGenericType, com.google.gwt.core.ext.typeinfo.JClassType[])">getParameterizedType</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JGenericType.html" title="interface in com.google.gwt.core.ext.typeinfo">JGenericType</A>&nbsp;genericType,
+                     <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]&nbsp;typeArgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the parameterized type object that represents the combination of a
+ specified raw type and a set of type arguments.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JParameterizedType.html" title="interface in com.google.gwt.core.ext.typeinfo">JParameterizedType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getParameterizedType(com.google.gwt.core.ext.typeinfo.JGenericType, com.google.gwt.core.ext.typeinfo.JClassType, com.google.gwt.core.ext.typeinfo.JClassType[])">getParameterizedType</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JGenericType.html" title="interface in com.google.gwt.core.ext.typeinfo">JGenericType</A>&nbsp;genericType,
+                     <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;enclosingType,
+                     <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]&nbsp;typeArgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the parameterized type object that represents the combination of a
+ specified raw type and a set of type arguments.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getReloadCount()">getReloadCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>This method will always return 0 because a TypeOracle never
+             gets reloaded anymore. Callers should not rely on this value to
+             manage static state.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getSingleJsoImpl(com.google.gwt.core.ext.typeinfo.JClassType)">getSingleJsoImpl</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;intf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the single implementation type for an interface returned via
+ <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getSingleJsoImplInterfaces()"><CODE>getSingleJsoImplInterfaces()</CODE></A> or <code>null</code> if no JSO
+ implementation is defined.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.util.Set&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getSingleJsoImplInterfaces()">getSingleJsoImplInterfaces</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns an unmodifiable, live view of all interface types that are
+ implemented by exactly one JSO subtype.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getType(java.lang.String)">getType</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finds a type given its fully qualified name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getType(java.lang.String, java.lang.String)">getType</A></B>(java.lang.String&nbsp;pkgName,
+        java.lang.String&nbsp;topLevelTypeSimpleName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finds a type given its package-relative name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getTypes()">getTypes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets all types, both top-level and nested.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JWildcardType.html" title="interface in com.google.gwt.core.ext.typeinfo">JWildcardType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getWildcardType(com.google.gwt.core.ext.typeinfo.JWildcardType.BoundType, com.google.gwt.core.ext.typeinfo.JClassType)">getWildcardType</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JWildcardType.BoundType.html" title="enum in com.google.gwt.core.ext.typeinfo">JWildcardType.BoundType</A>&nbsp;boundType,
+                <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;typeBound)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JType.html" title="interface in com.google.gwt.core.ext.typeinfo">JType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#parse(java.lang.String)">parse</A></B>(java.lang.String&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses the string form of a type to produce the corresponding type object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#sort(com.google.gwt.core.ext.typeinfo.JClassType[])">sort</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convenience method to sort class types in a consistent way.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#sort(com.google.gwt.core.ext.typeinfo.JConstructor[])">sort</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JConstructor.html" title="interface in com.google.gwt.core.ext.typeinfo">JConstructor</A>[]&nbsp;ctors)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convenience method to sort constructors in a consistent way.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#sort(com.google.gwt.core.ext.typeinfo.JField[])">sort</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JField.html" title="interface in com.google.gwt.core.ext.typeinfo">JField</A>[]&nbsp;fields)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convenience method to sort fields in a consistent way.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#sort(com.google.gwt.core.ext.typeinfo.JMethod[])">sort</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JMethod.html" title="interface in com.google.gwt.core.ext.typeinfo">JMethod</A>[]&nbsp;methods)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convenience method to sort methods in a consistent way.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="TAG_TYPEARGS"><!-- --></A><H3>
+TAG_TYPEARGS</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static final java.lang.String <B>TAG_TYPEARGS</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>gwt.typeArgs is not longer supported</I><DD>A reserved metadata tag to indicates that a field type, method return type
+ or method parameter type is intended to be parameterized. Note that
+ constructor type parameters are not supported at present.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.core.ext.typeinfo.TypeOracle.TAG_TYPEARGS">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="TypeOracle()"><!-- --></A><H3>
+TypeOracle</H3>
+<PRE>
+public <B>TypeOracle</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="sort(com.google.gwt.core.ext.typeinfo.JClassType[])"><!-- --></A><H3>
+sort</H3>
+<PRE>
+public static void <B>sort</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]&nbsp;types)</PRE>
+<DL>
+<DD>Convenience method to sort class types in a consistent way. Note that the
+ order is subject to change and is intended to generate an "aesthetically
+ pleasing" order rather than a computationally reliable order.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sort(com.google.gwt.core.ext.typeinfo.JConstructor[])"><!-- --></A><H3>
+sort</H3>
+<PRE>
+public static void <B>sort</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JConstructor.html" title="interface in com.google.gwt.core.ext.typeinfo">JConstructor</A>[]&nbsp;ctors)</PRE>
+<DL>
+<DD>Convenience method to sort constructors in a consistent way. Note that the
+ order is subject to change and is intended to generate an "aesthetically
+ pleasing" order rather than a computationally reliable order.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sort(com.google.gwt.core.ext.typeinfo.JField[])"><!-- --></A><H3>
+sort</H3>
+<PRE>
+public static void <B>sort</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JField.html" title="interface in com.google.gwt.core.ext.typeinfo">JField</A>[]&nbsp;fields)</PRE>
+<DL>
+<DD>Convenience method to sort fields in a consistent way. Note that the order
+ is subject to change and is intended to generate an "aesthetically
+ pleasing" order rather than a computationally reliable order.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sort(com.google.gwt.core.ext.typeinfo.JMethod[])"><!-- --></A><H3>
+sort</H3>
+<PRE>
+public static void <B>sort</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JMethod.html" title="interface in com.google.gwt.core.ext.typeinfo">JMethod</A>[]&nbsp;methods)</PRE>
+<DL>
+<DD>Convenience method to sort methods in a consistent way. Note that the order
+ is subject to change and is intended to generate an "aesthetically
+ pleasing" order rather than a computationally reliable order.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findPackage(java.lang.String)"><!-- --></A><H3>
+findPackage</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A> <B>findPackage</B>(java.lang.String&nbsp;pkgName)</PRE>
+<DL>
+<DD>Attempts to find a package by name. All requests for the same package
+ return the same package object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>null</code> if the package could not be found</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findType(java.lang.String)"><!-- --></A><H3>
+findType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A> <B>findType</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD>Finds a class or interface given its fully-qualified name.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - fully-qualified class/interface name - for nested classes, use
+          its source name rather than its binary name (that is, use a "."
+          rather than a "$")
+<DT><B>Returns:</B><DD><code>null</code> if the type is not found</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findType(java.lang.String, java.lang.String)"><!-- --></A><H3>
+findType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A> <B>findType</B>(java.lang.String&nbsp;pkgName,
+                                    java.lang.String&nbsp;typeName)</PRE>
+<DL>
+<DD>Finds a type given its package-relative name. For nested classes, use its
+ source name rather than its binary name (that is, use a "." rather than a
+ "$").
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>null</code> if the type is not found</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getArrayType(com.google.gwt.core.ext.typeinfo.JType)"><!-- --></A><H3>
+getArrayType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JArrayType.html" title="interface in com.google.gwt.core.ext.typeinfo">JArrayType</A> <B>getArrayType</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JType.html" title="interface in com.google.gwt.core.ext.typeinfo">JType</A>&nbsp;componentType)</PRE>
+<DL>
+<DD>Gets the type object that represents an array of the specified type. The
+ returned type always has a stable identity so as to guarantee that all
+ calls to this method with the same argument return the same object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>componentType</CODE> - the component type of the array, which can itself be
+          an array type
+<DT><B>Returns:</B><DD>a type object representing an array of the component type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getJavaLangObject()"><!-- --></A><H3>
+getJavaLangObject</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A> <B>getJavaLangObject</B>()</PRE>
+<DL>
+<DD>Gets a reference to the type object representing
+ <code>java.lang.Object</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOrCreatePackage(java.lang.String)"><!-- --></A><H3>
+getOrCreatePackage</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A> <B>getOrCreatePackage</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD>Ensure that a package with the specified name exists as well as its parent
+ packages.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPackage(java.lang.String)"><!-- --></A><H3>
+getPackage</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A> <B>getPackage</B>(java.lang.String&nbsp;pkgName)
+                             throws <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/NotFoundException.html" title="class in com.google.gwt.core.ext.typeinfo">NotFoundException</A></PRE>
+<DL>
+<DD>Gets a package by name. All requests for the same package return the same
+ package object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the package object associated with the specified name
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/NotFoundException.html" title="class in com.google.gwt.core.ext.typeinfo">NotFoundException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPackages()"><!-- --></A><H3>
+getPackages</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JPackage.html" title="interface in com.google.gwt.core.ext.typeinfo">JPackage</A>[] <B>getPackages</B>()</PRE>
+<DL>
+<DD>Gets an array of all packages known to this type oracle.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an array of packages, possibly of zero-length</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameterizedType(com.google.gwt.core.ext.typeinfo.JGenericType, com.google.gwt.core.ext.typeinfo.JClassType, com.google.gwt.core.ext.typeinfo.JClassType[])"><!-- --></A><H3>
+getParameterizedType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JParameterizedType.html" title="interface in com.google.gwt.core.ext.typeinfo">JParameterizedType</A> <B>getParameterizedType</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JGenericType.html" title="interface in com.google.gwt.core.ext.typeinfo">JGenericType</A>&nbsp;genericType,
+                                                        <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;enclosingType,
+                                                        <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]&nbsp;typeArgs)</PRE>
+<DL>
+<DD>Gets the parameterized type object that represents the combination of a
+ specified raw type and a set of type arguments. The returned type always
+ has a stable identity so as to guarantee that all calls to this method with
+ the same arguments return the same object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>genericType</CODE> - a generic base class<DD><CODE>enclosingType</CODE> - <DD><CODE>typeArgs</CODE> - the type arguments bound to the specified generic type
+<DT><B>Returns:</B><DD>a type object representing this particular binding of type
+         arguments to the specified generic
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the parameterization of a non-static
+           member type does not specify an enclosing type or if not enough
+           arguments were specified to parameterize the generic type
+<DD><CODE>java.lang.NullPointerException</CODE> - if genericType is <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameterizedType(com.google.gwt.core.ext.typeinfo.JGenericType, com.google.gwt.core.ext.typeinfo.JClassType[])"><!-- --></A><H3>
+getParameterizedType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JParameterizedType.html" title="interface in com.google.gwt.core.ext.typeinfo">JParameterizedType</A> <B>getParameterizedType</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JGenericType.html" title="interface in com.google.gwt.core.ext.typeinfo">JGenericType</A>&nbsp;genericType,
+                                                        <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[]&nbsp;typeArgs)</PRE>
+<DL>
+<DD>Gets the parameterized type object that represents the combination of a
+ specified raw type and a set of type arguments. The returned type always
+ has a stable identity so as to guarantee that all calls to this method with
+ the same arguments return the same object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>genericType</CODE> - a generic base class<DD><CODE>typeArgs</CODE> - the type arguments bound to the specified generic type
+<DT><B>Returns:</B><DD>a type object representing this particular binding of type
+         arguments to the specified generic
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the generic type is a non-static member
+           type or if not enough arguments were specified to parameterize
+           the generic type
+<DD><CODE>java.lang.NullPointerException</CODE> - if genericType is <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getReloadCount()"><!-- --></A><H3>
+getReloadCount</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public abstract long <B>getReloadCount</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>This method will always return 0 because a TypeOracle never
+             gets reloaded anymore. Callers should not rely on this value to
+             manage static state.</I>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSingleJsoImpl(com.google.gwt.core.ext.typeinfo.JClassType)"><!-- --></A><H3>
+getSingleJsoImpl</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A> <B>getSingleJsoImpl</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;intf)</PRE>
+<DL>
+<DD>Returns the single implementation type for an interface returned via
+ <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html#getSingleJsoImplInterfaces()"><CODE>getSingleJsoImplInterfaces()</CODE></A> or <code>null</code> if no JSO
+ implementation is defined.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSingleJsoImplInterfaces()"><!-- --></A><H3>
+getSingleJsoImplInterfaces</H3>
+<PRE>
+public abstract java.util.Set&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&gt; <B>getSingleJsoImplInterfaces</B>()</PRE>
+<DL>
+<DD>Returns an unmodifiable, live view of all interface types that are
+ implemented by exactly one JSO subtype.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getType(java.lang.String)"><!-- --></A><H3>
+getType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A> <B>getType</B>(java.lang.String&nbsp;name)
+                            throws <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/NotFoundException.html" title="class in com.google.gwt.core.ext.typeinfo">NotFoundException</A></PRE>
+<DL>
+<DD>Finds a type given its fully qualified name. For nested classes, use its
+ source name rather than its binary name (that is, use a "." rather than a
+ "$").
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the specified type
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/NotFoundException.html" title="class in com.google.gwt.core.ext.typeinfo">NotFoundException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getType(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A> <B>getType</B>(java.lang.String&nbsp;pkgName,
+                                   java.lang.String&nbsp;topLevelTypeSimpleName)
+                            throws <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/NotFoundException.html" title="class in com.google.gwt.core.ext.typeinfo">NotFoundException</A></PRE>
+<DL>
+<DD>Finds a type given its package-relative name. For nested classes, use its
+ source name rather than its binary name (that is, use a "." rather than a
+ "$").
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the specified type
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/NotFoundException.html" title="class in com.google.gwt.core.ext.typeinfo">NotFoundException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypes()"><!-- --></A><H3>
+getTypes</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>[] <B>getTypes</B>()</PRE>
+<DL>
+<DD>Gets all types, both top-level and nested.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>an array of types, possibly of zero length</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWildcardType(com.google.gwt.core.ext.typeinfo.JWildcardType.BoundType, com.google.gwt.core.ext.typeinfo.JClassType)"><!-- --></A><H3>
+getWildcardType</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JWildcardType.html" title="interface in com.google.gwt.core.ext.typeinfo">JWildcardType</A> <B>getWildcardType</B>(<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JWildcardType.BoundType.html" title="enum in com.google.gwt.core.ext.typeinfo">JWildcardType.BoundType</A>&nbsp;boundType,
+                                              <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;typeBound)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parse(java.lang.String)"><!-- --></A><H3>
+parse</H3>
+<PRE>
+public abstract <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/JType.html" title="interface in com.google.gwt.core.ext.typeinfo">JType</A> <B>parse</B>(java.lang.String&nbsp;type)
+                     throws <A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracleException.html" title="class in com.google.gwt.core.ext.typeinfo">TypeOracleException</A></PRE>
+<DL>
+<DD>Parses the string form of a type to produce the corresponding type object.
+ The types that can be parsed include primitives, class and interface names,
+ simple parameterized types (those without wildcards or bounds), and arrays
+ of the preceding.
+ <p>
+ Examples of types that can be parsed by this method.
+ <ul>
+ <li><code>int</code></li>
+ <li><code>java.lang.Object</code></li>
+ <li><code>java.lang.String[]</code></li>
+ <li><code>char[][]</code></li>
+ <li><code>void</code></li>
+ <li><code>List&lt;Shape&gt;</code></li>
+ <li><code>List&lt;List&lt;Shape&gt;&gt;</code></li>
+ </ul>
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>type</CODE> - a type signature to be parsed
+<DT><B>Returns:</B><DD>the type object corresponding to the parse type
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracleException.html" title="class in com.google.gwt.core.ext.typeinfo">TypeOracleException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TypeOracle.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/ParseException.html" title="class in com.google.gwt.core.ext.typeinfo"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/typeinfo/TypeOracleException.html" title="class in com.google.gwt.core.ext.typeinfo"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/typeinfo/TypeOracle.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TypeOracle.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

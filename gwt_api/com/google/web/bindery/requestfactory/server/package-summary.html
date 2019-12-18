@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+com.google.web.bindery.requestfactory.server (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="com.google.web.bindery.requestfactory.server (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/gwt/ui/client/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/server/testing/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/web/bindery/requestfactory/server/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<H2>
+Package com.google.web.bindery.requestfactory.server
+</H2>
+Server side classes for mediating between the client side and the persistent
+ datastore.
+<P>
+<B>See:</B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#package_description"><B>Description</B></A>
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Interface Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/ExceptionHandler.html" title="interface in com.google.web.bindery.requestfactory.server">ExceptionHandler</A></B></TD>
+<TD>Handles an exception produced while processing a request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryInterfaceValidator.Loader.html" title="interface in com.google.web.bindery.requestfactory.server">RequestFactoryInterfaceValidator.Loader</A></B></TD>
+<TD>Abstracts the mechanism by which class files are loaded.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryJarExtractor.Emitter.html" title="interface in com.google.web.bindery.requestfactory.server">RequestFactoryJarExtractor.Emitter</A></B></TD>
+<TD>Describes a way to emit the contents of a classpath, typically into a JAR
+ or filesystem directory.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/DefaultExceptionHandler.html" title="class in com.google.web.bindery.requestfactory.server">DefaultExceptionHandler</A></B></TD>
+<TD>Default implementation for handling exceptions thrown while processing a
+ request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/Logging.html" title="class in com.google.web.bindery.requestfactory.server">Logging</A></B></TD>
+<TD>Server side object that handles log messages sent by
+ <A HREF="../../../../../../com/google/web/bindery/requestfactory/gwt/client/RequestFactoryLogHandler.html" title="class in com.google.web.bindery.requestfactory.gwt.client"><CODE>RequestFactoryLogHandler</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryInterfaceValidator.html" title="class in com.google.web.bindery.requestfactory.server">RequestFactoryInterfaceValidator</A></B></TD>
+<TD>Encapsulates validation logic to determine if a <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/RequestFactory.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>RequestFactory</CODE></A>
+ interface, its <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/RequestContext.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>RequestContext</CODE></A>, and associated <A HREF="../../../../../../com/google/web/bindery/requestfactory/shared/EntityProxy.html" title="interface in com.google.web.bindery.requestfactory.shared"><CODE>EntityProxy</CODE></A>
+ interfaces match their domain counterparts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryInterfaceValidator.ClassLoaderLoader.html" title="class in com.google.web.bindery.requestfactory.server">RequestFactoryInterfaceValidator.ClassLoaderLoader</A></B></TD>
+<TD>An implementation of <A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryInterfaceValidator.ClassLoaderLoader.html" title="class in com.google.web.bindery.requestfactory.server"><CODE>RequestFactoryInterfaceValidator.ClassLoaderLoader</CODE></A> that uses a <CODE>ClassLoader</CODE> to
+ retrieve the class files.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryJarExtractor.html" title="class in com.google.web.bindery.requestfactory.server">RequestFactoryJarExtractor</A></B></TD>
+<TD>Used to extract RequestFactory client jars from <code>gwt-user.jar</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryJarExtractor.JarEmitter.html" title="class in com.google.web.bindery.requestfactory.server">RequestFactoryJarExtractor.JarEmitter</A></B></TD>
+<TD>An Emitter implementation that creates a jar file.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryServlet.html" title="class in com.google.web.bindery.requestfactory.server">RequestFactoryServlet</A></B></TD>
+<TD>Handles GWT RequestFactory JSON requests.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/ServiceLayer.html" title="class in com.google.web.bindery.requestfactory.server">ServiceLayer</A></B></TD>
+<TD>The ServiceLayer mediates all interactions between the
+ <A HREF="../../../../../../com/google/web/bindery/requestfactory/server/SimpleRequestProcessor.html" title="class in com.google.web.bindery.requestfactory.server"><CODE>SimpleRequestProcessor</CODE></A> and the domain environment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/ServiceLayerDecorator.html" title="class in com.google.web.bindery.requestfactory.server">ServiceLayerDecorator</A></B></TD>
+<TD>Users that intend to alter how RequestFactory interacts with the domain
+ environment can extend this type and provide it to
+ <A HREF="../../../../../../com/google/web/bindery/requestfactory/server/ServiceLayer.html#create(com.google.web.bindery.requestfactory.server.ServiceLayerDecorator...)"><CODE>ServiceLayer.create(ServiceLayerDecorator...)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/SimpleRequestProcessor.html" title="class in com.google.web.bindery.requestfactory.server">SimpleRequestProcessor</A></B></TD>
+<TD>Processes request payloads from a RequestFactory client.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Enum Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../../../com/google/web/bindery/requestfactory/server/RequestFactoryJarExtractor.Mode.html" title="enum in com.google.web.bindery.requestfactory.server">RequestFactoryJarExtractor.Mode</A></B></TD>
+<TD>Controls what is emitted by the tool.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+<A NAME="package_description"><!-- --></A><H2>
+Package com.google.web.bindery.requestfactory.server Description
+</H2>
+
+<P>
+Server side classes for mediating between the client side and the persistent
+ datastore.
+ 
+ This package contains classes that can receive client side read and write
+ requests in the JSON format, perform the necessary operations on the
+ persistent datastore, and return the results in JSON format.
+<P>
+
+<P>
+<DL>
+<DT><B>Since:</B></DT>
+  <DD>GWT 2.1</DD>
+</DL>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/gwt/ui/client/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/web/bindery/requestfactory/server/testing/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/web/bindery/requestfactory/server/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

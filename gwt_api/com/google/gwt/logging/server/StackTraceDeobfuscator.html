@@ -1,0 +1,378 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+StackTraceDeobfuscator (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StackTraceDeobfuscator (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StackTraceDeobfuscator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/logging/server/RemoteLoggingServiceUtil.RemoteLoggingException.html" title="class in com.google.gwt.logging.server"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/logging/server/StackTraceDeobfuscator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StackTraceDeobfuscator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.logging.server</FONT>
+<BR>
+Class StackTraceDeobfuscator</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.logging.server.StackTraceDeobfuscator</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>StackTraceDeobfuscator</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Deobfuscates stack traces on the server side. This class requires that you
+ have turned on emulated stack traces, via
+ <code>&lt;set-property name="compiler.stackMode" value="emulated" /&gt;</code>
+ in your <code>.gwt.xml</code> module file, and moved your symbol map files to
+ a location accessible by your server sever side code. You can use the GWT
+ compiler <code>-deploy</code> command line argument to specify the location
+ of the folder into which the generated <code>symbolMaps</code> directory is
+ written. By default, the final <code>symbolMaps</code> directory is
+ <code>war/WEB-INF/deploy/<i>yourmodulename</i>/symbolMaps/</code>. Pass the
+ resulting directory location into this class'
+ <A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#symbolMapsDirectory"><CODE>symbolMapsDirectory</CODE></A> constructor or
+ <A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#setSymbolMapsDirectory(java.lang.String)"><CODE>setSymbolMapsDirectory(String)</CODE></A> setter method.
+ 
+ TODO(unnurg): Combine this code with similar code in JUnitHostImpl
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#StackTraceDeobfuscator(java.lang.String)">StackTraceDeobfuscator</A></B>(java.lang.String&nbsp;symbolMapsDirectory)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor, which takes a <code>symbolMaps</code> directory as its
+ argument.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.logging.LogRecord</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#deobfuscateLogRecord(java.util.logging.LogRecord, java.lang.String)">deobfuscateLogRecord</A></B>(java.util.logging.LogRecord&nbsp;lr,
+                     java.lang.String&nbsp;strongName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Best effort resymbolization of a log record's stack trace.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.StackTraceElement[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#deobfuscateStackTrace(java.lang.StackTraceElement[], java.lang.String)">deobfuscateStackTrace</A></B>(java.lang.StackTraceElement[]&nbsp;st,
+                      java.lang.String&nbsp;strongName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convenience method which resymbolizes an entire stack trace to extent
+ possible.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.io.InputStream</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#getSymbolMapInputStream(java.lang.String)">getSymbolMapInputStream</A></B>(java.lang.String&nbsp;permutationStrongName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves a new <CODE>InputStream</CODE> for the given permutation strong name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.StackTraceElement</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#resymbolize(java.lang.StackTraceElement, java.lang.String)">resymbolize</A></B>(java.lang.StackTraceElement&nbsp;ste,
+            java.lang.String&nbsp;strongName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Best effort resymbolization of a a single stack trace element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/logging/server/StackTraceDeobfuscator.html#setSymbolMapsDirectory(java.lang.String)">setSymbolMapsDirectory</A></B>(java.lang.String&nbsp;symbolMapsDirectory)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="StackTraceDeobfuscator(java.lang.String)"><!-- --></A><H3>
+StackTraceDeobfuscator</H3>
+<PRE>
+public <B>StackTraceDeobfuscator</B>(java.lang.String&nbsp;symbolMapsDirectory)</PRE>
+<DL>
+<DD>Constructor, which takes a <code>symbolMaps</code> directory as its
+ argument. Symbol maps are generated into the location specified by the
+ GWT compiler <code>-deploy</code> command line argument.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>symbolMapsDirectory</CODE> - the <code>symbolMaps</code> directory with, or
+          without trailing directory separator character</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="deobfuscateLogRecord(java.util.logging.LogRecord, java.lang.String)"><!-- --></A><H3>
+deobfuscateLogRecord</H3>
+<PRE>
+public java.util.logging.LogRecord <B>deobfuscateLogRecord</B>(java.util.logging.LogRecord&nbsp;lr,
+                                                        java.lang.String&nbsp;strongName)</PRE>
+<DL>
+<DD>Best effort resymbolization of a log record's stack trace.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>lr</CODE> - the log record to resymbolize<DD><CODE>strongName</CODE> - the GWT permutation strong name
+<DT><B>Returns:</B><DD>the best effort resymbolized log record</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="deobfuscateStackTrace(java.lang.StackTraceElement[], java.lang.String)"><!-- --></A><H3>
+deobfuscateStackTrace</H3>
+<PRE>
+public java.lang.StackTraceElement[] <B>deobfuscateStackTrace</B>(java.lang.StackTraceElement[]&nbsp;st,
+                                                           java.lang.String&nbsp;strongName)</PRE>
+<DL>
+<DD>Convenience method which resymbolizes an entire stack trace to extent
+ possible.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>st</CODE> - the stack trace to resymbolize<DD><CODE>strongName</CODE> - the GWT permutation strong name
+<DT><B>Returns:</B><DD>a best effort resymbolized stack trace</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="resymbolize(java.lang.StackTraceElement, java.lang.String)"><!-- --></A><H3>
+resymbolize</H3>
+<PRE>
+public java.lang.StackTraceElement <B>resymbolize</B>(java.lang.StackTraceElement&nbsp;ste,
+                                               java.lang.String&nbsp;strongName)</PRE>
+<DL>
+<DD>Best effort resymbolization of a a single stack trace element.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>ste</CODE> - the stack trace element to resymbolize<DD><CODE>strongName</CODE> - the GWT permutation strong name
+<DT><B>Returns:</B><DD>the best effort resymbolized stack trace element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSymbolMapsDirectory(java.lang.String)"><!-- --></A><H3>
+setSymbolMapsDirectory</H3>
+<PRE>
+public void <B>setSymbolMapsDirectory</B>(java.lang.String&nbsp;symbolMapsDirectory)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSymbolMapInputStream(java.lang.String)"><!-- --></A><H3>
+getSymbolMapInputStream</H3>
+<PRE>
+protected java.io.InputStream <B>getSymbolMapInputStream</B>(java.lang.String&nbsp;permutationStrongName)
+                                               throws java.io.IOException</PRE>
+<DL>
+<DD>Retrieves a new <CODE>InputStream</CODE> for the given permutation strong name.
+ This implementation, which subclasses may override, returns a
+ <CODE>InputStream</CODE> for the <code>
+ <i>permutation-strong-name</i>.symbolMap</code> file in the
+ <code>symbolMaps</code> directory.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>permutationStrongName</CODE> - the GWT permutation strong name
+<DT><B>Returns:</B><DD>a new <CODE>InputStream</CODE>
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StackTraceDeobfuscator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/logging/server/RemoteLoggingServiceUtil.RemoteLoggingException.html" title="class in com.google.gwt.logging.server"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/logging/server/StackTraceDeobfuscator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StackTraceDeobfuscator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

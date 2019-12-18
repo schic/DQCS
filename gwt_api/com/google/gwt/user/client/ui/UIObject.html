@@ -1,0 +1,1513 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+UIObject (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="UIObject (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/UIObject.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeListenerCollection.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/UIObject.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="UIObject.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class UIObject</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.UIObject</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItem.html" title="class in com.google.gwt.user.client.ui">MenuItem</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/MenuItemSeparator.html" title="class in com.google.gwt.user.client.ui">MenuItemSeparator</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/TreeItem.html" title="class in com.google.gwt.user.client.ui">TreeItem</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>UIObject</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+The superclass for all user-interface objects. It simply wraps a DOM element,
+ and cannot receive events. Most interesting user-interface classes derive
+ from <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui"><CODE>Widget</CODE></A>.
+ 
+ <h3>Styling With CSS</h3>
+ <p>
+ All <code>UIObject</code> objects can be styled using CSS. Style names that
+ are specified programmatically in Java source are implicitly associated with
+ CSS style rules. In terms of HTML and CSS, a GWT style name is the element's
+ CSS "class". By convention, GWT style names are of the form
+ <code>[project]-[widget]</code>.
+ </p>
+ 
+ <p>
+ For example, the <A HREF="../../../../../../com/google/gwt/user/client/ui/Button.html" title="class in com.google.gwt.user.client.ui"><CODE>Button</CODE></A> widget has the style name
+ <code>gwt-Button</code>, meaning that within the <code>Button</code>
+ constructor, the following call occurs:
+ 
+ <pre class="code">
+ setStyleName("gwt-Button");</pre>
+ 
+ A corresponding CSS style rule can then be written as follows:
+ 
+ <pre class="code">
+ // Example of how you might choose to style a Button widget 
+ .gwt-Button {
+   background-color: yellow;
+   color: black;
+   font-size: 24pt;
+ }</pre>
+ 
+ Note the dot prefix in the CSS style rule. This syntax is called a <a
+ href="http://www.w3.org/TR/REC-CSS2/selector.html#class-html">CSS class
+ selector</a>.
+ </p>
+ 
+ <h3>Style Name Specifics</h3>
+ <p>
+ Every <code>UIObject</code> has a <i>primary style name</i> that identifies
+ the key CSS style rule that should always be applied to it. Use
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)"><CODE>setStylePrimaryName(String)</CODE></A> to specify an object's primary style
+ name. In most cases, the primary style name is set in a widget's constructor
+ and never changes again during execution. In the case that no primary style
+ name is specified, it defaults to the first style name that is added.
+ </p>
+ 
+ <p>
+ More complex styling behavior can be achieved by manipulating an object's
+ <i>secondary style names</i>. Secondary style names can be added and removed
+ using <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)"><CODE>removeStyleName(String)</CODE></A>, or
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)"><CODE>setStyleName(String, boolean)</CODE></A>. The purpose of secondary style names
+ is to associate a variety of CSS style rules over time as an object
+ progresses through different visual states.
+ </p>
+ 
+ <p>
+ There is an important special formulation of secondary style names called
+ <i>dependent style names</i>. A dependent style name is a secondary style
+ name prefixed with the primary style name of the widget itself. See
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A> for details.
+ </p>
+ 
+ <h3>Use in UiBinder Templates</h3>
+ <p>
+ Setter methods that follow JavaBean property conventions are exposed as
+ attributes in <A HREF="../../../../../../com/google/gwt/uibinder/client/UiBinder.html" title="interface in com.google.gwt.uibinder.client"><CODE>UiBinder</CODE></A>
+ templates. For example, because UiObject implements <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)"><CODE>setWidth(String)</CODE></A>
+ you can set the width of any widget like so:
+ 
+ <pre>
+ &lt;g:Label width='15em'>Hello there&lt;/g:Label></pre>
+ 
+ Generally speaking, values are parsed as if they were Java literals, so
+ methods like <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)"><CODE>setVisible(boolean)</CODE></A> are also available:
+ 
+ <pre>
+ &lt;g:Label width='15em' visible='false'>Hello there&lt;/g:Label></pre>
+ Enum properties work this way too. Imagine a Bagel widget with a handy Type
+ enum and a setType(Type) method:
+ 
+ <pre>
+ enum Type { poppy, sesame, raisin, jalapeno }
+ 
+ &lt;my:Bagel type='poppy' /></pre>
+ 
+ There is also special case handling for two common method signatures,
+ <code>(int, int)</code> and <code>(double, <A HREF="../../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client"><CODE>Unit</CODE></A>)</code>
+ 
+ <pre>
+ &lt;g:Label pixelSize='100, 100'>Hello there&lt;/g:Label></pre>
+ 
+ Finally, a few UiObject methods get special handling. The debug id (see
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)"><CODE>ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)</CODE></A>) of any UiObject can be set via the
+ <code>debugId</code> attribute, and addtional style names and dependent style
+ names can be set with the <code>addStyleNames</code> and
+ <code>addStyleDependentNames</code> attributes.<pre>
+ &lt;g:Label debugId='helloLabel' 
+     addStyleNames='pretty rounded big'>Hello there&lt;/g:Label></pre>
+ 
+ Style names can be space or comma separated.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The implementation of the set debug id method, which does nothing by
+ default.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The implementation of the setDebugId method, which sets the id of the
+ <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A>s in this <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui"><CODE>UIObject</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#UIObject()">UIObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A></B>(java.lang.String&nbsp;styleSuffix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a dependent style name by specifying the style name's suffix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A></B>(java.lang.String&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a secondary or dependent style name to this object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+              java.lang.String&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ Ensure that elem has an ID property set, which allows it to integrate with
+ third-party libraries and test tools.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+              java.lang.String&nbsp;baseID,
+              java.lang.String&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the debug id of a specific element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A></B>(java.lang.String&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ensure that the main <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A> for this <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui"><CODE>UIObject</CODE></A> has an ID
+ property set, which allows it to integrate with third-party libraries and
+ test tools.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the object's absolute left position in pixels, as measured from the
+ browser window's client area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the object's absolute top position in pixels, as measured from the
+ browser window's client area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a handle to the object's underlying DOM element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the object's offset height in pixels.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the object's offset width in pixels.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Template method that returns the element to which style names will be
+ applied.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets all of the object's style names, as a space-separated list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets all of the element's style names, as a space-separated list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the primary style name associated with the object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the element's primary style name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the title associated with this object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not this object is visible.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></B>(java.lang.String&nbsp;baseID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the user sets the id using the <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)"><CODE>ensureDebugId(String)</CODE></A>
+ method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A></B>(java.lang.String&nbsp;styleSuffix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a dependent style name by specifying the style name's suffix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A></B>(java.lang.String&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a style name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this object's browser element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A>&nbsp;elem)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this object's browser element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A></B>(java.lang.String&nbsp;height)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the object's height.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A></B>(int&nbsp;width,
+             int&nbsp;height)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the object's size, in pixels, not including decorations such as
+ border, margin, and padding.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A></B>(java.lang.String&nbsp;width,
+        java.lang.String&nbsp;height)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the object's size.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A></B>(java.lang.String&nbsp;styleSuffix,
+                      boolean&nbsp;add)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds or removes a dependent style name by specifying the style name's
+ suffix.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+             java.lang.String&nbsp;styleName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all of the element's style names and sets it to the given style.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+             java.lang.String&nbsp;style,
+             boolean&nbsp;add)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This convenience method adds or removes a style name for a given element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A></B>(java.lang.String&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears all of the object's style names and sets it to the given style.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A></B>(java.lang.String&nbsp;style,
+             boolean&nbsp;add)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds or removes a style name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                    java.lang.String&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the element's primary style name and updates all dependent style
+ names.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A></B>(java.lang.String&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the object's primary style name and updates all dependent style names.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A></B>(java.lang.String&nbsp;title)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the title associated with this object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A></B>(boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether this object is visible.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+           boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A></B>(java.lang.String&nbsp;width)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the object's width.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A></B>(java.lang.String&nbsp;eventTypeName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sinks a named event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkEvents(int)">sinkEvents</A></B>(int&nbsp;eventBitsToAdd)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a set of events to be sunk by this object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is overridden so that any object can be viewed in the debugger
+ as an HTML snippet.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></B>(int&nbsp;eventBitsToRemove)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a set of events from this object's event list.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DEBUG_ID_PREFIX"><!-- --></A><H3>
+DEBUG_ID_PREFIX</H3>
+<PRE>
+public static final java.lang.String <B>DEBUG_ID_PREFIX</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.UIObject.DEBUG_ID_PREFIX">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="UIObject()"><!-- --></A><H3>
+UIObject</H3>
+<PRE>
+public <B>UIObject</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)"><!-- --></A><H3>
+ensureDebugId</H3>
+<PRE>
+public static void <B>ensureDebugId</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                 java.lang.String&nbsp;id)</PRE>
+<DL>
+<DD><p>
+ Ensure that elem has an ID property set, which allows it to integrate with
+ third-party libraries and test tools. If elem already has an ID, this
+ method WILL override it. The ID that you specify will be prefixed by the
+ static string <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX"><CODE>DEBUG_ID_PREFIX</CODE></A>.
+ </p>
+ 
+ <p>
+ This method will be compiled out and will have no effect unless you inherit
+ the DebugID module in your gwt.xml file by adding the following line:
+ 
+ <pre class="code">
+ &lt;inherits name="com.google.gwt.user.Debug"/&gt;</pre>
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the target <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A><DD><CODE>id</CODE> - the ID to set on the element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isVisible(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+isVisible</H3>
+<PRE>
+public static boolean <B>isVisible</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVisible(com.google.gwt.dom.client.Element, boolean)"><!-- --></A><H3>
+setVisible</H3>
+<PRE>
+public static void <B>setVisible</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                              boolean&nbsp;visible)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)"><!-- --></A><H3>
+ensureDebugId</H3>
+<PRE>
+protected static void <B>ensureDebugId</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                    java.lang.String&nbsp;baseID,
+                                    java.lang.String&nbsp;id)</PRE>
+<DL>
+<DD>Set the debug id of a specific element. The id will be appended to the end
+ of the base debug id, with a dash separator. The base debug id is the ID of
+ the main element in this UIObject.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element<DD><CODE>baseID</CODE> - the base ID used by the main element<DD><CODE>id</CODE> - the id to append to the base debug id</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStyleName(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+getStyleName</H3>
+<PRE>
+protected static java.lang.String <B>getStyleName</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Gets all of the element's style names, as a space-separated list.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose style is to be retrieved
+<DT><B>Returns:</B><DD>the objects's space-separated style names</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStylePrimaryName(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+getStylePrimaryName</H3>
+<PRE>
+protected static java.lang.String <B>getStylePrimaryName</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Gets the element's primary style name.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose primary style name is to be retrieved
+<DT><B>Returns:</B><DD>the element's primary style name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStyleName(com.google.gwt.dom.client.Element, java.lang.String)"><!-- --></A><H3>
+setStyleName</H3>
+<PRE>
+protected static void <B>setStyleName</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                   java.lang.String&nbsp;styleName)</PRE>
+<DL>
+<DD>Clears all of the element's style names and sets it to the given style.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose style is to be modified<DD><CODE>styleName</CODE> - the new style name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)"><!-- --></A><H3>
+setStyleName</H3>
+<PRE>
+protected static void <B>setStyleName</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                   java.lang.String&nbsp;style,
+                                   boolean&nbsp;add)</PRE>
+<DL>
+<DD>This convenience method adds or removes a style name for a given element.
+ This method is typically used to add and remove secondary style names, but
+ it can be used to remove primary stylenames as well, but that is not
+ recommended. See <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)"><CODE>setStyleName(String)</CODE></A> for a description of how
+ primary and secondary style names are used.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose style is to be modified<DD><CODE>style</CODE> - the secondary style name to be added or removed<DD><CODE>add</CODE> - <code>true</code> to add the given style, <code>false</code> to
+          remove it</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)"><!-- --></A><H3>
+setStylePrimaryName</H3>
+<PRE>
+protected static void <B>setStylePrimaryName</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem,
+                                          java.lang.String&nbsp;style)</PRE>
+<DL>
+<DD>Sets the element's primary style name and updates all dependent style
+ names.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the element whose style is to be reset<DD><CODE>style</CODE> - the new primary style name<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)"><CODE>setStyleName(Element, String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addStyleDependentName(java.lang.String)"><!-- --></A><H3>
+addStyleDependentName</H3>
+<PRE>
+public void <B>addStyleDependentName</B>(java.lang.String&nbsp;styleSuffix)</PRE>
+<DL>
+<DD>Adds a dependent style name by specifying the style name's suffix. The
+ actual form of the style name that is added is:
+ 
+ <pre class="code">
+ getStylePrimaryName() + '-' + styleSuffix
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>styleSuffix</CODE> - the suffix of the dependent style to be added.<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)"><CODE>setStylePrimaryName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)"><CODE>removeStyleDependentName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)"><CODE>setStyleDependentName(String, boolean)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addStyleName(java.lang.String)"><!-- --></A><H3>
+addStyleName</H3>
+<PRE>
+public void <B>addStyleName</B>(java.lang.String&nbsp;style)</PRE>
+<DL>
+<DD>Adds a secondary or dependent style name to this object. A secondary style
+ name is an additional style name that is, in HTML/CSS terms, included as a
+ space-separated token in the value of the CSS <code>class</code> attribute
+ for this object's root element.
+ 
+ <p>
+ The most important use for this method is to add a special kind of
+ secondary style name called a <i>dependent style name</i>. To add a
+ dependent style name, use <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)"><CODE>addStyleDependentName(String)</CODE></A>, which
+ will prefix the 'style' argument with the result of
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()"><CODE>getStylePrimaryName()</CODE></A> (followed by a '-'). For example, suppose
+ the primary style name is <code>gwt-TextBox</code>. If the following method
+ is called as <code>obj.setReadOnly(true)</code>:
+ </p>
+ 
+ <pre class="code">
+ public void setReadOnly(boolean readOnly) {
+   isReadOnlyMode = readOnly;
+   
+   // Create a dependent style name.
+   String readOnlyStyle = "readonly";
+    
+   if (readOnly) {
+     addStyleDependentName(readOnlyStyle);
+   } else {
+     removeStyleDependentName(readOnlyStyle);
+   }
+ }</pre>
+ 
+ <p>
+ then both of the CSS style rules below will be applied:
+ </p>
+ 
+ <pre class="code">
+
+ // This rule is based on the primary style name and is always active.
+ .gwt-TextBox {
+   font-size: 12pt;
+ }
+ 
+ // This rule is based on a dependent style name that is only active
+ // when the widget has called addStyleName(getStylePrimaryName() +
+ // "-readonly").
+ .gwt-TextBox-readonly {
+   background-color: lightgrey;
+   border: none;
+ }</pre>
+
+ <p>
+ The code can also be simplified with
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)"><CODE>setStyleDependentName(String, boolean)</CODE></A>:
+ </p>
+
+ <pre class="code">
+ public void setReadOnly(boolean readOnly) {
+   isReadOnlyMode = readOnly;
+   setStyleDependentName("readonly", readOnly);
+ }</pre>
+ 
+ <p>
+ Dependent style names are powerful because they are automatically updated
+ whenever the primary style name changes. Continuing with the example above,
+ if the primary style name changed due to the following call:
+ </p>
+ 
+ <pre class="code">setStylePrimaryName("my-TextThingy");</pre>
+ 
+ <p>
+ then the object would be re-associated with following style rules, removing
+ those that were shown above.
+ </p>
+ 
+ <pre class="code">
+ .my-TextThingy {
+   font-size: 20pt;
+ }
+ 
+ .my-TextThingy-readonly {
+   background-color: red;
+   border: 2px solid yellow;
+ }</pre>
+ 
+ <p>
+ Secondary style names that are not dependent style names are not
+ automatically updated when the primary style name changes.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - the secondary style name to be added<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui"><CODE>UIObject</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)"><CODE>removeStyleName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="ensureDebugId(java.lang.String)"><!-- --></A><H3>
+ensureDebugId</H3>
+<PRE>
+public final void <B>ensureDebugId</B>(java.lang.String&nbsp;id)</PRE>
+<DL>
+<DD>Ensure that the main <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A> for this <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui"><CODE>UIObject</CODE></A> has an ID
+ property set, which allows it to integrate with third-party libraries and
+ test tools. Complex <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui"><CODE>Widget</CODE></A>s will also set the IDs of their
+ important sub-elements.
+ 
+ If the main element already has an ID, this method WILL override it.
+ 
+ The ID that you specify will be prefixed by the static string
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX"><CODE>DEBUG_ID_PREFIX</CODE></A>.
+ 
+ This method will be compiled out and will have no effect unless you inherit
+ the DebugID module in your gwt.xml file by adding the following line:
+ 
+ <pre class="code">
+ &lt;inherits name="com.google.gwt.user.Debug"/&gt;</pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>id</CODE> - the ID to set on the main element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAbsoluteLeft()"><!-- --></A><H3>
+getAbsoluteLeft</H3>
+<PRE>
+public int <B>getAbsoluteLeft</B>()</PRE>
+<DL>
+<DD>Gets the object's absolute left position in pixels, as measured from the
+ browser window's client area.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's absolute left position</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAbsoluteTop()"><!-- --></A><H3>
+getAbsoluteTop</H3>
+<PRE>
+public int <B>getAbsoluteTop</B>()</PRE>
+<DL>
+<DD>Gets the object's absolute top position in pixels, as measured from the
+ browser window's client area.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's absolute top position</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getElement()"><!-- --></A><H3>
+getElement</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A> <B>getElement</B>()</PRE>
+<DL>
+<DD>Gets a handle to the object's underlying DOM element.
+ 
+ This method should not be overridden. It is non-final solely to support
+ legacy code that depends upon overriding it. If it is overridden, the
+ subclass implementation must not return a different element than was
+ previously set using
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)"><CODE>setElement(com.google.gwt.user.client.Element)</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's browser element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOffsetHeight()"><!-- --></A><H3>
+getOffsetHeight</H3>
+<PRE>
+public int <B>getOffsetHeight</B>()</PRE>
+<DL>
+<DD>Gets the object's offset height in pixels. This is the total height of the
+ object, including decorations such as border, margin, and padding.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's offset height</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOffsetWidth()"><!-- --></A><H3>
+getOffsetWidth</H3>
+<PRE>
+public int <B>getOffsetWidth</B>()</PRE>
+<DL>
+<DD>Gets the object's offset width in pixels. This is the total width of the
+ object, including decorations such as border, margin, and padding.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's offset width</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStyleName()"><!-- --></A><H3>
+getStyleName</H3>
+<PRE>
+public java.lang.String <B>getStyleName</B>()</PRE>
+<DL>
+<DD>Gets all of the object's style names, as a space-separated list. If you
+ wish to retrieve only the primary style name, call
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()"><CODE>getStylePrimaryName()</CODE></A>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the objects's space-separated style names<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()"><CODE>getStylePrimaryName()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStylePrimaryName()"><!-- --></A><H3>
+getStylePrimaryName</H3>
+<PRE>
+public java.lang.String <B>getStylePrimaryName</B>()</PRE>
+<DL>
+<DD>Gets the primary style name associated with the object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's primary style name<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)"><CODE>setStyleName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)"><CODE>removeStyleName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTitle()"><!-- --></A><H3>
+getTitle</H3>
+<PRE>
+public java.lang.String <B>getTitle</B>()</PRE>
+<DL>
+<DD>Gets the title associated with this object. The title is the 'tool-tip'
+ displayed to users when they hover over the object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's title</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isVisible()"><!-- --></A><H3>
+isVisible</H3>
+<PRE>
+public boolean <B>isVisible</B>()</PRE>
+<DL>
+<DD>Determines whether or not this object is visible.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the object is visible</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeStyleDependentName(java.lang.String)"><!-- --></A><H3>
+removeStyleDependentName</H3>
+<PRE>
+public void <B>removeStyleDependentName</B>(java.lang.String&nbsp;styleSuffix)</PRE>
+<DL>
+<DD>Removes a dependent style name by specifying the style name's suffix.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>styleSuffix</CODE> - the suffix of the dependent style to be removed<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)"><CODE>setStylePrimaryName(Element, String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)"><CODE>addStyleDependentName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)"><CODE>setStyleDependentName(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeStyleName(java.lang.String)"><!-- --></A><H3>
+removeStyleName</H3>
+<PRE>
+public void <B>removeStyleName</B>(java.lang.String&nbsp;style)</PRE>
+<DL>
+<DD>Removes a style name. This method is typically used to remove secondary
+ style names, but it can be used to remove primary stylenames as well. That
+ use is not recommended.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - the secondary style name to be removed<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)"><CODE>setStyleName(String, boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHeight(java.lang.String)"><!-- --></A><H3>
+setHeight</H3>
+<PRE>
+public void <B>setHeight</B>(java.lang.String&nbsp;height)</PRE>
+<DL>
+<DD>Sets the object's height. This height does not include decorations such as
+ border, margin, and padding.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>height</CODE> - the object's new height, in CSS units (e.g. "10px", "1em")</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPixelSize(int, int)"><!-- --></A><H3>
+setPixelSize</H3>
+<PRE>
+public void <B>setPixelSize</B>(int&nbsp;width,
+                         int&nbsp;height)</PRE>
+<DL>
+<DD>Sets the object's size, in pixels, not including decorations such as
+ border, margin, and padding.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>width</CODE> - the object's new width, in pixels<DD><CODE>height</CODE> - the object's new height, in pixels</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSize(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setSize</H3>
+<PRE>
+public void <B>setSize</B>(java.lang.String&nbsp;width,
+                    java.lang.String&nbsp;height)</PRE>
+<DL>
+<DD>Sets the object's size. This size does not include decorations such as
+ border, margin, and padding.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>width</CODE> - the object's new width, in CSS units (e.g. "10px", "1em")<DD><CODE>height</CODE> - the object's new height, in CSS units (e.g. "10px", "1em")</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStyleDependentName(java.lang.String, boolean)"><!-- --></A><H3>
+setStyleDependentName</H3>
+<PRE>
+public void <B>setStyleDependentName</B>(java.lang.String&nbsp;styleSuffix,
+                                  boolean&nbsp;add)</PRE>
+<DL>
+<DD>Adds or removes a dependent style name by specifying the style name's
+ suffix. The actual form of the style name that is added is:
+ 
+ <pre class="code">
+ getStylePrimaryName() + '-' + styleSuffix
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>styleSuffix</CODE> - the suffix of the dependent style to be added or removed<DD><CODE>add</CODE> - <code>true</code> to add the given style, <code>false</code> to
+          remove it<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)"><CODE>setStylePrimaryName(Element, String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)"><CODE>addStyleDependentName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)"><CODE>setStyleName(String, boolean)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)"><CODE>removeStyleDependentName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStyleName(java.lang.String, boolean)"><!-- --></A><H3>
+setStyleName</H3>
+<PRE>
+public void <B>setStyleName</B>(java.lang.String&nbsp;style,
+                         boolean&nbsp;add)</PRE>
+<DL>
+<DD>Adds or removes a style name. This method is typically used to remove
+ secondary style names, but it can be used to remove primary stylenames as
+ well. That use is not recommended.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - the style name to be added or removed<DD><CODE>add</CODE> - <code>true</code> to add the given style, <code>false</code> to
+          remove it<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)"><CODE>removeStyleName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStyleName(java.lang.String)"><!-- --></A><H3>
+setStyleName</H3>
+<PRE>
+public void <B>setStyleName</B>(java.lang.String&nbsp;style)</PRE>
+<DL>
+<DD>Clears all of the object's style names and sets it to the given style. You
+ should normally use <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)"><CODE>setStylePrimaryName(String)</CODE></A> unless you wish to
+ explicitly remove all existing styles.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - the new style name<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)"><CODE>setStylePrimaryName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStylePrimaryName(java.lang.String)"><!-- --></A><H3>
+setStylePrimaryName</H3>
+<PRE>
+public void <B>setStylePrimaryName</B>(java.lang.String&nbsp;style)</PRE>
+<DL>
+<DD>Sets the object's primary style name and updates all dependent style names.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - the new primary style name<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)"><CODE>addStyleName(String)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)"><CODE>removeStyleName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTitle(java.lang.String)"><!-- --></A><H3>
+setTitle</H3>
+<PRE>
+public void <B>setTitle</B>(java.lang.String&nbsp;title)</PRE>
+<DL>
+<DD>Sets the title associated with this object. The title is the 'tool-tip'
+ displayed to users when they hover over the object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>title</CODE> - the object's new title</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVisible(boolean)"><!-- --></A><H3>
+setVisible</H3>
+<PRE>
+public void <B>setVisible</B>(boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Sets whether this object is visible.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visible</CODE> - <code>true</code> to show the object, <code>false</code> to
+          hide it</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setWidth(java.lang.String)"><!-- --></A><H3>
+setWidth</H3>
+<PRE>
+public void <B>setWidth</B>(java.lang.String&nbsp;width)</PRE>
+<DL>
+<DD>Sets the object's width. This width does not include decorations such as
+ border, margin, and padding.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>width</CODE> - the object's new width, in CSS units (e.g. "10px", "1em")</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sinkBitlessEvent(java.lang.String)"><!-- --></A><H3>
+sinkBitlessEvent</H3>
+<PRE>
+public void <B>sinkBitlessEvent</B>(java.lang.String&nbsp;eventTypeName)</PRE>
+<DL>
+<DD>Sinks a named event. Note that only <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui"><CODE>widgets</CODE></A> may actually
+ receive events, but can receive events from all objects contained within
+ them.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>eventTypeName</CODE> - name of the event to sink on this element<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client"><CODE>Event</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sinkEvents(int)"><!-- --></A><H3>
+sinkEvents</H3>
+<PRE>
+public void <B>sinkEvents</B>(int&nbsp;eventBitsToAdd)</PRE>
+<DL>
+<DD>Adds a set of events to be sunk by this object. Note that only
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui"><CODE>widgets</CODE></A> may actually receive events, but can receive events
+ from all objects contained within them.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>eventBitsToAdd</CODE> - a bitfield representing the set of events to be added
+          to this element's event set<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client"><CODE>Event</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public java.lang.String <B>toString</B>()</PRE>
+<DL>
+<DD>This method is overridden so that any object can be viewed in the debugger
+ as an HTML snippet.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>toString</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a string representation of the object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsinkEvents(int)"><!-- --></A><H3>
+unsinkEvents</H3>
+<PRE>
+public void <B>unsinkEvents</B>(int&nbsp;eventBitsToRemove)</PRE>
+<DL>
+<DD>Removes a set of events from this object's event list.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>eventBitsToRemove</CODE> - a bitfield representing the set of events to be
+          removed from this element's event set<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkEvents(int)"><CODE>sinkEvents(int)</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client"><CODE>Event</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStyleElement()"><!-- --></A><H3>
+getStyleElement</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A> <B>getStyleElement</B>()</PRE>
+<DL>
+<DD>Template method that returns the element to which style names will be
+ applied. By default it returns the root element, but this method may be
+ overridden to apply styles to a child element.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the element to which style names will be applied</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEnsureDebugId(java.lang.String)"><!-- --></A><H3>
+onEnsureDebugId</H3>
+<PRE>
+protected void <B>onEnsureDebugId</B>(java.lang.String&nbsp;baseID)</PRE>
+<DL>
+<DD>Called when the user sets the id using the <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)"><CODE>ensureDebugId(String)</CODE></A>
+ method. Subclasses of <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui"><CODE>UIObject</CODE></A> can override this method to add IDs
+ to their sub elements. If a subclass does override this method, it should
+ list the IDs (relative to the base ID), that will be applied to each sub
+ <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A> with a short description. For example:
+ <ul>
+ <li>-mysubelement = Applies to my sub element.</li>
+ </ul>
+ 
+ Subclasses should make a super call to this method to ensure that the ID of
+ the main element is set.
+ 
+ This method will not be called unless you inherit the DebugID module in
+ your gwt.xml file by adding the following line:
+ 
+ <pre class="code">
+ &lt;inherits name="com.google.gwt.user.Debug"/&gt;</pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseID</CODE> - the base ID used by the main element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setElement(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+setElement</H3>
+<PRE>
+protected final void <B>setElement</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Sets this object's browser element. UIObject subclasses must call this
+ method before attempting to call any other methods, and it may only be
+ called once.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the object's element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setElement(com.google.gwt.user.client.Element)"><!-- --></A><H3>
+setElement</H3>
+<PRE>
+protected void <B>setElement</B>(<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A>&nbsp;elem)</PRE>
+<DL>
+<DD>Sets this object's browser element. UIObject subclasses must call this
+ method before attempting to call any other methods, and it may only be
+ called once.
+ 
+ This method exists for backwards compatibility with pre-1.5 code. As of GWT
+ 1.5, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)"><CODE>setElement(Element)</CODE></A> is the preferred method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>elem</CODE> - the object's element</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/UIObject.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/TreeListenerCollection.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/UIObject.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="UIObject.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

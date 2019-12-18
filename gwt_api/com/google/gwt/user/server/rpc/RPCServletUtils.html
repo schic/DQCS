@@ -1,0 +1,545 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+RPCServletUtils (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RPCServletUtils (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RPCServletUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCRequest.html" title="class in com.google.gwt.user.server.rpc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/SerializationPolicy.html" title="class in com.google.gwt.user.server.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/server/rpc/RPCServletUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RPCServletUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.server.rpc</FONT>
+<BR>
+Class RPCServletUtils</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.server.rpc.RPCServletUtils</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>RPCServletUtils</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Utility class containing helper methods used by servlets that integrate with
+ the RPC system.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#acceptsGzipEncoding(javax.servlet.http.HttpServletRequest)">acceptsGzipEncoding</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the <CODE>HttpServletRequest</CODE> accepts Gzip
+ encoding.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#exceedsUncompressedContentLengthLimit(java.lang.String)">exceedsUncompressedContentLengthLimit</A></B>(java.lang.String&nbsp;content)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the response content's estimated UTF-8 byte
+ length exceeds 256 bytes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#isExpectedException(java.lang.reflect.Method, java.lang.Throwable)">isExpectedException</A></B>(java.lang.reflect.Method&nbsp;serviceIntfMethod,
+                    java.lang.Throwable&nbsp;cause)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the <CODE>Method</CODE> definition on
+ the service is specified to throw the exception contained in the
+ InvocationTargetException or false otherwise.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)">readContent</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+            java.lang.String&nbsp;expectedContentType,
+            java.lang.String&nbsp;expectedCharSet)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+ <code>expectedCharSet</code>, or <code>UTF-8</code> if
+ <code>expectedCharSet</code> is <code>null</null>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContentAsGwtRpc(javax.servlet.http.HttpServletRequest)">readContentAsGwtRpc</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the content of an <CODE>HttpServletRequest</CODE>, after verifying a
+ <code>gwt/x-gwt-rpc; charset=utf-8</code> content type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContentAsUtf8(javax.servlet.http.HttpServletRequest)">readContentAsUtf8</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)"><CODE>readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContentAsUtf8(javax.servlet.http.HttpServletRequest, boolean)">readContentAsUtf8</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                  boolean&nbsp;checkHeaders)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)"><CODE>readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</CODE></A> instead.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#setGzipEncodingHeader(javax.servlet.http.HttpServletResponse)">setGzipEncodingHeader</A></B>(javax.servlet.http.HttpServletResponse&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the correct header to indicate that a response is gzipped.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#shouldGzipResponseContent(javax.servlet.http.HttpServletRequest, java.lang.String)">shouldGzipResponseContent</A></B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                          java.lang.String&nbsp;responseContent)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the request accepts gzip encoding and the the
+ response content's estimated UTF-8 byte length exceeds 256 bytes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#writeResponse(javax.servlet.ServletContext, javax.servlet.http.HttpServletResponse, java.lang.String, boolean)">writeResponse</A></B>(javax.servlet.ServletContext&nbsp;servletContext,
+              javax.servlet.http.HttpServletResponse&nbsp;response,
+              java.lang.String&nbsp;responseContent,
+              boolean&nbsp;gzipResponse)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write the response content into the <CODE>HttpServletResponse</CODE>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#writeResponseForUnexpectedFailure(javax.servlet.ServletContext, javax.servlet.http.HttpServletResponse, java.lang.Throwable)">writeResponseForUnexpectedFailure</A></B>(javax.servlet.ServletContext&nbsp;servletContext,
+                                  javax.servlet.http.HttpServletResponse&nbsp;response,
+                                  java.lang.Throwable&nbsp;failure)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when the servlet itself has a problem, rather than the invoked
+ third-party method.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="acceptsGzipEncoding(javax.servlet.http.HttpServletRequest)"><!-- --></A><H3>
+acceptsGzipEncoding</H3>
+<PRE>
+public static boolean <B>acceptsGzipEncoding</B>(javax.servlet.http.HttpServletRequest&nbsp;request)</PRE>
+<DL>
+<DD>Returns <code>true</code> if the <CODE>HttpServletRequest</CODE> accepts Gzip
+ encoding. This is done by checking that the accept-encoding header
+ specifies gzip as a supported encoding.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the request instance to test for gzip encoding acceptance
+<DT><B>Returns:</B><DD><code>true</code> if the <CODE>HttpServletRequest</CODE> accepts Gzip
+         encoding</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="exceedsUncompressedContentLengthLimit(java.lang.String)"><!-- --></A><H3>
+exceedsUncompressedContentLengthLimit</H3>
+<PRE>
+public static boolean <B>exceedsUncompressedContentLengthLimit</B>(java.lang.String&nbsp;content)</PRE>
+<DL>
+<DD>Returns <code>true</code> if the response content's estimated UTF-8 byte
+ length exceeds 256 bytes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>content</CODE> - the contents of the response
+<DT><B>Returns:</B><DD><code>true</code> if the response content's estimated UTF-8 byte
+         length exceeds 256 bytes</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isExpectedException(java.lang.reflect.Method, java.lang.Throwable)"><!-- --></A><H3>
+isExpectedException</H3>
+<PRE>
+public static boolean <B>isExpectedException</B>(java.lang.reflect.Method&nbsp;serviceIntfMethod,
+                                          java.lang.Throwable&nbsp;cause)</PRE>
+<DL>
+<DD>Returns true if the <CODE>Method</CODE> definition on
+ the service is specified to throw the exception contained in the
+ InvocationTargetException or false otherwise. NOTE we do not check that the
+ type is serializable here. We assume that it must be otherwise the
+ application would never have been allowed to run.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>serviceIntfMethod</CODE> - the method from the RPC request<DD><CODE>cause</CODE> - the exception that the method threw
+<DT><B>Returns:</B><DD>true if the exception's type is in the method's signature</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)"><!-- --></A><H3>
+readContent</H3>
+<PRE>
+public static java.lang.String <B>readContent</B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                                           java.lang.String&nbsp;expectedContentType,
+                                           java.lang.String&nbsp;expectedCharSet)
+                                    throws java.io.IOException,
+                                           javax.servlet.ServletException</PRE>
+<DL>
+<DD>Returns the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+ <code>expectedCharSet</code>, or <code>UTF-8</code> if
+ <code>expectedCharSet</code> is <code>null</null>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the servlet request whose content we want to read<DD><CODE>expectedContentType</CODE> - the expected content (i.e. 'type/subtype' only)
+          in the Content-Type request header, or <code>null</code> if no
+          validation is to be performed, and you are willing to allow for
+          some types of cross type security attacks<DD><CODE>expectedCharSet</CODE> - the expected request charset, or <code>null</code>
+          if no charset validation is to be performed and <code>UTF-8</code>
+          should be assumed
+<DT><B>Returns:</B><DD>the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+         <code>expectedCharSet</code>, or <code>UTF-8</code> if
+         <code>expectedCharSet</code> is <code>null</code>
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE> - if the request's input stream cannot be accessed, read
+         from or closed
+<DD><CODE>javax.servlet.ServletException</CODE> - if the request's content type does not
+         equal the supplied <code>expectedContentType</code> or
+         <code>expectedCharSet</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readContentAsGwtRpc(javax.servlet.http.HttpServletRequest)"><!-- --></A><H3>
+readContentAsGwtRpc</H3>
+<PRE>
+public static java.lang.String <B>readContentAsGwtRpc</B>(javax.servlet.http.HttpServletRequest&nbsp;request)
+                                            throws java.io.IOException,
+                                                   javax.servlet.ServletException</PRE>
+<DL>
+<DD>Returns the content of an <CODE>HttpServletRequest</CODE>, after verifying a
+ <code>gwt/x-gwt-rpc; charset=utf-8</code> content type.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the servlet request whose content we want to read
+<DT><B>Returns:</B><DD>the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+         <code>UTF-8</code>
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE> - if the request's input stream cannot be accessed, read
+         from or closed
+<DD><CODE>javax.servlet.ServletException</CODE> - if the request's content type is not
+         <code>gwt/x-gwt-rpc; charset=utf-8</code>, ignoring case</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readContentAsUtf8(javax.servlet.http.HttpServletRequest)"><!-- --></A><H3>
+readContentAsUtf8</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static java.lang.String <B>readContentAsUtf8</B>(javax.servlet.http.HttpServletRequest&nbsp;request)
+                                          throws java.io.IOException,
+                                                 javax.servlet.ServletException</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)"><CODE>readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</CODE></A> instead.</I>
+<P>
+<DD>Returns the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+ the UTF-8 charset.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the servlet request whose content we want to read
+<DT><B>Returns:</B><DD>the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+         the UTF-8 charset
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE> - if the requests input stream cannot be accessed, read
+           from or closed
+<DD><CODE>javax.servlet.ServletException</CODE> - if the content length of the request is not
+           specified of if the request's content type is not
+           'text/x-gwt-rpc' and 'charset=utf-8'</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readContentAsUtf8(javax.servlet.http.HttpServletRequest, boolean)"><!-- --></A><H3>
+readContentAsUtf8</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public static java.lang.String <B>readContentAsUtf8</B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                                                            boolean&nbsp;checkHeaders)
+                                          throws java.io.IOException,
+                                                 javax.servlet.ServletException</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCServletUtils.html#readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)"><CODE>readContent(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String)</CODE></A> instead.</I>
+<P>
+<DD>Returns the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+ the UTF-8 charset.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the servlet request whose content we want to read<DD><CODE>checkHeaders</CODE> - Specify 'true' to check the Content-Type header to see
+          that it matches the expected value 'text/x-gwt-rpc' and the
+          content encoding is UTF-8. Disabling this check may allow some
+          types of cross type security attacks.
+<DT><B>Returns:</B><DD>the content of an <CODE>HttpServletRequest</CODE> by decoding it using
+         the UTF-8 charset
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE> - if the requests input stream cannot be accessed, read
+           from or closed
+<DD><CODE>javax.servlet.ServletException</CODE> - if the content length of the request is not
+           specified of if the request's content type is not
+           'text/x-gwt-rpc' and 'charset=utf-8'</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setGzipEncodingHeader(javax.servlet.http.HttpServletResponse)"><!-- --></A><H3>
+setGzipEncodingHeader</H3>
+<PRE>
+public static void <B>setGzipEncodingHeader</B>(javax.servlet.http.HttpServletResponse&nbsp;response)</PRE>
+<DL>
+<DD>Sets the correct header to indicate that a response is gzipped.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="shouldGzipResponseContent(javax.servlet.http.HttpServletRequest, java.lang.String)"><!-- --></A><H3>
+shouldGzipResponseContent</H3>
+<PRE>
+public static boolean <B>shouldGzipResponseContent</B>(javax.servlet.http.HttpServletRequest&nbsp;request,
+                                                java.lang.String&nbsp;responseContent)</PRE>
+<DL>
+<DD>Returns <code>true</code> if the request accepts gzip encoding and the the
+ response content's estimated UTF-8 byte length exceeds 256 bytes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>request</CODE> - the request associated with the response content<DD><CODE>responseContent</CODE> - a string that will be
+<DT><B>Returns:</B><DD><code>true</code> if the request accepts gzip encoding and the the
+         response content's estimated UTF-8 byte length exceeds 256 bytes</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeResponse(javax.servlet.ServletContext, javax.servlet.http.HttpServletResponse, java.lang.String, boolean)"><!-- --></A><H3>
+writeResponse</H3>
+<PRE>
+public static void <B>writeResponse</B>(javax.servlet.ServletContext&nbsp;servletContext,
+                                 javax.servlet.http.HttpServletResponse&nbsp;response,
+                                 java.lang.String&nbsp;responseContent,
+                                 boolean&nbsp;gzipResponse)
+                          throws java.io.IOException</PRE>
+<DL>
+<DD>Write the response content into the <CODE>HttpServletResponse</CODE>. If
+ <code>gzipResponse</code> is <code>true</code>, the response content will
+ be gzipped prior to being written into the response.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>servletContext</CODE> - servlet context for this response<DD><CODE>response</CODE> - response instance<DD><CODE>responseContent</CODE> - a string containing the response content<DD><CODE>gzipResponse</CODE> - if <code>true</code> the response content will be gzip
+          encoded before being written into the response
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE> - if reading, writing, or closing the response's output
+           stream fails</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeResponseForUnexpectedFailure(javax.servlet.ServletContext, javax.servlet.http.HttpServletResponse, java.lang.Throwable)"><!-- --></A><H3>
+writeResponseForUnexpectedFailure</H3>
+<PRE>
+public static void <B>writeResponseForUnexpectedFailure</B>(javax.servlet.ServletContext&nbsp;servletContext,
+                                                     javax.servlet.http.HttpServletResponse&nbsp;response,
+                                                     java.lang.Throwable&nbsp;failure)</PRE>
+<DL>
+<DD>Called when the servlet itself has a problem, rather than the invoked
+ third-party method. It writes a simple 500 message back to the client.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>servletContext</CODE> - <DD><CODE>response</CODE> - <DD><CODE>failure</CODE> - </DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RPCServletUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/RPCRequest.html" title="class in com.google.gwt.user.server.rpc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/server/rpc/SerializationPolicy.html" title="class in com.google.gwt.user.server.rpc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/server/rpc/RPCServletUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RPCServletUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

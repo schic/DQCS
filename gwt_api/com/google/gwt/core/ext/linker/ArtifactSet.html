@@ -1,0 +1,840 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+ArtifactSet (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ArtifactSet (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ArtifactSet.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/BinaryEmittedArtifact.html" title="class in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/ArtifactSet.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ArtifactSet.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.ext.linker</FONT>
+<BR>
+Class ArtifactSet</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.ext.linker.ArtifactSet</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>java.io.Serializable, java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;, java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;, java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;, java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public final class <B>ArtifactSet</B><DT>extends java.lang.Object<DT>implements java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;, java.io.Serializable</DL>
+</PRE>
+
+<P>
+Provides stable ordering and de-duplication of artifacts.
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#com.google.gwt.core.ext.linker.ArtifactSet">Serialized Form</A></DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#ArtifactSet()">ArtifactSet</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#ArtifactSet(java.util.Collection)">ArtifactSet</A></B>(java.util.Collection&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;&nbsp;copyFrom)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#add(com.google.gwt.core.ext.linker.Artifact)">add</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#addAll(java.util.Collection)">addAll</A></B>(java.util.Collection&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;&nbsp;c)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#clear()">clear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Comparator&lt;? super <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#comparator()">comparator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#contains(java.lang.Object)">contains</A></B>(java.lang.Object&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#containsAll(java.util.Collection)">containsAll</A></B>(java.util.Collection&lt;?&gt;&nbsp;c)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#equals(java.lang.Object)">equals</A></B>(java.lang.Object&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;? super T&gt;&gt; 
+<BR>
+java.util.SortedSet&lt;T&gt;</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#find(java.lang.Class)">find</A></B>(java.lang.Class&lt;T&gt;&nbsp;artifactType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Find all Artifacts assignable to some base type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#first()">first</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#freeze()">freeze</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prevent further modification of the the ArtifactSet.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#headSet(com.google.gwt.core.ext.linker.Artifact)">headSet</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;toElement)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#isEmpty()">isEmpty</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.Iterator&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#iterator()">iterator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#last()">last</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#remove(java.lang.Object)">remove</A></B>(java.lang.Object&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#removeAll(java.util.Collection)">removeAll</A></B>(java.util.Collection&lt;?&gt;&nbsp;c)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#replace(com.google.gwt.core.ext.linker.Artifact)">replace</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;artifact)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Possibly replace an existing Artifact.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#retainAll(java.util.Collection)">retainAll</A></B>(java.util.Collection&lt;?&gt;&nbsp;c)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#size()">size</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#subSet(com.google.gwt.core.ext.linker.Artifact, com.google.gwt.core.ext.linker.Artifact)">subSet</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;fromElement,
+       <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;toElement)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#tailSet(com.google.gwt.core.ext.linker.Artifact)">tailSet</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;fromElement)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.Object[]</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#toArray()">toArray</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T&gt; T[]</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#toArray(T[])">toArray</A></B>(T[]&nbsp;a)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ArtifactSet()"><!-- --></A><H3>
+ArtifactSet</H3>
+<PRE>
+public <B>ArtifactSet</B>()</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="ArtifactSet(java.util.Collection)"><!-- --></A><H3>
+ArtifactSet</H3>
+<PRE>
+public <B>ArtifactSet</B>(java.util.Collection&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;&nbsp;copyFrom)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="add(com.google.gwt.core.ext.linker.Artifact)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public boolean <B>add</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;o)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>add</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>add</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addAll(java.util.Collection)"><!-- --></A><H3>
+addAll</H3>
+<PRE>
+public boolean <B>addAll</B>(java.util.Collection&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;&nbsp;c)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>addAll</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>addAll</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clear()"><!-- --></A><H3>
+clear</H3>
+<PRE>
+public void <B>clear</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>clear</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>clear</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="comparator()"><!-- --></A><H3>
+comparator</H3>
+<PRE>
+public java.util.Comparator&lt;? super <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt; <B>comparator</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>comparator</CODE> in interface <CODE>java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="contains(java.lang.Object)"><!-- --></A><H3>
+contains</H3>
+<PRE>
+public boolean <B>contains</B>(java.lang.Object&nbsp;o)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>contains</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>contains</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="containsAll(java.util.Collection)"><!-- --></A><H3>
+containsAll</H3>
+<PRE>
+public boolean <B>containsAll</B>(java.util.Collection&lt;?&gt;&nbsp;c)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>containsAll</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>containsAll</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(java.lang.Object&nbsp;o)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>equals</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>equals</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Overrides:</B><DD><CODE>equals</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="find(java.lang.Class)"><!-- --></A><H3>
+find</H3>
+<PRE>
+public &lt;T extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;? super T&gt;&gt; java.util.SortedSet&lt;T&gt; <B>find</B>(java.lang.Class&lt;T&gt;&nbsp;artifactType)</PRE>
+<DL>
+<DD>Find all Artifacts assignable to some base type. The returned value will be
+ a snapshot of the values in the ArtifactSet. An example of how this could
+ be used:
+ 
+ <pre>
+   for (EmittedArtifact ea : artifactSet.find(EmittedArtifact.class)) {
+     ...
+   }
+ </pre>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the desired type of Artifact<DT><B>Parameters:</B><DD><CODE>artifactType</CODE> - the desired type of Artifact
+<DT><B>Returns:</B><DD>all Artifacts in the ArtifactSet assignable to the desired type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="first()"><!-- --></A><H3>
+first</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt; <B>first</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>first</CODE> in interface <CODE>java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="freeze()"><!-- --></A><H3>
+freeze</H3>
+<PRE>
+public void <B>freeze</B>()</PRE>
+<DL>
+<DD>Prevent further modification of the the ArtifactSet. Any attempts to alter
+ the ArtifactSet after invoking this method will result in an
+ UnsupportedOperationException.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>hashCode</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>hashCode</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Overrides:</B><DD><CODE>hashCode</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="headSet(com.google.gwt.core.ext.linker.Artifact)"><!-- --></A><H3>
+headSet</H3>
+<PRE>
+public java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt; <B>headSet</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;toElement)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>headSet</CODE> in interface <CODE>java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isEmpty()"><!-- --></A><H3>
+isEmpty</H3>
+<PRE>
+public boolean <B>isEmpty</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>isEmpty</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>isEmpty</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="iterator()"><!-- --></A><H3>
+iterator</H3>
+<PRE>
+public java.util.Iterator&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt; <B>iterator</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>iterator</CODE> in interface <CODE>java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>iterator</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>iterator</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="last()"><!-- --></A><H3>
+last</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt; <B>last</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>last</CODE> in interface <CODE>java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="remove(java.lang.Object)"><!-- --></A><H3>
+remove</H3>
+<PRE>
+public boolean <B>remove</B>(java.lang.Object&nbsp;o)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>remove</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>remove</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeAll(java.util.Collection)"><!-- --></A><H3>
+removeAll</H3>
+<PRE>
+public boolean <B>removeAll</B>(java.util.Collection&lt;?&gt;&nbsp;c)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>removeAll</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>removeAll</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replace(com.google.gwt.core.ext.linker.Artifact)"><!-- --></A><H3>
+replace</H3>
+<PRE>
+public boolean <B>replace</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;artifact)</PRE>
+<DL>
+<DD>Possibly replace an existing Artifact.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>artifact</CODE> - the replacement Artifact
+<DT><B>Returns:</B><DD><code>true</code> if an equivalent Artifact was already present.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="retainAll(java.util.Collection)"><!-- --></A><H3>
+retainAll</H3>
+<PRE>
+public boolean <B>retainAll</B>(java.util.Collection&lt;?&gt;&nbsp;c)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>retainAll</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>retainAll</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="size()"><!-- --></A><H3>
+size</H3>
+<PRE>
+public int <B>size</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>size</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>size</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subSet(com.google.gwt.core.ext.linker.Artifact, com.google.gwt.core.ext.linker.Artifact)"><!-- --></A><H3>
+subSet</H3>
+<PRE>
+public java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt; <B>subSet</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;fromElement,
+                                               <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;toElement)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>subSet</CODE> in interface <CODE>java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tailSet(com.google.gwt.core.ext.linker.Artifact)"><!-- --></A><H3>
+tailSet</H3>
+<PRE>
+public java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt; <B>tailSet</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;fromElement)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>tailSet</CODE> in interface <CODE>java.util.SortedSet&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toArray()"><!-- --></A><H3>
+toArray</H3>
+<PRE>
+public java.lang.Object[] <B>toArray</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>toArray</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>toArray</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toArray(java.lang.Object[])"><!-- --></A><A NAME="toArray(T[])"><!-- --></A><H3>
+toArray</H3>
+<PRE>
+public &lt;T&gt; T[] <B>toArray</B>(T[]&nbsp;a)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>toArray</CODE> in interface <CODE>java.util.Collection&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE><DT><B>Specified by:</B><DD><CODE>toArray</CODE> in interface <CODE>java.util.Set&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public java.lang.String <B>toString</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>toString</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ArtifactSet.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/BinaryEmittedArtifact.html" title="class in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/ArtifactSet.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ArtifactSet.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,827 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+RequestBuilder (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="RequestBuilder (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RequestBuilder.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/http/client/RequestBuilder.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RequestBuilder.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.http.client</FONT>
+<BR>
+Class RequestBuilder</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.http.client.RequestBuilder</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>RequestBuilder</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Builder for constructing <A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client"><CODE>Request</CODE></A> objects.
+ 
+ <h3>Required Module</h3> Modules that use this class should inherit
+ <code>com.google.gwt.http.HTTP</code>.
+ 
+ <blockquote><pre>&lt;module&gt;
+  &lt;!-- other inherited modules, such as com.google.gwt.user.User --&gt;
+  &lt;inherits name="com.google.gwt.http.HTTP"/&gt;
+  &lt;!-- additional module settings --&gt;
+&lt;/module&gt;
+</pre></blockquote>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP request method constants.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#DELETE">DELETE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that the HTTP DELETE method should be used.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#GET">GET</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that the HTTP GET method should be used.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#HEAD">HEAD</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that the HTTP HEAD method should be used.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#POST">POST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that the HTTP POST method should be used.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#PUT">PUT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that the HTTP PUT method should be used.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#RequestBuilder(com.google.gwt.http.client.RequestBuilder.Method, java.lang.String)">RequestBuilder</A></B>(<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A>&nbsp;httpMethod,
+               java.lang.String&nbsp;url)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a builder using the parameters for configuration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#RequestBuilder(java.lang.String, java.lang.String)">RequestBuilder</A></B>(java.lang.String&nbsp;httpMethod,
+               java.lang.String&nbsp;url)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a builder using the parameters values for configuration.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html" title="interface in com.google.gwt.http.client">RequestCallback</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getCallback()">getCallback</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the callback previously set by
+ <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setCallback(com.google.gwt.http.client.RequestCallback)"><CODE>setCallback(RequestCallback)</CODE></A>, or <code>null</code> if no callback
+ was set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getHeader(java.lang.String)">getHeader</A></B>(java.lang.String&nbsp;header)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the value of a header previous set by
+ <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setHeader(java.lang.String, java.lang.String)"><CODE>setHeader(String, String)</CODE></A>, or <code>null</code> if no such header
+ was set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getHTTPMethod()">getHTTPMethod</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the HTTP method specified in the constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getPassword()">getPassword</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the password previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setPassword(java.lang.String)"><CODE>setPassword(String)</CODE></A>, or
+ <code>null</code> if no password was set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getRequestData()">getRequestData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the requestData previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setRequestData(java.lang.String)"><CODE>setRequestData(String)</CODE></A>,
+ or <code>null</code> if no requestData was set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getTimeoutMillis()">getTimeoutMillis</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the timeoutMillis previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setTimeoutMillis(int)"><CODE>setTimeoutMillis(int)</CODE></A>,
+ or <code>0</code> if no timeoutMillis was set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getUrl()">getUrl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the HTTP URL specified in the constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#getUser()">getUser</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the user previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setUser(java.lang.String)"><CODE>setUser(String)</CODE></A>, or
+ <code>null</code> if no user was set.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client">Request</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#send()">send</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends an HTTP request based on the current builder configuration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client">Request</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#sendRequest(java.lang.String, com.google.gwt.http.client.RequestCallback)">sendRequest</A></B>(java.lang.String&nbsp;requestData,
+            <A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html" title="interface in com.google.gwt.http.client">RequestCallback</A>&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sends an HTTP request based on the current builder configuration with the
+ specified data and callback.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setCallback(com.google.gwt.http.client.RequestCallback)">setCallback</A></B>(<A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html" title="interface in com.google.gwt.http.client">RequestCallback</A>&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the response handler for this request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setHeader(java.lang.String, java.lang.String)">setHeader</A></B>(java.lang.String&nbsp;header,
+          java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets a request header with the given name and value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setPassword(java.lang.String)">setPassword</A></B>(java.lang.String&nbsp;password)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the password to use in the request URL.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setRequestData(java.lang.String)">setRequestData</A></B>(java.lang.String&nbsp;requestData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the data to send as part of this request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setTimeoutMillis(int)">setTimeoutMillis</A></B>(int&nbsp;timeoutMillis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the number of milliseconds to wait for a request to complete.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setUser(java.lang.String)">setUser</A></B>(java.lang.String&nbsp;user)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the user name that will be used in the request URL.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DELETE"><!-- --></A><H3>
+DELETE</H3>
+<PRE>
+public static final <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A> <B>DELETE</B></PRE>
+<DL>
+<DD>Specifies that the HTTP DELETE method should be used.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="GET"><!-- --></A><H3>
+GET</H3>
+<PRE>
+public static final <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A> <B>GET</B></PRE>
+<DL>
+<DD>Specifies that the HTTP GET method should be used.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="HEAD"><!-- --></A><H3>
+HEAD</H3>
+<PRE>
+public static final <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A> <B>HEAD</B></PRE>
+<DL>
+<DD>Specifies that the HTTP HEAD method should be used.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="POST"><!-- --></A><H3>
+POST</H3>
+<PRE>
+public static final <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A> <B>POST</B></PRE>
+<DL>
+<DD>Specifies that the HTTP POST method should be used.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="PUT"><!-- --></A><H3>
+PUT</H3>
+<PRE>
+public static final <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A> <B>PUT</B></PRE>
+<DL>
+<DD>Specifies that the HTTP PUT method should be used.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="RequestBuilder(com.google.gwt.http.client.RequestBuilder.Method, java.lang.String)"><!-- --></A><H3>
+RequestBuilder</H3>
+<PRE>
+public <B>RequestBuilder</B>(<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client">RequestBuilder.Method</A>&nbsp;httpMethod,
+                      java.lang.String&nbsp;url)</PRE>
+<DL>
+<DD>Creates a builder using the parameters for configuration.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>httpMethod</CODE> - HTTP method to use for the request<DD><CODE>url</CODE> - URL that has already has already been encoded. Please see
+          <A HREF="../../../../../com/google/gwt/http/client/URL.html#encode(java.lang.String)"><CODE>URL.encode(String)</CODE></A>,
+          <A HREF="../../../../../com/google/gwt/http/client/URL.html#encodePathSegment(java.lang.String)"><CODE>URL.encodePathSegment(String)</CODE></A> and
+          <A HREF="../../../../../com/google/gwt/http/client/URL.html#encodeQueryString(java.lang.String)"><CODE>URL.encodeQueryString(String)</CODE></A> for
+          how to do this.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the httpMethod or URL are empty
+<DD><CODE>java.lang.NullPointerException</CODE> - if the httpMethod or the URL are null</DL>
+</DL>
+<HR>
+
+<A NAME="RequestBuilder(java.lang.String, java.lang.String)"><!-- --></A><H3>
+RequestBuilder</H3>
+<PRE>
+protected <B>RequestBuilder</B>(java.lang.String&nbsp;httpMethod,
+                         java.lang.String&nbsp;url)</PRE>
+<DL>
+<DD>Creates a builder using the parameters values for configuration.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>httpMethod</CODE> - HTTP method to use for the request<DD><CODE>url</CODE> - URL that has already has already been URL encoded. Please see
+          <A HREF="../../../../../com/google/gwt/http/client/URL.html#encode(java.lang.String)"><CODE>URL.encode(String)</CODE></A> and
+          <A HREF="../../../../../com/google/gwt/http/client/URL.html#encodePathSegment(java.lang.String)"><CODE>URL.encodePathSegment(String)</CODE></A> and
+          <A HREF="../../../../../com/google/gwt/http/client/URL.html#encodeQueryString(java.lang.String)"><CODE>URL.encodeQueryString(String)</CODE></A> for
+          how to do this.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the httpMethod or URL are empty
+<DD><CODE>java.lang.NullPointerException</CODE> - if the httpMethod or the URL are null</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getCallback()"><!-- --></A><H3>
+getCallback</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html" title="interface in com.google.gwt.http.client">RequestCallback</A> <B>getCallback</B>()</PRE>
+<DL>
+<DD>Returns the callback previously set by
+ <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setCallback(com.google.gwt.http.client.RequestCallback)"><CODE>setCallback(RequestCallback)</CODE></A>, or <code>null</code> if no callback
+ was set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHeader(java.lang.String)"><!-- --></A><H3>
+getHeader</H3>
+<PRE>
+public java.lang.String <B>getHeader</B>(java.lang.String&nbsp;header)</PRE>
+<DL>
+<DD>Returns the value of a header previous set by
+ <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setHeader(java.lang.String, java.lang.String)"><CODE>setHeader(String, String)</CODE></A>, or <code>null</code> if no such header
+ was set.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>header</CODE> - the name of the header</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHTTPMethod()"><!-- --></A><H3>
+getHTTPMethod</H3>
+<PRE>
+public java.lang.String <B>getHTTPMethod</B>()</PRE>
+<DL>
+<DD>Returns the HTTP method specified in the constructor.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPassword()"><!-- --></A><H3>
+getPassword</H3>
+<PRE>
+public java.lang.String <B>getPassword</B>()</PRE>
+<DL>
+<DD>Returns the password previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setPassword(java.lang.String)"><CODE>setPassword(String)</CODE></A>, or
+ <code>null</code> if no password was set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRequestData()"><!-- --></A><H3>
+getRequestData</H3>
+<PRE>
+public java.lang.String <B>getRequestData</B>()</PRE>
+<DL>
+<DD>Returns the requestData previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setRequestData(java.lang.String)"><CODE>setRequestData(String)</CODE></A>,
+ or <code>null</code> if no requestData was set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTimeoutMillis()"><!-- --></A><H3>
+getTimeoutMillis</H3>
+<PRE>
+public int <B>getTimeoutMillis</B>()</PRE>
+<DL>
+<DD>Returns the timeoutMillis previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setTimeoutMillis(int)"><CODE>setTimeoutMillis(int)</CODE></A>,
+ or <code>0</code> if no timeoutMillis was set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUrl()"><!-- --></A><H3>
+getUrl</H3>
+<PRE>
+public java.lang.String <B>getUrl</B>()</PRE>
+<DL>
+<DD>Returns the HTTP URL specified in the constructor.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUser()"><!-- --></A><H3>
+getUser</H3>
+<PRE>
+public java.lang.String <B>getUser</B>()</PRE>
+<DL>
+<DD>Returns the user previously set by <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setUser(java.lang.String)"><CODE>setUser(String)</CODE></A>, or
+ <code>null</code> if no user was set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="send()"><!-- --></A><H3>
+send</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client">Request</A> <B>send</B>()
+             throws <A HREF="../../../../../com/google/gwt/http/client/RequestException.html" title="class in com.google.gwt.http.client">RequestException</A></PRE>
+<DL>
+<DD>Sends an HTTP request based on the current builder configuration. If no
+ request headers have been set, the header "Content-Type" will be used with
+ a value of "text/plain; charset=utf-8". You must call
+ <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setRequestData(java.lang.String)"><CODE>setRequestData(String)</CODE></A> and <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#setCallback(com.google.gwt.http.client.RequestCallback)"><CODE>setCallback(RequestCallback)</CODE></A>
+ before calling this method.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client"><CODE>Request</CODE></A> object that can be used to track the request
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/http/client/RequestException.html" title="class in com.google.gwt.http.client">RequestException</A></CODE> - if the call fails to initiate
+<DD><CODE>java.lang.NullPointerException</CODE> - if a request callback has not been set</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sendRequest(java.lang.String, com.google.gwt.http.client.RequestCallback)"><!-- --></A><H3>
+sendRequest</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client">Request</A> <B>sendRequest</B>(java.lang.String&nbsp;requestData,
+                           <A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html" title="interface in com.google.gwt.http.client">RequestCallback</A>&nbsp;callback)
+                    throws <A HREF="../../../../../com/google/gwt/http/client/RequestException.html" title="class in com.google.gwt.http.client">RequestException</A></PRE>
+<DL>
+<DD>Sends an HTTP request based on the current builder configuration with the
+ specified data and callback. If no request headers have been set, the
+ header "Content-Type" will be used with a value of "text/plain;
+ charset=utf-8". This method does not cache <code>requestData</code> or
+ <code>callback</code>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>requestData</CODE> - the data to send as part of the request<DD><CODE>callback</CODE> - the response handler to be notified when the request fails
+          or completes
+<DT><B>Returns:</B><DD>a <A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client"><CODE>Request</CODE></A> object that can be used to track the request
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.NullPointerException</CODE> - if <code>callback</code> <code>null</code>
+<DD><CODE><A HREF="../../../../../com/google/gwt/http/client/RequestException.html" title="class in com.google.gwt.http.client">RequestException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCallback(com.google.gwt.http.client.RequestCallback)"><!-- --></A><H3>
+setCallback</H3>
+<PRE>
+public void <B>setCallback</B>(<A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html" title="interface in com.google.gwt.http.client">RequestCallback</A>&nbsp;callback)</PRE>
+<DL>
+<DD>Sets the response handler for this request. This method <b>must</b> be
+ called before calling <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#send()"><CODE>send()</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>callback</CODE> - the response handler to be notified when the request fails
+          or completes
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.NullPointerException</CODE> - if <code>callback</code> is <code>null</code></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHeader(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setHeader</H3>
+<PRE>
+public void <B>setHeader</B>(java.lang.String&nbsp;header,
+                      java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Sets a request header with the given name and value. If a header with the
+ specified name has already been set then the new value overwrites the
+ current value.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>header</CODE> - the name of the header<DD><CODE>value</CODE> - the value of the header
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.NullPointerException</CODE> - if header or value are null
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if header or value are the empty string</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPassword(java.lang.String)"><!-- --></A><H3>
+setPassword</H3>
+<PRE>
+public void <B>setPassword</B>(java.lang.String&nbsp;password)</PRE>
+<DL>
+<DD>Sets the password to use in the request URL. This is ignored if there is no
+ user specified.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>password</CODE> - password to use in the request URL
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the password is empty
+<DD><CODE>java.lang.NullPointerException</CODE> - if the password is null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRequestData(java.lang.String)"><!-- --></A><H3>
+setRequestData</H3>
+<PRE>
+public void <B>setRequestData</B>(java.lang.String&nbsp;requestData)</PRE>
+<DL>
+<DD>Sets the data to send as part of this request. This method <b>must</b> be
+ called before calling <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#send()"><CODE>send()</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>requestData</CODE> - the data to send as part of the request</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTimeoutMillis(int)"><!-- --></A><H3>
+setTimeoutMillis</H3>
+<PRE>
+public void <B>setTimeoutMillis</B>(int&nbsp;timeoutMillis)</PRE>
+<DL>
+<DD>Sets the number of milliseconds to wait for a request to complete. Should
+ the request timeout, the
+ <A HREF="../../../../../com/google/gwt/http/client/RequestCallback.html#onError(com.google.gwt.http.client.Request, java.lang.Throwable)"><CODE>RequestCallback.onError(Request, Throwable)</CODE></A>
+ method will be called on the callback instance given to the
+ <A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.html#sendRequest(java.lang.String, com.google.gwt.http.client.RequestCallback)"><CODE>sendRequest(String, RequestCallback)</CODE></A>
+ method. The callback method will receive an instance of the
+ <A HREF="../../../../../com/google/gwt/http/client/RequestTimeoutException.html" title="class in com.google.gwt.http.client"><CODE>RequestTimeoutException</CODE></A> class as its
+ <CODE>Throwable</CODE> argument.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>timeoutMillis</CODE> - number of milliseconds to wait before canceling the
+          request, a value of zero disables timeouts
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the timeout value is negative</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUser(java.lang.String)"><!-- --></A><H3>
+setUser</H3>
+<PRE>
+public void <B>setUser</B>(java.lang.String&nbsp;user)</PRE>
+<DL>
+<DD>Sets the user name that will be used in the request URL.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>user</CODE> - user name to use
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if the user is empty
+<DD><CODE>java.lang.NullPointerException</CODE> - if the user is null</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RequestBuilder.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/Request.html" title="class in com.google.gwt.http.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/http/client/RequestBuilder.Method.html" title="class in com.google.gwt.http.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/http/client/RequestBuilder.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RequestBuilder.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

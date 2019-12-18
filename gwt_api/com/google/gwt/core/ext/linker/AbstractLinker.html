@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+AbstractLinker (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractLinker (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractLinker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/AbstractLinker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractLinker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.ext.linker</FONT>
+<BR>
+Class AbstractLinker</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">com.google.gwt.core.ext.Linker</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.ext.linker.AbstractLinker</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/rpc/linker/ClientOracleLinker.html" title="class in com.google.gwt.rpc.linker">ClientOracleLinker</A>, <A HREF="../../../../../../com/google/gwt/precompress/linker/PrecompressLinker.html" title="class in com.google.gwt.precompress.linker">PrecompressLinker</A>, <A HREF="../../../../../../com/google/gwt/user/linker/rpc/RpcLogLinker.html" title="class in com.google.gwt.user.linker.rpc">RpcLogLinker</A>, <A HREF="../../../../../../com/google/gwt/user/linker/rpc/RpcPolicyManifestLinker.html" title="class in com.google.gwt.user.linker.rpc">RpcPolicyManifestLinker</A>, com.google.gwt.core.ext.linker.impl.SelectionScriptLinker, <A HREF="../../../../../../com/google/gwt/core/linker/SymbolMapsLinker.html" title="class in com.google.gwt.core.linker">SymbolMapsLinker</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractLinker</B><DT>extends <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></DL>
+</PRE>
+
+<P>
+Provides basic functions common to all Linker implementations.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#AbstractLinker()">AbstractLinker</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String)">emitBytes</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+          byte[]&nbsp;what,
+          java.lang.String&nbsp;partialPath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact from an array of bytes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, long)">emitBytes</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+          byte[]&nbsp;what,
+          java.lang.String&nbsp;partialPath,
+          long&nbsp;lastModified)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact from an array of bytes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String)">emitInputStream</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                java.io.InputStream&nbsp;what,
+                java.lang.String&nbsp;partialPath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact to emit the contents of an
+ InputStream.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String, long)">emitInputStream</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                java.io.InputStream&nbsp;what,
+                java.lang.String&nbsp;partialPath,
+                long&nbsp;lastModified)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact to emit the contents of an
+ InputStream.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)">emitString</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+           java.lang.String&nbsp;what,
+           java.lang.String&nbsp;partialPath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact to emit a String.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String, long)">emitString</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+           java.lang.String&nbsp;what,
+           java.lang.String&nbsp;partialPath,
+           long&nbsp;lastModified)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact to emit a String.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String)">emitWithStrongName</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                   byte[]&nbsp;what,
+                   java.lang.String&nbsp;prefix,
+                   java.lang.String&nbsp;suffix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact from an array of bytes with a strong
+ name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/AbstractLinker.html#emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String, long)">emitWithStrongName</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                   byte[]&nbsp;what,
+                   java.lang.String&nbsp;prefix,
+                   java.lang.String&nbsp;suffix,
+                   long&nbsp;lastModified)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A helper method to create an artifact from an array of bytes with a strong
+ name.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.Linker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.<A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/Linker.html#getDescription()">getDescription</A>, <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html#isShardable()">isShardable</A>, <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">link</A>, <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html#link(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet, boolean)">link</A>, <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html#relink(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.LinkerContext, com.google.gwt.core.ext.linker.ArtifactSet)">relink</A>, <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html#supportsDevModeInJunit(com.google.gwt.core.ext.LinkerContext)">supportsDevModeInJunit</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractLinker()"><!-- --></A><H3>
+AbstractLinker</H3>
+<PRE>
+public <B>AbstractLinker</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String)"><!-- --></A><H3>
+emitBytes</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitBytes</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                            byte[]&nbsp;what,
+                                            java.lang.String&nbsp;partialPath)
+                                     throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact from an array of bytes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the data to emit<DD><CODE>partialPath</CODE> - the partial path of the resource
+<DT><B>Returns:</B><DD>an artifact that contains the given data
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitBytes(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, long)"><!-- --></A><H3>
+emitBytes</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitBytes</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                            byte[]&nbsp;what,
+                                            java.lang.String&nbsp;partialPath,
+                                            long&nbsp;lastModified)
+                                     throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact from an array of bytes.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the data to emit<DD><CODE>partialPath</CODE> - the partial path of the resource<DD><CODE>lastModified</CODE> - the last modified time of the new artifact
+<DT><B>Returns:</B><DD>an artifact that contains the given data
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String)"><!-- --></A><H3>
+emitInputStream</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitInputStream</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                  java.io.InputStream&nbsp;what,
+                                                  java.lang.String&nbsp;partialPath)
+                                           throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact to emit the contents of an
+ InputStream.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the source InputStream<DD><CODE>partialPath</CODE> - the partial path of the emitted resource
+<DT><B>Returns:</B><DD>an artifact that contains the contents of the InputStream
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitInputStream(com.google.gwt.core.ext.TreeLogger, java.io.InputStream, java.lang.String, long)"><!-- --></A><H3>
+emitInputStream</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitInputStream</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                  java.io.InputStream&nbsp;what,
+                                                  java.lang.String&nbsp;partialPath,
+                                                  long&nbsp;lastModified)
+                                           throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact to emit the contents of an
+ InputStream.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the source InputStream<DD><CODE>partialPath</CODE> - the partial path of the emitted resource<DD><CODE>lastModified</CODE> - the last modified time of the new artifact
+<DT><B>Returns:</B><DD>an artifact that contains the contents of the InputStream
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)"><!-- --></A><H3>
+emitString</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitString</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                             java.lang.String&nbsp;what,
+                                             java.lang.String&nbsp;partialPath)
+                                      throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact to emit a String.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the contents of the Artifact to emit<DD><CODE>partialPath</CODE> - the partial path of the emitted resource
+<DT><B>Returns:</B><DD>an artifact that contains the contents of the given String
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitString(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String, long)"><!-- --></A><H3>
+emitString</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitString</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                             java.lang.String&nbsp;what,
+                                             java.lang.String&nbsp;partialPath,
+                                             long&nbsp;lastModified)
+                                      throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact to emit a String.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the contents of the Artifact to emit<DD><CODE>partialPath</CODE> - the partial path of the emitted resource<DD><CODE>lastModified</CODE> - the last modified time of the new artifact
+<DT><B>Returns:</B><DD>an artifact that contains the contents of the given String
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String)"><!-- --></A><H3>
+emitWithStrongName</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitWithStrongName</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                     byte[]&nbsp;what,
+                                                     java.lang.String&nbsp;prefix,
+                                                     java.lang.String&nbsp;suffix)
+                                              throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact from an array of bytes with a strong
+ name.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the data to emit<DD><CODE>prefix</CODE> - a non-null string to prepend to the hash to determine the
+          Artifact's partial path<DD><CODE>suffix</CODE> - a non-null string to append to the hash to determine the
+          Artifact's partial path
+<DT><B>Returns:</B><DD>an artifact that contains the given data
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="emitWithStrongName(com.google.gwt.core.ext.TreeLogger, byte[], java.lang.String, java.lang.String, long)"><!-- --></A><H3>
+emitWithStrongName</H3>
+<PRE>
+protected final <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A> <B>emitWithStrongName</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                                     byte[]&nbsp;what,
+                                                     java.lang.String&nbsp;prefix,
+                                                     java.lang.String&nbsp;suffix,
+                                                     long&nbsp;lastModified)
+                                              throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>A helper method to create an artifact from an array of bytes with a strong
+ name.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a TreeLogger<DD><CODE>what</CODE> - the data to emit<DD><CODE>prefix</CODE> - a non-null string to prepend to the hash to determine the
+          Artifact's partial path<DD><CODE>suffix</CODE> - a non-null string to append to the hash to determine the
+          Artifact's partial path<DD><CODE>lastModified</CODE> - the last modified time of the new artifact
+<DT><B>Returns:</B><DD>an artifact that contains the given data
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractLinker.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/AbstractLinker.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractLinker.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

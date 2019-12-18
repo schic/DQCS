@@ -1,0 +1,779 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+KeyboardListener (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="KeyboardListener (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/KeyboardListener.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerAdapter.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/KeyboardListener.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="KeyboardListener.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Interface KeyboardListener</H2>
+<DL>
+<DT><B>All Superinterfaces:</B> <DD>java.util.EventListener</DD>
+</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../com/google/gwt/user/client/ui/DecoratedTabBar.html" title="class in com.google.gwt.user.client.ui">DecoratedTabBar</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/DelegatingKeyboardListenerCollection.html" title="class in com.google.gwt.user.client.ui">DelegatingKeyboardListenerCollection</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerAdapter.html" title="class in com.google.gwt.user.client.ui">KeyboardListenerAdapter</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/TabBar.html" title="class in com.google.gwt.user.client.ui">TabBar</A></DD>
+</DL>
+<HR>
+<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownHandler.html" title="interface in com.google.gwt.event.dom.client"><CODE>KeyDownHandler</CODE></A>,
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpHandler.html" title="interface in com.google.gwt.event.dom.client"><CODE>KeyUpHandler</CODE></A> and/or
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressHandler.html" title="interface in com.google.gwt.event.dom.client"><CODE>KeyPressHandler</CODE></A> instead</I>
+<P>
+<DL>
+<DT><PRE><FONT SIZE="-1">@Deprecated
+</FONT>public interface <B>KeyboardListener</B><DT>extends java.util.EventListener</DL>
+</PRE>
+
+<P>
+Event listener interface for keyboard events.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_ALT">KEY_ALT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_ALT"><CODE>KeyCodes.KEY_ALT</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_BACKSPACE">KEY_BACKSPACE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_BACKSPACE"><CODE>KeyCodes.KEY_BACKSPACE</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_CTRL">KEY_CTRL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_CTRL"><CODE>KeyCodes.KEY_CTRL</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_DELETE">KEY_DELETE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_DELETE"><CODE>KeyCodes.KEY_DELETE</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_DOWN">KEY_DOWN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_DOWN"><CODE>KeyCodes.KEY_DOWN</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_END">KEY_END</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_END"><CODE>KeyCodes.KEY_END</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_ENTER">KEY_ENTER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_ENTER"><CODE>KeyCodes.KEY_ENTER</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_ESCAPE">KEY_ESCAPE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_ESCAPE"><CODE>KeyCodes.KEY_ESCAPE</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_HOME">KEY_HOME</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_HOME"><CODE>KeyCodes.KEY_HOME</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_LEFT">KEY_LEFT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_LEFT"><CODE>KeyCodes.KEY_LEFT</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_PAGEDOWN">KEY_PAGEDOWN</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_PAGEDOWN"><CODE>KeyCodes.KEY_PAGEDOWN</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_PAGEUP">KEY_PAGEUP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_PAGEUP"><CODE>KeyCodes.KEY_PAGEUP</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_RIGHT">KEY_RIGHT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_RIGHT"><CODE>KeyCodes.KEY_RIGHT</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_SHIFT">KEY_SHIFT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_SHIFT"><CODE>KeyCodes.KEY_SHIFT</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_TAB">KEY_TAB</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_TAB"><CODE>KeyCodes.KEY_TAB</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_UP">KEY_UP</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_UP"><CODE>KeyCodes.KEY_UP</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT">MODIFIER_ALT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isAltKeyDown()"><CODE>KeyEvent.isAltKeyDown()</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL">MODIFIER_CTRL</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isControlKeyDown()"><CODE>KeyEvent.isControlKeyDown()</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_META">MODIFIER_META</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isMetaKeyDown()"><CODE>KeyEvent.isMetaKeyDown()</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT">MODIFIER_SHIFT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isShiftKeyDown()"><CODE>KeyEvent.isShiftKeyDown()</CODE></A>
+             instead</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#onKeyDown(com.google.gwt.user.client.ui.Widget, char, int)">onKeyDown</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+          char&nbsp;keyCode,
+          int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownHandler.html#onKeyDown(com.google.gwt.event.dom.client.KeyDownEvent)"><CODE>KeyDownHandler.onKeyDown(com.google.gwt.event.dom.client.KeyDownEvent)</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#onKeyPress(com.google.gwt.user.client.ui.Widget, char, int)">onKeyPress</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+           char&nbsp;keyCode,
+           int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressHandler.html#onKeyPress(com.google.gwt.event.dom.client.KeyPressEvent)"><CODE>KeyPressHandler.onKeyPress(com.google.gwt.event.dom.client.KeyPressEvent)</CODE></A>
+             instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#onKeyUp(com.google.gwt.user.client.ui.Widget, char, int)">onKeyUp</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+        char&nbsp;keyCode,
+        int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpHandler.html#onKeyUp(com.google.gwt.event.dom.client.KeyUpEvent)"><CODE>KeyUpHandler.onKeyUp(com.google.gwt.event.dom.client.KeyUpEvent)</CODE></A>
+             instead</I></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="KEY_ALT"><!-- --></A><H3>
+KEY_ALT</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_ALT</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_ALT"><CODE>KeyCodes.KEY_ALT</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_ALT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_BACKSPACE"><!-- --></A><H3>
+KEY_BACKSPACE</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_BACKSPACE</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_BACKSPACE"><CODE>KeyCodes.KEY_BACKSPACE</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_BACKSPACE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_CTRL"><!-- --></A><H3>
+KEY_CTRL</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_CTRL</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_CTRL"><CODE>KeyCodes.KEY_CTRL</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_CTRL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_DELETE"><!-- --></A><H3>
+KEY_DELETE</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_DELETE</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_DELETE"><CODE>KeyCodes.KEY_DELETE</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_DELETE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_DOWN"><!-- --></A><H3>
+KEY_DOWN</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_DOWN</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_DOWN"><CODE>KeyCodes.KEY_DOWN</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_DOWN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_END"><!-- --></A><H3>
+KEY_END</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_END</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_END"><CODE>KeyCodes.KEY_END</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_END">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_ENTER"><!-- --></A><H3>
+KEY_ENTER</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_ENTER</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_ENTER"><CODE>KeyCodes.KEY_ENTER</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_ENTER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_ESCAPE"><!-- --></A><H3>
+KEY_ESCAPE</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_ESCAPE</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_ESCAPE"><CODE>KeyCodes.KEY_ESCAPE</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_ESCAPE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_HOME"><!-- --></A><H3>
+KEY_HOME</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_HOME</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_HOME"><CODE>KeyCodes.KEY_HOME</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_HOME">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_LEFT"><!-- --></A><H3>
+KEY_LEFT</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_LEFT</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_LEFT"><CODE>KeyCodes.KEY_LEFT</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_LEFT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_PAGEDOWN"><!-- --></A><H3>
+KEY_PAGEDOWN</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_PAGEDOWN</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_PAGEDOWN"><CODE>KeyCodes.KEY_PAGEDOWN</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_PAGEDOWN">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_PAGEUP"><!-- --></A><H3>
+KEY_PAGEUP</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_PAGEUP</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_PAGEUP"><CODE>KeyCodes.KEY_PAGEUP</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_PAGEUP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_RIGHT"><!-- --></A><H3>
+KEY_RIGHT</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_RIGHT</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_RIGHT"><CODE>KeyCodes.KEY_RIGHT</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_RIGHT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_SHIFT"><!-- --></A><H3>
+KEY_SHIFT</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_SHIFT</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_SHIFT"><CODE>KeyCodes.KEY_SHIFT</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_SHIFT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_TAB"><!-- --></A><H3>
+KEY_TAB</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_TAB</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_TAB"><CODE>KeyCodes.KEY_TAB</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_TAB">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="KEY_UP"><!-- --></A><H3>
+KEY_UP</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>KEY_UP</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html#KEY_UP"><CODE>KeyCodes.KEY_UP</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.KEY_UP">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MODIFIER_ALT"><!-- --></A><H3>
+MODIFIER_ALT</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>MODIFIER_ALT</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isAltKeyDown()"><CODE>KeyEvent.isAltKeyDown()</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.MODIFIER_ALT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MODIFIER_CTRL"><!-- --></A><H3>
+MODIFIER_CTRL</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>MODIFIER_CTRL</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isControlKeyDown()"><CODE>KeyEvent.isControlKeyDown()</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.MODIFIER_CTRL">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MODIFIER_META"><!-- --></A><H3>
+MODIFIER_META</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>MODIFIER_META</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isMetaKeyDown()"><CODE>KeyEvent.isMetaKeyDown()</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.MODIFIER_META">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MODIFIER_SHIFT"><!-- --></A><H3>
+MODIFIER_SHIFT</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>static final int <B>MODIFIER_SHIFT</B></PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyEvent.html#isShiftKeyDown()"><CODE>KeyEvent.isShiftKeyDown()</CODE></A>
+             instead</I><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../constant-values.html#com.google.gwt.user.client.ui.KeyboardListener.MODIFIER_SHIFT">Constant Field Values</A></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="onKeyDown(com.google.gwt.user.client.ui.Widget, char, int)"><!-- --></A><H3>
+onKeyDown</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>void <B>onKeyDown</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                          char&nbsp;keyCode,
+                          int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyDownHandler.html#onKeyDown(com.google.gwt.event.dom.client.KeyDownEvent)"><CODE>KeyDownHandler.onKeyDown(com.google.gwt.event.dom.client.KeyDownEvent)</CODE></A>
+             instead</I>
+<P>
+<DD>Fired when the user depresses a physical key.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget that was focused when the event occurred.<DD><CODE>keyCode</CODE> - the physical key that was depressed. Constants for this
+          value are defined in this interface with the KEY prefix.<DD><CODE>modifiers</CODE> - the modifier keys pressed at when the event occurred. This
+          value is a combination of the bits defined by
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT"><CODE>MODIFIER_SHIFT</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL"><CODE>MODIFIER_CTRL</CODE></A>, and
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT"><CODE>MODIFIER_ALT</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onKeyPress(com.google.gwt.user.client.ui.Widget, char, int)"><!-- --></A><H3>
+onKeyPress</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>void <B>onKeyPress</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                           char&nbsp;keyCode,
+                           int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyPressHandler.html#onKeyPress(com.google.gwt.event.dom.client.KeyPressEvent)"><CODE>KeyPressHandler.onKeyPress(com.google.gwt.event.dom.client.KeyPressEvent)</CODE></A>
+             instead</I>
+<P>
+<DD>Fired when a keyboard action generates a character. This occurs after
+ onKeyDown and onKeyUp are fired for the physical key that was pressed.
+ 
+ <p>
+ It should be noted that many browsers do not generate keypress events for
+ non-printing keyCode values, such as <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#KEY_ENTER"><CODE>KEY_ENTER</CODE></A> or
+ arrow keys. These keyCodes can be reliably captured either with
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#onKeyDown(com.google.gwt.user.client.ui.Widget, char, int)"><CODE>onKeyDown(Widget, char, int)</CODE></A> or
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#onKeyUp(com.google.gwt.user.client.ui.Widget, char, int)"><CODE>onKeyUp(Widget, char, int)</CODE></A>.
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget that was focused when the event occurred.<DD><CODE>keyCode</CODE> - the Unicode character that was generated by the keyboard
+          action.<DD><CODE>modifiers</CODE> - the modifier keys pressed at when the event occurred. This
+          value is a combination of the bits defined by
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT"><CODE>MODIFIER_SHIFT</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL"><CODE>MODIFIER_CTRL</CODE></A>, and
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT"><CODE>MODIFIER_ALT</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onKeyUp(com.google.gwt.user.client.ui.Widget, char, int)"><!-- --></A><H3>
+onKeyUp</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>void <B>onKeyUp</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;sender,
+                        char&nbsp;keyCode,
+                        int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use
+             <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyUpHandler.html#onKeyUp(com.google.gwt.event.dom.client.KeyUpEvent)"><CODE>KeyUpHandler.onKeyUp(com.google.gwt.event.dom.client.KeyUpEvent)</CODE></A>
+             instead</I>
+<P>
+<DD>Fired when the user releases a physical key.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sender</CODE> - the widget that was focused when the event occurred.<DD><CODE>keyCode</CODE> - the physical key that was released. Constants for this value
+          are defined in this interface with the KEY prefix.<DD><CODE>modifiers</CODE> - the modifier keys pressed at when the event occurred. This
+          value is a combination of the bits defined by
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_SHIFT"><CODE>MODIFIER_SHIFT</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_CTRL"><CODE>MODIFIER_CTRL</CODE></A>, and
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListener.html#MODIFIER_ALT"><CODE>MODIFIER_ALT</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/KeyboardListener.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/KeyboardListenerAdapter.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/KeyboardListener.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="KeyboardListener.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

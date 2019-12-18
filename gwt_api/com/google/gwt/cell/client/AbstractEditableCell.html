@@ -1,0 +1,581 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+AbstractEditableCell (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractEditableCell (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractEditableCell.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/AbstractInputCell.html" title="class in com.google.gwt.cell.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/cell/client/AbstractEditableCell.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractEditableCell.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.cell.client</FONT>
+<BR>
+Class AbstractEditableCell&lt;C,V&gt;</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client">com.google.gwt.cell.client.AbstractCell</A>&lt;C&gt;
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.cell.client.AbstractEditableCell&lt;C,V&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>C</CODE> - the type that this Cell represents<DD><CODE>V</CODE> - the data type of the view data state</DL>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;C&gt;</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../com/google/gwt/cell/client/AbstractInputCell.html" title="class in com.google.gwt.cell.client">AbstractInputCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/CheckboxCell.html" title="class in com.google.gwt.cell.client">CheckboxCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/DatePickerCell.html" title="class in com.google.gwt.cell.client">DatePickerCell</A>, <A HREF="../../../../../com/google/gwt/cell/client/EditTextCell.html" title="class in com.google.gwt.cell.client">EditTextCell</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractEditableCell&lt;C,V&gt;</B><DT>extends <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client">AbstractCell</A>&lt;C&gt;</DL>
+</PRE>
+
+<P>
+A default implementation of the <A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client"><CODE>Cell</CODE></A> interface used for editable
+ cells that need to save view data state for specific values.
+
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class EditableCellExample implements EntryPoint {
+
+  /**
+   * A simple data type that represents a contact.
+   */
+  private static class Contact {
+    private final String address;
+    private final String name;
+
+    public Contact(String name, String address) {
+      this.name = name;
+      this.address = address;
+    }
+  }
+
+  /**
+   * A custom {@link Cell} used to render a {@link Contact}. We extend
+   * {@link AbstractCell} because it provides reasonable implementations of
+   * methods that work for most use cases.
+   */
+  private class ContactCell extends AbstractCell&lt;Contact&gt; {
+
+    public ContactCell() {
+      // Our cell responds to change events and keydown events.
+      super("change", "keydown");
+    }
+
+    @Override
+    public void onBrowserEvent(Context context, Element parent, Contact value,
+        NativeEvent event, ValueUpdater&lt;Contact&gt; valueUpdater) {
+      // Check that the value is not null.
+      if (value == null) {
+        return;
+      }
+
+      // Call the super handler, which handlers the enter key.
+      super.onBrowserEvent(context, parent, value, event, valueUpdater);
+
+      // Handle click events.
+      if ("change".equals(event.getType())) {
+        updateFavorites(parent, value);
+        showCurrentFavorites();
+      }
+    }
+
+    @Override
+    public void render(Context context, Contact value, SafeHtmlBuilder sb) {
+      /*
+       * Always do a null check on the value. Cell widgets can pass null to
+       * cells if the underlying data contains a null, or if the data arrives
+       * out of order.
+       */
+      if (value == null) {
+        return;
+      }
+
+      // Add a checkbox. If the contact is a favorite, the box will be checked.
+      sb.appendHtmlConstant("&lt;table&gt;&lt;tr&gt;&lt;td valign=\"top\"&gt;");
+      if (favorites.contains(value)) {
+        sb.appendHtmlConstant("&lt;input type=\"checkbox\" checked=checked/&gt;");
+      } else {
+        sb.appendHtmlConstant("&lt;input type=\"checkbox\" /&gt;");
+      }
+      sb.appendHtmlConstant("&lt;/td&gt;&lt;td&gt;");
+
+      // Display the name in big letters.
+      sb.appendHtmlConstant("&lt;div style=\"size:200%;font-weight:bold;\"&gt;");
+      sb.appendEscaped(value.name);
+      sb.appendHtmlConstant("&lt;/div&gt;");
+
+      // Display the address in normal text.
+      sb.appendHtmlConstant("&lt;div style=\"padding-left:10px;\"&gt;");
+      sb.appendEscaped(value.address);
+      sb.appendHtmlConstant("&lt;/div&gt;");
+
+      sb.appendHtmlConstant("&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;");
+    }
+
+    /**
+     * By convention, cells that respond to user events should handle the enter
+     * key. This provides a consistent user experience when users use keyboard
+     * navigation in the widget. Our cell will toggle the checkbox on Enter.
+     */
+    @Override
+    protected void onEnterKeyDown(Context context, Element parent,
+        Contact value, NativeEvent event, ValueUpdater&lt;Contact&gt; valueUpdater) {
+      // Toggle the checkbox.
+      InputElement input = getInputElement(parent);
+      input.setChecked(!input.isChecked());
+
+      // Update the favorites based on the new state.
+      updateFavorites(parent, value);
+
+      // Show the new list of favorites.
+      showCurrentFavorites();
+    }
+
+    /**
+     * Get the checkbox input element from the parent element that wraps our
+     * cell.
+     * 
+     * @param parent the parent element
+     * @return the checkbox
+     */
+    private InputElement getInputElement(Element parent) {
+      // We need to navigate down to our input element.
+      TableElement table = parent.getFirstChildElement().cast();
+      TableRowElement tr = table.getRows().getItem(0);
+      TableCellElement td = tr.getCells().getItem(0);
+      InputElement input = td.getFirstChildElement().cast();
+      return input;
+    }
+
+    /**
+     * Update the favorites list based on the state of the input element.
+     */
+    private void updateFavorites(Element parent, Contact value) {
+      // Get the input element.
+      InputElement input = getInputElement(parent);
+
+      // Update the favorites based on the checked state.
+      if (input.isChecked()) {
+        favorites.add(value);
+      } else {
+        favorites.remove(value);
+      }
+    }
+  }
+
+  /**
+   * The list of data to display.
+   */
+  private static final List&lt;Contact&gt; CONTACTS = Arrays.asList(new Contact(
+      "John", "123 Fourth Avenue"), new Contact("Joe", "22 Lance Ln"),
+      new Contact("Michael", "1283 Berry Blvd"), new Contact("Sarah",
+          "100 Hundred St."), new Contact("George", "1600 Pennsylvania Avenue"));
+
+  /**
+   * Our list of favorite contacts.
+   */
+  private final List&lt;Contact&gt; favorites = new ArrayList&lt;EditableCellExample.Contact&gt;();
+
+  public void onModuleLoad() {
+    // Create a cell to render each value.
+    ContactCell contactCell = new ContactCell();
+
+    // Use the cell in a CellList.
+    CellList&lt;Contact&gt; cellList = new CellList&lt;Contact&gt;(contactCell);
+
+    // Push the data into the widget.
+    cellList.setRowData(0, CONTACTS);
+
+    // Add it to the root panel.
+    RootPanel.get().add(cellList);
+  }
+
+  /**
+   * Show the list of favorites.
+   */
+  private void showCurrentFavorites() {
+    if (favorites.size() &gt; 0) {
+      String text = "You favorite contacts are ";
+      boolean first = true;
+      for (Contact contact : favorites) {
+        if (!first) {
+          text += ", ";
+        } else {
+          first = false;
+        }
+        text += contact.name;
+      }
+      Window.alert(text);
+    } else {
+      Window.alert("You have not selected any favorites.");
+    }
+  }
+}
+</pre></blockquote>
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.cell.client.Cell"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.cell.client.<A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#AbstractEditableCell(java.util.Set)">AbstractEditableCell</A></B>(java.util.Set&lt;java.lang.String&gt;&nbsp;consumedEvents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="class in com.google.gwt.cell.client"><CODE>AbstractEditableCell</CODE></A> with the specified consumed
+ events.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#AbstractEditableCell(java.lang.String...)">AbstractEditableCell</A></B>(java.lang.String...&nbsp;consumedEvents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="class in com.google.gwt.cell.client"><CODE>AbstractEditableCell</CODE></A> with the specified consumed
+ events.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#clearViewData(java.lang.Object)">clearViewData</A></B>(java.lang.Object&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the view data associated with the specified key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">V</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#getViewData(java.lang.Object)">getViewData</A></B>(java.lang.Object&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the view data associated with the specified key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#isEditing(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">isEditing</A></B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+          <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+          <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">C</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if the cell is currently editing the data identified by the
+ given element and key.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#setViewData(java.lang.Object, V)">setViewData</A></B>(java.lang.Object&nbsp;key,
+            <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">V</A>&nbsp;viewData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Associate view data with the specified key.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.cell.client.AbstractCell"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.cell.client.<A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client">AbstractCell</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#dependsOnSelection()">dependsOnSelection</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#getConsumedEvents()">getConsumedEvents</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#handlesSelection()">handlesSelection</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#onBrowserEvent(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C, com.google.gwt.dom.client.NativeEvent, com.google.gwt.cell.client.ValueUpdater)">onBrowserEvent</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#onEnterKeyDown(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C, com.google.gwt.dom.client.NativeEvent, com.google.gwt.cell.client.ValueUpdater)">onEnterKeyDown</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#render(com.google.gwt.cell.client.Cell.Context, C, com.google.gwt.safehtml.shared.SafeHtmlBuilder)">render</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#resetFocus(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">resetFocus</A>, <A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#setValue(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">setValue</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractEditableCell(java.lang.String...)"><!-- --></A><H3>
+AbstractEditableCell</H3>
+<PRE>
+public <B>AbstractEditableCell</B>(java.lang.String...&nbsp;consumedEvents)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="class in com.google.gwt.cell.client"><CODE>AbstractEditableCell</CODE></A> with the specified consumed
+ events.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>consumedEvents</CODE> - the events that this cell consumes</DL>
+</DL>
+<HR>
+
+<A NAME="AbstractEditableCell(java.util.Set)"><!-- --></A><H3>
+AbstractEditableCell</H3>
+<PRE>
+public <B>AbstractEditableCell</B>(java.util.Set&lt;java.lang.String&gt;&nbsp;consumedEvents)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="class in com.google.gwt.cell.client"><CODE>AbstractEditableCell</CODE></A> with the specified consumed
+ events.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>consumedEvents</CODE> - the events that this cell consumes</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="clearViewData(java.lang.Object)"><!-- --></A><H3>
+clearViewData</H3>
+<PRE>
+public void <B>clearViewData</B>(java.lang.Object&nbsp;key)</PRE>
+<DL>
+<DD>Clear the view data associated with the specified key.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the key identifying the row value</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getViewData(java.lang.Object)"><!-- --></A><H3>
+getViewData</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">V</A> <B>getViewData</B>(java.lang.Object&nbsp;key)</PRE>
+<DL>
+<DD>Get the view data associated with the specified key.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the key identifying the row object
+<DT><B>Returns:</B><DD>the view data, or null if none has been set<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#setViewData(java.lang.Object, V)"><CODE>setViewData(Object, Object)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isEditing(com.google.gwt.cell.client.Cell.Context,com.google.gwt.dom.client.Element,java.lang.Object)"><!-- --></A><A NAME="isEditing(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)"><!-- --></A><H3>
+isEditing</H3>
+<PRE>
+public abstract boolean <B>isEditing</B>(<A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client">Cell.Context</A>&nbsp;context,
+                                  <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;parent,
+                                  <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">C</A>&nbsp;value)</PRE>
+<DL>
+<DD>Returns true if the cell is currently editing the data identified by the
+ given element and key. While a cell is editing, widgets containing the cell
+ may choose to pass keystrokes directly to the cell rather than using them
+ for navigation purposes.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/cell/client/Cell.html#isEditing(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">isEditing</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/cell/client/Cell.html" title="interface in com.google.gwt.cell.client">Cell</A>&lt;<A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">C</A>&gt;</CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html#isEditing(com.google.gwt.cell.client.Cell.Context, com.google.gwt.dom.client.Element, C)">isEditing</A></CODE> in class <CODE><A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client">AbstractCell</A>&lt;<A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">C</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the <A HREF="../../../../../com/google/gwt/cell/client/Cell.Context.html" title="class in com.google.gwt.cell.client"><CODE>Cell.Context</CODE></A> of the cell<DD><CODE>parent</CODE> - the parent Element<DD><CODE>value</CODE> - the value associated with the cell
+<DT><B>Returns:</B><DD>true if the cell is in edit mode</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setViewData(java.lang.Object,java.lang.Object)"><!-- --></A><A NAME="setViewData(java.lang.Object, V)"><!-- --></A><H3>
+setViewData</H3>
+<PRE>
+public void <B>setViewData</B>(java.lang.Object&nbsp;key,
+                        <A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html" title="type parameter in AbstractEditableCell">V</A>&nbsp;viewData)</PRE>
+<DL>
+<DD>Associate view data with the specified key. If the key is null, the view
+ data will be ignored.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the key of the view data<DD><CODE>viewData</CODE> - the view data to associate<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/cell/client/AbstractEditableCell.html#getViewData(java.lang.Object)"><CODE>getViewData(Object)</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractEditableCell.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/AbstractCell.html" title="class in com.google.gwt.cell.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/cell/client/AbstractInputCell.html" title="class in com.google.gwt.cell.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/cell/client/AbstractEditableCell.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractEditableCell.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

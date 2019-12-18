@@ -1,0 +1,961 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Node (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Node (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Node.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/NodeCollection.html" title="class in com.google.gwt.dom.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/dom/client/Node.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Node.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.dom.client</FONT>
+<BR>
+Class Node</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">com.google.gwt.core.client.JavaScriptObject</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.dom.client.Node</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../com/google/gwt/dom/client/Document.html" title="class in com.google.gwt.dom.client">Document</A>, <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>, <A HREF="../../../../../com/google/gwt/dom/client/Text.html" title="class in com.google.gwt.dom.client">Text</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>Node</B><DT>extends <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></DL>
+</PRE>
+
+<P>
+The Node interface is the primary datatype for the entire Document Object
+ Model. It represents a single node in the document tree. While all objects
+ implementing the Node interface expose methods for dealing with children, not
+ all objects implementing the Node interface may have children.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;short</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#DOCUMENT_NODE">DOCUMENT_NODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The node is a <A HREF="../../../../../com/google/gwt/dom/client/Document.html" title="class in com.google.gwt.dom.client"><CODE>Document</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;short</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#ELEMENT_NODE">ELEMENT_NODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The node is an <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;short</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#TEXT_NODE">TEXT_NODE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The node is a <A HREF="../../../../../com/google/gwt/dom/client/Text.html" title="class in com.google.gwt.dom.client"><CODE>Text</CODE></A> node.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#Node()">Node</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&gt; 
+<BR>
+T</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#appendChild(T)">appendChild</A></B>(T&nbsp;newChild)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds the node newChild to the end of the list of children of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#as(com.google.gwt.core.client.JavaScriptObject)">as</A></B>(<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assert that the given <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client"><CODE>JavaScriptObject</CODE></A> is a DOM node and
+ automatically typecast it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#cloneNode(boolean)">cloneNode</A></B>(boolean&nbsp;deep)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a duplicate of this node, i.e., serves as a generic copy
+ constructor for nodes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getChild(int)">getChild</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the child node at the given index.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getChildCount()">getChildCount</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the number of child nodes contained within this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/NodeList.html" title="class in com.google.gwt.dom.client">NodeList</A>&lt;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getChildNodes()">getChildNodes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A NodeList that contains all children of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getFirstChild()">getFirstChild</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first child of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getLastChild()">getLastChild</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The last child of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getNextSibling()">getNextSibling</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The node immediately following this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getNodeName()">getNodeName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The name of this node, depending on its type; see the table above.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;short</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getNodeType()">getNodeType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A code representing the type of the underlying object, as defined above.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getNodeValue()">getNodeValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The value of this node, depending on its type; see the table above.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Document.html" title="class in com.google.gwt.dom.client">Document</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getOwnerDocument()">getOwnerDocument</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Document object associated with this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getParentElement()">getParentElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the parent element of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getParentNode()">getParentNode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The parent of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#getPreviousSibling()">getPreviousSibling</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The node immediately preceding this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#hasChildNodes()">hasChildNodes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns whether this node has any children.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#hasParentElement()">hasParentElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether this node has a parent element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#insertAfter(com.google.gwt.dom.client.Node, com.google.gwt.dom.client.Node)">insertAfter</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;newChild,
+            <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;refChild)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts the node newChild after the existing child node refChild.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#insertBefore(com.google.gwt.dom.client.Node, com.google.gwt.dom.client.Node)">insertBefore</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;newChild,
+             <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;refChild)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts the node newChild before the existing child node refChild.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#insertFirst(com.google.gwt.dom.client.Node)">insertFirst</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;child)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inserts the given child as the first child of this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#is(com.google.gwt.core.client.JavaScriptObject)">is</A></B>(<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether the given <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client"><CODE>JavaScriptObject</CODE></A> is a DOM node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#isOrHasChild(com.google.gwt.dom.client.Node)">isOrHasChild</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;child)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determine whether a node is equal to, or the child of, this node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#removeChild(com.google.gwt.dom.client.Node)">removeChild</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;oldChild)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the child node indicated by oldChild from the list of children, and
+ returns it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#removeFromParent()">removeFromParent</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes this node from its parent node if it is attached to one.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#replaceChild(com.google.gwt.dom.client.Node, com.google.gwt.dom.client.Node)">replaceChild</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;newChild,
+             <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;oldChild)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the child node oldChild with newChild in the list of children, and
+ returns the oldChild node.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Node.html#setNodeValue(java.lang.String)">setNodeValue</A></B>(java.lang.String&nbsp;nodeValue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The value of this node, depending on its type; see the table above.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.client.JavaScriptObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.client.<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#cast()">cast</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createArray()">createArray</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createFunction()">createFunction</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createObject()">createObject</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#hashCode()">hashCode</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toSource()">toSource</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ELEMENT_NODE"><!-- --></A><H3>
+ELEMENT_NODE</H3>
+<PRE>
+public static final short <B>ELEMENT_NODE</B></PRE>
+<DL>
+<DD>The node is an <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A>.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.dom.client.Node.ELEMENT_NODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="TEXT_NODE"><!-- --></A><H3>
+TEXT_NODE</H3>
+<PRE>
+public static final short <B>TEXT_NODE</B></PRE>
+<DL>
+<DD>The node is a <A HREF="../../../../../com/google/gwt/dom/client/Text.html" title="class in com.google.gwt.dom.client"><CODE>Text</CODE></A> node.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.dom.client.Node.TEXT_NODE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="DOCUMENT_NODE"><!-- --></A><H3>
+DOCUMENT_NODE</H3>
+<PRE>
+public static final short <B>DOCUMENT_NODE</B></PRE>
+<DL>
+<DD>The node is a <A HREF="../../../../../com/google/gwt/dom/client/Document.html" title="class in com.google.gwt.dom.client"><CODE>Document</CODE></A>.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#com.google.gwt.dom.client.Node.DOCUMENT_NODE">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Node()"><!-- --></A><H3>
+Node</H3>
+<PRE>
+protected <B>Node</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="as(com.google.gwt.core.client.JavaScriptObject)"><!-- --></A><H3>
+as</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>as</B>(<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A>&nbsp;o)</PRE>
+<DL>
+<DD>Assert that the given <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client"><CODE>JavaScriptObject</CODE></A> is a DOM node and
+ automatically typecast it.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="is(com.google.gwt.core.client.JavaScriptObject)"><!-- --></A><H3>
+is</H3>
+<PRE>
+public static boolean <B>is</B>(<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A>&nbsp;o)</PRE>
+<DL>
+<DD>Determines whether the given <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client"><CODE>JavaScriptObject</CODE></A> is a DOM node. A
+ <code>null</code> object will cause this method to return
+ <code>false</code>.
+ The try catch is needed for the firefox permission error:
+ "Permission denied to access property 'nodeType'"
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="appendChild(com.google.gwt.dom.client.Node)"><!-- --></A><A NAME="appendChild(T)"><!-- --></A><H3>
+appendChild</H3>
+<PRE>
+public final &lt;T extends <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&gt; T <B>appendChild</B>(T&nbsp;newChild)</PRE>
+<DL>
+<DD>Adds the node newChild to the end of the list of children of this node. If
+ the newChild is already in the tree, it is first removed.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>newChild</CODE> - The node to add
+<DT><B>Returns:</B><DD>The node added</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cloneNode(boolean)"><!-- --></A><H3>
+cloneNode</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>cloneNode</B>(boolean&nbsp;deep)</PRE>
+<DL>
+<DD>Returns a duplicate of this node, i.e., serves as a generic copy
+ constructor for nodes. The duplicate node has no parent; (parentNode is
+ null.).
+ 
+ Cloning an Element copies all attributes and their values, including those
+ generated by the XML processor to represent defaulted attributes, but this
+ method does not copy any text it contains unless it is a deep clone, since
+ the text is contained in a child Text node. Cloning an Attribute directly,
+ as opposed to be cloned as part of an Element cloning operation, returns a
+ specified attribute (specified is true). Cloning any other type of node
+ simply returns a copy of this node.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>deep</CODE> - If true, recursively clone the subtree under the specified
+          node; if false, clone only the node itself (and its attributes, if
+          it is an <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client"><CODE>Element</CODE></A>)
+<DT><B>Returns:</B><DD>The duplicate node</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChild(int)"><!-- --></A><H3>
+getChild</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>getChild</B>(int&nbsp;index)</PRE>
+<DL>
+<DD>Gets the child node at the given index.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - the index of the node to be retrieved
+<DT><B>Returns:</B><DD>the child node at the given index</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChildCount()"><!-- --></A><H3>
+getChildCount</H3>
+<PRE>
+public final int <B>getChildCount</B>()</PRE>
+<DL>
+<DD>Gets the number of child nodes contained within this node.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the number of child nodes</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChildNodes()"><!-- --></A><H3>
+getChildNodes</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/NodeList.html" title="class in com.google.gwt.dom.client">NodeList</A>&lt;<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&gt; <B>getChildNodes</B>()</PRE>
+<DL>
+<DD>A NodeList that contains all children of this node. If there are no
+ children, this is a NodeList containing no nodes.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFirstChild()"><!-- --></A><H3>
+getFirstChild</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>getFirstChild</B>()</PRE>
+<DL>
+<DD>The first child of this node. If there is no such node, this returns null.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLastChild()"><!-- --></A><H3>
+getLastChild</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>getLastChild</B>()</PRE>
+<DL>
+<DD>The last child of this node. If there is no such node, this returns null.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNextSibling()"><!-- --></A><H3>
+getNextSibling</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>getNextSibling</B>()</PRE>
+<DL>
+<DD>The node immediately following this node. If there is no such node, this
+ returns null.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNodeName()"><!-- --></A><H3>
+getNodeName</H3>
+<PRE>
+public final java.lang.String <B>getNodeName</B>()</PRE>
+<DL>
+<DD>The name of this node, depending on its type; see the table above.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNodeType()"><!-- --></A><H3>
+getNodeType</H3>
+<PRE>
+public final short <B>getNodeType</B>()</PRE>
+<DL>
+<DD>A code representing the type of the underlying object, as defined above.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNodeValue()"><!-- --></A><H3>
+getNodeValue</H3>
+<PRE>
+public final java.lang.String <B>getNodeValue</B>()</PRE>
+<DL>
+<DD>The value of this node, depending on its type; see the table above. When it
+ is defined to be null, setting it has no effect.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOwnerDocument()"><!-- --></A><H3>
+getOwnerDocument</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Document.html" title="class in com.google.gwt.dom.client">Document</A> <B>getOwnerDocument</B>()</PRE>
+<DL>
+<DD>The Document object associated with this node. This is also the
+ <A HREF="../../../../../com/google/gwt/dom/client/Document.html" title="class in com.google.gwt.dom.client"><CODE>Document</CODE></A> object used to create new nodes.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParentElement()"><!-- --></A><H3>
+getParentElement</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getParentElement</B>()</PRE>
+<DL>
+<DD>Gets the parent element of this node.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>this node's parent element, or <code>null</code> if none exists</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParentNode()"><!-- --></A><H3>
+getParentNode</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>getParentNode</B>()</PRE>
+<DL>
+<DD>The parent of this node. All nodes except Document may have a parent.
+ However, if a node has just been created and not yet added to the tree, or
+ if it has been removed from the tree, this is null.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPreviousSibling()"><!-- --></A><H3>
+getPreviousSibling</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>getPreviousSibling</B>()</PRE>
+<DL>
+<DD>The node immediately preceding this node. If there is no such node, this
+ returns null.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hasChildNodes()"><!-- --></A><H3>
+hasChildNodes</H3>
+<PRE>
+public final boolean <B>hasChildNodes</B>()</PRE>
+<DL>
+<DD>Returns whether this node has any children.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hasParentElement()"><!-- --></A><H3>
+hasParentElement</H3>
+<PRE>
+public final boolean <B>hasParentElement</B>()</PRE>
+<DL>
+<DD>Determines whether this node has a parent element.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the node has a parent element</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertAfter(com.google.gwt.dom.client.Node, com.google.gwt.dom.client.Node)"><!-- --></A><H3>
+insertAfter</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>insertAfter</B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;newChild,
+                              <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;refChild)</PRE>
+<DL>
+<DD>Inserts the node newChild after the existing child node refChild. If
+ refChild is <code>null</code>, insert newChild at the end of the list of children.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>newChild</CODE> - The node to insert<DD><CODE>refChild</CODE> - The reference node (that is, the node after which the new
+          node must be inserted), or <code>null</code>
+<DT><B>Returns:</B><DD>The node being inserted</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertBefore(com.google.gwt.dom.client.Node, com.google.gwt.dom.client.Node)"><!-- --></A><H3>
+insertBefore</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>insertBefore</B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;newChild,
+                               <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;refChild)</PRE>
+<DL>
+<DD>Inserts the node newChild before the existing child node refChild. If
+ refChild is <code>null</code>, insert newChild at the end of the list of children.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>newChild</CODE> - The node to insert<DD><CODE>refChild</CODE> - The reference node (that is, the node before which the new
+          node must be inserted), or <code>null</code>
+<DT><B>Returns:</B><DD>The node being inserted</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="insertFirst(com.google.gwt.dom.client.Node)"><!-- --></A><H3>
+insertFirst</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>insertFirst</B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;child)</PRE>
+<DL>
+<DD>Inserts the given child as the first child of this node.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>child</CODE> - the child to be inserted
+<DT><B>Returns:</B><DD>The node being inserted</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isOrHasChild(com.google.gwt.dom.client.Node)"><!-- --></A><H3>
+isOrHasChild</H3>
+<PRE>
+public final boolean <B>isOrHasChild</B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;child)</PRE>
+<DL>
+<DD>Determine whether a node is equal to, or the child of, this node.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>child</CODE> - the potential child element
+<DT><B>Returns:</B><DD><code>true</code> if the relationship holds</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeChild(com.google.gwt.dom.client.Node)"><!-- --></A><H3>
+removeChild</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>removeChild</B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;oldChild)</PRE>
+<DL>
+<DD>Removes the child node indicated by oldChild from the list of children, and
+ returns it.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>oldChild</CODE> - The node being removed
+<DT><B>Returns:</B><DD>The node removed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeFromParent()"><!-- --></A><H3>
+removeFromParent</H3>
+<PRE>
+public final void <B>removeFromParent</B>()</PRE>
+<DL>
+<DD>Removes this node from its parent node if it is attached to one.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceChild(com.google.gwt.dom.client.Node, com.google.gwt.dom.client.Node)"><!-- --></A><H3>
+replaceChild</H3>
+<PRE>
+public final <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A> <B>replaceChild</B>(<A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;newChild,
+                               <A HREF="../../../../../com/google/gwt/dom/client/Node.html" title="class in com.google.gwt.dom.client">Node</A>&nbsp;oldChild)</PRE>
+<DL>
+<DD>Replaces the child node oldChild with newChild in the list of children, and
+ returns the oldChild node.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>newChild</CODE> - The new node to put in the child list<DD><CODE>oldChild</CODE> - The node being replaced in the list
+<DT><B>Returns:</B><DD>The node replaced</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setNodeValue(java.lang.String)"><!-- --></A><H3>
+setNodeValue</H3>
+<PRE>
+public final void <B>setNodeValue</B>(java.lang.String&nbsp;nodeValue)</PRE>
+<DL>
+<DD>The value of this node, depending on its type; see the table above. When it
+ is defined to be null, setting it has no effect.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Node.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/NativeEvent.html" title="class in com.google.gwt.dom.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/NodeCollection.html" title="class in com.google.gwt.dom.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/dom/client/Node.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Node.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

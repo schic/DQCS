@@ -1,0 +1,584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+EmittedArtifact (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="EmittedArtifact (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/EmittedArtifact.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/ConfigurationProperty.html" title="interface in com.google.gwt.core.ext.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/EmittedArtifact.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="EmittedArtifact.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.ext.linker</FONT>
+<BR>
+Class EmittedArtifact</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">com.google.gwt.core.ext.linker.Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.ext.linker.EmittedArtifact</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>java.io.Serializable, java.lang.Comparable&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&gt;</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/core/ext/linker/BinaryEmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">BinaryEmittedArtifact</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/GeneratedResource.html" title="class in com.google.gwt.core.ext.linker">GeneratedResource</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/PublicResource.html" title="class in com.google.gwt.core.ext.linker">PublicResource</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/SyntheticArtifact.html" title="class in com.google.gwt.core.ext.linker">SyntheticArtifact</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>EmittedArtifact</B><DT>extends <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;</DL>
+</PRE>
+
+<P>
+An artifact that will be emitted into the output. All EmittedArtifacts
+ contained in the <A HREF="../../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker"><CODE>ArtifactSet</CODE></A> at the end of the Linking process will
+ be emitted by the compiler into the module's output directory. This type may
+ be extended by Linker providers to provide alternative implementations of
+ <A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getContents(com.google.gwt.core.ext.TreeLogger)"><CODE>getContents(TreeLogger)</CODE></A>.
+ 
+ TODO(bobv): provide a timestamp so we can make the time on output files match
+ that of input files?
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../serialized-form.html#com.google.gwt.core.ext.linker.EmittedArtifact">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker">EmittedArtifact.Visibility</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes the visibility of an artifact.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#EmittedArtifact(java.lang.Class, java.lang.String)">EmittedArtifact</A></B>(java.lang.Class&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A>&gt;&nbsp;linker,
+                java.lang.String&nbsp;partialPath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#compareToComparableArtifact(com.google.gwt.core.ext.linker.EmittedArtifact)">compareToComparableArtifact</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performs comparison with an artifact of a compatible base type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;java.lang.Class&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getComparableArtifactType()">getComparableArtifactType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the base type to use for comparisons between Artifacts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;java.io.InputStream</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getContents(com.google.gwt.core.ext.TreeLogger)">getContents</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides access to the contents of the EmittedResource.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getLastModified()">getLastModified</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the time, measured in milliseconds from the epoch, at which the
+ Artifact was last modified.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getPartialPath()">getPartialPath</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the partial path within the output directory of the
+ EmittedArtifact.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker">EmittedArtifact.Visibility</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getVisibility()">getVisibility</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The class which is returned from <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()"><CODE>Artifact.getComparableArtifactType()</CODE></A> must
+ declare a final implementation which returns the same hash code for objects
+ for which <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)"><CODE>Artifact.compareToComparableArtifact(Artifact)</CODE></A> returns 0.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#isPrivate()">isPrivate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getVisibility()"><CODE>getVisibility()</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#setPrivate(boolean)">setPrivate</A></B>(boolean&nbsp;isPrivate)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#setVisibility(com.google.gwt.core.ext.linker.EmittedArtifact.Visibility)"><CODE>setVisibility(Visibility)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#setVisibility(com.google.gwt.core.ext.linker.EmittedArtifact.Visibility)">setVisibility</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker">EmittedArtifact.Visibility</A>&nbsp;visibility)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#writeTo(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)">writeTo</A></B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+        java.io.OutputStream&nbsp;out)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides access to the contents of the EmittedResource.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.ext.linker.Artifact"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.ext.linker.<A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareTo(com.google.gwt.core.ext.linker.Artifact)">compareTo</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getLinker()">getLinker</A>, <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#isTransferableFromShards()">isTransferableFromShards</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="EmittedArtifact(java.lang.Class, java.lang.String)"><!-- --></A><H3>
+EmittedArtifact</H3>
+<PRE>
+protected <B>EmittedArtifact</B>(java.lang.Class&lt;? extends <A HREF="../../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext">Linker</A>&gt;&nbsp;linker,
+                          java.lang.String&nbsp;partialPath)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getContents(com.google.gwt.core.ext.TreeLogger)"><!-- --></A><H3>
+getContents</H3>
+<PRE>
+public abstract java.io.InputStream <B>getContents</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger)
+                                         throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Provides access to the contents of the EmittedResource.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLastModified()"><!-- --></A><H3>
+getLastModified</H3>
+<PRE>
+public long <B>getLastModified</B>()</PRE>
+<DL>
+<DD>Returns the time, measured in milliseconds from the epoch, at which the
+ Artifact was last modified. This will be used to set the last-modified
+ timestamp on the files written to disk.
+ <p>
+ The default implementation always returns the current time. Subclasses
+ should override this method to provide a type-appropriate value.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the time at which the Artifact was last modified</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPartialPath()"><!-- --></A><H3>
+getPartialPath</H3>
+<PRE>
+public final java.lang.String <B>getPartialPath</B>()</PRE>
+<DL>
+<DD>Returns the partial path within the output directory of the
+ EmittedArtifact.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVisibility()"><!-- --></A><H3>
+getVisibility</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker">EmittedArtifact.Visibility</A> <B>getVisibility</B>()</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the visibility</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public final int <B>hashCode</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#hashCode()">Artifact</A></CODE></B></DD>
+<DD>The class which is returned from <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()"><CODE>Artifact.getComparableArtifactType()</CODE></A> must
+ declare a final implementation which returns the same hash code for objects
+ for which <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)"><CODE>Artifact.compareToComparableArtifact(Artifact)</CODE></A> returns 0.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#hashCode()">hashCode</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPrivate()"><!-- --></A><H3>
+isPrivate</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public boolean <B>isPrivate</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#getVisibility()"><CODE>getVisibility()</CODE></A> instead</I>
+<P>
+<DD>Returns whether or not the data contained in the EmittedArtifact should be
+ written into the module output directory or into an auxiliary directory.
+ <p>
+ EmittedArtifacts that return <code>true</code> for this method will not
+ be emitted into the normal module output location, but will instead be
+ written into a directory that is a sibling to the module output directory.
+ The partial path of the EmittedArtifact will be prepended with the
+ short-name of the Linker type that created the EmittedArtifact.
+ <p>
+ Private EmittedArtifacts are intended for resources that generally should
+ not be deployed to the server in the same location as the module
+ compilation artifacts.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPrivate(boolean)"><!-- --></A><H3>
+setPrivate</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>setPrivate</B>(boolean&nbsp;isPrivate)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>use <A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html#setVisibility(com.google.gwt.core.ext.linker.EmittedArtifact.Visibility)"><CODE>setVisibility(Visibility)</CODE></A> instead</I>
+<P>
+<DD>Sets the private attribute of the EmittedResource.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>isPrivate</CODE> - true if this artifact is private</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVisibility(com.google.gwt.core.ext.linker.EmittedArtifact.Visibility)"><!-- --></A><H3>
+setVisibility</H3>
+<PRE>
+public void <B>setVisibility</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker">EmittedArtifact.Visibility</A>&nbsp;visibility)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visibility</CODE> - the visibility to set</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public java.lang.String <B>toString</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#toString()">toString</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeTo(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)"><!-- --></A><H3>
+writeTo</H3>
+<PRE>
+public void <B>writeTo</B>(<A HREF="../../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                    java.io.OutputStream&nbsp;out)
+             throws <A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD>Provides access to the contents of the EmittedResource.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareToComparableArtifact(com.google.gwt.core.ext.linker.EmittedArtifact)"><!-- --></A><H3>
+compareToComparableArtifact</H3>
+<PRE>
+protected final int <B>compareToComparableArtifact</B>(<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&nbsp;o)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)">Artifact</A></CODE></B></DD>
+<DD>Performs comparison with an artifact of a compatible base type. Objects
+ which compare to 0 are assumed equal, and must return the same
+ <A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#hashCode()"><CODE>Artifact.hashCode()</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#compareToComparableArtifact(C)">compareToComparableArtifact</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getComparableArtifactType()"><!-- --></A><H3>
+getComparableArtifactType</H3>
+<PRE>
+protected final java.lang.Class&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt; <B>getComparableArtifactType</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()">Artifact</A></CODE></B></DD>
+<DD>Returns the base type to use for comparisons between Artifacts. All
+ concrete implementations of this methods must be final.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html#getComparableArtifactType()">getComparableArtifactType</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.html" title="class in com.google.gwt.core.ext.linker">EmittedArtifact</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/EmittedArtifact.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/ConfigurationProperty.html" title="interface in com.google.gwt.core.ext.linker"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/core/ext/linker/EmittedArtifact.Visibility.html" title="enum in com.google.gwt.core.ext.linker"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/core/ext/linker/EmittedArtifact.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="EmittedArtifact.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

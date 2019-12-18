@@ -1,0 +1,651 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+GeneratorContextExtWrapper (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="GeneratorContextExtWrapper (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/GeneratorContextExtWrapper.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/GeneratorExt.html" title="class in com.google.gwt.core.ext"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/ext/GeneratorContextExtWrapper.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GeneratorContextExtWrapper.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.ext</FONT>
+<BR>
+Class GeneratorContextExtWrapper</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.ext.GeneratorContextExtWrapper</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A>, <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>GeneratorContextExtWrapper</B><DT>extends java.lang.Object<DT>implements <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></DL>
+</PRE>
+
+<P>
+EXPERIMENTAL and subject to change. Do not use this in production code.
+ <p> 
+ A wrapper to access a base <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext"><CODE>GeneratorContext</CODE></A> instance as a 
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext"><CODE>GeneratorContextExt</CODE></A> instance.  Methods from the 
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext"><CODE>GeneratorContext</CODE></A> interface are passed through to the baseContext, 
+ while methods from the <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext"><CODE>GeneratorContextExt</CODE></A> interface are given 
+ default stub implementations.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#commit(com.google.gwt.core.ext.TreeLogger, java.io.PrintWriter)">commit</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+       java.io.PrintWriter&nbsp;pw)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commits source generation begun with
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreate(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)"><CODE>GeneratorContext.tryCreate(TreeLogger, String, String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#commitArtifact(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.Artifact)">commitArtifact</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+               <A HREF="../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;artifact)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add an Artifact to the <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker"><CODE>ArtifactSet</CODE></A>
+ that will be presented to the <A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext"><CODE>Linker</CODE></A> chain at the end of the
+ compilation cycle.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/linker/GeneratedResource.html" title="class in com.google.gwt.core.ext.linker">GeneratedResource</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#commitResource(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)">commitResource</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+               java.io.OutputStream&nbsp;os)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commits resource generation begun with
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreateResource(com.google.gwt.core.ext.TreeLogger, java.lang.String)"><CODE>GeneratorContext.tryCreateResource(TreeLogger, String)</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.google.gwt.dev.javac.rebind.CachedRebindResult</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#getCachedGeneratorResult()">getCachedGeneratorResult</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get cached result from a previous run of the current generator, if available.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/PropertyOracle.html" title="interface in com.google.gwt.core.ext">PropertyOracle</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#getPropertyOracle()">getPropertyOracle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the property oracle for the current generator context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;com.google.gwt.dev.resource.ResourceOracle</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#getResourcesOracle()">getResourcesOracle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a resource oracle containing all resources that are mapped into the
+ module's source (or super-source) paths.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#getSourceLastModifiedTime(com.google.gwt.core.ext.typeinfo.JClassType)">getSourceLastModifiedTime</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;sourceType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get source last modified time.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html" title="class in com.google.gwt.core.ext.typeinfo">TypeOracle</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#getTypeOracle()">getTypeOracle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type oracle for the current generator context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#isGeneratorResultCachingEnabled()">isGeneratorResultCachingEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check whether generator result caching is currently enabled.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#isProdMode()">isProdMode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if generators are being run to produce code for a
+ production compile.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#newInstance(com.google.gwt.core.ext.GeneratorContext)">newInstance</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A>&nbsp;baseContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a new instance wrapped from a base <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext"><CODE>GeneratorContext</CODE></A> 
+ implementation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#reuseTypeFromCacheIfAvailable(java.lang.String)">reuseTypeFromCacheIfAvailable</A></B>(java.lang.String&nbsp;typeName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mark a type to be reused from the generator result cache.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.io.PrintWriter</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#tryCreate(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)">tryCreate</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+          java.lang.String&nbsp;packageName,
+          java.lang.String&nbsp;simpleName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attempts to get a <code>PrintWriter</code> so that the caller can
+ generate the source code for the named type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.io.OutputStream</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExtWrapper.html#tryCreateResource(com.google.gwt.core.ext.TreeLogger, java.lang.String)">tryCreateResource</A></B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                  java.lang.String&nbsp;partialPath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attempts to get an <code>OutputStream</code> so that the caller can write
+ file contents into the named file underneath the compilation output
+ directory.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="newInstance(com.google.gwt.core.ext.GeneratorContext)"><!-- --></A><H3>
+newInstance</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A> <B>newInstance</B>(<A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A>&nbsp;baseContext)</PRE>
+<DL>
+<DD>Get a new instance wrapped from a base <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext"><CODE>GeneratorContext</CODE></A> 
+ implementation.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="commit(com.google.gwt.core.ext.TreeLogger, java.io.PrintWriter)"><!-- --></A><H3>
+commit</H3>
+<PRE>
+public void <B>commit</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                   java.io.PrintWriter&nbsp;pw)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commit(com.google.gwt.core.ext.TreeLogger, java.io.PrintWriter)">GeneratorContext</A></CODE></B></DD>
+<DD>Commits source generation begun with
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreate(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)"><CODE>GeneratorContext.tryCreate(TreeLogger, String, String)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commit(com.google.gwt.core.ext.TreeLogger, java.io.PrintWriter)">commit</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="commitArtifact(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.Artifact)"><!-- --></A><H3>
+commitArtifact</H3>
+<PRE>
+public void <B>commitArtifact</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                           <A HREF="../../../../../com/google/gwt/core/ext/linker/Artifact.html" title="class in com.google.gwt.core.ext.linker">Artifact</A>&lt;?&gt;&nbsp;artifact)
+                    throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commitArtifact(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.Artifact)">GeneratorContext</A></CODE></B></DD>
+<DD>Add an Artifact to the <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html" title="class in com.google.gwt.core.ext.linker"><CODE>ArtifactSet</CODE></A>
+ that will be presented to the <A HREF="../../../../../com/google/gwt/core/ext/Linker.html" title="class in com.google.gwt.core.ext"><CODE>Linker</CODE></A> chain at the end of the
+ compilation cycle. Custom sub-classes of Artifact can be used to write
+ cooperating Generator and Linker combinations. This method is semantically
+ equivalent to calling
+ <A HREF="../../../../../com/google/gwt/core/ext/linker/ArtifactSet.html#replace(com.google.gwt.core.ext.linker.Artifact)"><CODE>ArtifactSet.replace(Artifact)</CODE></A> if an
+ equivalent Artifact had previously been committed.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commitArtifact(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.linker.Artifact)">commitArtifact</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a logger; normally the logger passed into
+          <A HREF="../../../../../com/google/gwt/core/ext/Generator.html#generate(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.GeneratorContext, java.lang.String)"><CODE>Generator.generate(TreeLogger, GeneratorContext, String)</CODE></A>
+          or a branch thereof<DD><CODE>artifact</CODE> - the Artifact to provide to the Linker chain.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="commitResource(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)"><!-- --></A><H3>
+commitResource</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/core/ext/linker/GeneratedResource.html" title="class in com.google.gwt.core.ext.linker">GeneratedResource</A> <B>commitResource</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                        java.io.OutputStream&nbsp;os)
+                                 throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commitResource(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)">GeneratorContext</A></CODE></B></DD>
+<DD>Commits resource generation begun with
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreateResource(com.google.gwt.core.ext.TreeLogger, java.lang.String)"><CODE>GeneratorContext.tryCreateResource(TreeLogger, String)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commitResource(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)">commitResource</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the GeneratedResource that was created as a result of committing
+         the OutputStream.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE> - if the resource cannot be written to
+           disk, if the specified stream is unknown, or if the stream has
+           already been committed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCachedGeneratorResult()"><!-- --></A><H3>
+getCachedGeneratorResult</H3>
+<PRE>
+public com.google.gwt.dev.javac.rebind.CachedRebindResult <B>getCachedGeneratorResult</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#getCachedGeneratorResult()">GeneratorContextExt</A></CODE></B></DD>
+<DD>Get cached result from a previous run of the current generator, if available.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#getCachedGeneratorResult()">getCachedGeneratorResult</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>A <CODE>CachedRebindResult</CODE> object,
+         if one has been provided to the context.  Null is returned if there
+         is no previous result, or if generator result caching is not enabled.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPropertyOracle()"><!-- --></A><H3>
+getPropertyOracle</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/core/ext/PropertyOracle.html" title="interface in com.google.gwt.core.ext">PropertyOracle</A> <B>getPropertyOracle</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#getPropertyOracle()">GeneratorContext</A></CODE></B></DD>
+<DD>Gets the property oracle for the current generator context. Generators can
+ use the property oracle to query deferred binding properties.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#getPropertyOracle()">getPropertyOracle</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResourcesOracle()"><!-- --></A><H3>
+getResourcesOracle</H3>
+<PRE>
+public com.google.gwt.dev.resource.ResourceOracle <B>getResourcesOracle</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#getResourcesOracle()">GeneratorContext</A></CODE></B></DD>
+<DD>Returns a resource oracle containing all resources that are mapped into the
+ module's source (or super-source) paths. Conceptually, this resource oracle
+ exposes resources which are "siblings" to GWT-compatible Java classes. For
+ example, if the module includes <code>com.google.gwt.core.client</code>
+ as a source package, then a resource at
+ <code>com/google/gwt/core/client/Foo.properties</code> would be exposed
+ by this resource oracle.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#getResourcesOracle()">getResourcesOracle</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSourceLastModifiedTime(com.google.gwt.core.ext.typeinfo.JClassType)"><!-- --></A><H3>
+getSourceLastModifiedTime</H3>
+<PRE>
+public long <B>getSourceLastModifiedTime</B>(<A HREF="../../../../../com/google/gwt/core/ext/typeinfo/JClassType.html" title="interface in com.google.gwt.core.ext.typeinfo">JClassType</A>&nbsp;sourceType)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#getSourceLastModifiedTime(com.google.gwt.core.ext.typeinfo.JClassType)">GeneratorContextExt</A></CODE></B></DD>
+<DD>Get source last modified time.
+ <p>
+ TODO(jbrosenberg): Implement in terms of a getVersion method yet to be
+ added to TypeOracle, instead of looking for age of a java source file.
+ This will soon be removed.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#getSourceLastModifiedTime(com.google.gwt.core.ext.typeinfo.JClassType)">getSourceLastModifiedTime</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypeOracle()"><!-- --></A><H3>
+getTypeOracle</H3>
+<PRE>
+public <A HREF="../../../../../com/google/gwt/core/ext/typeinfo/TypeOracle.html" title="class in com.google.gwt.core.ext.typeinfo">TypeOracle</A> <B>getTypeOracle</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#getTypeOracle()">GeneratorContext</A></CODE></B></DD>
+<DD>Gets the type oracle for the current generator context. Generators can use
+ the type oracle to ask questions about the entire translatable code base.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#getTypeOracle()">getTypeOracle</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a TypeOracle over all the relevant translatable compilation units
+         in the source path</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isGeneratorResultCachingEnabled()"><!-- --></A><H3>
+isGeneratorResultCachingEnabled</H3>
+<PRE>
+public boolean <B>isGeneratorResultCachingEnabled</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#isGeneratorResultCachingEnabled()">GeneratorContextExt</A></CODE></B></DD>
+<DD>Check whether generator result caching is currently enabled.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#isGeneratorResultCachingEnabled()">isGeneratorResultCachingEnabled</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isProdMode()"><!-- --></A><H3>
+isProdMode</H3>
+<PRE>
+public boolean <B>isProdMode</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#isProdMode()">GeneratorContextExt</A></CODE></B></DD>
+<DD>Returns true if generators are being run to produce code for a
+ production compile. Returns false for dev mode. Generators can use this
+ information to produce code optimized for the target.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#isProdMode()">isProdMode</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reuseTypeFromCacheIfAvailable(java.lang.String)"><!-- --></A><H3>
+reuseTypeFromCacheIfAvailable</H3>
+<PRE>
+public boolean <B>reuseTypeFromCacheIfAvailable</B>(java.lang.String&nbsp;typeName)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#reuseTypeFromCacheIfAvailable(java.lang.String)">GeneratorContextExt</A></CODE></B></DD>
+<DD>Mark a type to be reused from the generator result cache.  Calling this
+ method with a successful response indicates that the calling generator will 
+ not re-generate this type.  A cached version of this type will be added
+ to the context once the calling generator returns from 
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorExt.html#generateIncrementally(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.GeneratorContextExt, java.lang.String)"><CODE>GeneratorExt.generateIncrementally(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.GeneratorContextExt, java.lang.String)</CODE></A>, with a result containing 
+ <CODE>RebindStatus.USE_PARTIAL_CACHED</CODE>.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html#reuseTypeFromCacheIfAvailable(java.lang.String)">reuseTypeFromCacheIfAvailable</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext">GeneratorContextExt</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typeName</CODE> - the fully qualified name of a type.
+<DT><B>Returns:</B><DD>true if the requested type is available from the generator result 
+         cache, false otherwise.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tryCreate(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)"><!-- --></A><H3>
+tryCreate</H3>
+<PRE>
+public java.io.PrintWriter <B>tryCreate</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                     java.lang.String&nbsp;packageName,
+                                     java.lang.String&nbsp;simpleName)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreate(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)">GeneratorContext</A></CODE></B></DD>
+<DD>Attempts to get a <code>PrintWriter</code> so that the caller can
+ generate the source code for the named type. If the named types already
+ exists, <code>null</code> is returned to indicate that no work needs to
+ be done. The file is not committed until
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commit(com.google.gwt.core.ext.TreeLogger, java.io.PrintWriter)"><CODE>GeneratorContext.commit(TreeLogger, PrintWriter)</CODE></A> is called.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreate(com.google.gwt.core.ext.TreeLogger, java.lang.String, java.lang.String)">tryCreate</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a logger; normally the logger passed into
+          <A HREF="../../../../../com/google/gwt/core/ext/Generator.html#generate(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.GeneratorContext, java.lang.String)"><CODE>Generator.generate(TreeLogger, GeneratorContext, String)</CODE></A>
+          or a branch thereof<DD><CODE>packageName</CODE> - the name of the package to which the create type belongs<DD><CODE>simpleName</CODE> - the unqualified source name of the type being generated
+<DT><B>Returns:</B><DD><code>null</code> if the package and class already exists,
+         otherwise a <code>PrintWriter</code> is returned.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tryCreateResource(com.google.gwt.core.ext.TreeLogger, java.lang.String)"><!-- --></A><H3>
+tryCreateResource</H3>
+<PRE>
+public java.io.OutputStream <B>tryCreateResource</B>(<A HREF="../../../../../com/google/gwt/core/ext/TreeLogger.html" title="class in com.google.gwt.core.ext">TreeLogger</A>&nbsp;logger,
+                                              java.lang.String&nbsp;partialPath)
+                                       throws <A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreateResource(com.google.gwt.core.ext.TreeLogger, java.lang.String)">GeneratorContext</A></CODE></B></DD>
+<DD>Attempts to get an <code>OutputStream</code> so that the caller can write
+ file contents into the named file underneath the compilation output
+ directory. The file is not committed until
+ <A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#commitResource(com.google.gwt.core.ext.TreeLogger, java.io.OutputStream)"><CODE>GeneratorContext.commitResource(TreeLogger, OutputStream)</CODE></A> is called.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html#tryCreateResource(com.google.gwt.core.ext.TreeLogger, java.lang.String)">tryCreateResource</A></CODE> in interface <CODE><A HREF="../../../../../com/google/gwt/core/ext/GeneratorContext.html" title="interface in com.google.gwt.core.ext">GeneratorContext</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>logger</CODE> - a logger; normally the logger passed into
+          <A HREF="../../../../../com/google/gwt/core/ext/Generator.html#generate(com.google.gwt.core.ext.TreeLogger, com.google.gwt.core.ext.GeneratorContext, java.lang.String)"><CODE>Generator.generate(TreeLogger, GeneratorContext, String)</CODE></A>
+          or a branch thereof<DD><CODE>partialPath</CODE> - the name of the file whose contents are to be written;
+          the name can include subdirectories separated by forward slashes
+          ('/')
+<DT><B>Returns:</B><DD>an <code>OutputStream</code> into which file contents can be
+         written, or <code>null</code> if a resource by that name is
+         already pending or already exists
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../com/google/gwt/core/ext/UnableToCompleteException.html" title="class in com.google.gwt.core.ext">UnableToCompleteException</A></CODE> - if the resource could not be initialized
+           for some reason, such as if the specified partial path is invalid</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/GeneratorContextExtWrapper.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/GeneratorContextExt.html" title="interface in com.google.gwt.core.ext"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/ext/GeneratorExt.html" title="class in com.google.gwt.core.ext"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/ext/GeneratorContextExtWrapper.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="GeneratorContextExtWrapper.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

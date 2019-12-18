@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+ColumnSortEvent (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ColumnSortEvent (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ColumnSortEvent.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.AsyncHandler.html" title="class in com.google.gwt.user.cellview.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/cellview/client/ColumnSortEvent.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ColumnSortEvent.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.cellview.client</FONT>
+<BR>
+Class ColumnSortEvent</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/web/bindery/event/shared/Event.html" title="class in com.google.web.bindery.event.shared">com.google.web.bindery.event.shared.Event</A>&lt;H&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="class in com.google.gwt.event.shared">com.google.gwt.event.shared.GwtEvent</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.cellview.client.ColumnSortEvent</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ColumnSortEvent</B><DT>extends <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="class in com.google.gwt.event.shared">GwtEvent</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</DL>
+</PRE>
+
+<P>
+Represents a column sort event.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.AsyncHandler.html" title="class in com.google.gwt.user.cellview.client">ColumnSortEvent.AsyncHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A default handler used with views attached to asynchronous data providers
+ such as <CODE>AsyncDataProvider</CODE>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handler for <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortEvent</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.ListHandler.html" title="class in com.google.gwt.user.cellview.client">ColumnSortEvent.ListHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.ListHandler.html" title="type parameter in ColumnSortEvent.ListHandler">T</A>&gt;</B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ A default handler used to sort a <CODE>List</CODE> backing a table.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.event.shared.GwtEvent"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="class in com.google.gwt.event.shared">GwtEvent</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="type parameter in GwtEvent.Type">H</A>&gt;</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#ColumnSortEvent(com.google.gwt.user.cellview.client.ColumnSortList)">ColumnSortEvent</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList</A>&nbsp;sortList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortEvent</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#dispatch(com.google.gwt.user.cellview.client.ColumnSortEvent.Handler)">dispatch</A></B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Should only be called by <A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html" title="class in com.google.gwt.event.shared"><CODE>HandlerManager</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html" title="class in com.google.gwt.user.cellview.client">ColumnSortEvent</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#fire(com.google.gwt.event.shared.HasHandlers, com.google.gwt.user.cellview.client.ColumnSortList)">fire</A></B>(<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>&nbsp;source,
+     <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList</A>&nbsp;sortList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fires a cell preview event on all registered handlers in the handler
+ manager.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#getAssociatedType()">getAssociatedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared"><CODE>Event.Type</CODE></A> used to register this event, allowing an
+ <A HREF="../../../../../../com/google/web/bindery/event/shared/EventBus.html" title="class in com.google.web.bindery.event.shared"><CODE>EventBus</CODE></A> to find handlers of the appropriate class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client">Column</A>&lt;?,?&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#getColumn()">getColumn</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> that was sorted.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#getColumnSortList()">getColumnSortList</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> that contains the ordered list of sorted
+ columns.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the type associated with this event.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html#isSortAscending()">isSortAscending</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> is sorted in ascending order.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.event.shared.GwtEvent"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="class in com.google.gwt.event.shared">GwtEvent</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#assertLive()">assertLive</A>, <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#getSource()">getSource</A>, <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#isLive()">isLive</A>, <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#kill()">kill</A>, <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#revive()">revive</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.web.bindery.event.shared.Event"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.web.bindery.event.shared.<A HREF="../../../../../../com/google/web/bindery/event/shared/Event.html" title="class in com.google.web.bindery.event.shared">Event</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/web/bindery/event/shared/Event.html#setSource(java.lang.Object)">setSource</A>, <A HREF="../../../../../../com/google/web/bindery/event/shared/Event.html#toDebugString()">toDebugString</A>, <A HREF="../../../../../../com/google/web/bindery/event/shared/Event.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ColumnSortEvent(com.google.gwt.user.cellview.client.ColumnSortList)"><!-- --></A><H3>
+ColumnSortEvent</H3>
+<PRE>
+protected <B>ColumnSortEvent</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList</A>&nbsp;sortList)</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortEvent</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>sortList</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="fire(com.google.gwt.event.shared.HasHandlers, com.google.gwt.user.cellview.client.ColumnSortList)"><!-- --></A><H3>
+fire</H3>
+<PRE>
+public static <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html" title="class in com.google.gwt.user.cellview.client">ColumnSortEvent</A> <B>fire</B>(<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>&nbsp;source,
+                                   <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList</A>&nbsp;sortList)</PRE>
+<DL>
+<DD>Fires a cell preview event on all registered handlers in the handler
+ manager. If no such handlers exist, this implementation will do nothing.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>source</CODE> - the source of the event<DD><CODE>sortList</CODE> - the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> of sorted columns
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortEvent</CODE></A> that was fired</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getType()"><!-- --></A><H3>
+getType</H3>
+<PRE>
+public static <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt; <B>getType</B>()</PRE>
+<DL>
+<DD>Gets the type associated with this event.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>returns the handler type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAssociatedType()"><!-- --></A><H3>
+getAssociatedType</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.Type.html" title="class in com.google.gwt.event.shared">GwtEvent.Type</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt; <B>getAssociatedType</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/web/bindery/event/shared/Event.html#getAssociatedType()">Event</A></CODE></B></DD>
+<DD>Returns the <A HREF="../../../../../../com/google/web/bindery/event/shared/Event.Type.html" title="class in com.google.web.bindery.event.shared"><CODE>Event.Type</CODE></A> used to register this event, allowing an
+ <A HREF="../../../../../../com/google/web/bindery/event/shared/EventBus.html" title="class in com.google.web.bindery.event.shared"><CODE>EventBus</CODE></A> to find handlers of the appropriate class.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#getAssociatedType()">getAssociatedType</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="class in com.google.gwt.event.shared">GwtEvent</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getColumn()"><!-- --></A><H3>
+getColumn</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client">Column</A>&lt;?,?&gt; <B>getColumn</B>()</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> that was sorted.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the sorted <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A>, or null if not sorted</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getColumnSortList()"><!-- --></A><H3>
+getColumnSortList</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client">ColumnSortList</A> <B>getColumnSortList</B>()</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A> that contains the ordered list of sorted
+ columns.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the <A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortList.html" title="class in com.google.gwt.user.cellview.client"><CODE>ColumnSortList</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSortAscending()"><!-- --></A><H3>
+isSortAscending</H3>
+<PRE>
+public boolean <B>isSortAscending</B>()</PRE>
+<DL>
+<DD>Check if the <A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><CODE>Column</CODE></A> is sorted in ascending order.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if ascending, false if descending or not sorted</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="dispatch(com.google.gwt.user.cellview.client.ColumnSortEvent.Handler)"><!-- --></A><H3>
+dispatch</H3>
+<PRE>
+protected void <B>dispatch</B>(<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#dispatch(H)">GwtEvent</A></CODE></B></DD>
+<DD>Should only be called by <A HREF="../../../../../../com/google/gwt/event/shared/HandlerManager.html" title="class in com.google.gwt.event.shared"><CODE>HandlerManager</CODE></A>. In other words, do not use
+ or call.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html#dispatch(H)">dispatch</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/event/shared/GwtEvent.html" title="class in com.google.gwt.event.shared">GwtEvent</A>&lt;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.Handler.html" title="interface in com.google.gwt.user.cellview.client">ColumnSortEvent.Handler</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - handler</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ColumnSortEvent.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/Column.html" title="class in com.google.gwt.user.cellview.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/cellview/client/ColumnSortEvent.AsyncHandler.html" title="class in com.google.gwt.user.cellview.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/cellview/client/ColumnSortEvent.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ColumnSortEvent.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,1900 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+JsDate (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="JsDate (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/JsDate.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsArrayString.html" title="class in com.google.gwt.core.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsonUtils.html" title="class in com.google.gwt.core.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/client/JsDate.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="JsDate.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.core.client</FONT>
+<BR>
+Class JsDate</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">com.google.gwt.core.client.JavaScriptObject</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.core.client.JsDate</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>JsDate</B><DT>extends <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></DL>
+</PRE>
+
+<P>
+A simple wrapper around a native JS Date object.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#JsDate()">JsDate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non directly instantiable, use one of the <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create()"><CODE>create()</CODE></A> methods.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create()">create</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date with the current time.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(double)">create</A></B>(double&nbsp;milliseconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date with the specified internal representation, which is the
+ number of milliseconds since midnight on January 1st, 1970.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(int, int)">create</A></B>(int&nbsp;year,
+       int&nbsp;month)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date using the specified values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(int, int, int)">create</A></B>(int&nbsp;year,
+       int&nbsp;month,
+       int&nbsp;dayOfMonth)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date using the specified values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(int, int, int, int)">create</A></B>(int&nbsp;year,
+       int&nbsp;month,
+       int&nbsp;dayOfMonth,
+       int&nbsp;hours)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date using the specified values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(int, int, int, int, int)">create</A></B>(int&nbsp;year,
+       int&nbsp;month,
+       int&nbsp;dayOfMonth,
+       int&nbsp;hours,
+       int&nbsp;minutes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date using the specified values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(int, int, int, int, int, int)">create</A></B>(int&nbsp;year,
+       int&nbsp;month,
+       int&nbsp;dayOfMonth,
+       int&nbsp;hours,
+       int&nbsp;minutes,
+       int&nbsp;seconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date using the specified values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(int, int, int, int, int, int, int)">create</A></B>(int&nbsp;year,
+       int&nbsp;month,
+       int&nbsp;dayOfMonth,
+       int&nbsp;hours,
+       int&nbsp;minutes,
+       int&nbsp;seconds,
+       int&nbsp;millis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date using the specified values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create(java.lang.String)">create</A></B>(java.lang.String&nbsp;dateString)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new date from a string to be parsed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getDate()">getDate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day of the month.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getDay()">getDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day of the week, from <code>0</code> (Sunday) to <code>6</code>
+ Saturday.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getFullYear()">getFullYear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the four-digit year.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getHours()">getHours</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the hour, between <code>0</code> (midnight) and <code>23</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getMilliseconds()">getMilliseconds</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the milliseconds, between <code>0</code> and <code>999</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getMinutes()">getMinutes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the minutes, between <code>0</code> and <code>59</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getMonth()">getMonth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the month, from <code>0</code> (January) to <code>6</code>
+ December.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getSeconds()">getSeconds</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the seconds, between <code>0</code> and <code>59</code>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getTime()">getTime</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the internal millisecond representation of the date, the number of
+ milliseconds since midnight on January 1st, 1970.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getTimezoneOffset()">getTimezoneOffset</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the difference, in minutes, between the local and UTC
+ representations of this date.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCDate()">getUTCDate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day of the month, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCDay()">getUTCDay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the day of the week, from <code>0</code> (Sunday) to <code>6</code>
+ Saturday, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCFullYear()">getUTCFullYear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the four-digit year, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCHours()">getUTCHours</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the hour, between <code>0</code> (midnight) and <code>23</code>, in
+ UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCMilliseconds()">getUTCMilliseconds</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the milliseconds, between <code>0</code> and <code>999</code>, in
+ UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCMinutes()">getUTCMinutes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the minutes, between <code>0</code> and <code>59</code>, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCMonth()">getUTCMonth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the month, from <code>0</code> (January) to <code>6</code>
+ December, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getUTCSeconds()">getUTCSeconds</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the seconds, between <code>0</code> and <code>59</code>, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getYear()">getYear</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getFullYear()"><CODE>getFullYear()</CODE></A>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#parse(java.lang.String)">parse</A></B>(java.lang.String&nbsp;dateString)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parses a string representation of a date and time and returns the internal
+ millisecond representation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setDate(int)">setDate</A></B>(int&nbsp;dayOfMonth)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the day of the month.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setFullYear(int)">setFullYear</A></B>(int&nbsp;year)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the year.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setFullYear(int, int)">setFullYear</A></B>(int&nbsp;year,
+            int&nbsp;month)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the year and month.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setFullYear(int, int, int)">setFullYear</A></B>(int&nbsp;year,
+            int&nbsp;month,
+            int&nbsp;day)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the year, month, and day.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setHours(int)">setHours</A></B>(int&nbsp;hours)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setHours(int, int)">setHours</A></B>(int&nbsp;hours,
+         int&nbsp;mins)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour and minutes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setHours(int, int, int)">setHours</A></B>(int&nbsp;hours,
+         int&nbsp;mins,
+         int&nbsp;secs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour, minutes, and seconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setHours(int, int, int, int)">setHours</A></B>(int&nbsp;hours,
+         int&nbsp;mins,
+         int&nbsp;secs,
+         int&nbsp;ms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour, minutes, seconds, and milliseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setMinutes(int)">setMinutes</A></B>(int&nbsp;minutes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the minutes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setMinutes(int, int)">setMinutes</A></B>(int&nbsp;minutes,
+           int&nbsp;seconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the minutes and seconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setMinutes(int, int, int)">setMinutes</A></B>(int&nbsp;minutes,
+           int&nbsp;seconds,
+           int&nbsp;millis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the minutes, seconds, and milliseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setMonth(int)">setMonth</A></B>(int&nbsp;month)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the month.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setMonth(int, int)">setMonth</A></B>(int&nbsp;month,
+         int&nbsp;dayOfMonth)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the month and day.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setSeconds(int)">setSeconds</A></B>(int&nbsp;seconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setSeconds(int, int)">setSeconds</A></B>(int&nbsp;seconds,
+           int&nbsp;millis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seconds and milliseconds.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setTime(double)">setTime</A></B>(double&nbsp;milliseconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the internal date representation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCDate(int)">setUTCDate</A></B>(int&nbsp;dayOfMonth)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the day of the month, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCFullYear(int)">setUTCFullYear</A></B>(int&nbsp;year)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the year, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCFullYear(int, int)">setUTCFullYear</A></B>(int&nbsp;year,
+               int&nbsp;month)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the year and month, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCFullYear(int, int, int)">setUTCFullYear</A></B>(int&nbsp;year,
+               int&nbsp;month,
+               int&nbsp;day)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the year, month, and day, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCHours(int)">setUTCHours</A></B>(int&nbsp;hours)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCHours(int, int)">setUTCHours</A></B>(int&nbsp;hours,
+            int&nbsp;mins)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour and minutes, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCHours(int, int, int)">setUTCHours</A></B>(int&nbsp;hours,
+            int&nbsp;mins,
+            int&nbsp;secs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour, minutes, and seconds, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCHours(int, int, int, int)">setUTCHours</A></B>(int&nbsp;hours,
+            int&nbsp;mins,
+            int&nbsp;secs,
+            int&nbsp;ms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the hour, minutes, seconds, and milliseconds, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCMinutes(int)">setUTCMinutes</A></B>(int&nbsp;minutes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the minutes, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCMinutes(int, int)">setUTCMinutes</A></B>(int&nbsp;minutes,
+              int&nbsp;seconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the minutes and seconds, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCMinutes(int, int, int)">setUTCMinutes</A></B>(int&nbsp;minutes,
+              int&nbsp;seconds,
+              int&nbsp;millis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the minutes, seconds, and milliseconds, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCMonth(int)">setUTCMonth</A></B>(int&nbsp;month)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the month, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCMonth(int, int)">setUTCMonth</A></B>(int&nbsp;month,
+            int&nbsp;dayOfMonth)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the month and day, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCSeconds(int)">setUTCSeconds</A></B>(int&nbsp;seconds)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seconds, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setUTCSeconds(int, int)">setUTCSeconds</A></B>(int&nbsp;seconds,
+              int&nbsp;millis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the seconds and milliseconds, in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setYear(int)">setYear</A></B>(int&nbsp;year)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setFullYear(int)"><CODE>setFullYear(int)</CODE></A>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toDateString()">toDateString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date string in the local time zone.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toGMTString()">toGMTString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toUTCString()"><CODE>toUTCString()</CODE></A>.</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toLocaleDateString()">toLocaleDateString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date string in the local time zone according to local formatting
+ conventions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toLocaleString()">toLocaleString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date and time string in the local time zone according to local
+ formatting conventions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toLocaleTimeString()">toLocaleTimeString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a time string in the local time zone according to local formatting
+ conventions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toTimeString()">toTimeString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a time string in the local time zone.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toUTCString()">toUTCString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a date and time string in UTC.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#UTC(int, int, int, int, int, int, int)">UTC</A></B>(int&nbsp;year,
+    int&nbsp;month,
+    int&nbsp;dayOfMonth,
+    int&nbsp;hours,
+    int&nbsp;minutes,
+    int&nbsp;seconds,
+    int&nbsp;millis)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the internal millisecond representation of the specified UTC date
+ and time.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;double</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/core/client/JsDate.html#valueOf()">valueOf</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the millisecond representation, as <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getTime()"><CODE>getTime()</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.client.JavaScriptObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.client.<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#cast()">cast</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createArray()">createArray</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createFunction()">createFunction</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createObject()">createObject</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#hashCode()">hashCode</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toSource()">toSource</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="JsDate()"><!-- --></A><H3>
+JsDate</H3>
+<PRE>
+protected <B>JsDate</B>()</PRE>
+<DL>
+<DD>Non directly instantiable, use one of the <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#create()"><CODE>create()</CODE></A> methods.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="create()"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>()</PRE>
+<DL>
+<DD>Creates a new date with the current time.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(double)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(double&nbsp;milliseconds)</PRE>
+<DL>
+<DD>Creates a new date with the specified internal representation, which is the
+ number of milliseconds since midnight on January 1st, 1970. This is the
+ same representation returned by <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getTime()"><CODE>getTime()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(int, int)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(int&nbsp;year,
+                            int&nbsp;month)</PRE>
+<DL>
+<DD>Creates a new date using the specified values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(int, int, int)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(int&nbsp;year,
+                            int&nbsp;month,
+                            int&nbsp;dayOfMonth)</PRE>
+<DL>
+<DD>Creates a new date using the specified values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(int, int, int, int)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(int&nbsp;year,
+                            int&nbsp;month,
+                            int&nbsp;dayOfMonth,
+                            int&nbsp;hours)</PRE>
+<DL>
+<DD>Creates a new date using the specified values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(int, int, int, int, int)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(int&nbsp;year,
+                            int&nbsp;month,
+                            int&nbsp;dayOfMonth,
+                            int&nbsp;hours,
+                            int&nbsp;minutes)</PRE>
+<DL>
+<DD>Creates a new date using the specified values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(int, int, int, int, int, int)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(int&nbsp;year,
+                            int&nbsp;month,
+                            int&nbsp;dayOfMonth,
+                            int&nbsp;hours,
+                            int&nbsp;minutes,
+                            int&nbsp;seconds)</PRE>
+<DL>
+<DD>Creates a new date using the specified values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(int, int, int, int, int, int, int)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(int&nbsp;year,
+                            int&nbsp;month,
+                            int&nbsp;dayOfMonth,
+                            int&nbsp;hours,
+                            int&nbsp;minutes,
+                            int&nbsp;seconds,
+                            int&nbsp;millis)</PRE>
+<DL>
+<DD>Creates a new date using the specified values.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create(java.lang.String)"><!-- --></A><H3>
+create</H3>
+<PRE>
+public static <A HREF="../../../../../com/google/gwt/core/client/JsDate.html" title="class in com.google.gwt.core.client">JsDate</A> <B>create</B>(java.lang.String&nbsp;dateString)</PRE>
+<DL>
+<DD>Creates a new date from a string to be parsed.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parse(java.lang.String)"><!-- --></A><H3>
+parse</H3>
+<PRE>
+public static double <B>parse</B>(java.lang.String&nbsp;dateString)</PRE>
+<DL>
+<DD>Parses a string representation of a date and time and returns the internal
+ millisecond representation. If the string cannot be parsed, the returned
+ value will be <code>NaN</code>. Use <CODE>Double.isNaN(double)</CODE> to check
+ the result.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="UTC(int, int, int, int, int, int, int)"><!-- --></A><H3>
+UTC</H3>
+<PRE>
+public static double <B>UTC</B>(int&nbsp;year,
+                         int&nbsp;month,
+                         int&nbsp;dayOfMonth,
+                         int&nbsp;hours,
+                         int&nbsp;minutes,
+                         int&nbsp;seconds,
+                         int&nbsp;millis)</PRE>
+<DL>
+<DD>Returns the internal millisecond representation of the specified UTC date
+ and time.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDate()"><!-- --></A><H3>
+getDate</H3>
+<PRE>
+public final int <B>getDate</B>()</PRE>
+<DL>
+<DD>Returns the day of the month.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDay()"><!-- --></A><H3>
+getDay</H3>
+<PRE>
+public final int <B>getDay</B>()</PRE>
+<DL>
+<DD>Returns the day of the week, from <code>0</code> (Sunday) to <code>6</code>
+ Saturday.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFullYear()"><!-- --></A><H3>
+getFullYear</H3>
+<PRE>
+public final int <B>getFullYear</B>()</PRE>
+<DL>
+<DD>Returns the four-digit year.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHours()"><!-- --></A><H3>
+getHours</H3>
+<PRE>
+public final int <B>getHours</B>()</PRE>
+<DL>
+<DD>Returns the hour, between <code>0</code> (midnight) and <code>23</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMilliseconds()"><!-- --></A><H3>
+getMilliseconds</H3>
+<PRE>
+public final int <B>getMilliseconds</B>()</PRE>
+<DL>
+<DD>Returns the milliseconds, between <code>0</code> and <code>999</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMinutes()"><!-- --></A><H3>
+getMinutes</H3>
+<PRE>
+public final int <B>getMinutes</B>()</PRE>
+<DL>
+<DD>Returns the minutes, between <code>0</code> and <code>59</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMonth()"><!-- --></A><H3>
+getMonth</H3>
+<PRE>
+public final int <B>getMonth</B>()</PRE>
+<DL>
+<DD>Returns the month, from <code>0</code> (January) to <code>6</code>
+ December.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSeconds()"><!-- --></A><H3>
+getSeconds</H3>
+<PRE>
+public final int <B>getSeconds</B>()</PRE>
+<DL>
+<DD>Returns the seconds, between <code>0</code> and <code>59</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTime()"><!-- --></A><H3>
+getTime</H3>
+<PRE>
+public final double <B>getTime</B>()</PRE>
+<DL>
+<DD>Returns the internal millisecond representation of the date, the number of
+ milliseconds since midnight on January 1st, 1970. This is the same
+ representation returned by <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getTime()"><CODE>getTime()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTimezoneOffset()"><!-- --></A><H3>
+getTimezoneOffset</H3>
+<PRE>
+public final int <B>getTimezoneOffset</B>()</PRE>
+<DL>
+<DD>Returns the difference, in minutes, between the local and UTC
+ representations of this date. The value returned is affected by whether or
+ not daylight savings time would be in effect on specified date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCDate()"><!-- --></A><H3>
+getUTCDate</H3>
+<PRE>
+public final int <B>getUTCDate</B>()</PRE>
+<DL>
+<DD>Returns the day of the month, in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCDay()"><!-- --></A><H3>
+getUTCDay</H3>
+<PRE>
+public final int <B>getUTCDay</B>()</PRE>
+<DL>
+<DD>Returns the day of the week, from <code>0</code> (Sunday) to <code>6</code>
+ Saturday, in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCFullYear()"><!-- --></A><H3>
+getUTCFullYear</H3>
+<PRE>
+public final int <B>getUTCFullYear</B>()</PRE>
+<DL>
+<DD>Returns the four-digit year, in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCHours()"><!-- --></A><H3>
+getUTCHours</H3>
+<PRE>
+public final int <B>getUTCHours</B>()</PRE>
+<DL>
+<DD>Returns the hour, between <code>0</code> (midnight) and <code>23</code>, in
+ UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCMilliseconds()"><!-- --></A><H3>
+getUTCMilliseconds</H3>
+<PRE>
+public final int <B>getUTCMilliseconds</B>()</PRE>
+<DL>
+<DD>Returns the milliseconds, between <code>0</code> and <code>999</code>, in
+ UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCMinutes()"><!-- --></A><H3>
+getUTCMinutes</H3>
+<PRE>
+public final int <B>getUTCMinutes</B>()</PRE>
+<DL>
+<DD>Returns the minutes, between <code>0</code> and <code>59</code>, in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCMonth()"><!-- --></A><H3>
+getUTCMonth</H3>
+<PRE>
+public final int <B>getUTCMonth</B>()</PRE>
+<DL>
+<DD>Returns the month, from <code>0</code> (January) to <code>6</code>
+ December, in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUTCSeconds()"><!-- --></A><H3>
+getUTCSeconds</H3>
+<PRE>
+public final int <B>getUTCSeconds</B>()</PRE>
+<DL>
+<DD>Returns the seconds, between <code>0</code> and <code>59</code>, in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getYear()"><!-- --></A><H3>
+getYear</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final int <B>getYear</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getFullYear()"><CODE>getFullYear()</CODE></A>.</I>
+<P>
+<DD>Returns the year minus 1900.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDate(int)"><!-- --></A><H3>
+setDate</H3>
+<PRE>
+public final double <B>setDate</B>(int&nbsp;dayOfMonth)</PRE>
+<DL>
+<DD>Sets the day of the month. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFullYear(int)"><!-- --></A><H3>
+setFullYear</H3>
+<PRE>
+public final double <B>setFullYear</B>(int&nbsp;year)</PRE>
+<DL>
+<DD>Sets the year. Returns the millisecond representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFullYear(int, int)"><!-- --></A><H3>
+setFullYear</H3>
+<PRE>
+public final double <B>setFullYear</B>(int&nbsp;year,
+                                int&nbsp;month)</PRE>
+<DL>
+<DD>Sets the year and month. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFullYear(int, int, int)"><!-- --></A><H3>
+setFullYear</H3>
+<PRE>
+public final double <B>setFullYear</B>(int&nbsp;year,
+                                int&nbsp;month,
+                                int&nbsp;day)</PRE>
+<DL>
+<DD>Sets the year, month, and day. Returns the millisecond representation of
+ the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHours(int)"><!-- --></A><H3>
+setHours</H3>
+<PRE>
+public final double <B>setHours</B>(int&nbsp;hours)</PRE>
+<DL>
+<DD>Sets the hour. Returns the millisecond representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHours(int, int)"><!-- --></A><H3>
+setHours</H3>
+<PRE>
+public final double <B>setHours</B>(int&nbsp;hours,
+                             int&nbsp;mins)</PRE>
+<DL>
+<DD>Sets the hour and minutes. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHours(int, int, int)"><!-- --></A><H3>
+setHours</H3>
+<PRE>
+public final double <B>setHours</B>(int&nbsp;hours,
+                             int&nbsp;mins,
+                             int&nbsp;secs)</PRE>
+<DL>
+<DD>Sets the hour, minutes, and seconds. Returns the millisecond representation
+ of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHours(int, int, int, int)"><!-- --></A><H3>
+setHours</H3>
+<PRE>
+public final double <B>setHours</B>(int&nbsp;hours,
+                             int&nbsp;mins,
+                             int&nbsp;secs,
+                             int&nbsp;ms)</PRE>
+<DL>
+<DD>Sets the hour, minutes, seconds, and milliseconds. Returns the millisecond
+ representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMinutes(int)"><!-- --></A><H3>
+setMinutes</H3>
+<PRE>
+public final double <B>setMinutes</B>(int&nbsp;minutes)</PRE>
+<DL>
+<DD>Sets the minutes. Returns the millisecond representation of the adjusted
+ date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMinutes(int, int)"><!-- --></A><H3>
+setMinutes</H3>
+<PRE>
+public final double <B>setMinutes</B>(int&nbsp;minutes,
+                               int&nbsp;seconds)</PRE>
+<DL>
+<DD>Sets the minutes and seconds. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMinutes(int, int, int)"><!-- --></A><H3>
+setMinutes</H3>
+<PRE>
+public final double <B>setMinutes</B>(int&nbsp;minutes,
+                               int&nbsp;seconds,
+                               int&nbsp;millis)</PRE>
+<DL>
+<DD>Sets the minutes, seconds, and milliseconds. Returns the millisecond
+ representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMonth(int)"><!-- --></A><H3>
+setMonth</H3>
+<PRE>
+public final double <B>setMonth</B>(int&nbsp;month)</PRE>
+<DL>
+<DD>Sets the month. Returns the millisecond representation of the adjusted
+ date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMonth(int, int)"><!-- --></A><H3>
+setMonth</H3>
+<PRE>
+public final double <B>setMonth</B>(int&nbsp;month,
+                             int&nbsp;dayOfMonth)</PRE>
+<DL>
+<DD>Sets the month and day. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSeconds(int)"><!-- --></A><H3>
+setSeconds</H3>
+<PRE>
+public final double <B>setSeconds</B>(int&nbsp;seconds)</PRE>
+<DL>
+<DD>Sets the seconds. Returns the millisecond representation of the adjusted
+ date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSeconds(int, int)"><!-- --></A><H3>
+setSeconds</H3>
+<PRE>
+public final double <B>setSeconds</B>(int&nbsp;seconds,
+                               int&nbsp;millis)</PRE>
+<DL>
+<DD>Sets the seconds and milliseconds. Returns the millisecond representation
+ of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTime(double)"><!-- --></A><H3>
+setTime</H3>
+<PRE>
+public final double <B>setTime</B>(double&nbsp;milliseconds)</PRE>
+<DL>
+<DD>Sets the internal date representation. Returns the
+ <code>milliseconds</code> argument.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCDate(int)"><!-- --></A><H3>
+setUTCDate</H3>
+<PRE>
+public final double <B>setUTCDate</B>(int&nbsp;dayOfMonth)</PRE>
+<DL>
+<DD>Sets the day of the month, in UTC. Returns the millisecond representation
+ of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCFullYear(int)"><!-- --></A><H3>
+setUTCFullYear</H3>
+<PRE>
+public final double <B>setUTCFullYear</B>(int&nbsp;year)</PRE>
+<DL>
+<DD>Sets the year, in UTC. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCFullYear(int, int)"><!-- --></A><H3>
+setUTCFullYear</H3>
+<PRE>
+public final double <B>setUTCFullYear</B>(int&nbsp;year,
+                                   int&nbsp;month)</PRE>
+<DL>
+<DD>Sets the year and month, in UTC. Returns the millisecond representation of
+ the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCFullYear(int, int, int)"><!-- --></A><H3>
+setUTCFullYear</H3>
+<PRE>
+public final double <B>setUTCFullYear</B>(int&nbsp;year,
+                                   int&nbsp;month,
+                                   int&nbsp;day)</PRE>
+<DL>
+<DD>Sets the year, month, and day, in UTC. Returns the millisecond
+ representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCHours(int)"><!-- --></A><H3>
+setUTCHours</H3>
+<PRE>
+public final double <B>setUTCHours</B>(int&nbsp;hours)</PRE>
+<DL>
+<DD>Sets the hour, in UTC. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCHours(int, int)"><!-- --></A><H3>
+setUTCHours</H3>
+<PRE>
+public final double <B>setUTCHours</B>(int&nbsp;hours,
+                                int&nbsp;mins)</PRE>
+<DL>
+<DD>Sets the hour and minutes, in UTC. Returns the millisecond representation
+ of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCHours(int, int, int)"><!-- --></A><H3>
+setUTCHours</H3>
+<PRE>
+public final double <B>setUTCHours</B>(int&nbsp;hours,
+                                int&nbsp;mins,
+                                int&nbsp;secs)</PRE>
+<DL>
+<DD>Sets the hour, minutes, and seconds, in UTC. Returns the millisecond
+ representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCHours(int, int, int, int)"><!-- --></A><H3>
+setUTCHours</H3>
+<PRE>
+public final double <B>setUTCHours</B>(int&nbsp;hours,
+                                int&nbsp;mins,
+                                int&nbsp;secs,
+                                int&nbsp;ms)</PRE>
+<DL>
+<DD>Sets the hour, minutes, seconds, and milliseconds, in UTC. Returns the
+ millisecond representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCMinutes(int)"><!-- --></A><H3>
+setUTCMinutes</H3>
+<PRE>
+public final double <B>setUTCMinutes</B>(int&nbsp;minutes)</PRE>
+<DL>
+<DD>Sets the minutes, in UTC. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCMinutes(int, int)"><!-- --></A><H3>
+setUTCMinutes</H3>
+<PRE>
+public final double <B>setUTCMinutes</B>(int&nbsp;minutes,
+                                  int&nbsp;seconds)</PRE>
+<DL>
+<DD>Sets the minutes and seconds, in UTC. Returns the millisecond
+ representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCMinutes(int, int, int)"><!-- --></A><H3>
+setUTCMinutes</H3>
+<PRE>
+public final double <B>setUTCMinutes</B>(int&nbsp;minutes,
+                                  int&nbsp;seconds,
+                                  int&nbsp;millis)</PRE>
+<DL>
+<DD>Sets the minutes, seconds, and milliseconds, in UTC. Returns the
+ millisecond representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCMonth(int)"><!-- --></A><H3>
+setUTCMonth</H3>
+<PRE>
+public final double <B>setUTCMonth</B>(int&nbsp;month)</PRE>
+<DL>
+<DD>Sets the month, in UTC. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCMonth(int, int)"><!-- --></A><H3>
+setUTCMonth</H3>
+<PRE>
+public final double <B>setUTCMonth</B>(int&nbsp;month,
+                                int&nbsp;dayOfMonth)</PRE>
+<DL>
+<DD>Sets the month and day, in UTC. Returns the millisecond representation of
+ the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCSeconds(int)"><!-- --></A><H3>
+setUTCSeconds</H3>
+<PRE>
+public final double <B>setUTCSeconds</B>(int&nbsp;seconds)</PRE>
+<DL>
+<DD>Sets the seconds, in UTC. Returns the millisecond representation of the
+ adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setUTCSeconds(int, int)"><!-- --></A><H3>
+setUTCSeconds</H3>
+<PRE>
+public final double <B>setUTCSeconds</B>(int&nbsp;seconds,
+                                  int&nbsp;millis)</PRE>
+<DL>
+<DD>Sets the seconds and milliseconds, in UTC. Returns the millisecond
+ representation of the adjusted date.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setYear(int)"><!-- --></A><H3>
+setYear</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final double <B>setYear</B>(int&nbsp;year)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#setFullYear(int)"><CODE>setFullYear(int)</CODE></A>.</I>
+<P>
+<DD>Sets a two-digit year.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toDateString()"><!-- --></A><H3>
+toDateString</H3>
+<PRE>
+public final java.lang.String <B>toDateString</B>()</PRE>
+<DL>
+<DD>Returns a date string in the local time zone.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toGMTString()"><!-- --></A><H3>
+toGMTString</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public final java.lang.String <B>toGMTString</B>()</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#toUTCString()"><CODE>toUTCString()</CODE></A>.</I>
+<P>
+<DD>Returns a date and time string in GMT.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toLocaleDateString()"><!-- --></A><H3>
+toLocaleDateString</H3>
+<PRE>
+public final java.lang.String <B>toLocaleDateString</B>()</PRE>
+<DL>
+<DD>Returns a date string in the local time zone according to local formatting
+ conventions.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toLocaleString()"><!-- --></A><H3>
+toLocaleString</H3>
+<PRE>
+public final java.lang.String <B>toLocaleString</B>()</PRE>
+<DL>
+<DD>Returns a date and time string in the local time zone according to local
+ formatting conventions.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toLocaleTimeString()"><!-- --></A><H3>
+toLocaleTimeString</H3>
+<PRE>
+public final java.lang.String <B>toLocaleTimeString</B>()</PRE>
+<DL>
+<DD>Returns a time string in the local time zone according to local formatting
+ conventions.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toTimeString()"><!-- --></A><H3>
+toTimeString</H3>
+<PRE>
+public final java.lang.String <B>toTimeString</B>()</PRE>
+<DL>
+<DD>Returns a time string in the local time zone.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toUTCString()"><!-- --></A><H3>
+toUTCString</H3>
+<PRE>
+public final java.lang.String <B>toUTCString</B>()</PRE>
+<DL>
+<DD>Returns a date and time string in UTC.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="valueOf()"><!-- --></A><H3>
+valueOf</H3>
+<PRE>
+public final double <B>valueOf</B>()</PRE>
+<DL>
+<DD>Returns the millisecond representation, as <A HREF="../../../../../com/google/gwt/core/client/JsDate.html#getTime()"><CODE>getTime()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/JsDate.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsArrayString.html" title="class in com.google.gwt.core.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/core/client/JsonUtils.html" title="class in com.google.gwt.core.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/core/client/JsDate.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="JsDate.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

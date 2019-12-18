@@ -1,0 +1,1775 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+PopupPanel (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="PopupPanel (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PopupPanel.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListenerCollection.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/PopupPanel.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PopupPanel.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class PopupPanel</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.UIObject</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Widget</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Panel</A>
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.SimplePanel</A>
+                  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.PopupPanel</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasAttachHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasAttachHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;, <A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/AcceptsOneWidget.html" title="interface in com.google.gwt.user.client.ui">AcceptsOneWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasOneWidget.html" title="interface in com.google.gwt.user.client.ui">HasOneWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesPopupEvents</A>, java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&gt;</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../com/google/gwt/user/client/ui/DecoratedPopupPanel.html" title="class in com.google.gwt.user.client.ui">DecoratedPopupPanel</A>, <A HREF="../../../../../../com/google/gwt/logging/client/LoggingPopup.html" title="class in com.google.gwt.logging.client">LoggingPopup</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>PopupPanel</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html" title="class in com.google.gwt.user.client.ui">SimplePanel</A><DT>implements <A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesPopupEvents</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A>, <A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;</DL>
+</PRE>
+
+<P>
+A panel that can "pop up" over other widgets. It overlays the browser's
+ client area (and any previously-created popups).
+
+ <p>
+ A PopupPanel should not generally be added to other panels; rather, it should
+ be shown and hidden using the <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#show()"><CODE>show()</CODE></A> and <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#hide()"><CODE>hide()</CODE></A> methods.
+ </p>
+ <p>
+ The width and height of the PopupPanel cannot be explicitly set; they are
+ determined by the PopupPanel's widget. Calls to <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setWidth(java.lang.String)"><CODE>setWidth(String)</CODE></A> and
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setHeight(java.lang.String)"><CODE>setHeight(String)</CODE></A> will call these methods on the PopupPanel's
+ widget.
+ </p>
+ <p>
+ <img class='gallery' src='doc-files/PopupPanel.png'/>
+ </p>
+
+ <p>
+ The PopupPanel can be optionally displayed with a "glass" element behind it,
+ which is commonly used to gray out the widgets behind it. It can be enabled
+ using <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setGlassEnabled(boolean)"><CODE>setGlassEnabled(boolean)</CODE></A>. It has a default style name of
+ "gwt-PopupPanelGlass", which can be changed using
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setGlassStyleName(java.lang.String)"><CODE>setGlassStyleName(String)</CODE></A>.
+ </p>
+
+ <p>
+ <h3>Example</h3>
+ <blockquote><pre>public class PopupPanelExample implements EntryPoint {
+
+  private static class MyPopup extends PopupPanel {
+
+    public MyPopup() {
+      // PopupPanel's constructor takes 'auto-hide' as its boolean parameter.
+      // If this is set, the panel closes itself automatically when the user
+      // clicks outside of it.
+      super(true);
+
+      // PopupPanel is a SimplePanel, so you have to set it's widget property to
+      // whatever you want its contents to be.
+      setWidget(new Label("Click outside of this popup to close it"));
+    }
+  }
+
+  public void onModuleLoad() {
+    Button b1 = new Button("Click me to show popup");
+    b1.addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        // Instantiate the popup and show it.
+        new MyPopup().show();
+      }
+    });
+
+    RootPanel.get().add(b1);
+
+    Button b2 = new Button("Click me to show popup partway across the screen");
+
+    b2.addClickHandler(new ClickHandler() {
+      public void onClick(ClickEvent event) {
+        // Create the new popup.
+        final MyPopup popup = new MyPopup();
+        // Position the popup 1/3rd of the way down and across the screen, and
+        // show the popup. Since the position calculation is based on the
+        // offsetWidth and offsetHeight of the popup, you have to use the
+        // setPopupPositionAndShow(callback) method. The alternative would
+        // be to call show(), calculate the left and top positions, and
+        // call setPopupPosition(left, top). This would have the ugly side
+        // effect of the popup jumping from its original position to its
+        // new position.
+        popup.setPopupPositionAndShow(new PopupPanel.PositionCallback() {
+          public void setPosition(int offsetWidth, int offsetHeight) {
+            int left = (Window.getClientWidth() - offsetWidth) / 3;
+            int top = (Window.getClientHeight() - offsetHeight) / 3;
+            popup.setPopupPosition(left, top);
+          }
+        });
+      }
+    });
+
+    RootPanel.get().add(b2);
+  }
+}
+</pre></blockquote>
+ </p>
+ <h3>CSS Style Rules</h3>
+ <dl>
+ <dt>.gwt-PopupPanel</dt>
+ <dd>the outside of the popup</dd>
+ <dt>.gwt-PopupPanel .popupContent</dt>
+ <dd>the wrapper around the content</dd>
+ <dt>.gwt-PopupPanelGlass</dt>
+ <dd>the glass background behind the popup</dd>
+ </dl>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui">PopupPanel.PositionCallback</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A callback that is used to set the position of a <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A> right
+ before it is shown.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.HasWidgets"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#PopupPanel()">PopupPanel</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty popup panel.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#PopupPanel(boolean)">PopupPanel</A></B>(boolean&nbsp;autoHide)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty popup panel, specifying its "auto-hide" property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#PopupPanel(boolean, boolean)">PopupPanel</A></B>(boolean&nbsp;autoHide,
+           boolean&nbsp;modal)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty popup panel, specifying its "auto-hide" and "modal"
+ properties.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addAutoHidePartner(com.google.gwt.dom.client.Element)">addAutoHidePartner</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;partner)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mouse events that occur within an autoHide partner will not hide a panel
+ set to autoHide.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">addCloseHandler</A></B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>CloseEvent</CODE></A> handler.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addPopupListener(com.google.gwt.user.client.ui.PopupListener)">addPopupListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler<com.google.gwt.user.client.ui.PopupPanel>)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#center()">center</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centers the popup in the browser window and shows it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getContainerElement()">getContainerElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override this method to specify that an element other than the root element
+ be the container for the panel's child widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getGlassElement()">getGlassElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the glass element used by this <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getGlassStyleName()">getGlassStyleName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the style name to be used on the glass element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getOffsetHeight()">getOffsetHeight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the panel's offset height in pixels.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getOffsetWidth()">getOffsetWidth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the panel's offset width in pixels.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getPopupLeft()">getPopupLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the popup's left position relative to the browser's client area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getPopupTop()">getPopupTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the popup's top position relative to the browser's client area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getStyleElement()">getStyleElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Template method that returns the element to which style names will be
+ applied.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#getTitle()">getTitle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the title associated with this object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#hide()">hide</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hides the popup and detaches it from the page.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#hide(boolean)">hide</A></B>(boolean&nbsp;autoClosed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hides the popup and detaches it from the page.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isAnimationEnabled()">isAnimationEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if animations are enabled, false if not.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isAutoHideEnabled()">isAutoHideEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the popup should be automatically hidden when
+ the user clicks outside of it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isAutoHideOnHistoryEventsEnabled()">isAutoHideOnHistoryEventsEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the popup should be automatically hidden when
+ the history token changes, such as when the user presses the browser's back
+ button.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isGlassEnabled()">isGlassEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if a glass element will be displayed under the
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isModal()">isModal</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if keyboard or mouse events that do not target
+ the PopupPanel or its children should be ignored.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isPreviewingAllNativeEvents()">isPreviewingAllNativeEvents</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns <code>true</code> if the popup should preview all native events,
+ even if the event has already been consumed by another popup.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isShowing()">isShowing</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not this popup is showing.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isVisible()">isVisible</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determines whether or not this popup is visible.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onEventPreview(com.google.gwt.user.client.Event)">onEventPreview</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onKeyDownPreview(char, int)">onKeyDownPreview</A></B>(char&nbsp;key,
+                 int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onKeyPressPreview(char, int)">onKeyPressPreview</A></B>(char&nbsp;key,
+                  int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onKeyUpPreview(char, int)">onKeyUpPreview</A></B>(char&nbsp;key,
+               int&nbsp;modifiers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)">onPreviewNativeEvent</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client">Event.NativePreviewEvent</A>&nbsp;event)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onUnload()">onUnload</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is called immediately before a widget will be detached from the
+ browser's document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#removeAutoHidePartner(com.google.gwt.dom.client.Element)">removeAutoHidePartner</A></B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;partner)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove an autoHide partner.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#removePopupListener(com.google.gwt.user.client.ui.PopupListener)">removePopupListener</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler<com.google.gwt.user.client.ui.PopupPanel>)</CODE></A> instead</I></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></B>(boolean&nbsp;enable)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable animations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setAutoHideEnabled(boolean)">setAutoHideEnabled</A></B>(boolean&nbsp;autoHide)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable the autoHide feature.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setAutoHideOnHistoryEventsEnabled(boolean)">setAutoHideOnHistoryEventsEnabled</A></B>(boolean&nbsp;enabled)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable autoHide on history change events.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setGlassEnabled(boolean)">setGlassEnabled</A></B>(boolean&nbsp;enabled)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When enabled, the background will be blocked with a semi-transparent pane
+ the next time it is shown.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setGlassStyleName(java.lang.String)">setGlassStyleName</A></B>(java.lang.String&nbsp;glassStyleName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the style name to be used on the glass element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setHeight(java.lang.String)">setHeight</A></B>(java.lang.String&nbsp;height)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the height of the panel's child widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setModal(boolean)">setModal</A></B>(boolean&nbsp;modal)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the popup is modal, keyboard or mouse events that do not target the
+ PopupPanel or its children will be ignored.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setPopupPosition(int, int)">setPopupPosition</A></B>(int&nbsp;left,
+                 int&nbsp;top)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the popup's position relative to the browser's client area.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setPopupPositionAndShow(com.google.gwt.user.client.ui.PopupPanel.PositionCallback)">setPopupPositionAndShow</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui">PopupPanel.PositionCallback</A>&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the popup's position using a <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui"><CODE>PopupPanel.PositionCallback</CODE></A>, and shows the
+ popup.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setPreviewingAllNativeEvents(boolean)">setPreviewingAllNativeEvents</A></B>(boolean&nbsp;previewAllNativeEvents)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ When enabled, the popup will preview all native events, even if another
+ popup was opened after this one.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setTitle(java.lang.String)">setTitle</A></B>(java.lang.String&nbsp;title)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the title associated with this object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setVisible(boolean)">setVisible</A></B>(boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether this object is visible.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setWidget(com.google.gwt.user.client.ui.Widget)">setWidget</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets this panel's widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setWidth(java.lang.String)">setWidth</A></B>(java.lang.String&nbsp;width)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the width of the panel's child widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#show()">show</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shows the popup and attach it to the page.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#showRelativeTo(com.google.gwt.user.client.ui.UIObject)">showRelativeTo</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A>&nbsp;target)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Normally, the popup is positioned directly below the relative target, with
+ its left edge aligned with the left edge of the target.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.SimplePanel"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html" title="class in com.google.gwt.user.client.ui">SimplePanel</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#add(com.google.gwt.user.client.ui.Widget)">add</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#getWidget()">getWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#iterator()">iterator</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#remove(com.google.gwt.user.client.ui.Widget)">remove</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#setWidget(com.google.gwt.user.client.ui.IsWidget)">setWidget</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Panel"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html" title="class in com.google.gwt.user.client.ui">Panel</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#add(com.google.gwt.user.client.ui.IsWidget)">add</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#adopt(com.google.gwt.user.client.ui.Widget)">adopt</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#adopt(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Element)">adopt</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#clear()">clear</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#disown(com.google.gwt.user.client.ui.Widget)">disown</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#doAttachChildren()">doAttachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#doDetachChildren()">doDetachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#orphan(com.google.gwt.user.client.ui.Widget)">orphan</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#remove(com.google.gwt.user.client.ui.IsWidget)">remove</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Widget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)">addAttachHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addBitlessDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addBitlessDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidget()">asWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidgetOrNull(com.google.gwt.user.client.ui.IsWidget)">asWidgetOrNull</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#createHandlerManager()">createHandlerManager</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#delegateEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.event.shared.GwtEvent)">delegateEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getLayoutData()">getLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getParent()">getParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isAttached()">isAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isOrWasAttached()">isOrWasAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()">onAttach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">onDetach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">onLoad</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#removeFromParent()">removeFromParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#setLayoutData(java.lang.Object)">setLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">sinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.event.shared.HasHandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface com.google.gwt.event.shared.<A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="PopupPanel()"><!-- --></A><H3>
+PopupPanel</H3>
+<PRE>
+public <B>PopupPanel</B>()</PRE>
+<DL>
+<DD>Creates an empty popup panel. A child widget must be added to it before it
+ is shown.
+<P>
+</DL>
+<HR>
+
+<A NAME="PopupPanel(boolean)"><!-- --></A><H3>
+PopupPanel</H3>
+<PRE>
+public <B>PopupPanel</B>(boolean&nbsp;autoHide)</PRE>
+<DL>
+<DD>Creates an empty popup panel, specifying its "auto-hide" property.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>autoHide</CODE> - <code>true</code> if the popup should be automatically
+          hidden when the user clicks outside of it or the history token
+          changes.</DL>
+</DL>
+<HR>
+
+<A NAME="PopupPanel(boolean, boolean)"><!-- --></A><H3>
+PopupPanel</H3>
+<PRE>
+public <B>PopupPanel</B>(boolean&nbsp;autoHide,
+                  boolean&nbsp;modal)</PRE>
+<DL>
+<DD>Creates an empty popup panel, specifying its "auto-hide" and "modal"
+ properties.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>autoHide</CODE> - <code>true</code> if the popup should be automatically
+          hidden when the user clicks outside of it or the history token
+          changes.<DD><CODE>modal</CODE> - <code>true</code> if keyboard or mouse events that do not
+          target the PopupPanel or its children should be ignored</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="addAutoHidePartner(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+addAutoHidePartner</H3>
+<PRE>
+public void <B>addAutoHidePartner</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;partner)</PRE>
+<DL>
+<DD>Mouse events that occur within an autoHide partner will not hide a panel
+ set to autoHide.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>partner</CODE> - the auto hide partner to add</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><!-- --></A><H3>
+addCloseHandler</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/event/shared/HandlerRegistration.html" title="interface in com.google.gwt.event.shared">HandlerRegistration</A> <B>addCloseHandler</B>(<A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html" title="interface in com.google.gwt.event.logical.shared">CloseHandler</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;&nbsp;handler)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">HasCloseHandlers</A></CODE></B></DD>
+<DD>Adds a <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseEvent.html" title="class in com.google.gwt.event.logical.shared"><CODE>CloseEvent</CODE></A> handler.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)">addCloseHandler</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasCloseHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasCloseHandlers</A>&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>handler</CODE> - the handler
+<DT><B>Returns:</B><DD>the registration for the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addPopupListener(com.google.gwt.user.client.ui.PopupListener)"><!-- --></A><H3>
+addPopupListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>addPopupListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler<com.google.gwt.user.client.ui.PopupPanel>)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html#addPopupListener(com.google.gwt.user.client.ui.PopupListener)">SourcesPopupEvents</A></CODE></B></DD>
+<DD>Adds a listener interface to receive popup events.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html#addPopupListener(com.google.gwt.user.client.ui.PopupListener)">addPopupListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesPopupEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to add.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="center()"><!-- --></A><H3>
+center</H3>
+<PRE>
+public void <B>center</B>()</PRE>
+<DL>
+<DD>Centers the popup in the browser window and shows it. If the popup was
+ already showing, then the popup is centered.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getGlassStyleName()"><!-- --></A><H3>
+getGlassStyleName</H3>
+<PRE>
+public java.lang.String <B>getGlassStyleName</B>()</PRE>
+<DL>
+<DD>Gets the style name to be used on the glass element. By default, this is
+ "gwt-PopupPanelGlass".
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the glass element's style name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOffsetHeight()"><!-- --></A><H3>
+getOffsetHeight</H3>
+<PRE>
+public int <B>getOffsetHeight</B>()</PRE>
+<DL>
+<DD>Gets the panel's offset height in pixels. Calls to
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setHeight(java.lang.String)"><CODE>setHeight(String)</CODE></A> before the panel's child widget is set will not
+ influence the offset height.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's offset height</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOffsetWidth()"><!-- --></A><H3>
+getOffsetWidth</H3>
+<PRE>
+public int <B>getOffsetWidth</B>()</PRE>
+<DL>
+<DD>Gets the panel's offset width in pixels. Calls to <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setWidth(java.lang.String)"><CODE>setWidth(String)</CODE></A>
+ before the panel's child widget is set will not influence the offset width.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's offset width</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPopupLeft()"><!-- --></A><H3>
+getPopupLeft</H3>
+<PRE>
+public int <B>getPopupLeft</B>()</PRE>
+<DL>
+<DD>Gets the popup's left position relative to the browser's client area.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the popup's left position</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPopupTop()"><!-- --></A><H3>
+getPopupTop</H3>
+<PRE>
+public int <B>getPopupTop</B>()</PRE>
+<DL>
+<DD>Gets the popup's top position relative to the browser's client area.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the popup's top position</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTitle()"><!-- --></A><H3>
+getTitle</H3>
+<PRE>
+public java.lang.String <B>getTitle</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">UIObject</A></CODE></B></DD>
+<DD>Gets the title associated with this object. The title is the 'tool-tip'
+ displayed to users when they hover over the object.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the object's title</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hide()"><!-- --></A><H3>
+hide</H3>
+<PRE>
+public void <B>hide</B>()</PRE>
+<DL>
+<DD>Hides the popup and detaches it from the page. This has no effect if it is
+ not currently showing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hide(boolean)"><!-- --></A><H3>
+hide</H3>
+<PRE>
+public void <B>hide</B>(boolean&nbsp;autoClosed)</PRE>
+<DL>
+<DD>Hides the popup and detaches it from the page. This has no effect if it is
+ not currently showing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>autoClosed</CODE> - the value that will be passed to
+          <A HREF="../../../../../../com/google/gwt/event/logical/shared/CloseHandler.html#onClose(com.google.gwt.event.logical.shared.CloseEvent)"><CODE>CloseHandler.onClose(CloseEvent)</CODE></A> when the popup is closed</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAnimationEnabled()"><!-- --></A><H3>
+isAnimationEnabled</H3>
+<PRE>
+public boolean <B>isAnimationEnabled</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">HasAnimation</A></CODE></B></DD>
+<DD>Returns true if animations are enabled, false if not.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">isAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAutoHideEnabled()"><!-- --></A><H3>
+isAutoHideEnabled</H3>
+<PRE>
+public boolean <B>isAutoHideEnabled</B>()</PRE>
+<DL>
+<DD>Returns <code>true</code> if the popup should be automatically hidden when
+ the user clicks outside of it.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if autoHide is enabled, false if disabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAutoHideOnHistoryEventsEnabled()"><!-- --></A><H3>
+isAutoHideOnHistoryEventsEnabled</H3>
+<PRE>
+public boolean <B>isAutoHideOnHistoryEventsEnabled</B>()</PRE>
+<DL>
+<DD>Returns <code>true</code> if the popup should be automatically hidden when
+ the history token changes, such as when the user presses the browser's back
+ button.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if enabled, false if disabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isGlassEnabled()"><!-- --></A><H3>
+isGlassEnabled</H3>
+<PRE>
+public boolean <B>isGlassEnabled</B>()</PRE>
+<DL>
+<DD>Returns <code>true</code> if a glass element will be displayed under the
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if enabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isModal()"><!-- --></A><H3>
+isModal</H3>
+<PRE>
+public boolean <B>isModal</B>()</PRE>
+<DL>
+<DD>Returns <code>true</code> if keyboard or mouse events that do not target
+ the PopupPanel or its children should be ignored.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if popup is modal, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPreviewingAllNativeEvents()"><!-- --></A><H3>
+isPreviewingAllNativeEvents</H3>
+<PRE>
+public boolean <B>isPreviewingAllNativeEvents</B>()</PRE>
+<DL>
+<DD>Returns <code>true</code> if the popup should preview all native events,
+ even if the event has already been consumed by another popup.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if previewAllNativeEvents is enabled, false if disabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isShowing()"><!-- --></A><H3>
+isShowing</H3>
+<PRE>
+public boolean <B>isShowing</B>()</PRE>
+<DL>
+<DD>Determines whether or not this popup is showing.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the popup is showing<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#show()"><CODE>show()</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#hide()"><CODE>hide()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isVisible()"><!-- --></A><H3>
+isVisible</H3>
+<PRE>
+public boolean <B>isVisible</B>()</PRE>
+<DL>
+<DD>Determines whether or not this popup is visible. Note that this just checks
+ the <code>visibility</code> style attribute, which is set in the
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setVisible(boolean)"><CODE>setVisible(boolean)</CODE></A> method. If you want to know if the popup is
+ attached to the page, use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#isShowing()"><CODE>isShowing()</CODE></A> instead.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD><code>true</code> if the object is visible<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setVisible(boolean)"><CODE>setVisible(boolean)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEventPreview(com.google.gwt.user.client.Event)"><!-- --></A><H3>
+onEventPreview</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public boolean <B>onEventPreview</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.html" title="class in com.google.gwt.user.client">Event</A>&nbsp;event)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/EventPreview.html#onEventPreview(com.google.gwt.user.client.Event)">EventPreview</A></CODE></B></DD>
+<DD>Called when a browser event occurs and this event preview is on top of the
+ preview stack.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/EventPreview.html#onEventPreview(com.google.gwt.user.client.Event)">onEventPreview</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/EventPreview.html" title="interface in com.google.gwt.user.client">EventPreview</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>event</CODE> - the browser event
+<DT><B>Returns:</B><DD><code>false</code> to cancel the event<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/DOM.html#addEventPreview(com.google.gwt.user.client.EventPreview)"><CODE>DOM.addEventPreview(EventPreview)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onKeyDownPreview(char, int)"><!-- --></A><H3>
+onKeyDownPreview</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public boolean <B>onKeyDownPreview</B>(char&nbsp;key,
+                                           int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I>
+<P>
+<DD>Popups get an opportunity to preview keyboard events before they are passed
+ to a widget contained by the Popup.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the key code of the depressed key<DD><CODE>modifiers</CODE> - keyboard modifiers, as specified in
+          <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyCodes</CODE></A>.
+<DT><B>Returns:</B><DD><code>false</code> to suppress the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onKeyPressPreview(char, int)"><!-- --></A><H3>
+onKeyPressPreview</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public boolean <B>onKeyPressPreview</B>(char&nbsp;key,
+                                            int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I>
+<P>
+<DD>Popups get an opportunity to preview keyboard events before they are passed
+ to a widget contained by the Popup.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the unicode character pressed<DD><CODE>modifiers</CODE> - keyboard modifiers, as specified in
+          <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyCodes</CODE></A>.
+<DT><B>Returns:</B><DD><code>false</code> to suppress the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onKeyUpPreview(char, int)"><!-- --></A><H3>
+onKeyUpPreview</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public boolean <B>onKeyUpPreview</B>(char&nbsp;key,
+                                         int&nbsp;modifiers)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><CODE>onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)</CODE></A> instead</I>
+<P>
+<DD>Popups get an opportunity to preview keyboard events before they are passed
+ to a widget contained by the Popup.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>key</CODE> - the key code of the released key<DD><CODE>modifiers</CODE> - keyboard modifiers, as specified in
+          <A HREF="../../../../../../com/google/gwt/event/dom/client/KeyCodes.html" title="class in com.google.gwt.event.dom.client"><CODE>KeyCodes</CODE></A>.
+<DT><B>Returns:</B><DD><code>false</code> to suppress the event</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeAutoHidePartner(com.google.gwt.dom.client.Element)"><!-- --></A><H3>
+removeAutoHidePartner</H3>
+<PRE>
+public void <B>removeAutoHidePartner</B>(<A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A>&nbsp;partner)</PRE>
+<DL>
+<DD>Remove an autoHide partner.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>partner</CODE> - the auto hide partner to remove</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removePopupListener(com.google.gwt.user.client.ui.PopupListener)"><!-- --></A><H3>
+removePopupListener</H3>
+<PRE>
+<FONT SIZE="-1">@Deprecated
+</FONT>public void <B>removePopupListener</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListener.html" title="interface in com.google.gwt.user.client.ui">PopupListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><B>Deprecated.</B>&nbsp;<I>Use the <A HREF="../../../../../../com/google/web/bindery/event/shared/HandlerRegistration.html#removeHandler()"><CODE>HandlerRegistration.removeHandler()</CODE></A> method on the
+             object returned by <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler)"><CODE>addCloseHandler(com.google.gwt.event.logical.shared.CloseHandler<com.google.gwt.user.client.ui.PopupPanel>)</CODE></A> instead</I>
+<P>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html#removePopupListener(com.google.gwt.user.client.ui.PopupListener)">SourcesPopupEvents</A></CODE></B></DD>
+<DD>Removes a previously added popup listener.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html#removePopupListener(com.google.gwt.user.client.ui.PopupListener)">removePopupListener</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SourcesPopupEvents.html" title="interface in com.google.gwt.user.client.ui">SourcesPopupEvents</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>listener</CODE> - the listener interface to remove.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAnimationEnabled(boolean)"><!-- --></A><H3>
+setAnimationEnabled</H3>
+<PRE>
+public void <B>setAnimationEnabled</B>(boolean&nbsp;enable)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">HasAnimation</A></CODE></B></DD>
+<DD>Enable or disable animations.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enable</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAutoHideEnabled(boolean)"><!-- --></A><H3>
+setAutoHideEnabled</H3>
+<PRE>
+public void <B>setAutoHideEnabled</B>(boolean&nbsp;autoHide)</PRE>
+<DL>
+<DD>Enable or disable the autoHide feature. When enabled, the popup will be
+ automatically hidden when the user clicks outside of it.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>autoHide</CODE> - true to enable autoHide, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAutoHideOnHistoryEventsEnabled(boolean)"><!-- --></A><H3>
+setAutoHideOnHistoryEventsEnabled</H3>
+<PRE>
+public void <B>setAutoHideOnHistoryEventsEnabled</B>(boolean&nbsp;enabled)</PRE>
+<DL>
+<DD>Enable or disable autoHide on history change events. When enabled, the
+ popup will be automatically hidden when the history token changes, such as
+ when the user presses the browser's back button. Disabled by default.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enabled</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setGlassEnabled(boolean)"><!-- --></A><H3>
+setGlassEnabled</H3>
+<PRE>
+public void <B>setGlassEnabled</B>(boolean&nbsp;enabled)</PRE>
+<DL>
+<DD>When enabled, the background will be blocked with a semi-transparent pane
+ the next time it is shown. If the PopupPanel is already visible, the glass
+ will not be displayed until it is hidden and shown again.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enabled</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setGlassStyleName(java.lang.String)"><!-- --></A><H3>
+setGlassStyleName</H3>
+<PRE>
+public void <B>setGlassStyleName</B>(java.lang.String&nbsp;glassStyleName)</PRE>
+<DL>
+<DD>Sets the style name to be used on the glass element. By default, this is
+ "gwt-PopupPanelGlass".
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>glassStyleName</CODE> - the glass element's style name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHeight(java.lang.String)"><!-- --></A><H3>
+setHeight</H3>
+<PRE>
+public void <B>setHeight</B>(java.lang.String&nbsp;height)</PRE>
+<DL>
+<DD>Sets the height of the panel's child widget. If the panel's child widget
+ has not been set, the height passed in will be cached and used to set the
+ height immediately after the child widget is set.
+
+ <p>
+ Note that subclasses may have a different behavior. A subclass may decide
+ not to change the height of the child widget. It may instead decide to
+ change the height of an internal panel widget, which contains the child
+ widget.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>height</CODE> - the object's new height, in CSS units (e.g. "10px", "1em")</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setModal(boolean)"><!-- --></A><H3>
+setModal</H3>
+<PRE>
+public void <B>setModal</B>(boolean&nbsp;modal)</PRE>
+<DL>
+<DD>When the popup is modal, keyboard or mouse events that do not target the
+ PopupPanel or its children will be ignored.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>modal</CODE> - true to make the popup modal</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPopupPosition(int, int)"><!-- --></A><H3>
+setPopupPosition</H3>
+<PRE>
+public void <B>setPopupPosition</B>(int&nbsp;left,
+                             int&nbsp;top)</PRE>
+<DL>
+<DD>Sets the popup's position relative to the browser's client area. The
+ popup's position may be set before calling <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#show()"><CODE>show()</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>left</CODE> - the left position, in pixels<DD><CODE>top</CODE> - the top position, in pixels</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPopupPositionAndShow(com.google.gwt.user.client.ui.PopupPanel.PositionCallback)"><!-- --></A><H3>
+setPopupPositionAndShow</H3>
+<PRE>
+public void <B>setPopupPositionAndShow</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui">PopupPanel.PositionCallback</A>&nbsp;callback)</PRE>
+<DL>
+<DD>Sets the popup's position using a <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui"><CODE>PopupPanel.PositionCallback</CODE></A>, and shows the
+ popup. The callback allows positioning to be performed based on the
+ offsetWidth and offsetHeight of the popup, which are normally not available
+ until the popup is showing. By positioning the popup before it is shown,
+ the the popup will not jump from its original position to the new position.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>callback</CODE> - the callback to set the position of the popup<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html#setPosition(int, int)"><CODE>PopupPanel.PositionCallback.setPosition(int offsetWidth, int offsetHeight)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPreviewingAllNativeEvents(boolean)"><!-- --></A><H3>
+setPreviewingAllNativeEvents</H3>
+<PRE>
+public void <B>setPreviewingAllNativeEvents</B>(boolean&nbsp;previewAllNativeEvents)</PRE>
+<DL>
+<DD><p>
+ When enabled, the popup will preview all native events, even if another
+ popup was opened after this one.
+ </p>
+ <p>
+ If autoHide is enabled, enabling this feature will cause the popup to
+ autoHide even if another non-modal popup was shown after it. If this
+ feature is disabled, the popup will only autoHide if it was the last popup
+ opened.
+ </p>
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>previewAllNativeEvents</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTitle(java.lang.String)"><!-- --></A><H3>
+setTitle</H3>
+<PRE>
+public void <B>setTitle</B>(java.lang.String&nbsp;title)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">UIObject</A></CODE></B></DD>
+<DD>Sets the title associated with this object. The title is the 'tool-tip'
+ displayed to users when they hover over the object.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>title</CODE> - the object's new title</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVisible(boolean)"><!-- --></A><H3>
+setVisible</H3>
+<PRE>
+public void <B>setVisible</B>(boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Sets whether this object is visible. This method just sets the
+ <code>visibility</code> style attribute. You need to call <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#show()"><CODE>show()</CODE></A>
+ to actually attached/detach the <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A> to the page.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visible</CODE> - <code>true</code> to show the object, <code>false</code> to
+          hide it<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#show()"><CODE>show()</CODE></A>, 
+<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#hide()"><CODE>hide()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setWidget(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+setWidget</H3>
+<PRE>
+public void <B>setWidget</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#setWidget(com.google.gwt.user.client.ui.Widget)">SimplePanel</A></CODE></B></DD>
+<DD>Sets this panel's widget. Any existing child widget will be removed.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasOneWidget.html#setWidget(com.google.gwt.user.client.ui.Widget)">setWidget</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasOneWidget.html" title="interface in com.google.gwt.user.client.ui">HasOneWidget</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#setWidget(com.google.gwt.user.client.ui.Widget)">setWidget</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html" title="class in com.google.gwt.user.client.ui">SimplePanel</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the panel's new widget, or <code>null</code> to clear the panel</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setWidth(java.lang.String)"><!-- --></A><H3>
+setWidth</H3>
+<PRE>
+public void <B>setWidth</B>(java.lang.String&nbsp;width)</PRE>
+<DL>
+<DD>Sets the width of the panel's child widget. If the panel's child widget has
+ not been set, the width passed in will be cached and used to set the width
+ immediately after the child widget is set.
+
+ <p>
+ Note that subclasses may have a different behavior. A subclass may decide
+ not to change the width of the child widget. It may instead decide to
+ change the width of an internal panel widget, which contains the child
+ widget.
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>width</CODE> - the object's new width, in CSS units (e.g. "10px", "1em")</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="show()"><!-- --></A><H3>
+show</H3>
+<PRE>
+public void <B>show</B>()</PRE>
+<DL>
+<DD>Shows the popup and attach it to the page. It must have a child widget
+ before this method is called.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="showRelativeTo(com.google.gwt.user.client.ui.UIObject)"><!-- --></A><H3>
+showRelativeTo</H3>
+<PRE>
+public final void <B>showRelativeTo</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A>&nbsp;target)</PRE>
+<DL>
+<DD>Normally, the popup is positioned directly below the relative target, with
+ its left edge aligned with the left edge of the target. Depending on the
+ width and height of the popup and the distance from the target to the
+ bottom and right edges of the window, the popup may be displayed directly
+ above the target, and/or its right edge may be aligned with the right edge
+ of the target.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>target</CODE> - the target to show the popup below</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContainerElement()"><!-- --></A><H3>
+getContainerElement</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A> <B>getContainerElement</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#getContainerElement()">SimplePanel</A></CODE></B></DD>
+<DD>Override this method to specify that an element other than the root element
+ be the container for the panel's child widget. This can be useful when you
+ want to create a simple panel that decorates its contents.
+ 
+ Note that this method continues to return the
+ <A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client"><CODE>Element</CODE></A> class defined in the
+ <code>User</code> module to maintain backwards compatibility.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html#getContainerElement()">getContainerElement</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SimplePanel.html" title="class in com.google.gwt.user.client.ui">SimplePanel</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the element to be used as the panel's container</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getGlassElement()"><!-- --></A><H3>
+getGlassElement</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/dom/client/Element.html" title="class in com.google.gwt.dom.client">Element</A> <B>getGlassElement</B>()</PRE>
+<DL>
+<DD>Get the glass element used by this <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A>. The element is not
+ created until it is enabled via <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html#setGlassEnabled(boolean)"><CODE>setGlassEnabled(boolean)</CODE></A>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the glass element, or null if not created</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStyleElement()"><!-- --></A><H3>
+getStyleElement</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/Element.html" title="class in com.google.gwt.user.client">Element</A> <B>getStyleElement</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">UIObject</A></CODE></B></DD>
+<DD>Template method that returns the element to which style names will be
+ applied. By default it returns the root element, but this method may be
+ overridden to apply styles to a child element.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the element to which style names will be applied</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onPreviewNativeEvent(com.google.gwt.user.client.Event.NativePreviewEvent)"><!-- --></A><H3>
+onPreviewNativeEvent</H3>
+<PRE>
+protected void <B>onPreviewNativeEvent</B>(<A HREF="../../../../../../com/google/gwt/user/client/Event.NativePreviewEvent.html" title="class in com.google.gwt.user.client">Event.NativePreviewEvent</A>&nbsp;event)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onUnload()"><!-- --></A><H3>
+onUnload</H3>
+<PRE>
+protected void <B>onUnload</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()">Widget</A></CODE></B></DD>
+<DD>This method is called immediately before a widget will be detached from the
+ browser's document.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()">onUnload</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PopupPanel.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupListenerCollection.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.PositionCallback.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/PopupPanel.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PopupPanel.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

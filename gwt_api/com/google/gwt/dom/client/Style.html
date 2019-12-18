@@ -1,0 +1,2973 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+Style (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Style (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Style.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/SpanElement.html" title="class in com.google.gwt.dom.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Style.BorderStyle.html" title="enum in com.google.gwt.dom.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/dom/client/Style.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Style.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.dom.client</FONT>
+<BR>
+Class Style</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">com.google.gwt.core.client.JavaScriptObject</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.dom.client.Style</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>Style</B><DT>extends <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></DL>
+</PRE>
+
+<P>
+Provides programmatic access to properties of the style object.
+ 
+ <p>
+ Note that if a property or value is not explicitly enumerated in this
+ class, you can still access it via <A HREF="../../../../../com/google/gwt/dom/client/Style.html#getProperty(java.lang.String)"><CODE>getProperty(String)</CODE></A>,
+ and <A HREF="../../../../../com/google/gwt/dom/client/Style.html#setProperty(java.lang.String, java.lang.String)"><CODE>setProperty(String, String)</CODE></A>.
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../com/google/gwt/dom/client/Element.html#getStyle()"><CODE>Element.getStyle()</CODE></A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.BorderStyle.html" title="enum in com.google.gwt.dom.client">Style.BorderStyle</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the border-style property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Cursor.html" title="enum in com.google.gwt.dom.client">Style.Cursor</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the cursor property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Display.html" title="enum in com.google.gwt.dom.client">Style.Display</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the display property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Float.html" title="enum in com.google.gwt.dom.client">Style.Float</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the float property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.FontStyle.html" title="enum in com.google.gwt.dom.client">Style.FontStyle</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the font-style property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.FontWeight.html" title="enum in com.google.gwt.dom.client">Style.FontWeight</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the font-weight property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;interface</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.HasCssName.html" title="interface in com.google.gwt.dom.client">Style.HasCssName</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interface to be implemented by enumerated CSS values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.ListStyleType.html" title="enum in com.google.gwt.dom.client">Style.ListStyleType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the list-style-type property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the overflow property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Position.html" title="enum in com.google.gwt.dom.client">Style.Position</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the display property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.TableLayout.html" title="enum in com.google.gwt.dom.client">Style.TableLayout</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the table-layout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.TextDecoration.html" title="enum in com.google.gwt.dom.client">Style.TextDecoration</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the text-decoration property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS length units.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.VerticalAlign.html" title="enum in com.google.gwt.dom.client">Style.VerticalAlign</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the vertical-align property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.Visibility.html" title="enum in com.google.gwt.dom.client">Style.Visibility</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enum for the visibility property.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#Style()">Style</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearBackgroundColor()">clearBackgroundColor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the background-color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearBackgroundImage()">clearBackgroundImage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the background-image css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearBorderColor()">clearBorderColor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the border-color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearBorderStyle()">clearBorderStyle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the border-style CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearBorderWidth()">clearBorderWidth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the border-width css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearBottom()">clearBottom</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearColor()">clearColor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearCursor()">clearCursor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the cursor CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearDisplay()">clearDisplay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the display CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearFloat()">clearFloat</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the font-size css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearFontSize()">clearFontSize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the font-size css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearFontStyle()">clearFontStyle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the font-style CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearFontWeight()">clearFontWeight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the font-weight CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearHeight()">clearHeight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the height css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearLeft()">clearLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearListStyleType()">clearListStyleType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the list-style-type CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearMargin()">clearMargin</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the margin css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearMarginBottom()">clearMarginBottom</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the margin-bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearMarginLeft()">clearMarginLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the margin-left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearMarginRight()">clearMarginRight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the margin-right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearMarginTop()">clearMarginTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the margin-top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearOpacity()">clearOpacity</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the opacity css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearOverflow()">clearOverflow</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the overflow CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearOverflowX()">clearOverflowX</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the overflow-x CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearOverflowY()">clearOverflowY</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the overflow-y CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearPadding()">clearPadding</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the padding css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearPaddingBottom()">clearPaddingBottom</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the padding-bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearPaddingLeft()">clearPaddingLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the padding-left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearPaddingRight()">clearPaddingRight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the padding-right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearPaddingTop()">clearPaddingTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the padding-top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearPosition()">clearPosition</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the position CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearProperty(java.lang.String)">clearProperty</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the value of a named property, causing it to revert to its default.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearRight()">clearRight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearTableLayout()">clearTableLayout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the table-layout css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearTextDecoration()">clearTextDecoration</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the text-decoration CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearTop()">clearTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearVisibility()">clearVisibility</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clears the visibility CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearWidth()">clearWidth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the width css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#clearZIndex()">clearZIndex</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear the z-index css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getBackgroundColor()">getBackgroundColor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the background-color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getBackgroundImage()">getBackgroundImage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the background-image css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getBorderColor()">getBorderColor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the border-color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getBorderStyle()">getBorderStyle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the border-style CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getBorderWidth()">getBorderWidth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the border-width css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getBottom()">getBottom</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getColor()">getColor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getCursor()">getCursor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the cursor CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getDisplay()">getDisplay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the display CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getFontSize()">getFontSize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the font-size css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getFontStyle()">getFontStyle</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the font-style CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getFontWeight()">getFontWeight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the font-weight CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getHeight()">getHeight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the height css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getLeft()">getLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getListStyleType()">getListStyleType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the list-style-type CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getMargin()">getMargin</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the margin css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getMarginBottom()">getMarginBottom</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the margin-bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getMarginLeft()">getMarginLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the margin-left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getMarginRight()">getMarginRight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the margin-right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getMarginTop()">getMarginTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the margin-top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getOpacity()">getOpacity</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the opacity css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getOverflow()">getOverflow</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the overflow CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getOverflowX()">getOverflowX</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the overflow-x CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getOverflowY()">getOverflowY</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the overflow-y CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getPadding()">getPadding</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the padding css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getPaddingBottom()">getPaddingBottom</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the padding-bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getPaddingLeft()">getPaddingLeft</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the padding-left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getPaddingRight()">getPaddingRight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the padding-right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getPaddingTop()">getPaddingTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the padding-top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getPosition()">getPosition</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the position CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getProperty(java.lang.String)">getProperty</A></B>(java.lang.String&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of a named property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getRight()">getRight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getTableLayout()">getTableLayout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the table-layout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getTextDecoration()">getTextDecoration</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the text-decoration CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getTop()">getTop</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getVerticalAlign()">getVerticalAlign</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the vertical-align CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getVisibility()">getVisibility</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the visibility CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getWidth()">getWidth</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the width css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#getZIndex()">getZIndex</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the z-index css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setBackgroundColor(java.lang.String)">setBackgroundColor</A></B>(java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the background-color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setBackgroundImage(java.lang.String)">setBackgroundImage</A></B>(java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the background-image css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setBorderColor(java.lang.String)">setBorderColor</A></B>(java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the border-color css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setBorderStyle(com.google.gwt.dom.client.Style.BorderStyle)">setBorderStyle</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.BorderStyle.html" title="enum in com.google.gwt.dom.client">Style.BorderStyle</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the border-style CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setBorderWidth(double, com.google.gwt.dom.client.Style.Unit)">setBorderWidth</A></B>(double&nbsp;value,
+               <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the border-width css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setBottom(double, com.google.gwt.dom.client.Style.Unit)">setBottom</A></B>(double&nbsp;value,
+          <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setColor(java.lang.String)">setColor</A></B>(java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the color CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setCursor(com.google.gwt.dom.client.Style.Cursor)">setCursor</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Cursor.html" title="enum in com.google.gwt.dom.client">Style.Cursor</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the cursor CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setDisplay(com.google.gwt.dom.client.Style.Display)">setDisplay</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Display.html" title="enum in com.google.gwt.dom.client">Style.Display</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the display CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setFloat(com.google.gwt.dom.client.Style.Float)">setFloat</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Float.html" title="enum in com.google.gwt.dom.client">Style.Float</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the float css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setFontSize(double, com.google.gwt.dom.client.Style.Unit)">setFontSize</A></B>(double&nbsp;value,
+            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the font-size css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setFontStyle(com.google.gwt.dom.client.Style.FontStyle)">setFontStyle</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.FontStyle.html" title="enum in com.google.gwt.dom.client">Style.FontStyle</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the font-style CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setFontWeight(com.google.gwt.dom.client.Style.FontWeight)">setFontWeight</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.FontWeight.html" title="enum in com.google.gwt.dom.client">Style.FontWeight</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the font-weight CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setHeight(double, com.google.gwt.dom.client.Style.Unit)">setHeight</A></B>(double&nbsp;value,
+          <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the height css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setLeft(double, com.google.gwt.dom.client.Style.Unit)">setLeft</A></B>(double&nbsp;value,
+        <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setListStyleType(com.google.gwt.dom.client.Style.ListStyleType)">setListStyleType</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.ListStyleType.html" title="enum in com.google.gwt.dom.client">Style.ListStyleType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the list-style-type CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setMargin(double, com.google.gwt.dom.client.Style.Unit)">setMargin</A></B>(double&nbsp;value,
+          <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the margin css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setMarginBottom(double, com.google.gwt.dom.client.Style.Unit)">setMarginBottom</A></B>(double&nbsp;value,
+                <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the margin-bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setMarginLeft(double, com.google.gwt.dom.client.Style.Unit)">setMarginLeft</A></B>(double&nbsp;value,
+              <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the margin-left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setMarginRight(double, com.google.gwt.dom.client.Style.Unit)">setMarginRight</A></B>(double&nbsp;value,
+               <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the margin-right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setMarginTop(double, com.google.gwt.dom.client.Style.Unit)">setMarginTop</A></B>(double&nbsp;value,
+             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the margin-top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setOpacity(double)">setOpacity</A></B>(double&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the opacity css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setOverflow(com.google.gwt.dom.client.Style.Overflow)">setOverflow</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the overflow CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setOverflowX(com.google.gwt.dom.client.Style.Overflow)">setOverflowX</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the overflow-x CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setOverflowY(com.google.gwt.dom.client.Style.Overflow)">setOverflowY</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the overflow-y CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPadding(double, com.google.gwt.dom.client.Style.Unit)">setPadding</A></B>(double&nbsp;value,
+           <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the padding css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPaddingBottom(double, com.google.gwt.dom.client.Style.Unit)">setPaddingBottom</A></B>(double&nbsp;value,
+                 <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the padding-bottom css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPaddingLeft(double, com.google.gwt.dom.client.Style.Unit)">setPaddingLeft</A></B>(double&nbsp;value,
+               <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the padding-left css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPaddingRight(double, com.google.gwt.dom.client.Style.Unit)">setPaddingRight</A></B>(double&nbsp;value,
+                <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the padding-right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPaddingTop(double, com.google.gwt.dom.client.Style.Unit)">setPaddingTop</A></B>(double&nbsp;value,
+              <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the padding-top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPosition(com.google.gwt.dom.client.Style.Position)">setPosition</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Position.html" title="enum in com.google.gwt.dom.client">Style.Position</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the position CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setProperty(java.lang.String, double, com.google.gwt.dom.client.Style.Unit)">setProperty</A></B>(java.lang.String&nbsp;name,
+            double&nbsp;value,
+            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of a named property in the specified units.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setProperty(java.lang.String, java.lang.String)">setProperty</A></B>(java.lang.String&nbsp;name,
+            java.lang.String&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of a named property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setPropertyPx(java.lang.String, int)">setPropertyPx</A></B>(java.lang.String&nbsp;name,
+              int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of a named property, in pixels.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setRight(double, com.google.gwt.dom.client.Style.Unit)">setRight</A></B>(double&nbsp;value,
+         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the right css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setTableLayout(com.google.gwt.dom.client.Style.TableLayout)">setTableLayout</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.TableLayout.html" title="enum in com.google.gwt.dom.client">Style.TableLayout</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the table-layout CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setTextDecoration(com.google.gwt.dom.client.Style.TextDecoration)">setTextDecoration</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.TextDecoration.html" title="enum in com.google.gwt.dom.client">Style.TextDecoration</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the text-decoration CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setTop(double, com.google.gwt.dom.client.Style.Unit)">setTop</A></B>(double&nbsp;value,
+       <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the top css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setVerticalAlign(double, com.google.gwt.dom.client.Style.Unit)">setVerticalAlign</A></B>(double&nbsp;value,
+                 <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the vertical-align CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setVerticalAlign(com.google.gwt.dom.client.Style.VerticalAlign)">setVerticalAlign</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.VerticalAlign.html" title="enum in com.google.gwt.dom.client">Style.VerticalAlign</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the vertical-align CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setVisibility(com.google.gwt.dom.client.Style.Visibility)">setVisibility</A></B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Visibility.html" title="enum in com.google.gwt.dom.client">Style.Visibility</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the visibility CSS property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setWidth(double, com.google.gwt.dom.client.Style.Unit)">setWidth</A></B>(double&nbsp;value,
+         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the width css property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/google/gwt/dom/client/Style.html#setZIndex(int)">setZIndex</A></B>(int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the z-index css property.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.core.client.JavaScriptObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.core.client.<A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html" title="class in com.google.gwt.core.client">JavaScriptObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#cast()">cast</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createArray()">createArray</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createFunction()">createFunction</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#createObject()">createObject</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#hashCode()">hashCode</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toSource()">toSource</A>, <A HREF="../../../../../com/google/gwt/core/client/JavaScriptObject.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="Style()"><!-- --></A><H3>
+Style</H3>
+<PRE>
+protected <B>Style</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="clearBackgroundColor()"><!-- --></A><H3>
+clearBackgroundColor</H3>
+<PRE>
+public final void <B>clearBackgroundColor</B>()</PRE>
+<DL>
+<DD>Clear the background-color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearBackgroundImage()"><!-- --></A><H3>
+clearBackgroundImage</H3>
+<PRE>
+public final void <B>clearBackgroundImage</B>()</PRE>
+<DL>
+<DD>Clear the background-image css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearBorderColor()"><!-- --></A><H3>
+clearBorderColor</H3>
+<PRE>
+public final void <B>clearBorderColor</B>()</PRE>
+<DL>
+<DD>Clear the border-color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearBorderStyle()"><!-- --></A><H3>
+clearBorderStyle</H3>
+<PRE>
+public final void <B>clearBorderStyle</B>()</PRE>
+<DL>
+<DD>Clears the border-style CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearBorderWidth()"><!-- --></A><H3>
+clearBorderWidth</H3>
+<PRE>
+public final void <B>clearBorderWidth</B>()</PRE>
+<DL>
+<DD>Clear the border-width css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearBottom()"><!-- --></A><H3>
+clearBottom</H3>
+<PRE>
+public final void <B>clearBottom</B>()</PRE>
+<DL>
+<DD>Clear the bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearColor()"><!-- --></A><H3>
+clearColor</H3>
+<PRE>
+public final void <B>clearColor</B>()</PRE>
+<DL>
+<DD>Clear the color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearCursor()"><!-- --></A><H3>
+clearCursor</H3>
+<PRE>
+public final void <B>clearCursor</B>()</PRE>
+<DL>
+<DD>Clears the cursor CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearDisplay()"><!-- --></A><H3>
+clearDisplay</H3>
+<PRE>
+public final void <B>clearDisplay</B>()</PRE>
+<DL>
+<DD>Clears the display CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearFloat()"><!-- --></A><H3>
+clearFloat</H3>
+<PRE>
+public final void <B>clearFloat</B>()</PRE>
+<DL>
+<DD>Clear the font-size css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearFontSize()"><!-- --></A><H3>
+clearFontSize</H3>
+<PRE>
+public final void <B>clearFontSize</B>()</PRE>
+<DL>
+<DD>Clear the font-size css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearFontStyle()"><!-- --></A><H3>
+clearFontStyle</H3>
+<PRE>
+public final void <B>clearFontStyle</B>()</PRE>
+<DL>
+<DD>Clears the font-style CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearFontWeight()"><!-- --></A><H3>
+clearFontWeight</H3>
+<PRE>
+public final void <B>clearFontWeight</B>()</PRE>
+<DL>
+<DD>Clears the font-weight CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearHeight()"><!-- --></A><H3>
+clearHeight</H3>
+<PRE>
+public final void <B>clearHeight</B>()</PRE>
+<DL>
+<DD>Clear the height css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearLeft()"><!-- --></A><H3>
+clearLeft</H3>
+<PRE>
+public final void <B>clearLeft</B>()</PRE>
+<DL>
+<DD>Clear the left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearListStyleType()"><!-- --></A><H3>
+clearListStyleType</H3>
+<PRE>
+public final void <B>clearListStyleType</B>()</PRE>
+<DL>
+<DD>Clears the list-style-type CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearMargin()"><!-- --></A><H3>
+clearMargin</H3>
+<PRE>
+public final void <B>clearMargin</B>()</PRE>
+<DL>
+<DD>Clear the margin css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearMarginBottom()"><!-- --></A><H3>
+clearMarginBottom</H3>
+<PRE>
+public final void <B>clearMarginBottom</B>()</PRE>
+<DL>
+<DD>Clear the margin-bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearMarginLeft()"><!-- --></A><H3>
+clearMarginLeft</H3>
+<PRE>
+public final void <B>clearMarginLeft</B>()</PRE>
+<DL>
+<DD>Clear the margin-left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearMarginRight()"><!-- --></A><H3>
+clearMarginRight</H3>
+<PRE>
+public final void <B>clearMarginRight</B>()</PRE>
+<DL>
+<DD>Clear the margin-right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearMarginTop()"><!-- --></A><H3>
+clearMarginTop</H3>
+<PRE>
+public final void <B>clearMarginTop</B>()</PRE>
+<DL>
+<DD>Clear the margin-top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearOpacity()"><!-- --></A><H3>
+clearOpacity</H3>
+<PRE>
+public final void <B>clearOpacity</B>()</PRE>
+<DL>
+<DD>Clear the opacity css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearOverflow()"><!-- --></A><H3>
+clearOverflow</H3>
+<PRE>
+public final void <B>clearOverflow</B>()</PRE>
+<DL>
+<DD>Clears the overflow CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearOverflowX()"><!-- --></A><H3>
+clearOverflowX</H3>
+<PRE>
+public final void <B>clearOverflowX</B>()</PRE>
+<DL>
+<DD>Clears the overflow-x CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearOverflowY()"><!-- --></A><H3>
+clearOverflowY</H3>
+<PRE>
+public final void <B>clearOverflowY</B>()</PRE>
+<DL>
+<DD>Clears the overflow-y CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearPadding()"><!-- --></A><H3>
+clearPadding</H3>
+<PRE>
+public final void <B>clearPadding</B>()</PRE>
+<DL>
+<DD>Clear the padding css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearPaddingBottom()"><!-- --></A><H3>
+clearPaddingBottom</H3>
+<PRE>
+public final void <B>clearPaddingBottom</B>()</PRE>
+<DL>
+<DD>Clear the padding-bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearPaddingLeft()"><!-- --></A><H3>
+clearPaddingLeft</H3>
+<PRE>
+public final void <B>clearPaddingLeft</B>()</PRE>
+<DL>
+<DD>Clear the padding-left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearPaddingRight()"><!-- --></A><H3>
+clearPaddingRight</H3>
+<PRE>
+public final void <B>clearPaddingRight</B>()</PRE>
+<DL>
+<DD>Clear the padding-right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearPaddingTop()"><!-- --></A><H3>
+clearPaddingTop</H3>
+<PRE>
+public final void <B>clearPaddingTop</B>()</PRE>
+<DL>
+<DD>Clear the padding-top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearPosition()"><!-- --></A><H3>
+clearPosition</H3>
+<PRE>
+public final void <B>clearPosition</B>()</PRE>
+<DL>
+<DD>Clears the position CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearProperty(java.lang.String)"><!-- --></A><H3>
+clearProperty</H3>
+<PRE>
+public final void <B>clearProperty</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD>Clears the value of a named property, causing it to revert to its default.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearRight()"><!-- --></A><H3>
+clearRight</H3>
+<PRE>
+public final void <B>clearRight</B>()</PRE>
+<DL>
+<DD>Clear the right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearTableLayout()"><!-- --></A><H3>
+clearTableLayout</H3>
+<PRE>
+public final void <B>clearTableLayout</B>()</PRE>
+<DL>
+<DD>Clear the table-layout css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearTextDecoration()"><!-- --></A><H3>
+clearTextDecoration</H3>
+<PRE>
+public final void <B>clearTextDecoration</B>()</PRE>
+<DL>
+<DD>Clears the text-decoration CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearTop()"><!-- --></A><H3>
+clearTop</H3>
+<PRE>
+public final void <B>clearTop</B>()</PRE>
+<DL>
+<DD>Clear the top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearVisibility()"><!-- --></A><H3>
+clearVisibility</H3>
+<PRE>
+public final void <B>clearVisibility</B>()</PRE>
+<DL>
+<DD>Clears the visibility CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearWidth()"><!-- --></A><H3>
+clearWidth</H3>
+<PRE>
+public final void <B>clearWidth</B>()</PRE>
+<DL>
+<DD>Clear the width css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clearZIndex()"><!-- --></A><H3>
+clearZIndex</H3>
+<PRE>
+public final void <B>clearZIndex</B>()</PRE>
+<DL>
+<DD>Clear the z-index css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBackgroundColor()"><!-- --></A><H3>
+getBackgroundColor</H3>
+<PRE>
+public final java.lang.String <B>getBackgroundColor</B>()</PRE>
+<DL>
+<DD>Get the background-color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBackgroundImage()"><!-- --></A><H3>
+getBackgroundImage</H3>
+<PRE>
+public final java.lang.String <B>getBackgroundImage</B>()</PRE>
+<DL>
+<DD>Get the background-image css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBorderColor()"><!-- --></A><H3>
+getBorderColor</H3>
+<PRE>
+public final java.lang.String <B>getBorderColor</B>()</PRE>
+<DL>
+<DD>Get the border-color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBorderStyle()"><!-- --></A><H3>
+getBorderStyle</H3>
+<PRE>
+public final java.lang.String <B>getBorderStyle</B>()</PRE>
+<DL>
+<DD>Gets the border-style CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBorderWidth()"><!-- --></A><H3>
+getBorderWidth</H3>
+<PRE>
+public final java.lang.String <B>getBorderWidth</B>()</PRE>
+<DL>
+<DD>Get the border-width css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBottom()"><!-- --></A><H3>
+getBottom</H3>
+<PRE>
+public final java.lang.String <B>getBottom</B>()</PRE>
+<DL>
+<DD>Get the bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getColor()"><!-- --></A><H3>
+getColor</H3>
+<PRE>
+public final java.lang.String <B>getColor</B>()</PRE>
+<DL>
+<DD>Get the color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCursor()"><!-- --></A><H3>
+getCursor</H3>
+<PRE>
+public final java.lang.String <B>getCursor</B>()</PRE>
+<DL>
+<DD>Gets the cursor CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDisplay()"><!-- --></A><H3>
+getDisplay</H3>
+<PRE>
+public final java.lang.String <B>getDisplay</B>()</PRE>
+<DL>
+<DD>Gets the display CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFontSize()"><!-- --></A><H3>
+getFontSize</H3>
+<PRE>
+public final java.lang.String <B>getFontSize</B>()</PRE>
+<DL>
+<DD>Get the font-size css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFontStyle()"><!-- --></A><H3>
+getFontStyle</H3>
+<PRE>
+public final java.lang.String <B>getFontStyle</B>()</PRE>
+<DL>
+<DD>Gets the font-style CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFontWeight()"><!-- --></A><H3>
+getFontWeight</H3>
+<PRE>
+public final java.lang.String <B>getFontWeight</B>()</PRE>
+<DL>
+<DD>Gets the font-weight CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHeight()"><!-- --></A><H3>
+getHeight</H3>
+<PRE>
+public final java.lang.String <B>getHeight</B>()</PRE>
+<DL>
+<DD>Get the height css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLeft()"><!-- --></A><H3>
+getLeft</H3>
+<PRE>
+public final java.lang.String <B>getLeft</B>()</PRE>
+<DL>
+<DD>Get the left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getListStyleType()"><!-- --></A><H3>
+getListStyleType</H3>
+<PRE>
+public final java.lang.String <B>getListStyleType</B>()</PRE>
+<DL>
+<DD>Gets the list-style-type CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMargin()"><!-- --></A><H3>
+getMargin</H3>
+<PRE>
+public final java.lang.String <B>getMargin</B>()</PRE>
+<DL>
+<DD>Get the margin css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMarginBottom()"><!-- --></A><H3>
+getMarginBottom</H3>
+<PRE>
+public final java.lang.String <B>getMarginBottom</B>()</PRE>
+<DL>
+<DD>Get the margin-bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMarginLeft()"><!-- --></A><H3>
+getMarginLeft</H3>
+<PRE>
+public final java.lang.String <B>getMarginLeft</B>()</PRE>
+<DL>
+<DD>Get the margin-left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMarginRight()"><!-- --></A><H3>
+getMarginRight</H3>
+<PRE>
+public final java.lang.String <B>getMarginRight</B>()</PRE>
+<DL>
+<DD>Get the margin-right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMarginTop()"><!-- --></A><H3>
+getMarginTop</H3>
+<PRE>
+public final java.lang.String <B>getMarginTop</B>()</PRE>
+<DL>
+<DD>Get the margin-top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOpacity()"><!-- --></A><H3>
+getOpacity</H3>
+<PRE>
+public final java.lang.String <B>getOpacity</B>()</PRE>
+<DL>
+<DD>Get the opacity css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOverflow()"><!-- --></A><H3>
+getOverflow</H3>
+<PRE>
+public final java.lang.String <B>getOverflow</B>()</PRE>
+<DL>
+<DD>Gets the overflow CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOverflowX()"><!-- --></A><H3>
+getOverflowX</H3>
+<PRE>
+public final java.lang.String <B>getOverflowX</B>()</PRE>
+<DL>
+<DD>Gets the overflow-x CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOverflowY()"><!-- --></A><H3>
+getOverflowY</H3>
+<PRE>
+public final java.lang.String <B>getOverflowY</B>()</PRE>
+<DL>
+<DD>Gets the overflow-y CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPadding()"><!-- --></A><H3>
+getPadding</H3>
+<PRE>
+public final java.lang.String <B>getPadding</B>()</PRE>
+<DL>
+<DD>Get the padding css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPaddingBottom()"><!-- --></A><H3>
+getPaddingBottom</H3>
+<PRE>
+public final java.lang.String <B>getPaddingBottom</B>()</PRE>
+<DL>
+<DD>Get the padding-bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPaddingLeft()"><!-- --></A><H3>
+getPaddingLeft</H3>
+<PRE>
+public final java.lang.String <B>getPaddingLeft</B>()</PRE>
+<DL>
+<DD>Get the padding-left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPaddingRight()"><!-- --></A><H3>
+getPaddingRight</H3>
+<PRE>
+public final java.lang.String <B>getPaddingRight</B>()</PRE>
+<DL>
+<DD>Get the padding-right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPaddingTop()"><!-- --></A><H3>
+getPaddingTop</H3>
+<PRE>
+public final java.lang.String <B>getPaddingTop</B>()</PRE>
+<DL>
+<DD>Get the padding-top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPosition()"><!-- --></A><H3>
+getPosition</H3>
+<PRE>
+public final java.lang.String <B>getPosition</B>()</PRE>
+<DL>
+<DD>Gets the position CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProperty(java.lang.String)"><!-- --></A><H3>
+getProperty</H3>
+<PRE>
+public final java.lang.String <B>getProperty</B>(java.lang.String&nbsp;name)</PRE>
+<DL>
+<DD>Gets the value of a named property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRight()"><!-- --></A><H3>
+getRight</H3>
+<PRE>
+public final java.lang.String <B>getRight</B>()</PRE>
+<DL>
+<DD>Get the right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTableLayout()"><!-- --></A><H3>
+getTableLayout</H3>
+<PRE>
+public final java.lang.String <B>getTableLayout</B>()</PRE>
+<DL>
+<DD>Gets the table-layout property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTextDecoration()"><!-- --></A><H3>
+getTextDecoration</H3>
+<PRE>
+public final java.lang.String <B>getTextDecoration</B>()</PRE>
+<DL>
+<DD>Gets the text-decoration CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTop()"><!-- --></A><H3>
+getTop</H3>
+<PRE>
+public final java.lang.String <B>getTop</B>()</PRE>
+<DL>
+<DD>Get the top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVerticalAlign()"><!-- --></A><H3>
+getVerticalAlign</H3>
+<PRE>
+public final java.lang.String <B>getVerticalAlign</B>()</PRE>
+<DL>
+<DD>Gets the vertical-align CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVisibility()"><!-- --></A><H3>
+getVisibility</H3>
+<PRE>
+public final java.lang.String <B>getVisibility</B>()</PRE>
+<DL>
+<DD>Gets the visibility CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWidth()"><!-- --></A><H3>
+getWidth</H3>
+<PRE>
+public final java.lang.String <B>getWidth</B>()</PRE>
+<DL>
+<DD>Get the width css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getZIndex()"><!-- --></A><H3>
+getZIndex</H3>
+<PRE>
+public final java.lang.String <B>getZIndex</B>()</PRE>
+<DL>
+<DD>Get the z-index css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBackgroundColor(java.lang.String)"><!-- --></A><H3>
+setBackgroundColor</H3>
+<PRE>
+public final void <B>setBackgroundColor</B>(java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Set the background-color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBackgroundImage(java.lang.String)"><!-- --></A><H3>
+setBackgroundImage</H3>
+<PRE>
+public final void <B>setBackgroundImage</B>(java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Set the background-image css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBorderColor(java.lang.String)"><!-- --></A><H3>
+setBorderColor</H3>
+<PRE>
+public final void <B>setBorderColor</B>(java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Set the border-color css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBorderStyle(com.google.gwt.dom.client.Style.BorderStyle)"><!-- --></A><H3>
+setBorderStyle</H3>
+<PRE>
+public final void <B>setBorderStyle</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.BorderStyle.html" title="enum in com.google.gwt.dom.client">Style.BorderStyle</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the border-style CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBorderWidth(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setBorderWidth</H3>
+<PRE>
+public final void <B>setBorderWidth</B>(double&nbsp;value,
+                                 <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the border-width css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBottom(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setBottom</H3>
+<PRE>
+public final void <B>setBottom</B>(double&nbsp;value,
+                            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setColor(java.lang.String)"><!-- --></A><H3>
+setColor</H3>
+<PRE>
+public final void <B>setColor</B>(java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Sets the color CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCursor(com.google.gwt.dom.client.Style.Cursor)"><!-- --></A><H3>
+setCursor</H3>
+<PRE>
+public final void <B>setCursor</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Cursor.html" title="enum in com.google.gwt.dom.client">Style.Cursor</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the cursor CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDisplay(com.google.gwt.dom.client.Style.Display)"><!-- --></A><H3>
+setDisplay</H3>
+<PRE>
+public final void <B>setDisplay</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Display.html" title="enum in com.google.gwt.dom.client">Style.Display</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the display CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFloat(com.google.gwt.dom.client.Style.Float)"><!-- --></A><H3>
+setFloat</H3>
+<PRE>
+public final void <B>setFloat</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Float.html" title="enum in com.google.gwt.dom.client">Style.Float</A>&nbsp;value)</PRE>
+<DL>
+<DD>Set the float css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFontSize(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setFontSize</H3>
+<PRE>
+public final void <B>setFontSize</B>(double&nbsp;value,
+                              <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the font-size css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFontStyle(com.google.gwt.dom.client.Style.FontStyle)"><!-- --></A><H3>
+setFontStyle</H3>
+<PRE>
+public final void <B>setFontStyle</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.FontStyle.html" title="enum in com.google.gwt.dom.client">Style.FontStyle</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the font-style CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFontWeight(com.google.gwt.dom.client.Style.FontWeight)"><!-- --></A><H3>
+setFontWeight</H3>
+<PRE>
+public final void <B>setFontWeight</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.FontWeight.html" title="enum in com.google.gwt.dom.client">Style.FontWeight</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the font-weight CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHeight(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setHeight</H3>
+<PRE>
+public final void <B>setHeight</B>(double&nbsp;value,
+                            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the height css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLeft(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setLeft</H3>
+<PRE>
+public final void <B>setLeft</B>(double&nbsp;value,
+                          <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setListStyleType(com.google.gwt.dom.client.Style.ListStyleType)"><!-- --></A><H3>
+setListStyleType</H3>
+<PRE>
+public final void <B>setListStyleType</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.ListStyleType.html" title="enum in com.google.gwt.dom.client">Style.ListStyleType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the list-style-type CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMargin(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setMargin</H3>
+<PRE>
+public final void <B>setMargin</B>(double&nbsp;value,
+                            <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the margin css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMarginBottom(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setMarginBottom</H3>
+<PRE>
+public final void <B>setMarginBottom</B>(double&nbsp;value,
+                                  <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the margin-bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMarginLeft(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setMarginLeft</H3>
+<PRE>
+public final void <B>setMarginLeft</B>(double&nbsp;value,
+                                <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the margin-left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMarginRight(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setMarginRight</H3>
+<PRE>
+public final void <B>setMarginRight</B>(double&nbsp;value,
+                                 <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the margin-right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMarginTop(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setMarginTop</H3>
+<PRE>
+public final void <B>setMarginTop</B>(double&nbsp;value,
+                               <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the margin-top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOpacity(double)"><!-- --></A><H3>
+setOpacity</H3>
+<PRE>
+public final void <B>setOpacity</B>(double&nbsp;value)</PRE>
+<DL>
+<DD>Set the opacity css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOverflow(com.google.gwt.dom.client.Style.Overflow)"><!-- --></A><H3>
+setOverflow</H3>
+<PRE>
+public final void <B>setOverflow</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the overflow CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOverflowX(com.google.gwt.dom.client.Style.Overflow)"><!-- --></A><H3>
+setOverflowX</H3>
+<PRE>
+public final void <B>setOverflowX</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the overflow-x CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOverflowY(com.google.gwt.dom.client.Style.Overflow)"><!-- --></A><H3>
+setOverflowY</H3>
+<PRE>
+public final void <B>setOverflowY</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Overflow.html" title="enum in com.google.gwt.dom.client">Style.Overflow</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the overflow-y CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPadding(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setPadding</H3>
+<PRE>
+public final void <B>setPadding</B>(double&nbsp;value,
+                             <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the padding css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPaddingBottom(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setPaddingBottom</H3>
+<PRE>
+public final void <B>setPaddingBottom</B>(double&nbsp;value,
+                                   <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the padding-bottom css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPaddingLeft(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setPaddingLeft</H3>
+<PRE>
+public final void <B>setPaddingLeft</B>(double&nbsp;value,
+                                 <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the padding-left css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPaddingRight(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setPaddingRight</H3>
+<PRE>
+public final void <B>setPaddingRight</B>(double&nbsp;value,
+                                  <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the padding-right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPaddingTop(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setPaddingTop</H3>
+<PRE>
+public final void <B>setPaddingTop</B>(double&nbsp;value,
+                                <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the padding-top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPosition(com.google.gwt.dom.client.Style.Position)"><!-- --></A><H3>
+setPosition</H3>
+<PRE>
+public final void <B>setPosition</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Position.html" title="enum in com.google.gwt.dom.client">Style.Position</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the position CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProperty(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setProperty</H3>
+<PRE>
+public final void <B>setProperty</B>(java.lang.String&nbsp;name,
+                              java.lang.String&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of a named property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProperty(java.lang.String, double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setProperty</H3>
+<PRE>
+public final void <B>setProperty</B>(java.lang.String&nbsp;name,
+                              double&nbsp;value,
+                              <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Sets the value of a named property in the specified units.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPropertyPx(java.lang.String, int)"><!-- --></A><H3>
+setPropertyPx</H3>
+<PRE>
+public final void <B>setPropertyPx</B>(java.lang.String&nbsp;name,
+                                int&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of a named property, in pixels.
+ 
+ This is shorthand for <code>value + "px"</code>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRight(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setRight</H3>
+<PRE>
+public final void <B>setRight</B>(double&nbsp;value,
+                           <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the right css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTableLayout(com.google.gwt.dom.client.Style.TableLayout)"><!-- --></A><H3>
+setTableLayout</H3>
+<PRE>
+public final void <B>setTableLayout</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.TableLayout.html" title="enum in com.google.gwt.dom.client">Style.TableLayout</A>&nbsp;value)</PRE>
+<DL>
+<DD>Set the table-layout CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTextDecoration(com.google.gwt.dom.client.Style.TextDecoration)"><!-- --></A><H3>
+setTextDecoration</H3>
+<PRE>
+public final void <B>setTextDecoration</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.TextDecoration.html" title="enum in com.google.gwt.dom.client">Style.TextDecoration</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the text-decoration CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTop(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setTop</H3>
+<PRE>
+public final void <B>setTop</B>(double&nbsp;value,
+                         <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the top css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVerticalAlign(com.google.gwt.dom.client.Style.VerticalAlign)"><!-- --></A><H3>
+setVerticalAlign</H3>
+<PRE>
+public final void <B>setVerticalAlign</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.VerticalAlign.html" title="enum in com.google.gwt.dom.client">Style.VerticalAlign</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the vertical-align CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVerticalAlign(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setVerticalAlign</H3>
+<PRE>
+public final void <B>setVerticalAlign</B>(double&nbsp;value,
+                                   <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Sets the vertical-align CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVisibility(com.google.gwt.dom.client.Style.Visibility)"><!-- --></A><H3>
+setVisibility</H3>
+<PRE>
+public final void <B>setVisibility</B>(<A HREF="../../../../../com/google/gwt/dom/client/Style.Visibility.html" title="enum in com.google.gwt.dom.client">Style.Visibility</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the visibility CSS property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setWidth(double, com.google.gwt.dom.client.Style.Unit)"><!-- --></A><H3>
+setWidth</H3>
+<PRE>
+public final void <B>setWidth</B>(double&nbsp;value,
+                           <A HREF="../../../../../com/google/gwt/dom/client/Style.Unit.html" title="enum in com.google.gwt.dom.client">Style.Unit</A>&nbsp;unit)</PRE>
+<DL>
+<DD>Set the width css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setZIndex(int)"><!-- --></A><H3>
+setZIndex</H3>
+<PRE>
+public final void <B>setZIndex</B>(int&nbsp;value)</PRE>
+<DL>
+<DD>Set the z-index css property.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Style.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/SpanElement.html" title="class in com.google.gwt.dom.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../com/google/gwt/dom/client/Style.BorderStyle.html" title="enum in com.google.gwt.dom.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/google/gwt/dom/client/Style.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Style.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

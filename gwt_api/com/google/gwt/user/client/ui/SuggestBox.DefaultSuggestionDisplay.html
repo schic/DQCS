@@ -1,0 +1,730 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+SuggestBox.DefaultSuggestionDisplay (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SuggestBox.DefaultSuggestionDisplay (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SuggestBox.DefaultSuggestionDisplay.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionCallback.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SuggestBox.DefaultSuggestionDisplay.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class SuggestBox.DefaultSuggestionDisplay</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.SuggestBox.SuggestionDisplay</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.SuggestBox.DefaultSuggestionDisplay</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></DD>
+</DL>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui">SuggestBox</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public static class <B>SuggestBox.DefaultSuggestionDisplay</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A><DT>implements <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></DL>
+</PRE>
+
+<P>
+<p>
+ The default implementation of <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestBox.SuggestionDisplay</CODE></A> displays
+ suggestions in a <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A> beneath the <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestBox</CODE></A>.
+ </p>
+ 
+ <h3>CSS Style Rules</h3>
+ <dl>
+ <dt>.gwt-SuggestBoxPopup</dt>
+ <dd>the suggestion popup</dd>
+ <dt>.gwt-SuggestBoxPopup .item</dt>
+ <dd>an unselected suggestion</dd>
+ <dt>.gwt-SuggestBoxPopup .item-selected</dt>
+ <dd>a selected suggestion</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupTopLeft</dt>
+ <dd>the top left cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupTopLeftInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupTopCenter</dt>
+ <dd>the top center cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupTopCenterInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupTopRight</dt>
+ <dd>the top right cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupTopRightInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupMiddleLeft</dt>
+ <dd>the middle left cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupMiddleLeftInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupMiddleCenter</dt>
+ <dd>the middle center cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupMiddleCenterInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupMiddleRight</dt>
+ <dd>the middle right cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupMiddleRightInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupBottomLeft</dt>
+ <dd>the bottom left cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupBottomLeftInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupBottomCenter</dt>
+ <dd>the bottom center cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupBottomCenterInner</dt>
+ <dd>the inner element of the cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupBottomRight</dt>
+ <dd>the bottom right cell</dd>
+ <dt>.gwt-SuggestBoxPopup .suggestPopupBottomRightInner</dt>
+ <dd>the inner element of the cell</dd>
+ </dl>
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#SuggestBox.DefaultSuggestionDisplay()">SuggestBox.DefaultSuggestionDisplay</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestBox.DefaultSuggestionDisplay</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#createPopup()">createPopup</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create the PopupPanel that will hold the list of suggestions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#decorateSuggestionList(com.google.gwt.user.client.ui.Widget)">decorateSuggestionList</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;suggestionList)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wrap the list of suggestions before adding it to the popup.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#getCurrentSelection()">getCurrentSelection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the currently selected <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Suggestion</CODE></A> in the display.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#getPopupPanel()">getPopupPanel</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A> used to display suggestions.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#hideSuggestions()">hideSuggestions</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hide the list of suggestions from view.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#isAnimationEnabled()">isAnimationEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns true if animations are enabled, false if not.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#isSuggestionListHiddenWhenEmpty()">isSuggestionListHiddenWhenEmpty</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check whether or not the suggestion list is hidden when there are no 
+ suggestions to display.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#isSuggestionListShowing()">isSuggestionListShowing</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check whether or not the list of suggestions is being shown.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#moveSelectionDown()">moveSelectionDown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight the suggestion directly below the current selection in the
+ list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#moveSelectionUp()">moveSelectionUp</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight the suggestion directly above the current selection in the
+ list.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></B>(java.lang.String&nbsp;baseID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Affected Elements:</b>
+ 
+ -popup = The popup that appears with suggestions.
+ -item# = The suggested item at the specified index.
+ </TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></B>(boolean&nbsp;enable)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enable or disable animations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#setPopupStyleName(java.lang.String)">setPopupStyleName</A></B>(java.lang.String&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the style name of the suggestion popup.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#setPositionRelativeTo(com.google.gwt.user.client.ui.UIObject)">setPositionRelativeTo</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A>&nbsp;uiObject)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the UI object where the suggestion display should appear next to.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#setSuggestionListHiddenWhenEmpty(boolean)">setSuggestionListHiddenWhenEmpty</A></B>(boolean&nbsp;hideWhenEmpty)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set whether or not the suggestion list should be hidden when there are 
+ no suggestions to display.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html#showSuggestions(com.google.gwt.user.client.ui.SuggestBox, java.util.Collection, boolean, boolean, com.google.gwt.user.client.ui.SuggestBox.SuggestionCallback)">showSuggestions</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui">SuggestBox</A>&nbsp;suggestBox,
+                java.util.Collection&lt;? extends <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A>&gt;&nbsp;suggestions,
+                boolean&nbsp;isDisplayStringHTML,
+                boolean&nbsp;isAutoSelectEnabled,
+                <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionCallback.html" title="interface in com.google.gwt.user.client.ui">SuggestBox.SuggestionCallback</A>&nbsp;callback)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update the list of visible suggestions.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.SuggestBox.SuggestionDisplay"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#setMoreSuggestions(boolean, int)">setMoreSuggestions</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SuggestBox.DefaultSuggestionDisplay()"><!-- --></A><H3>
+SuggestBox.DefaultSuggestionDisplay</H3>
+<PRE>
+public <B>SuggestBox.DefaultSuggestionDisplay</B>()</PRE>
+<DL>
+<DD>Construct a new <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestBox.DefaultSuggestionDisplay</CODE></A>.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="hideSuggestions()"><!-- --></A><H3>
+hideSuggestions</H3>
+<PRE>
+public void <B>hideSuggestions</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#hideSuggestions()">SuggestBox.SuggestionDisplay</A></CODE></B></DD>
+<DD>Hide the list of suggestions from view.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#hideSuggestions()">hideSuggestions</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAnimationEnabled()"><!-- --></A><H3>
+isAnimationEnabled</H3>
+<PRE>
+public boolean <B>isAnimationEnabled</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">HasAnimation</A></CODE></B></DD>
+<DD>Returns true if animations are enabled, false if not.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#isAnimationEnabled()">isAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSuggestionListHiddenWhenEmpty()"><!-- --></A><H3>
+isSuggestionListHiddenWhenEmpty</H3>
+<PRE>
+public boolean <B>isSuggestionListHiddenWhenEmpty</B>()</PRE>
+<DL>
+<DD>Check whether or not the suggestion list is hidden when there are no 
+ suggestions to display.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if hidden when empty, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSuggestionListShowing()"><!-- --></A><H3>
+isSuggestionListShowing</H3>
+<PRE>
+public boolean <B>isSuggestionListShowing</B>()</PRE>
+<DL>
+<DD>Check whether or not the list of suggestions is being shown.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the suggestions are visible, false if not</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAnimationEnabled(boolean)"><!-- --></A><H3>
+setAnimationEnabled</H3>
+<PRE>
+public void <B>setAnimationEnabled</B>(boolean&nbsp;enable)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">HasAnimation</A></CODE></B></DD>
+<DD>Enable or disable animations.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html#setAnimationEnabled(boolean)">setAnimationEnabled</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasAnimation.html" title="interface in com.google.gwt.user.client.ui">HasAnimation</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enable</CODE> - true to enable, false to disable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPopupStyleName(java.lang.String)"><!-- --></A><H3>
+setPopupStyleName</H3>
+<PRE>
+public void <B>setPopupStyleName</B>(java.lang.String&nbsp;style)</PRE>
+<DL>
+<DD>Sets the style name of the suggestion popup.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>style</CODE> - the new primary style name<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)"><CODE>UIObject.setStyleName(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPositionRelativeTo(com.google.gwt.user.client.ui.UIObject)"><!-- --></A><H3>
+setPositionRelativeTo</H3>
+<PRE>
+public void <B>setPositionRelativeTo</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A>&nbsp;uiObject)</PRE>
+<DL>
+<DD>Sets the UI object where the suggestion display should appear next to.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>uiObject</CODE> - the uiObject used for positioning, or null to position 
+     relative to the suggest box</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSuggestionListHiddenWhenEmpty(boolean)"><!-- --></A><H3>
+setSuggestionListHiddenWhenEmpty</H3>
+<PRE>
+public void <B>setSuggestionListHiddenWhenEmpty</B>(boolean&nbsp;hideWhenEmpty)</PRE>
+<DL>
+<DD>Set whether or not the suggestion list should be hidden when there are 
+ no suggestions to display. Defaults to true.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>hideWhenEmpty</CODE> - true to hide when empty, false not to</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createPopup()"><!-- --></A><H3>
+createPopup</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A> <B>createPopup</B>()</PRE>
+<DL>
+<DD>Create the PopupPanel that will hold the list of suggestions.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the popup panel</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="decorateSuggestionList(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+decorateSuggestionList</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A> <B>decorateSuggestionList</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;suggestionList)</PRE>
+<DL>
+<DD>Wrap the list of suggestions before adding it to the popup. You can
+ override this method if you want to wrap the suggestion list in a
+ decorator.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>suggestionList</CODE> - the widget that contains the list of suggestions
+<DT><B>Returns:</B><DD>the suggestList, optionally inside of a wrapper</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentSelection()"><!-- --></A><H3>
+getCurrentSelection</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A> <B>getCurrentSelection</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#getCurrentSelection()">SuggestBox.SuggestionDisplay</A></CODE></B></DD>
+<DD>Get the currently selected <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui"><CODE>SuggestOracle.Suggestion</CODE></A> in the display.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#getCurrentSelection()">getCurrentSelection</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the current suggestion, or null if none selected</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPopupPanel()"><!-- --></A><H3>
+getPopupPanel</H3>
+<PRE>
+protected <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui">PopupPanel</A> <B>getPopupPanel</B>()</PRE>
+<DL>
+<DD>Get the <A HREF="../../../../../../com/google/gwt/user/client/ui/PopupPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>PopupPanel</CODE></A> used to display suggestions.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the popup panel</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="moveSelectionDown()"><!-- --></A><H3>
+moveSelectionDown</H3>
+<PRE>
+protected void <B>moveSelectionDown</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#moveSelectionDown()">SuggestBox.SuggestionDisplay</A></CODE></B></DD>
+<DD>Highlight the suggestion directly below the current selection in the
+ list.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#moveSelectionDown()">moveSelectionDown</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="moveSelectionUp()"><!-- --></A><H3>
+moveSelectionUp</H3>
+<PRE>
+protected void <B>moveSelectionUp</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#moveSelectionUp()">SuggestBox.SuggestionDisplay</A></CODE></B></DD>
+<DD>Highlight the suggestion directly above the current selection in the
+ list.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#moveSelectionUp()">moveSelectionUp</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEnsureDebugId(java.lang.String)"><!-- --></A><H3>
+onEnsureDebugId</H3>
+<PRE>
+protected void <B>onEnsureDebugId</B>(java.lang.String&nbsp;baseID)</PRE>
+<DL>
+<DD><b>Affected Elements:</b>
+ <ul>
+ <li>-popup = The popup that appears with suggestions.</li>
+ <li>-item# = The suggested item at the specified index.</li>
+ </ul>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseID</CODE> - the baseID of the <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui"><CODE>SuggestBox</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)"><CODE>UIObject.onEnsureDebugId(String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="showSuggestions(com.google.gwt.user.client.ui.SuggestBox, java.util.Collection, boolean, boolean, com.google.gwt.user.client.ui.SuggestBox.SuggestionCallback)"><!-- --></A><H3>
+showSuggestions</H3>
+<PRE>
+protected void <B>showSuggestions</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui">SuggestBox</A>&nbsp;suggestBox,
+                               java.util.Collection&lt;? extends <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestOracle.Suggestion.html" title="interface in com.google.gwt.user.client.ui">SuggestOracle.Suggestion</A>&gt;&nbsp;suggestions,
+                               boolean&nbsp;isDisplayStringHTML,
+                               boolean&nbsp;isAutoSelectEnabled,
+                               <A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionCallback.html" title="interface in com.google.gwt.user.client.ui">SuggestBox.SuggestionCallback</A>&nbsp;callback)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#showSuggestions(com.google.gwt.user.client.ui.SuggestBox, java.util.Collection, boolean, boolean, com.google.gwt.user.client.ui.SuggestBox.SuggestionCallback)">SuggestBox.SuggestionDisplay</A></CODE></B></DD>
+<DD>Update the list of visible suggestions.
+ 
+ Use care when using isDisplayStringHtml; it is an easy way to expose 
+ script-based security problems.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html#showSuggestions(com.google.gwt.user.client.ui.SuggestBox, java.util.Collection, boolean, boolean, com.google.gwt.user.client.ui.SuggestBox.SuggestionCallback)">showSuggestions</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionDisplay.html" title="class in com.google.gwt.user.client.ui">SuggestBox.SuggestionDisplay</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>suggestBox</CODE> - the suggest box where the suggestions originated<DD><CODE>suggestions</CODE> - the suggestions to show<DD><CODE>isDisplayStringHTML</CODE> - should the suggestions be displayed as HTML<DD><CODE>isAutoSelectEnabled</CODE> - if true, the first item should be selected
+          automatically<DD><CODE>callback</CODE> - the callback used when the user makes a suggestion</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SuggestBox.DefaultSuggestionDisplay.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/SuggestBox.SuggestionCallback.html" title="interface in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/SuggestBox.DefaultSuggestionDisplay.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SuggestBox.DefaultSuggestionDisplay.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

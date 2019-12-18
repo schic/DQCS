@@ -1,0 +1,973 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<TITLE>
+DockPanel (Google Web Toolkit Javadoc)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DockPanel (Google Web Toolkit Javadoc)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DockPanel.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockLayoutPanel.LayoutData.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/DockPanel.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DockPanel.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.google.gwt.user.client.ui</FONT>
+<BR>
+Class DockPanel</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.UIObject</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Widget</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.Panel</A>
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.ComplexPanel</A>
+                  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">com.google.gwt.user.client.ui.CellPanel</A>
+                      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.google.gwt.user.client.ui.DockPanel</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/google/gwt/event/logical/shared/HasAttachHandlers.html" title="interface in com.google.gwt.event.logical.shared">HasAttachHandlers</A>, <A HREF="../../../../../../com/google/gwt/event/shared/HasHandlers.html" title="interface in com.google.gwt.event.shared">HasHandlers</A>, <A HREF="../../../../../../com/google/gwt/user/client/EventListener.html" title="interface in com.google.gwt.user.client">EventListener</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAlignment.html" title="interface in com.google.gwt.user.client.ui">HasAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasHorizontalAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasVerticalAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IndexedPanel.html" title="interface in com.google.gwt.user.client.ui">IndexedPanel</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IndexedPanel.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">IndexedPanel.ForIsWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>, java.lang.Iterable&lt;<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>DockPanel</B><DT>extends <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">CellPanel</A><DT>implements <A HREF="../../../../../../com/google/gwt/user/client/ui/HasAlignment.html" title="interface in com.google.gwt.user.client.ui">HasAlignment</A></DL>
+</PRE>
+
+<P>
+A panel that lays its child widgets out "docked" at its outer edges, and
+ allows its last widget to take up the remaining space in its center.
+ 
+ <p>
+ This widget has limitations in standards mode that did not exist in quirks
+ mode. The child Widgets contained within a DockPanel cannot be sized using
+ percentages. Setting a child widget's height to <code>100%</code> will
+ <em>NOT</em> cause the child to fill the available height.
+ </p>
+ 
+ <p>
+ If you need to work around these limitations, use <A HREF="../../../../../../com/google/gwt/user/client/ui/DockLayoutPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>DockLayoutPanel</CODE></A>
+ instead, but understand that it is not a drop in replacement for this class.
+ It requires standards mode, and is most easily used under a
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/RootLayoutPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>RootLayoutPanel</CODE></A> (as opposed to a <A HREF="../../../../../../com/google/gwt/user/client/ui/RootPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>RootPanel</CODE></A>).
+ </p>
+ 
+ <p>
+ <img class='gallery' src='doc-files/DockPanel.png'/>
+ </p>
+<P>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/DockLayoutPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>DockLayoutPanel</CODE></A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DockPanel layout constant, used in
+ <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#add(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.DockPanel.DockLayoutConstant)"><CODE>add(Widget, DockPanel.DockLayoutConstant)</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImpl.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImpl</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.DebugIdImplEnabled.html" title="class in com.google.gwt.user.client.ui">UIObject.DebugIdImplEnabled</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.HasHorizontalAlignment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasHorizontalAlignment</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.AutoHorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.AutoHorizontalAlignmentConstant</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.HasVerticalAlignment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasVerticalAlignment</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.IndexedPanel"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/IndexedPanel.html" title="interface in com.google.gwt.user.client.ui">IndexedPanel</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/IndexedPanel.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">IndexedPanel.ForIsWidget</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.google.gwt.user.client.ui.HasWidgets"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.ForIsWidget.html" title="interface in com.google.gwt.user.client.ui">HasWidgets.ForIsWidget</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#CENTER">CENTER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the center of the dock.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#EAST">EAST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the east edge of the dock.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#LINE_END">LINE_END</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the end of the line direction
+ for the layout.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#LINE_START">LINE_START</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the beginning of the line direction
+ for the layout.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#NORTH">NORTH</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the north edge of the dock.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#SOUTH">SOUTH</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the south edge of the dock.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#WEST">WEST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies that a widget be added at the west edge of the dock.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#DEBUG_ID_PREFIX">DEBUG_ID_PREFIX</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.HasHorizontalAlignment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasHorizontalAlignment</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_CENTER">ALIGN_CENTER</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_DEFAULT">ALIGN_DEFAULT</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_JUSTIFY">ALIGN_JUSTIFY</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LEFT">ALIGN_LEFT</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LOCALE_END">ALIGN_LOCALE_END</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LOCALE_START">ALIGN_LOCALE_START</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_RIGHT">ALIGN_RIGHT</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.google.gwt.user.client.ui.HasVerticalAlignment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from interface com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasVerticalAlignment</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#ALIGN_BOTTOM">ALIGN_BOTTOM</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#ALIGN_MIDDLE">ALIGN_MIDDLE</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#ALIGN_TOP">ALIGN_TOP</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#DockPanel()">DockPanel</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates an empty dock panel.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#add(com.google.gwt.user.client.ui.IsWidget, com.google.gwt.user.client.ui.DockPanel.DockLayoutConstant)">add</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;widget,
+    <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overloaded version for IsWidget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#add(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.DockPanel.DockLayoutConstant)">add</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget,
+    <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A>&nbsp;direction)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds a widget to the specified edge of the dock.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#getHorizontalAlignment()">getHorizontalAlignment</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the horizontal alignment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#getVerticalAlignment()">getVerticalAlignment</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the vertical alignment.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#getWidgetDirection(com.google.gwt.user.client.ui.Widget)">getWidgetDirection</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the layout direction of the given child widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></B>(java.lang.String&nbsp;baseID)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>DockPanel</CODE></A> supports adding more than one cell in a direction, so an
+ integer will be appended to the end of the debug id.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#remove(com.google.gwt.user.client.ui.Widget)">remove</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes a child widget.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#setCellHeight(com.google.gwt.user.client.ui.Widget, java.lang.String)">setCellHeight</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+              java.lang.String&nbsp;height)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the height of the cell associated with the given widget, related to
+ the panel as a whole.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#setCellHorizontalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">setCellHorizontalAlignment</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+                           <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A>&nbsp;align)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the horizontal alignment of the given widget within its cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#setCellVerticalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">setCellVerticalAlignment</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+                         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A>&nbsp;align)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the vertical alignment of the given widget within its cell.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#setCellWidth(com.google.gwt.user.client.ui.Widget, java.lang.String)">setCellWidth</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+             java.lang.String&nbsp;width)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the width of the cell associated with the given widget, related to the
+ panel as a whole.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#setHorizontalAlignment(com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">setHorizontalAlignment</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A>&nbsp;align)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the default horizontal alignment to be used for widgets added to this
+ panel.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#setVerticalAlignment(com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">setVerticalAlignment</A></B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A>&nbsp;align)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the default vertical alignment to be used for widgets added to this
+ panel.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.CellPanel"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">CellPanel</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#getBody()">getBody</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#getSpacing()">getSpacing</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#getTable()">getTable</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setBorderWidth(int)">setBorderWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHeight(com.google.gwt.user.client.ui.IsWidget, java.lang.String)">setCellHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHorizontalAlignment(com.google.gwt.user.client.Element, com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">setCellHorizontalAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHorizontalAlignment(com.google.gwt.user.client.ui.IsWidget, com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">setCellHorizontalAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellVerticalAlignment(com.google.gwt.user.client.Element, com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">setCellVerticalAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellVerticalAlignment(com.google.gwt.user.client.ui.IsWidget, com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">setCellVerticalAlignment</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellWidth(com.google.gwt.user.client.ui.IsWidget, java.lang.String)">setCellWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setSpacing(int)">setSpacing</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.ComplexPanel"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html" title="class in com.google.gwt.user.client.ui">ComplexPanel</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#add(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Element)">add</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#adjustIndex(com.google.gwt.user.client.ui.Widget, int)">adjustIndex</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#checkIndexBoundsForAccess(int)">checkIndexBoundsForAccess</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#checkIndexBoundsForInsertion(int)">checkIndexBoundsForInsertion</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#getChildren()">getChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#getWidget(int)">getWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#getWidgetCount()">getWidgetCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#getWidgetIndex(com.google.gwt.user.client.ui.IsWidget)">getWidgetIndex</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#getWidgetIndex(com.google.gwt.user.client.ui.Widget)">getWidgetIndex</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#insert(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Element, int)">insert</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#insert(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Element, int, boolean)">insert</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#iterator()">iterator</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#remove(int)">remove</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Panel"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html" title="class in com.google.gwt.user.client.ui">Panel</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#add(com.google.gwt.user.client.ui.IsWidget)">add</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#add(com.google.gwt.user.client.ui.Widget)">add</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#adopt(com.google.gwt.user.client.ui.Widget)">adopt</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#adopt(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.Element)">adopt</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#clear()">clear</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#disown(com.google.gwt.user.client.ui.Widget)">disown</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#doAttachChildren()">doAttachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#doDetachChildren()">doDetachChildren</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#orphan(com.google.gwt.user.client.ui.Widget)">orphan</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#remove(com.google.gwt.user.client.ui.IsWidget)">remove</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.Widget"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addAttachHandler(com.google.gwt.event.logical.shared.AttachEvent.Handler)">addAttachHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addBitlessDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addBitlessDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addDomHandler(H, com.google.gwt.event.dom.client.DomEvent.Type)">addDomHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#addHandler(H, com.google.gwt.event.shared.GwtEvent.Type)">addHandler</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidget()">asWidget</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#asWidgetOrNull(com.google.gwt.user.client.ui.IsWidget)">asWidgetOrNull</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#createHandlerManager()">createHandlerManager</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#delegateEvent(com.google.gwt.user.client.ui.Widget, com.google.gwt.event.shared.GwtEvent)">delegateEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#fireEvent(com.google.gwt.event.shared.GwtEvent)">fireEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getHandlerCount(com.google.gwt.event.shared.GwtEvent.Type)">getHandlerCount</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getLayoutData()">getLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#getParent()">getParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isAttached()">isAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#isOrWasAttached()">isOrWasAttached</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onAttach()">onAttach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onBrowserEvent(com.google.gwt.user.client.Event)">onBrowserEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onDetach()">onDetach</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onLoad()">onLoad</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#onUnload()">onUnload</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#removeFromParent()">removeFromParent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#setLayoutData(java.lang.Object)">setLayoutData</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html#sinkEvents(int)">sinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.google.gwt.user.client.ui.UIObject"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.google.gwt.user.client.ui.<A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleDependentName(java.lang.String)">addStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#addStyleName(java.lang.String)">addStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(com.google.gwt.dom.client.Element, java.lang.String, java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#ensureDebugId(java.lang.String)">ensureDebugId</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteLeft()">getAbsoluteLeft</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getAbsoluteTop()">getAbsoluteTop</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getElement()">getElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetHeight()">getOffsetHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getOffsetWidth()">getOffsetWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleElement()">getStyleElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName()">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStyleName(com.google.gwt.dom.client.Element)">getStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName()">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getStylePrimaryName(com.google.gwt.dom.client.Element)">getStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#getTitle()">getTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible()">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#isVisible(com.google.gwt.dom.client.Element)">isVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleDependentName(java.lang.String)">removeStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#removeStyleName(java.lang.String)">removeStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.dom.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setElement(com.google.gwt.user.client.Element)">setElement</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setHeight(java.lang.String)">setHeight</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setPixelSize(int, int)">setPixelSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setSize(java.lang.String, java.lang.String)">setSize</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleDependentName(java.lang.String, boolean)">setStyleDependentName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(com.google.gwt.dom.client.Element, java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStyleName(java.lang.String, boolean)">setStyleName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(com.google.gwt.dom.client.Element, java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setStylePrimaryName(java.lang.String)">setStylePrimaryName</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setTitle(java.lang.String)">setTitle</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setVisible(com.google.gwt.dom.client.Element, boolean)">setVisible</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#setWidth(java.lang.String)">setWidth</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#sinkBitlessEvent(java.lang.String)">sinkBitlessEvent</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#toString()">toString</A>, <A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#unsinkEvents(int)">unsinkEvents</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="CENTER"><!-- --></A><H3>
+CENTER</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>CENTER</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the center of the dock.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="LINE_START"><!-- --></A><H3>
+LINE_START</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>LINE_START</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the beginning of the line direction
+ for the layout.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="LINE_END"><!-- --></A><H3>
+LINE_END</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>LINE_END</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the end of the line direction
+ for the layout.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="EAST"><!-- --></A><H3>
+EAST</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>EAST</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the east edge of the dock.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="NORTH"><!-- --></A><H3>
+NORTH</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>NORTH</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the north edge of the dock.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="SOUTH"><!-- --></A><H3>
+SOUTH</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>SOUTH</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the south edge of the dock.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="WEST"><!-- --></A><H3>
+WEST</H3>
+<PRE>
+public static final <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>WEST</B></PRE>
+<DL>
+<DD>Specifies that a widget be added at the west edge of the dock.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DockPanel()"><!-- --></A><H3>
+DockPanel</H3>
+<PRE>
+public <B>DockPanel</B>()</PRE>
+<DL>
+<DD>Creates an empty dock panel.
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="add(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.DockPanel.DockLayoutConstant)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public void <B>add</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;widget,
+                <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A>&nbsp;direction)</PRE>
+<DL>
+<DD>Adds a widget to the specified edge of the dock. If the widget is already a
+ child of this panel, this method behaves as though <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#remove(com.google.gwt.user.client.ui.Widget)"><CODE>remove(Widget)</CODE></A>
+ had already been called.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>widget</CODE> - the widget to be added<DD><CODE>direction</CODE> - the widget's direction in the dock
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - when adding to the <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#CENTER"><CODE>CENTER</CODE></A> and
+           there is already a different widget there</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="add(com.google.gwt.user.client.ui.IsWidget, com.google.gwt.user.client.ui.DockPanel.DockLayoutConstant)"><!-- --></A><H3>
+add</H3>
+<PRE>
+public void <B>add</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/IsWidget.html" title="interface in com.google.gwt.user.client.ui">IsWidget</A>&nbsp;widget,
+                <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A>&nbsp;direction)</PRE>
+<DL>
+<DD>Overloaded version for IsWidget.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html#add(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.DockPanel.DockLayoutConstant)"><CODE>add(Widget,DockLayoutConstant)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHorizontalAlignment()"><!-- --></A><H3>
+getHorizontalAlignment</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A> <B>getHorizontalAlignment</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#getHorizontalAlignment()">HasHorizontalAlignment</A></CODE></B></DD>
+<DD>Gets the horizontal alignment.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#getHorizontalAlignment()">getHorizontalAlignment</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasHorizontalAlignment</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the current horizontal alignment (
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LEFT"><CODE>HasHorizontalAlignment.ALIGN_LEFT</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_CENTER"><CODE>HasHorizontalAlignment.ALIGN_CENTER</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_RIGHT"><CODE>HasHorizontalAlignment.ALIGN_RIGHT</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_JUSTIFY"><CODE>HasHorizontalAlignment.ALIGN_JUSTIFY</CODE></A>, or
+         null).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getVerticalAlignment()"><!-- --></A><H3>
+getVerticalAlignment</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A> <B>getVerticalAlignment</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#getVerticalAlignment()">HasVerticalAlignment</A></CODE></B></DD>
+<DD>Gets the vertical alignment.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#getVerticalAlignment()">getVerticalAlignment</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasVerticalAlignment</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the current vertical alignment.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWidgetDirection(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+getWidgetDirection</H3>
+<PRE>
+public <A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui">DockPanel.DockLayoutConstant</A> <B>getWidgetDirection</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</PRE>
+<DL>
+<DD>Gets the layout direction of the given child widget.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget to be queried
+<DT><B>Returns:</B><DD>the widget's layout direction, or <code>null</code> if it is not
+         a child of this panel</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="remove(com.google.gwt.user.client.ui.Widget)"><!-- --></A><H3>
+remove</H3>
+<PRE>
+public boolean <B>remove</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#remove(com.google.gwt.user.client.ui.Widget)">Panel</A></CODE></B></DD>
+<DD>Removes a child widget.
+ 
+ <p>
+ <b>How to Override this Method</b>
+ </p>
+ <p>
+ There are several important things that must take place in the correct
+ order to properly remove a Widget from a Panel. Not all of these steps will
+ be relevant to every Panel, but all of the steps must be considered.
+ <ol>
+ <li><b>Validate:</b> Make sure this Panel is actually the parent of the
+ child Widget; return <code>false</code> if it is not.</li>
+ <li><b>Orphan:</b> Call <A HREF="../../../../../../com/google/gwt/user/client/ui/Panel.html#orphan(com.google.gwt.user.client.ui.Widget)"><CODE>Panel.orphan(Widget)</CODE></A> first while the child
+ Widget is still attached.</li>
+ <li><b>Physical Detach:</b> Adjust the DOM to account for the removal of
+ the child Widget. The Widget's Element must be physically removed from the
+ DOM.</li>
+ <li><b>Logical Detach:</b> Update the Panel's state variables to reflect
+ the removal of the child Widget. Example: the Widget is removed from the
+ Panel's <A HREF="../../../../../../com/google/gwt/user/client/ui/WidgetCollection.html" title="class in com.google.gwt.user.client.ui"><CODE>WidgetCollection</CODE></A>.</li>
+ </ol>
+ </p>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html#remove(com.google.gwt.user.client.ui.Widget)">remove</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasWidgets.html" title="interface in com.google.gwt.user.client.ui">HasWidgets</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html#remove(com.google.gwt.user.client.ui.Widget)">remove</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/ComplexPanel.html" title="class in com.google.gwt.user.client.ui">ComplexPanel</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget to be removed
+<DT><B>Returns:</B><DD><code>true</code> if the child was present</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCellHeight(com.google.gwt.user.client.ui.Widget, java.lang.String)"><!-- --></A><H3>
+setCellHeight</H3>
+<PRE>
+public void <B>setCellHeight</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+                          java.lang.String&nbsp;height)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHeight(com.google.gwt.user.client.ui.Widget, java.lang.String)">CellPanel</A></CODE></B></DD>
+<DD>Sets the height of the cell associated with the given widget, related to
+ the panel as a whole.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHeight(com.google.gwt.user.client.ui.Widget, java.lang.String)">setCellHeight</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">CellPanel</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget whose cell height is to be set<DD><CODE>height</CODE> - the cell's height, in CSS units</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCellHorizontalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)"><!-- --></A><H3>
+setCellHorizontalAlignment</H3>
+<PRE>
+public void <B>setCellHorizontalAlignment</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+                                       <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A>&nbsp;align)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHorizontalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">CellPanel</A></CODE></B></DD>
+<DD>Sets the horizontal alignment of the given widget within its cell.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellHorizontalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">setCellHorizontalAlignment</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">CellPanel</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget whose horizontal alignment is to be set<DD><CODE>align</CODE> - the widget's horizontal alignment, as defined in
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html" title="interface in com.google.gwt.user.client.ui"><CODE>HasHorizontalAlignment</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCellVerticalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)"><!-- --></A><H3>
+setCellVerticalAlignment</H3>
+<PRE>
+public void <B>setCellVerticalAlignment</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+                                     <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A>&nbsp;align)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellVerticalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">CellPanel</A></CODE></B></DD>
+<DD>Sets the vertical alignment of the given widget within its cell.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellVerticalAlignment(com.google.gwt.user.client.ui.Widget, com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">setCellVerticalAlignment</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">CellPanel</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget whose vertical alignment is to be set<DD><CODE>align</CODE> - the widget's vertical alignment, as defined in
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html" title="interface in com.google.gwt.user.client.ui"><CODE>HasVerticalAlignment</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCellWidth(com.google.gwt.user.client.ui.Widget, java.lang.String)"><!-- --></A><H3>
+setCellWidth</H3>
+<PRE>
+public void <B>setCellWidth</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui">Widget</A>&nbsp;w,
+                         java.lang.String&nbsp;width)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellWidth(com.google.gwt.user.client.ui.Widget, java.lang.String)">CellPanel</A></CODE></B></DD>
+<DD>Sets the width of the cell associated with the given widget, related to the
+ panel as a whole.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html#setCellWidth(com.google.gwt.user.client.ui.Widget, java.lang.String)">setCellWidth</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/CellPanel.html" title="class in com.google.gwt.user.client.ui">CellPanel</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>w</CODE> - the widget whose cell width is to be set<DD><CODE>width</CODE> - the cell's width, in CSS units</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHorizontalAlignment(com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)"><!-- --></A><H3>
+setHorizontalAlignment</H3>
+<PRE>
+public void <B>setHorizontalAlignment</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.HorizontalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasHorizontalAlignment.HorizontalAlignmentConstant</A>&nbsp;align)</PRE>
+<DL>
+<DD>Sets the default horizontal alignment to be used for widgets added to this
+ panel. It only applies to widgets added after this property is set.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#setHorizontalAlignment(com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)">setHorizontalAlignment</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasHorizontalAlignment</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>align</CODE> - the horizontal alignment (
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LEFT"><CODE>HasHorizontalAlignment.ALIGN_LEFT</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_CENTER"><CODE>HasHorizontalAlignment.ALIGN_CENTER</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_RIGHT"><CODE>HasHorizontalAlignment.ALIGN_RIGHT</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_JUSTIFY"><CODE>HasHorizontalAlignment.ALIGN_JUSTIFY</CODE></A>,
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LOCALE_START"><CODE>HasHorizontalAlignment.ALIGN_LOCALE_START</CODE></A>, or
+         <A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#ALIGN_LOCALE_END"><CODE>HasHorizontalAlignment.ALIGN_LOCALE_END</CODE></A>).<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/HasHorizontalAlignment.html#setHorizontalAlignment(com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant)"><CODE>HasHorizontalAlignment.setHorizontalAlignment(HasHorizontalAlignment.HorizontalAlignmentConstant)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setVerticalAlignment(com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)"><!-- --></A><H3>
+setVerticalAlignment</H3>
+<PRE>
+public void <B>setVerticalAlignment</B>(<A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.VerticalAlignmentConstant.html" title="class in com.google.gwt.user.client.ui">HasVerticalAlignment.VerticalAlignmentConstant</A>&nbsp;align)</PRE>
+<DL>
+<DD>Sets the default vertical alignment to be used for widgets added to this
+ panel. It only applies to widgets added after this property is set.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#setVerticalAlignment(com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)">setVerticalAlignment</A></CODE> in interface <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html" title="interface in com.google.gwt.user.client.ui">HasVerticalAlignment</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>align</CODE> - the vertical alignment (
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#ALIGN_TOP"><CODE>HasVerticalAlignment.ALIGN_TOP</CODE></A>,
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#ALIGN_MIDDLE"><CODE>HasVerticalAlignment.ALIGN_MIDDLE</CODE></A>, or
+          <A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#ALIGN_BOTTOM"><CODE>HasVerticalAlignment.ALIGN_BOTTOM</CODE></A>).<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/HasVerticalAlignment.html#setVerticalAlignment(com.google.gwt.user.client.ui.HasVerticalAlignment.VerticalAlignmentConstant)"><CODE>HasVerticalAlignment.setVerticalAlignment(HasVerticalAlignment.VerticalAlignmentConstant)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onEnsureDebugId(java.lang.String)"><!-- --></A><H3>
+onEnsureDebugId</H3>
+<PRE>
+protected void <B>onEnsureDebugId</B>(java.lang.String&nbsp;baseID)</PRE>
+<DL>
+<DD><A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.html" title="class in com.google.gwt.user.client.ui"><CODE>DockPanel</CODE></A> supports adding more than one cell in a direction, so an
+ integer will be appended to the end of the debug id. For example, the first
+ north cell is labeled "north1", the second is "north2", and the third is
+ "north3".
+ 
+ This widget recreates its structure every time a <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui"><CODE>Widget</CODE></A> is added,
+ so you must call this method after adding a new <A HREF="../../../../../../com/google/gwt/user/client/ui/Widget.html" title="class in com.google.gwt.user.client.ui"><CODE>Widget</CODE></A> or all debug
+ IDs will be lost.
+ 
+ <p>
+ <b>Affected Elements:</b>
+ <ul>
+ <li>-center = the center cell.</li>
+ <li>-north# = the northern cell.</li>
+ <li>-south# = the southern cell.</li>
+ <li>-east# = the eastern cell.</li>
+ <li>-west# = the western cell.</li>
+ </ul>
+ </p>
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)">onEnsureDebugId</A></CODE> in class <CODE><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html" title="class in com.google.gwt.user.client.ui">UIObject</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseID</CODE> - the base ID used by the main element<DT><B>See Also:</B><DD><A HREF="../../../../../../com/google/gwt/user/client/ui/UIObject.html#onEnsureDebugId(java.lang.String)"><CODE>UIObject.onEnsureDebugId(String)</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DockPanel.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+GWT 2.3.0</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockLayoutPanel.LayoutData.html" title="class in com.google.gwt.user.client.ui"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/google/gwt/user/client/ui/DockPanel.DockLayoutConstant.html" title="class in com.google.gwt.user.client.ui"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/google/gwt/user/client/ui/DockPanel.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DockPanel.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>
