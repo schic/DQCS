@@ -93,7 +93,7 @@ import org.slf4j.LoggerFactory;
 import com.google.inject.Injector;
 
 public class SchemaTree extends JXTree implements TreeWillExpandListener, TreeCellRenderer, DescriptorProviderListener {
-    
+
     private final WidgetScreenResolutionAdjuster adjuster = WidgetScreenResolutionAdjuster.get();
 
     class LoadTablesSwingWorker extends SwingWorker<Void, Table> {

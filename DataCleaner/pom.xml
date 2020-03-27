@@ -14,12 +14,12 @@
 		<junit.version>4.12</junit.version>
 		<easymock.version>3.6</easymock.version>
 		<httpcomponents.version>4.5.5</httpcomponents.version>
-		<metamodel.version>5.2.1</metamodel.version>
+		<metamodel.version>5.3.1</metamodel.version>
 		<metamodel.extras.version>5.2.0</metamodel.extras.version>
 		<spring.core.version>4.3.16.RELEASE</spring.core.version>
 		<freemarker.version>2.3.28</freemarker.version>
 		<icu4j.version>61.1</icu4j.version>
-		<jackson.version>2.9.8</jackson.version>
+		<jackson.version>2.10.0</jackson.version>
 		<javax.servlet.version>3.1.0</javax.servlet.version>
 		<javax.el.version>2.2.5</javax.el.version>
 		<javax.annotation.version>1.2</javax.annotation.version>
@@ -27,7 +27,7 @@
 		<jung.version>2.1.1</jung.version>
 		<guava.version>27.0.1-jre</guava.version>
 		<hadoop.version>3.1.1</hadoop.version>
-		
+
 		<!-- TODO: The following (inter-dependent) dependencies are due for upgrades before Java 11 -->
 		<spark.version>1.6.3</spark.version>
 		<curator.version>2.13.0</curator.version>
@@ -42,7 +42,7 @@
 
 	<groupId>org.eobjects.datacleaner</groupId>
 	<artifactId>DataCleaner</artifactId>
-	<version>5.7.0</version>
+	<version>5.7.1-SNAPSHOT</version>
 	<name>DataCleaner parent</name>
 	<description>DataCleaner is the premier open source data quality solution. Use it to
 		discover, analyze, profile, diagnose and monitor the state of your data. DataCleaner works with
@@ -66,6 +66,7 @@
 				<module>engine</module>
 				<module>components</module>
 				<module>desktop</module>
+
 			</modules>
 		</profile>
 		<profile>
@@ -93,6 +94,17 @@
 				<module>engine</module>
 				<module>components</module>
 				<module>desktop</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>monitor</id>
+			<modules>
+				<module>api</module>
+				<module>resources</module>
+				<module>testware</module>
+				<module>engine</module>
+				<module>components</module>
+
 			</modules>
 		</profile>
 		<profile>
@@ -251,7 +263,7 @@
 		<url>https://github.com/datacleaner/DataCleaner</url>
 		<connection>scm:git:https://github.com/datacleaner/DataCleaner.git</connection>
 		<developerConnection>scm:git:https://github.com/datacleaner/DataCleaner.git</developerConnection>
-		<tag>DataCleaner-5.7.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<build>
 		<plugins>
@@ -273,7 +285,7 @@
 				<version>1.4.0</version>
 				<inherited>false</inherited>
 				<configuration>
-					<header>HEADER.txt</header>
+					<!--<header>HEADER.txt</header>-->
 					<aggregate>true</aggregate>
 					<includes>
 						<include>**/src/**/java/org/**</include>
@@ -297,6 +309,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.21.0</version>
+
 			</plugin>
 
 			<plugin>
@@ -375,17 +388,17 @@
 										<exclude>ant:ant:*</exclude>
 
 										<exclude>org.datanucleus:javax.jdo:*</exclude>
-										
+
 										<!-- Prefer javax.transaction:javax.transaction-api over javax.transaction:jta -->
 										<exclude>javax.transaction:jta:*</exclude>
 										<exclude>javax.transaction:transaction-api:*</exclude>
-										
+
 										<!-- The proper artifact for JSP API is javax.servlet.jsp:javax.servlet.jsp-api, so we're banning the rest -->
 										<exclude>javax.servlet:jsp-api:*</exclude>
 										<exclude>javax.servlet.jsp:jsp-api:*</exclude>
 										<exclude>org.mortbay.jetty:jsp-api-2.1:*</exclude>
 										<exclude>org.mortbay.jetty:jsp-2.1:*</exclude>
-										
+
 										<!-- The propert artifact for JDO is javax.jdo:jdo-api, so we're banning the rest -->
 										<exclude>org.datanucleaus:javax.jdo</exclude>
 
@@ -397,7 +410,7 @@
 										<exclude>log4j:apache-log4j-extras:*</exclude>
 										<exclude>org.apache.logging.log4j:*</exclude>
 
-										<!-- commons-beanutils-core is redundant when we already depend 
+										<!-- commons-beanutils-core is redundant when we already depend
 											on commons-beanutils -->
 										<exclude>commons-beanutils:commons-beanutils-core:*</exclude>
 
@@ -408,7 +421,7 @@
 										<exclude>javax.faces:javax.faces-api:*:jar:compile</exclude>
 										<exclude>org.glassfish.web:el-impl:*:jar:compile</exclude>
 
-										<!-- HK2 should not be used, we have enough Dependency Injection 
+										<!-- HK2 should not be used, we have enough Dependency Injection
 											frameworks as it is -->
 										<exclude>org.glassfish.hk2.*</exclude>
 										<exclude>org.glassfish.hk2.external:*</exclude>
@@ -422,10 +435,10 @@
 										<!-- jcip-annotations is overlapping with annotations -->
 										<exclude>net.jcip:jcip-annotations:*</exclude>
 										<exclude>com.github.stephenc.jcip:jcip-annotations:*</exclude>
-										
+
 										<!-- xml-apis is shipped with the JRE -->
 										<exclude>xml-apis:xml-apis:*</exclude>
-										
+
 										<!-- Xerces is an implementation of xml-apis, so should also be provided by the JRE -->
 										<exclude>xerces:xercesImpl:*</exclude>
 										<exclude>xerces:xerces:*</exclude>
@@ -442,6 +455,9 @@
 										<exclude>org.apache.geronimo.bundles:json:*</exclude>
 
 										<exclude>com.sun.xml.ws:jaxws-rt:*</exclude>
+
+										<exclude>javax.servlet.jsp:jsp-api:*</exclude>
+										<exclude>javax.servlet:jsp-api:*</exclude>
 									</excludes>
 								</bannedDependencies>
 							</rules>
@@ -697,6 +713,16 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.metamodel</groupId>
+				<artifactId>MetaModel-json</artifactId>
+				<version>${metamodel.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.metamodel</groupId>
+				<artifactId>MetaModel-arff</artifactId>
+				<version>${metamodel.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.metamodel</groupId>
 				<artifactId>MetaModel-cassandra</artifactId>
 				<version>${metamodel.version}</version>
 			</dependency>
@@ -827,7 +853,7 @@
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-compress</artifactId>
-				<version>1.18</version>
+				<version>1.19</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.inject</groupId>
@@ -1109,15 +1135,28 @@
 				<version>${javax.servlet.version}</version>
 			</dependency>
 			<!-- JDBC drivers -->
+			<!--Microsoft SQL Server-->
 			<dependency>
 				<groupId>net.sourceforge.jtds</groupId>
 				<artifactId>jtds</artifactId>
 				<version>1.3.1</version>
 			</dependency>
+			<!--oracle Server-->
 			<dependency>
+				<groupId>com.oracle</groupId>
+				<artifactId>ojdbc14</artifactId>
+				<version>10.2.0.2.0</version>
+			</dependency>
+
+			<!--<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>9.3-1102-jdbc4</version>
+			</dependency>-->
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>42.1.1</version>
 			</dependency>
 			<dependency>
 				<groupId>com.h2database</groupId>
@@ -1275,7 +1314,7 @@
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty-all</artifactId>
-				<version>4.0.56.Final</version>
+				<version>4.1.42.Final</version>
 			</dependency>
 
 			<dependency>
@@ -1420,7 +1459,7 @@
 				<version>${scala.version}</version>
 			</dependency>
 
-			<!-- HTTP client needed for VFS support of HTTP. Hopefully it will be 
+			<!-- HTTP client needed for VFS support of HTTP. Hopefully it will be
 				replaced by HTTP components (4.x) at some point. -->
 			<dependency>
 				<groupId>commons-httpclient</groupId>
@@ -1555,6 +1594,54 @@
 						<groupId>org.scala-lang</groupId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring.core.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${spring.core.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.core.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-tx</artifactId>
+				<version>${spring.core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+				<version>${spring.core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>${spring.core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>

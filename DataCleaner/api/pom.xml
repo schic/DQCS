@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.eobjects.datacleaner</groupId>
 		<artifactId>DataCleaner</artifactId>
-		<version>5.7.0</version>
+		<version>5.7.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>DataCleaner-api</artifactId>
 
@@ -62,5 +62,9 @@
 			<artifactId>commons-lang</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+    </dependencies>
 </project>

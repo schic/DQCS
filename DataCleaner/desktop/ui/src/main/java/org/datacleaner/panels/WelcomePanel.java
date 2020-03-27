@@ -90,7 +90,7 @@ public class WelcomePanel extends DCSplashPanel {
         _openAnalysisJobActionListener = openAnalysisJobActionListener;
         _dcModule = dcModule;
 
-        _titleLabel = createTitleLabel("Welcome to DataCleaner", false);
+        _titleLabel = createTitleLabel("欢迎来到 to DataCleaner", false);
         _buttonPanel = createButtonPanel();
 
         final JComponent contentPanel = createContentPanel();

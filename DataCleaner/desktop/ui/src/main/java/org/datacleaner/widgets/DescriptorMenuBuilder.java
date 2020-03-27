@@ -148,6 +148,7 @@ public final class DescriptorMenuBuilder {
                 logger.info("Disregarding menu for category '{}' because of no components", category);
                 categories.remove(category);
             } else {
+                //callback.addCategory();
                 callback.addCategory(category);
             }
         }

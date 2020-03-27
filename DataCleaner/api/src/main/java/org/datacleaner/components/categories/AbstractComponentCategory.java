@@ -37,6 +37,7 @@ public abstract class AbstractComponentCategory implements ComponentCategory {
         if (simpleName.endsWith("Category")) {
             simpleName = simpleName.substring(0, simpleName.length() - "Category".length());
         }
+
         return ApiStringUtils.explodeCamelCase(simpleName, false);
     }
 
