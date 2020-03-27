@@ -52,12 +52,7 @@ import org.datacleaner.guice.DCModule;
 import org.datacleaner.user.DatastoreChangeListener;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.DCDocumentListener;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.StringUtils;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.widgets.DCLabel;
 import org.datacleaner.widgets.DCPopupBubble;
@@ -163,13 +158,13 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
 
         setLayout(new BorderLayout());
 
-        final JComponent titleLabel = createTitleLabel("Datastore Management", true);
+        final JComponent titleLabel = createTitleLabel(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement"), true);
         add(titleLabel, BorderLayout.NORTH);
 
         final DCPanel containerPanel = new DCPanel();
         containerPanel.setLayout(new VerticalLayout(4));
 
-        final DCLabel registerNewDatastoreLabel = DCLabel.dark("Register new:");
+        final DCLabel registerNewDatastoreLabel = DCLabel.dark(PropertyUtil.getProperty("datacleaner.ui.desktop.text.registernew"));
         registerNewDatastoreLabel.setFont(WidgetUtils.FONT_HEADER2);
 
         _datastoreListPanel = new DCPanel();
@@ -200,7 +195,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
         _datastoreListPanel.removeAll();
         _datastorePanels.clear();
 
-        final DCLabel existingDatastoresLabel = DCLabel.dark("Existing datastores:");
+        final DCLabel existingDatastoresLabel = DCLabel.dark(PropertyUtil.getProperty("datacleaner.ui.desktop.text.existingdatastores"));
         existingDatastoresLabel.setFont(WidgetUtils.FONT_HEADER2);
 
         final DCPanel headerPanel = new DCPanel();
