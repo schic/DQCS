@@ -40,8 +40,8 @@ import org.datacleaner.components.categories.DataStructuresCategory;
  *
  *
  */
-@Named("Read keys and values from map")
-@Description("Reads all key/value pairs of a map, creating a record for each pair")
+@Named("ReadFromMapTransformer.name")
+@Description("ReadFromMapTransformer.Description")
 @Categorized(DataStructuresCategory.class)
 public class ReadFromMapTransformer implements Transformer {
 

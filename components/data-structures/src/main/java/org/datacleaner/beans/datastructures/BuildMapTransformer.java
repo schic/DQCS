@@ -43,10 +43,9 @@ import org.slf4j.LoggerFactory;
 /**
  * Transformer for building maps based on values in a row.
  */
-@Named("Build key/value map")
+@Named("BuildMapTransformer.name")
 @Alias("Build map")
-@Description("Build a map with a variable amount of keys and values. "
-        + "Adds the capability to store complex structures with named entries within it.")
+@Description("BuildMapTransformer.Description")
 @Categorized(DataStructuresCategory.class)
 public class BuildMapTransformer implements Transformer {
 

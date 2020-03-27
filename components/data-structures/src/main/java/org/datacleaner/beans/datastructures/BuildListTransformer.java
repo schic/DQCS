@@ -40,9 +40,8 @@ import org.slf4j.LoggerFactory;
 /**
  * Transformer for building lists based on values in a row.
  */
-@Named("Build list")
-@Description("Build a list containing a variable amount of elements. "
-        + "Adds the capability to save multiple values in a single field.")
+@Named("BuildListTransformer.name")
+@Description("BuildListTransformer.Description")
 @Categorized(DataStructuresCategory.class)
 public class BuildListTransformer implements Transformer {
 

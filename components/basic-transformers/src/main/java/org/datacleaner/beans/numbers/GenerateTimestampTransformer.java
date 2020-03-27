@@ -31,8 +31,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.DateAndTimeCategory;
 
-@Named("Generate timestamp")
-@Description("Generates a timestamp representing the millisecond or nanosecond of processing the record")
+@Named("GenerateTimestampTransformer.name")
+@Description("GenerateTimestampTransformer.Description")
 @Categorized(DateAndTimeCategory.class)
 public class GenerateTimestampTransformer implements Transformer {
 

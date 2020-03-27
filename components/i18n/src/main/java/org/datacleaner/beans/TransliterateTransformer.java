@@ -35,8 +35,8 @@ import org.datacleaner.components.categories.EncodingCategory;
 
 import com.ibm.icu.text.Transliterator;
 
-@Named("Transliterate")
-@Description("Converts non-latin characters to latin (or even ASCII) characters.")
+@Named("TransliterateTransformer.name")
+@Description("TransliterateTransformer.Description")
 @ExternalDocumentation({ @DocumentationLink(title = "Internationalization in DataCleaner",
         url = "https://www.youtube.com/watch?v=ApA-nhtLbhI", type = DocumentationType.VIDEO, version = "3.0") })
 @Categorized(EncodingCategory.class)

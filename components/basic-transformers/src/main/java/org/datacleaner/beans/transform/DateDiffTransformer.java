@@ -35,8 +35,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.DateAndTimeCategory;
 
-@Named("Date difference / period length")
-@Description("Calculates the length of a period made of two dates")
+@Named("DateDiffTransformer.name")
+@Description("DateDiffTransformer.Description")
 @Categorized(DateAndTimeCategory.class)
 public class DateDiffTransformer implements Transformer {
 

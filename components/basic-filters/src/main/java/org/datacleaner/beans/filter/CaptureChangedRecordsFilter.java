@@ -60,10 +60,8 @@ import com.google.common.base.Strings;
  * "last modified" field. After each execution, the greatest timestamp is
  * recorded and picked up successively by the next run.
  */
-@Named("Capture changed records")
-@Description("Include only records that have changed since the last time you ran the job. "
-        + "This filter assumes a field containing the timestamp or a number field of the latest change for each "
-        + "record, and stores the greatest encountered value in order to update the filter's future state.")
+@Named("CCaptureChangedRecordsFilter.name")
+@Description("CaptureChangedRecordsFilter.Description")
 @Distributed(false)
 @Categorized({ FilterCategory.class, DateAndTimeCategory.class })
 @Optimizeable(removeableUponOptimization = false)

@@ -51,8 +51,8 @@ import org.joda.time.format.DateTimeFormatter;
 /**
  * Attempts to convert anything to a Date value
  */
-@Named("Convert to date")
-@Description("Converts anything to a date (or null).")
+@Named("ConvertToDateTransformer.name")
+@Description("ConvertToDateTransformer.Description")
 @Categorized(ConversionCategory.class)
 public class ConvertToDateTransformer implements Transformer {
 

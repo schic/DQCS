@@ -33,8 +33,8 @@ import org.datacleaner.data.MockInputColumn;
 
 import com.google.common.html.HtmlEscapers;
 
-@Named("HTML encoder")
-@Description("Encodes/escapes plain text into HTML content")
+@Named("HtmlEncoderTransformer.name")
+@Description("HtmlEncoderTransformer.Description")
 @Categorized(EncodingCategory.class)
 public class HtmlEncoderTransformer implements Transformer {
 

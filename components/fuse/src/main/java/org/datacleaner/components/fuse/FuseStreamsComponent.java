@@ -44,10 +44,8 @@ import org.datacleaner.job.output.OutputDataStreams;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Union")
-@Description("Lets you combine multiple streams into one. Providing what is equivalent to a union of tables.\n\n"
-        + "Use it to fuse data streams coming from different source tables. "
-        + "You can define new fields whose values represent whatever is available from one of the input streams.")
+@Named("FuseStreamsComponent.name")
+@Description("FuseStreamsComponent.Description")
 @Categorized(CompositionCategory.class)
 public class FuseStreamsComponent extends MultiStreamComponent {
 

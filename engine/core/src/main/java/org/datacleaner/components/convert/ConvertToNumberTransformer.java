@@ -42,8 +42,8 @@ import org.slf4j.LoggerFactory;
 /**
  * Attempts to convert anything to a Number (Double) value
  */
-@Named("Convert to number")
-@Description("Converts anything to a number (or null if not possible).")
+@Named("ConvertToNumberTransformer.name")
+@Description("ConvertToNumberTransformer.Description")
 @Categorized(ConversionCategory.class)
 public class ConvertToNumberTransformer implements Transformer {
 
