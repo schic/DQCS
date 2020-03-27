@@ -1,8 +1,0 @@
-DataCleaner
-Copyright (C) 2017 Free Software Foundation, Inc.
-
-This product includes software developed by
-the DataCleaner community (https://datacleaner.github.io/).
-
-Please refer to the 'about' dialog for more
-info on credits, license and history.
