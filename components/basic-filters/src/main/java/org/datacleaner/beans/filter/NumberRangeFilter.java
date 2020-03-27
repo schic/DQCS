@@ -27,8 +27,8 @@ import org.datacleaner.api.Description;
 import org.datacleaner.api.InputColumn;
 import org.datacleaner.components.categories.FilterCategory;
 
-@Named("Number range")
-@Description("A filter that filters out rows where a number value is outside a specified range")
+@Named("NumberRangeFilter.name")
+@Description("NumberRangeFilter.Description")
 @Categorized(FilterCategory.class)
 public class NumberRangeFilter extends AbstractQueryOptimizedRangeFilter<Number> {
 

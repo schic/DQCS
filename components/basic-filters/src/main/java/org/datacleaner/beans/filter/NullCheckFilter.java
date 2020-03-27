@@ -41,9 +41,9 @@ import org.datacleaner.api.InputRow;
 import org.datacleaner.api.QueryOptimizedFilter;
 import org.datacleaner.components.categories.FilterCategory;
 
-@Named("Null check")
+@Named("NullCheckFilter.name")
 @Alias("Not null")
-@Description("Filter rows that contain null values.")
+@Description("NullCheckFilter.Description")
 @Categorized(FilterCategory.class)
 @Distributed(true)
 public class NullCheckFilter implements QueryOptimizedFilter<NullCheckFilter.NullCheckCategory>, HasLabelAdvice {
