@@ -32,8 +32,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.NumbersCategory;
 
-@Named("Generate UUID")
-@Description("Generates a universally unique ID")
+@Named("GenerateUUIDTransformer.name")
+@Description("GenerateUUIDTransformer.Description")
 @Categorized(NumbersCategory.class)
 public class GenerateUUIDTransformer implements Transformer {
 

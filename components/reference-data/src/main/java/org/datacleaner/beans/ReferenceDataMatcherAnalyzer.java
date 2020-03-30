@@ -47,11 +47,9 @@ import org.datacleaner.reference.StringPattern;
 import org.datacleaner.reference.SynonymCatalog;
 import org.datacleaner.reference.SynonymCatalogConnection;
 
-@Named("Reference data matcher")
+@Named("ReferenceDataMatcherAnalyzer.name")
 @Alias("Matching analyzer")
-@Description("Check your data values against multiple forms of reference data in one simple analyzer step.\n"
-        + "This analyzer provides a handy shortcut for doing matching with dictionaries, synonym lookups or "
-        + "string patterns matching, retrieving matching matrices for all matches.")
+@Description("ReferenceDataMatcherAnalyzer.Description")
 @Distributed(reducer = BooleanAnalyzerReducer.class)
 public class ReferenceDataMatcherAnalyzer implements Analyzer<BooleanAnalyzerResult> {
 

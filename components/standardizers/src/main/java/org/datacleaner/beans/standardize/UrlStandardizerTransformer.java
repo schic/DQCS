@@ -37,8 +37,8 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.base.Strings;
 
-@Named("URL parser")
-@Description("Retrieve the individual parts of an URL, including protocol, domain, port, path and querystring.")
+@Named("UrlStandardizerTransformer.name")
+@Description("UrlStandardizerTransformer.Description")
 @Categorized({ TextCategory.class })
 public class UrlStandardizerTransformer implements Transformer {
     private static final Logger logger = LoggerFactory.getLogger(UrlStandardizerTransformer.class);

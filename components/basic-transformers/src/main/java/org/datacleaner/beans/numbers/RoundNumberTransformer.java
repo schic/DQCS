@@ -34,9 +34,8 @@ import org.datacleaner.components.categories.NumbersCategory;
 /**
  * Simple transformer for rounding a number
  */
-@Named("Round number")
-@Description(
-        "Transformation for rounding a number, typically to the nearest integer, nearest ten, hundred or thousand.")
+@Named("RoundNumberTransformer.name")
+@Description("RoundNumberTransformer.Description")
 @Categorized(NumbersCategory.class)
 public class RoundNumberTransformer implements Transformer {
 

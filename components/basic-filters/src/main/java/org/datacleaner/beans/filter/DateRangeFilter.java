@@ -33,8 +33,8 @@ import org.datacleaner.util.convert.ShiftedToday;
 import org.datacleaner.util.convert.TodayDate;
 import org.datacleaner.util.convert.YesterdayDate;
 
-@Named("Date range")
-@Description("A filter that filters out rows where a date value is outside a specified range")
+@Named("DateRangeFilter.name")
+@Description("DateRangeFilter.Description")
 @Categorized(FilterCategory.class)
 public class DateRangeFilter extends AbstractQueryOptimizedRangeFilter<Date> {
 

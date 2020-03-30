@@ -58,13 +58,9 @@ import org.datacleaner.util.ws.ServiceResult;
 
 import com.google.common.base.Strings;
 
-@Named("HTTP request")
+@Named("HttpRequestTransformer.name")
 @Categorized(value = ReferenceDataCategory.class, superCategory = ImproveSuperCategory.class)
-@Description("Sends a HTTP request for each record and retrieves the response as transformation output.\n"
-        + "For each request you can have dynamic elements in the URL or in the request body that is sent. "
-        + "Provide variable names that are unique to the URL and request body and reference them there. For instance:\n"
-        + "<table><tr><td>URL:</td><td>http://www.google.com/?q=${term}</td></tr>"
-        + "<tr><td>Input:</td><td>column1</td></tr>" + "<tr><td>Variable:</td><td>${term}</td></tr></table>")
+@Description("HttpRequestTransformer.Description")
 public class HttpRequestTransformer implements Transformer {
 
     public static final String PROPERTY_INPUT_COLUMNS = "Input";

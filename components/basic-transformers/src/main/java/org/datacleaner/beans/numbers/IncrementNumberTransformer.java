@@ -37,8 +37,8 @@ import org.datacleaner.components.categories.NumbersCategory;
 /**
  * Simple transformer for incrementing a number
  */
-@Named("Increment number")
-@Description("Increment an id, a version or any other number.")
+@Named("IncrementNumberTransformer.name")
+@Description("IncrementNumberTransformer.Description")
 @Categorized(NumbersCategory.class)
 public class IncrementNumberTransformer implements Transformer {
 

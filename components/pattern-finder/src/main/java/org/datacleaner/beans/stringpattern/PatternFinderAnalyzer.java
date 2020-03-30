@@ -53,10 +53,8 @@ import org.datacleaner.util.NullTolerableComparator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Pattern finder")
-@Description("The Pattern Finder will inspect your String values and generate and match string patterns that suit "
-        + "your data.\nIt can be used for a lot of purposes but is excellent for verifying or getting ideas about "
-        + "the format of the string-values in a column.")
+@Named("PatternFinderAnalyzer.name")
+@Description("PatternFinderAnalyzer.Description")
 @ExternalDocumentation(value = { @DocumentationLink(title = "Kasper's Source: Pattern Finder 2.0",
         url = "http://kasper.eobjects.org/2010/09/pattern-finder-20-latest-feature-in.html",
         type = DocumentationType.TECH, version = "2.0") })

@@ -35,9 +35,8 @@ import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.TextCategory;
 import org.datacleaner.components.convert.ConvertToStringTransformer;
 
-@Named("Remove substring")
-@Description(
-        "Subtracts one or more substrings from a base text, i.e. [\"Hello world\",\"World\"] would yield \"Hello\".")
+@Named("RemoveSubstringTransformer.name")
+@Description("RemoveSubstringTransformer.Description")
 @Categorized(TextCategory.class)
 public class RemoveSubstringTransformer implements Transformer {
 

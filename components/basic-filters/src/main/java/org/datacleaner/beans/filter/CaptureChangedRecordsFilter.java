@@ -60,7 +60,7 @@ import com.google.common.base.Strings;
  * "last modified" field. After each execution, the greatest timestamp is
  * recorded and picked up successively by the next run.
  */
-@Named("CCaptureChangedRecordsFilter.name")
+@Named("CaptureChangedRecordsFilter.name")
 @Description("CaptureChangedRecordsFilter.Description")
 @Distributed(false)
 @Categorized({ FilterCategory.class, DateAndTimeCategory.class })

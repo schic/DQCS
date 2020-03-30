@@ -50,8 +50,8 @@ import org.datacleaner.result.CrosstabDimension;
 import org.datacleaner.result.CrosstabNavigator;
 import org.datacleaner.result.CrosstabResult;
 
-@Named("Week number distribution")
-@Description("Finds the distribution of week numbers from Date values.")
+@Named("WeekNumberDistributionAnalyzer.name")
+@Description("WeekNumberDistributionAnalyzer.Description")
 @Concurrent(true)
 @Categorized(DateAndTimeCategory.class)
 @Distributed(reducer = DatePartDistributionResultReducer.class)

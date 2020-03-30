@@ -42,8 +42,8 @@ import org.datacleaner.storage.RowAnnotation;
 import org.datacleaner.storage.RowAnnotationFactory;
 import org.datacleaner.util.LabelUtils;
 
-@Named("Country standardizer")
-@Description("Allows you to standardize the country names and codes used throughout your database")
+@Named("CountryStandardizationTransformer.name")
+@Description("CountryStandardizationTransformer.Description")
 @Categorized(superCategory = ImproveSuperCategory.class, value = LocationCategory.class)
 public class CountryStandardizationTransformer implements Transformer, HasAnalyzerResult<CountryStandardizationResult> {
 
