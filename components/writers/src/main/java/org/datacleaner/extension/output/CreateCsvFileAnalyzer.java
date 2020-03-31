@@ -68,10 +68,9 @@ import org.datacleaner.util.sort.SortMergeWriter;
 
 import com.google.common.base.Strings;
 
-@Named("Create CSV file")
+@Named("CreateCsvFileAnalyzer.name")
 @Alias("Write to CSV file")
-@Description("Write data to a CSV file. CSV file writing is extremely fast and the file format is commonly "
-        + "used in many tools. But CSV files do not preserve data types.")
+@Description("CreateCsvFileAnalyzer.Description")
 @Categorized(superCategory = WriteSuperCategory.class)
 public class CreateCsvFileAnalyzer extends AbstractOutputWriterAnalyzer
         implements HasLabelAdvice, HasDistributionAdvice {

@@ -42,8 +42,8 @@ import org.datacleaner.util.NamedPatternMatch;
  * Tokenizes/standardizes four components of a full name: Firstname, Lastname,
  * Middlename and Titulation.
  */
-@Named("Name standardizer")
-@Description("Identify the various parts of a full name column and turn it into separate, standardized tokens.")
+@Named("NameStandardizerTransformer.name")
+@Description("NameStandardizerTransformer.Description")
 @Categorized({ ContactDataCategory.class })
 @Deprecated
 public class NameStandardizerTransformer implements Transformer {

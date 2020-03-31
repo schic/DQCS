@@ -30,8 +30,8 @@ import org.datacleaner.api.InputRow;
 import org.datacleaner.components.categories.FilterCategory;
 import org.datacleaner.util.CharIterator;
 
-@Named("Single word")
-@Description("Filters single word values from multiple word values.")
+@Named("SingleWordFilter.name")
+@Description("SingleWordFilter.Description")
 @Categorized(FilterCategory.class)
 @Deprecated
 public class SingleWordFilter implements Filter<ValidationCategory> {

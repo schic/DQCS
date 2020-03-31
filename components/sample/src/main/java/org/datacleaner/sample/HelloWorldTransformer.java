@@ -61,9 +61,9 @@ import org.datacleaner.components.categories.TextCategory;
  * OPTIONAL: A .png file with the fully classified class name as it's path (see
  * src/main/resources).
  */
-@Named("Hello world transformer")
+@Named("HelloWorldTransformer.name")
 @Categorized(TextCategory.class)
-@Description("Put your description of your transformer here")
+@Description("HelloWorldTransformer.Description")
 @Concurrent(true)
 public class HelloWorldTransformer implements Transformer {
 
