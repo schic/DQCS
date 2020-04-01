@@ -110,14 +110,17 @@ class SimpleComponentDescriptor<B> extends AbstractDescriptor<B> implements Comp
         }
         return named.value();
     }
-
+    /**
+     * 拦截组件描述  支持国际化
+     * @return
+     */
     @Override
     public final String getDescription() {
         final Description description = getAnnotation(Description.class);
         if (description == null) {
             return null;
         }
-//国际化
+
         return PropertyUtil.getProperty(description.value(),description.value());
     }
 
