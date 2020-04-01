@@ -43,8 +43,8 @@ import org.datacleaner.components.machinelearning.impl.MLClassificationRecordImp
 
 import com.google.common.io.Files;
 
-@Named("Apply regression")
-@Description("Applies a regression model to incoming records. Note that the regression model must first be trained using one of the analyzers found in the 'Machine Learning' category.")
+@Named("MLRegressionTransformer.name")
+@Description("MLRegressionTransformer.Description")
 @Categorized(MachineLearningCategory.class)
 public class MLRegressionTransformer implements Transformer {
 

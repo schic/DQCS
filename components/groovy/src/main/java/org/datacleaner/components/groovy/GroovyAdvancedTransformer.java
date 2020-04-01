@@ -46,10 +46,9 @@ import org.datacleaner.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Groovy transformer (advanced)")
+@Named("GroovyAdvancedTransformer.name")
 @Categorized(ScriptingCategory.class)
-@Description("Perform almost any kind of data transformation with the use of the Groovy language. "
-        + "This transformer includes advanced options to map records to multiple (or no) output records and more.")
+@Description("GroovyAdvancedTransformer.Description")
 public class GroovyAdvancedTransformer implements Transformer {
 
     private static final Logger logger = LoggerFactory.getLogger(GroovyAdvancedTransformer.class);

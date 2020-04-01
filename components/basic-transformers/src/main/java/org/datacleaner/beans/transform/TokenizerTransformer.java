@@ -44,8 +44,8 @@ import org.datacleaner.components.categories.TextCategory;
  *
  *
  */
-@Named("Tokenizer")
-@Description("Tokenizes a String value (splits into substrings).")
+@Named("TokenizerTransformer.name")
+@Description("TokenizerTransformer.Description")
 @Categorized(TextCategory.class)
 public class TokenizerTransformer implements Transformer {
 

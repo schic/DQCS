@@ -47,9 +47,8 @@ import org.datacleaner.storage.RowAnnotationFactory;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
 
-@Named("Date/time analyzer")
-@Description("Records a variety of interesting measures for date or time based data. Which are the highest/lowest "
-        + "values? How is the year distribution of dates? Are there null values?")
+@Named("DateAndTimeAnalyzer.name")
+@Description("DateAndTimeAnalyzer.Description")
 @Concurrent(true)
 @Categorized(DateAndTimeCategory.class)
 public class DateAndTimeAnalyzer implements Analyzer<DateAndTimeAnalyzerResult> {

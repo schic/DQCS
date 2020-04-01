@@ -40,7 +40,9 @@ import org.datacleaner.api.Provided;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.TextCategory;
 
-@Named("Regex parser")
+@Named("RegexParserTransformer.name")
+@Description("RegexParserTransformer.Description")
+/*
 @Description("Parses strings using a regular expression and transforms it into substrings based on regex groups."
         + "A few examples:" + "<ul>"
         + "<li>Match 3-dimensional size specification (e.g. '42x61x3') anywhere in a string:"
@@ -48,6 +50,7 @@ import org.datacleaner.components.categories.TextCategory;
         + "<blockquote>(\\w+) (\\w+)</blockquote></li>"
         + "<li>Match a hash-sign and 3 pairs of hexadecimal digits (using pseudo-characters of Java regular expressions):"
         + "<blockquote>\\#?(\\p{XDigit}{2})(\\p{XDigit}{2})(\\p{XDigit}{2})</blockquote></li>" + "</ul>")
+*/
 @ExternalDocumentation({ @DocumentationLink(title = "Regex parsing with DataCleaner",
         url = "https://www.youtube.com/watch?v=VA6dw5Nv2AM", type = DocumentationType.VIDEO, version = "3.0"),
         @DocumentationLink(title = "Java Tutorials: Regular Expressions Lesson",

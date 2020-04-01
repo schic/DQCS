@@ -34,8 +34,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.NumbersCategory;
 
-@Named("Generate ID")
-@Description("Generates a unique and sequential record ID")
+@Named("GenerateIdTransformer.name")
+@Description("GenerateIdTransformer.Description")
 @Categorized(NumbersCategory.class)
 public class GenerateIdTransformer implements Transformer {
 

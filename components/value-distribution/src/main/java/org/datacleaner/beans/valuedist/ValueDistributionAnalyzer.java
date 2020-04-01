@@ -45,10 +45,8 @@ import org.datacleaner.util.NullTolerableComparator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Value distribution")
-@Description("Gets the distributions of values that occur in a dataset.\nOften used as an initial way to see if a "
-        + "lot of repeated values are to be expected, if nulls occur and if a few un-repeated values add exceptions "
-        + "to the typical usage-pattern.")
+@Named("ValueDistributionAnalyzer.name")
+@Description("ValueDistributionAnalyzer.Description")
 @ExternalDocumentation(
         { @DocumentationLink(title = "Analyzer rundown", url = "https://www.youtube.com/watch?v=hZWxB_eu_A0",
                 type = DocumentationType.VIDEO, version = "4.0") })

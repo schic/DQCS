@@ -48,9 +48,8 @@ import org.slf4j.LoggerFactory;
  *
  *
  */
-@Named("String analyzer")
-@Description("The String analyzer is used to collect a variety of typical metrics on string values.\n"
-        + "Metrics include statistics on character case, words, diacritics, white-spaces and more...")
+@Named("StringAnalyzer.name")
+@Description("StringAnalyzer.Description")
 @Concurrent(true)
 public class StringAnalyzer implements Analyzer<StringAnalyzerResult> {
 

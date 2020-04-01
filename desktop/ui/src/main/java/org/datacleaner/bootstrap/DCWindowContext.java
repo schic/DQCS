@@ -123,7 +123,7 @@ public final class DCWindowContext extends SimpleWindowContext implements Window
     @Override
     public boolean showExitDialog() {
         final int confirmation = JOptionPane
-                .showConfirmDialog(null, "Are you sure you want to exit DataCleaner?", "Exit",
+                .showConfirmDialog(null, "是否确定退出DataCleaner?", "退出",
                         JOptionPane.OK_CANCEL_OPTION);
 
         if (confirmation == JOptionPane.OK_OPTION) {

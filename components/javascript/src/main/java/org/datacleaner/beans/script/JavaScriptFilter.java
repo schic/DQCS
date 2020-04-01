@@ -36,9 +36,8 @@ import org.mozilla.javascript.Script;
 import org.mozilla.javascript.Scriptable;
 import org.mozilla.javascript.ScriptableObject;
 
-@Named("JavaScript filter")
-@Description(
-        "Supply your own piece of JavaScript that evaluates whether rows should be included or excluded from processing.")
+@Named("JavaScriptFilter.name")
+@Description("JavaScriptFilter.Description")
 @Categorized(ScriptingCategory.class)
 public class JavaScriptFilter implements Filter<JavaScriptFilter.Category> {
 

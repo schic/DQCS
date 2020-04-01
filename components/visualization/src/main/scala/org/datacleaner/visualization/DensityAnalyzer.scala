@@ -14,8 +14,8 @@ object DensityAnalyzer {
   final val PROPERTY_VARIABLE2 = "Variable2"
 }
 
-@Named("Density plot")
-@Description("Plots the occurences of two number variables in a density plot chart. A useful visualization for identifying freqencies of combinations in numeric data relationships.")
+@Named("DensityAnalyzer.name")
+@Description("DensityAnalyzer.Description")
 @Categorized(Array(classOf[VisualizationCategory]))
 class DensityAnalyzer extends Analyzer[IDensityAnalyzerResult] {
 

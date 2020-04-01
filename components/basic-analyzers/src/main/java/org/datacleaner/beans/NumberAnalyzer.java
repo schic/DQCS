@@ -58,8 +58,8 @@ import org.datacleaner.storage.RowAnnotations;
  * <li>Variance</li>
  * </ul>
  */
-@Named("Number analyzer")
-@Description("Provides insight into number-column values.")
+@Named("NumberAnalyzer.name")
+@Description("NumberAnalyzer.Description.")
 @Concurrent(true)
 public class NumberAnalyzer implements Analyzer<NumberAnalyzerResult> {
 

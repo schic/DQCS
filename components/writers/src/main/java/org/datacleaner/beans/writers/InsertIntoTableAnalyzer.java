@@ -71,9 +71,8 @@ import org.datacleaner.util.WriteBuffer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Insert into table")
-@Description( "Insert records into a table in a registered datastore. This component allows you to map the values "
-        + "available in the flow with the columns of the target table, in order to insert these values into the table.")
+@Named("InsertIntoTableAnalyzer.name")
+@Description("InsertIntoTableAnalyzer.Description")
 @Categorized(superCategory = WriteSuperCategory.class)
 @Concurrent(true)
 public class InsertIntoTableAnalyzer implements Analyzer<WriteDataResult>, Action<Iterable<Object[]>>, HasLabelAdvice {

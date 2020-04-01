@@ -30,8 +30,8 @@ import org.datacleaner.api.InputRow;
 import org.datacleaner.api.NumberProperty;
 import org.datacleaner.components.categories.FilterCategory;
 
-@Named("String length range")
-@Description("Filter rows based on the length of strings.")
+@Named("StringLengthRangeFilter.name")
+@Description("StringLengthRangeFilter.Description")
 @Categorized(FilterCategory.class)
 public class StringLengthRangeFilter implements Filter<RangeFilterCategory> {
 
