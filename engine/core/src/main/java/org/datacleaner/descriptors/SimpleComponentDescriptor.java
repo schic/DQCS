@@ -49,6 +49,7 @@ import org.datacleaner.api.Initialize;
 import org.datacleaner.api.MultiStreamComponent;
 import org.datacleaner.api.Provided;
 import org.datacleaner.api.Validate;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -116,7 +117,8 @@ class SimpleComponentDescriptor<B> extends AbstractDescriptor<B> implements Comp
         if (description == null) {
             return null;
         }
-        return description.value();
+//国际化
+        return PropertyUtil.getProperty(description.value(),description.value());
     }
 
     @Override
