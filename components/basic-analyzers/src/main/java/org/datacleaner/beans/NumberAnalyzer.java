@@ -59,7 +59,7 @@ import org.datacleaner.storage.RowAnnotations;
  * </ul>
  */
 @Named("NumberAnalyzer.name")
-@Description("NumberAnalyzer.Description.")
+@Description("NumberAnalyzer.Description")
 @Concurrent(true)
 public class NumberAnalyzer implements Analyzer<NumberAnalyzerResult> {
 

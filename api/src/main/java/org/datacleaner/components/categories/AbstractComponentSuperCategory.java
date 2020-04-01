@@ -20,6 +20,7 @@
 package org.datacleaner.components.categories;
 
 import org.datacleaner.api.ComponentSuperCategory;
+import org.datacleaner.util.ApiStringUtils;
 
 /**
  * Abstract implementation of {@link ComponentSuperCategory}. This
@@ -36,7 +37,8 @@ public abstract class AbstractComponentSuperCategory implements ComponentSuperCa
         if (simpleName.endsWith("SuperCategory")) {
             simpleName = simpleName.substring(0, simpleName.length() - "SuperCategory".length());
         }
-        return simpleName;
+        //return simpleName;
+        return ApiStringUtils.explodeCamelCase(simpleName, false);
     }
 
     @Override
