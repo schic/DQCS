@@ -44,6 +44,7 @@ import org.datacleaner.connection.UpdateableDatastore;
 import org.datacleaner.guice.InjectorBuilder;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.windows.DropTableDialog;
 
@@ -143,21 +144,21 @@ final class TableMouseListener extends MouseAdapter implements MouseListener {
 
     private void addRemoveTableFromSourceMenuItem(final Table table, final JPopupMenu popup) {
         final JMenuItem removeTableItem =
-                WidgetFactory.createMenuItem("Remove table from source", "images/actions/toggle-source-table.png");
+                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.table"), "images/actions/toggle-source-table.png");
         removeTableItem.addActionListener(e -> removeTable(table));
         popup.add(removeTableItem);
     }
 
     private void addAddTableToSourceMenuItem(final Table table, final JPopupMenu popup) {
         final JMenuItem addTableItem =
-                WidgetFactory.createMenuItem("Add table to source", "images/actions/toggle-source-table.png");
+                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.add.table"), "images/actions/toggle-source-table.png");
         addTableItem.addActionListener(e -> addTable(table));
         popup.add(addTableItem);
     }
 
     private void addSaveTableAsExcelMenuItem(final JPopupMenu popup, final Injector injector) {
         final JMenuItem saveAsExcelFileMenuItem =
-                WidgetFactory.createMenuItem("Save table as Excel spreadsheet", IconUtils.COMPONENT_TYPE_WRITE_DATA);
+                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.save.table.excel"), IconUtils.COMPONENT_TYPE_WRITE_DATA);
         final SaveTableAsExcelSpreadsheetActionListener saveTableAsExcelSpreadsheetActionListener =
                 injector.getInstance(SaveTableAsExcelSpreadsheetActionListener.class);
         saveAsExcelFileMenuItem.addActionListener(saveTableAsExcelSpreadsheetActionListener);
@@ -166,7 +167,7 @@ final class TableMouseListener extends MouseAdapter implements MouseListener {
 
     private void addSaveTableAsCsvMenuItem(final JPopupMenu popup, final Injector injector) {
         final JMenuItem saveAsCsvFileMenuItem =
-                WidgetFactory.createMenuItem("Save table as CSV file", IconUtils.COMPONENT_TYPE_WRITE_DATA);
+                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.save.table.csv"), IconUtils.COMPONENT_TYPE_WRITE_DATA);
         final SaveTableAsCsvFileActionListener saveTableAsCsvFileActionListener =
                 injector.getInstance(SaveTableAsCsvFileActionListener.class);
         saveAsCsvFileMenuItem.addActionListener(saveTableAsCsvFileActionListener);
@@ -174,7 +175,7 @@ final class TableMouseListener extends MouseAdapter implements MouseListener {
     }
 
     private void addPreviewTableMenuItem(final List<Column> columns, final JPopupMenu popup) {
-        final JMenuItem previewMenuItem = WidgetFactory.createMenuItem("Preview table", IconUtils.ACTION_PREVIEW);
+        final JMenuItem previewMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.table"), IconUtils.ACTION_PREVIEW);
         previewMenuItem.addActionListener(
                 new PreviewSourceDataActionListener(_schemaTree.getWindowContext(), _schemaTree.getDatastore(),
                         columns));
@@ -187,7 +188,7 @@ final class TableMouseListener extends MouseAdapter implements MouseListener {
             popup.addSeparator();
 
             final UpdateableDatastore updateableDatastore = (UpdateableDatastore) datastore;
-            final JMenuItem dropTableMenuItem = WidgetFactory.createMenuItem("Drop table", IconUtils.ACTION_DROP_TABLE);
+            final JMenuItem dropTableMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.drop.table"), IconUtils.ACTION_DROP_TABLE);
             dropTableMenuItem.addActionListener(e -> {
                 final DropTableDialog dialog =
                         new DropTableDialog(_windowContext, updateableDatastore, table, _schemaTree);

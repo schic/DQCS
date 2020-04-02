@@ -26,6 +26,7 @@ import org.datacleaner.connection.Datastore;
 import org.datacleaner.guice.DCModule;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.user.UserPreferences;
+import org.datacleaner.util.PropertyUtil;
 
 /**
  * This interface represents the main window in the DataCleaner GUI. An
@@ -40,13 +41,13 @@ public interface AnalysisJobBuilderWindow extends DCWindow {
 
     enum AnalysisWindowPanelType implements HasName {
 
-        WELCOME("Welcome"),
+        WELCOME(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.welcome")),
 
-        SELECT_DS("Select datastore"),
+        SELECT_DS(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.datastore")),
 
-        MANAGE_DS("Manage datastores"),
+        MANAGE_DS(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.manage.datastores")),
 
-        EDITING_CONTEXT("Analysis Job");
+        EDITING_CONTEXT(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.analyisi.job"));
 
         private final String _name;
 

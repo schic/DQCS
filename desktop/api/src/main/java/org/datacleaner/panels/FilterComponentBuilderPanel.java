@@ -37,6 +37,7 @@ import org.datacleaner.job.builder.FilterChangeListener;
 import org.datacleaner.job.builder.FilterComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.widgets.ChangeRequirementMenuBuilder;
@@ -121,7 +122,7 @@ public class FilterComponentBuilderPanel extends AbstractComponentBuilderPanel
         final FormPanel outcomeFormPanel = new FormPanel();
         outcomeFormPanel.addFormEntry("This filter categorizes records as", null, _outcomePanel);
 
-        addTaskPane(IconUtils.FILTER_OUTCOME_PATH, "Outcomes", outcomeFormPanel);
+        addTaskPane(IconUtils.FILTER_OUTCOME_PATH, PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.outcomes"), outcomeFormPanel);
         return result;
     }
 

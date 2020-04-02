@@ -52,6 +52,7 @@ import org.datacleaner.job.builder.TransformerComponentBuilder;
 import org.datacleaner.metadata.HasMetadataProperties;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.widgets.ChangeRequirementMenu;
 import org.datacleaner.widgets.DescriptorMenuBuilder;
@@ -123,7 +124,7 @@ public class JobGraphMouseListener extends MouseAdapter implements GraphMouseLis
 
         popup.add(createLinkMenuItem(table));
 
-        final JMenuItem previewMenuItem = new JMenuItem("Preview data",
+        final JMenuItem previewMenuItem = new JMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.data"),
                 ImageManager.get().getImageIcon(IconUtils.ACTION_PREVIEW, IconUtils.ICON_SIZE_SMALL));
         final AnalysisJobBuilder analysisJobBuilder = _graphContext.getAnalysisJobBuilder(table);
         final Datastore datastore = analysisJobBuilder.getDatastore();
@@ -146,7 +147,7 @@ public class JobGraphMouseListener extends MouseAdapter implements GraphMouseLis
 
         final JPopupMenu popup = new JPopupMenu();
 
-        final JMenuItem configureComponentMenuItem = new JMenuItem("Configure ...",
+        final JMenuItem configureComponentMenuItem = new JMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.configure..."),
                 ImageManager.get().getImageIcon(IconUtils.MENU_OPTIONS, IconUtils.ICON_SIZE_SMALL));
         configureComponentMenuItem.addActionListener(e -> _actions.showConfigurationDialog(componentBuilder));
         popup.add(configureComponentMenuItem);
@@ -164,13 +165,13 @@ public class JobGraphMouseListener extends MouseAdapter implements GraphMouseLis
         }
 
         final Icon renameIcon = ImageManager.get().getImageIcon(IconUtils.ACTION_RENAME, IconUtils.ICON_SIZE_SMALL);
-        final JMenuItem renameMenuItem = WidgetFactory.createMenuItem("Rename component", renameIcon);
+        final JMenuItem renameMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.rename.component"), renameIcon);
         renameMenuItem.addActionListener(new DefaultRenameComponentActionListener(componentBuilder, _graphContext));
         popup.add(renameMenuItem);
 
         if (!isMultiStream && componentBuilder instanceof TransformerComponentBuilder) {
             final TransformerComponentBuilder<?> tjb = (TransformerComponentBuilder<?>) componentBuilder;
-            final JMenuItem previewMenuItem = new JMenuItem("Preview data",
+            final JMenuItem previewMenuItem = new JMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.data"),
                     ImageManager.get().getImageIcon(IconUtils.ACTION_PREVIEW, IconUtils.ICON_SIZE_SMALL));
             previewMenuItem.addActionListener(new PreviewTransformedDataActionListener(_windowContext, tjb));
             previewMenuItem.setEnabled(componentBuilder.isConfigured());
@@ -194,9 +195,11 @@ public class JobGraphMouseListener extends MouseAdapter implements GraphMouseLis
         final ImageManager imageManager = ImageManager.get();
         final String menuItemText;
         if (from.getOutputDataStream() == null) {
-            menuItemText = "Link to ...";
+            menuItemText = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.link");
         } else {
-            menuItemText = "Link \"" + from.getOutputDataStream().getName() + "\" to ...";
+            menuItemText = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.link.prefix")
+                    + from.getOutputDataStream().getName()
+                    + PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.link.suffix");
         }
 
         final JMenuItem menuItem = new JMenuItem(menuItemText,

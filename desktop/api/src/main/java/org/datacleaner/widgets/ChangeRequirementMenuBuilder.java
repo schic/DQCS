@@ -41,6 +41,7 @@ import org.datacleaner.job.builder.FilterComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
 import org.datacleaner.util.LabelUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,8 +51,8 @@ import org.slf4j.LoggerFactory;
  */
 public class ChangeRequirementMenuBuilder {
 
-    public static final String NO_REQUIREMENT_TEXT = "(No requirement)";
-    public static final String ANY_REQUIREMENT_TEXT = "All records";
+    public static final String NO_REQUIREMENT_TEXT = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.no.requirement");
+    public static final String ANY_REQUIREMENT_TEXT = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.all.records");
     private static final Logger logger = LoggerFactory.getLogger(ChangeRequirementMenuBuilder.class);
     private static final ImageManager imageManager = ImageManager.get();
 
@@ -76,8 +77,7 @@ public class ChangeRequirementMenuBuilder {
 
         final List<JMenuItem> popup = new ArrayList<>();
         final JMenuItem noFilterMenuItem = new JMenuItem(NO_REQUIREMENT_TEXT);
-        noFilterMenuItem.setToolTipText("Do not apply any specific requirements on this component, "
-                + "except for those that are transitively inherited by the configuration.");
+        noFilterMenuItem.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.no.requirement.Description"));
         noFilterMenuItem.addActionListener(e -> {
             _componentBuilder.setComponentRequirement(null);
             onRequirementChanged();
@@ -85,8 +85,7 @@ public class ChangeRequirementMenuBuilder {
         popup.add(noFilterMenuItem);
 
         final JMenuItem anyFilterMenuItem = new JMenuItem(ANY_REQUIREMENT_TEXT);
-        anyFilterMenuItem.setToolTipText("Explicitly accept all records into this component, "
-                + "regardless of any other transitive requirements.");
+        anyFilterMenuItem.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.all.records.Description"));
         anyFilterMenuItem.addActionListener(e -> {
             _componentBuilder.setComponentRequirement(AnyComponentRequirement.get());
             onRequirementChanged();

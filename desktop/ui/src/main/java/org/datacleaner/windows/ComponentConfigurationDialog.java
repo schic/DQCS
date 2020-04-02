@@ -36,11 +36,7 @@ import org.datacleaner.job.builder.ComponentRemovalListener;
 import org.datacleaner.panels.ComponentBuilderPresenter;
 import org.datacleaner.panels.DCBannerPanel;
 import org.datacleaner.panels.DCPanel;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.LabelUtils;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetScreenResolutionAdjuster;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.widgets.ChangeRequirementButton;
 import org.datacleaner.widgets.ChangeRequirementMenu;
@@ -126,7 +122,7 @@ public class ComponentConfigurationDialog extends AbstractDialog implements Comp
         final DCBannerPanel banner = new DCBannerPanel(bannerImage, getBannerTitle());
         banner.setTitle2(getBannerTitle2(true));
 
-        final JButton renameButton = WidgetFactory.createDefaultButton("Rename", IconUtils.ACTION_RENAME);
+        final JButton renameButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.raname"), IconUtils.ACTION_RENAME);
         renameButton.addActionListener(new RenameComponentActionListener(_componentBuilder) {
             @Override
             protected void onNameChanged() {
@@ -136,7 +132,7 @@ public class ComponentConfigurationDialog extends AbstractDialog implements Comp
         });
 
         final JButton documentationButton =
-                WidgetFactory.createDefaultButton("Documentation", IconUtils.MENU_DOCUMENTATION);
+                WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.documentation"), IconUtils.MENU_DOCUMENTATION);
         documentationButton.addActionListener(new ComponentReferenceDocumentationActionListener(
                 _componentBuilder.getAnalysisJobBuilder().getConfiguration(), _componentBuilder.getDescriptor()));
 

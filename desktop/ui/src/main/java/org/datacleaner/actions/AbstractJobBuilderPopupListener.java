@@ -29,6 +29,7 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.widgets.ChangeRequirementMenu;
 
@@ -57,7 +58,7 @@ public abstract class AbstractJobBuilderPopupListener {
 
     public void showPopup(final Component parentComponent, final int x, final int y) {
         final Icon renameIcon = ImageManager.get().getImageIcon(IconUtils.ACTION_RENAME, IconUtils.ICON_SIZE_SMALL);
-        final JMenuItem renameMenuItem = WidgetFactory.createMenuItem("Rename component", renameIcon);
+        final JMenuItem renameMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.rename.component"), renameIcon);
         renameMenuItem.addActionListener(new RenameComponentActionListener(_componentBuilder) {
             @Override
             protected void onNameChanged() {

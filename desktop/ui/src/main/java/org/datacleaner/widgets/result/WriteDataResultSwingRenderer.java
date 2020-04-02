@@ -53,6 +53,7 @@ import org.datacleaner.result.renderer.SwingRenderingFormat;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.windows.AnalysisJobBuilderWindow;
@@ -197,7 +198,7 @@ public class WriteDataResultSwingRenderer extends AbstractRenderer<WriteDataResu
         final Datastore datastore = result.getDatastore(_datastoreCatalog);
         if (datastore != null && datastore.getName() != null) {
 
-            final JButton previewButton = WidgetFactory.createPrimaryButton("Preview table", IconUtils.ACTION_PREVIEW);
+            final JButton previewButton = WidgetFactory.createPrimaryButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.table"), IconUtils.ACTION_PREVIEW);
             previewButton.addActionListener(e -> {
                 try (DatastoreConnection con = datastore.openConnection()) {
                     con.getSchemaNavigator().refreshSchemas();

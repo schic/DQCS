@@ -41,6 +41,7 @@ import org.datacleaner.data.MutableInputColumn;
 import org.datacleaner.job.builder.TransformerChangeListener;
 import org.datacleaner.job.builder.TransformerComponentBuilder;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.ComboButton;
@@ -96,7 +97,7 @@ public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPa
         _writeDataButton = WidgetFactory.createDefaultButton("Write data", IconUtils.COMPONENT_TYPE_WRITE_DATA);
         _writeDataButton.addActionListener(new DisplayOutputWritersForTransformedDataActionListener(_componentBuilder));
 
-        _previewButton = WidgetFactory.createDefaultButton("Preview data", IconUtils.ACTION_PREVIEW);
+        _previewButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.data"), IconUtils.ACTION_PREVIEW);
         _previewButton.setBorder(WidgetUtils.BORDER_EMPTY);
         _previewAlternativesButton = WidgetFactory.createDefaultButton(WidgetUtils.CHAR_CARET_DOWN);
         final int defaultPreviewRows = getPreviewRows();

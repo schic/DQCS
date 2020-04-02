@@ -35,6 +35,7 @@ import org.datacleaner.user.DatastoreChangeListener;
 import org.datacleaner.user.DatastoreSelectedListener;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.UserPreferences;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.windows.AnalysisJobBuilderWindow;
 
 /**
@@ -61,7 +62,7 @@ public class SelectDatastoreContainerPanel extends DCSplashPanel
 
         setLayout(new BorderLayout());
         final JScrollPane scroll = wrapContent(_selectDatastorePanel);
-        add(createTitleLabel("Select datastore", true), BorderLayout.NORTH);
+        add(createTitleLabel(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.datastore"), true), BorderLayout.NORTH);
         add(scroll, BorderLayout.CENTER);
 
         addComponentListener(new ComponentAdapter() {

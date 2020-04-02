@@ -63,6 +63,7 @@ import org.datacleaner.job.runner.AnalysisRunnerImpl;
 import org.datacleaner.result.AnalysisResultWriter;
 import org.datacleaner.spark.SparkRunner;
 import org.datacleaner.user.DesktopConfigurationReaderInterceptor;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.VFSUtils;
 import org.datacleaner.util.convert.ResourceConverter;
 import org.slf4j.Logger;
@@ -452,10 +453,10 @@ public final class CliRunner implements Closeable {
                 write(" - Consumes " + propertiesForInput.size() + " named inputs");
                 for (final ConfiguredPropertyDescriptor propertyForInput : propertiesForInput) {
                     if (propertyForInput.isArray()) {
-                        write("   Input columns: " + propertyForInput.getName() + " (type: " + propertyForInput
+                        write(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.input.columns")+ ": " + propertyForInput.getName() + " (type: " + propertyForInput
                                 .getTypeArgument(0).getSimpleName() + ")");
                     } else {
-                        write("   Input column: " + propertyForInput.getName() + " (type: " + propertyForInput
+                        write(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.input.column") + ": " + propertyForInput.getName() + " (type: " + propertyForInput
                                 .getTypeArgument(0).getSimpleName() + ")");
                     }
                 }

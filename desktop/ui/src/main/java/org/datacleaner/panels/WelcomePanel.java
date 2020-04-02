@@ -133,26 +133,26 @@ public class WelcomePanel extends DCSplashPanel {
 				editorPane.setPreferredSize(new Dimension(DCSplashPanel.WIDTH_CONTENT, adjuster.adjust(120)));
 
 				final JButton tryProfessionalButton =
-						WidgetFactory.createDefaultButton("Try professional edition", IconUtils.APPLICATION_ICON);
+						WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.try.pfofessional.edition"), IconUtils.APPLICATION_ICON);
 				tryProfessionalButton.addActionListener(new OpenBrowserAction(
 						"https://www.quadient.com/products/quadient-datacleaner#get-started-today"));
 
 				final JButton discussionForumButton =
-						WidgetFactory.createDefaultButton("Visit the discussion forum", "images/menu/forum.png");
+						WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.visit.discussion.forum"), "images/menu/forum.png");
 				discussionForumButton
-						.setToolTipText("Visit the online discussion forum for questions and answers in the community");
+						.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.visit.discussion.forum.Description"));
 				final OpenDataCleanerWebsiteActionListener forumActionListener =
 						new OpenDataCleanerWebsiteActionListener("/discuss");
 				discussionForumButton.addActionListener(forumActionListener);
 
 				final JButton twitterButton = WidgetFactory.createDefaultButton(null, "images/menu/twitter.png");
-				twitterButton.setToolTipText("Spread the message about #DataCleaner on Twitter");
+				twitterButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.visit.twitter"));
 				twitterButton.addActionListener(new OpenBrowserAction("https://twitter.com/intent/tweet?text="
 						+ UrlEscapers.urlFormParameterEscaper().escape("I'm using @DataCleaner (v. "
 						+ Version.getVersion() + ") for some really fancy #dataquality stuff!")));
 
 				final JButton linkedInButton = WidgetFactory.createDefaultButton(null, "images/menu/linkedin.png");
-				linkedInButton.setToolTipText("Join our LinkedIn group of users and professionals");
+				linkedInButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.visit.in"));
 				linkedInButton.addActionListener(new OpenBrowserAction("http://www.linkedin.com/groups?gid=3352784"));
 
 				final JLabel loveFeedbackAnimation =

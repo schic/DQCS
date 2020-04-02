@@ -54,14 +54,7 @@ import org.datacleaner.job.builder.UnconfiguredConfiguredPropertyException;
 import org.datacleaner.panels.DCPanel;
 import org.datacleaner.result.renderer.RendererFactory;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.DragDropUtils;
-import org.datacleaner.util.GraphUtils;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.LabelUtils;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetScreenResolutionAdjuster;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.windows.ComponentConfigurationDialog;
 import org.datacleaner.windows.SourceTableConfigurationDialog;
@@ -76,6 +69,7 @@ import edu.uci.ics.jung.visualization.VisualizationServer.Paintable;
 import edu.uci.ics.jung.visualization.VisualizationViewer;
 import edu.uci.ics.jung.visualization.VisualizationViewer.GraphMouse;
 import edu.uci.ics.jung.visualization.control.PluggableGraphMouse;
+import scala.sys.Prop;
 
 /**
  * Class capable of creating graphs that visualize {@link AnalysisJob}s or parts of them as a graph.
@@ -270,26 +264,22 @@ public final class JobGraph {
 
                 g.setColor(WidgetUtils.BG_COLOR_MEDIUM);
                 if (_analysisJobBuilder.getSourceColumns().size() == 0) {
-                    title = "Select source ...";
-                    subTitle = "Pick table/columns in the tree to the left.\n"
-                            + "You can drag it onto this canvas with your mouse.";
+                    title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.title");
+                    subTitle = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.subtitle");
                     imagePath = "images/window/canvas-bg-table.png";
                 } else if (_analysisJobBuilder.getComponentCount() == 0) {
-                    title = "Start building ...";
-                    subTitle = "Add components to your job. Right-click the canvas\n"
-                            + "to explore the library of available components.";
+                    title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.start.title");
+                    subTitle = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.start.subtitle");
                     imagePath = "images/window/canvas-bg-plus.png";
                 } else if (graph.getEdgeCount() == 0) {
-                    title = "Connect the pieces ...";
-                    subTitle = "Right-click the source table and select 'Link to ...'.\n"
-                            + "This directs the flow of data to the component.";
+                    title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.connect.title");
+                    subTitle = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.connect.subtitle");
                     imagePath = "images/window/canvas-bg-connect.png";
                 } else if (_analysisJobBuilder.getResultProducingComponentBuilders().size() == 0
                         && _analysisJobBuilder.getConsumedOutputDataStreamsJobBuilders().size() == 0
                         && _analysisJobBuilder.getComponentCount() <= 3) {
-                    title = "Your job is almost ready.";
-                    subTitle = "Jobs need to either 'Analyze' or 'Write' something.\n"
-                            + "So add one or more such components.";
+                    title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.job.title");
+                    subTitle = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.job.subtitle");
                     imagePath = "images/window/canvas-bg-plus.png";
                 } else {
                     title = null;
@@ -298,15 +288,14 @@ public final class JobGraph {
 
                     try {
                         if (_analysisJobBuilder.isConfigured(true)) {
-                            title = "Ready to execute";
-                            subTitle =
-                                    "Click the 'Execute' button in the upper-right\ncorner when you're ready to run the job.";
+                            title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.execute.title");
+                            subTitle = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.execute.subtitle");
                             imagePath = "images/window/canvas-bg-execute.png";
                             g.drawImage(ImageManager.get().getImage("images/window/canvas-bg-execute-hint.png"),
                                     size.width - adjuster.adjust(175), 0, null);
                         } else {
-                            title = "Configure the job ...";
-                            subTitle = "Job is not correctly configured";
+                            title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.configure.title");
+                            subTitle = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.configure.subtitle");
                             imagePath = "images/window/canvas-bg-error.png";
                         }
                     } catch (final Exception ex) {
@@ -319,10 +308,12 @@ public final class JobGraph {
                                     unconfiguredConfiguredPropertyException.getConfiguredProperty();
                             final ComponentBuilder componentBuilder =
                                     unconfiguredConfiguredPropertyException.getComponentBuilder();
-                            title = "Configure " + "'" + LabelUtils.getLabel(componentBuilder) + "' ...";
-                            errorMessage = "Please set '" + configuredProperty.getName() + "' to continue";
+                            title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.configure.set") + "'" + LabelUtils.getLabel(componentBuilder) + "' ...";
+                            errorMessage = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.configure.prefixset")
+                                    + configuredProperty.getName()
+                                    + PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.configure.suffixset");
                         } else {
-                            title = "Something went wrong ...";
+                            title = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.wrong");
                             errorMessage = ex.getMessage();
                         }
                         subTitle = errorMessage;

@@ -47,11 +47,7 @@ import org.datacleaner.api.InputColumn;
 import org.datacleaner.bootstrap.WindowContext;
 import org.datacleaner.data.MutableInputColumn;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.LabelUtils;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.table.DCTable;
 import org.jdesktop.swingx.table.TableColumnExt;
 
@@ -141,7 +137,7 @@ public final class ColumnListTable extends DCPanel {
 
             if (_editable) {
                 final JButton removeButton = WidgetFactory.createSmallButton(IconUtils.ACTION_REMOVE_DARK);
-                removeButton.setToolTipText("Remove table from source");
+                removeButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.table"));
                 removeButton.addActionListener(e -> _analysisJobBuilder.removeSourceTable(_table));
                 headerPanel.add(Box.createHorizontalStrut(4));
                 headerPanel.add(removeButton);
