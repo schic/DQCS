@@ -43,6 +43,7 @@ import javax.swing.text.SimpleAttributeSet;
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.guice.InjectorBuilder;
 import org.datacleaner.util.DCDocumentListener;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetScreenResolutionAdjuster;
 import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.LoadingIcon;
@@ -65,7 +66,7 @@ public class SchemaTreePanel extends DCPanel {
     private static final WidgetScreenResolutionAdjuster adjuster = WidgetScreenResolutionAdjuster.get();
     private static final Logger logger = LoggerFactory.getLogger(SchemaTreePanel.class);
 
-    private static final String DEFAULT_SEARCH_FIELD_TEXT = "Search component library...";
+    private static final String DEFAULT_SEARCH_FIELD_TEXT = PropertyUtil.getProperty("datacleaner.ui.desktop.tree.search.component");
 
     private static final int LOADER_WIDTH = adjuster.adjust(150);
     private final InjectorBuilder _injectorBuilder;

@@ -103,7 +103,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
         _userPreferences = userPreferences;
 
         // initialize "Build job" button
-        _analyzeButton = WidgetFactory.createPrimaryButton("Build job", IconUtils.MODEL_JOB);
+        _analyzeButton = WidgetFactory.createPrimaryButton(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.build"), IconUtils.MODEL_JOB);
         _analyzeButton.addActionListener(e -> {
             for (final DatastorePanel datastorePanel : _datastorePanels) {
                 if (datastorePanel.isSelected()) {
@@ -121,7 +121,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
         });
 
         // initialize search text field
-        _searchDatastoreTextField = WidgetFactory.createTextField("Search/filter datastores");
+        _searchDatastoreTextField = WidgetFactory.createTextField(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.search.filter"));
         _searchDatastoreTextField.getDocument().addDocumentListener(new DCDocumentListener() {
             @Override
             protected void onChange(final DocumentEvent event) {
@@ -300,7 +300,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
     private Component createMoreDatabasesButton(final List<DatastoreDescriptor> availableDatastoreDescriptors,
             final Set<String> promotedDatabases) {
         final PopupButton moreDatastoreTypesButton =
-                WidgetFactory.createDefaultPopupButton("More databases", IconUtils.GENERIC_DATASTORE_IMAGEPATH);
+                WidgetFactory.createDefaultPopupButton(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.more"), IconUtils.GENERIC_DATASTORE_IMAGEPATH);
         moreDatastoreTypesButton.setMenuPosition(MenuPosition.TOP);
 
         final JPopupMenu moreDatastoreTypesMenu = moreDatastoreTypesButton.getMenu();
@@ -320,7 +320,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
 
         moreDatastoreTypesMenu.addSeparator();
 
-        final JMenuItem databaseDriversMenuItem = WidgetFactory.createMenuItem("Manage database drivers...",
+        final JMenuItem databaseDriversMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.more.driver"),
                 imageManager.getImageIcon(IconUtils.MENU_OPTIONS, IconUtils.ICON_SIZE_SMALL));
         databaseDriversMenuItem.addActionListener(e -> {
             final OptionsDialog dialog = _optionsDialogProvider.get();

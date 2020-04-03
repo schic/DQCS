@@ -29,6 +29,7 @@ import javax.swing.JOptionPane;
 
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.user.UserPreferences;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.windows.AbstractDialog;
 import org.datacleaner.windows.AbstractWindow;
 import org.datacleaner.windows.DCWindow;
@@ -123,7 +124,8 @@ public final class DCWindowContext extends SimpleWindowContext implements Window
     @Override
     public boolean showExitDialog() {
         final int confirmation = JOptionPane
-                .showConfirmDialog(null, "是否确定退出DataCleaner?", "退出",
+                .showConfirmDialog(null, PropertyUtil.getProperty("datacleaner.ui.desktop.text.exit.Description"),
+                        PropertyUtil.getProperty("datacleaner.ui.desktop.text.exit"),
                         JOptionPane.OK_CANCEL_OPTION);
 
         if (confirmation == JOptionPane.OK_OPTION) {

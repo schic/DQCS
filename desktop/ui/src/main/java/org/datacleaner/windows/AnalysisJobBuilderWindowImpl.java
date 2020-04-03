@@ -612,10 +612,12 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
 
             if (isJobUnsaved(getJobFile(), _analysisJobBuilder) && (_saveButton.isEnabled())) {
 
-                final Object[] buttons = { "Save changes", "Discard changes", "Cancel" };
+                final Object[] buttons = { PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.save"),
+                        PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.discard"),
+                        PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.cancel") };
                 final int unsavedChangesChoice = JOptionPane
-                        .showOptionDialog(this, "The job has unsaved changes. What would you like to do?",
-                                "Unsaved changes detected", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
+                        .showOptionDialog(this, PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.Description"),
+                                PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.title"), JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
                                 null, buttons, buttons[1]);
 
                 if (unsavedChangesChoice == 0) { // save changes
@@ -829,7 +831,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
     }
 
     private JToggleButton createMoreMenuButton() {
-        final JMenuItem optionsMenuItem = WidgetFactory.createMenuItem("Options", IconUtils.MENU_OPTIONS);
+        final JMenuItem optionsMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.options"), IconUtils.MENU_OPTIONS);
         optionsMenuItem.addActionListener(e -> {
             final OptionsDialog optionsDialog = _optionsDialogProvider.get();
             optionsDialog.getTabbedPane().setSelectedIndex(0);
