@@ -185,7 +185,7 @@ public abstract class AbstractComponentBuilderPanel extends DCPanel implements C
         final List<ConfiguredPropertyTaskPane> result = new ArrayList<>();
         result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.input.columns"), IconUtils.MODEL_COLUMN, inputProperties));
         result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.required.properties"), IconUtils.MENU_OPTIONS, requiredProperties));
-        result.add(new ConfiguredPropertyTaskPane("Optional properties (" + optionalProperties.size() + ")",
+        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.component.optional") + "(" + optionalProperties.size() + ")",
                 IconUtils.ACTION_EDIT, optionalProperties, false));
 
         return result;

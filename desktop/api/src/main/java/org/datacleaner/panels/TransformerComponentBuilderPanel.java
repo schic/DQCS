@@ -94,7 +94,7 @@ public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPa
 
         _outputColumnsTable = new ColumnListTable(outputColumns, getAnalysisJobBuilder(), false, _windowContext);
 
-        _writeDataButton = WidgetFactory.createDefaultButton("Write data", IconUtils.COMPONENT_TYPE_WRITE_DATA);
+        _writeDataButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.component.write"), IconUtils.COMPONENT_TYPE_WRITE_DATA);
         _writeDataButton.addActionListener(new DisplayOutputWritersForTransformedDataActionListener(_componentBuilder));
 
         _previewButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.data"), IconUtils.ACTION_PREVIEW);
@@ -186,7 +186,7 @@ public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPa
             outputColumnsPanel.add(WidgetUtils.decorateWithShadow(_outputColumnsTable), BorderLayout.CENTER);
             outputColumnsPanel.add(bottomButtonPanel, BorderLayout.SOUTH);
 
-            addTaskPane(IconUtils.MODEL_SOURCE, "Output columns", outputColumnsPanel);
+            addTaskPane(IconUtils.MODEL_SOURCE, PropertyUtil.getProperty("datacleaner.ui.desktop.component.output.columns"), outputColumnsPanel);
         }
         return result;
     }
