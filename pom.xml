@@ -15,7 +15,9 @@
 		<easymock.version>3.6</easymock.version>
 		<httpcomponents.version>4.5.5</httpcomponents.version>
 		<metamodel.version>5.3.1</metamodel.version>
+		<!--<metamodel.version>4.5.4</metamodel.version>-->
 		<metamodel.extras.version>5.2.0</metamodel.extras.version>
+		<gwt.version>2.7.0</gwt.version>
 		<spring.core.version>4.3.16.RELEASE</spring.core.version>
 		<freemarker.version>2.3.28</freemarker.version>
 		<icu4j.version>61.1</icu4j.version>
@@ -27,6 +29,11 @@
 		<jung.version>2.1.1</jung.version>
 		<guava.version>27.0.1-jre</guava.version>
 		<hadoop.version>3.1.1</hadoop.version>
+
+		<spring.security.version>3.2.9.RELEASE</spring.security.version>
+		<quartz.version>2.1.7</quartz.version>
+		<javax.jsp.version>2.3.1</javax.jsp.version>
+		<ocpsoft.rewrite.version>2.0.12.Final</ocpsoft.rewrite.version>
 
 		<!-- TODO: The following (inter-dependent) dependencies are due for upgrades before Java 11 -->
 		<spark.version>1.6.3</spark.version>
@@ -66,7 +73,7 @@
 				<module>engine</module>
 				<module>components</module>
 				<module>desktop</module>
-
+				<module>monitor</module>
 			</modules>
 		</profile>
 		<profile>
@@ -1657,6 +1664,68 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-cas</artifactId>
+				<version>${spring.security.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>net.jcip</groupId>
+						<artifactId>jcip-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xml-apis</groupId>
+						<artifactId>xml-apis</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>xerces</groupId>
+						<artifactId>xercesImpl</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-web</artifactId>
+				<version>${spring.security.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-aop</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-config</artifactId>
+				<version>${spring.security.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework</groupId>
+						<artifactId>spring-aop</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz</artifactId>
+				<version>${quartz.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet.jsp</groupId>
+				<artifactId>javax.servlet.jsp-api</artifactId>
+				<version>${javax.jsp.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.ocpsoft.rewrite</groupId>
+				<artifactId>rewrite-servlet</artifactId>
+				<version>${ocpsoft.rewrite.version}</version>
+			</dependency>
 		</dependencies>
+
 	</dependencyManagement>
 </project>
