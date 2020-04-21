@@ -32,9 +32,9 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.datacleaner.configuration.JaxbConfigurationReader;
-import org.datacleaner.configuration.jaxb.Configuration;
+//import org.datacleaner.configuration.jaxb.Configuration;
 import org.datacleaner.monitor.configuration.TenantContext;
-import org.datacleaner.monitor.configuration.WriteUpdatedConfigurationFileAction;
+//import org.datacleaner.monitor.configuration.WriteUpdatedConfigurationFileAction;
 import org.datacleaner.reference.Dictionary;
 import org.datacleaner.reference.ReferenceData;
 import org.datacleaner.reference.StringPattern;
@@ -146,22 +146,22 @@ public class ReferenceDataDaoImpl implements ReferenceDataDao {
     @Override
     public void removeDictionary(final TenantContext tenantContext, final Dictionary dictionary)
             throws IllegalArgumentException {
-        removeReferenceData(tenantContext, dictionary);
+        //removeReferenceData(tenantContext, dictionary);
     }
 
     @Override
     public void removeSynonymCatalog(final TenantContext tenantContext, final SynonymCatalog synonymCatalog)
             throws IllegalArgumentException {
-        removeReferenceData(tenantContext, synonymCatalog);
+        //removeReferenceData(tenantContext, synonymCatalog);
     }
 
     @Override
     public void removeStringPattern(final TenantContext tenantContext, final StringPattern stringPattern)
             throws IllegalArgumentException {
-        removeReferenceData(tenantContext, stringPattern);
+        //removeReferenceData(tenantContext, stringPattern);
     }
 
-    public void removeReferenceData(final TenantContext tenantContext, final ReferenceData referenceData)
+    /*public void removeReferenceData(final TenantContext tenantContext, final ReferenceData referenceData)
             throws IllegalArgumentException {
         if (referenceData == null) {
             throw new IllegalArgumentException("Reference data can not be null");
@@ -193,9 +193,9 @@ public class ReferenceDataDaoImpl implements ReferenceDataDao {
         configurationFile.writeFile(out -> {
             jaxbConfigurationAdaptor.marshall(configuration, out);
         });
-    }
+    }*/
 
-    private List<Object> getReferenceDataListByType(Configuration configuration, ReferenceData referenceData) {
+    /*private List<Object> getReferenceDataListByType(Configuration configuration, ReferenceData referenceData) {
         if (referenceData instanceof Dictionary) {
             return configuration.getReferenceDataCatalog().getDictionaries()
                     .getTextFileDictionaryOrValueListDictionaryOrDatastoreDictionary();
@@ -209,4 +209,4 @@ public class ReferenceDataDaoImpl implements ReferenceDataDao {
             return new ArrayList<>();
         }
     }
-}
+*/}

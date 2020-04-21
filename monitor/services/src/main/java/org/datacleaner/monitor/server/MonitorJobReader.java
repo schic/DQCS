@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.metamodel.schema.ColumnType;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.configuration.SourceColumnMapping;
 import org.datacleaner.connection.Datastore;
@@ -59,14 +59,14 @@ public class MonitorJobReader {
         final JaxbJobReader jobReader = new JaxbJobReader(_configuration);
 
         // read metadata
-        final AnalysisJobMetadata metadata = _jobFile.readFile(new Func<InputStream, AnalysisJobMetadata>() {
+        /*final AnalysisJobMetadata metadata = _jobFile.readFile(new Func<InputStream, AnalysisJobMetadata>() {
             @Override
             public AnalysisJobMetadata eval(InputStream in) {
                 return jobReader.readMetadata(in);
             }
-        });
+        });*/
 
-        final String datastoreName = metadata.getDatastoreName();
+        /*final String datastoreName = metadata.getDatastoreName();
         final Datastore datastore = _configuration.getDatastoreCatalog().getDatastore(datastoreName);
 
         // read job
@@ -93,11 +93,12 @@ public class MonitorJobReader {
                     return jobReader.create(inputStream, variableOverrides);
                 }
             }
-        };
+        };*/
 
-        try (final AnalysisJobBuilder jobBuilder = _jobFile.readFile(readCallback)) {
+        /*try (final AnalysisJobBuilder jobBuilder = _jobFile.readFile(readCallback)) {
             final AnalysisJob job = jobBuilder.toAnalysisJob(false);
             return job;
-        }
+        }*/
+        return null;
     }
 }

@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.servlet.http.HttpSession;
 
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.datacleaner.monitor.shared.model.DCUserInputException;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
 import org.datacleaner.monitor.shared.model.WizardIdentifier;
@@ -162,7 +162,7 @@ public class WizardDaoImpl implements WizardDao {
      * 
      * @return
      */
-    @Override
+    /*@Override
     public Func<String, Object> createSessionFunc() {
         return new Func<String, Object>() {
             @Override
@@ -173,12 +173,12 @@ public class WizardDaoImpl implements WizardDao {
                 return session.getAttribute(key);
             }
         };
-    }
+    }*/
 
     /**
      * Creates a "page" that symbolizes a finished wizard.
      * 
-     * @param sessionId
+     * @param
      * @param wizardResult
      * @return
      */

@@ -37,7 +37,7 @@ import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.util.FileFilters;
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Predicate;
+//import org.apache.metamodel.util.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
@@ -89,7 +89,7 @@ public class ResultDaoImpl implements ResultDao {
 
         final List<RepositoryFile> candidatesByFilename = resultsFolder.getFiles(prefix, extension);
 
-        final List<RepositoryFile> files = CollectionUtils.filter(candidatesByFilename,
+        /*final List<RepositoryFile> files = CollectionUtils.filter(candidatesByFilename,
                 new Predicate<RepositoryFile>() {
                     @Override
                     public Boolean eval(RepositoryFile file) {
@@ -106,9 +106,10 @@ public class ResultDaoImpl implements ResultDao {
                             return false;
                         }
                     }
-                });
+                });*/
 
-        return files;
+        //return files;
+        return null;
     }
 
     @Override

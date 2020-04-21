@@ -29,7 +29,7 @@ import javax.annotation.security.RolesAllowed;
 import org.apache.metamodel.pojo.ArrayTableDataProvider;
 import org.apache.metamodel.pojo.TableDataProvider;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.apache.metamodel.util.HasNameMapper;
 import org.apache.metamodel.util.SimpleTableDef;
 import org.datacleaner.configuration.DataCleanerConfiguration;
@@ -108,16 +108,16 @@ public class JobInvocationController {
         final List<String> columnNames = getColumnNames(analysisJobContext.getSourceColumnPaths(), tablePath);
 
         final List<JobInvocationRowData> inputRows = input.getRows();
-        final List<Object[]> inputRowData = CollectionUtils.map(inputRows, new Func<JobInvocationRowData, Object[]>() {
+        /*final List<Object[]> inputRowData = CollectionUtils.map(inputRows, new Func<JobInvocationRowData, Object[]>() {
             @Override
             public Object[] eval(JobInvocationRowData rowData) {
                 return rowData.getValues();
             }
         });
-
+*/
         // TODO: No column types added
         final SimpleTableDef tableDef = new SimpleTableDef(tableName, columnNames.toArray(new String[0]));
-        tableDataProviders.add(new ArrayTableDataProvider(tableDef, inputRowData));
+        //tableDataProviders.add(new ArrayTableDataProvider(tableDef, inputRowData));
 
         final String datastoreName = analysisJobContext.getSourceDatastoreName();
         final PojoDatastore placeholderDatastore = new PojoDatastore(datastoreName, schemaName, tableDataProviders);
@@ -217,7 +217,7 @@ public class JobInvocationController {
     }
 
     private List<String> getColumnNames(List<String> columnPaths, String tablePath){
-        return CollectionUtils.map(columnPaths, new Func<String, String>() {
+        /*return CollectionUtils.map(columnPaths, new Func<String, String>() {
             @Override
             public String eval(String columnPath) {
                 if (!tablePath.isEmpty()) {
@@ -225,7 +225,8 @@ public class JobInvocationController {
                 }
                 return columnPath;
             }
-        });
+        });*/
+        return null;
     }
 
     private JobContext getJob(String jobName, TenantContext tenantContext){

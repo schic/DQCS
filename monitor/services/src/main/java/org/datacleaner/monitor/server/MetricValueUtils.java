@@ -17,13 +17,14 @@
  * 51 Franklin Street, Fifth Floor
  * Boston, MA  02110-1301  USA
  */
+
 package org.datacleaner.monitor.server;
 
 import de.odysseus.el.ExpressionFactoryImpl;
 import de.odysseus.el.util.SimpleContext;
 import org.apache.metamodel.util.CollectionUtils;
 import org.apache.metamodel.util.HasNameMapper;
-import org.apache.metamodel.util.Predicate;
+//import org.apache.metamodel.util.Predicate;
 import org.datacleaner.api.AnalyzerResult;
 import org.datacleaner.api.AnalyzerResultFuture;
 import org.datacleaner.api.InputColumn;
@@ -51,7 +52,8 @@ public class MetricValueUtils {
 
     private static final Logger logger = LoggerFactory.getLogger(MetricValueUtils.class);
 
-    /**
+
+/**
      * Gets the {@link AnalyzerResult} from an {@link AnalysisResult} object,
      * matching a particular {@link AnalyzerJob}. Unlike the plain
      * {@link AnalysisResult#getResult(ComponentJob)} method, this method will
@@ -66,6 +68,7 @@ public class MetricValueUtils {
      *             if it was not possible to identify a proper
      *             {@link AnalyzerResult} based on the parameters.
      */
+
     public AnalyzerResult getResult(final AnalysisResult analysisResult, final ComponentJob componentJob,
             final MetricIdentifier metricIdentifier) throws IllegalArgumentException {
         AnalyzerResult result = null;
@@ -109,6 +112,7 @@ public class MetricValueUtils {
         }
 
         // filter analyzers of the corresponding type
+
         candidates = CollectionUtils.filter(candidates, new Predicate<ComponentJob>() {
             @Override
             public Boolean eval(ComponentJob o) {
@@ -117,6 +121,7 @@ public class MetricValueUtils {
                 return metricDescriptorName.equals(actualDescriptorName);
             }
         });
+
 
         if (!StringUtils.isNullOrEmpty(analyzerJobName)) {
             // filter analyzers with a particular name
@@ -191,7 +196,8 @@ public class MetricValueUtils {
         return analysisResult.getResult(candidate);
     }
 
-    /**
+
+/**
      * Gets the {@link ComponentJob} that applies to a specific metric.
      * 
      * @param metric
@@ -202,6 +208,7 @@ public class MetricValueUtils {
      *            the analysis result to look into, or null if not available
      * @return
      */
+
     public ComponentJob getComponentJob(MetricIdentifier metric, final AnalysisJob analysisJob,
             AnalysisResult analysisResult) {
         final MetricIdentifier metricIdentifier;
@@ -409,7 +416,8 @@ public class MetricValueUtils {
         return new ExpressionFactoryImpl();
     }
 
-    /**
+
+/**
      * Builds a list of {@link MetricGroup}s for a specific {@link AnalysisJob}.
      * 
      * @param jobContext
@@ -417,6 +425,7 @@ public class MetricValueUtils {
      * 
      * @return
      */
+
     public List<MetricGroup> getMetricGroups(MetricJobContext jobContext, AnalysisJob analysisJob) {
         final List<MetricGroup> metricGroups = new ArrayList<>();
         final List<AnalyzerJob> analyzerJobs = analysisJob.flattened()
@@ -454,7 +463,8 @@ public class MetricValueUtils {
         return columnNames;
     }
 
-    /**
+
+/**
      * Builds a {@link MetricGroup} for a specific {@link ComponentJob}.
      * 
      * @param job
@@ -463,6 +473,7 @@ public class MetricValueUtils {
      * @return the built {@link MetricGroup}, or null if there was no metrics to
      *         build
      */
+
     public MetricGroup getMetricGroup(MetricJobContext job, ComponentJob componentJob,
             Set<MetricDescriptor> metricDescriptors) {
         if (metricDescriptors == null || metricDescriptors.isEmpty()) {

@@ -34,11 +34,11 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.apache.metamodel.util.Action;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.datacleaner.configuration.DomConfigurationWriter;
 import org.datacleaner.configuration.JaxbConfigurationReader;
-import org.datacleaner.configuration.jaxb.AbstractDatastoreType;
-import org.datacleaner.configuration.jaxb.Configuration;
+//import org.datacleaner.configuration.jaxb.AbstractDatastoreType;
+//import org.datacleaner.configuration.jaxb.Configuration;
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.connection.DatastoreCatalog;
 import org.datacleaner.monitor.configuration.TenantContext;
@@ -61,7 +61,7 @@ public class DatastoreDaoImpl implements DatastoreDao {
 
     private static final Logger logger = LoggerFactory.getLogger(DatastoreDaoImpl.class);
 
-    @Override
+    /*@Override
     public void removeDatastore(TenantContext tenantContext, String datastoreName) throws IllegalArgumentException {
         if (datastoreName == null) {
             throw new IllegalArgumentException("Datastore name cannot be null");
@@ -80,7 +80,7 @@ public class DatastoreDaoImpl implements DatastoreDao {
 
         boolean found = false;
 
-        final List<AbstractDatastoreType> datastores = configuration.getDatastoreCatalog()
+        *//*final List<AbstractDatastoreType> datastores = configuration.getDatastoreCatalog()
                 .getJdbcDatastoreOrAccessDatastoreOrCsvDatastore();
         for (Iterator<AbstractDatastoreType> it = datastores.iterator(); it.hasNext();) {
             final AbstractDatastoreType abstractDatastoreType = it.next();
@@ -91,7 +91,7 @@ public class DatastoreDaoImpl implements DatastoreDao {
                 found = true;
                 break;
             }
-        }
+        }*//*
 
         if (!found) {
             throw new IllegalArgumentException("Could not find datastore with name '" + datastoreName + "'");
@@ -104,7 +104,7 @@ public class DatastoreDaoImpl implements DatastoreDao {
             }
         });
     }
-
+*/
     @Override
     public Element parseDatastoreElement(Reader reader) {
         final DocumentBuilder documentBuilder = getDocumentBuilder();
@@ -123,6 +123,11 @@ public class DatastoreDaoImpl implements DatastoreDao {
     }
 
     @Override
+    public String addDatastore(TenantContext tenantContext, Element datastoreElement) {
+        return null;
+    }
+
+    @Override
     public String addDatastore(TenantContext tenantContext, Datastore datastore) throws UnsupportedOperationException {
         final DomConfigurationWriter externalizer = new DomConfigurationWriter();
         final Element element = externalizer.externalize(datastore);
@@ -131,11 +136,16 @@ public class DatastoreDaoImpl implements DatastoreDao {
     }
 
     @Override
-    public String addDatastore(TenantContext tenantContext, Element datastoreElement) {
+    public void removeDatastore(TenantContext tenantContext, String datastoreName) throws IllegalArgumentException {
+
+    }
+
+    //@Override
+    /*public String addDatastore(TenantContext tenantContext, Element datastoreElement) {
 
         final RepositoryFile confFile = tenantContext.getConfigurationFile();
         // parse the configuration file
-        final Document configurationFileDocument = confFile.readFile(new Func<InputStream, Document>() {
+        *//*final Document configurationFileDocument = confFile.readFile(new Func<InputStream, Document>() {
             @Override
             public Document eval(InputStream in) {
                 try {
@@ -144,7 +154,7 @@ public class DatastoreDaoImpl implements DatastoreDao {
                     throw new IllegalStateException("Could not parse configuration file", e);
                 }
             }
-        });
+        });*//*
 
         // add the new datastore to the <datastore-catalog> element of the
         // configuration file
@@ -190,7 +200,7 @@ public class DatastoreDaoImpl implements DatastoreDao {
         }
         return datastoreName;
     }
-
+*/
     protected DocumentBuilder getDocumentBuilder() {
         return XmlUtils.createDocumentBuilder();
     }

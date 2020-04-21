@@ -103,7 +103,7 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
     @Autowired
     public DataCleanerJobEngine(ClusterManagerFactory clusterManagerFactory, DescriptorProvider descriptorProvider,
-            ApplicationContext applicationContext) {
+                                ApplicationContext applicationContext) {
         super(FileFilters.ANALYSIS_XML.getExtension());
         _clusterManagerFactory = clusterManagerFactory;
         _descriptorProvider = descriptorProvider;
@@ -112,10 +112,10 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
     }
 
     /**
-     * 
+     *
      * @param clusterManagerFactory
      * @param descriptorProvider
-     * 
+     *
      * @deprecated use
      *             {@link #DataCleanerJobEngine(ClusterManagerFactory, DescriptorProvider, ApplicationContext)}
      *             instead
@@ -138,7 +138,7 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
     @Override
     public MetricValues getMetricValues(MetricJobContext job, ResultContext result,
-            List<MetricIdentifier> metricIdentifiers) {
+                                        List<MetricIdentifier> metricIdentifiers) {
         final AnalysisJob analysisJob;
         if (job == null) {
             analysisJob = null;
@@ -152,7 +152,7 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
     @Override
     public void executeJob(TenantContext tenantContext, ExecutionLog execution, ExecutionLogger executionLogger,
-            Map<String, String> variables) throws Exception {
+                           Map<String, String> variables) throws Exception {
 
         final AnalysisListener analysisListener = createAnalysisListener(execution, executionLogger);
 
@@ -182,8 +182,8 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
      *
      */
     private void runJobNormalMode(TenantContext tenantContext, ExecutionLog execution, ExecutionLogger executionLogger,
-            final AnalysisListener analysisListener, final DataCleanerJobContext job,
-            final DataCleanerConfiguration configuration, final AnalysisJob analysisJob) {
+                                  final AnalysisListener analysisListener, final DataCleanerJobContext job,
+                                  final DataCleanerConfiguration configuration, final AnalysisJob analysisJob) {
         preExecuteJob(tenantContext, job, analysisJob);
 
         final ClusterManager clusterManager;
@@ -220,15 +220,15 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
      *
      */
     private void runJobOnHadoop(DataCleanerConfiguration configuration, ExecutionIdentifier executionIndentifier,
-            AnalysisJob analysisJob, TenantContext tenantContext, AnalysisListener analysisListener,
-            ExecutionLogger executionLogger, ExecutionLog execution) throws Exception {
-        
+                                AnalysisJob analysisJob, TenantContext tenantContext, AnalysisListener analysisListener,
+                                ExecutionLogger executionLogger, ExecutionLog execution) throws Exception {
+
         if (!HadoopJobExecutionUtils.isSparkHomeSet()) {
             final Exception exception = new Exception("Error while trying to run Hadoop Job. The environment variable SPARK_HOME is not set.");
             executionLogger.setStatusFailed(null, null, exception);
             return;
         }
-      
+
         final Datastore datastore = analysisJob.getDatastore();
         if (!HadoopJobExecutionUtils.isValidSourceDatastore(datastore)) {
             final Exception exception = new Exception(
@@ -236,7 +236,7 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
             executionLogger.setStatusFailed(null, null, exception);
             return;
         }
-        
+
         final String jobName = HadoopJobExecutionUtils.getUrlReadyJobName(executionIndentifier.getResultId());
         final String hadoopJobFileName = SparkRunner.DATACLEANER_TEMP_DIR + "/" + jobName + ".analysis.xml";
         final String hadoopJobResultFileName = SparkRunner.DEFAULT_RESULT_PATH + "/" + jobName + SparkRunner.RESULT_FILE_EXTENSION;
@@ -365,10 +365,10 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
     /**
      * Validates a job before loading it with a concrete datastore.
-     * 
+     *
      * @param context
      * @param job
-     * 
+     *
      * @throws FileNotFoundException
      */
     private void preLoadJob(DataCleanerConfiguration configuration, DataCleanerJobContext job) throws FileNotFoundException,
@@ -394,11 +394,11 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
     /**
      * Validates a job before executing it.
-     * 
+     *
      * @param context
      * @param job
      * @param analysisJob
-     * 
+     *
      * @throws NoSuchDatastoreException
      */
     private void preExecuteJob(TenantContext context, DataCleanerJobContext job, AnalysisJob analysisJob)
@@ -418,7 +418,7 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
     @Override
     public Collection<String> getMetricParameterSuggestions(MetricJobContext job, ResultContext result,
-            MetricIdentifier metricIdentifier) {
+                                                            MetricIdentifier metricIdentifier) {
 
         final String analyzerDescriptorName = metricIdentifier.getAnalyzerDescriptorName();
         final String metricDescriptorName = metricIdentifier.getMetricDescriptorName();
@@ -490,8 +490,8 @@ public class DataCleanerJobEngine extends AbstractJobEngine<DataCleanerJobContex
 
                 final String fileName = HadoopJobExecutionUtils.getUrlReadyJobName(jobName)
                         + FileFilters.ANALYSIS_RESULT_SER.getExtension();
-                final Resource resourceFile = repositoryResultFolder.createFile(fileName, null).toResource(); 
-                
+                final Resource resourceFile = repositoryResultFolder.createFile(fileName, null).toResource();
+
                 logger.info("Writing the result to" + resourceFile.getQualifiedPath());
                 FileHelper.copy(resultsResource, resourceFile);
             } else {

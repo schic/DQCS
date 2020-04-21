@@ -17,6 +17,7 @@
  * 51 Franklin Street, Fifth Floor
  * Boston, MA  02110-1301  USA
  */
+
 package org.datacleaner.monitor.configuration;
 
 import java.io.InputStream;
@@ -41,11 +42,13 @@ import org.datacleaner.repository.RepositoryFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 /**
  * Writes an updated conf.xml file to the repository. This is used by taking the
  * <datastore-catalog> and <reference-data-catalog> elements of the updated
  * conf.xml file, and replacing them in the existing conf.xml file.
  */
+
 public class WriteUpdatedConfigurationFileAction extends AbstractJaxbAdaptor<Configuration>
         implements Action<OutputStream> {
 
@@ -180,3 +183,4 @@ public class WriteUpdatedConfigurationFileAction extends AbstractJaxbAdaptor<Con
         return "";
     }
 }
+

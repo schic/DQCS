@@ -33,7 +33,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.FileHelper;
-import org.apache.metamodel.util.Predicate;
+//import org.apache.metamodel.util.Predicate;
 import org.apache.metamodel.util.TruePredicate;
 import org.datacleaner.api.AnalyzerResult;
 import org.datacleaner.configuration.DataCleanerConfiguration;
@@ -168,27 +168,23 @@ public class ResultFileController {
         final boolean tabs = (tabsParam == null ? true : tabsParam.booleanValue());
 
         final boolean headers;
-        final Predicate<Entry<ComponentJob, AnalyzerResult>> jobInclusionPredicate;
+        //final Predicate<Entry<ComponentJob, AnalyzerResult>> jobInclusionPredicate;
         if (org.datacleaner.util.StringUtils.isNullOrEmpty(componentParamName)) {
-            jobInclusionPredicate = new TruePredicate<Entry<ComponentJob, AnalyzerResult>>();
+            //jobInclusionPredicate = new TruePredicate<Entry<ComponentJob, AnalyzerResult>>();
             headers = true;
         } else {
-            jobInclusionPredicate = createInclusionPredicate(componentParamName, componentIndexParam);
+            //jobInclusionPredicate = createInclusionPredicate(componentParamName, componentIndexParam);
             headers = false;
         }
 
-        final HtmlAnalysisResultWriter htmlWriter = _htmlAnalysisResultWriterFactory.create(tabs,
-                jobInclusionPredicate, headers);
+        /*final HtmlAnalysisResultWriter htmlWriter = _htmlAnalysisResultWriterFactory.create(tabs,
+                jobInclusionPredicate, headers);*/
         final PrintWriter out = response.getWriter();
 
-        try {
-            htmlWriter.write(analysisResult, configuration, out);
-        } catch (IOException e) {
-            throw new IllegalStateException(e);
-        }
+        //htmlWriter.write(analysisResult, configuration, out);
     }
 
-    private Predicate<Entry<ComponentJob, AnalyzerResult>> createInclusionPredicate(final String componentParamName,
+    /*private Predicate<Entry<ComponentJob, AnalyzerResult>> createInclusionPredicate(final String componentParamName,
             final Integer componentIndexParam) {
         return new Predicate<Map.Entry<ComponentJob, AnalyzerResult>>() {
 
@@ -218,5 +214,5 @@ public class ResultFileController {
                 }
             }
         };
-    }
+    }*/
 }
