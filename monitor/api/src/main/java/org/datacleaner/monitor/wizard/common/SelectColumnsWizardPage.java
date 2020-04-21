@@ -28,7 +28,7 @@ import org.datacleaner.monitor.wizard.WizardPageController;
 import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.Table;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 
 /**
  * A simple {@link WizardPageController} that asks the user to select the
@@ -97,7 +97,7 @@ public abstract class SelectColumnsWizardPage extends
 		return map;
 	}
 
-	@Override
+	/*@Override
 	public WizardPageController nextPageController(
 			Map<String, List<String>> formParameters) {
 		final List<String> columnNames = formParameters.get("columns");
@@ -111,7 +111,7 @@ public abstract class SelectColumnsWizardPage extends
 				});
 
 		return nextPageController(selectedColumns);
-	}
+	}*/
 
 	protected abstract WizardPageController nextPageController(
 			List<Column> selectedColumns);
