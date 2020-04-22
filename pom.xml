@@ -73,7 +73,7 @@
 				<module>engine</module>
 				<module>components</module>
 				<module>desktop</module>
-				<module>monitor</module>
+				<!--<module>monitor</module>-->
 			</modules>
 		</profile>
 		<profile>
@@ -103,7 +103,7 @@
 				<module>desktop</module>
 			</modules>
 		</profile>
-		<profile>
+		<!--<profile>
 			<id>monitor</id>
 			<modules>
 				<module>api</module>
@@ -113,7 +113,7 @@
 				<module>components</module>
 				<module>monitor</module>
 			</modules>
-		</profile>
+		</profile>-->
 		<profile>
 			<id>code-coverage</id>
 			<build>
