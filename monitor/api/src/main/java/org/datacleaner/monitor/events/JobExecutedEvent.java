@@ -25,6 +25,7 @@ import org.springframework.context.ApplicationEvent;
 
 /**
  * Event raised when a job has been executed succesfully.
+ * 成功执行作业时引发的事件。
  */
 public class JobExecutedEvent extends ApplicationEvent {
 

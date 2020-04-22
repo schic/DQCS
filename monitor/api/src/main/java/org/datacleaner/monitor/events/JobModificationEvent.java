@@ -26,6 +26,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * Event raised when an {@link AnalysisJob} stored in the {@link Repository} is
  * modified.
+ * 修改{@link Repository}中存储的{@link AnalysisJob}时引发的事件。
  */
 public class JobModificationEvent extends ApplicationEvent {
 

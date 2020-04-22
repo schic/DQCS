@@ -27,6 +27,7 @@ import org.springframework.context.ApplicationEvent;
 
 /**
  * Event raised when executing a {@link AnalysisJob} failed.
+ * 执行{@link AnalysisJob}时引发的事件失败。
  */
 public class JobFailedEvent extends ApplicationEvent {
 

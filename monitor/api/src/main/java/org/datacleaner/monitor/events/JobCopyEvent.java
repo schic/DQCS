@@ -25,6 +25,7 @@ import org.springframework.context.ApplicationEvent;
 
 /**
  * Event raised when an {@link AnalysisJob} has been copied in the repository.
+ * 在存储库中复制{@link AnalysisJob}时引发的事件。
  */
 public class JobCopyEvent extends ApplicationEvent {
 

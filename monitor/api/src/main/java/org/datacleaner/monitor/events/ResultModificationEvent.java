@@ -26,6 +26,7 @@ import org.springframework.context.ApplicationEvent;
 /**
  * Event raised when an {@link AnalysisResult} stored in the {@link Repository}
  * has been modified.
+ * 修改{@link Repository}中存储的{@link AnalysisResult}时引发的事件。
  */
 public class ResultModificationEvent extends ApplicationEvent {
 

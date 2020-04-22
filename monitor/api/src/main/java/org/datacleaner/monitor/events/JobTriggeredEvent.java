@@ -25,6 +25,7 @@ import org.springframework.context.ApplicationEvent;
 
 /**
  * Event raised when an {@link AnalysisJob} is triggered for execution
+ * 触发{@link AnalysisJob}执行时引发的事件
  */
 public class JobTriggeredEvent extends ApplicationEvent {
 
