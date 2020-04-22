@@ -22,7 +22,7 @@ package org.datacleaner.monitor.configuration;
 import java.io.InputStream;
 import java.util.Map;
 
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.datacleaner.configuration.ConfigurationReaderInterceptor;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.configuration.DataCleanerConfigurationImpl;
@@ -129,16 +129,17 @@ final class ConfigurationCache {
 
         logger.info("Reading configuration from file: {}", configurationFile);
 
-        final DataCleanerConfiguration readConfiguration = configurationFile
+        /*final DataCleanerConfiguration readConfiguration = configurationFile
                 .readFile(new Func<InputStream, DataCleanerConfiguration>() {
                     @Override
                     public DataCleanerConfiguration eval(InputStream inputStream) {
                         final DataCleanerConfiguration readConfiguration = reader.read(inputStream);
                         return readConfiguration;
                     }
-                });
+                });*/
 
-        return readConfiguration;
+        //return readConfiguration;
+        return null;
     }
 
     public void clearCache() {

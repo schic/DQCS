@@ -34,7 +34,7 @@ import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.util.FileFilters;
 import org.apache.metamodel.util.Action;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +54,11 @@ public class ResultModificationEventExecutionLogListener implements ApplicationL
     }
 
     @Override
+    public void onApplicationEvent(ResultModificationEvent resultModificationEvent) {
+
+    }
+
+    /*@Override
     public void onApplicationEvent(ResultModificationEvent event) {
         final String tenant = event.getTenant();
         final TenantContext context = _contextFactory.getContext(tenant);
@@ -102,5 +107,5 @@ public class ResultModificationEventExecutionLogListener implements ApplicationL
         }
 
         oldFile.delete();
-    }
+    }*/
 }

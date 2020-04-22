@@ -26,7 +26,7 @@ import java.util.Map;
 import javax.annotation.security.RolesAllowed;
 
 import org.apache.metamodel.util.FileHelper;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.configuration.TenantContextFactory;
 import org.datacleaner.monitor.configuration.WriteUpdatedConfigurationFileAction;
@@ -116,17 +116,18 @@ public class ConfigurationFileController {
             throw new IllegalStateException("Configuration file not found!");
         }
 
-        final byte[] documentBody = configurationFile.readFile(new Func<InputStream, byte[]>() {
+        /*final byte[] documentBody = configurationFile.readFile(new Func<InputStream, byte[]>() {
             @Override
             public byte[] eval(InputStream in) {
                 return FileHelper.readAsBytes(in);
             }
-        });
+        });*/
 
-        final HttpHeaders header = new HttpHeaders();
+        /*final HttpHeaders header = new HttpHeaders();
         header.setContentType(MediaType.APPLICATION_XML);
         header.setContentLength(documentBody.length);
-        return new HttpEntity<byte[]>(documentBody, header);
+        return new HttpEntity<byte[]>(documentBody, header);*/
+        return null;
 
     }
 }

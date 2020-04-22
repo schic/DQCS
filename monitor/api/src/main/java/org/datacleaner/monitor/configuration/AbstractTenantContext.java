@@ -31,7 +31,7 @@ import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.util.FileFilters;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 
 /**
  * Abstract helper-implementation of {@link TenantContext}. Provides the methods
@@ -128,7 +128,7 @@ public abstract class AbstractTenantContext implements TenantContext {
         return datastoreCatalog.getDatastore(name);
     }
 
-    @Override
+    /*@Override
     public final List<DatastoreIdentifier> getDatastores() {
         final DatastoreCatalog datastoreCatalog = getConfiguration().getDatastoreCatalog();
         final String[] datastoreNames = datastoreCatalog.getDatastoreNames();
@@ -139,5 +139,5 @@ public abstract class AbstractTenantContext implements TenantContext {
                 return new DatastoreIdentifier(name);
             }
         });
-    }
+    }*/
 }

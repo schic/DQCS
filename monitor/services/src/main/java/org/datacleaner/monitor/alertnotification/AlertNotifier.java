@@ -24,7 +24,7 @@ import java.util.Map;
 import org.datacleaner.monitor.configuration.ResultContext;
 import org.datacleaner.monitor.scheduling.model.AlertDefinition;
 import org.datacleaner.monitor.scheduling.model.ExecutionLog;
-import org.apache.metamodel.util.Ref;
+//import org.apache.metamodel.util.Ref;
 
 /**
  * Interface for components that listen for executions and notifies in case any
@@ -32,6 +32,6 @@ import org.apache.metamodel.util.Ref;
  */
 public interface AlertNotifier {
 
-    public void onExecutionFinished(ExecutionLog execution, Ref<Map<AlertDefinition, Number>> activeAlerts,
+    public void onExecutionFinished(ExecutionLog execution,
             ResultContext result);
 }

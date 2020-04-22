@@ -46,11 +46,11 @@ import org.apache.metamodel.schema.MutableSchema;
 import org.apache.metamodel.schema.MutableTable;
 import org.apache.metamodel.schema.Schema;
 import org.apache.metamodel.schema.Table;
-import org.apache.metamodel.util.Ref;
+//import org.apache.metamodel.util.Ref;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.configuration.DataCleanerConfigurationImpl;
 import org.datacleaner.configuration.JaxbPojoDatastoreAdaptor;
-import org.datacleaner.configuration.jaxb.AbstractDatastoreType;
+/*import org.datacleaner.configuration.jaxb.AbstractDatastoreType;
 import org.datacleaner.configuration.jaxb.ClasspathScannerType;
 import org.datacleaner.configuration.jaxb.ClasspathScannerType.Package;
 import org.datacleaner.configuration.jaxb.Configuration;
@@ -58,7 +58,7 @@ import org.datacleaner.configuration.jaxb.ConfigurationMetadataType;
 import org.datacleaner.configuration.jaxb.DatastoreCatalogType;
 import org.datacleaner.configuration.jaxb.MultithreadedTaskrunnerType;
 import org.datacleaner.configuration.jaxb.ObjectFactory;
-import org.datacleaner.configuration.jaxb.PojoTableType;
+import org.datacleaner.configuration.jaxb.PojoTableType;*/
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.connection.DatastoreCatalog;
 import org.datacleaner.connection.DatastoreConnection;
@@ -91,7 +91,7 @@ import org.springframework.stereotype.Component;
  * </ul>
  */
 @Component("configurationInterceptor")
-public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
+public class JaxbConfigurationInterceptor {
 
     private static final String REMARK_INCLUDE_IN_QUERY = "INCLUDE_IN_QUERY";
 
@@ -99,19 +99,19 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
 
     private static final int MAX_POJO_ROWS = 20;
 
-    private final JAXBContext _jaxbContext;
+    /*private final JAXBContext _jaxbContext;
     private final ConfigurationFactory _configurationFactory;
     private final Ref<Calendar> _calRef;
     private final TenantContextFactory _contextFactory;
-    private final boolean _replaceDatastores;
+    private final boolean _replaceDatastores;*/
 
-    @Autowired
+    /*@Autowired
     public JaxbConfigurationInterceptor(TenantContextFactory contextFactory, ConfigurationFactory configurationFactory)
             throws JAXBException {
         this(contextFactory, configurationFactory, true);
-    }
+    }*/
 
-    public JaxbConfigurationInterceptor(TenantContextFactory contextFactory, ConfigurationFactory configurationFactory,
+    /*public JaxbConfigurationInterceptor(TenantContextFactory contextFactory, ConfigurationFactory configurationFactory,
             boolean replaceDatastores) throws JAXBException {
         this(contextFactory, configurationFactory, replaceDatastores, new Ref<Calendar>() {
             @Override
@@ -119,9 +119,9 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
                 return Calendar.getInstance();
             }
         });
-    }
+    }*/
 
-    public JaxbConfigurationInterceptor(TenantContextFactory contextFactory, ConfigurationFactory configurationFactory,
+    /*public JaxbConfigurationInterceptor(TenantContextFactory contextFactory, ConfigurationFactory configurationFactory,
             boolean replaceDatastores, Ref<Calendar> calRef) throws JAXBException {
         _contextFactory = contextFactory;
         _configurationFactory = configurationFactory;
@@ -129,9 +129,9 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
         _jaxbContext = JAXBContext.newInstance(ObjectFactory.class.getPackage().getName(),
                 ObjectFactory.class.getClassLoader());
         _calRef = calRef;
-    }
+    }*/
 
-    @Override
+    /*@Override
     public void intercept(final String tenantId, final DataCleanerJobContext job, final String datastoreName,
             final InputStream in, final OutputStream out) throws Exception {
         final TenantContext context = _contextFactory.getContext(tenantId);
@@ -173,7 +173,7 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
 
         final Marshaller marshaller = createMarshaller();
         marshaller.marshal(configuration, out);
-    }
+    }*/
 
     /**
      * Replaces all "live" datastores with POJO based datastores. This will
@@ -187,7 +187,7 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
      * @param originalDatastoreCatalog
      * @return
      */
-    private DatastoreCatalogType interceptDatastoreCatalog(final TenantContext context,
+    /*private DatastoreCatalogType interceptDatastoreCatalog(final TenantContext context,
             final DataCleanerJobContext job, String datastoreName, final DatastoreCatalogType originalDatastoreCatalog) {
         final DataCleanerConfiguration configuration = context.getConfiguration();
 
@@ -242,30 +242,30 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
         }
 
         return interceptDatastoreCatalog(context, datastoreUsage);
-    }
+    }*/
 
-    public DatastoreCatalogType interceptDatastoreCatalog(TenantContext context,
+    /*public DatastoreCatalogType interceptDatastoreCatalog(TenantContext context,
             Map<String, MutableSchema> datastoreUsage) {
         return interceptDatastoreCatalog(context.getConfiguration(), datastoreUsage);
-    }
+    }*/
 
     /**
      * 
-     * @param datastoreCatalog
-     * @param datastoreUsage
+     * @param
+     * @param
      * @return
      * 
-     * @deprecated use {@link #interceptDatastoreCatalog(TenantContext, Map)}
+     * @deprecated use {@link #(TenantContext, Map)}
      *             instead
      */
-    @Deprecated
+    /*@Deprecated
     public DatastoreCatalogType interceptDatastoreCatalog(final DatastoreCatalog datastoreCatalog,
             final Map<String, MutableSchema> datastoreUsage) {
         return interceptDatastoreCatalog(new DataCleanerConfigurationImpl().withDatastoreCatalog(datastoreCatalog),
                 datastoreUsage);
-    }
+    }*/
 
-    private DatastoreCatalogType interceptDatastoreCatalog(DataCleanerConfiguration configuration,
+    /*private DatastoreCatalogType interceptDatastoreCatalog(DataCleanerConfiguration configuration,
             final Map<String, MutableSchema> datastoreUsage) {
 
         final DatastoreCatalogType newDatastoreCatalog = new DatastoreCatalogType();
@@ -353,16 +353,16 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
         }
 
         return newDatastoreCatalog;
-    }
+    }*/
 
-    private Package newPackage(String packageName, boolean recursive) {
+    /*private Package newPackage(String packageName, boolean recursive) {
         Package p = new Package();
         p.setValue(packageName);
         p.setRecursive(recursive);
         return p;
-    }
+    }*/
 
-    private Marshaller createMarshaller() {
+    /*private Marshaller createMarshaller() {
         try {
             Marshaller marshaller = _jaxbContext.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
@@ -371,7 +371,7 @@ public class JaxbConfigurationInterceptor implements ConfigurationInterceptor {
         } catch (JAXBException e) {
             throw new IllegalArgumentException(e);
         }
-    }
+    }*/
 
     public DatatypeFactory getDatatypeFactory() {
         try {

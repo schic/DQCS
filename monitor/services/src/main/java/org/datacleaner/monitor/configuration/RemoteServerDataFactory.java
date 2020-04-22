@@ -19,28 +19,38 @@
  */
 package org.datacleaner.monitor.configuration;
 
-import org.datacleaner.configuration.RemoteServerData;
+//import org.datacleaner.configuration.RemoteServerData;
 import org.datacleaner.configuration.RemoteServerDataImpl;
-import org.datacleaner.descriptors.RemoteDescriptorProvider;
+//import org.datacleaner.descriptors.RemoteDescriptorProvider;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
  * Spring factory for RemoteServerDataImpl.
  */
-public class RemoteServerDataFactory implements FactoryBean<RemoteServerData> {
+public class RemoteServerDataFactory implements FactoryBean {
 
     String url;
     String username;
     String password;
 
-    @Override
+    /*@Override
     public RemoteServerData getObject() throws Exception {
         return new RemoteServerDataImpl(url, "RemoteServer", username, password);
+    }*/
+
+    /*@Override
+    public Class<?> getObjectType() {
+        return RemoteDescriptorProvider.class;
+    }*/
+
+    @Override
+    public Object getObject() throws Exception {
+        return null;
     }
 
     @Override
     public Class<?> getObjectType() {
-        return RemoteDescriptorProvider.class;
+        return null;
     }
 
     @Override

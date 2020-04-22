@@ -21,7 +21,7 @@ package org.datacleaner.monitor.server;
 
 import java.util.Locale;
 
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.wizard.referencedata.ReferenceDataWizard;
 import org.datacleaner.monitor.wizard.referencedata.ReferenceDataWizardContext;
@@ -33,14 +33,14 @@ public class ReferenceDataWizardContextImpl implements ReferenceDataWizardContex
 
     private final ReferenceDataWizard _wizard;
     private final TenantContext _tenantContext;
-    private final Func<String, Object> _sessionFunc;
+    //private final Func<String, Object> _sessionFunc;
     private final Locale _locale;
 
     public ReferenceDataWizardContextImpl(ReferenceDataWizard wizard, TenantContext tenantContext,
-            Func<String, Object> sessionFunc, Locale locale) {
+             Locale locale) {
         _wizard = wizard;
         _tenantContext = tenantContext;
-        _sessionFunc = sessionFunc;
+        //_sessionFunc = sessionFunc;
         _locale = locale;
     }
 
@@ -54,10 +54,10 @@ public class ReferenceDataWizardContextImpl implements ReferenceDataWizardContex
         return _tenantContext;
     }
 
-    @Override
+    /*@Override
     public Func<String, Object> getHttpSession() {
         return _sessionFunc;
-    }
+    }*/
 
     @Override
     public Locale getLocale() {

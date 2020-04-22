@@ -172,7 +172,7 @@ public class DatastoreQueryController {
 
     private Object createTableMap(DataSet dataSet) {
         final Map<String, Object> map = new HashMap<>();
-        map.put("header", createColumnHeaderList(dataSet.getSelectItems()));
+        //map.put("header", createColumnHeaderList(dataSet.getSelectItems()));
         map.put("rows", createRowList(dataSet));
         return map;
     }
@@ -197,10 +197,10 @@ public class DatastoreQueryController {
     private List<String> createRowValueList(DataSet dataSet) {
         final List<String> values = new ArrayList<>();
         Row row = dataSet.getRow();
-        for (int i = 0; i < dataSet.getSelectItems().length; i++) {
+        /*for (int i = 0; i < dataSet.getSelectItems().length; i++) {
             Object value = row.getValue(i);
             values.add(ConvertToStringTransformer.transformValue(value));
-        }
+        }*/
         return values;
     }
 
@@ -234,13 +234,13 @@ public class DatastoreQueryController {
                 writer.write("\n<table xmlns=\"http://www.w3.org/1999/xhtml\">");
 
                 writer.write("\n<thead>\n<tr>");
-                final SelectItem[] selectItems = dataSet.getSelectItems();
-                for (SelectItem selectItem : selectItems) {
+                //final SelectItem[] selectItems = dataSet.getSelectItems();
+                /*for (SelectItem selectItem : selectItems) {
                     final String label = selectItem.getSuperQueryAlias(false);
                     writer.write("<th>");
                     writer.write(StringEscapeUtils.escapeXml(label));
                     writer.write("</th>");
-                }
+                }*/
                 writer.write("</tr>\n</thead>");
                 writer.flush();
 
@@ -249,7 +249,7 @@ public class DatastoreQueryController {
                 while (dataSet.next()) {
                     writer.write("\n<tr>");
                     Row row = dataSet.getRow();
-                    for (int i = 0; i < selectItems.length; i++) {
+                    /*for (int i = 0; i < selectItems.length; i++) {
                         Object value = row.getValue(i);
                         if (value == null) {
                             writer.write("<td />");
@@ -258,7 +258,7 @@ public class DatastoreQueryController {
                             writer.write(StringEscapeUtils.escapeXml(ConvertToStringTransformer.transformValue(value)));
                             writer.write("</td>");
                         }
-                    }
+                    }*/
                     writer.write("</tr>");
 
                     if (rowNumber % 20 == 0) {

@@ -30,7 +30,7 @@ import org.datacleaner.monitor.shared.model.WizardPage;
 import org.datacleaner.monitor.shared.model.WizardSessionIdentifier;
 import org.datacleaner.monitor.wizard.Wizard;
 import org.datacleaner.monitor.wizard.WizardSession;
-import org.apache.metamodel.util.Func;
+//import org.apache.metamodel.util.Func;
 
 /**
  * A kind of DAO (Data Access Object) and utility class for {@link Wizard}
@@ -88,5 +88,5 @@ public interface WizardDao {
      * 
      * @return
      */
-    public Func<String, Object> createSessionFunc();
+    //public Func<String, Object> createSessionFunc();
 }

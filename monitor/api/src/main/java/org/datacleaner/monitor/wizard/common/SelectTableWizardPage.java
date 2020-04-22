@@ -27,7 +27,7 @@ import org.apache.metamodel.MetaModelHelper;
 import org.apache.metamodel.schema.Schema;
 import org.apache.metamodel.schema.Table;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Predicate;
+//import org.apache.metamodel.util.Predicate;
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.connection.DatastoreConnection;
 import org.datacleaner.monitor.wizard.WizardPageController;
@@ -80,7 +80,7 @@ public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage
         return "Please select the source table of the job:";
     }
 
-    @Override
+    /*@Override
     protected Map<String, Object> getFormModel() {
         final Map<String, Object> map = new HashMap<String, Object>();
         map.put("promptText", getPromptText());
@@ -101,7 +101,7 @@ public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage
             map.put("schemas", schemaList);
             return map;
         }
-    }
+    }*/
 
     @Override
     public WizardPageController nextPageController(Map<String, List<String>> formParameters) {
