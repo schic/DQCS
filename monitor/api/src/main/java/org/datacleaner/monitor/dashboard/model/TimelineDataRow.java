@@ -25,6 +25,7 @@ import java.util.List;
 
 /**
  * A row of metric values in a {@link TimelineData} object.
+ * {@link TimelineData}对象中的一行度量值。
  */
 public class TimelineDataRow implements Comparable<TimelineDataRow>, Serializable {
 

@@ -24,6 +24,7 @@ import java.util.Date;
 
 /**
  * Defines visual options for a timeline chart
+ * 定义时间线图表的视觉选项
  */
 public class ChartOptions implements Serializable {
 

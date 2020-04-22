@@ -26,6 +26,7 @@ import java.util.List;
 /**
  * Represents the data shown in a timeline. Consists of a list of
  * {@link TimelineDataRow}s.
+ * 表示时间轴中显示的数据。由{@link TimelineDataRow}列表组成。
  */
 public class TimelineData implements Serializable {
 

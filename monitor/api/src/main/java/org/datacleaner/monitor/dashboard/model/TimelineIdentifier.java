@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Identifying object for a timeline definition saved in the repository.
+ * 标识存储在存储库中的时间轴定义的对象。
  */
 public class TimelineIdentifier implements Serializable {
 

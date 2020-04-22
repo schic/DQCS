@@ -30,6 +30,8 @@ import org.datacleaner.monitor.shared.model.MetricIdentifier;
  * Defines a timeline created by the user. A {@link TimelineDefinition} can
  * either be created ad-hoc or saved in the repository, in which case it will
  * have a {@link TimelineIdentifier}.
+ * 定义用户创建的时间线。 {@link TimelineDefinition}可以临时创建或保存在存储库中，
+ * 在这种情况下，它将具有{@link TimelineIdentifier}。
  */
 public class TimelineDefinition implements Serializable {
 

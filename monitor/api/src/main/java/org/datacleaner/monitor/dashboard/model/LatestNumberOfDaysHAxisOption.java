@@ -26,6 +26,7 @@ import org.datacleaner.monitor.dashboard.model.ChartOptions.HorizontalAxisOption
 /**
  * A {@link HorizontalAxisOption} implementation which allows the user to select
  * a timeline range with the meaning of eg. "the latest 30 days".
+ * {@link Horizo​​ntalAxisOption}实现，允许用户选择时间轴范围，其含义为例如。 “最近30天”。
  */
 public class LatestNumberOfDaysHAxisOption implements HorizontalAxisOption {
 

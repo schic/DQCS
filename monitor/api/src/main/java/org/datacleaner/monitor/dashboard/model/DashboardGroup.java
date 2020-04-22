@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents a logical grouping of dashboard widgets
+ * 表示仪表盘小部件的逻辑分组
  */
 public class DashboardGroup implements Serializable {
 
