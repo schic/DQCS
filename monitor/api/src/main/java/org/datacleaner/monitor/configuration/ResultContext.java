@@ -25,6 +25,7 @@ import org.datacleaner.repository.RepositoryFile;
 
 /**
  * Represents the context of an analysis result stored in the repository.
+ * 表示存储在存储库中的分析结果的上下文。
  */
 public interface ResultContext {
 

@@ -28,6 +28,7 @@ import org.datacleaner.repository.Repository;
 /**
  * An {@link InjectionManagerFactory} wrapper that is tenant-aware. Useful for
  * injections that contain components that are tenant-specific.
+ * {@link InjectionManagerFactory}包装器，可识别租户。对于包含特定于租户的组件的注入很有用。
  */
 public class TenantInjectionManagerFactory implements InjectionManagerFactory {
 

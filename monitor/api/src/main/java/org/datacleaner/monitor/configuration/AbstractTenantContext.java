@@ -36,6 +36,7 @@ import org.apache.metamodel.util.Func;
 /**
  * Abstract helper-implementation of {@link TenantContext}. Provides the methods
  * which have a trivial implementation.
+ * {@link TenantContext}的抽象帮助程序实现。提供具有简单实现的方法。
  */
 public abstract class AbstractTenantContext implements TenantContext {
 

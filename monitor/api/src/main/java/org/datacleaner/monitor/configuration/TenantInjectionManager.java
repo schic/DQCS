@@ -40,6 +40,7 @@ import org.datacleaner.util.convert.VfsResourceTypeHandler;
  * A {@link InjectionManager} wrapper that is tenant-aware.
  * 
  * TODO: This class only services to fix issues with resource loading of
+ * TODO：此类仅用于解决资源加载问题
  * {@link RepositoryFileResource}s. That stuff should be generalized since
  * {@link RepositoryFolder} is now a generally used thing.
  */

@@ -29,6 +29,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 /**
  * Class ComponentsStoreHolder
  * Object for storing to component cache.
+ * 类ComponentsStoreHolder 用于存储到组件缓存的对象。
  * 
  * @since 11.8.15
  */

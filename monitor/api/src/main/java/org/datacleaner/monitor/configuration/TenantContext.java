@@ -34,6 +34,7 @@ import org.datacleaner.repository.RepositoryFolder;
 /**
  * Defines a context for a <i>single</i> tenant in which access to shared
  * entries in the repository can be reached.
+ * 为<i>single</i>租户定义上下文，在该上下文中可以访问存储库中的共享条目。
  */
 public interface TenantContext {
 

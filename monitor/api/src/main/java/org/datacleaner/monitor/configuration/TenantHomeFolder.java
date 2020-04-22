@@ -28,10 +28,13 @@ import org.datacleaner.repository.file.FileRepositoryFolder;
 /**
  * Implementation of {@link DataCleanerHomeFolder} for the DataCleaner monitor
  * webapp.
+ * 为DataCleaner监视器*webapp实现{@link DataCleanerHomeFolder}。
  * 
  * This implementation provides a central place to have a fallback strategy in
  * cases where the repository is not file based, so that {@link #toFile()} will
  * return a useable directory.
+ * 在存储库不是基于文件的情况下，此实现提供了一个后备策略的中心位置，
+ * 因此{@link #toFile（）}将返回可用的目录。
  */
 public class TenantHomeFolder implements DataCleanerHomeFolder {
 
