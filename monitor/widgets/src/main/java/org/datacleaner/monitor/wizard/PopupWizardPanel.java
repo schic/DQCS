@@ -33,6 +33,7 @@ import com.google.gwt.user.client.ui.Widget;
 /**
  * Popup style panel used by wizards. It creates a popup panel on which elements
  * can be added and controlled through wizard framework
+ * 向导使用的弹出样式面板。它创建一个弹出面板，可以通过向导框架添加和控制元素
  * 
  */
 public class PopupWizardPanel extends DCPopupPanel implements WizardPanel {

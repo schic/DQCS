@@ -32,6 +32,7 @@ import com.google.gwt.user.client.ui.Widget;
 /**
  * Inline panel used by wizards. It creates {@link SimplePanel} on which
  * elements can be added and controlled through wizard framework
+ * 向导使用的嵌入式面板。它创建{@link SimplePanel}，可以在其上通过向导框架添加和控制元素
  */
 public class SimpleWizardPanel implements WizardPanel {
 

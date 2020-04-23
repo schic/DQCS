@@ -28,6 +28,7 @@ import com.google.gwt.user.client.rpc.StatusCodeException;
 /**
  * Convenient abstract implementation of the {@link AsyncCallback} which handles
  * error situations.
+ * {@link AsyncCallback}的便捷抽象实现，可处理错误情况。
  * 
  * @see AsyncCallback
  * 

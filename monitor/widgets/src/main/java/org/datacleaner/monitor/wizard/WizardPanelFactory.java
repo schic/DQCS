@@ -21,6 +21,7 @@ package org.datacleaner.monitor.wizard;
 
 /**
  * A factory class for {@link WizardPanel} objects.
+ * {@link WizardPanel}对象的工厂类。
  */
 public class WizardPanelFactory {
 

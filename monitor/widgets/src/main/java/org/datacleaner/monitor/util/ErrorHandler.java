@@ -42,6 +42,7 @@ import com.google.web.bindery.event.shared.UmbrellaException;
 
 /**
  * Utility class for handling errors in GWT code
+ * 用于处理GWT代码中的错误的实用程序类
  */
 public class ErrorHandler {
 

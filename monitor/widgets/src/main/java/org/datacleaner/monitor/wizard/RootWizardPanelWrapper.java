@@ -30,6 +30,7 @@ import com.google.gwt.user.client.ui.Widget;
 /**
  * A wrapper around a {@link WizardPanel} that places it in a {@link RootPanel}
  * when {@link #showWizard()} is called.
+ * 调用{@link #showWizard（）}时，将{@link WizardPanel}周围的包装器放置在{@link RootPanel}中。
  */
 public class RootWizardPanelWrapper implements WizardPanel {
 

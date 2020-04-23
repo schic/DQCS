@@ -27,6 +27,7 @@ import com.google.gwt.user.client.ui.Widget;
 
 /**
  * Interface for controlling panel attributes required for wizard.
+ * 用于向导所需的控制面板属性的界面。
  */
 public interface WizardPanel {
 

@@ -26,6 +26,7 @@ import com.google.gwt.http.client.Response;
 /**
  * Convenient abstract implementation of the {@link RequestCallback} which
  * handles error situations.
+ * {@link RequestCallback}的便捷抽象实现，用于处理错误情况。
  * 
  * @see RequestCallback
  */

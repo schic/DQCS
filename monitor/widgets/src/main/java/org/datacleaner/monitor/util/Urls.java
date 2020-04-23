@@ -26,6 +26,7 @@ import com.google.gwt.user.client.Window;
 
 /**
  * Helper class for generating URL's based on a page's current parameters
+ * 用于根据页面当前参数生成URL的Helper类
  */
 public final class Urls {
 

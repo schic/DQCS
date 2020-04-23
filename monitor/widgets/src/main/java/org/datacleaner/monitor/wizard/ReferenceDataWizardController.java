@@ -36,7 +36,8 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RadioButton;
 
 /**
- * Wizard controller for reference data wizards. 
+ * Wizard controller for reference data wizards.
+ * 向导控制器，用于参考数据向导。
  */
 public class ReferenceDataWizardController extends AbstractWizardController<WizardServiceAsync> {
 

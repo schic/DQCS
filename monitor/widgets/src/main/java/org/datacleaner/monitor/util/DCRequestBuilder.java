@@ -26,6 +26,7 @@ import com.google.gwt.http.client.RequestException;
 /**
  * Convenient wrapper around the somewhat cumbersome errorhandling in
  * {@link RequestBuilder}.
+ * 方便的包装器，用于* {@link RequestBuilder}中有些麻烦的错误处理。
  */
 public class DCRequestBuilder {
 

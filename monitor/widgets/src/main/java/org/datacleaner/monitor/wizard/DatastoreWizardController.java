@@ -42,6 +42,7 @@ import com.google.gwt.user.client.ui.RadioButton;
 
 /**
  * Wizard controller for Datastore wizards
+ * 数据存储向导的向导控制器
  */
 public class DatastoreWizardController extends AbstractWizardController<WizardServiceAsync> {
 

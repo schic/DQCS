@@ -51,6 +51,7 @@ import com.google.gwt.user.client.ui.RadioButton;
 
 /**
  * Wizard controller for Job wizards
+ * 作业向导的向导控制器
  */
 public class JobWizardController extends AbstractWizardController<WizardServiceAsync> {
 

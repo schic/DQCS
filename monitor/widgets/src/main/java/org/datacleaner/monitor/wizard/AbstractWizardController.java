@@ -47,6 +47,8 @@ import com.google.gwt.user.client.ui.IsWidget;
  * It is the abstract implementation of panel builder. This class can create a
  * wizard panel of type {@link WizardPanel} based on user input. It also
  * provides controls for Wizard.
+ * 它是面板生成器的抽象实现。
+ * 此类可以根据用户输入创建类型为{@link WizardPanel}的向导面板。它还为向导提供控件。
  * 
  * @param <S>
  */
