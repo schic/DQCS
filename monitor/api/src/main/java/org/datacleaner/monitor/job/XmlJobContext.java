@@ -23,6 +23,7 @@ import java.io.OutputStream;
 
 /**
  * {@link JobContext} which is based on XML documents in the repository.
+ * {@link JobContext}，它基于存储库中的XML文档。
  */
 public interface XmlJobContext extends JobContext {
 

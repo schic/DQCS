@@ -35,6 +35,7 @@ import org.datacleaner.util.StringUtils;
 /**
  * Represents a typically used abstract class of {@link JobWizardSession}, which
  * is applicable for every job wizard that produces DataCleaner jobs.
+ * 表示{@link JobWizardSession}通常使用的抽象类，该类适用于生成DataCleaner作业的每个作业向导。
  */
 public abstract class DataCleanerJobWizardSession extends AbstractJobWizardSession implements JobWizardSession {
 

@@ -25,6 +25,7 @@ import java.util.List;
 /**
  * Represents a grouping of related {@link MetricIdentifier}s. Typically these
  * are grouped according to the analysis job components that expose the metrics.
+ * 表示一组相关的{@link MetricIdentifier}。通常这些根据暴露指标的分析作业组件进行分组。
  */
 public class MetricGroup implements Serializable {
 

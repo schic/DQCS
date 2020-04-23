@@ -26,6 +26,7 @@ import org.datacleaner.monitor.shared.model.DCUserInputException;
 
 /**
  * A controller interface for wizard pages
+ * 向导页面的控制器界面
  */
 public interface WizardPageController {
     

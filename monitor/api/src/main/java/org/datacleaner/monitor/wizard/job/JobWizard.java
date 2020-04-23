@@ -24,6 +24,7 @@ import org.datacleaner.monitor.wizard.Wizard;
 /**
  * A pluggable component (plug-in / extension) which provides a wizard in the
  * webapp for creating a job in the DC monitor repository.
+ * 一个可插入组件（插件/扩展），它在webapp中提供了一个向导，用于在DC监视器存储库中创建作业。
  */
 public interface JobWizard extends Wizard<JobWizardContext, JobWizardSession> {
 

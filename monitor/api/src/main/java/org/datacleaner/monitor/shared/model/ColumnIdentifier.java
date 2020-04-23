@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents a column in a table
+ * 代表表格中的一列
  */
 public class ColumnIdentifier implements Serializable, HasName {
 

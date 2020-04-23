@@ -27,6 +27,7 @@ import org.datacleaner.monitor.scheduling.model.ExecutionLog;
 /**
  * Defines a mechanism to provide variable values to the DataCleaner monitor
  * application at runtime.
+ * 定义一种在运行时向DataCleaner Monitor应用程序提供变量值的机制。
  */
 public interface VariableProvider {
 

@@ -37,6 +37,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * Page where user has to select if CSV file is already existing on server, or
  * if he wants to upload it.
+ * 用户必须在其中选择服务器上是否已存在CSV文件的页面，或者如果要上载，则选择。
  */
 public abstract class CsvDatastoreUploadOrExistingFileWizardPage extends AbstractFreemarkerWizardPage {
 

@@ -26,6 +26,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Datastore wizard for CSV files
+ * CSV文件的数据存储向导
  */
 @Component
 public class CsvDatastoreWizard implements DatastoreWizard {

@@ -28,6 +28,7 @@ import org.datacleaner.repository.RepositoryFile;
 
 /**
  * Defines a context around an {@link AnalysisJob}.
+ * 围绕{@link AnalysisJob}定义上下文。
  */
 public interface JobContext extends HasName {
 

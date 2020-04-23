@@ -44,6 +44,8 @@ import org.slf4j.LoggerFactory;
  * datastores that are available in the live configuration. In those cases we
  * will make available some actionable buttons to let the user navigate the
  * datastore.
+ * 用于{@link WriteDataResult}的专用HTML渲染器，它引用实时配置中可用的数据存储。
+ * 在这些情况下，我们将提供一些可操作的按钮，以使用户可以浏览数据存储。
  */
 @RendererBean(HtmlRenderingFormat.class)
 public class InteractiveWriteDataResultHtmlRenderer implements Renderer<WriteDataResult, HtmlFragment> {

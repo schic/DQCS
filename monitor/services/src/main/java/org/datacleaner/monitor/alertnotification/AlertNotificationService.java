@@ -24,6 +24,7 @@ import org.datacleaner.monitor.scheduling.model.ExecutionLog;
 /**
  * Defines an interface for the component which handles alert notifications for
  * finished Job executions.
+ * 为该组件定义一个接口，该接口处理已完成的作业执行的警报通知。
  */
 public interface AlertNotificationService {
 

@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Identifies a job creation wizard
+ * 标识工作创建向导
  */
 public class WizardIdentifier implements Serializable {
 

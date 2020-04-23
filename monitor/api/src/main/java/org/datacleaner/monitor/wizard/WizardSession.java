@@ -21,6 +21,7 @@ package org.datacleaner.monitor.wizard;
 
 /**
  * Represents the session of going through a wizard
+ * 表示经历向导的会话
  */
 public interface WizardSession {
 

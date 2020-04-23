@@ -22,6 +22,7 @@ package org.datacleaner.monitor.scheduling.model;
 /**
  * Represents whether a {@link ExecutionLog} was manually or automatically
  * triggered (scheduled).
+ * 表示{@link ExecutionLog}是手动还是自动触发（计划）。
  */
 public enum TriggerType {
 

@@ -23,6 +23,7 @@ import org.apache.metamodel.schema.Column;
 
 /**
  * Simple struct like pojo for holding the information about a mapped columns.
+ * 类似pojo的简单结构，用于保存有关映射列的信息。
  */
 final class ColumnMapping {
 

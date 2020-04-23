@@ -41,6 +41,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Page where user selects which folder the file should be located in
+ * 用户选择文件应位于哪个文件夹的页面
  */
 public abstract class CsvDatastoreLocationWizardPage extends AbstractFreemarkerWizardPage {
 

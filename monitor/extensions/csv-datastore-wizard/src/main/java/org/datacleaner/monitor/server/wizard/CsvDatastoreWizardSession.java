@@ -39,6 +39,7 @@ import org.w3c.dom.Element;
 
 /**
  * Wizard session for creating a CSV file datastore.
+ * 用于创建CSV文件数据存储区的向导会话。
  */
 public class CsvDatastoreWizardSession extends AbstractDatastoreWizardSession {
 

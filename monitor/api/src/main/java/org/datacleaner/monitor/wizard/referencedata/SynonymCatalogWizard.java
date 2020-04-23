@@ -20,7 +20,8 @@
 package org.datacleaner.monitor.wizard.referencedata;
 
 /**
- * Synonym catalog reference data wizard. 
+ * Synonym catalog reference data wizard.
+ * 同义词目录参考数据向导。
  */
 public interface SynonymCatalogWizard extends ReferenceDataWizard {
 }

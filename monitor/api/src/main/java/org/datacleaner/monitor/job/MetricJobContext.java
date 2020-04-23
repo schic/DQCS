@@ -23,6 +23,7 @@ import org.datacleaner.monitor.shared.model.JobMetrics;
 
 /**
  * Represents a job that exposes and produces metrics
+ * 代表一项公开并产生指标的工作
  */
 public interface MetricJobContext extends JobContext {
 

@@ -22,7 +22,8 @@ package org.datacleaner.monitor.wizard.referencedata;
 import org.datacleaner.monitor.wizard.WizardContext;
 
 /**
- * Context object which is shared throughout the wizard session. 
+ * Context object which is shared throughout the wizard session.
+ * 在整个向导会话中共享的上下文对象。
  */
 public interface ReferenceDataWizardContext extends WizardContext {
     /**

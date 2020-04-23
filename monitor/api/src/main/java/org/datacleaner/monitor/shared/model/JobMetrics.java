@@ -25,6 +25,7 @@ import java.util.List;
 
 /**
  * Represents the available metrics of a specific job.
+ * 表示特定作业的可用指标。
  */
 public class JobMetrics implements Serializable {
 

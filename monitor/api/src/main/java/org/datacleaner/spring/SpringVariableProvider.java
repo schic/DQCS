@@ -36,6 +36,8 @@ import org.springframework.core.env.Environment;
  * Implementation of {@link VariableProvider} which consults Spring's
  * {@link Environment} for variables. Variables which are demarcated as
  * ${variable} or #{variable} are replaced.
+ * {@link VariableProvider}的实现，该变量向Spring的{@link Environment}咨询变量。
+ * 标为${variable}或＃{variable}的变量将被替换。
  */
 public class SpringVariableProvider implements VariableProvider {
 

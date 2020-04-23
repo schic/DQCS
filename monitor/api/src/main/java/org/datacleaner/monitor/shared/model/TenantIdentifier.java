@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Identifier object for a Tenant of the DataCleaner monitor web app.
+ * DataCleaner监视器Web应用程序的租户的标识符对象。
  */
 public class TenantIdentifier implements Serializable {
 

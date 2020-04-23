@@ -20,7 +20,8 @@
 package org.datacleaner.monitor.wizard.referencedata;
 
 /**
- * String pattern reference data wizard. 
+ * String pattern reference data wizard.
+ * 字符串模式参考数据向导。
  */
 public interface StringPatternWizard extends ReferenceDataWizard {
 }

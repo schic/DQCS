@@ -21,6 +21,7 @@ package org.datacleaner.monitor.wizard.job;
 
 /**
  * Abstract job wizard session implementation
+ * 抽象作业向导会话的实现
  */
 public abstract class AbstractJobWizardSession implements JobWizardSession {
 

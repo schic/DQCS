@@ -22,6 +22,7 @@ package org.datacleaner.monitor.shared.model;
 /**
  * Exception thrown by the service interfaces in case an un-authenticated or
  * un-authorized action is attempted.
+ * 如果尝试进行未经身份验证或未经授权的操作，服务接口将引发异常。
  */
 public class DCSecurityException extends RuntimeException {
 

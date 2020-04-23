@@ -23,6 +23,7 @@ import org.datacleaner.monitor.wizard.WizardSession;
 
 /**
  * Represents the session of creating a datastore
+ * 表示创建数据存储区的会话
  */
 public interface DatastoreWizardSession extends WizardSession {
 

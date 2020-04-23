@@ -28,6 +28,7 @@ import org.datacleaner.monitor.scheduling.model.ExecutionLog;
  * Identifies a job in the repository. The identifier is based on the name of
  * the job, but typically also holds the type (in the form of a JobType class
  * name) of the job.
+ * 标识存储库中的作业。标识符基于作业的名称，但通常还保存作业的类型（以JobType类名称的形式）。
  */
 public class JobIdentifier implements Serializable, Comparable<JobIdentifier>, HasName {
 

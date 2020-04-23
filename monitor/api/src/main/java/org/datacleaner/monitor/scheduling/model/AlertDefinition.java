@@ -25,6 +25,7 @@ import org.datacleaner.monitor.shared.model.MetricIdentifier;
 
 /**
  * Defines the rules of an alert that the user has configured.
+ * 定义用户已配置的警报规则。
  */
 public class AlertDefinition implements Serializable, Comparable<AlertDefinition> {
 

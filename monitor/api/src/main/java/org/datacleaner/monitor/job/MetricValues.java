@@ -25,6 +25,7 @@ import java.util.List;
 /**
  * Represents a set of metric values, extracted from the same analysis result
  * (and thus same date).
+ * 表示从相同分析结果（因此也是相同日期）提取的一组度量值。
  */
 public interface MetricValues {
 

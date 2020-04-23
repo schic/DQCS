@@ -22,7 +22,8 @@ package org.datacleaner.monitor.wizard.referencedata;
 import org.datacleaner.monitor.wizard.WizardSession;
 
 /**
- * Represents the session of creating reference data. 
+ * Represents the session of creating reference data.
+ * 表示创建参考数据的会话。
  */
 public interface ReferenceDataWizardSession extends WizardSession {
     @Override

@@ -20,7 +20,8 @@
 package org.datacleaner.monitor.wizard.referencedata;
 
 /**
- * Dictionary reference data wizard. 
+ * Dictionary reference data wizard.
+ * 词典参考数据向导。
  */
 public interface DictionaryWizard extends ReferenceDataWizard {
 }

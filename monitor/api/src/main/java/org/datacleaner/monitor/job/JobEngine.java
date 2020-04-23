@@ -29,9 +29,10 @@ import org.datacleaner.monitor.shared.model.JobIdentifier;
 /**
  * A component responsible for discovery and execution of jobs of a particular
  * type.
- * 
+ * 负责发现和执行特定类型作业的组件
  * @param <T>
  *            the type of Jobs (JobContexts) that are produced by this engine.
+ *            此引擎生成的作业（JobContexts）的类型。
  */
 public interface JobEngine<T extends JobContext> {
 

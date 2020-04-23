@@ -42,6 +42,7 @@ import com.google.common.collect.Sets;
 
 /**
  * A Spring-based {@link InjectionManager} implementation
+ * 一个基于Spring的{@link InjectionManager}实现
  */
 final class SpringInjectionManager extends InjectionManagerImpl {
 

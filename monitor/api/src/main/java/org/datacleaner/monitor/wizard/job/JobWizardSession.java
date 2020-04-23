@@ -23,6 +23,7 @@ import org.datacleaner.monitor.wizard.WizardSession;
 
 /**
  * Represents the session of creating a job
+ * 代表创建工作的会话
  */
 public interface JobWizardSession extends WizardSession {
 

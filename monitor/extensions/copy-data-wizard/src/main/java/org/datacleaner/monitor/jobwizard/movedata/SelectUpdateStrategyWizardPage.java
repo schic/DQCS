@@ -47,6 +47,7 @@ import org.datacleaner.monitor.wizard.job.JobWizardContext;
 /**
  * Page that allows the user to specify how source data updates is handled by
  * the job.
+ * 该页面允许用户指定作业如何处理源数据更新。
  */
 public class SelectUpdateStrategyWizardPage extends AbstractFreemarkerWizardPage {
 

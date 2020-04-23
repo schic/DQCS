@@ -44,6 +44,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * Default alert notification service
+ * 默认警报通知服务
  */
 @Component
 public class AlertNotificationServiceImpl implements AlertNotificationService {

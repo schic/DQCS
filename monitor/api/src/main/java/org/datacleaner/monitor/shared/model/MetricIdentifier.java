@@ -29,6 +29,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Identifies a metric of interest.
+ * 标识兴趣指标。
  */
 public class MetricIdentifier implements Serializable, Comparable<MetricIdentifier> {
 

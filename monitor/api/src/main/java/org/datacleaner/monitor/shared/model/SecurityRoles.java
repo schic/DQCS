@@ -21,6 +21,7 @@ package org.datacleaner.monitor.shared.model;
 
 /**
  * Enumerates the security roles used in the DC monitor
+ * 枚举DC监视器中使用的安全角色
  */
 public interface SecurityRoles {
 

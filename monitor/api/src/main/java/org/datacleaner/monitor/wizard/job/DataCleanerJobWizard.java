@@ -21,6 +21,7 @@ package org.datacleaner.monitor.wizard.job;
 
 /**
  * Abstract job wizard implementation for DataCleaner jobs.
+ * DataCleaner作业的抽象作业向导实现。
  */
 public abstract class DataCleanerJobWizard implements JobWizard {
 

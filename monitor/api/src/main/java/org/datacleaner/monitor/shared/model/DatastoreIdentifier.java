@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Identifies a Datastore in the repository.
+ * 标识存储库中的数据存储。
  */
 public class DatastoreIdentifier implements Serializable, Comparable<JobIdentifier>, HasName {
 

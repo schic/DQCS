@@ -35,6 +35,7 @@ import org.slf4j.LoggerFactory;
 /**
  * WizardPage for configuring separator char, quote char, escape char, header
  * line number and file encoding of a CSV file.
+ * WizardPage，用于配置分隔符char，报价char，转义字符，标题行号和CSV文件的文件编码。
  */
 public abstract class CsvConfigurationWizardPage extends AbstractFreemarkerWizardPage {
 

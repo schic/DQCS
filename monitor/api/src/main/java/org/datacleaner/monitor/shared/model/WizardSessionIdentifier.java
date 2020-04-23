@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents a session ID on the client side.
+ * 代表客户端的会话ID。
  */
 public class WizardSessionIdentifier implements Serializable {
 

@@ -25,6 +25,7 @@ import java.util.Date;
 /**
  * Represents the basic information about an execution. Can be used as a key for
  * retrieving more information in an {@link ExecutionLog} object.
+ * 表示有关执行的基本信息。可用作在{@link ExecutionLog}对象中检索更多信息的键。
  */
 public class ExecutionIdentifier implements Serializable, Comparable<ExecutionIdentifier> {
 

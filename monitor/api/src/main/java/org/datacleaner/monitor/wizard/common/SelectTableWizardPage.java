@@ -36,6 +36,7 @@ import org.datacleaner.monitor.wizard.job.JobWizardContext;
 /**
  * A simple {@link WizardPageController} that asks the user to select the
  * {@link Table} of interest.
+ * 一个简单的{@link WizardPageController}，要求用户选择感兴趣的{@link Table}。
  */
 public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage {
 

@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Identifies reference data in the repository.
+ * 标识存储库中的参考数据。
  */
 public class ReferenceDataIdentifier implements Serializable, Comparable<ReferenceDataIdentifier>, HasName {
 

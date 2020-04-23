@@ -30,6 +30,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A simple {@link AlertNotifier} that logs alerts as WARNINGs in the log.
+ * 一个简单的{@link AlertNotifier}，可将警报作为警告记录在日志中。
  */
 public class LoggerAlertNotifier implements AlertNotifier {
 

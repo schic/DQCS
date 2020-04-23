@@ -24,6 +24,7 @@ import org.datacleaner.monitor.wizard.Wizard;
 /**
  * A pluggable component (plug-in / extension) which provides a wizard in the
  * webapp for creating reference data in the DC monitor configuration.
+ * 可插拔组件（插件/扩展），它在webapp中提供了一个向导，用于在DC监视器配置中创建参考数据。
  */
 public interface ReferenceDataWizard extends Wizard<ReferenceDataWizardContext, ReferenceDataWizardSession> {
 }

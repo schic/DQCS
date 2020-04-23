@@ -25,6 +25,7 @@ import org.datacleaner.monitor.configuration.TenantContext;
 
 /**
  * Manager component of all {@link JobEngine}s in the application.
+ * 应用程序中所有{@link JobEngine}的管理器组件。
  */
 public interface JobEngineManager {
 

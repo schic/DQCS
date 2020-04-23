@@ -29,6 +29,7 @@ import org.datacleaner.monitor.scheduling.model.ExecutionLog;
 /**
  * Interface for components that listen for executions and notifies in case any
  * alerts was raised..
+ * 侦听执行并在出现任何警报时通知的组件的接口。
  */
 public interface AlertNotifier {
 

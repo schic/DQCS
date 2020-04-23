@@ -22,9 +22,11 @@ package org.datacleaner.monitor.wizard;
 /**
  * An abstract wizard definition. Can be extended by sub-interfaces to fit
  * specific wizard requirements.
+ * 抽象的向导定义。可以通过子界面扩展以适应特定的向导要求。
  * 
  * A wizard are generally speaking pluggable components (plug-ins) that are
  * added to the user interface for customization purposes.
+ * 向导通常是可插入的组件（插件），已将它们添加到用户界面中以进行自定义。
  */
 public interface Wizard<C extends WizardContext, S extends WizardSession> {
 

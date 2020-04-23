@@ -26,6 +26,7 @@ import org.datacleaner.monitor.shared.model.JobIdentifier;
 
 /**
  * Represents a running (or finished) execution of a job.
+ * 表示作业的运行（或完成）执行。
  */
 public class ExecutionLog extends ExecutionIdentifier implements Serializable {
 

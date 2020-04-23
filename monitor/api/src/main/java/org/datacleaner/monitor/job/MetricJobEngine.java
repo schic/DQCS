@@ -32,9 +32,9 @@ import org.datacleaner.monitor.shared.model.MetricIdentifier;
 /**
  * Defines a {@link JobEngine} whose jobs and results expose metrics that can be
  * monitored in the timelines of DataCleaner monitor.
- * 
+ * 定义一个{@link JobEngine}，其作业和结果公开可以在DataCleaner监视器的时间轴中进行监视的指标。
  * @param <T>
- *            the job context type
+ *            the job context type 工作环境类型
  */
 public interface MetricJobEngine<T extends MetricJobContext> extends JobEngine<T> {
 

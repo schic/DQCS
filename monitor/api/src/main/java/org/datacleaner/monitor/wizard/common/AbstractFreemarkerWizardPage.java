@@ -36,6 +36,7 @@ import freemarker.template.Version;
 /**
  * Abstract {@link WizardPageController} which uses Freemarker to render the
  * form contents.
+ * 抽象的{@link WizardPageController}，它使用Freemarker呈现表单内容。
  */
 public abstract class AbstractFreemarkerWizardPage extends AbstractWizardPage implements WizardPageController {
 

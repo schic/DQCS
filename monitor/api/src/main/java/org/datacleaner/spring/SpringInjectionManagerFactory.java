@@ -31,6 +31,7 @@ import org.springframework.stereotype.Component;
 /**
  * An {@link InjectionManagerFactory} implementation suitable for deployments
  * with the Spring framework as dependency provider.
+ * 一个{@link InjectionManagerFactory}实现，适用于以Spring框架作为依赖项提供程序的部署。
  */
 @Component
 public class SpringInjectionManagerFactory implements InjectionManagerFactory, ApplicationContextAware {

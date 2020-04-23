@@ -24,6 +24,8 @@ package org.datacleaner.monitor.shared.model;
  * DC monitor. When exceptions like this is thrown, the user interface will
  * treat it as a missing or faulty user input situation, rather than an
  * application error.
+ * 与DC监视器的用户输入有关的异常或超类异常。
+ * 当抛出类似这样的异常时，用户界面将将其视为丢失或错误的用户输入情况，而不是应用程序错误。
  */
 public class DCUserInputException extends RuntimeException {
 

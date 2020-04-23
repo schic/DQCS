@@ -29,6 +29,7 @@ import org.datacleaner.monitor.shared.model.TenantIdentifier;
 
 /**
  * Represents information about a scheduled job execution.
+ * 表示有关计划作业执行的信息。
  */
 public class ScheduleDefinition implements Comparable<ScheduleDefinition>, Serializable {
 

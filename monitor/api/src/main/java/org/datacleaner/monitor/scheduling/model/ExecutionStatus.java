@@ -21,7 +21,7 @@ package org.datacleaner.monitor.scheduling.model;
 
 /**
  * Represents the different states of execution that a job can be in.
- * 
+ * 表示作业可以处于的不同执行状态。
  * @see ExecutionLog
  */
 public enum ExecutionStatus {

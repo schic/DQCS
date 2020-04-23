@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents information about how a job's variable values are provided
+ * 表示有关如何提供作业的变量值的信息
  */
 public class VariableProviderDefinition implements Serializable {
 

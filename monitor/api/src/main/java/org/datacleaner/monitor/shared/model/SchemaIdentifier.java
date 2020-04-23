@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents a schema of a datastore
+ * 表示数据存储区的架构
  */
 public class SchemaIdentifier implements Serializable, HasName {
 

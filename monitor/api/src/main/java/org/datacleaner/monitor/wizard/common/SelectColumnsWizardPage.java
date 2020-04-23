@@ -33,6 +33,7 @@ import org.apache.metamodel.util.CollectionUtils;
 /**
  * A simple {@link WizardPageController} that asks the user to select the
  * {@link Column}s of interest.
+ * 一个简单的{@link WizardPageController}，它要求用户选择感兴趣的{@link Column}。
  */
 public abstract class SelectColumnsWizardPage extends
 		AbstractFreemarkerWizardPage {

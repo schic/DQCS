@@ -38,6 +38,7 @@ import org.datacleaner.util.StringUtils;
 
 /**
  * Page responsible for mapping of source and target columns.
+ * 页面负责映射源列和目标列。
  */
 class ColumnMappingPage extends AbstractFreemarkerWizardPage {
 

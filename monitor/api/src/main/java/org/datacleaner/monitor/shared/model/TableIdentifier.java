@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents the table of a schema in a datastore
+ * 表示数据存储中的架构表
  */
 public class TableIdentifier implements Serializable, HasName {
 

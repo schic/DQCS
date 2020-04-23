@@ -22,6 +22,7 @@ package org.datacleaner.monitor.job;
 /**
  * Represents a callback for progress of job execution, and log writer for the
  * user-visible log on the history and audit pages of DataCleaner.
+ * 表示作业执行进度的回调，以及DataCleaner的历史记录和审计页面上用户可见的日志的日志编写器。
  */
 public interface ExecutionLogger {
 

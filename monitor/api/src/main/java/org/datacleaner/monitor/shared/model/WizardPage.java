@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * The client-side representation of a wizard page
+ * 向导页面的客户端表示
  */
 public class WizardPage implements Serializable {
 

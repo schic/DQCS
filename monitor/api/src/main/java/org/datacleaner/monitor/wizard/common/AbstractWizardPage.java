@@ -27,6 +27,7 @@ import org.datacleaner.monitor.wizard.WizardPageController;
 /**
  * Abstract {@link WizardPageController} containing just basic convenience
  * methods for handling requests and responses in the Wizard MVC framework.
+ * 抽象的{@link WizardPageController}仅包含基本的便利方法，用于在Wizard MVC框架中处理请求和响应。
  */
 public abstract class AbstractWizardPage implements WizardPageController {
 
