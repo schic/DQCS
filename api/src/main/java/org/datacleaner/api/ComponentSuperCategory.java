@@ -27,6 +27,8 @@ import org.apache.metamodel.util.HasName;
  * Represents a "super category" of components. Where {@link ComponentCategory}
  * represents the groupings of related components, the super categorization is
  * used for representing broader categories of components such as
+ * 代表组件的“超级类别”。其中{@link ComponentCategory}表示相关组件的分组，
+ * 而超级分类用于表示更广泛的组件类别，例如
  */
 public interface ComponentSuperCategory extends Serializable, HasName, Comparable<ComponentSuperCategory> {
 

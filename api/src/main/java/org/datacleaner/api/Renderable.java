@@ -22,6 +22,7 @@ package org.datacleaner.api;
 /**
  * Marker interface for all objects that can be rendered, typically for display
  * of results or for user configuration screens.
+ * 可以渲染的所有对象的标记界面，通常用于结果的显示或用户配置屏幕。
  */
 public interface Renderable {
 

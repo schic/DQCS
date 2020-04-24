@@ -24,10 +24,12 @@ import org.slf4j.Logger;
 /**
  * Commonly used {@link ComponentMessage} which represents a message from the
  * component to the end user inspecting the log of a job's execution.
+ * 常用的{@link ComponentMessage}表示从组件到检查作业执行日志的最终用户的消息。
  *
  * Components are advised to only publish this type of message with especially
  * relevant information. Use a regular {@link Logger} for background information
  * of relevance to the system administration.
+ * 建议组件仅发布带有特别相关信息的此类消息。使用常规的{@link Logger}获取与系统管理相关的背景信息。
  */
 public class ExecutionLogMessage implements ComponentMessage {
 

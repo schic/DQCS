@@ -22,6 +22,7 @@ package org.datacleaner.api;
 /**
  * Represents a component that is capable of combining multiple input data
  * streams and producing a number of {@link OutputDataStream}s as well.
+ * 表示一个组件，该组件能够组合多个输入数据流，也可以生成许多{@link OutputDataStream}。
  */
 public abstract class MultiStreamComponent implements Transformer, HasOutputDataStreams {
 

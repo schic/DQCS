@@ -23,10 +23,13 @@ package org.datacleaner.api;
  * An exception that {@link Component}s can throw when certain functionality is
  * restricted - typically because it's a paid for function or because an
  * approval process is pending or so.
+ * 当某些功能受到限制时，{@link Component}可能引发的异常-通常是因为它是付费功能，
+ * 或者因为批准程序正在等待中。
  *
  * Typically the user interface will have special handling available for this
  * exception type to guide him in the direction of unlocking the restricted
  * functionality.
+ * 通常，用户界面将对此异常类型提供特殊处理，以指导他朝着解锁受限功能的方向发展。
  *
  * This class and {@link RestrictedFunctionalityMessage} are two ways to
  * archieve something quite similar. The main difference is that a
@@ -36,6 +39,11 @@ package org.datacleaner.api;
  * {@link RestrictedFunctionalityException} will cancel the job because the
  * functionality is simply unavailable or a partial result is not granted
  * either.
+ * 此类和{@link RestrictedFunctionalityMessage}是将相似的内容存档的两种方法。
+ * 主要区别在于，
+ * {@link RestrictedFunctionalityMessage}可以用于允许仅以部分功能性结果完成某项工作的情况
+ * （例如，在发送消息后，转换器可以更改其行为），
+ * 而{@link RestrictedFunctionalityException}将取消作业，因为*功能根本不可用或未授予部分结果。
  */
 public class RestrictedFunctionalityException extends RuntimeException {
 

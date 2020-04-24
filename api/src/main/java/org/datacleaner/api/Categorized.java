@@ -28,6 +28,7 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation used to assign a set of categories to a component.
+ * 用于将一组类别分配给组件的注释。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE })

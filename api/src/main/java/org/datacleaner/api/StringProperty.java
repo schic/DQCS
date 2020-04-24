@@ -32,6 +32,8 @@ import javax.inject.Qualifier;
  * Annotation containing supplementary metadata about a {@link Configured}
  * string property. This metadata can be used as a way to give hints to the UI
  * as to how the content should be presented.
+ * 包含有关{@link Configured}字符串属性的补充元数据的注释。
+ * 此元数据可以用作向UI提示内容显示方式的方式。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD })

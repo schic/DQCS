@@ -27,6 +27,7 @@ import org.apache.metamodel.util.HasName;
  * Represents a category that a component can be applied to. Categories aid the
  * description of the components by building relationships through related
  * categories.
+ * 表示可以应用组件的类别。类别通过通过相关类别建立关系来辅助组件的描述。
  */
 public interface ComponentCategory extends Serializable, HasName {
 

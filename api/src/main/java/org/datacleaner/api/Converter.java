@@ -22,11 +22,14 @@ package org.datacleaner.api;
 /**
  * Interface for converting objects from and to strings. Used to serialize
  * configured properties to external representations.
+ * 用于在字符串之间转换对象的接口。用于将配置的属性序列化为外部表示。
  *
  * Converters should supply a no-args constructor.
+ * 转换器应提供一个无参数的构造函数。
  *
  * Usually Converters are registered on a class or a configured property using
  * the {@link Convertable} annotation.
+ * 通常，使用{@link Convertable}注释在类或配置的属性上注册转换器。
  *
  * @param <E>
  */

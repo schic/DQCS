@@ -21,8 +21,9 @@ package org.datacleaner.api;
 
 /**
  * Super-interface for all types that has an {@link AnalyzerResult}.
+ * 具有{@link AnalyzerResult}的所有类型的超级接口。
  *
- * @param <R> the type of {@link AnalyzerResult} contained.
+ * @param <R> the type of {@link AnalyzerResult} contained.所包含的{@link AnalyzerResult}的类型。
  */
 public interface HasAnalyzerResult<R extends AnalyzerResult> {
 
