@@ -25,6 +25,8 @@ import org.datacleaner.api.InputRow;
  * Represents a component that is capable of connecting {@link RowAnnotation} to
  * {@link InputRow}s, typically to publish them via a
  * {@link RowAnnotationSampleContainer}.
+ * 表示一个能够将{@link RowAnnotation}连接到{@link InputRow}的组件，
+ * 通常可以通过{@link RowAnnotationSampleContainer}发布它们。
  */
 public interface RowAnnotationHandler {
 
