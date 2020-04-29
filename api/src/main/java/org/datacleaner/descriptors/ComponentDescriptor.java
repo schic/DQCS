@@ -41,6 +41,8 @@ import org.datacleaner.util.HasAliases;
  * Defines an interface for descriptors of {@link Component}s that support
  * initialization, closing and configuration properties. See {@link Component}
  * for a general description.
+ * 为支持初始化，关闭和配置属性的{@link Component}的描述符定义一个接口。
+ * 有关一般说明，请参见{@link Component}。
  */
 public interface ComponentDescriptor<B> extends Comparable<ComponentDescriptor<?>>, Serializable, HasAliases {
     /**

@@ -30,6 +30,7 @@ import org.datacleaner.api.InputColumn;
 
 /**
  * Descriptor class for {@link AnalyzerResult} metrics.
+ * {@link AnalyzerResult}指标的描述符类。
  */
 public interface MetricDescriptor extends Serializable, HasName, Comparable<MetricDescriptor> {
 

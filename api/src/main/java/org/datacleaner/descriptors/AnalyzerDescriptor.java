@@ -23,6 +23,7 @@ import org.datacleaner.api.Analyzer;
 
 /**
  * {@link ComponentDescriptor} interface for {@link Analyzer}s.
+ * {@link Analyzer}的{@link ComponentDescriptor}接口。
  *
  * @param <B> the type of {@link Analyzer}
  */

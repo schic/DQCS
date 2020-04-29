@@ -27,6 +27,7 @@ import org.datacleaner.api.AnalyzerResultReducer;
 
 /**
  * Descriptor of a {@link AnalyzerResult} object.
+ * {@link AnalyzerResult}对象的描述符。
  */
 public interface ResultDescriptor extends Serializable {
 

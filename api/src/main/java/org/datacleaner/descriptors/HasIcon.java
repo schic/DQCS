@@ -21,6 +21,7 @@ package org.datacleaner.descriptors;
 
 /**
  * Descriptor interface for providing component's icon data.
+ * 描述符接口，用于提供组件的图标数据。
  */
 public interface HasIcon {
     /**

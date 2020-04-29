@@ -28,7 +28,7 @@ import org.datacleaner.api.Initialize;
 /**
  * Descriptor for an initialize method. The most common way of registering an
  * initialize method is using the @Initialize annotation.
- *
+ *初始化方法的描述符。注册初始化方法的最常见方法是使用@Initialize批注。
  * @see Initialize
  *
  *
