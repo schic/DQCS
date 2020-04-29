@@ -26,6 +26,8 @@ import org.apache.metamodel.util.HasName;
 /**
  * Represents an abstract node (typically a {@link RepositoryFile} or
  * {@link RepositoryFolder}) in the {@link Repository}.
+ * 表示{@link Repository}中的抽象节点（通常为{@link RepositoryFile}
+ * 或{@link RepositoryFolder}）。
  */
 public interface RepositoryNode extends Serializable, HasName, Comparable<RepositoryNode> {
 

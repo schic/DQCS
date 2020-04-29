@@ -26,6 +26,7 @@ import org.datacleaner.util.ApiStringUtils;
  * Abstract implementation of {@link ComponentCategory}. This implementation
  * assumes that all instances of a category class are equal, which is also the
  * recommended approach.
+ * {@link ComponentCategory}的抽象实现。该实现假定类别类的所有实例都相等，这也是推荐的方法。
  */
 public abstract class AbstractComponentCategory implements ComponentCategory {
 

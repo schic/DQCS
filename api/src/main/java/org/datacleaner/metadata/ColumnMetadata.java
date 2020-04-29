@@ -24,6 +24,7 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Defines metadata about a single {@link Column}.
+ * 定义有关单个{@link Column}的元数据。
  */
 public interface ColumnMetadata extends HasName, HasMetadataAnnotations {
 

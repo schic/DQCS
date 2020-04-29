@@ -25,6 +25,7 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Abstraction over all reference data types in DataCleaner
+ * DataCleaner中所有参考数据类型的抽象
  */
 public interface ReferenceData extends Serializable, HasName {
 

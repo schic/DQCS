@@ -27,6 +27,7 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 
 /**
  * A dictionary represents a set of values grouped together with a label.
+ * 字典代表与标签分组在一起的一组值。
  *
  * Examples of meaningful dictionaries:
  * <ul>
@@ -34,9 +35,14 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
  * <li>Female given names</li>
  * <li>Product codes</li>
  * </ul>
+ * 有意义的字典示例：
+ * 姓氏
+ * 女名
+ * 产品代号
  *
  * Often times a dictionary will implement a caching mechanism to prevent having
  * to hold all values of the dictionary in memory.
+ * 通常，字典会实现一种缓存机制，以防止将字典的所有值保存在内存中。
  *
  * @see Initialize
  * @see Close

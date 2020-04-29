@@ -27,16 +27,23 @@ import org.datacleaner.api.Configured;
  * Represents a catalog of items that are considered as reference data that a
  * user can choose to utilize in various analyzers, transformers etc. All of
  * these implement the {@link ReferenceData} interface.
+ * 表示被视为参考数据的项目目录，用户可以选择在各种分析仪，转换器等中使用这些项目。
+ * 所有这些都实现{@link ReferenceData}接口。
  *
  * Reference data is typically reusable between jobs which is why it is
  * contained within the configuration. For example you could have a dictionary
  * of valid values for a particular entity type. This dictionary is then
  * reusable both as input to a Dictionary validation filter and an analyzer that
  * will match values against different dictionaries.
+ * 参考数据通常可在作业之间重用，这就是为什么它包含在配置中。
+ * 例如，您可能具有特定实体类型的有效值的字典。然后，该字典可以用作字典验证过滤器和分析器的输入，
+ * 这些分析器可以将值与不同字典进行匹配。
  *
  * All reference data types ( {@link Dictionary} , {@link SynonymCatalog},
  * {@link StringPattern} etc.) is injectable into components using
  * the @Configured annotation.
+ * 所有参考数据类型（{@link字典}，{@link SynonymCatalog}，{@link StringPattern}等）
+ * 都可以使用@Configured注释注入到组件中。
  *
  * @see Configured
  */

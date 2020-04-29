@@ -28,6 +28,7 @@ import org.apache.metamodel.util.Resource;
 
 /**
  * Represents a file in the {@link Repository}.
+ * 代表{@link Repository}中的文件。
  */
 public interface RepositoryFile extends RepositoryNode {
 

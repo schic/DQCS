@@ -24,6 +24,7 @@ import org.datacleaner.util.HasAliases;
 
 /**
  * A meaning of an input column used during mapping.
+ * 映射期间使用的输入列的含义。
  */
 public interface HasColumnMeaning extends HasName, HasAliases {
     default String getGroup() {

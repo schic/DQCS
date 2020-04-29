@@ -22,6 +22,7 @@ package org.datacleaner.metadata;
 /**
  * A common and general enum of 'meanings of columns/fields' in a table. This
  * type is available as a convenience for mapping and registering metadata.
+ * 表中“列/字段的含义”的通用枚举。此类型可方便用于映射和注册元数据。
  */
 public enum ColumnMeaning implements HasColumnMeaning {
 
