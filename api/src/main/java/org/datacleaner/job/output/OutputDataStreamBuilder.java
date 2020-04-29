@@ -27,6 +27,7 @@ import org.datacleaner.api.OutputDataStream;
 
 /**
  * Builder object for easily creating {@link OutputDataStream} objects.
+ * 用于轻松创建{@link OutputDataStream}对象的Builder对象。
  */
 public interface OutputDataStreamBuilder {
 

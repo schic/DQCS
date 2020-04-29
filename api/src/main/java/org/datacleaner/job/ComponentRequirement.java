@@ -27,6 +27,7 @@ import org.datacleaner.api.InputRow;
 /**
  * Represents a requirement set on a {@link ComponentJob}, to only run it
  * conditionally.
+ * 表示在{@link ComponentJob}上设置的一项要求，以便仅有条件地运行它。
  */
 public interface ComponentRequirement extends Serializable {
 

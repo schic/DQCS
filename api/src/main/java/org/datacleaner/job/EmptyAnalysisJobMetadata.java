@@ -27,6 +27,7 @@ import org.apache.metamodel.schema.ColumnType;
 
 /**
  * Empty/blank implementation of {@link AnalysisJobMetadata}.
+ * {@link AnalysisJobMetadata}的空/空实现。
  */
 class EmptyAnalysisJobMetadata implements AnalysisJobMetadata {
 

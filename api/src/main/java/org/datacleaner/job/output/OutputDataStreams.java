@@ -26,6 +26,7 @@ import org.datacleaner.api.OutputDataStream;
 /**
  * Convenience/utility methods related to handling and building
  * {@link OutputDataStream} objects.
+ * 与处理和构建{@link OutputDataStream}对象有关的便利/实用方法。
  */
 public class OutputDataStreams {
 

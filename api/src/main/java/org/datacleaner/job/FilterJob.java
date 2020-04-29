@@ -24,7 +24,7 @@ import org.datacleaner.descriptors.FilterDescriptor;
 
 /**
  * Represents a job that filters/categorizes incoming rows.
- *
+ *表示对传入的行进行过滤/分类的作业。
  * @see Filter
  */
 public interface FilterJob extends ComponentJob, HasFilterOutcomes {
