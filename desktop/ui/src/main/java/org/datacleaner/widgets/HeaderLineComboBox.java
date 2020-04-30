@@ -29,6 +29,7 @@ import org.datacleaner.util.NumberDocument;
 
 /**
  * A combo box for selecing header lines for eg. CSV or fixed width files.
+ * 用于选择标题行的组合框。 CSV或固定宽度的文件。
  */
 public class HeaderLineComboBox extends DCComboBox<Integer> {
 

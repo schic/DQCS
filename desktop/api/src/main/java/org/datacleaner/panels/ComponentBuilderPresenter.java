@@ -28,6 +28,7 @@ import org.datacleaner.job.builder.UnconfiguredConfiguredPropertyException;
  * Interface for all job builder presenter objects. These are objects that are
  * used to present the configuration screen (eg. the builder objects) of a
  * component.
+ * 所有作业创建者演示者对象的接口。这些对象用于显示组件的配置屏幕（例如，构建器对象）。
  */
 public interface ComponentBuilderPresenter {
 

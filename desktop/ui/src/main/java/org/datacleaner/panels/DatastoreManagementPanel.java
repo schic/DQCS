@@ -70,6 +70,7 @@ import com.google.inject.Injector;
 /**
  * Panel to select which job or datastore to use. Shown in the "source" tab, if
  * no datastore or job has been selected to begin with.
+ * 用于选择要使用的作业或数据存储的面板。如果没有选择任何数据存储或作业作为开始，则显示在“源”选项卡中。
  */
 public class DatastoreManagementPanel extends DCSplashPanel implements DatastoreChangeListener {
 

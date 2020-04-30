@@ -35,6 +35,7 @@ import org.datacleaner.user.ReferenceDataChangeListener;
 /**
  * It contains all the listeners for ReferenceData type used in
  * {@link AnalysisJobBuilderWindowImpl}
+ * 它包含{@link AnalysisJobBuilderWindowImpl}中使用的ReferenceData类型的所有侦听器
  */
 public class ReferenceDataAnalysisJobWindowImplListeners {
 

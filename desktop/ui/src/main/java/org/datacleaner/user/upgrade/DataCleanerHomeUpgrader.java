@@ -45,6 +45,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Checks if there is DataCleanerHome set up for previous versions of
  * DataCleaner and upgrades.
+ * 检查是否为DataCleaner的早期版本和升级设置了DataCleanerHome。
  */
 public final class DataCleanerHomeUpgrader {
 

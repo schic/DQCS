@@ -26,6 +26,9 @@ import java.awt.Image;
  * Class responsible for adjusting/scaling widgets according to the screen resolution. This is to provide a good user
  * experience for users with high DPI screens - ensuring that what is normally just 1 pixel may take up more when a
  * pixel is extraordinarily small on the physical screen.
+ * 负责根据屏幕分辨率调整/缩放窗口小部件的类。
+ * 这将为具有高DPI屏幕的用户提供良好的用户体验-确保当物理屏幕上的像素异常小时，
+ * 通常只有1个像素的像素会占用更多的像素。
  */
 public class WidgetScreenResolutionAdjuster {
 

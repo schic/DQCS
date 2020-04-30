@@ -38,6 +38,8 @@ import org.datacleaner.windows.TableDefinitionDialog;
  * A widget used for selecting whether to automatically discover or to manually
  * create table definitions for a particular datastore, eg. in the
  * {@link MongoDbDatastoreDialog} or {@link CouchDbDatastoreDialog}.
+ * 用于选择是自动发现还是手动为特定数据存储创建表定义的小部件，
+ * 例如。在{@link MongoDbDatastoreDialog}或{@link CouchDbDatastoreDialog}中。
  */
 public class TableDefinitionOptionSelectionPanel extends DCPanel {
 

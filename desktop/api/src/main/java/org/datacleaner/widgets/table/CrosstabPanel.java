@@ -34,9 +34,11 @@ import org.jdesktop.swingx.JXCollapsiblePane.Direction;
 /**
  * A panel that contains the view for a {@link Crosstab}. This includes a
  * DCTable and a chart area that expands if charts are assigned to it.
+ * 包含{@link Crosstab}视图的面板。这包括一个DCTable和一个图表区域，如果为其分配了图表，则该区域会扩展。
  *
  * These components can be accessed using {@link #getDisplayChartCallback()} and
  * {@link #getTable()}.
+ * 可以使用{@link #getDisplayChartCallback（）}和* {@link #getTable（）}访问这些组件。
  */
 public class CrosstabPanel extends DCPanel {
 

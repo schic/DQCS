@@ -61,9 +61,11 @@ import com.google.inject.Injector;
 
 /**
  * Renderer for {@link GroupedValueDistributionResult}s as Swing components.
+ * {@link GroupedValueDistributionResult}的渲染器作为Swing组件。
  *
  * The results will be displayed using a chart and a table of values and their
  * counts.
+ * 结果将使用图表和值及其计数表显示。
  *
  * @author Kasper Sørensen
  */

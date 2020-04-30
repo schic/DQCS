@@ -28,6 +28,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 
 /**
  * Specialization of {@link AbstractComponentBuilderPanel} for {@link Analyzer}s.
+ * {@link AbstractComponentBuilderPanel}专门用于{@link Analyzer}。
  */
 public class AnalyzerComponentBuilderPanel extends AbstractComponentBuilderPanel
         implements AnalyzerComponentBuilderPresenter, AnalyzerChangeListener {

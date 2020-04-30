@@ -44,6 +44,8 @@ import org.datacleaner.util.PropertyUtil;
  * The main executable class of DataCleaner. This class primarily sets up
  * logging, system properties and delegates to the {@link Bootstrap} class for
  * actual application startup.
+ * DataCleaner的主要可执行类。
+ * 此类主要设置日志记录，系统属性，并委托给{@link Bootstrap}类，以用于实际的应用程序启动。
  */
 public final class Main {
 

@@ -39,14 +39,19 @@ import org.slf4j.LoggerFactory;
 /**
  * {@link DatabaseConnectionPresenter} for database connections based on URL
  * templates.
+ * {@link DatabaseConnectionPresenter}用于基于URL 模板的数据库连接。
  *
  * The template should have the format of a JDBC URL where HOSTNAME,PORT and
  * DATABASE tokens are inlined. For example:
  * "jdbc:mysql://HOSTNAME:PORT/DATABASE".
+ * 模板应具有JDBC URL的格式，其中内联了HOSTNAME，PORT和DATABASE标记。
+ * 例如：“ jdbc：mysql：// HOSTNAME：PORT / DATABASE”。
  *
  * In addition to there's four optional tokens which can be used: PARAM1,
  * PARAM2, PARAM3, PARAM4. Make sure to use corresponding getLabelFor... methods
  * to provide user names.
+ * 除了可以使用的四个可选令牌之外，还包括：PARAM1，PARAM2，PARAM3，PARAM4。
+ * 确保使用相应的getLabelFor ...方法提供用户名。
  */
 public abstract class UrlTemplateDatabaseConnectionPresenter extends AbstractDatabaseConnectionPresenter {
 

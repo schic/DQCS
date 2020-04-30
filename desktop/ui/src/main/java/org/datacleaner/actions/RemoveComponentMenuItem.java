@@ -35,6 +35,7 @@ import org.datacleaner.util.PropertyUtil;
 
 /**
  * menu item and action listener for removing a component from a job.
+ * 菜单项和动作侦听器，用于从作业中删除组件。
  */
 public class RemoveComponentMenuItem extends JMenuItem implements ActionListener {
 

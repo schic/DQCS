@@ -29,6 +29,7 @@ import org.datacleaner.util.WidgetUtils;
 
 /**
  * A {@link ListCellRenderer} for DataCleaner components
+ * 用于DataCleaner组件的{@link ListCellRenderer}
  */
 public class DCListCellRenderer extends DefaultListCellRenderer {
 

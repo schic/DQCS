@@ -30,6 +30,7 @@ import org.datacleaner.util.WidgetUtils;
 
 /**
  * A dialog containing metadata about a job and it's data source
+ * 包含有关工作及其数据源的元数据的对话框
  */
 public class MetadataDialog extends AbstractDialog {
 

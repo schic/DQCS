@@ -22,6 +22,7 @@ package org.datacleaner.widgets.tabs;
 /**
  * This is a slightly rewritten/modified version of swingutil's
  * ClosableTabbedPane
+ * 这是swingutil的ClosableTabbedPane的稍微重写/修改的版本
  */
 public interface TabCloseListener {
 

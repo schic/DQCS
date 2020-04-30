@@ -42,6 +42,8 @@ import org.jdesktop.swingx.JXTextField;
  * string values. This widget looks like the
  * {@link MultipleInputColumnsPropertyWidget}, but is enhanced with string text
  * fields.
+ * 一个专用的属性小部件，用于映射到字符串值的多个输入列。
+ * 这个小部件看起来像{@link MultipleInputColumnsPropertyWidget}，但是通过字符串文本字段得到了增强。
  */
 public class MultipleMappedStringsPropertyWidget extends MultipleInputColumnsPropertyWidget {
 

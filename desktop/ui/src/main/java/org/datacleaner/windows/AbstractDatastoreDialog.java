@@ -54,6 +54,7 @@ import org.jdesktop.swingx.JXTextField;
 /**
  * Abstract dialog for registering a new or editing an existing
  * {@link Datastore}.
+ * 用于注册新的或编辑现有{@link Datastore}的抽象对话框。
  *
  * @param <D>
  *            the type of {@link Datastore}

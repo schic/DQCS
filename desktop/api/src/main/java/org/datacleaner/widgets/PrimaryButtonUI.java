@@ -31,6 +31,7 @@ import com.jgoodies.looks.plastic.PlasticButtonUI;
 
 /***
  * A {@link ButtonUI} for primary buttons in the DataCleaner user interface.
+ * 用于DataCleaner用户界面中主按钮的{@link ButtonUI}。
  */
 public class PrimaryButtonUI extends PlasticButtonUI {
 

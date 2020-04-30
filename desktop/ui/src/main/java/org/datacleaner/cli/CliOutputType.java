@@ -28,6 +28,7 @@ import org.datacleaner.result.renderer.TextRenderingFormat;
 /**
  * Represents the different types of output types that can be selected in the
  * CLI.
+ * 表示可以在CLI中选择的不同类型的输出类型。
  */
 public enum CliOutputType {
 

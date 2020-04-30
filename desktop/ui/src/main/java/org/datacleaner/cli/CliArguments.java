@@ -31,6 +31,7 @@ import com.google.common.base.Strings;
 
 /**
  * Defines the Command-line arguments. These are populated by the CLI parser.
+ * 定义命令行参数。这些由CLI解析器填充
  */
 public class CliArguments {
 

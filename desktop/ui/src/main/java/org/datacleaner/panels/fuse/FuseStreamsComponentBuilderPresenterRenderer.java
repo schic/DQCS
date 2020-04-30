@@ -37,6 +37,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link TransformerComponentBuilder} for
  * {@link CoalesceMultipleFieldsTransformer}.
+ * 为{@link CoalesceMultipleFieldsTransformer}的{@link TransformerComponentBuilder}专门设计的{@link Renderer}。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class FuseStreamsComponentBuilderPresenterRenderer

@@ -33,6 +33,7 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  * Panel that contains a schema tree and allows for a "hide/show" mechanism
+ * 包含模式树并允许“隐藏/显示”机制的面板
  *
  * @author Kasper Sørensen
  */

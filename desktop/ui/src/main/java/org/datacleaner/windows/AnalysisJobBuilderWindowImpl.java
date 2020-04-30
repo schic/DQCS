@@ -119,6 +119,9 @@ import org.slf4j.LoggerFactory;
  * AnalysisJobBuilderWindow because it's main purpose is to present a job that
  * is being built. Behind the covers this job state is respresented in the
  * {@link AnalysisJobBuilder} class.
+ * DataCleaner GUI中的主窗口。该窗口称为AnalysisJobBuilderWindow，
+ * 因为它的主要目的是显示正在构建的作业。在封面后面，
+ * 此工作状态在{@link AnalysisJobBuilder}类中表示。
  */
 @Singleton
 public final class AnalysisJobBuilderWindowImpl extends AbstractWindow

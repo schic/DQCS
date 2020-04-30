@@ -32,6 +32,7 @@ import org.datacleaner.windows.QueryWindow;
 
 /**
  * Action listener that displays a query window
+ * 显示查询窗口的动作侦听器
  */
 public class QueryActionListener implements ActionListener {
 

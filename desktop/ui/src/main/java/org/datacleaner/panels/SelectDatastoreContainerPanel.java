@@ -41,6 +41,7 @@ import org.datacleaner.windows.AnalysisJobBuilderWindow;
 /**
  * The usual container panel of {@link SelectDatastorePanel} when selecting to
  * build job from scratch.
+ * 选择从头开始构建作业时，{@link SelectDatastorePanel}的常规容器面板。
  */
 public class SelectDatastoreContainerPanel extends DCSplashPanel
         implements DatastoreSelectedListener, DatastoreChangeListener {

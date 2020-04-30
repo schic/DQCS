@@ -45,6 +45,7 @@ import org.datacleaner.widgets.tabs.CloseableTabbedPane;
 
 /**
  * A panel for letting the user build multiple {@link SimpleTableDef}s
+ * 用于让用户构建多个{@link SimpleTableDef}的面板
  */
 public class SimpleTableDefsPanel extends DCPanel {
 

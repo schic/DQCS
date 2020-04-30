@@ -43,6 +43,7 @@ import org.datacleaner.widgets.DCFileChooser;
 /**
  * Action listener used to fire saving a result to an .analysis.result.dat
  * (serialized) file.
+ * 动作侦听器用于将结果防火保存到.analysis.result.dat（序列化）文件中。
  */
 public class SaveAnalysisResultActionListener implements ActionListener {
 

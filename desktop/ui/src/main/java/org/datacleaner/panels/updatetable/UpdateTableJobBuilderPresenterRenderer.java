@@ -37,6 +37,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link AnalysisJobBuilder} for
  * {@link UpdateTableAnalyzer}.
+ * 针对{@link UpdateTableAnalyzer}的{@link AnalysisJobBuilder}专门使用{@link Renderer}。
  *
  * @author Kasper Sørensen
  */

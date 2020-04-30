@@ -40,6 +40,7 @@ import org.datacleaner.util.WidgetUtils;
 /**
  * An extension of the normal JFileChooser, applying various minor tweaks to the
  * presentation of files etc.
+ * 常规JFileChooser的扩展，对文件的表示等进行了各种细微调整。
  *
  * @author Kasper Sørensen
  */

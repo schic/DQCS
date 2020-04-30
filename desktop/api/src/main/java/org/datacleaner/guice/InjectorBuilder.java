@@ -37,6 +37,7 @@ import com.google.inject.util.Modules;
 
 /**
  * Helper class for creating sub-injectors to the current injector.
+ * 用于创建当前喷射器的子喷射器的Helper类。
  */
 public final class InjectorBuilder {
 

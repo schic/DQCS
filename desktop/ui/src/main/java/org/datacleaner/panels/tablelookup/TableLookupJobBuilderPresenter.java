@@ -50,6 +50,7 @@ import org.datacleaner.widgets.properties.SingleTableNamePropertyWidget;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link TableLookupTransformer}.
+ *  {@link TableLookupTransformer}专用的{@link TransformerComponentBuilderPresenter}。
  *
  * @author Kasper Sørensen
  */

@@ -52,10 +52,12 @@ import org.slf4j.LoggerFactory;
 /**
  * Specialization of {@link AbstractComponentBuilderPanel} for
  * {@link Transformer}s.
+ * {@link AbstractComponentBuilderPanel}专门用于{@link Transformer} s。
  *
  * This panel will show the transformers configuration properties as well as
  * output columns, a "write data" button, a preview button and a context
  * visualization.
+ * 该面板将显示转换器的配置属性以及输出列，“写入数据”按钮，预览按钮和上下文可视化。
  */
 public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPanel
         implements TransformerComponentBuilderPresenter, TransformerChangeListener {

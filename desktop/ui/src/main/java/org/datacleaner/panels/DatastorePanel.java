@@ -89,6 +89,7 @@ import com.google.inject.Injector;
 /**
  * A panel that presents a datastore and shows edit/remove buttons. This panel
  * is placed as a child inside the {@link DatastoreManagementPanel}.
+ * 提供数据存储并显示编辑/删除按钮的面板。此面板作为子元素放置在{@link DatastoreManagementPanel}中。
  */
 public class DatastorePanel extends DCPanel {
 

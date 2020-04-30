@@ -66,6 +66,7 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  * The "Options" dialog of DataCleaner
+ * DataCleaner的“选项”对话框
  */
 public class OptionsDialog extends AbstractWindow {
 

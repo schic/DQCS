@@ -31,6 +31,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Contains the {@link PropertyWidget}s of a particular component
+ * 包含特定组件的{@link PropertyWidget}
  */
 public class PropertyWidgetCollection {
 

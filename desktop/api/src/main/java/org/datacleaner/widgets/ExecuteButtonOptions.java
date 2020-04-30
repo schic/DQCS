@@ -40,9 +40,11 @@ import org.datacleaner.windows.AnalysisJobBuilderWindow;
 
 /**
  * This class provides an API for hooking in "Execute" button options.
+ * 此类提供了用于挂钩“执行”按钮选项的API。
  *
  * Each hook is represented as an {@link ExecutionMenuItem} that will be shown
  * when the user clicks the caret symbol next to the "Execute" button.
+ * 每个挂钩都表示为{@link ExecutionMenuItem}，当用户单击“执行”按钮旁边的插入符号时，它将显示。
  */
 public class ExecuteButtonOptions {
 

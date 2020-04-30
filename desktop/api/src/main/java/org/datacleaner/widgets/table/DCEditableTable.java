@@ -31,6 +31,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  * Editable table which allows for convenient adding of new records by clicking enter and deleting of empty records by
  * clicking delete or backspace.
+ * 可编辑表，可通过单击输入方便地添加新记录，并通过单击删除或退格键来删除空记录。
  */
 public class DCEditableTable extends DCBaseTable {
 

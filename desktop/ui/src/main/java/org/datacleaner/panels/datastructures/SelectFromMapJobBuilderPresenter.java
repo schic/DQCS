@@ -37,6 +37,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Spectialized {@link TransformerComponentBuilderPresenter} for the
  * {@link SelectFromMapTransformer}.
+ * {@link SelectFromMapTransformer}的专用{@link TransformerComponentBuilderPresenter}。
  */
 final class SelectFromMapJobBuilderPresenter extends TransformerComponentBuilderPanel {
 

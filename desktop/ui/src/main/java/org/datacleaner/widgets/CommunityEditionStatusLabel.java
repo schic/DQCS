@@ -49,6 +49,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * Label that shows the details about community edition of DataCleaner
+ * 显示有关DataCleaner社区版的详细信息的标签
  */
 public class CommunityEditionStatusLabel extends JLabel {
 

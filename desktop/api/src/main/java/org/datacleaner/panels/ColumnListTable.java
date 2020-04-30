@@ -54,6 +54,7 @@ import org.jdesktop.swingx.table.TableColumnExt;
 /**
  * Panel that displays columns in a table-layout. Used for both the "Source" tab
  * and for transformer panels in DataCleaner desktop application.
+ * 在表格布局中显示列的面板。用于“源”选项卡和DataCleaner桌面应用程序中的转换器面板。
  */
 public final class ColumnListTable extends DCPanel {
 

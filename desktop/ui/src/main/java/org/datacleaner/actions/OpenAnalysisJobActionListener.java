@@ -63,9 +63,11 @@ import com.google.inject.util.Providers;
 /**
  * ActionListener that will display an "Open file" dialog which allows the user
  * to select a job file.
+ * ActionListener将显示一个“打开文件”对话框，允许用户选择作业文件。
  *
  * The class also contains a few reusable static methods for opening job files
  * without showing the dialog.
+ * 该类还包含一些可重用的静态方法，用于打开作业文件而不显示对话框。
  */
 public class OpenAnalysisJobActionListener implements ActionListener {
 

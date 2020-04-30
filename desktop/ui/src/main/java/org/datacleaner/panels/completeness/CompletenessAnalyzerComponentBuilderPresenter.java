@@ -32,6 +32,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link AnalyzerComponentBuilderPresenter} for the
  * {@link CompletenessAnalyzer}.
+ * 专用于{@link CompletenessAnalyzer}的{@link AnalyzerComponentBuilderPresenter}。
  */
 final class CompletenessAnalyzerComponentBuilderPresenter extends AnalyzerComponentBuilderPanel {
 

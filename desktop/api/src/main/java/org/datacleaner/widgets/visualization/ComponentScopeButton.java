@@ -42,6 +42,7 @@ import org.slf4j.LoggerFactory;
 /**
  * A button that displays the {@link AnalysisJobBuilder} of a particular
  * component that is being built.
+ * 一个按钮，显示正在构建的特定组件的{@link AnalysisJobBuilder}。
  */
 public class ComponentScopeButton extends JButton implements ActionListener {
 

@@ -44,7 +44,7 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * Abstract implementation of the {@link PropertyWidget} interface, for array
  * properties that are represented using a list of checkboxes.
- *
+ * {@link PropertyWidget}接口的抽象实现，用于使用复选框列表表示的数组属性。
  * @param <E>
  */
 public abstract class AbstractMultipleCheckboxesPropertyWidget<E> extends AbstractPropertyWidget<E[]> {

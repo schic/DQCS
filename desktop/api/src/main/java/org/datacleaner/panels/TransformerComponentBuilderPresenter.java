@@ -24,6 +24,7 @@ import org.datacleaner.job.builder.TransformerComponentBuilder;
 /**
  * Interface for presenter widgets that present {@link TransformerComponentBuilder}
  * objects.
+ * 呈现{@link TransformerComponentBuilder}对象的呈现器小部件的接口。
  */
 public interface TransformerComponentBuilderPresenter extends ComponentBuilderPresenter {
 

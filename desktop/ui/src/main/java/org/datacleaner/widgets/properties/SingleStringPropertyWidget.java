@@ -43,6 +43,7 @@ import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
  * Property widget for a single String property. This widget will take into
  * account the additional metadata provided by the {@link StringProperty}
  * annotation.
+ * 单个String属性的属性窗口小部件。该小部件将考虑由{@link StringProperty}注释提供的其他元数据。
  */
 public class SingleStringPropertyWidget extends AbstractPropertyWidget<String> {
 

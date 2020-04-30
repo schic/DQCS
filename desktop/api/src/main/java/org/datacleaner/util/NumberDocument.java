@@ -28,6 +28,7 @@ import javax.swing.text.PlainDocument;
 /**
  * A {@link Document}, typically used for {@link JTextField}s, which specifies
  * that only numbers may be entered.
+ * {@link文档}，通常用于{@link JTextField}，它指定只能输入数字。
  */
 public class NumberDocument extends PlainDocument {
 

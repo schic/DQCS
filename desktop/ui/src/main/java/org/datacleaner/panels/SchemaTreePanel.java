@@ -58,6 +58,7 @@ import com.google.inject.Injector;
 /**
  * Panel that wraps the {@link SchemaTree} as well as actions around it for
  * searching/filtering etc.
+ * 包裹{@link SchemaTree}以及围绕它进行搜索/过滤等操作的面板。
  */
 public class SchemaTreePanel extends DCPanel {
 

@@ -42,6 +42,9 @@ import org.slf4j.LoggerFactory;
  * the list will include all schemas, all tables and all columns) as well as
  * just a single table (in which case it will only include columns from that
  * table).
+ * 一个组合框，可以轻松地从列表中显示和选择源列。
+ * 可以基于数据存储区填充列表（在这种情况下列表将包括所有模式，所有表和所有列），
+ * 也可以仅一个表（在这种情况下它将仅包括该表中的列） 。
  */
 public class SourceColumnComboBox extends DCComboBox<Object> {
 

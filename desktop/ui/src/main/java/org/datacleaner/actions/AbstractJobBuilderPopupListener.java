@@ -36,6 +36,7 @@ import org.datacleaner.widgets.ChangeRequirementMenu;
 /**
  * Abstract class containing the action method that will display a popup with
  * options as to change a job builder.
+ * 包含操作方法的抽象类，该方法将显示带有选项的弹出窗口，以更改作业生成器。
  */
 public abstract class AbstractJobBuilderPopupListener {
 

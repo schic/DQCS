@@ -31,6 +31,7 @@ import org.datacleaner.util.ImageManager;
 /**
  * A {@link FileIconFactory} implementation that returns DataCleaner's icons for
  * file system elements.
+ * {@link FileIconFactory}实现，返回文件系统元素的DataCleaner图标。
  */
 public class DefaultFileIconFactory implements FileIconFactory {
 

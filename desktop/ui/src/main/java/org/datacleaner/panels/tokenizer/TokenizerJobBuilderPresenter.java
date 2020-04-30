@@ -38,6 +38,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link TokenizerTransformer}.
+ * 专用于{@link TokenizerTransformer}的{@link TransformerComponentBuilderPresenter}。
  *
  * @author Kasper Sørensen
  */

@@ -20,5 +20,6 @@
 
 /**
  * Panels pertaining to the result window and it's progress information widgets.
+ * 与结果窗口及其进度信息窗口小部件有关的面板。
  */
 package org.datacleaner.panels.result;

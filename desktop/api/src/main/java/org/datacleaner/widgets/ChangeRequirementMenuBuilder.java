@@ -48,6 +48,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Object capable of building a menu for changing a component's
  * {@link ComponentRequirement}.
+ * 能够构建用于更改组件的{@link ComponentRequirement}的菜单的对象。
  */
 public class ChangeRequirementMenuBuilder {
 

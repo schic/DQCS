@@ -39,6 +39,7 @@ import org.jdesktop.swingx.action.OpenBrowserAction;
 /**
  * A welcome dialog for DataCleaner. Specifically used in embedded situations as
  * a "landing page" for new users to the application.
+ * DataCleaner的欢迎对话框。在嵌入式情况下专门用作应用程序新用户的“着陆页”。
  */
 public class WelcomeDialog extends JDialog {
 

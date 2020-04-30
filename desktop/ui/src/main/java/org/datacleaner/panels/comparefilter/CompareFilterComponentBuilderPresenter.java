@@ -37,6 +37,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 
 /**
  * Specialized {@link FilterComponentBuilderPresenter} for the {@link CompareFilter}.
+ * {@link CompareFilter}专门用于{@link FilterComponentBuilderPresenter}。
  */
 class CompareFilterComponentBuilderPresenter extends FilterComponentBuilderPanel {
 

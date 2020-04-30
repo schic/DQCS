@@ -26,6 +26,7 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Comparator of {@link HasName} objects, which sorts based on the name.
+ * {@link HasName}对象的比较器，该对象根据名称排序。
  */
 public class HasNameComparator implements Comparator<HasName>, Serializable {
 

@@ -71,6 +71,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Contains the execution logic to run a job from the command line.
+ * 包含用于从命令行运行作业的执行逻辑。
  */
 public final class CliRunner implements Closeable {
     private static final Logger logger = LoggerFactory.getLogger(CliRunner.class);

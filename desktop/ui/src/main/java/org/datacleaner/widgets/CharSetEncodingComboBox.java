@@ -32,6 +32,7 @@ import com.ibm.icu.text.CharsetMatch;
 
 /**
  * An editable combobox with a default set of available character set encodings
+ * 具有默认的可用字符集编码集的可编辑组合框
  *
  * @author Kasper Sørensen
  */

@@ -38,6 +38,7 @@ import org.datacleaner.util.WidgetUtils;
 /**
  * This is a slightly rewritten/modified version of swingutil's
  * ClosableTabbedPane
+ * 这是swingutil的ClosableTabbedPane的稍微重写/修改的版本
  */
 final class CloseableTabbedPaneUI extends BasicTabbedPaneUI {
 

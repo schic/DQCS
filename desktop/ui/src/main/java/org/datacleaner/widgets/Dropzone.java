@@ -64,6 +64,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A dropzone where the user can drop files to register them as datastores.
+ * 用户可以在其中放置文件以将其注册为数据存储区的放置区。
  */
 public class Dropzone extends DCPanel {
 

@@ -23,6 +23,7 @@ import java.util.List;
 
 /**
  * Contains information about the initial configuration with datastores, jobs etc.
+ * 包含有关数据存储，作业等的初始配置的信息。
  */
 public interface InitialConfiguration {
     List<String> getAllFilePaths();

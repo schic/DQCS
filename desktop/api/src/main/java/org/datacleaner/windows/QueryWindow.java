@@ -55,6 +55,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Window that presents an ad-hoc query editor panel and a result of the query
+ * 显示临时查询编辑器面板和查询结果的窗口
  */
 public class QueryWindow extends AbstractWindow {
 

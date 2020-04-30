@@ -30,6 +30,7 @@ import org.jdesktop.swingx.HorizontalLayout;
 
 /**
  * A widget used to display/edit a single char.
+ * 用于显示/编辑单个字符的小部件。
  *
  * @author Kasper Sørensen
  */

@@ -30,6 +30,7 @@ import org.datacleaner.util.WidgetUtils;
 
 /**
  * A progress bar which behaves properly in multithreaded environments.
+ * 进度条在多线程环境中表现正常。
  */
 public class DCProgressBar extends JProgressBar {
 

@@ -48,6 +48,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 
 /**
  * Specialization of {@link AbstractComponentBuilderPanel} for {@link Filter}s.
+ * {@link AbstractComponentBuilderPanel}专门用于{@link Filter}。
  */
 public class FilterComponentBuilderPanel extends AbstractComponentBuilderPanel
         implements FilterComponentBuilderPresenter, FilterChangeListener {

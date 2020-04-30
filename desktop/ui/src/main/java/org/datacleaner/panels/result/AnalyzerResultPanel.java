@@ -55,6 +55,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Panel that displays the rendered result in the {@link ResultWindow}.
+ * 在{@link ResultWindow}中显示渲染结果的面板。
  */
 public class AnalyzerResultPanel extends DCPanel implements Scrollable {
 

@@ -66,9 +66,12 @@ import edu.uci.ics.jung.visualization.picking.PickedState;
 
 /**
  * Listener for mouse events on the {@link JobGraph}.
+ * {@link JobGraph}上的鼠标事件的侦听器。
  *
  * Note that this class implements two interfaces and is thus added as two
  * distinct listener types: {@link MouseListener} and {@link GraphMouseListener}
+ * 请注意，该类实现了两个接口，
+ * 因此被添加为两种不同的侦听器类型：{@link MouseListener}和{@link GraphMouseListener}
  */
 public class JobGraphMouseListener extends MouseAdapter implements GraphMouseListener<Object> {
 

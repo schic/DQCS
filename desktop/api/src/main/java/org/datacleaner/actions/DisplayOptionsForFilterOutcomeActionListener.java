@@ -43,6 +43,7 @@ import org.datacleaner.widgets.PopupButton;
 
 /**
  * Action that displays output writers for a filter's outcome.
+ * 显示过滤器结果的输出编写器的操作。
  */
 public class DisplayOptionsForFilterOutcomeActionListener extends DisplayOutputWritersAction implements ActionListener {
 

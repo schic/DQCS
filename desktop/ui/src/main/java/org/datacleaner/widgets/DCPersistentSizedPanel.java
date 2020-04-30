@@ -27,7 +27,7 @@ import org.datacleaner.util.WindowSizePreferences;
 
 /**
  * A panel that stores it's preferred size in the user preferences.
- *
+ * 在用户首选项中存储首选尺寸的面板。
  */
 public class DCPersistentSizedPanel extends DCPanel {
 

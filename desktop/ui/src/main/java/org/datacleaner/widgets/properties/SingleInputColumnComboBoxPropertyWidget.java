@@ -41,7 +41,7 @@ import org.datacleaner.widgets.SchemaStructureComboBoxListRenderer;
 /**
  * {@link PropertyWidget} for single {@link InputColumn}s. Displays the
  * selection as a ComboBox, used for optional input columns.
- *
+ * {@link PropertyWidget}用于单个{@link InputColumn}。将选择显示为ComboBox，用于可选输入列。
  * @author Kasper Sørensen
  */
 public class SingleInputColumnComboBoxPropertyWidget extends AbstractPropertyWidget<InputColumn<?>>

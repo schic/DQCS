@@ -47,6 +47,7 @@ import org.datacleaner.widgets.visualization.JobGraph;
 /**
  * Dialog for configuring components that have been selected through the
  * {@link JobGraph}.
+ * 用于配置通过{@link JobGraph}选择的组件的对话框。
  */
 public class ComponentConfigurationDialog extends AbstractDialog implements ComponentRemovalListener<ComponentBuilder> {
 

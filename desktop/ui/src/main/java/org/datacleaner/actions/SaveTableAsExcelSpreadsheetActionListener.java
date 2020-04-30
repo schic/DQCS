@@ -51,6 +51,7 @@ import com.google.inject.Injector;
 
 /**
  * Provides an action for the user to save a table as an Excel spreadsheet
+ * 为用户提供将表格另存为Excel电子表格的操作
  */
 public final class SaveTableAsExcelSpreadsheetActionListener implements ActionListener {
 

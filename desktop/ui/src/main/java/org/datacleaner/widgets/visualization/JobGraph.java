@@ -73,6 +73,7 @@ import scala.sys.Prop;
 
 /**
  * Class capable of creating graphs that visualize {@link AnalysisJob}s or parts of them as a graph.
+ * 能够创建将{@link AnalysisJob}或其一部分可视化为图形的图形的类。
  */
 public final class JobGraph {
 

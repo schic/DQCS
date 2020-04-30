@@ -41,6 +41,7 @@ import org.datacleaner.windows.AnalysisJobBuilderWindow;
 
 /**
  * A builder for the "Execute" button in the job builder window of DataCleaner
+ * DataCleaner的作业构建器窗口中的“执行”按钮的构建器
  */
 public class ExecuteButtonBuilder {
 

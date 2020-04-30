@@ -51,6 +51,7 @@ import org.slf4j.LoggerFactory;
 /**
  * ActionListener and SwingWorker implementation for handling download of a
  * file. The progress will be displayed in a new window.
+ * 用于处理文件下载的ActionListener和SwingWorker实现。进度将显示在新窗口中。
  */
 public class DownloadFilesActionListener extends SwingWorker<FileObject[], Task> implements ActionListener {
 

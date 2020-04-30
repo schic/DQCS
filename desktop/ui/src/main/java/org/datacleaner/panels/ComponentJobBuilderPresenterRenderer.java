@@ -36,6 +36,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 
 /**
  * Renders/creates the default panels that present component job builders.
+ * 渲染/创建用于显示组件作业构建器的默认面板。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class ComponentJobBuilderPresenterRenderer implements Renderer<ComponentBuilder, ComponentBuilderPresenter> {

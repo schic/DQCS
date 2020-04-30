@@ -69,6 +69,7 @@ import com.google.inject.Injector;
 /**
  * Dialog for opening a job as a template. This feature allows the user to reuse an existing job but on a new set 
  * of columns, typically from a different datastore.
+ * 用于打开作业作为模板的对话框。此功能使用户可以重用现有作业，但可以使用新的一组列，通常来自不同的数据存储。
  */
 public class OpenAnalysisJobAsTemplateDialog extends AbstractDialog {
     private class DialogContentMaker {

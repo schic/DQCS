@@ -47,6 +47,7 @@ import org.datacleaner.widgets.visualization.JobGraphMetadata;
 
 /**
  * MenuItem for a component descriptor.
+ * 组件描述符的MenuItem。
  */
 public class DescriptorMenuItem extends JMenuItem implements ActionListener {
 

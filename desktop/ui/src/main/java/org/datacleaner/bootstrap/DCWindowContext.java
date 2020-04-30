@@ -38,7 +38,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Represents the contexts of the GUI windows in DataCleaner.
- *
+ * 表示DataCleaner中GUI窗口的上下文。
  * @see DCWindow
  * @see AbstractWindow
  * @see AbstractDialog

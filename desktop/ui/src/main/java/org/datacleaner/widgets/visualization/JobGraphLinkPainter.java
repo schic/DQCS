@@ -64,6 +64,7 @@ import edu.uci.ics.jung.visualization.VisualizationServer;
 /**
  * Supporting class containing the state surrounding the drawing of new
  * {@link JobGraphLink}s.
+ * 支持类，其中包含围绕新{@link JobGraphLink}的图形的状态。
  */
 public class JobGraphLinkPainter {
     public static class VertexContext {

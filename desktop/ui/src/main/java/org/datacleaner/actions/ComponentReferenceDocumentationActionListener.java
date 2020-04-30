@@ -33,6 +33,7 @@ import org.jdesktop.swingx.action.OpenBrowserAction;
 /**
  * Action listener for buttons or menu items that should start the generation of
  * component reference documentation and open the browser to display it.
+ * 按钮或菜单项的动作侦听器，应开始生成组件参考文档并打开浏览器以显示它。
  */
 public class ComponentReferenceDocumentationActionListener implements ActionListener {
 

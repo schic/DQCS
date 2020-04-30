@@ -65,6 +65,9 @@ import com.google.inject.Injector;
  * The initial panel that is shown to the user when starting the application. This panel features a pluggable content
  * part (see {@link SystemProperties#UI_DESKTOP_WELCOME_PANEL} and a button panels where a new job can be started, an
  * existing job can be opened and datastores can be managed.
+ * 启动应用程序时显示给用户的初始面板。
+ * 该面板具有可插拔内容部分（请参见{@link SystemProperties＃UI_DESKTOP_WELCOME_PANEL}）
+ * 和按钮面板，可以在其中启动新作业，可以打开现有作业并可以管理数据存储。
  */
 public class WelcomePanel extends DCSplashPanel {
 

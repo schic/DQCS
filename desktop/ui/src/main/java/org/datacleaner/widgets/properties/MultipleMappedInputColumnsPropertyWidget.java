@@ -49,6 +49,8 @@ import org.datacleaner.widgets.SourceColumnComboBox;
  * another set of input columns. This widget looks like the
  * {@link MultipleInputColumnsPropertyWidget}, but is enhanced with input column
  * combo boxes.
+ * 一个专用的属性小部件，用于映射到另一组输入列的多个输入列。
+ * 这个小部件看起来像{@link MultipleInputColumnsPropertyWidget}，但是通过输入列组合框得到了增强。
  */
 public class MultipleMappedInputColumnsPropertyWidget extends MultipleInputColumnsPropertyWidget {
 

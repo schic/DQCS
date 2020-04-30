@@ -39,6 +39,7 @@ import org.datacleaner.lifecycle.LifeCycleHelper;
 
 /**
  * Action that displays output writers for a transformer's data.
+ * 显示转换器数据的输出编写器的操作。
  */
 public class DisplayOutputWritersForTransformedDataActionListener extends DisplayOutputWritersAction
         implements ActionListener {

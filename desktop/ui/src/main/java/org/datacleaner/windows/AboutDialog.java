@@ -68,6 +68,7 @@ import org.jdesktop.swingx.action.OpenBrowserAction;
 
 /**
  * The "About" dialog of the DataCleaner application.
+ * DataCleaner应用程序的“关于”对话框。
  */
 public class AboutDialog extends AbstractDialog {
 

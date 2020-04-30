@@ -44,6 +44,7 @@ import org.slf4j.LoggerFactory;
  * Window showing a progress indicator for a file transfer (typically over the
  * network). The window is updated externally, by the code that does the actual
  * download and file handling.
+ * 该窗口显示文件传输进度指示器（通常通过网络）。该窗口是通过执行实际下载和文件处理的代码从外部更新的。
  *
  * @see DownloadFilesActionListener
  */

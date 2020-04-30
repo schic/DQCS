@@ -69,6 +69,7 @@ import org.datacleaner.descriptors.TransformerDescriptor;
 
 /**
  * Contains utility methods concerned with icons, primarily datastore and component icons.
+ * 包含与图标有关的实用程序方法，主要是数据存储和组件图标。
  */
 public final class IconUtils {
 

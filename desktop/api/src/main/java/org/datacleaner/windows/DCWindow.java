@@ -27,6 +27,7 @@ import org.datacleaner.bootstrap.WindowContext;
 /**
  * Defines a common interface for windows in DataCleaner. Windows are registered
  * in the windowContext class.
+ * 在DataCleaner中为Windows定义一个通用接口。 Windows在windowContext类中注册为。
  *
  * @see WindowContext
  */

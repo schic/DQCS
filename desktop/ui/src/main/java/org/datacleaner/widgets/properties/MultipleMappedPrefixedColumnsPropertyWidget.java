@@ -34,6 +34,7 @@ import org.datacleaner.widgets.SourceColumnComboBox;
 /**
  * A simple subclass of {@link MultipleMappedColumnsPropertyWidget} which just
  * adds a string label in front of all source column selection boxes.
+ * {@link MultipleMappedColumnsPropertyWidget}的简单子类仅在所有源列选择框的前面添加了字符串标签。
  */
 public class MultipleMappedPrefixedColumnsPropertyWidget extends MultipleMappedColumnsPropertyWidget {
 
