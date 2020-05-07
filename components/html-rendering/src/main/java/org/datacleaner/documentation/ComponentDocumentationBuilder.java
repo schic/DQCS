@@ -46,6 +46,7 @@ import freemarker.template.TemplateException;
 /**
  * An object capable of building documentation for DataCleaner {@link Component}
  * s in HTML format.
+ * 一个能够构建HTML格式的DataCleaner {@link Component}的文档的对象。
  */
 public class ComponentDocumentationBuilder {
 

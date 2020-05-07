@@ -29,6 +29,7 @@ import org.eobjects.metamodel.access.AccessDataContext;
 
 /**
  * Datastore implementation for MS Access databases.
+ * MS Access数据库的数据存储实现。
  */
 public final class AccessDatastore extends UsageAwareDatastore<DataContext> implements FileDatastore {
 

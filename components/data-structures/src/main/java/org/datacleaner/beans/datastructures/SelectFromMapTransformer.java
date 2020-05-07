@@ -38,6 +38,7 @@ import org.datacleaner.components.categories.DataStructuresCategory;
 
 /**
  * Transformer for selecting values from maps.
+ * 用于从Map中选择值的转换器。
  */
 @Named("SelectFromMapTransformer.name")
 @Description("SelectFromMapTransformer.Description")

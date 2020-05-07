@@ -46,6 +46,7 @@ import org.mozilla.javascript.ScriptableObject;
 /**
  * A transformer that uses userwritten JavaScript to generate a transformer
  * object
+ * 使用用户编写的JavaScript生成一个Translator对象的转换器
  */
 @Named("JavaScriptAdvancedTransformer.name")
 @Description("JavaScriptAdvancedTransformer.Description")

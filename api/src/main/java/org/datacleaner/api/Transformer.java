@@ -29,7 +29,7 @@ import javax.inject.Named;
  * components, {@link Analyzer} require a {@link Named} annotation in order to
  * be discovered.
  * 有关所有组件的一般信息，请参见{@link Component}。
- * 像所有组件一样，{@ link Analyzer}需要一个{@link Named}批注才能被发现。
+ * 像所有组件一样，{@link Analyzer}需要一个{@link Named}批注才能被发现。
  *
  * A {@link Transformer} will process incoming rows and produce new fields which
  * are appended onto the existing rows. The {@link #transform(InputRow)} method

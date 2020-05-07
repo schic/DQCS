@@ -29,6 +29,7 @@ import org.datacleaner.storage.RowAnnotationFactory;
 /**
  * Helper class for the number analyzer, which handles the processing of a
  * single column's values.
+ * 数字分析器的帮助程序类，用于处理单列值的处理。
  */
 final class NumberAnalyzerColumnDelegate {
 

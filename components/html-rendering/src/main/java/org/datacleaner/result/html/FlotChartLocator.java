@@ -24,6 +24,7 @@ import org.datacleaner.util.SystemProperties;
 /**
  * Object responsible for locating the javascript URLs of Flot charts (used for most of the charts/graphs in HTML
  * rendered analyzer results).
+ * 负责定位Flot图表的javascript URL的对象（用于HTML呈现的分析器结果中的大多数图表/图形）。
  */
 public class FlotChartLocator {
 

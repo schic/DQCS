@@ -21,7 +21,7 @@ package org.datacleaner.beans.filter;
 
 /**
  * Defines available criteria for matching filters
- *
+ *定义匹配过滤器的可用条件
  *
  */
 public enum MatchFilterCriteria {

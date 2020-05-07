@@ -32,7 +32,8 @@ import org.datacleaner.connection.FileDatastore;
  * Represents the result of a Writer analyzer (see {@link WriteDataCategory}).
  * The result will not be an analysis result as such, but a pointer to a written
  * dataset.
- *
+ * 表示Writer分析器的结果（请参见{@link WriteDataCategory}）。
+ * 结果将不是这样的分析结果，而是指向已写入数据集的指针。
  *
  */
 @Distributed(reducer = WriteDataResultReducer.class)

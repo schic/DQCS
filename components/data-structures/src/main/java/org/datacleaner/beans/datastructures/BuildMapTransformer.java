@@ -42,6 +42,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Transformer for building maps based on values in a row.
+ * 用于基于连续值构建地图的转换器。
  */
 @Named("BuildMapTransformer.name")
 @Alias("Build map")

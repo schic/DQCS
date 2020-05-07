@@ -34,6 +34,7 @@ import org.datacleaner.result.CrosstabNavigator;
 /**
  * Metric implementation for the "Combination count" metric in the
  * {@link BooleanAnalyzerResult}.
+ * {@link BooleanAnalyzerResult}中“组合计数”量度的量度实现。
  */
 final class BooleanAnalyzerCombinationMetric implements ParameterizableMetric {
 

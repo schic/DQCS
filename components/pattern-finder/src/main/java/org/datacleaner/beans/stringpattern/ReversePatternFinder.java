@@ -24,6 +24,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Pattern finder to reverse engineer patterns based on a pattern string
+ * 模式查找器可基于模式字符串反转工程师模式
  */
 public class ReversePatternFinder extends PatternFinder<String> {
 

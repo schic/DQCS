@@ -32,7 +32,7 @@ import org.datacleaner.components.categories.TextCategory;
 
 /**
  * Concatenates several values into one String value.
- *
+ *将多个值连接成一个String值。
  *
  */
 @Named("ConcatenatorTransformer.name")

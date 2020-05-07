@@ -27,6 +27,8 @@ import org.apache.metamodel.util.HasName;
 /**
  * Datastore class for Apache Kafka. Uses a Kafka 'bootstrap servers' connection string, a topic list and key+value
  * types to present the Kafka messages to the user as if they are records in a table.
+ * Apache Kafka的数据存储类。使用Kafka'引导服务器'连接字符串，
+ * 主题列表和键+值类型将Kafka消息呈现给用户，就好像它们是表中的记录一样。
  * 
  * @author davkrause
  */

@@ -41,7 +41,7 @@ import org.datacleaner.components.categories.TextCategory;
 
 /**
  * Tokenizes values into a configurable amount of tokens.
- *
+ *将值标记为可配置的标记数量。
  *
  */
 @Named("TokenizerTransformer.name")

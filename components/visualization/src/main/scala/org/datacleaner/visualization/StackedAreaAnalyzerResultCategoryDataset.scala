@@ -9,6 +9,7 @@ import scala.collection.JavaConversions._
 
 /**
  * CategoryDataset implementation of the StackedAreaAnalyzerResult for JFreeCharts
+  * JFreeCharts的StackedAreaAnalyzerResult的CategoryDataset实现
  */
 class StackedAreaAnalyzerResultCategoryDataset(result: IStackedAreaAnalyzerResult) extends CategoryDataset {
 

@@ -23,6 +23,7 @@ import org.datacleaner.util.NullTolerableComparator;
 
 /**
  * Abstract {@link ValueFrequency} implementation.
+ * 抽象的{@link ValueFrequency}实现。
  */
 public abstract class AbstractValueFrequency implements ValueFrequency {
 

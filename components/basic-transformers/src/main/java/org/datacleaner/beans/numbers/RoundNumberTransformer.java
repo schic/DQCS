@@ -33,6 +33,7 @@ import org.datacleaner.components.categories.NumbersCategory;
 
 /**
  * Simple transformer for rounding a number
+ * 四舍五入的简单转换器
  */
 @Named("RoundNumberTransformer.name")
 @Description("RoundNumberTransformer.Description")

@@ -39,6 +39,7 @@ import org.datacleaner.result.CrosstabNavigator;
 
 /**
  * Result reducer for {@link PatternFinderResult}s
+ * {@link PatternFinderResult}的结果归约器
  */
 public class PatternFinderResultReducer implements AnalyzerResultReducer<PatternFinderResult> {
 

@@ -23,6 +23,8 @@ package org.datacleaner.result.html;
  * Helper class for building javascript elements to be included in a
  * {@link HtmlFragment}, typically a subclass of
  * {@link AbstractScriptHeadElement}.
+ * 用于构建要包含在{@link HtmlFragment}中的javascript元素的帮助程序类，
+ * 通常是{@link AbstractScriptHeadElement}的子类。
  */
 public class JavascriptFunctionBuilder {
 

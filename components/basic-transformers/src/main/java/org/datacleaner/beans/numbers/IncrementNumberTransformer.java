@@ -36,6 +36,7 @@ import org.datacleaner.components.categories.NumbersCategory;
 
 /**
  * Simple transformer for incrementing a number
+ * 简单的转换器，用于递增数字
  */
 @Named("IncrementNumberTransformer.name")
 @Description("IncrementNumberTransformer.Description")

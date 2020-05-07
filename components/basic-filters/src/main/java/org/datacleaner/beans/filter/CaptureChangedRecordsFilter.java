@@ -59,6 +59,8 @@ import com.google.common.base.Strings;
  * Filter for archieving a "change data capture" mechanism based on a
  * "last modified" field. After each execution, the greatest timestamp is
  * recorded and picked up successively by the next run.
+ * 用于基于“最后修改”字段实现“更改数据捕获”机制的过滤器。
+ * 每次执行后，将记录最大的时间戳，并在下一次运行时连续获取。
  */
 @Named("CaptureChangedRecordsFilter.name")
 @Description("CaptureChangedRecordsFilter.Description")

@@ -51,6 +51,7 @@ import com.google.common.base.Joiner;
 /**
  * A simple transformer that uses a synonym catalog to replace a synonym with
  * it's master term.
+ * 一个简单的转换器，使用同义词目录将同义词替换为其主要术语。
  */
 @Named("SynonymLookupTransformer.name")
 @Alias("Synonym replacement")

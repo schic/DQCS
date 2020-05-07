@@ -9,6 +9,7 @@ import scala.collection.mutable.{LinkedHashMap, Map}
 
 /**
   * Represents a group of scattered points
+  * 代表一组分散的点
   */
 @SerialVersionUID(1746285060428286068L)
 class ScatterGroup(name: String, rowAnnotationFactory: RowAnnotationFactory) extends IScatterGroup {

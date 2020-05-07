@@ -45,7 +45,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * An analyzer for various typical String measures.
- *
+ *用于各种典型String量度的分析器。
  *
  */
 @Named("StringAnalyzer.name")
