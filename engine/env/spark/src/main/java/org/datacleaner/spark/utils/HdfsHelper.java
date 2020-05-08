@@ -39,6 +39,7 @@ import com.google.common.base.Strings;
 
 /**
  * Helper class for interacting with HDFS.
+ * 与HDFS交互的Helper类。
  */
 public class HdfsHelper {
 

@@ -33,6 +33,8 @@ import scala.Tuple2;
  * A utility {@link PairFlatMapFunction} for conversion between a
  * {@link JavaRDD} of {@link Tuple2} into a {@link JavaPairRDD} of that same
  * tuple type.
+ * 实用程序{@link PairFlatMapFunction}，
+ * 用于在{@link Tuple2}的{@link JavaRDD}到相同的tuple类型的{@link JavaPairRDD}之间进行转换。
  */
 public class TuplesToTuplesFunction<K, V> implements PairFlatMapFunction<Iterator<Tuple2<K, V>>, K, V> {
 

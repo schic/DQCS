@@ -26,7 +26,7 @@ import org.datacleaner.api.Metric;
 
 /**
  * A very simple AnalyzerResult that simply holds a list of values
- *
+ * 一个非常简单的AnalyzerResult，仅保存值列表
  *
  *
  * @param <E>

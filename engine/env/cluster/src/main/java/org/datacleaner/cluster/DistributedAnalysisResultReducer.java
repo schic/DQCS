@@ -44,6 +44,8 @@ import org.slf4j.LoggerFactory;
 /**
  * Helper class to perform the reduction phase of {@link AnalyzerResult}s
  * collected in a {@link DistributedAnalysisResultFuture}.
+ * Helper类，用于执行{@link DistributedAnalysisResultFuture}中
+ * 收集的{@link AnalyzerResult} s的缩减阶段。
  */
 final class DistributedAnalysisResultReducer {
 

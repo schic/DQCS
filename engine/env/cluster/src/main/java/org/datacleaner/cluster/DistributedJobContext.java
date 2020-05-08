@@ -24,6 +24,7 @@ import org.datacleaner.job.AnalysisJob;
 
 /**
  * Defines the context information related to the distributed execution of a partial job.
+ * 定义与部分作业的分布式执行相关的上下文信息。
  */
 public interface DistributedJobContext {
 

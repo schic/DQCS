@@ -32,6 +32,7 @@ import org.datacleaner.job.runner.AnalysisRunner;
 /**
  * A cluster manager which spawns virtual nodes, i.e. nodes that are not
  * actually on remote servers, but execute in the same JVM as the master node.
+ * 产生虚拟节点的集群管理器，即实际上不是在远程服务器上的节点，而是在与主节点相同的JVM中执行的节点。
  */
 public class VirtualClusterManager implements ClusterManager {
 

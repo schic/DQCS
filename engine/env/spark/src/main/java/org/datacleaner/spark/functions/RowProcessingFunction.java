@@ -66,11 +66,14 @@ import scala.Tuple2;
 /**
  * The main Spark function which applies the DataCleaner row processing
  * framework onto RDDs of InputRows.
+ * 主要的Spark函数，将DataCleaner行处理框架应用于InputRows的RDD。
  *
  * The main vehicle used to do this is the {@link ConsumeRowHandler}.
+ * 用于执行此操作的主要工具是{@link ConsumeRowHandler}。
  *
  * This class implements two interfaces because it has two (quite similar)
  * styles of usages in the {@link SparkAnalysisRunner}.
+ * 此类实现两个接口，因为它在{@link SparkAnalysisRunner}中具有两种（非常相似）使用方式。
  */
 public final class RowProcessingFunction
         implements Function2<Integer, Iterator<InputRow>, Iterator<Tuple2<String, NamedAnalyzerResult>>>,

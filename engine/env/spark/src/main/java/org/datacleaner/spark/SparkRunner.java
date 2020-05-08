@@ -32,6 +32,7 @@ import org.datacleaner.util.FileFilters;
 
 /**
  * Prepares job for launching on Spark
+ * 准备作业以在Spark上启动
  */
 public class SparkRunner {
     public interface ProgressListener {

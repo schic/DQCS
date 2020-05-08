@@ -50,6 +50,8 @@ import org.slf4j.LoggerFactory;
 /**
  * Helper method for handling servlet requests and responses according to the
  * requests sent by the master node if it is using a {@link HttpClusterManager}.
+ * 如果主节点正在使用{@link HttpClusterManager}，
+ * 则根据主节点发送的请求来处理servlet请求和响应的辅助方法。
  */
 public class SlaveServletHelper {
 

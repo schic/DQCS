@@ -54,6 +54,8 @@ import com.google.common.base.Strings;
 /**
  * A container for for values that need to be passed between Spark workers. All the values need to be
  * {@link Serializable} or loadable from those {@link Serializable} properties.
+ * 需要在Spark工作者之间传递值的容器。
+ * 所有值都必须是{@link Serializable}或可从这些{@link Serializable}属性中加载。
  */
 public class SparkJobContext implements Serializable {
     private static final String METADATA_PROPERTY_COMPONENT_INDEX = "org.datacleaner.spark.component.index";
