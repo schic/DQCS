@@ -47,6 +47,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Sorter, deduplicator and writer that uses temporary files as storage to
  * support high volume sorted data.
+ * 使用临时文件作为存储的排序器，重复数据删除器和编写器支持大量排序的数据。
  *
  * @param <R>
  *            the row type, HAS to be serializable

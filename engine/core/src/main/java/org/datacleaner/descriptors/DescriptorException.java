@@ -22,6 +22,7 @@ package org.datacleaner.descriptors;
 /**
  * Exception thrown when an AnalyzerBean class does not conform to the
  * requirements imposed by the descriptors of such.
+ * 当AnalyzerBean类不符合此类描述符的强加要求时引发的异常。
  */
 public class DescriptorException extends RuntimeException {
 

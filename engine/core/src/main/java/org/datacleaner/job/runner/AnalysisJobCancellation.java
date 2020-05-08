@@ -21,7 +21,7 @@ package org.datacleaner.job.runner;
 
 /**
  * A throwable that will be thrown if a job should be cancelled.
- *
+ *如果应取消作业将抛出的可抛出对象。
  *
  */
 public class AnalysisJobCancellation extends Throwable {

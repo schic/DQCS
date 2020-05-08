@@ -22,6 +22,7 @@ package org.datacleaner.util.batch;
 /**
  * Defines a sink for a batch transformation. A sink accepts processed elements
  * in a one-to-one relationship with the source elements.
+ * 为批量转换定义接收器。接收器与源元素以一对一的关系接受处理后的元素。
  *
  * @param <E>
  *            the output element type

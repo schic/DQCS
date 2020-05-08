@@ -25,7 +25,7 @@ import java.util.Enumeration;
 
 /**
  * This class loader scans a set of class loaders for class definitions.
- *
+ *该类加载器扫描一组类加载器以获取类定义。
  */
 public class CompoundClassLoader extends ClassLoader {
 

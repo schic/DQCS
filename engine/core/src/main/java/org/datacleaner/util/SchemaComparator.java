@@ -27,6 +27,7 @@ import org.apache.metamodel.schema.Schema;
 
 /**
  * Comparator of schemas that will put information schemas in the top
+ * 模式的比较器，它将信息模式放在顶部
  */
 public class SchemaComparator implements Comparator<Schema>, Serializable {
 

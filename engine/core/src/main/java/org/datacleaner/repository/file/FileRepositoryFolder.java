@@ -40,6 +40,7 @@ import com.google.common.cache.LoadingCache;
 
 /**
  * {@link RepositoryFolder} implementation based on a local directory.
+ * 基于本地目录的{@link RepositoryFolder}实现。
  */
 public class FileRepositoryFolder extends AbstractRepositoryNode implements RepositoryFolder {
 

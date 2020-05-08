@@ -58,10 +58,14 @@ import org.slf4j.LoggerFactory;
  * A {@link ComponentDescriptor} for simple components. Simple components covers
  * reference data types (Dictionary, SynonymCatalog, StringPattern) as well as
  * custom configuration components.
+ * {@link ComponentDescriptor}用于简单的组件。
+ * 简单的组件包括参考数据类型（字典，SynonymCatalog，StringPattern）以及自定义配置组件。
  *
  * Simple components support the {@link Configured}, {@link Validate},
  * {@link Initialize} and {@link Close} annotations as well as the
  * {@link Closeable} interface.
+ * 简单的组件支持{@link Configured}，{@link Validate}，{@link Initialize}和
+ * {@link Close}批注以及{@link Closeable}接口。
  *
  * @see Initialize
  * @see Validate

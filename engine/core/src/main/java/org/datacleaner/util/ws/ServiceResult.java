@@ -22,6 +22,7 @@ package org.datacleaner.util.ws;
 /**
  * Represents the result of invoking a web service using the
  * {@link OldServiceSession}.
+ * 表示使用{@link OldServiceSession}调用Web服务的结果。
  *
  * @param <E>
  *            the result type

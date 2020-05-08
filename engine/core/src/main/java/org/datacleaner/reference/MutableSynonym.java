@@ -25,6 +25,7 @@ import java.util.Set;
 
 /**
  * Simple, mutable implementation of the Synonym interface
+ * 简单，易变的Synonym接口实现
  */
 public class MutableSynonym implements Synonym {
 

@@ -30,6 +30,9 @@ import org.slf4j.LoggerFactory;
  * connection pool in {@link OldServiceSession} does not really need to use the
  * objects for anything, except restricting the amount of active connections, we
  * simply create unique integers as pool objects.
+ * {@link PoolableObjectFactory}的非常简单的实现。
+ * 由于{@link OldServiceSession}中的连接池实际上并不需要使用对象，
+ * 除了限制活动连接的数量外，我们只需创建唯一的整数作为池对象即可。
  */
 final class ConnectionPoolObjectFactory implements PoolableObjectFactory<Integer> {
 

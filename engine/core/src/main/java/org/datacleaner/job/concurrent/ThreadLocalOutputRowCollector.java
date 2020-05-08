@@ -24,10 +24,12 @@ import org.datacleaner.job.AbstractOutputRowCollector;
 
 /**
  * Thread local implementation of the {@link OutputRowCollector} interface.
+ * {@link OutputRowCollector}接口的线程本地实现。
  *
  * This implementation holds a listener which recieves the values that are put
  * to the collector. Consumers should register a listener and remove it after
  * invocation.
+ * 此实现包含一个侦听器，该侦听器接收放置到收集器中的值。消费者应注册一个侦听器，并在调用后将其删除。
  */
 public class ThreadLocalOutputRowCollector extends AbstractOutputRowCollector {
 

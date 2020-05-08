@@ -30,6 +30,7 @@ import org.apache.hadoop.fs.Path;
 
 /**
  * Environment based configuration
+ * 基于环境的配置
  */
 public class DirectoryBasedHadoopClusterInformation extends AbstractServerInformation
         implements HadoopClusterInformation {

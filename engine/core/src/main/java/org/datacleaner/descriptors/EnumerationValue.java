@@ -34,6 +34,7 @@ import com.fasterxml.jackson.databind.jsontype.TypeSerializer;
 /**
  * This class represents enumeration type for property of remote transformer, in
  * situation when the enumeration class is not on clients classpath.
+ * 在枚举类不在客户端类路径上的情况下，此类表示远程转换器的属性的枚举类型。
  *
  * @Since 9/15/15
  */

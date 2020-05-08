@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Factory that creates file monitors.
+ * 创建文件监视器的工厂。
  *
  * @deprecated use {@link WatchService} instead
  */

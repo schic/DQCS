@@ -26,6 +26,7 @@ import org.datacleaner.job.ComponentJob;
 
 /**
  * Compares and sorts {@link ComponentJob}s for visual presentation
+ * 比较{@link ComponentJob}并对其进行排序以进行视觉呈现
  */
 public class ComponentJobComparator implements Comparator<ComponentJob> {
 

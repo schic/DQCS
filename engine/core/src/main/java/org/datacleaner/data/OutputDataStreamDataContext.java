@@ -39,6 +39,7 @@ import org.datacleaner.api.OutputDataStream;
 /**
  * A virtual {@link DataContext} that represents/wraps a
  * {@link OutputDataStream}.
+ * 表示/包装{@link OutputDataStream}的虚拟{@link DataContext}。
  */
 public class OutputDataStreamDataContext extends QueryPostprocessDataContext {
 

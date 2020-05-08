@@ -25,7 +25,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * A very simple ID generator that generates id with a prefix and an
  * incrementing suffix.
- *
+ * 一个非常简单的ID生成器，它生成带有前缀和后缀的id。
  *
  */
 public final class PrefixedIdGenerator implements IdGenerator {

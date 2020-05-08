@@ -28,6 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * A {@link ServiceSession} that automatically retries a service request in case
  * it fails.
+ * 一个{@link ServiceSession}，如果失败，它会自动重试服务请求。
  */
 public class RetryServiceSession<R> extends SimpleServiceSession<R> implements ServiceSession<R> {
 

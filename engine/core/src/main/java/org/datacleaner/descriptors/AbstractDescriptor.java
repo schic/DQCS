@@ -29,7 +29,7 @@ import org.datacleaner.util.ReflectionUtils;
 /**
  * Abstract descriptor implementation which contains only the bare bones of a
  * class field- and method-inspecting descriptor.
- *
+ *抽象描述符实现，仅包含类字段检查和方法检查的描述符的基本内容。
  *
  *
  * @param <B>

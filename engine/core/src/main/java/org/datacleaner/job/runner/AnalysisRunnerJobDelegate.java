@@ -43,9 +43,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A delegate for the AnalysisRunner to put the state of a single job into.
+ * AnalysisRunner的代表，用于将单个作业的状态放入。
  *
  * As opposed to the AnalysisRunner, this class is NOT thread-safe (which is why
  * the AnalysisRunner instantiates a new delegate for each execution).
+ * 与AnalysisRunner相反，此类不是线程安全的（这就是AnalysisRunner为每次执行实例化新委托的原因）。
  */
 final class AnalysisRunnerJobDelegate {
 

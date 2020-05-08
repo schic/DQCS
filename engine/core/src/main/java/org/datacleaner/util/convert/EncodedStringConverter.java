@@ -33,9 +33,11 @@ import org.datacleaner.api.Converter;
 /**
  * A custom {@link Converter} for encrypting sensitive strings, such as
  * passwords.
+ * 自定义的{@link Converter}用于加密敏感字符串，例如密码。
  *
  * Apply it to your sensitive {@link Configured} properties using the
  * {@link Convertable} annotation.
+ * 使用* {@link Convertable}批注将其应用于敏感的{@link Configured}属性。
  */
 public class EncodedStringConverter implements Converter<String> {
 

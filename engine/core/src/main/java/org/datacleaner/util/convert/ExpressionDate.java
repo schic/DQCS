@@ -21,7 +21,7 @@ package org.datacleaner.util.convert;
 
 /**
  * Interface for dates expressed not absolutely, but as an expression.
- *
+ *日期的接口不是绝对表示的，而是表示形式。
  * @see TodayDate
  * @see YesterdayDate
  * @see NowDate

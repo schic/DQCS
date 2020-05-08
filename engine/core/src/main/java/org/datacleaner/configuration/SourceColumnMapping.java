@@ -37,6 +37,8 @@ import org.datacleaner.job.AnalysisJobMetadata;
  * serialized/saved job and their actual column objects. Having this in a
  * separate class allows the user to apply the flow defined in a job on to
  * another set of columns that have been mapped to the original column paths.
+ * 表示在序列化/保存的作业中定义的列路径与其实际列对象之间的映射的类。
+ * 将其放在一个单独的类中使用户可以将作业中定义的流应用于已映射到原始列路径的另一组列。
  */
 public final class SourceColumnMapping {
 

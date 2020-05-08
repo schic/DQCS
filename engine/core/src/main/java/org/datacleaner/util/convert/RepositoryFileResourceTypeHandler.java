@@ -32,6 +32,8 @@ import org.datacleaner.util.convert.ResourceConverter.ResourceTypeHandler;
  * Unlike most other {@link ResourceTypeHandler}s, this one is contextual, since
  * it needs a reference to the repository of the system and it is also specific
  * to a single tenant to ensure isolation between loaded repository content.
+ * 与大多数其他{@link ResourceTypeHandler}不同的是，这是上下文的，
+ * 因为它需要引用系统的存储库，并且它还特定于一个租户，以确保加载的存储库内容之间的隔离。
  */
 public class RepositoryFileResourceTypeHandler implements ResourceTypeHandler<RepositoryFileResource> {
 

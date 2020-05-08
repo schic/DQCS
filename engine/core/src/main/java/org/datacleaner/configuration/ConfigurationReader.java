@@ -22,6 +22,7 @@ package org.datacleaner.configuration;
 /**
  * An object that is capable of reading an {@link DataCleanerConfiguration} from
  * a source.
+ * 一个能够从源读取{@link DataCleanerConfiguration}的对象。
  *
  * @param <E>
  *            The source type, typically an InputStream, but could be another

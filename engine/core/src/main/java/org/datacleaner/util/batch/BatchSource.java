@@ -24,6 +24,7 @@ import java.util.List;
 /**
  * Defines a source for a batch transformation. A source contains input elements
  * to be processed.
+ * 定义批处理转换的源。源包含要处理的输入元素。
  *
  * @param <E>
  *            the input element type

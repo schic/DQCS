@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Completion listener for a full AnalysisJob. Use the isDone() method to ask
  * whether or not the job is finished.
- *
+ *完成侦听器以获取完整的AnalysisJob。使用isDone（）方法询问作业是否完成。
  *
  */
 public final class JobCompletionTaskListener implements StatusAwareTaskListener {

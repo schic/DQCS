@@ -25,6 +25,7 @@ import org.datacleaner.data.OutputDataStreamDataContext;
 
 /**
  * A virtual {@link Datastore} that represents/wraps a {@link OutputDataStream}.
+ * 表示/包装{@link OutputDataStream}的虚拟{@link Datastore}。
  */
 public class OutputDataStreamDatastore extends UsageAwareDatastore<DataContext> {
 

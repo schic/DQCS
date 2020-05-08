@@ -49,6 +49,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Default implementation of the {@link Converter} interface. This converter is
  * able to convert single instances (not arrays or collections) of:
+ * {@link Converter}接口的默认实现。该转换器可以转换以下单个实例（而不是数组或集合）：
  *
  * <ul>
  * <li>Boolean</li>

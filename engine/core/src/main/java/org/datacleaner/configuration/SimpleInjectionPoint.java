@@ -24,7 +24,7 @@ import java.lang.annotation.Annotation;
 /**
  * Represents an {@link InjectionPoint} that is not tied to a field, parameter
  * or other member or property.
- *
+ *表示未绑定到字段，参数或其他成员或属性的{@link InjectionPoint}。
  * @param <E>
  */
 public class SimpleInjectionPoint<E> implements InjectionPoint<E> {

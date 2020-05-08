@@ -24,6 +24,7 @@ import java.nio.file.WatchService;
 
 /**
  * The simplest (but also worst) implementation of the file monitor interface.
+ * 文件监视器接口的最简单（但也最糟糕）的实现。
  *
  * @deprecated use {@link WatchService} instead
  */

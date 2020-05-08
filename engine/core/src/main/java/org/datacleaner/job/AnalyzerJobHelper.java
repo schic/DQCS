@@ -36,6 +36,7 @@ import org.slf4j.LoggerFactory;
  * Helper class that wraps a collection of {@link AnalyzerJob}s and provides
  * richer functionality to traverse and search jobs for components and columns
  * etc.
+ * 包装了{@link AnalyzerJob}集合的Helper类，并提供了更丰富的功能来遍历和搜索组件和列的工作等。
  */
 public class AnalyzerJobHelper {
 

@@ -25,6 +25,7 @@ import org.datacleaner.descriptors.ComponentDescriptor;
 /**
  * Exception thrown if validation (typically using {@link Validate} annotated
  * methods) of a component fails.
+ * 如果组件的验证（通常使用带有注释的方法的@@link Validate}）失败，则抛出异常。
  */
 public class ComponentValidationException extends ComponentConfigurationException {
 

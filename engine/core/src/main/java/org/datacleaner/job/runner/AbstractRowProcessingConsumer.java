@@ -50,6 +50,8 @@ import org.slf4j.LoggerFactory;
  * Abstract implementation of {@link RowProcessingConsumer}. Contains utility
  * methods to help make the 'is satisfied for execution' methods easier to
  * implement.
+ * {@link RowProcessingConsumer}的抽象实现。包含实用程序方法，
+ * 以帮助使“执行满意”方法更易于实现。
  */
 abstract class AbstractRowProcessingConsumer implements RowProcessingConsumer {
 

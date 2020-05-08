@@ -25,6 +25,7 @@ import org.datacleaner.api.AnalyzerResult;
 
 /**
  * Default result producer implementation
+ * 默认结果生成器实施
  */
 public class DefaultResultProducer implements Serializable, ResultProducer {
 

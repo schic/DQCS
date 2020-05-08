@@ -36,9 +36,11 @@ import org.datacleaner.api.InputRow;
  * A dummy analyzer used by the Preview Data button (
  * {@link PreviewTransformedDataActionListener}) to collect values from the
  * previewed records.
+ * 由“预览数据”按钮（{@link PreviewTransformedDataActionListener}）使用的虚拟分析器，用于从预览记录中收集值。
  *
  * Note that this analyzer is not annotated with {@link Named} - this enables it
  * to not be discovered and exposed to the users, but still to be used programmatically.
+ * 请注意，此分析器未使用{@link Named}进行注释-这使它不会被发现并向用户公开，但仍可以通过编程方式使用。
  */
 public class PreviewTransformedDataAnalyzer implements Analyzer<PreviewTransformedDataAnalyzer>, AnalyzerResult {
 

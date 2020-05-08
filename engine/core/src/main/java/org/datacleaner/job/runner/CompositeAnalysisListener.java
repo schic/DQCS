@@ -33,6 +33,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * {@link AnalysisListener} that wraps a list of inner listeners. Makes life easier for the invokers of the listeners.
+ * {@link AnalysisListener}，包装内部侦听器列表。使侦听器的调用者的生活更加轻松。
  */
 public final class CompositeAnalysisListener implements AnalysisListener {
 

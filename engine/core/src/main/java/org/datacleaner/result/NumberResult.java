@@ -26,8 +26,9 @@ import org.datacleaner.api.Metric;
 /**
  * Very simple result type for analyzers that simply return a number (maybe a
  * KPI or something like that).
+ * 对于仅返回数字的分析器，结果类型非常简单（可能是KPI或类似的东西）。
  *
- * Mostly used for testing purposes.
+ * Mostly used for testing purposes.主要用于测试目的。
  */
 public class NumberResult implements AnalyzerResult {
 

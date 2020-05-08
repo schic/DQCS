@@ -27,6 +27,7 @@ import org.datacleaner.result.AnalysisResult;
 
 /**
  * Provides useful metrics about a row processing flow and it's execution.
+ * 提供有关行处理流程及其执行的有用指标。
  */
 public interface RowProcessingMetrics {
 

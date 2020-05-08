@@ -25,6 +25,7 @@ import org.datacleaner.api.OutputRowCollector;
 /**
  * Convenient abstract implementation of most methods in the
  * {@link OutputRowCollector} interface.
+ * {@link OutputRowCollector}接口中大多数方法的便捷抽象实现。
  */
 public abstract class AbstractOutputRowCollector implements OutputRowCollector {
 

@@ -29,6 +29,7 @@ import org.apache.metamodel.util.Resource;
 /**
  * A file filter for JFileChooser's which filters on behalf of the file
  * extension
+ * JFileChooser的文件过滤器，代表文件扩展名过滤
  */
 public class ExtensionFilter extends FileFilter implements FilenameFilter {
 

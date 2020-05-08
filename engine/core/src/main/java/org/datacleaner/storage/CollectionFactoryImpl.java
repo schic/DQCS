@@ -27,7 +27,7 @@ import java.util.Set;
 /**
  * Simple collection factory, which delegates to the storage provider for
  * everything.
- *
+ * 简单的收集工厂，它将委托给存储提供者。
  *
  *
  */

@@ -29,7 +29,7 @@ import org.datacleaner.job.concurrent.TaskRunner;
 
 /**
  * Default implementation of the AnalysisRunner interface.
- *
+ *AnalysisRunner接口的默认实现。
  *
  */
 public class AnalysisRunnerImpl implements AnalysisRunner {

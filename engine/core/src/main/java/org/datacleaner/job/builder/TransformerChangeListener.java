@@ -26,7 +26,7 @@ import org.datacleaner.data.MutableInputColumn;
 /**
  * Listener interface for receiving notifications when transformers are being
  * added, removed or modified in a way which changes their output.
- *
+ *侦听器接口，用于在以更改变压器输出的方式添加，移除或修改变压器时接收通知。
  *
  */
 public interface TransformerChangeListener extends ComponentChangeListener<TransformerComponentBuilder<?>> {

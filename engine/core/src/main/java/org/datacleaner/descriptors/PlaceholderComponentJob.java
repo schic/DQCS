@@ -43,6 +43,8 @@ import org.datacleaner.util.StringUtils;
  * A placeholder component job instance to put as a key when rendering
  * "unidentified" result objects, ie. result objects that are serialized outside
  * of a {@link AnalysisResult}
+ * 呈现“ unidentified”结果对象时放置的占位符组件作业实例作为键，即。
+ * 在{@link AnalysisResult}的外部序列化的结果对象
  */
 public class PlaceholderComponentJob<C extends HasAnalyzerResult<?>>
         implements ComponentJob, ComponentDescriptor<C>, HasAnalyzerResultComponentDescriptor<C> {

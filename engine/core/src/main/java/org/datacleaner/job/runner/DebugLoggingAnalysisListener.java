@@ -29,7 +29,7 @@ import org.slf4j.LoggerFactory;
 /**
  * AnalysisListener used for DEBUG level logging. This listener is obviously
  * very verbose.
- *
+ * AnalysisListener用于DEBUG级别的日志记录。这位听众显然很冗长。
  *
  */
 public class DebugLoggingAnalysisListener extends AnalysisListenerAdaptor {

@@ -26,6 +26,7 @@ import org.apache.commons.pool.impl.GenericObjectPool;
 /**
  * A {@link ServiceSession} that has an upper limit to the number of concurrent
  * connections allowed.
+ * 一个{@link ServiceSession}，其上限为允许的并发连接数。
  *
  * @param <R>
  */

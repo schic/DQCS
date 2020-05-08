@@ -26,6 +26,7 @@ import org.apache.http.client.methods.HttpUriRequest;
 
 /**
  * Defines a HTTP client for external web service connectivity over HTTP.
+ * 为HTTP上的外部Web服务连接定义HTTP客户端。
  */
 public interface WebServiceHttpClient extends Closeable {
 

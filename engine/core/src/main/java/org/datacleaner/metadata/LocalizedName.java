@@ -24,6 +24,7 @@ import java.util.Map;
 
 /**
  * Represents metadata about localized/I18N names of columns, tables etc.
+ * 表示有关列，表等的本地化/ I18N名称的元数据。
  */
 public final class LocalizedName {
 

@@ -30,6 +30,7 @@ import org.datacleaner.reference.StringPatternConnection;
 /**
  * A specialized type of string pattern, based on a regex downloaded from the
  * regex swap
+ * 一种特殊类型的字符串模式，基于从regex swap下载的正则表达式
  */
 public final class RegexSwapStringPattern extends AbstractReferenceData implements StringPattern {
 

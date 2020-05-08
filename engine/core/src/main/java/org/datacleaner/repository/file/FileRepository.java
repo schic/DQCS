@@ -28,6 +28,7 @@ import org.datacleaner.repository.RepositoryNode;
 
 /**
  * {@link Repository} implementation based on the local file system.
+ * 基于本地文件系统的{@link Repository}实现。
  */
 public class FileRepository extends FileRepositoryFolder implements Repository {
 

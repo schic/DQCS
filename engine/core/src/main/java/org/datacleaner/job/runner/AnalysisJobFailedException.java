@@ -26,6 +26,7 @@ import java.util.List;
  * Exception type that indicates that a job execution failed. This exception may
  * potentially hold multiple causes, which can be found using the
  * {@link #getErrors()} method.
+ * 异常类型，指示作业执行失败。该异常可能可能有多种原因，可使用{@link #getErrors（）}方法找到。
  */
 public class AnalysisJobFailedException extends RuntimeException {
 

@@ -30,6 +30,7 @@ import org.slf4j.LoggerFactory;
 /**
  * AnalysisListener used for INFO level logging. This listener will log
  * interesting progress information for each thousands rows being processed.
+ * AnalysisListener用于INFO级别的日志记录。该侦听器将为正在处理的每千行记录有趣的进度信息。
  */
 public class InfoLoggingAnalysisListener extends AnalysisListenerAdaptor {
 

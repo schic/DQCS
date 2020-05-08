@@ -26,7 +26,8 @@ import org.datacleaner.api.RendererPrecedence;
 /**
  * Abstract implementation of the {@link Renderable} interface. Only implements
  * the {@link #getPrecedence(Renderable)} method (returns MEDIUM precedence).
- *
+ * {@link Renderable}接口的抽象实现。
+ * 仅实现{@link #getPrecedence（Renderable）}方法（返回MEDIUM优先级）。
  *
  *
  * @param <I>

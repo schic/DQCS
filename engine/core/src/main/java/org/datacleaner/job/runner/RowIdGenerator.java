@@ -25,6 +25,7 @@ import org.datacleaner.api.OutputRowCollector;
 /**
  * Interface for components that generate {@link InputRow} id's. These should be
  * guaranteed unique.
+ * 生成{@link InputRow} id的组件的接口。这些应该被保证是唯一的。
  */
 public interface RowIdGenerator {
 

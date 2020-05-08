@@ -28,6 +28,8 @@ import org.datacleaner.api.InputRow;
  * A {@link RowAnnotationFactory} that does not store any row samples. As such
  * it is usually not very useful to the user but can function as a stub for
  * situations where the row data is irrelevant.
+ * 一个{@link RowAnnotationFactory}，它不存储任何行样本。
+ * 因此，它通常对用户不是很有用，但是可以用作与行数据无关的情况下的存根。
  */
 public class DummyRowAnnotationFactory extends AbstractRowAnnotationFactory2 {
 

@@ -45,6 +45,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * {@link RepositoryFile} implementation based on a local file.
+ * 基于本地文件的{@link RepositoryFile}实现。
  */
 public final class FileRepositoryFile extends AbstractRepositoryNode implements RepositoryFile {
 

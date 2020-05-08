@@ -26,6 +26,7 @@ import java.util.regex.Pattern;
 
 /**
  * Special date value, created by shifting "today" according to the String input in format: "+1d +2m -3y".
+ * 特殊日期值，通过根据格式为“ + 1d + 2m -3y”的字符串输入转换“ today”来创建。
  */
 public class ShiftedToday extends Date implements ExpressionDate {
 

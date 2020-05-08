@@ -27,6 +27,7 @@ import org.datacleaner.util.SystemProperties;
 
 /**
  * Environment based configuration
+ * 基于环境的配置
  */
 public class DirectConnectionHadoopClusterInformation extends EnvironmentBasedHadoopClusterInformation
         implements HadoopClusterInformation {

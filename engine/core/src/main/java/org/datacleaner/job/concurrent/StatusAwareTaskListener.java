@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * A task listener that has the ability to block (using the await(...) methods)
  * and to tell if it has finished or not (using the isDone() method):
+ * 一个任务侦听器，它能够阻止（使用await（...）方法）并判断其是否已完成（使用isDone（）方法）：
  */
 public interface StatusAwareTaskListener extends TaskListener {
 

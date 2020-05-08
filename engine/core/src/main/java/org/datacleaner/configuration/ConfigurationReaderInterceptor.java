@@ -24,6 +24,7 @@ import org.apache.metamodel.util.Resource;
 /**
  * Defines an interface that allows for interception, decoration and other
  * handling of configuration building.
+ * 定义一个接口，该接口允许拦截，修饰和其他处理配置构建的操作。
  */
 public interface ConfigurationReaderInterceptor {
 

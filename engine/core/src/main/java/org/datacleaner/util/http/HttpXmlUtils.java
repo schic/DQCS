@@ -49,6 +49,7 @@ import org.w3c.dom.NodeList;
 
 /**
  * Utility class for working with HTTP and XML.
+ * 用于处理HTTP和XML的实用程序类。
  */
 public final class HttpXmlUtils {
 

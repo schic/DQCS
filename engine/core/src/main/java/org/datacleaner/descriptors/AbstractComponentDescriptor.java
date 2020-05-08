@@ -29,6 +29,7 @@ import org.datacleaner.util.PropertyUtil;
 /**
  * Abstract implementation of the {@link ComponentDescriptor} interface.
  * Convenient for implementing it's subclasses.
+ * {@link ComponentDescriptor}接口的抽象实现。方便实现它的子类。
  *
  * @param <B>
  *            the type of {@link Component}

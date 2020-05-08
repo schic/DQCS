@@ -29,6 +29,8 @@ import org.datacleaner.job.runner.ComponentContextImpl;
  * {@link InjectionManager} that will wrap an existing {@link InjectionManager}
  * but add context-specific injection capabilities that are only available to
  * specific components.
+ * {@link InjectionManager}将包装现有的{@link InjectionManager}，
+ * 但添加仅特定组件可用的特定于上下文的注入功能。
  */
 public class ContextAwareInjectionManager implements InjectionManager {
 

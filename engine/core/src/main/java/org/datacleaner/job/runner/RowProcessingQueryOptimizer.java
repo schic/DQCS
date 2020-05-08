@@ -30,7 +30,7 @@ import org.datacleaner.job.FilterOutcome;
 /**
  * Optimizer that will apply possible optimizations coming from
  * {@link QueryOptimizedFilter} instances in the job.
- *
+ *优化程序将应用来自作业中{@link QueryOptimizedFilter}实例的可能的优化。
  *
  */
 public interface RowProcessingQueryOptimizer {

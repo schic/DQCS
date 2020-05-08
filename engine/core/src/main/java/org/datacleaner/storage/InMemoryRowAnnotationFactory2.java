@@ -33,6 +33,9 @@ import org.datacleaner.api.InputRow;
  * {@link RowAnnotationFactory} that is based on in-memory storage of sample
  * records. A new class was added to allow deserialization of old DataCleaner
  * results, yet this class fully replaces the old one functionally.
+ * {@link InMemoryRowAnnotationFactory}的后继者，
+ * 我们对{@link RowAnnotationFactory}的实现，该实现基于示例记录在内存中的存储。
+ * 添加了一个新类，以允许对旧的DataCleaner结果进行反序列化，但是该类在功能上完全替代了旧的类。
  */
 public final class InMemoryRowAnnotationFactory2 extends AbstractRowAnnotationFactory2
         implements RowAnnotationFactory, Serializable {

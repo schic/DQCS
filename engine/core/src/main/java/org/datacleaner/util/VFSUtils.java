@@ -32,6 +32,7 @@ import org.apache.commons.vfs2.provider.local.LocalFile;
 
 /**
  * Convenience methods for commons VFS.
+ * 公用VFS的便捷方法。
  */
 @SuppressWarnings("checkstyle:AbbreviationAsWordInName")
 public class VFSUtils {

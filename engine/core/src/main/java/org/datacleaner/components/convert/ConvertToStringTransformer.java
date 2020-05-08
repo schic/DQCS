@@ -43,6 +43,7 @@ import org.datacleaner.components.categories.ConversionCategory;
 
 /**
  * Attempts to convert anything to a String value.
+ * 尝试将任何内容转换为String值。
  */
 @Named("ConvertToStringTransformer.name")
 @Description("ConvertToStringTransformer.Description")

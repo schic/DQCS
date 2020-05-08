@@ -29,6 +29,7 @@ import org.datacleaner.job.FilterOutcome;
 
 /**
  * A {@link RowProcessingQueryOptimizer} that does not apply any optimizations
+ * 没有应用任何优化的{@link RowProcessingQueryOptimizer}
  */
 public class NoopRowProcessingQueryOptimizer implements RowProcessingQueryOptimizer {
 

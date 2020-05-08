@@ -21,7 +21,7 @@ package org.datacleaner.job;
 
 /**
  * An object that enables writing/serializing an AnalysisJob to an output.
- *
+ * 一个对象，可以将AnalysisJob写入/序列化到输出中。
  *
  *
  * @param <E>
