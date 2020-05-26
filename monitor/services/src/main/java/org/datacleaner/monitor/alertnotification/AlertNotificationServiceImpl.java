@@ -36,7 +36,8 @@ import org.datacleaner.monitor.shared.model.TenantIdentifier;
 import org.datacleaner.repository.RepositoryFile;
 import org.apache.metamodel.util.LazyRef;
 import org.apache.metamodel.util.NumberComparator;
-//import org.apache.metamodel.util.Ref;
+import java.util.function.Supplier;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,7 +85,7 @@ public class AlertNotificationServiceImpl implements AlertNotificationService {
             return;
         }
 
-        /*final Ref<Map<AlertDefinition, Number>> activeAlerts = new LazyRef<Map<AlertDefinition, Number>>() {
+        final Supplier<Map<AlertDefinition, Number>> activeAlerts = new LazyRef<Map<AlertDefinition, Number>>() {
             @Override
             protected Map<AlertDefinition, Number> fetch() {
                 final Map<AlertDefinition, Number> result = new TreeMap<AlertDefinition, Number>();
@@ -118,7 +119,7 @@ public class AlertNotificationServiceImpl implements AlertNotificationService {
 
                 return result;
             }
-        };*/
+        };
 
         for (AlertNotifier alertNotifier : alertNotifiers) {
             try {

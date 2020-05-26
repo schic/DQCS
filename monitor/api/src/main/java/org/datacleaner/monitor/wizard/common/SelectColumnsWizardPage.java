@@ -1,16 +1,16 @@
 /**
  * DataCleaner (community edition)
  * Copyright (C) 2014 Neopost - Customer Information Management
- *
+ * <p>
  * This copyrighted material is made available to anyone wishing to use, modify,
  * copy, or redistribute it subject to the terms and conditions of the GNU
  * Lesser General Public License, as published by the Free Software Foundation.
- *
+ * <p>
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
  * for more details.
- *
+ * <p>
  * You should have received a copy of the GNU Lesser General Public License
  * along with this distribution; if not, write to:
  * Free Software Foundation, Inc.
@@ -24,11 +24,13 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.checkerframework.checker.units.qual.C;
 import org.datacleaner.monitor.wizard.WizardPageController;
 import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.Table;
 import org.apache.metamodel.util.CollectionUtils;
-//import org.apache.metamodel.util.Func;
+
+import java.util.function.Function;
 
 /**
  * A simple {@link WizardPageController} that asks the user to select the
@@ -36,85 +38,94 @@ import org.apache.metamodel.util.CollectionUtils;
  * 一个简单的{@link WizardPageController}，它要求用户选择感兴趣的{@link Column}。
  */
 public abstract class SelectColumnsWizardPage extends
-		AbstractFreemarkerWizardPage {
+        AbstractFreemarkerWizardPage {
 
-	private Integer _pageIndex;
-	private Map<String, Column> _availableColumns;
+    private Integer _pageIndex;
+    private Map<String, Column> _availableColumns;
 
-	public SelectColumnsWizardPage(Integer pageIndex, Table table) {
-		//this(pageIndex, table.getColumns());
-	}
+    public SelectColumnsWizardPage(Integer pageIndex, Table table) {
 
-	public SelectColumnsWizardPage(Integer pageIndex, Column[] availableColumns) {
-		_pageIndex = pageIndex;
-		_availableColumns = new LinkedHashMap<String, Column>();
-		for (Column column : availableColumns) {
-			_availableColumns.put(column.getName(), column);
-		}
-	}
+        this(pageIndex, table.getColumns());
+    }
 
-	@Override
-	protected Class<?> getTemplateFriendlyClass() {
-		return SelectColumnsWizardPage.class;
-	}
+    public SelectColumnsWizardPage(Integer pageIndex, Column[] availableColumns) {
+        _pageIndex = pageIndex;
+        _availableColumns = new LinkedHashMap<String, Column>();
+        for (Column column : availableColumns) {
+            _availableColumns.put(column.getName(), column);
+        }
+    }
 
-	/**
-	 * Gets the "header" part of the page, shown before the table of column
-	 * selections. Typically this part will contain instructions to the user as
-	 * to which columns to select
-	 * 
-	 * @return
-	 */
-	protected String getHeaderHtml() {
-		return "<p>Please select the source columns of the job:</p>";
-	}
+    public SelectColumnsWizardPage(Integer pageIndex, List<Column> columns) {
+        _pageIndex = pageIndex;
+        _availableColumns = new LinkedHashMap<String, Column>();
+        for (Column column : columns) {
+            _availableColumns.put(column.getName(), column);
+        }
+    }
 
-	/**
-	 * Gets a "footer" part of the page, shown after the table of column
-	 * selections.
-	 * 
-	 * @return
-	 */
-	protected String getFooterHtml() {
-		return "";
-	}
+    @Override
+    protected Class<?> getTemplateFriendlyClass() {
+        return SelectColumnsWizardPage.class;
+    }
 
-	@Override
-	protected String getTemplateFilename() {
-		return "SelectColumnsWizardPage.html";
-	}
+    /**
+     * Gets the "header" part of the page, shown before the table of column
+     * selections. Typically this part will contain instructions to the user as
+     * to which columns to select
+     *
+     * @return
+     */
+    protected String getHeaderHtml() {
+        return "<p>Please select the source columns of the job:</p>";
+    }
 
-	@Override
-	public Integer getPageIndex() {
-		return _pageIndex;
-	}
+    /**
+     * Gets a "footer" part of the page, shown after the table of column
+     * selections.
+     *
+     * @return
+     */
+    protected String getFooterHtml() {
+        return "";
+    }
 
-	@Override
-	protected Map<String, Object> getFormModel() {
-		final Map<String, Object> map = new HashMap<String, Object>();
-		map.put("headerHtml", getHeaderHtml());
-		map.put("columns", _availableColumns.values());
-		map.put("footerHtml", getFooterHtml());
-		return map;
-	}
+    @Override
+    protected String getTemplateFilename() {
+        return "SelectColumnsWizardPage.html";
+    }
 
-	/*@Override
-	public WizardPageController nextPageController(
-			Map<String, List<String>> formParameters) {
-		final List<String> columnNames = formParameters.get("columns");
+    @Override
+    public Integer getPageIndex() {
+        return _pageIndex;
+    }
 
-		final List<Column> selectedColumns = CollectionUtils.map(columnNames,
-				new Func<String, Column>() {
-					@Override
-					public Column eval(String columnName) {
-						return _availableColumns.get(columnName);
-					}
-				});
+    @Override
+    protected Map<String, Object> getFormModel() {
+        final Map<String, Object> map = new HashMap<String, Object>();
+        map.put("headerHtml", getHeaderHtml());
+        map.put("columns", _availableColumns.values());
+        map.put("footerHtml", getFooterHtml());
+        return map;
+    }
 
-		return nextPageController(selectedColumns);
-	}*/
+    @Override
+    public WizardPageController nextPageController(
+            Map<String, List<String>> formParameters) {
+        final List<String> columnNames = formParameters.get("columns");
 
-	protected abstract WizardPageController nextPageController(
-			List<Column> selectedColumns);
+        final List<Column> selectedColumns = CollectionUtils.map(columnNames,
+                new Function<String, Column>() {
+                    @Override
+                    public Column apply(String columnName) {
+                        return _availableColumns.get(columnName);
+                    }
+                });
+
+        return nextPageController(selectedColumns);
+    }
+
+    protected abstract WizardPageController nextPageController(
+            List<Column> selectedColumns);
 
 }

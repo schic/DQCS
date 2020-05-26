@@ -38,7 +38,7 @@ import org.datacleaner.monitor.job.JobContext;
 import org.datacleaner.repository.RepositoryFile;
 import org.apache.metamodel.data.DataSet;
 import org.apache.metamodel.util.FileHelper;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 
 /**
  * Default implementation of the {@link ResultContext} interface.
@@ -55,9 +55,9 @@ public class DefaultResultContext implements ResultContext {
 
     @Override
     public AnalysisResult getAnalysisResult() throws IllegalStateException {
-        /*final Object deserializedObject = _repositoryFile.readFile(new Func<InputStream, Object>() {
+        final Object deserializedObject = _repositoryFile.readFile(new Function<InputStream, Object>() {
             @Override
-            public Object eval(InputStream in) {
+            public Object apply(InputStream in) {
                 ChangeAwareObjectInputStream inputStream = null;
                 try {
                     inputStream = new ChangeAwareObjectInputStream(in);
@@ -73,8 +73,7 @@ public class DefaultResultContext implements ResultContext {
             }
         });
         final AnalysisResult analysisResult = toAnalysisResult(deserializedObject);
-        return analysisResult;*/
-        return null;
+        return analysisResult;
     }
 
     private AnalysisResult toAnalysisResult(Object deserializedObject) {

@@ -95,7 +95,7 @@
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-rest-client</artifactId>
-			<version>5.1.5.3</version>
+			<version>${project.version}</version>
 		</dependency>
 
 		<!-- Middleware: Spring, Quartz etc. -->

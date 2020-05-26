@@ -56,6 +56,11 @@ class SelectDatastoreWizardPage extends AbstractFreemarkerWizardPage {
         return new SelectTableWizardPage(datastore, 2) {
 
             @Override
+            protected Map<String, Object> getFormModel() {
+                return null;
+            }
+
+            @Override
             protected String getPromptText() {
                 return "Select the target table to write to:";
             }

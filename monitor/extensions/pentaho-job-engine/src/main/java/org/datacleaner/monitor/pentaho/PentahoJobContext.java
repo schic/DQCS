@@ -29,7 +29,7 @@ import java.util.Set;
 
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.FileHelper;
-import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.datacleaner.descriptors.MetricDescriptor;
 import org.datacleaner.descriptors.PlaceholderComponentJob;
 import org.datacleaner.monitor.configuration.TenantContext;
@@ -85,9 +85,9 @@ public class PentahoJobContext implements XmlJobContext, MetricJobContext {
     }
 
     public PentahoJobType getPentahoJobType() {
-        PentahoJobType pentahoJobType = _file.readFile(new Func<InputStream, PentahoJobType>() {
+        PentahoJobType pentahoJobType = _file.readFile(new Function<InputStream, PentahoJobType>() {
             @Override
-            public PentahoJobType eval(InputStream in) {
+            public PentahoJobType apply(InputStream in) {
                 JaxbPentahoJobTypeAdaptor adaptor = new JaxbPentahoJobTypeAdaptor();
                 return adaptor.unmarshal(in);
             }

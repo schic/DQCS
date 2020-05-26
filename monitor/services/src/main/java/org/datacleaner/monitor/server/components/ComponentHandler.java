@@ -120,7 +120,7 @@ public class ComponentHandler {
 
     public ComponentHandler(DataCleanerConfiguration dcConfiguration, ComponentDescriptor<?> componentDescriptor, ComponentConfiguration componentConfiguration, RemoteComponentsConfiguration remoteComponentsConfiguration, AnalysisListener analysisListener) {
         Objects.requireNonNull(componentConfiguration, "Component configuration cannot be null");
-        
+
         _remoteComponentsConfiguration = remoteComponentsConfiguration;
         _dcConfiguration = dcConfiguration;
         columns = new HashMap<>();
@@ -268,7 +268,7 @@ public class ComponentHandler {
     }
 
     private Collection<List<Object[]>> runTransformer(JsonNode data) {
-        final DataSetHeader header = new SimpleDataSetHeader(table.getColumns());
+        final DataSetHeader header = SimpleDataSetHeader.fromColumns(table.getColumns());
         final List<Throwable> errors = new ArrayList<>();
         final AtomicInteger tasksPending = new AtomicInteger();
         final TaskRunner taskRunner = _dcConfiguration.getEnvironment().getTaskRunner();
@@ -577,6 +577,7 @@ public class ComponentHandler {
             this.delegate = delegate;
         }
 
+        @Override
         @SuppressWarnings("unchecked")
         public <E> E getInstance(InjectionPoint<E> injectionPoint) {
             E obj;

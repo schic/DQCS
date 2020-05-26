@@ -24,6 +24,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.Table;
 import org.datacleaner.api.InputColumn;
@@ -79,13 +80,14 @@ class ColumnMappingPage extends AbstractFreemarkerWizardPage {
     public WizardPageController nextPageController(Map<String, List<String>> formParameters) {
         final List<ColumnMapping> mappings = new ArrayList<ColumnMapping>();
 
-        final Column[] sourceColumns = _sourceTable.getColumns();
-        for (int i = 0; i < sourceColumns.length; i++) {
+        final  List<Column> sourceColumns = _sourceTable.getColumns();
+
+        for (int i = 0; i < sourceColumns.size(); i++) {
             List<String> formParameter = formParameters.get("mapping_" + i);
             if (formParameter != null && !formParameter.isEmpty()) {
                 final String mapping = formParameter.get(0);
                 if (!StringUtils.isNullOrEmpty(mapping)) {
-                    final Column sourceColumn = sourceColumns[i];
+                    final Column sourceColumn = sourceColumns.get(i);
                     final Column targetColumn = _targetTable.getColumnByName(mapping);
 
                     mappings.add(new ColumnMapping(sourceColumn, targetColumn));

@@ -34,7 +34,7 @@ import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.util.FileFilters;
 import org.apache.metamodel.util.Action;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,12 +53,9 @@ public class ResultModificationEventExecutionLogListener implements ApplicationL
         _contextFactory = contextFactory;
     }
 
+
+
     @Override
-    public void onApplicationEvent(ResultModificationEvent resultModificationEvent) {
-
-    }
-
-    /*@Override
     public void onApplicationEvent(ResultModificationEvent event) {
         final String tenant = event.getTenant();
         final TenantContext context = _contextFactory.getContext(tenant);
@@ -81,9 +78,9 @@ public class ResultModificationEventExecutionLogListener implements ApplicationL
 
         final JobIdentifier jobIdentifier = JobIdentifier.fromResultId(resultId);
 
-        final ExecutionLog executionLog = oldFile.readFile(new Func<InputStream, ExecutionLog>() {
+        final ExecutionLog executionLog = oldFile.readFile(new Function<InputStream, ExecutionLog>() {
             @Override
-            public ExecutionLog eval(InputStream in) {
+            public ExecutionLog apply(InputStream in) {
                 final JaxbExecutionLogReader reader = new JaxbExecutionLogReader();
                 return reader.read(in, jobIdentifier, new TenantIdentifier(tenant));
             }
@@ -107,5 +104,5 @@ public class ResultModificationEventExecutionLogListener implements ApplicationL
         }
 
         oldFile.delete();
-    }*/
+    }
 }

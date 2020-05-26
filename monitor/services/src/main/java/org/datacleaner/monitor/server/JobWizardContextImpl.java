@@ -25,7 +25,7 @@ import org.datacleaner.connection.Datastore;
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.wizard.job.JobWizard;
 import org.datacleaner.monitor.wizard.job.JobWizardContext;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 
 /**
  * Default implementation of {@link JobWizardContext}.
@@ -34,16 +34,16 @@ public final class JobWizardContextImpl implements JobWizardContext {
 
     private final TenantContext _tenantContext;
     private final Datastore _sourceDatastore;
-    //private final Func<String, Object> _sessionFunc;
+    private final Function<String, Object> _sessionFunc;
     private final JobWizard _jobWizard;
     private final Locale _locale;
 
-    public JobWizardContextImpl(JobWizard jobWizard, TenantContext tenantContext, Datastore sourceDatastore,
+    public JobWizardContextImpl(JobWizard jobWizard, TenantContext tenantContext, Datastore sourceDatastore,Function<String, Object> sessionFunc,
              Locale locale) {
         _jobWizard = jobWizard;
         _tenantContext = tenantContext;
         _sourceDatastore = sourceDatastore;
-        //_sessionFunc = sessionFunc;
+        _sessionFunc = sessionFunc;
         _locale = locale;
     }
 
@@ -62,10 +62,10 @@ public final class JobWizardContextImpl implements JobWizardContext {
         return _tenantContext;
     }
 
-    /*@Override
-    public Func<String, Object> getHttpSession() {
+    @Override
+    public Function<String, Object> getHttpSession() {
         return _sessionFunc;
-    }*/
+    }
 
     @Override
     public Locale getLocale() {

@@ -29,7 +29,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.servlet.http.HttpSession;
 
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.datacleaner.monitor.shared.model.DCUserInputException;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
 import org.datacleaner.monitor.shared.model.WizardIdentifier;
@@ -162,18 +162,18 @@ public class WizardDaoImpl implements WizardDao {
      * 
      * @return
      */
-    /*@Override
-    public Func<String, Object> createSessionFunc() {
-        return new Func<String, Object>() {
+    @Override
+    public Function<String, Object> createSessionFunc() {
+        return new Function<String, Object>() {
             @Override
-            public Object eval(String key) {
+            public Object apply(String key) {
                 ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder
                         .currentRequestAttributes();
                 HttpSession session = requestAttributes.getRequest().getSession(true);
                 return session.getAttribute(key);
             }
         };
-    }*/
+    }
 
     /**
      * Creates a "page" that symbolizes a finished wizard.

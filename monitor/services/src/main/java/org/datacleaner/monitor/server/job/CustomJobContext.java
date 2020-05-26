@@ -30,7 +30,7 @@ import java.util.Set;
 
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.FileHelper;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.datacleaner.api.Converter;
 import org.datacleaner.configuration.InjectionManager;
 import org.datacleaner.descriptors.ComponentDescriptor;
@@ -142,11 +142,11 @@ public class CustomJobContext implements XmlJobContext {
     public CustomJavaComponentJob getCustomJavaComponentJob() {
         // there's a 2 second read cache time - enough to only need to read once
         // for executing a job under normal circumstances
-        /*if (_cachedReadTime == -1 || System.currentTimeMillis() - _cachedReadTime > 2000) {
+        if (_cachedReadTime == -1 || System.currentTimeMillis() - _cachedReadTime > 2000) {
             _cachedCustomJavaJob = _file
-                    .readFile(new Func<InputStream, CustomJavaComponentJob>() {
+                    .readFile(new Function<InputStream, CustomJavaComponentJob>() {
                         @Override
-                        public CustomJavaComponentJob eval(InputStream in) {
+                        public CustomJavaComponentJob apply(InputStream in) {
                             final JaxbCustomJavaComponentJobAdaptor adaptor = new JaxbCustomJavaComponentJobAdaptor();
                             CustomJavaComponentJob result = adaptor.unmarshal(in);
                             _cachedReadTime = System.currentTimeMillis();
@@ -154,8 +154,7 @@ public class CustomJobContext implements XmlJobContext {
                         }
                     });
         }
-        return _cachedCustomJavaJob;*/
-        return null;
+        return _cachedCustomJavaJob;
     }
 
     @Override

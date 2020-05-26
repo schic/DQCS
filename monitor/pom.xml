@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.eobjects.datacleaner</groupId>
 		<artifactId>DataCleaner</artifactId>
-		<version>5.1.5.3</version>
+		<version>5.7.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>DataCleaner-monitor</artifactId>
 	<packaging>pom</packaging>
@@ -24,13 +24,13 @@
 				<directory>src/main/resources</directory>
 			</resource>
 			<resource>
-				<!-- Add .java and other sources to the final JARs, since they are needed 
+				<!-- Add .java and other sources to the final JARs, since they are needed
 					for further GWT compilation -->
 				<directory>src/main/java</directory>
 			</resource>
 		</resources>
 
-		<plugins>
+	<!--	<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-enforcer-plugin</artifactId>
@@ -53,15 +53,14 @@
 					</execution>
 				</executions>
 			</plugin>
-		</plugins>
+		</plugins>-->
 	</build>
-
 	<dependencies>
 		<!-- Test dependencies -->
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-testware</artifactId>
-			<version>5.7.1-SNAPSHOT</version>
+			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

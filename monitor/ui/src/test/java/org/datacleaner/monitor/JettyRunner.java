@@ -33,15 +33,15 @@ import org.eclipse.jetty.webapp.WebAppContext;
 /**
  * This class provides a convenient way to interactively test the web
  * application by running it in your IDE.
- * 
+ *
  * To set it up in eclipse, do the following:
- * 
+ *
  * - In eclipse, make sure that this project (DataCleaner-webapp) has visibility
  * into the DataCleaner-monitor-ui project. (Configure build path -> Projects ->
  * Add project...)
- * 
+ *
  * - Run this java class's main method as a Java application.
- * 
+ *
  * - Run the DataCleaner-monitor-ui project as a
  * "Web Application (running on external an web server)".
  */
@@ -56,7 +56,7 @@ public class JettyRunner {
         Server server = new Server();
 
         SelectChannelConnector connector = new SelectChannelConnector();
-        connector.setPort(8888);
+        connector.accept(8888);
         server.addConnector(connector);
 
         WebAppContext webApp = new WebAppContext();

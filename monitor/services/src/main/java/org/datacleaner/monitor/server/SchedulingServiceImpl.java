@@ -46,7 +46,7 @@ import org.apache.commons.io.monitor.FileAlterationObserver;
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.CollectionUtils;
 import org.apache.metamodel.util.FileResource;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.configuration.TenantContextFactory;
 import org.datacleaner.monitor.job.ExecutionLogger;
@@ -315,13 +315,12 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
         if (scheduleFile == null) {
             schedule = new ScheduleDefinition(tenant, jobIdentifier, groupName);
         } else {
-            /*schedule = scheduleFile.readFile(new Func<InputStream, ScheduleDefinition>() {
+            schedule = scheduleFile.readFile(new Function<InputStream, ScheduleDefinition>() {
                 @Override
-                public ScheduleDefinition eval(InputStream inputStream) {
+                public ScheduleDefinition apply(InputStream inputStream) {
                     return reader.read(inputStream, jobIdentifier, tenant, groupName);
                 }
-            });*/
-            return null;
+            });
         }
 
         schedule.setJobMetadataProperties(jobMetadataProperties);
@@ -631,8 +630,8 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
             return null;
         }
 
-        //return readExecutionLogFile(latestFile, job, tenant, 1);
-        return null;
+        return readExecutionLogFile(latestFile, job, tenant, 1);
+
     }
 
     @Override
@@ -642,15 +641,15 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
         final List<RepositoryFile> files = resultFolder.getFiles(job.getName(), FileFilters.ANALYSIS_EXECUTION_LOG_XML
                 .getExtension());
 
-        /*final List<ExecutionIdentifier> executionIdentifiers = CollectionUtils.map(files,
-                new Func<RepositoryFile, ExecutionIdentifier>() {
+        final List<ExecutionIdentifier> executionIdentifiers = CollectionUtils.map(files,
+                new Function<RepositoryFile, ExecutionIdentifier>() {
                     @Override
-                    public ExecutionIdentifier eval(final RepositoryFile file) {
+                    public ExecutionIdentifier apply(final RepositoryFile file) {
                         try {
                             final ExecutionIdentifier result = file.readFile(
-                                    new Func<InputStream, ExecutionIdentifier>() {
+                                    new Function<InputStream, ExecutionIdentifier>() {
                                         @Override
-                                        public ExecutionIdentifier eval(InputStream in) {
+                                        public ExecutionIdentifier apply(InputStream in) {
                                             return SaxExecutionIdentifierReader.read(in, file.getQualifiedPath());
                                         }
                                     });
@@ -662,12 +661,12 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
                                     .getQualifiedPath()));
                         }
                     }
-                });*/
+                });
 
-        //Collections.sort(executionIdentifiers);
+        Collections.sort(executionIdentifiers);
 
-        //return executionIdentifiers;
-        return null;
+        return executionIdentifiers;
+
     }
 
     @Override
@@ -693,17 +692,17 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
 
         JobIdentifier jobIdentifier = JobIdentifier.fromExecutionIdentifier(executionIdentifier);
 
-        //return readExecutionLogFile(file, jobIdentifier, tenant, 3);
-        return null;
+        return readExecutionLogFile(file, jobIdentifier, tenant, 3);
+
     }
 
-    /*private ExecutionLog readExecutionLogFile(final RepositoryFile file, final JobIdentifier jobIdentifier,
+    private ExecutionLog readExecutionLogFile(final RepositoryFile file, final JobIdentifier jobIdentifier,
             final TenantIdentifier tenant, final int retries) {
         final JaxbExecutionLogReader reader = new JaxbExecutionLogReader();
 
-        final ExecutionLog result = file.readFile(new Func<InputStream, ExecutionLog>() {
+        final ExecutionLog result = file.readFile(new Function<InputStream, ExecutionLog>() {
             @Override
-            public ExecutionLog eval(InputStream in) {
+            public ExecutionLog apply(InputStream in) {
                 try {
                     return reader.read(in, jobIdentifier, tenant);
                 } catch (JaxbException e) {
@@ -733,7 +732,7 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
         }
 
         return result;
-    }*/
+    }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

@@ -73,7 +73,7 @@
 				<module>engine</module>
 				<module>components</module>
 				<module>desktop</module>
-				<!--<module>monitor</module>-->
+				<module>monitor</module>
 			</modules>
 		</profile>
 		<profile>
@@ -103,7 +103,7 @@
 				<module>desktop</module>
 			</modules>
 		</profile>
-		<!--<profile>
+		<profile>
 			<id>monitor</id>
 			<modules>
 				<module>api</module>
@@ -113,7 +113,7 @@
 				<module>components</module>
 				<module>monitor</module>
 			</modules>
-		</profile>-->
+		</profile>
 		<profile>
 			<id>code-coverage</id>
 			<build>
@@ -393,7 +393,7 @@
 										<exclude>org.glassfish:javax.servlet:*</exclude>
 										<exclude>org.mortbay.jetty:servlet-api:*</exclude>
 										<exclude>org.mortbay.jetty:servlet-api-2.5:*</exclude>
-										<exclude>org.eclipse.jetty.orbit:javax.servlet:*</exclude>
+										<!--<exclude>org.eclipse.jetty.orbit:javax.servlet:*</exclude>-->
 										<exclude>ant:ant:*</exclude>
 
 										<exclude>org.datanucleus:javax.jdo:*</exclude>
@@ -405,8 +405,9 @@
 										<!-- The proper artifact for JSP API is javax.servlet.jsp:javax.servlet.jsp-api, so we're banning the rest -->
 										<exclude>javax.servlet:jsp-api:*</exclude>
 										<exclude>javax.servlet.jsp:jsp-api:*</exclude>
-										<exclude>org.mortbay.jetty:jsp-api-2.1:*</exclude>
-										<exclude>org.mortbay.jetty:jsp-2.1:*</exclude>
+										<!--<exclude>org.mortbay.jetty:jsp-api-2.1:*</exclude>
+										<exclude>org.mortbay.jetty:jsp-2.1:*</exclude>-->
+
 
 										<!-- The propert artifact for JDO is javax.jdo:jdo-api, so we're banning the rest -->
 										<exclude>org.datanucleaus:javax.jdo</exclude>
@@ -465,8 +466,7 @@
 
 										<exclude>com.sun.xml.ws:jaxws-rt:*</exclude>
 
-										<exclude>javax.servlet.jsp:jsp-api:*</exclude>
-										<exclude>javax.servlet:jsp-api:*</exclude>
+
 									</excludes>
 								</bannedDependencies>
 							</rules>
@@ -540,14 +540,14 @@
 					<groupId>org.jboss.tattletale</groupId>
 					<artifactId>tattletale-maven</artifactId>
 					<version>1.1.2.Final</version>
-					<executions>
+					<!--<executions>
 						<execution>
 							<phase>verify</phase>
 							<goals>
 								<goal>report</goal>
 							</goals>
 						</execution>
-					</executions>
+					</executions>-->
 					<configuration>
 						<destination>${project.reporting.outputDirectory}/tattletale</destination>
 						<reports>

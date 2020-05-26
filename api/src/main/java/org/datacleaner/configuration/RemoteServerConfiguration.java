@@ -17,37 +17,47 @@
  * 51 Franklin Street, Fifth Floor
  * Boston, MA  02110-1301  USA
  */
-package org.datacleaner.monitor.wizard;
+package org.datacleaner.configuration;
 
-import java.util.Locale;
-
-import org.datacleaner.monitor.configuration.TenantContext;
-import java.util.function.Function;
+import java.util.List;
 
 /**
- * Context object which is shared throughout the wizard session
- * 在整个向导会话中共享的上下文对象
+ * Container for all remote servers' (DataCleaner Monitors) configuration.
  */
-public interface WizardContext {
+public interface RemoteServerConfiguration {
 
     /**
-     * Gets the locale of the client that is accessing this wizard.
-     * 
-     * @return
+     * @return list of all remote server configurations.
      */
-    public Locale getLocale();
+    List<RemoteServerData> getServerList();
 
     /**
-     * Gets the tenant context of the current wizard session
-     * 
+     * Returns RemoteServerData by server name
+     *
+     * @param serverName - NULL - is not exists
      * @return
      */
-    public TenantContext getTenantContext();
+    RemoteServerData getServerConfig(String serverName);
 
     /**
-     * Gets a read-only view of the HTTP session of the user.
-     * 
+     * Get actual state of connection to remote server.
+     *
+     * @param remoteServerName can be null.
      * @return
      */
-    public Function<String, Object> getHttpSession();
+    RemoteServerState getActualState(String remoteServerName);
+
+    /**
+     * Add listener to inform about change of state
+     *
+     * @param listener
+     */
+    void addListener(RemoteServerStateListener listener);
+
+    /**
+     * Remove listener
+     *
+     * @param listener
+     */
+    void removeListener(RemoteServerStateListener listener);
 }

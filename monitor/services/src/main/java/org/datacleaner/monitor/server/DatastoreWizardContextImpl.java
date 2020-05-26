@@ -24,7 +24,7 @@ import java.util.Locale;
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.wizard.datastore.DatastoreWizard;
 import org.datacleaner.monitor.wizard.datastore.DatastoreWizardContext;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 
 /**
  * Default implementation of {@link DatastoreWizardContext}.
@@ -33,13 +33,13 @@ public class DatastoreWizardContextImpl implements DatastoreWizardContext {
 
     private final DatastoreWizard _wizard;
     private final TenantContext _tenantContext;
-    //private final Func<String, Object> _sessionFunc;
+    private final Function<String, Object> _sessionFunc;
     private final Locale _locale;
 
-    public DatastoreWizardContextImpl(DatastoreWizard wizard, TenantContext tenantContext,  Locale locale) {
+    public DatastoreWizardContextImpl(DatastoreWizard wizard, TenantContext tenantContext,Function<String, Object> sessionFunc , Locale locale) {
         _wizard = wizard;
         _tenantContext = tenantContext;
-        //_sessionFunc = sessionFunc;
+        _sessionFunc = sessionFunc;
         _locale = locale;
     }
     
@@ -53,10 +53,10 @@ public class DatastoreWizardContextImpl implements DatastoreWizardContext {
         return _tenantContext;
     }
 
-    /*@Override
-    public Func<String, Object> getHttpSession() {
+    @Override
+    public Function<String, Object> getHttpSession() {
         return _sessionFunc;
-    }*/
+    }
 
     @Override
     public Locale getLocale() {

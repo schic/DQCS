@@ -72,6 +72,7 @@ public class RemoteDescriptorProviderImpl extends AbstractDescriptorProvider imp
         return remoteServerData;
     }
 
+    @Override
     public RemoteServerState getServerState() {
         if (actualState == null) {
             remoteServerConfiguration.addListener(remoteServerStateListener);
@@ -80,6 +81,7 @@ public class RemoteDescriptorProviderImpl extends AbstractDescriptorProvider imp
         return actualState;
     }
 
+    @Override
     public void refresh() {
         dataLazyReference = new RemoteLazyRef();
         notifyListeners();

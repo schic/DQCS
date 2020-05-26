@@ -9,7 +9,7 @@
 
 	<artifactId>DataCleaner-monitor-documentation</artifactId>
 
-	<build>
+<!--	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -21,14 +21,14 @@
 							<goal>enforce</goal>
 						</goals>
 						<configuration>
-							<!-- For now we allow skipping the enforcer in this module. It has known issues because of transitive dependencies of wadl -->
+							&lt;!&ndash; For now we allow skipping the enforcer in this module. It has known issues because of transitive dependencies of wadl &ndash;&gt;
 							<skip>true</skip>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build>-->
 
 	<dependencies>
 		<!-- Spring -->
@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
+			<!--<scope>provided</scope>-->
 		</dependency>
 
 		<!-- Json de/serialization library -->

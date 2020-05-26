@@ -36,7 +36,8 @@ import org.datacleaner.result.Crosstab;
 import org.datacleaner.result.CrosstabNavigator;
 import org.datacleaner.result.CrosstabResult;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Func;
+import java.util.function.Function;
+import org.slf4j.Logger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.xml.DomUtils;
@@ -113,25 +114,25 @@ public class PentahoJobResult extends CrosstabResult implements AnalyzerResult {
         Element stepElement = getStepStatusElement(step.getName());
         return getMeasure(stepElement, "speed");
     }
-    
+
     @Metric(order = 201, value = "First log line no.")
     public Number getFirstLogLine() {
         Element transStatusElement = getTransStatusElement();
         return getMeasure(transStatusElement, "first_log_line_nr");
     }
-    
+
     @Metric(order = 202, value = "Last log line no.")
     public Number getLastLogLine() {
         Element transStatusElement = getTransStatusElement();
         return getMeasure(transStatusElement, "last_log_line_nr");
     }
-    
+
     @Metric(order = 203, value = "Error count")
     public Number getErrorCount() {
         Element resultStatusElement = getResultStatusElement();
         return getMeasure(resultStatusElement, "nr_errors");
     }
-    
+
     @Metric(order = 204, value = "Files retrieved")
     public Number getFilesRetrieved() {
         Element resultStatusElement = getResultStatusElement();
@@ -154,9 +155,9 @@ public class PentahoJobResult extends CrosstabResult implements AnalyzerResult {
 
     protected Collection<String> getStepNames() {
         List<Element> elements = getStepStatusElements();
-        return CollectionUtils.map(elements, new Func<Element, String>() {
+        return CollectionUtils.map(elements, new Function<Element, String>() {
             @Override
-            public String eval(Element element) {
+            public String apply(Element element) {
                 final String stepName = DomUtils.getChildElementValueByTagName(element, "stepname");
                 return stepName;
             }

@@ -29,6 +29,8 @@ import org.datacleaner.monitor.wizard.common.SelectTableWizardPage;
 import org.datacleaner.monitor.wizard.job.DataCleanerJobWizardSession;
 import org.datacleaner.monitor.wizard.job.JobWizardContext;
 
+import java.util.Map;
+
 final class CopyDataWizardSession extends DataCleanerJobWizardSession {
 
     private final AnalysisJobBuilder _analysisJobBuilder;
@@ -43,6 +45,11 @@ final class CopyDataWizardSession extends DataCleanerJobWizardSession {
     @Override
     public WizardPageController firstPageController() {
         return new SelectTableWizardPage(getWizardContext(), 0) {
+            @Override
+            protected Map<String, Object> getFormModel() {
+                return null;
+            }
+
             @Override
             protected WizardPageController nextPageController(Table selectedTable) {
                 return new SelectDatastoreWizardPage(CopyDataWizardSession.this, _analysisJobBuilder, selectedTable);

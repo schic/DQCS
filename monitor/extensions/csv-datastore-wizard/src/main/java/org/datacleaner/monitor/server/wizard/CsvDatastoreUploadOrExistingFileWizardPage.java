@@ -116,7 +116,7 @@ public abstract class CsvDatastoreUploadOrExistingFileWizardPage extends Abstrac
         final String sessionKey = fileJson.get("session_key");
         final String filename = fileJson.get("file_name");
 
-        final File tempFile = (File) _wizardContext.getHttpSession().eval(sessionKey);
+        final File tempFile = (File) _wizardContext.getHttpSession().apply(sessionKey);
 
         return nextPageControllerUpload(filename, tempFile);
     }

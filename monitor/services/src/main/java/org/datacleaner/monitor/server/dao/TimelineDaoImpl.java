@@ -39,7 +39,7 @@ import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.repository.RepositoryNode;
 import org.datacleaner.util.FileFilters;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -149,18 +149,18 @@ public class TimelineDaoImpl implements TimelineDao {
                     + timeline.getGroup() + ")");
         }
 
-        /*final TimelineDefinition timelineDefinition = timelineNode
-                .readFile(new Func<InputStream, TimelineDefinition>() {
+        final TimelineDefinition timelineDefinition = timelineNode
+                .readFile(new Function<InputStream, TimelineDefinition>() {
                     @Override
-                    public TimelineDefinition eval(InputStream in) {
+                    public TimelineDefinition apply(InputStream in) {
                         final TimelineReader reader = new JaxbTimelineReader();
                         final TimelineDefinition timelineDefinition = reader.read(in);
                         return timelineDefinition;
                     }
                 });
 
-        return timelineDefinition;*/
-        return null;
+        return timelineDefinition;
+
     }
 
 }

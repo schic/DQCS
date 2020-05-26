@@ -111,6 +111,7 @@ public class TenantContextFactoryImpl implements TenantContextFactory {
         return cache;
     }
 
+    @Override
     public TenantContext getContext(TenantIdentifier tenant) {
         if (tenant == null) {
             throw new IllegalArgumentException("Tenant cannot be null");
@@ -118,6 +119,7 @@ public class TenantContextFactoryImpl implements TenantContextFactory {
         return getContext(tenant.getId());
     }
 
+    @Override
     public TenantContext getContext(String tenantId) {
         if (Strings.isNullOrEmpty(tenantId)) {
             throw new IllegalArgumentException("Tenant ID cannot be null or empty string");

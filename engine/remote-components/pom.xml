@@ -3,7 +3,7 @@
 	<parent>
 		<artifactId>DataCleaner-engine</artifactId>
 		<groupId>org.eobjects.datacleaner</groupId>
-		<version>5.1.5.3</version>
+		<version>5.7.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-rest-client</artifactId>
-			<version>5.1.5.3</version>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 </project>

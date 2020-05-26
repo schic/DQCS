@@ -1,16 +1,16 @@
 /**
  * DataCleaner (community edition)
  * Copyright (C) 2014 Neopost - Customer Information Management
- *
+ * <p>
  * This copyrighted material is made available to anyone wishing to use, modify,
  * copy, or redistribute it subject to the terms and conditions of the GNU
  * Lesser General Public License, as published by the Free Software Foundation.
- *
+ * <p>
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
  * for more details.
- *
+ * <p>
  * You should have received a copy of the GNU Lesser General Public License
  * along with this distribution; if not, write to:
  * Free Software Foundation, Inc.
@@ -20,6 +20,7 @@
 package org.datacleaner.monitor.jobwizard.quickanalysis;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.Table;
@@ -54,17 +55,23 @@ final class QuickAnalysisWizardSession extends DataCleanerJobWizardSession {
     public WizardPageController firstPageController() {
         return new SelectTableWizardPage(getWizardContext(), 0) {
             @Override
+            protected Map<String, Object> getFormModel() {
+                return null;
+            }
+
+            @Override
             protected WizardPageController nextPageController(final Table selectedTable) {
-                
+
                 // add primary key columns for reference
-                final Column[] primaryKeys = selectedTable.getPrimaryKeys();
-                if (primaryKeys != null && primaryKeys.length > 0) {
+                // final Column[] primaryKeys = selectedTable.getPrimaryKeys();
+                final List<Column> primaryKeys = selectedTable.getPrimaryKeys();
+                if (primaryKeys != null && primaryKeys.size() > 0) {
                     for (Column primaryKeyColumn : primaryKeys) {
                         _analysisJobBuilder.addSourceColumn(primaryKeyColumn);
                     }
                 }
-                
-                final boolean hasStringColumns = selectedTable.getLiteralColumns().length > 0;
+
+                final boolean hasStringColumns = selectedTable.getLiteralColumns().size() > 0;
                 if (!hasStringColumns) {
                     _pageCount = 4;
                 }
@@ -104,7 +111,7 @@ final class QuickAnalysisWizardSession extends DataCleanerJobWizardSession {
                                     valueDistribution.setName("Value distribution of " + selectedColumn.getName());
                                     valueDistribution.addInputColumn(sourceColumn);
                                 }
-                                
+
                                 if (!hasStringColumns) {
                                     return lastPage;
                                 }

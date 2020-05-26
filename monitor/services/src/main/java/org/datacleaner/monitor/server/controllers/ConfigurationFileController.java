@@ -1,16 +1,16 @@
 /**
  * DataCleaner (community edition)
  * Copyright (C) 2014 Neopost - Customer Information Management
- *
+ * <p>
  * This copyrighted material is made available to anyone wishing to use, modify,
  * copy, or redistribute it subject to the terms and conditions of the GNU
  * Lesser General Public License, as published by the Free Software Foundation.
- *
+ * <p>
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
  * for more details.
- *
+ * <p>
  * You should have received a copy of the GNU Lesser General Public License
  * along with this distribution; if not, write to:
  * Free Software Foundation, Inc.
@@ -26,7 +26,9 @@ import java.util.Map;
 import javax.annotation.security.RolesAllowed;
 
 import org.apache.metamodel.util.FileHelper;
-//import org.apache.metamodel.util.Func;
+
+import java.util.function.Function;
+
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.configuration.TenantContextFactory;
 import org.datacleaner.monitor.configuration.WriteUpdatedConfigurationFileAction;
@@ -47,7 +49,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller
-@RequestMapping({ "/{tenant}/conf.xml", "/{tenant}/configuration" })
+@RequestMapping({"/{tenant}/conf.xml", "/{tenant}/configuration"})
 public class ConfigurationFileController {
 
     private static final Logger logger = LoggerFactory.getLogger(ConfigurationFileController.class);
@@ -58,7 +60,7 @@ public class ConfigurationFileController {
     @RolesAllowed(SecurityRoles.CONFIGURATION_EDITOR)
     @RequestMapping(method = RequestMethod.POST, produces = MediaType.TEXT_HTML_VALUE, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public String uploadConfigurationFileHtml(@PathVariable("tenant") final String tenant,
-            @RequestParam("file") final MultipartFile file) throws Exception {
+                                              @RequestParam("file") final MultipartFile file) throws Exception {
         final Map<String, String> outcome = uploadConfigurationFileJson(tenant, file);
         return "redirect:/repository?configuration_upload=" + outcome.get("status");
     }
@@ -67,7 +69,7 @@ public class ConfigurationFileController {
     @RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @ResponseBody
     public Map<String, String> uploadConfigurationFileJson(@PathVariable("tenant") final String tenant,
-            @RequestParam("file") final MultipartFile file) throws Exception {
+                                                           @RequestParam("file") final MultipartFile file) throws Exception {
         if (file == null) {
             logger.warn("No upload file provided, throwing IllegalArgumentException");
             throw new IllegalArgumentException(
@@ -116,18 +118,17 @@ public class ConfigurationFileController {
             throw new IllegalStateException("Configuration file not found!");
         }
 
-        /*final byte[] documentBody = configurationFile.readFile(new Func<InputStream, byte[]>() {
+        final byte[] documentBody = configurationFile.readFile(new Function<InputStream, byte[]>() {
             @Override
-            public byte[] eval(InputStream in) {
+            public byte[] apply(InputStream in) {
                 return FileHelper.readAsBytes(in);
             }
-        });*/
+        });
 
-        /*final HttpHeaders header = new HttpHeaders();
+        final HttpHeaders header = new HttpHeaders();
         header.setContentType(MediaType.APPLICATION_XML);
         header.setContentLength(documentBody.length);
-        return new HttpEntity<byte[]>(documentBody, header);*/
-        return null;
+        return new HttpEntity<byte[]>(documentBody, header);
 
     }
 }

@@ -2,7 +2,7 @@ package org.datacleaner.util;
 
 /**
  * @Author: wuyj.
- * @Description: TODO()
+ * @Description:  国际化支持
  * @Date:Created in 2020/3/26 22:36.
  * @Modified By:
  */

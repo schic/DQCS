@@ -131,7 +131,7 @@ public class RESTClientImpl implements RESTClient {
                 // DO NOTHING
             }
             if(msg.isEmpty()) {
-                msg = response.getStatusInfo().getReasonPhrase();
+                msg = response.getClientResponseStatus().getReasonPhrase();
             }
 
             throw new RESTClientException(response.getStatus(), msg);

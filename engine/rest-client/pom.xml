@@ -3,7 +3,7 @@
 	<parent>
 		<artifactId>DataCleaner-engine</artifactId>
 		<groupId>org.eobjects.datacleaner</groupId>
-		<version>5.1.5.3</version>
+		<version>5.7.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -19,7 +19,9 @@
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-client</artifactId>
+			<version>1.9</version>
 		</dependency>
+
 		<!-- Json de/serialization library -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>

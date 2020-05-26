@@ -32,7 +32,7 @@ import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.ColumnType;
 import org.apache.metamodel.schema.Table;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 
 /**
  * Page where user gets to select value distribution columns
@@ -69,9 +69,9 @@ public abstract class SelectValueDistributionColumnsPage extends
 		}
 
 		final List<Column> selectedColumns = CollectionUtils.map(columnNames,
-				new Func<String, Column>() {
+				new Function<String, Column>() {
 					@Override
-					public Column eval(String columnName) {
+					public Column apply(String columnName) {
 						return _availableColumns.get(columnName);
 					}
 				});

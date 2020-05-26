@@ -34,14 +34,14 @@ import org.datacleaner.configuration.RemoteServerData;
  * DataCleaner Monitor server. This descriptor is created by
  * {@link RemoteDescriptorProvider} when it downloads a transformers list from
  * the server.
- * 
+ *
  * @Since 9/1/15
  */
 public class RemoteTransformerDescriptorImpl extends SimpleComponentDescriptor<RemoteTransformer>
         implements RemoteTransformerDescriptor<RemoteTransformer>, HasIcon, Allowable {
-    
+
     private static final long serialVersionUID = 1L;
-    
+
     private final String remoteDisplayName;
     private final Map<Class<? extends Annotation>, Annotation> annotations;
     private final byte[] iconData;
@@ -58,6 +58,7 @@ public class RemoteTransformerDescriptorImpl extends SimpleComponentDescriptor<R
         this.isEnabled = isEnabled;
     }
 
+    @Override
     public RemoteDescriptorProvider getRemoteDescriptorProvider() {
         return remoteDescriptorProvider;
     }
@@ -102,6 +103,7 @@ public class RemoteTransformerDescriptorImpl extends SimpleComponentDescriptor<R
         return TransformSuperCategory.class;
     }
 
+    @Override
     public byte[] getIconData() {
         return iconData;
     }

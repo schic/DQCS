@@ -17,37 +17,12 @@
  * 51 Franklin Street, Fifth Floor
  * Boston, MA  02110-1301  USA
  */
-package org.datacleaner.monitor.wizard;
-
-import java.util.Locale;
-
-import org.datacleaner.monitor.configuration.TenantContext;
-import java.util.function.Function;
+package org.datacleaner.configuration;
 
 /**
- * Context object which is shared throughout the wizard session
- * 在整个向导会话中共享的上下文对象
+ *  Listener for notification about changes in connections to remote servers.
  */
-public interface WizardContext {
+public interface RemoteServerStateListener {
 
-    /**
-     * Gets the locale of the client that is accessing this wizard.
-     * 
-     * @return
-     */
-    public Locale getLocale();
-
-    /**
-     * Gets the tenant context of the current wizard session
-     * 
-     * @return
-     */
-    public TenantContext getTenantContext();
-
-    /**
-     * Gets a read-only view of the HTTP session of the user.
-     * 
-     * @return
-     */
-    public Function<String, Object> getHttpSession();
+    void onRemoteServerStateChange(String remoteServerName, RemoteServerState state);
 }

@@ -74,9 +74,9 @@ public abstract class FileWizardSession extends AbstractReferenceDataWizardSessi
             throw new DCUserInputException("Cannot write data to directory of file:\n" + targetFile.getAbsolutePath());
         }
 
-        final File temporaryFile = (File) getWizardContext().getHttpSession().eval(_sessionKey);
+      /*  final File temporaryFile = (File) getWizardContext().getHttpSession().eval(_sessionKey);
         FileHelper.copy(temporaryFile, targetFile);
-        _filePath = targetFile.getAbsolutePath();
+        _filePath = targetFile.getAbsolutePath();*/
     }
 
     public String getName() {

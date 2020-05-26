@@ -24,7 +24,7 @@ import de.odysseus.el.ExpressionFactoryImpl;
 import de.odysseus.el.util.SimpleContext;
 import org.apache.metamodel.util.CollectionUtils;
 import org.apache.metamodel.util.HasNameMapper;
-//import org.apache.metamodel.util.Predicate;
+import  java.util.function.Predicate;
 import org.datacleaner.api.AnalyzerResult;
 import org.datacleaner.api.AnalyzerResultFuture;
 import org.datacleaner.api.InputColumn;
@@ -59,7 +59,7 @@ public class MetricValueUtils {
      * {@link AnalysisResult#getResult(ComponentJob)} method, this method will
      * apply fuzzy logic to identify the right component, to overcome
      * serialization and deserialization differences.
-     * 
+     *
      * @param analysisResult
      * @param componentJob
      * @param metricIdentifier
@@ -115,7 +115,7 @@ public class MetricValueUtils {
 
         candidates = CollectionUtils.filter(candidates, new Predicate<ComponentJob>() {
             @Override
-            public Boolean eval(ComponentJob o) {
+            public boolean test(ComponentJob o) {
                 final String actualDescriptorName = o.getDescriptor().getDisplayName();
                 final String metricDescriptorName = componentJobDescriptorName;
                 return metricDescriptorName.equals(actualDescriptorName);
@@ -127,7 +127,7 @@ public class MetricValueUtils {
             // filter analyzers with a particular name
             candidates = CollectionUtils2.refineCandidates(candidates, new Predicate<ComponentJob>() {
                 @Override
-                public Boolean eval(ComponentJob o) {
+                public boolean test(ComponentJob o) {
                     final String actualAnalyzerName = o.getName();
                     final String metricAnalyzerName = analyzerJobName;
                     return metricAnalyzerName.equals(actualAnalyzerName);
@@ -138,8 +138,9 @@ public class MetricValueUtils {
         if (componentJob instanceof InputColumnSinkJob) {
             // filter analyzer jobs with same input
             candidates = CollectionUtils2.refineCandidates(candidates, new Predicate<ComponentJob>() {
+
                 @Override
-                public Boolean eval(ComponentJob o) {
+                public boolean test(ComponentJob o) {
                     if (o instanceof InputColumnSinkJob) {
                         final InputColumn<?>[] input1 = ((InputColumnSinkJob) o).getInput();
                         final InputColumn<?>[] input2 = ((InputColumnSinkJob) componentJob).getInput();
@@ -159,7 +160,7 @@ public class MetricValueUtils {
         if (analyzerInputName != null) {
             candidates = CollectionUtils2.refineCandidates(candidates, new Predicate<ComponentJob>() {
                 @Override
-                public Boolean eval(ComponentJob o) {
+                public boolean test(ComponentJob o) {
                     InputColumn<?> identifyingInputColumn = AnalyzerJobHelper.getIdentifyingInputColumn(o);
                     if (identifyingInputColumn == null) {
                         return false;
@@ -199,7 +200,7 @@ public class MetricValueUtils {
 
 /**
      * Gets the {@link ComponentJob} that applies to a specific metric.
-     * 
+     *
      * @param metric
      *            the metric to query for
      * @param analysisJob
@@ -419,10 +420,10 @@ public class MetricValueUtils {
 
 /**
      * Builds a list of {@link MetricGroup}s for a specific {@link AnalysisJob}.
-     * 
+     *
      * @param jobContext
      * @param analysisJob
-     * 
+     *
      * @return
      */
 
@@ -466,7 +467,7 @@ public class MetricValueUtils {
 
 /**
      * Builds a {@link MetricGroup} for a specific {@link ComponentJob}.
-     * 
+     *
      * @param job
      * @param componentJob
      * @param metricDescriptors

@@ -17,37 +17,13 @@
  * 51 Franklin Street, Fifth Floor
  * Boston, MA  02110-1301  USA
  */
-package org.datacleaner.monitor.wizard;
+package org.datacleaner.descriptors;
 
-import java.util.Locale;
-
-import org.datacleaner.monitor.configuration.TenantContext;
-import java.util.function.Function;
+import org.datacleaner.api.Transformer;
 
 /**
- * Context object which is shared throughout the wizard session
- * 在整个向导会话中共享的上下文对象
+ * A {@link TransformerDescriptor} for remote transformers.
  */
-public interface WizardContext {
-
-    /**
-     * Gets the locale of the client that is accessing this wizard.
-     * 
-     * @return
-     */
-    public Locale getLocale();
-
-    /**
-     * Gets the tenant context of the current wizard session
-     * 
-     * @return
-     */
-    public TenantContext getTenantContext();
-
-    /**
-     * Gets a read-only view of the HTTP session of the user.
-     * 
-     * @return
-     */
-    public Function<String, Object> getHttpSession();
+public interface RemoteTransformerDescriptor<T extends Transformer> extends TransformerDescriptor<T> {
+    public RemoteDescriptorProvider getRemoteDescriptorProvider();
 }

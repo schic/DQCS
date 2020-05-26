@@ -120,10 +120,10 @@ public class WriteUpdatedConfigurationFileAction extends AbstractJaxbAdaptor<Con
                         .setSynonymCatalogs(newConfiguration.getReferenceDataCatalog().getSynonymCatalogs());
 
             } else {
-                addUniqueValues(currentConfiguration.getReferenceDataCatalog().getSynonymCatalogs()
-                                .getTextFileSynonymCatalogOrDatastoreSynonymCatalogOrCustomSynonymCatalog(),
+                addUniqueValues(currentConfiguration.getReferenceDataCatalog().getSynonymCatalogs().getTextFileSynonymCatalogOrDatastoreSynonymCatalogOrSimpleSynonymCatalog()
+                              ,
                         newConfiguration.getReferenceDataCatalog().getSynonymCatalogs()
-                                .getTextFileSynonymCatalogOrDatastoreSynonymCatalogOrCustomSynonymCatalog());
+                                .getTextFileSynonymCatalogOrDatastoreSynonymCatalogOrSimpleSynonymCatalog());
             }
         }
 

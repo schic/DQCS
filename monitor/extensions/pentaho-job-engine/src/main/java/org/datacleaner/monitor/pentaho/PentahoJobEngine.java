@@ -56,7 +56,7 @@ import org.datacleaner.monitor.server.job.AbstractJobEngine;
 import org.datacleaner.monitor.shared.model.MetricIdentifier;
 import org.datacleaner.repository.RepositoryFile;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -138,7 +138,7 @@ public class PentahoJobEngine extends AbstractJobEngine<PentahoJobContext> imple
 
     /**
      * Fills in any missing details of the request
-     * 
+     *
      * @param carteClient
      * @param pentahoJobType
      * @param executionLogger
@@ -173,7 +173,7 @@ public class PentahoJobEngine extends AbstractJobEngine<PentahoJobContext> imple
     /**
      * Fires the HTTP request to the Carte server to get the updated status of
      * the execution
-     * 
+     *
      * @param carteClient
      * @param pentahoJobType
      * @param executionLogger
@@ -251,7 +251,7 @@ public class PentahoJobEngine extends AbstractJobEngine<PentahoJobContext> imple
     /**
      * Logs the progress of a job in Carte based on the XML response of a
      * 'transUpdate' call.
-     * 
+     *
      * @param statusType
      *            the type of status update - expecting a word to put into an
      *            update sentence like 'progress' or 'finished'.
@@ -316,7 +316,7 @@ public class PentahoJobEngine extends AbstractJobEngine<PentahoJobContext> imple
 
     /**
      * Fires the HTTP request to Carte to start processing the transformation.
-     * 
+     *
      * @param carteClient
      * @param pentahoJobType
      * @param executionLogger
@@ -410,9 +410,9 @@ public class PentahoJobEngine extends AbstractJobEngine<PentahoJobContext> imple
             }
 
             final Collection<String> stepNames = pentahoJobResult.getStepNames();
-            final List<InputColumn<?>> inputColumns = CollectionUtils.map(stepNames, new Func<String, InputColumn<?>>() {
+            final List<InputColumn<?>> inputColumns = CollectionUtils.map(stepNames, new Function<String, InputColumn<?>>() {
                 @Override
-                public InputColumn<?> eval(String stepName) {
+                public InputColumn<?> apply(String stepName) {
                     return new MockInputColumn<String>(stepName);
                 }
             });

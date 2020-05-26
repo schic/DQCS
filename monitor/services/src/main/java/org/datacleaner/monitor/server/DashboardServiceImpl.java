@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.function.Predicate;
 
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.configuration.TenantContextFactory;
@@ -50,7 +51,7 @@ import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.util.FileFilters;
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.CollectionUtils;
-import org.apache.metamodel.util.Predicate;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -211,7 +212,7 @@ public class DashboardServiceImpl implements DashboardService {
         List<JobIdentifier> jobs = tenantContext.getJobs();
         jobs = CollectionUtils.filter(jobs, new Predicate<JobIdentifier>() {
             @Override
-            public Boolean eval(JobIdentifier job) {
+            public boolean test(JobIdentifier job) {
                 final boolean analysisJob = JobIdentifier.JOB_TYPE_ANALYSIS_JOB.equals(job.getType());
                 if (analysisJob) {
                     // in most cases we have DC jobs, and this evaluation is

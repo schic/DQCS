@@ -22,6 +22,7 @@ package org.datacleaner.monitor.wizard.common;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Predicate;
 
 import org.apache.metamodel.MetaModelHelper;
 import org.apache.metamodel.schema.Schema;
@@ -81,7 +82,7 @@ public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage
         return "Please select the source table of the job:";
     }
 
-    /*@Override
+    @Override
     protected Map<String, Object> getFormModel() {
         final Map<String, Object> map = new HashMap<String, Object>();
         map.put("promptText", getPromptText());
@@ -90,7 +91,7 @@ public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage
             final Schema[] schemas = con.getSchemaNavigator().getSchemas();
             final List<Schema> schemaList = CollectionUtils.filter(schemas, new Predicate<Schema>() {
                 @Override
-                public Boolean eval(Schema schema) {
+                public boolean test(Schema schema) {
                     final boolean isInformationSchema = MetaModelHelper.isInformationSchema(schema);
                     return !isInformationSchema;
                 }
@@ -102,7 +103,7 @@ public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage
             map.put("schemas", schemaList);
             return map;
         }
-    }*/
+    }
 
     @Override
     public WizardPageController nextPageController(Map<String, List<String>> formParameters) {

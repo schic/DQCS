@@ -27,14 +27,14 @@ import java.util.Map;
 
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.FileHelper;
-//import org.apache.metamodel.util.Func;
+import java.util.function.Function;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.job.AnalysisJob;
 import org.datacleaner.job.AnalysisJobMetadata;
 import org.datacleaner.job.JaxbJobReader;
 import org.datacleaner.monitor.configuration.TenantContext;
 import org.datacleaner.monitor.job.JobContext;
-//import org.datacleaner.monitor.server.MetricValueUtils;
+import org.datacleaner.monitor.server.MetricValueUtils;
 import org.datacleaner.monitor.server.MonitorJobReader;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
 import org.datacleaner.monitor.shared.model.JobMetrics;
@@ -160,10 +160,10 @@ public class DataCleanerJobContextImpl implements DataCleanerJobContext {
             synchronized (this) {
                 lastModified = _file.getLastModified();
                 if (_sourceDatastoreName == null || lastModified != _lastModifiedCache) {
-                    /*final DataCleanerConfiguration configuration = _tenantContext.getConfiguration();
-                    final AnalysisJobMetadata metadata = _file.readFile(new Func<InputStream, AnalysisJobMetadata>() {
+                    final DataCleanerConfiguration configuration = _tenantContext.getConfiguration();
+                    final AnalysisJobMetadata metadata = _file.readFile(new Function<InputStream, AnalysisJobMetadata>() {
                         @Override
-                        public AnalysisJobMetadata eval(InputStream in) {
+                        public AnalysisJobMetadata apply(InputStream in) {
                             final JaxbJobReader jobReader = new JaxbJobReader(configuration);
                             AnalysisJobMetadata metadata = jobReader.readMetadata(in);
                             return metadata;
@@ -171,7 +171,7 @@ public class DataCleanerJobContextImpl implements DataCleanerJobContext {
                     });
                     _sourceDatastoreName = metadata.getDatastoreName();
                     _sourceColumnPaths = metadata.getSourceColumnPaths();
-                    _variables = metadata.getVariables();*/
+                    _variables = metadata.getVariables();
                 }
             }
         }
@@ -196,36 +196,34 @@ public class DataCleanerJobContextImpl implements DataCleanerJobContext {
     public JobMetrics getJobMetrics() {
         final AnalysisJob job = getAnalysisJob();
 
-        /*final MetricValueUtils utils = new MetricValueUtils();
+        final MetricValueUtils utils = new MetricValueUtils();
         final List<MetricGroup> metricGroups = utils.getMetricGroups(this, job);
 
         final JobMetrics metrics = new JobMetrics();
         metrics.setMetricGroups(metricGroups);
         metrics.setJob(new JobIdentifier(getName()));
-        return metrics;*/
-        return null;
+        return metrics;
     }
 
     @Override
     public Map<String, String> getMetadataProperties() {
         final RepositoryFile file = getJobFile();
 
-        /*final DataCleanerConfiguration configuration = _tenantContext.getConfiguration();
-        final AnalysisJobMetadata jobMetadata = file.readFile(new Func<InputStream, AnalysisJobMetadata>() {
+        final DataCleanerConfiguration configuration = _tenantContext.getConfiguration();
+        final AnalysisJobMetadata jobMetadata = file.readFile(new Function<InputStream, AnalysisJobMetadata>() {
             @Override
-            public AnalysisJobMetadata eval(InputStream in) {
+            public AnalysisJobMetadata apply(InputStream in) {
                 final JaxbJobReader jobReader = new JaxbJobReader(configuration);
                 AnalysisJobMetadata metadata = jobReader.readMetadata(in);
                 return metadata;
             }
-        });*/
+        });
         
-       /* if (jobMetadata == null) {
+        if (jobMetadata == null) {
             return Collections.emptyMap();
         }
 
-        return jobMetadata.getProperties();*/
+        return jobMetadata.getProperties();
 
-       return null;
     }
 }
