@@ -27,7 +27,7 @@ import org.datacleaner.result.html.BaseHeadElement;
 import org.datacleaner.result.html.FlotChartLocator;
 import org.datacleaner.result.html.HeadElement;
 import org.datacleaner.result.html.HtmlAnalysisResultWriter;
-//import org.apache.metamodel.util.Predicate;
+import java.util.function.Predicate;
 import org.springframework.stereotype.Component;
 
 /**
@@ -57,13 +57,13 @@ public class HtmlAnalysisResultWriterFactory {
 
     public HtmlAnalysisResultWriter create(
             boolean tabs,
-            //Predicate<Entry<ComponentJob, AnalyzerResult>> jobInclusionPredicate,
+            Predicate<Entry<ComponentJob, AnalyzerResult>> jobInclusionPredicate,
             boolean headers) {
-        
+
         if (null != flotLibraryLocation) {
             FlotChartLocator.setFlotHome(flotLibraryLocation);
         }
-        /*return new HtmlAnalysisResultWriter(tabs, jobInclusionPredicate,
+        return new HtmlAnalysisResultWriter(tabs, jobInclusionPredicate,
                 headers) {
             @Override
             protected HeadElement createBaseHeadElement() {
@@ -73,7 +73,6 @@ public class HtmlAnalysisResultWriterFactory {
                     return new BaseHeadElement(resourcesDirectory);
                 }
             }
-        };*/
-        return null;
+        };
     }
 }

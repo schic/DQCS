@@ -33,7 +33,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.FileHelper;
-//import org.apache.metamodel.util.Predicate;
+import java.util.function.Predicate;
 import org.apache.metamodel.util.TruePredicate;
 import org.datacleaner.api.AnalyzerResult;
 import org.datacleaner.configuration.DataCleanerConfiguration;
@@ -78,7 +78,7 @@ public class ResultFileController {
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public Map<String, String> uploadAnalysisResult(@PathVariable("tenant") String tenant,
-            @PathVariable("result") String resultName, @RequestParam("file") final MultipartFile file) {
+                                                    @PathVariable("result") String resultName, @RequestParam("file") final MultipartFile file) {
         if (file == null) {
             throw new IllegalArgumentException(
                     "No file upload provided. Please provide a multipart file using the 'file' HTTP parameter.");
@@ -122,10 +122,10 @@ public class ResultFileController {
     @RolesAllowed(SecurityRoles.VIEWER)
     @RequestMapping(method = RequestMethod.GET, produces = "text/html")
     public void resultHtml(@PathVariable("tenant") final String tenant, @PathVariable("result") String resultName,
-            @RequestParam(value = "tabs", required = false) Boolean tabsParam,
-            @RequestParam(value = "comp_name", required = false) String componentParamName,
-            @RequestParam(value = "comp_index", required = false) Integer componentIndexParam,
-            final HttpServletResponse response) throws IOException {
+                           @RequestParam(value = "tabs", required = false) Boolean tabsParam,
+                           @RequestParam(value = "comp_name", required = false) String componentParamName,
+                           @RequestParam(value = "comp_index", required = false) Integer componentIndexParam,
+                           final HttpServletResponse response) throws IOException {
 
         resultName = resultName.replaceAll("\\+", " ");
 
@@ -168,30 +168,34 @@ public class ResultFileController {
         final boolean tabs = (tabsParam == null ? true : tabsParam.booleanValue());
 
         final boolean headers;
-        //final Predicate<Entry<ComponentJob, AnalyzerResult>> jobInclusionPredicate;
+        final Predicate<Entry<ComponentJob, AnalyzerResult>> jobInclusionPredicate;
         if (org.datacleaner.util.StringUtils.isNullOrEmpty(componentParamName)) {
-            //jobInclusionPredicate = new TruePredicate<Entry<ComponentJob, AnalyzerResult>>();
+            jobInclusionPredicate = new TruePredicate<Entry<ComponentJob, AnalyzerResult>>();
             headers = true;
         } else {
-            //jobInclusionPredicate = createInclusionPredicate(componentParamName, componentIndexParam);
+            jobInclusionPredicate = createInclusionPredicate(componentParamName, componentIndexParam);
             headers = false;
         }
 
-        /*final HtmlAnalysisResultWriter htmlWriter = _htmlAnalysisResultWriterFactory.create(tabs,
-                jobInclusionPredicate, headers);*/
+        final HtmlAnalysisResultWriter htmlWriter = _htmlAnalysisResultWriterFactory.create(tabs,
+                jobInclusionPredicate, headers);
         final PrintWriter out = response.getWriter();
 
-        //htmlWriter.write(analysisResult, configuration, out);
+        try {
+            htmlWriter.write(analysisResult, configuration, out);
+        } catch (IOException e) {
+            throw new IllegalStateException(e);
+        }
     }
 
-    /*private Predicate<Entry<ComponentJob, AnalyzerResult>> createInclusionPredicate(final String componentParamName,
-            final Integer componentIndexParam) {
+    private Predicate<Entry<ComponentJob, AnalyzerResult>> createInclusionPredicate(final String componentParamName,
+                                                                                    final Integer componentIndexParam) {
         return new Predicate<Map.Entry<ComponentJob, AnalyzerResult>>() {
 
             private int index = 0;
 
             @Override
-            public Boolean eval(Entry<ComponentJob, AnalyzerResult> entry) {
+            public boolean test(Entry<ComponentJob, AnalyzerResult> entry) {
                 ComponentJob component = entry.getKey();
                 String name = component.getName();
                 if (name != null && name.equals(componentParamName)) {
@@ -214,5 +218,5 @@ public class ResultFileController {
                 }
             }
         };
-    }*/
+    }
 }

@@ -17,8 +17,9 @@
 		<metamodel.version>5.3.1</metamodel.version>
 		<!--<metamodel.version>4.5.4</metamodel.version>-->
 		<metamodel.extras.version>5.2.0</metamodel.extras.version>
-		<gwt.version>2.7.0</gwt.version>
-		<spring.core.version>4.3.16.RELEASE</spring.core.version>
+		<gwt.version>2.9.0</gwt.version>
+		<spring.core.version>4.3.7.RELEASE</spring.core.version>
+		<spring.security.version>4.2.3.RELEASE</spring.security.version>
 		<freemarker.version>2.3.28</freemarker.version>
 		<icu4j.version>61.1</icu4j.version>
 		<jackson.version>2.10.0</jackson.version>
@@ -30,7 +31,7 @@
 		<guava.version>27.0.1-jre</guava.version>
 		<hadoop.version>3.1.1</hadoop.version>
 
-		<spring.security.version>3.2.9.RELEASE</spring.security.version>
+
 		<quartz.version>2.1.7</quartz.version>
 		<javax.jsp.version>2.3.1</javax.jsp.version>
 		<ocpsoft.rewrite.version>2.0.12.Final</ocpsoft.rewrite.version>

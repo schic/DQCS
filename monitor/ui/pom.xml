@@ -21,28 +21,28 @@
 		</testResources>
 
 		<plugins>
-		<!--	<plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>${gwt.version}</version>
 				<configuration>
-					&lt;!&ndash; GWT uses ASM v5 and we have v4 on classpath. This flag avoids the
-						conflict during GWT compile &ndash;&gt;
+					<!-- GWT uses ASM v5 and we have v4 on classpath. This flag avoids the
+						conflict during GWT compile -->
 					<gwtSdkFirstInClasspath>true</gwtSdkFirstInClasspath>
 				</configuration>
 				<executions>
 					<execution>
-						&lt;!&ndash; GWT plugin, used to compile JavaScript &ndash;&gt;
+						<!-- GWT plugin, used to compile JavaScript -->
 						<id>gwt-compile</id>
 						<goals>
 							<goal>compile</goal>
 						</goals>
 						<configuration>
-							<sourceLevel>1.8</sourceLevel> &lt;!&ndash; 1.6 or 1.7 &ndash;&gt;
+							<sourceLevel>1.8</sourceLevel> <!-- 1.6 or 1.7 -->
 						</configuration>
 					</execution>
 					<execution>
-						&lt;!&ndash; Run GwtTestCases with the gwt driver &ndash;&gt;
+						<!-- Run GwtTestCases with the gwt driver -->
 						<id>gwt-test</id>
 						<goals>
 							<goal>test</goal>
@@ -52,7 +52,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>-->
+			</plugin>
 
 			<plugin>
 				<!-- Delete directories created by GWT eclipse plugin on clean -->

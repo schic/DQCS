@@ -24,7 +24,7 @@ import java.util.Map;
 import org.datacleaner.monitor.configuration.ResultContext;
 import org.datacleaner.monitor.scheduling.model.AlertDefinition;
 import org.datacleaner.monitor.scheduling.model.ExecutionLog;
-//import org.apache.metamodel.util.Ref;
+import java.util.function.Supplier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,13 +36,9 @@ public class LoggerAlertNotifier implements AlertNotifier {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggerAlertNotifier.class);
 
+
     @Override
-    public void onExecutionFinished(ExecutionLog execution, ResultContext result) {
-
-    }
-
-    /*@Override
-    public void onExecutionFinished(ExecutionLog execution, Ref<Map<AlertDefinition, Number>> activeAlerts,
+    public void onExecutionFinished(ExecutionLog execution, Supplier<Map<AlertDefinition, Number>> activeAlerts,
             ResultContext resultContext) {
         if (!logger.isWarnEnabled()) {
             return;
@@ -53,6 +49,6 @@ public class LoggerAlertNotifier implements AlertNotifier {
             logger.info("Active alerts: {}", alertValues.keySet());
             logger.info("Alert metric values: {}", alertValues.values());
         }
-    }*/
+    }
 
 }

@@ -66,6 +66,7 @@ public class ComponentStoreImpl implements ComponentStore {
      * @param instanceId
      * @return
      */
+    @Override
     public ComponentStoreHolder get(String instanceId) {
         logger.info("Read component with id: {}", instanceId);
         readLock.lock();
@@ -93,6 +94,7 @@ public class ComponentStoreImpl implements ComponentStore {
      *
      * @param configuration
      */
+    @Override
     public void store(final ComponentStoreHolder configuration) {
         logger.info("Store component with id: {}", configuration.getInstanceId());
         writeLock.lock();

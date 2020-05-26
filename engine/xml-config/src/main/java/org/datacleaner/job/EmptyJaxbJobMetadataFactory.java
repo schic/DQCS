@@ -21,15 +21,17 @@ package org.datacleaner.job;
 
 //import org.datacleaner.job.jaxb.JobMetadataType;
 
+import org.datacleaner.job.jaxb.JobMetadataType;
+
 /**
  * {@link JaxbJobMetadataFactory} implementation that produces an empty metadata
  * section. Used primarily for testing.
  */
-/*public class EmptyJaxbJobMetadataFactory implements JaxbJobMetadataFactory {
+public class EmptyJaxbJobMetadataFactory implements JaxbJobMetadataFactory {
 
     @Override
     public JobMetadataType create(final AnalysisJob analysisJob) throws Exception {
         return new JobMetadataType();
     }
 
-}*/
+}

@@ -57,6 +57,7 @@ import org.datacleaner.descriptors.Descriptors;
 import org.datacleaner.descriptors.SimpleDescriptorProvider;
 import org.datacleaner.extension.output.CreateCsvFileAnalyzer;
 //import org.datacleaner.job.EmptyJaxbJobMetadataFactory;
+import org.datacleaner.job.JaxbJobMetadataFactoryImpl;
 import org.datacleaner.job.JaxbJobReader;
 import org.datacleaner.job.JaxbJobWriter;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
@@ -155,7 +156,7 @@ public class PreviewTransformedDataActionListenerTest {
         assertEquals("mocked: bar", tableModel.getValueAt(0, 1));
     }
 
-    /*@Test
+    @Test
     public void testPreviewTransformationInMultiStreamGeneratedOutputDataStream() throws Exception {
         analysisJobBuilder.addSourceColumns("PUBLIC.CUSTOMERS.PHONE");
 
@@ -187,7 +188,7 @@ public class PreviewTransformedDataActionListenerTest {
         // another part is phone numbers
         assertEquals("7025551838", tableModel.getValueAt(6, 0).toString());
     }
-*/
+
     @Test
     public void testJobWithMaxRowsFilter() throws Exception {
         final FilterComponentBuilder<MaxRowsFilter, Category> filter =
@@ -341,7 +342,7 @@ public class PreviewTransformedDataActionListenerTest {
         assertEquals(6, tableModel.getRowCount());
     }
 
-    /*@Test
+    @Test
     public void testFilterWithCoalesce() throws Exception {
         analysisJobBuilder.removeAllComponents();
         analysisJobBuilder.removeAllSourceColumns();
@@ -400,7 +401,7 @@ public class PreviewTransformedDataActionListenerTest {
             assertTrue(printRow(tableModel, i),
                     tableModel.getValueAt(i, 0) == null || tableModel.getValueAt(i, 1) == null);
         }
-    }*/
+    }
 
     private String printRow(final TableModel tableModel, final int row) {
         final List<String> values = new ArrayList<>(tableModel.getColumnCount());
@@ -411,7 +412,7 @@ public class PreviewTransformedDataActionListenerTest {
         return Joiner.on(',').join(values);
     }
 
-    /*@Test()
+    @Test()
     public void testUnchainedTransformers() throws Exception {
 
         @SuppressWarnings("unused") final TransformerComponentBuilder<ConcatenatorTransformer>
@@ -443,9 +444,9 @@ public class PreviewTransformedDataActionListenerTest {
         assertEquals("mpatterso", tableModel.getValueAt(1, 1).toString());
         assertEquals("classicmodelcars.com", tableModel.getValueAt(1, 2).toString());
 
-    }*/
+    }
 
-    /*@Test
+    @Test
     public void testPreviewTransformationAfterNonOptimizedFilteredTransformation() throws Exception {
         final String baseFilename = getClass().getSimpleName() + "-" + testName.getMethodName() + ".analysis.xml";
         final File analysisFile = new File("src/test/resources/previewfiles/" + baseFilename);
@@ -470,8 +471,8 @@ public class PreviewTransformedDataActionListenerTest {
 
         assertTrue(tableModel.getValueAt(0, 1).toString().contains("5307.98"));
     }
-*/
-    /*private void compareWithBenchmark(final PreviewTransformedDataActionListener action) throws IOException {
+
+    private void compareWithBenchmark(final PreviewTransformedDataActionListener action) throws IOException {
         final String baseFilename = getClass().getSimpleName() + "-" + testName.getMethodName() + ".analysis.xml";
         final File benchmarkFile = new File("src/test/resources/benchmark/" + baseFilename);
         final File outputFile = new File("target/" + baseFilename);
@@ -481,12 +482,12 @@ public class PreviewTransformedDataActionListenerTest {
         final AnalysisJobBuilder ajb = previewJob.analysisJobBuilder;
         ajb.getAnalysisJobMetadata().getProperties().put(PreviewUtils.METADATA_PROPERTY_MARKER, "test");
 
-        final JaxbJobWriter writer = new JaxbJobWriter(ajb.getConfiguration(), new EmptyJaxbJobMetadataFactory());
+        final JaxbJobWriter writer = new JaxbJobWriter(ajb.getConfiguration(), new JaxbJobMetadataFactoryImpl());
 
         try (FileOutputStream out = new FileOutputStream(outputFile)) {
             writer.write(ajb.toAnalysisJob(), out);
         }
 
         TestHelper.assertXmlFilesEquals(benchmarkFile, outputFile);
-    }*/
+    }
 }

@@ -69,7 +69,7 @@ public class DatastoreQueryController {
     @RequestMapping(value = "/{tenant}/datastores/{datastore}.query", method = RequestMethod.POST, produces = {
             "text/xml", "application/xml", "application/xhtml+xml", "text/html" })
     public void queryDatastorePost(HttpServletResponse response, @PathVariable("tenant") final String tenant,
-            @PathVariable("datastore") String datastoreName, @RequestBody String query) throws IOException {
+                                   @PathVariable("datastore") String datastoreName, @RequestBody String query) throws IOException {
         response.setContentType("application/xhtml+xml");
         queryDatastoreHtml(tenant, datastoreName, query, response);
     }
@@ -78,7 +78,7 @@ public class DatastoreQueryController {
     @RequestMapping(value = "/{tenant}/datastores/{datastore}.query", method = RequestMethod.GET, produces = {
             "text/xml", "application/xml", "application/xhtml+xml", "text/html" })
     public void queryDatastoreGet(HttpServletResponse response, @PathVariable("tenant") final String tenant,
-            @PathVariable("datastore") String datastoreName, @RequestParam("q") String query) throws IOException {
+                                  @PathVariable("datastore") String datastoreName, @RequestParam("q") String query) throws IOException {
         response.setContentType("application/xhtml+xml");
         queryDatastoreHtml(tenant, datastoreName, query, response);
     }
@@ -88,8 +88,8 @@ public class DatastoreQueryController {
             "application/json" })
     @ResponseBody
     public Map<String, Object> jsonQueryDatastoreGet(HttpServletResponse response,
-            @PathVariable("tenant") final String tenant, @PathVariable("datastore") String datastoreName,
-            @RequestParam("q") String query) throws IOException {
+                                                     @PathVariable("tenant") final String tenant, @PathVariable("datastore") String datastoreName,
+                                                     @RequestParam("q") String query) throws IOException {
         response.setContentType("application/json");
         return getJsonResult(tenant, datastoreName, query, response);
     }
@@ -99,9 +99,9 @@ public class DatastoreQueryController {
             "m" }, method = RequestMethod.GET, headers = "Accept=application/json", produces = { "application/json" })
     @ResponseBody
     public Map<String, Object> jsonPaginatedGet(@PathVariable("tenant") final String tenant,
-            @PathVariable("datastore") String datastoreName, @RequestParam("q") String query,
-            @RequestParam("f") int firstRow, @RequestParam("m") int maxRows, UriComponentsBuilder uriBuilder,
-            HttpServletResponse response) throws IOException {
+                                                @PathVariable("datastore") String datastoreName, @RequestParam("q") String query,
+                                                @RequestParam("f") int firstRow, @RequestParam("m") int maxRows, UriComponentsBuilder uriBuilder,
+                                                HttpServletResponse response) throws IOException {
         response.setContentType("application/json");
         // should test for a sensible page size
 
@@ -136,7 +136,7 @@ public class DatastoreQueryController {
     }
 
     private Map<String, Object> getJsonResult(String tenant, String datastoreName, String query,
-            HttpServletResponse response) throws IOException {
+                                              HttpServletResponse response) throws IOException {
         datastoreName = datastoreName.replaceAll("\\+", " ");
 
         final DataCleanerConfiguration configuration = _tenantContextFactory.getContext(tenant).getConfiguration();
@@ -172,12 +172,12 @@ public class DatastoreQueryController {
 
     private Object createTableMap(DataSet dataSet) {
         final Map<String, Object> map = new HashMap<>();
-        //map.put("header", createColumnHeaderList(dataSet.getSelectItems()));
+        map.put("header", createColumnHeaderList(dataSet.getSelectItems()));
         map.put("rows", createRowList(dataSet));
         return map;
     }
 
-    private List<String> createColumnHeaderList(SelectItem[] selectItems) {
+    private List<String> createColumnHeaderList( List<SelectItem> selectItems) {
         final List<String> columns = new ArrayList<>();
         for (SelectItem selectItem : selectItems) {
             final String label = selectItem.getSuperQueryAlias(false);
@@ -197,10 +197,10 @@ public class DatastoreQueryController {
     private List<String> createRowValueList(DataSet dataSet) {
         final List<String> values = new ArrayList<>();
         Row row = dataSet.getRow();
-        /*for (int i = 0; i < dataSet.getSelectItems().length; i++) {
+        for (int i = 0; i < dataSet.getSelectItems().size(); i++) {
             Object value = row.getValue(i);
             values.add(ConvertToStringTransformer.transformValue(value));
-        }*/
+        }
         return values;
     }
 
@@ -234,13 +234,13 @@ public class DatastoreQueryController {
                 writer.write("\n<table xmlns=\"http://www.w3.org/1999/xhtml\">");
 
                 writer.write("\n<thead>\n<tr>");
-                //final SelectItem[] selectItems = dataSet.getSelectItems();
-                /*for (SelectItem selectItem : selectItems) {
+                final List<SelectItem> selectItems = dataSet.getSelectItems();
+                for (SelectItem selectItem : selectItems) {
                     final String label = selectItem.getSuperQueryAlias(false);
                     writer.write("<th>");
                     writer.write(StringEscapeUtils.escapeXml(label));
                     writer.write("</th>");
-                }*/
+                }
                 writer.write("</tr>\n</thead>");
                 writer.flush();
 
@@ -249,7 +249,7 @@ public class DatastoreQueryController {
                 while (dataSet.next()) {
                     writer.write("\n<tr>");
                     Row row = dataSet.getRow();
-                    /*for (int i = 0; i < selectItems.length; i++) {
+                    for (int i = 0; i < selectItems.size(); i++) {
                         Object value = row.getValue(i);
                         if (value == null) {
                             writer.write("<td />");
@@ -258,7 +258,7 @@ public class DatastoreQueryController {
                             writer.write(StringEscapeUtils.escapeXml(ConvertToStringTransformer.transformValue(value)));
                             writer.write("</td>");
                         }
-                    }*/
+                    }
                     writer.write("</tr>");
 
                     if (rowNumber % 20 == 0) {

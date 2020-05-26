@@ -32,9 +32,9 @@ import org.datacleaner.api.RenderingFormat;
 import org.datacleaner.configuration.DataCleanerEnvironment;
 import org.datacleaner.configuration.DataCleanerEnvironmentImpl;
 import org.datacleaner.configuration.InjectionManagerFactory;
-//import org.datacleaner.configuration.RemoteServerConfiguration;
+import org.datacleaner.configuration.RemoteServerConfiguration;
 import org.datacleaner.configuration.RemoteServerConfigurationImpl;
-//import org.datacleaner.configuration.RemoteServerData;
+import org.datacleaner.configuration.RemoteServerData;
 import org.datacleaner.descriptors.ClasspathScanDescriptorProvider;
 import org.datacleaner.descriptors.CompositeDescriptorProvider;
 import org.datacleaner.descriptors.DescriptorProvider;
@@ -60,7 +60,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * Bean factory for {@link org.datacleaner.configuration.DataCleanerConfiguration} elements in the DC
  * monitor application, like the {@link TaskRunner} and
  * {@link DescriptorProvider}.
- * 
+ *
  * Since the scannedPackages property (and to some extent also the numThreads
  * property) is meant to be externalized, this class is NOT annotated with
  * {@link Component}. Add it in the spring beans xml file.
@@ -72,7 +72,7 @@ public class ConfigurationFactory {
     private List<String> _scannedPackages;
     private Integer _numThreads;
     private boolean scanWebInfFolder = true;
-    //private RemoteServerData _remoteServerData;
+    private RemoteServerData _remoteServerData;
 
     public boolean isScanWebInfFolder() {
         return scanWebInfFolder;
@@ -102,10 +102,10 @@ public class ConfigurationFactory {
      * Adds additional remote server. For remote components it is possible to use
      * the {@link RemoteServerDataFactory} factory.
      */
-    /*public void setRemoteServer(RemoteServerData remoteServer) {
+    public void setRemoteServer(RemoteServerData remoteServer) {
         this._remoteServerData = remoteServer;
     }
-*/
+
     @Bean(name = "published-components")
     public RemoteComponentsConfiguration createRemoteComponentsConfiguration() {
         return new SimpleRemoteComponentsConfigurationImpl();
@@ -120,9 +120,9 @@ public class ConfigurationFactory {
         return new MultiThreadedTaskRunner(_numThreads);
     }
 
-    /*@Bean(name = "descriptorProvider")
+    @Bean(name = "descriptorProvider")
     public DescriptorProvider createDescriptorProvider(TaskRunner taskRunner, ServletContext servletContext,
-            RemoteServerConfiguration remoteServerConfiguration) {
+                                                       RemoteServerConfiguration remoteServerConfiguration) {
         final File[] files = getJarFilesForDescriptorProvider(servletContext);
 
         if (logger.isDebugEnabled()) {
@@ -152,29 +152,30 @@ public class ConfigurationFactory {
             return compositeDescriptorProvider;
         }
         return descriptorProvider;
-    }*/
+    }
 
-    /*@Bean(name = "remoteServerConfiguration")
+    @Bean(name = "remoteServerConfiguration")
     public RemoteServerConfiguration createRemoteServerConfiguration(TaskRunner taskRunner){
         List<RemoteServerData> remoteServerDataList = new ArrayList<>();
         if(_remoteServerData != null){
             remoteServerDataList.add(_remoteServerData);
         }
         return new RemoteServerConfigurationImpl(remoteServerDataList, taskRunner);
-    }*/
+    }
 
     @Bean(name = "storageProvider")
     public StorageProvider createStorageProvider() {
         return new InMemoryStorageProvider(1000, 100);
     }
 
-    /*@Bean(name = "dataCleanerEnvironment")
+    @Bean(name = "dataCleanerEnvironment")
     public DataCleanerEnvironment createDataCleanerEnvironment(TaskRunner taskRunner,
-            DescriptorProvider descriptorProvider, StorageProvider storageProvider,
-            InjectionManagerFactory injectionManagerFactory, RemoteServerConfiguration remoteServerConfiguration) {
-        return new DataCleanerEnvironmentImpl(taskRunner, descriptorProvider, storageProvider, injectionManagerFactory,
-                remoteServerConfiguration);
-    }*/
+                                                               DescriptorProvider descriptorProvider, StorageProvider storageProvider,
+                                                               InjectionManagerFactory injectionManagerFactory, RemoteServerConfiguration remoteServerConfiguration) {
+        return new DataCleanerEnvironmentImpl(taskRunner, descriptorProvider, storageProvider, injectionManagerFactory
+                );
+
+    }
 
     @Bean(name = "jacksonObjectMapper")
     public ObjectMapper createJacksonObjectMapper() {

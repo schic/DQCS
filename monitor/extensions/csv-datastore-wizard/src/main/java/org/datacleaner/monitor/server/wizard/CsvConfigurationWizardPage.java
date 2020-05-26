@@ -57,6 +57,7 @@ public abstract class CsvConfigurationWizardPage extends AbstractFreemarkerWizar
         return "CsvConfigurationWizardPage.html";
     }
 
+    @Override
     protected Map<String, Object> getFormModel() {
         final CsvConfiguration detectedConfiguration = autoDetectConfiguration(_resource);
         final Map<String, Object> map = new HashMap<String, Object>();

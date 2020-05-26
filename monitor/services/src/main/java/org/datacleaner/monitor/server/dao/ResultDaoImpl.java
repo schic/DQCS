@@ -37,7 +37,7 @@ import org.datacleaner.repository.RepositoryFolder;
 import org.datacleaner.util.FileFilters;
 import org.apache.metamodel.util.Action;
 import org.apache.metamodel.util.CollectionUtils;
-//import org.apache.metamodel.util.Predicate;
+import java.util.function.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
@@ -89,10 +89,10 @@ public class ResultDaoImpl implements ResultDao {
 
         final List<RepositoryFile> candidatesByFilename = resultsFolder.getFiles(prefix, extension);
 
-        /*final List<RepositoryFile> files = CollectionUtils.filter(candidatesByFilename,
+        final List<RepositoryFile> files = CollectionUtils.filter(candidatesByFilename,
                 new Predicate<RepositoryFile>() {
                     @Override
-                    public Boolean eval(RepositoryFile file) {
+                    public boolean test(RepositoryFile file) {
                         // check that the remainding part of the file is ONLY a
                         // timestamp - or else it might be a name conflict
                         // between similarly named jobs.
@@ -106,10 +106,10 @@ public class ResultDaoImpl implements ResultDao {
                             return false;
                         }
                     }
-                });*/
+                });
 
-        //return files;
-        return null;
+        return files;
+
     }
 
     @Override
