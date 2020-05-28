@@ -12,6 +12,12 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-api</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jersey-core</artifactId>
+					<groupId>com.sun.jersey</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
@@ -24,8 +30,8 @@
 			<version>${project.version}</version>
 			<exclusions>
 				<exclusion>
-					<groupId>commons-beanutils</groupId>
-					<artifactId>commons-beanutils</artifactId>
+					<artifactId>commons-collections</artifactId>
+					<groupId>commons-collections</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -38,6 +44,53 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-engine-core</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>zookeeper</artifactId>
+					<groupId>org.apache.zookeeper</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>httpcore</artifactId>
+					<groupId>org.apache.httpcomponents</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>htrace-core4</artifactId>
+					<groupId>org.apache.htrace</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>commons-math3</artifactId>
+					<groupId>org.apache.commons</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>metrics-core</artifactId>
+					<groupId>io.dropwizard.metrics</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>commons-collections</artifactId>
+					<groupId>commons-collections</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>nimbus-jose-jwt</artifactId>
+					<groupId>com.nimbusds</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jsr305</artifactId>
+					<groupId>com.google.code.findbugs</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jcodings</artifactId>
+					<groupId>org.jruby.jcodings</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>asm</artifactId>
+					<groupId>org.ow2.asm</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>snappy-java</artifactId>
+					<groupId>org.xerial.snappy</groupId>
+				</exclusion>
+			</exclusions>
+
 		</dependency>
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
@@ -55,12 +108,6 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-standard-components</artifactId>
 			<version>${project.version}</version>
-			<exclusions>
-				<exclusion>
-					<artifactId>javax.el-api</artifactId>
-					<groupId>javax.el</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<!--Hadoop dependencies -->
@@ -69,8 +116,8 @@
 			<artifactId>hadoop-hdfs</artifactId>
 			<exclusions>
 				<exclusion>
-					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
+					<groupId>log4j</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -114,8 +161,20 @@
 			<artifactId>spring-security-cas</artifactId>
 			<exclusions>
 				<exclusion>
-					<groupId>org.slf4j</groupId>
-					<artifactId>log4j-over-slf4j</artifactId>
+					<artifactId>spring-beans</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-aop</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-expression</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-web</artifactId>
+					<groupId>org.springframework</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -127,10 +186,30 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-expression</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-beans</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-web</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-beans</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.quartz-scheduler</groupId>

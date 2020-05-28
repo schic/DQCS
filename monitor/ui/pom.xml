@@ -21,28 +21,29 @@
 		</testResources>
 
 		<plugins>
-			<plugin>
+			<!--需要编译时候打开-->
+		<!--	<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>${gwt.version}</version>
 				<configuration>
-					<!-- GWT uses ASM v5 and we have v4 on classpath. This flag avoids the
-						conflict during GWT compile -->
+					&lt;!&ndash; GWT uses ASM v5 and we have v4 on classpath. This flag avoids the
+						conflict during GWT compile &ndash;&gt;
 					<gwtSdkFirstInClasspath>true</gwtSdkFirstInClasspath>
 				</configuration>
 				<executions>
 					<execution>
-						<!-- GWT plugin, used to compile JavaScript -->
+						&lt;!&ndash; GWT plugin, used to compile JavaScript &ndash;&gt;
 						<id>gwt-compile</id>
 						<goals>
 							<goal>compile</goal>
 						</goals>
 						<configuration>
-							<sourceLevel>1.8</sourceLevel> <!-- 1.6 or 1.7 -->
+							<sourceLevel>1.8</sourceLevel> &lt;!&ndash; 1.6 or 1.7 &ndash;&gt;
 						</configuration>
 					</execution>
 					<execution>
-						<!-- Run GwtTestCases with the gwt driver -->
+						&lt;!&ndash; Run GwtTestCases with the gwt driver &ndash;&gt;
 						<id>gwt-test</id>
 						<goals>
 							<goal>test</goal>
@@ -52,8 +53,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-
+			</plugin>-->
 			<plugin>
 				<!-- Delete directories created by GWT eclipse plugin on clean -->
 				<groupId>org.apache.maven.plugins</groupId>
@@ -124,7 +124,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 			<plugin>
 				<groupId>org.jboss.tattletale</groupId>
 				<artifactId>tattletale-maven</artifactId>
@@ -235,6 +234,12 @@
 			<artifactId>gflot</artifactId>
 			<version>3.3.0</version>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>gwt-user</artifactId>
+					<groupId>com.google.gwt</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- log4j-over-slf4j to ensure compatibility when we exclude log4j -->
@@ -253,6 +258,16 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-services</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>hbase-client</artifactId>
+					<groupId>org.apache.hbase</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>antlr-runtime</artifactId>
+					<groupId>org.antlr</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
@@ -265,8 +280,8 @@
 			<artifactId>hadoop-hdfs</artifactId>
 			<exclusions>
 				<exclusion>
-					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
+					<groupId>log4j</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -275,9 +290,8 @@
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-launcher_2.11</artifactId>
 		</dependency>
-
 		<!-- DataCleaner monitor extensions -->
-		<dependency>
+	<!--	<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-completeness-analysis-wizard</artifactId>
 			<version>${project.version}</version>
@@ -326,7 +340,7 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-referencedata-wizards</artifactId>
 			<version>${project.version}</version>
-		</dependency>
+		</dependency>-->
 		
 		<!-- JDBC drivers -->
 		<dependency>
@@ -344,6 +358,76 @@
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-jdbc</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>jsr305</artifactId>
+					<groupId>com.google.code.findbugs</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>gson</artifactId>
+					<groupId>com.google.code.gson</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>asm</artifactId>
+					<groupId>org.ow2.asm</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>objenesis</artifactId>
+					<groupId>org.objenesis</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>zookeeper</artifactId>
+					<groupId>org.apache.zookeeper</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>libthrift</artifactId>
+					<groupId>org.apache.thrift</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>httpcore</artifactId>
+					<groupId>org.apache.httpcomponents</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>avro</artifactId>
+					<groupId>org.apache.avro</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>netty</artifactId>
+					<groupId>io.netty</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>metrics-core</artifactId>
+					<groupId>io.dropwizard.metrics</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>commons-collections</artifactId>
+					<groupId>commons-collections</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jersey-server</artifactId>
+					<groupId>com.sun.jersey</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jersey-json</artifactId>
+					<groupId>com.sun.jersey</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jersey-core</artifactId>
+					<groupId>com.sun.jersey</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jersey-client</artifactId>
+					<groupId>com.sun.jersey</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>nimbus-jose-jwt</artifactId>
+					<groupId>com.nimbusds</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>guice-servlet</artifactId>
+					<groupId>com.google.inject.extensions</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- Logging -->
@@ -408,12 +492,6 @@
 			<artifactId>jetty-all-server</artifactId>
 			<version>8.1.18.v20150929</version>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>asm</groupId>
-					<artifactId>asm</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.ow2.asm</groupId>

@@ -17,6 +17,12 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-engine-utils</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-collections</artifactId>
+					<groupId>commons-collections</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 </project>

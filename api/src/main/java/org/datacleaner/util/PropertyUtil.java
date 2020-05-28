@@ -32,7 +32,7 @@ public class PropertyUtil {
 		props = new Properties();
 		InputStream in = null;
 		try {
-			in = PropertyUtil.class.getClassLoader().getResourceAsStream("language/zh_CN.properties");
+			in = PropertyUtil.class.getClassLoader().getResourceAsStream("language/en_US.properties");
 			props.load(in);
 
 		} catch (FileNotFoundException e) {

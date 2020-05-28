@@ -10,19 +10,18 @@
 		<javadoc.version>3.0.1</javadoc.version>
 
 		<!-- Dependency versions -->
-		<slf4j.version>1.7.25</slf4j.version>
-		<junit.version>4.12</junit.version>
+		<slf4j.version>1.7.30</slf4j.version>
+		<junit.version>4.13</junit.version>
 		<easymock.version>3.6</easymock.version>
 		<httpcomponents.version>4.5.5</httpcomponents.version>
-		<metamodel.version>5.3.1</metamodel.version>
-		<!--<metamodel.version>4.5.4</metamodel.version>-->
+		<metamodel.version>5.3.2</metamodel.version>
 		<metamodel.extras.version>5.2.0</metamodel.extras.version>
-		<gwt.version>2.9.0</gwt.version>
-		<spring.core.version>4.3.7.RELEASE</spring.core.version>
-		<spring.security.version>4.2.3.RELEASE</spring.security.version>
-		<freemarker.version>2.3.28</freemarker.version>
-		<icu4j.version>61.1</icu4j.version>
-		<jackson.version>2.10.0</jackson.version>
+		<gwt.version>2.8.0</gwt.version>
+		<spring.core.version>4.3.26.RELEASE</spring.core.version>
+		<spring.security.version>3.2.9.RELEASE</spring.security.version>
+		<freemarker.version>2.3.29</freemarker.version>
+		<icu4j.version>65.1</icu4j.version>
+		<jackson.version>2.10.2</jackson.version>
 		<javax.servlet.version>3.1.0</javax.servlet.version>
 		<javax.el.version>2.2.5</javax.el.version>
 		<javax.annotation.version>1.2</javax.annotation.version>
@@ -33,6 +32,8 @@
 
 
 		<quartz.version>2.1.7</quartz.version>
+		<jersey.version>1.19</jersey.version>
+		<commons.collection.version>3.2.2</commons.collection.version>
 		<javax.jsp.version>2.3.1</javax.jsp.version>
 		<ocpsoft.rewrite.version>2.0.12.Final</ocpsoft.rewrite.version>
 
@@ -406,8 +407,8 @@
 										<!-- The proper artifact for JSP API is javax.servlet.jsp:javax.servlet.jsp-api, so we're banning the rest -->
 										<exclude>javax.servlet:jsp-api:*</exclude>
 										<exclude>javax.servlet.jsp:jsp-api:*</exclude>
-										<!--<exclude>org.mortbay.jetty:jsp-api-2.1:*</exclude>
-										<exclude>org.mortbay.jetty:jsp-2.1:*</exclude>-->
+										<exclude>org.mortbay.jetty:jsp-api-2.1:*</exclude>
+										<exclude>org.mortbay.jetty:jsp-2.1:*</exclude>
 
 
 										<!-- The propert artifact for JDO is javax.jdo:jdo-api, so we're banning the rest -->
@@ -479,8 +480,8 @@
 
 		<pluginManagement>
 			<plugins>
-				<plugin>
-					<!-- Ignore instructions for m2e (overrides eclipse warning) -->
+			<!--	<plugin>
+					&lt;!&ndash; Ignore instructions for m2e (overrides eclipse warning) &ndash;&gt;
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
 					<version>1.0.0</version>
@@ -531,24 +532,24 @@
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
-				</plugin>
+				</plugin>-->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-enforcer-plugin</artifactId>
 					<version>1.4.1</version>
 				</plugin>
-				<plugin>
+			<!--	<plugin>
 					<groupId>org.jboss.tattletale</groupId>
 					<artifactId>tattletale-maven</artifactId>
 					<version>1.1.2.Final</version>
-					<!--<executions>
+					<executions>
 						<execution>
 							<phase>verify</phase>
 							<goals>
 								<goal>report</goal>
 							</goals>
 						</execution>
-					</executions>-->
+					</executions>
 					<configuration>
 						<destination>${project.reporting.outputDirectory}/tattletale</destination>
 						<reports>
@@ -558,7 +559,7 @@
 						<filter>tattletale-filters.properties</filter>
 						<failOnWarn>true</failOnWarn>
 					</configuration>
-				</plugin>
+				</plugin>-->
 
 				<plugin>
 					<groupId>net.alchim31.maven</groupId>
@@ -1158,11 +1159,11 @@
 				<version>10.2.0.2.0</version>
 			</dependency>
 
-			<!--<dependency>
+			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>9.3-1102-jdbc4</version>
-			</dependency>-->
+			</dependency>
 			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
