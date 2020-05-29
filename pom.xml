@@ -16,9 +16,8 @@
 		<httpcomponents.version>4.5.5</httpcomponents.version>
 		<metamodel.version>5.3.2</metamodel.version>
 		<metamodel.extras.version>5.2.0</metamodel.extras.version>
-		<gwt.version>2.8.0</gwt.version>
 		<spring.core.version>4.3.26.RELEASE</spring.core.version>
-		<spring.security.version>3.2.9.RELEASE</spring.security.version>
+
 		<freemarker.version>2.3.29</freemarker.version>
 		<icu4j.version>65.1</icu4j.version>
 		<jackson.version>2.10.2</jackson.version>
@@ -29,17 +28,18 @@
 		<jung.version>2.1.1</jung.version>
 		<guava.version>27.0.1-jre</guava.version>
 		<hadoop.version>3.1.1</hadoop.version>
+		<spark.version>1.6.3</spark.version>
+		<curator.version>2.13.0</curator.version>
 
-
+		<spring.security.version>3.2.9.RELEASE</spring.security.version>
+		<gwt.version>2.8.0</gwt.version>
 		<quartz.version>2.1.7</quartz.version>
 		<jersey.version>1.19</jersey.version>
 		<commons.collection.version>3.2.2</commons.collection.version>
 		<javax.jsp.version>2.3.1</javax.jsp.version>
 		<ocpsoft.rewrite.version>2.0.12.Final</ocpsoft.rewrite.version>
 
-		<!-- TODO: The following (inter-dependent) dependencies are due for upgrades before Java 11 -->
-		<spark.version>1.6.3</spark.version>
-		<curator.version>2.13.0</curator.version>
+
 	</properties>
 	<parent>
 		<!-- Uses the OSS sonatype nexus repository for distribution -->
@@ -1159,11 +1159,11 @@
 				<version>10.2.0.2.0</version>
 			</dependency>
 
-			<dependency>
+			<!--<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>9.3-1102-jdbc4</version>
-			</dependency>
+			</dependency>-->
 			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
