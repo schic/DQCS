@@ -46,9 +46,6 @@ import org.slf4j.LoggerFactory;
  * {@link ConsumeRowHandler} is internally used to execute all necesary
  * components for every record, but it can also be used as a utility if
  * DataCleaner jobs are being embedded or applied in externally.
- * 可以处理消耗许多行的任务的对象。
- * {@link ConsumeRowHandler}在内部用于为每条记录执行所有必要的组件，
- * 但是如果DataCleaner作业被嵌入或外部应用，它也可以用作实用程序。
  */
 public class ConsumeRowHandler {
 

@@ -43,7 +43,6 @@ import javax.swing.text.SimpleAttributeSet;
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.guice.InjectorBuilder;
 import org.datacleaner.util.DCDocumentListener;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetScreenResolutionAdjuster;
 import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.LoadingIcon;
@@ -58,7 +57,6 @@ import com.google.inject.Injector;
 /**
  * Panel that wraps the {@link SchemaTree} as well as actions around it for
  * searching/filtering etc.
- * 包裹{@link SchemaTree}以及围绕它进行搜索/过滤等操作的面板。
  */
 public class SchemaTreePanel extends DCPanel {
 
@@ -67,7 +65,7 @@ public class SchemaTreePanel extends DCPanel {
     private static final WidgetScreenResolutionAdjuster adjuster = WidgetScreenResolutionAdjuster.get();
     private static final Logger logger = LoggerFactory.getLogger(SchemaTreePanel.class);
 
-    private static final String DEFAULT_SEARCH_FIELD_TEXT = PropertyUtil.getProperty("datacleaner.ui.desktop.tree.search.component");
+    private static final String DEFAULT_SEARCH_FIELD_TEXT = "Search component library...";
 
     private static final int LOADER_WIDTH = adjuster.adjust(150);
     private final InjectorBuilder _injectorBuilder;

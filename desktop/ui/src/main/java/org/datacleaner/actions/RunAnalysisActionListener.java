@@ -33,7 +33,6 @@ import com.google.inject.Inject;
 
 /**
  * Action listener invoked when the user chooses to run/execute an analysis job
- * 用户选择运行/执行分析作业时调用操作侦听器
  */
 public class RunAnalysisActionListener implements ActionListener {
 

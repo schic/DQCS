@@ -30,7 +30,6 @@ import org.datacleaner.util.IconUtils;
 /**
  * Defines a wizard which is shown on the DataCleaner welcome screen. The wizard can be used to create a job,
  * which can either be opened in DataCleaner or be directly run.
- * 定义一个向导，该向导显示在DataCleaner欢迎屏幕上。该向导可用于创建作业，可以在DataCleaner中打开或直接运行。
  */
 public interface JobWizard {
     /**

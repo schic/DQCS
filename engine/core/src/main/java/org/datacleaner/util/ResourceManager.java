@@ -34,7 +34,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Provides service methods related to resources on the classpath or the file
  * system.
- * 提供与类路径或文件系统上的资源相关的服务方法。
  */
 public final class ResourceManager {
 

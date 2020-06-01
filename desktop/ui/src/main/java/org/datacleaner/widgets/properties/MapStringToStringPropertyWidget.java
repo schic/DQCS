@@ -45,8 +45,6 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * {@link PropertyWidget} for {@link Map}s of string-to-string. Displays each
  * entry as a set of text boxes and plus/minus buttons to add/remove entries.
- * {@link PropertyWidget}用于{@link Map}的字符串到字符串。
- * 将每个条目显示为一组文本框和加/减按钮以添加/删除条目。
  */
 public class MapStringToStringPropertyWidget extends AbstractPropertyWidget<Map<String, String>> {
 

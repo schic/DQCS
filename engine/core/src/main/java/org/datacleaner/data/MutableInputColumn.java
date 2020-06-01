@@ -23,11 +23,9 @@ import org.datacleaner.api.InputColumn;
 
 /**
  * Represents a column that is mutable (editable by the user).
- * 表示一个可变的列（可由用户编辑）。
  *
  * Mutable columns have editable names but unique id's to identify them (whereas
  * the names identify the immutable columns).
- * 可变列具有可编辑的名称，但具有唯一的ID来标识它们（而*名称标识不可变的列）。
  */
 public interface MutableInputColumn<E> extends InputColumn<E> {
 

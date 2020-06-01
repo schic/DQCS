@@ -46,7 +46,6 @@ import org.datacleaner.util.convert.ResourceConverter.ResourceTypeHandler;
 /**
  * Configuration reader interceptor that is aware of the DataCleaner
  * environment.
- * 知道DataCleaner 环境的配置读取器拦截器。
  */
 public class DesktopConfigurationReaderInterceptor extends DefaultConfigurationReaderInterceptor {
 

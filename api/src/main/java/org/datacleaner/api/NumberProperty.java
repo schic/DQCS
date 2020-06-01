@@ -30,7 +30,6 @@ import java.lang.annotation.Target;
  * Annotation containing supplementary metadata about a number property. This
  * metadata can be used as a way to give hints to the UI as to how the content
  * should be presented.
- * 包含有关数字属性的补充元数据的注释。这个元数据可以用作向UI提示如何呈现内容的一种方式。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD })

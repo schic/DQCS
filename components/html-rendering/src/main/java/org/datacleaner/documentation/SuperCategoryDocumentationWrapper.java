@@ -33,7 +33,6 @@ import org.datacleaner.util.HasNameComparator;
  * A wrapper around the {@link ComponentSuperCategory} object to make it easier
  * for the documentation template to get to certain aspects that should be
  * presented in the documentation.
- * {@link ComponentSuperCategory}对象周围的包装器可以使文档模板更轻松地应当在文档中介绍的某些方面。
  */
 public class SuperCategoryDocumentationWrapper implements Comparable<SuperCategoryDocumentationWrapper> {
 

@@ -38,8 +38,9 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.reference.StringPattern;
 import org.datacleaner.reference.StringPatternConnection;
 
-@Named("StringPatternMatcherTransformer.name")
-@Description("StringPatternMatcherTransformer.Description")
+@Named("String pattern matcher")
+@Description("Matches string values against a set of string patterns, producing a corresponding set "
+        + "of output columns specifying whether or not the values matched those string patterns")
 @Categorized(superCategory = ImproveSuperCategory.class, value = ReferenceDataCategory.class)
 public class StringPatternMatcherTransformer implements Transformer {
 

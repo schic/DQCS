@@ -20,13 +20,11 @@
 package org.datacleaner.components.categories;
 
 import org.datacleaner.api.ComponentSuperCategory;
-import org.datacleaner.util.ApiStringUtils;
 
 /**
  * Abstract implementation of {@link ComponentSuperCategory}. This
  * implementation assumes that all instances of a category class are equal,
  * which is also the recommended approach.
- * {@link ComponentSuperCategory}的抽象实现。此实现假定类别类的所有实例都相等，这也是推荐的方法。
  */
 public abstract class AbstractComponentSuperCategory implements ComponentSuperCategory {
 
@@ -38,8 +36,7 @@ public abstract class AbstractComponentSuperCategory implements ComponentSuperCa
         if (simpleName.endsWith("SuperCategory")) {
             simpleName = simpleName.substring(0, simpleName.length() - "SuperCategory".length());
         }
-        //return simpleName;
-        return ApiStringUtils.explodeCamelCase(simpleName, false);
+        return simpleName;
     }
 
     @Override

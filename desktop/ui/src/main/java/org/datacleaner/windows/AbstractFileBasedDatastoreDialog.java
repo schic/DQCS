@@ -74,7 +74,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Superclass for rather simple file-based datastores such as Excel-datastores,
  * Access-datastores, dBase-datastores etc.
- * 相当简单的基于文件的数据存储库的超类，例如Excel数据存储库，Access数据存储库，dBase数据存储库等。
  *
  * @param <D>
  *            the type of datastore

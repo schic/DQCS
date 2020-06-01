@@ -28,11 +28,9 @@ import org.datacleaner.connection.PerformanceCharacteristics;
 
 /**
  * Interface that describes the metadata of an output data stream.
- * 描述输出数据流的元数据的接口。
  *
  * See {@link HasOutputDataStreams} for details on how the metadata relates to
  * actual data.
- * 有关元数据如何与实际数据相关的详细信息，请参见{@link HasOutputDataStreams}。
  */
 public interface OutputDataStream extends HasName, Serializable {
 

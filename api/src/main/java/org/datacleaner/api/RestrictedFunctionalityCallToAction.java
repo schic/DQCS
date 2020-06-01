@@ -25,9 +25,6 @@ import java.io.Serializable;
  * Represents a "Call to Action" for users when restricted functionality is
  * blocked, typically with the use of {@link RestrictedFunctionalityException}
  * or {@link RestrictedFunctionalityMessage}.
- * 限制用户使用受限功能时代表用户的“号召性用语”，
- * 通常使用{@link RestrictedFunctionalityException}
- * 或{@link RestrictedFunctionalityMessage}。
  */
 public class RestrictedFunctionalityCallToAction implements Serializable {
 

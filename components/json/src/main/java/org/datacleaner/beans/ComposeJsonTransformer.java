@@ -35,8 +35,8 @@ import org.datacleaner.components.categories.DataStructuresCategory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
-@Named("ComposeJsonTransformer.name")
-@Description("ComposeJsonTransformer.Description")
+@Named("Compose & write JSON document")
+@Description("Creates a string representation of a data structure as a JSON (JavaScript Object Notation) document")
 @Categorized(DataStructuresCategory.class)
 public class ComposeJsonTransformer implements Transformer {
 

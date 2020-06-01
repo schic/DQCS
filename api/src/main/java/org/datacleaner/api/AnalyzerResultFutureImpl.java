@@ -35,7 +35,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Default implementation of AnalyzerResultFuture which uses a Ref to get the
  * actual result.
- * AnalyzerResultFuture的默认实现，该实现使用Ref获取实际结果.
  *
  * @param <R>
  *            the wrapped {@link AnalyzerResult} type.

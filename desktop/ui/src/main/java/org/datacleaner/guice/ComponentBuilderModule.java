@@ -31,7 +31,6 @@ import com.google.inject.Provides;
 /**
  * Guice {@link Module} that has specific bindings for a single
  * {@link Component}
- * Guice {@link Module}具有单个{@link Component}的特定绑定
  */
 final class ComponentBuilderModule extends AbstractModule {
 

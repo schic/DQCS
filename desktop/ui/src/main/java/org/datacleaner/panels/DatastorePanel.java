@@ -60,7 +60,10 @@ import org.datacleaner.guice.DCModule;
 import org.datacleaner.guice.InjectorBuilder;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.*;
+import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.StringUtils;
+import org.datacleaner.util.WidgetFactory;
+import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.DCLabel;
 import org.datacleaner.windows.AccessDatastoreDialog;
 import org.datacleaner.windows.CassandraDatastoreDialog;
@@ -89,7 +92,6 @@ import com.google.inject.Injector;
 /**
  * A panel that presents a datastore and shows edit/remove buttons. This panel
  * is placed as a child inside the {@link DatastoreManagementPanel}.
- * 提供数据存储并显示编辑/删除按钮的面板。此面板作为子元素放置在{@link DatastoreManagementPanel}中。
  */
 public class DatastorePanel extends DCPanel {
 
@@ -216,12 +218,11 @@ public class DatastorePanel extends DCPanel {
 
     private JButton createRemoveButton(final Datastore datastore) {
         final String name = datastore.getName();
-        final JButton removeButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove"), IconUtils.ACTION_REMOVE_DARK);
-        removeButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.Description"));
+        final JButton removeButton = WidgetFactory.createDefaultButton("Remove", IconUtils.ACTION_REMOVE_DARK);
+        removeButton.setToolTipText("Remove datastore");
         removeButton.addActionListener(e -> {
             final int result = JOptionPane.showConfirmDialog(DatastorePanel.this,
-                    PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.confirm.Description")
-                            + name + "'?", PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.confirm"),
+                    "Are you sure you wish to remove the datastore '" + name + "'?", "Confirm remove",
                     JOptionPane.YES_NO_OPTION);
             if (result == JOptionPane.YES_OPTION) {
                 _datastoreCatalog.removeDatastore(datastore);
@@ -231,8 +232,8 @@ public class DatastorePanel extends DCPanel {
     }
 
     private JButton createQueryButton(final Datastore datastore) {
-        final JButton queryButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.query"), IconUtils.MODEL_QUERY);
-        queryButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.query.Description"));
+        final JButton queryButton = WidgetFactory.createDefaultButton("Query", IconUtils.MODEL_QUERY);
+        queryButton.setToolTipText("Query datastore");
         queryButton.addActionListener(e -> {
             final String queryString;
             try (DatastoreConnection connection = datastore.openConnection()) {
@@ -251,8 +252,8 @@ public class DatastorePanel extends DCPanel {
     }
 
     private JButton createEditButton(final Datastore datastore) {
-        final JButton editButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.edit"), IconUtils.ACTION_EDIT);
-        editButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.edit.Description"));
+        final JButton editButton = WidgetFactory.createDefaultButton("Edit", IconUtils.ACTION_EDIT);
+        editButton.setToolTipText("Edit datastore");
 
         if (datastore instanceof JdbcDatastore) {
             editButton.addActionListener(e -> {

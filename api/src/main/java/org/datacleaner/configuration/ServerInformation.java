@@ -25,7 +25,6 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Defines a server which could be used for storing resources.
- * 定义可用于存储资源的服务器。
  */
 public interface ServerInformation extends Serializable, HasName {
     String getName();

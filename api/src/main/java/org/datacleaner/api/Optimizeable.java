@@ -28,7 +28,6 @@ import java.lang.annotation.Target;
 /**
  * Annotation for specifying additional metadata about components that employ
  * optimization techniques, typically through query rewriting.
- * 用于指定有关采用优化技术的组件的其他元数据的注释，通常通过查询重写进行。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)

@@ -40,7 +40,6 @@ import org.jdesktop.swingx.JXTextField;
 
 /**
  * Panel containing text box and other presentation of mutable input columns.
- * 包含文本框和可变输入列的其他表示形式的面板。
  */
 public class MutableInputColumnListPanel extends DCPanel implements MutableInputColumn.Listener, Closeable {
 

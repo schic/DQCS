@@ -39,10 +39,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Transformer for building lists based on values in a row.
- * 用于基于行值构建列表的转换器。
  */
-@Named("BuildListTransformer.name")
-@Description("BuildListTransformer.Description")
+@Named("Build list")
+@Description("Build a list containing a variable amount of elements. "
+        + "Adds the capability to save multiple values in a single field.")
 @Categorized(DataStructuresCategory.class)
 public class BuildListTransformer implements Transformer {
 

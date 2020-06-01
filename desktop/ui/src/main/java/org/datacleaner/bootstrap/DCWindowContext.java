@@ -29,7 +29,6 @@ import javax.swing.JOptionPane;
 
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.windows.AbstractDialog;
 import org.datacleaner.windows.AbstractWindow;
 import org.datacleaner.windows.DCWindow;
@@ -38,7 +37,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Represents the contexts of the GUI windows in DataCleaner.
- * 表示DataCleaner中GUI窗口的上下文。
+ *
  * @see DCWindow
  * @see AbstractWindow
  * @see AbstractDialog
@@ -124,8 +123,7 @@ public final class DCWindowContext extends SimpleWindowContext implements Window
     @Override
     public boolean showExitDialog() {
         final int confirmation = JOptionPane
-                .showConfirmDialog(null, PropertyUtil.getProperty("datacleaner.ui.desktop.text.exit.Description"),
-                        PropertyUtil.getProperty("datacleaner.ui.desktop.text.exit"),
+                .showConfirmDialog(null, "Are you sure you want to exit DataCleaner?", "Exit",
                         JOptionPane.OK_CANCEL_OPTION);
 
         if (confirmation == JOptionPane.OK_OPTION) {

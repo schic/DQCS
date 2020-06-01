@@ -25,7 +25,6 @@ import java.util.Arrays;
 /**
  * Represents the output columns yielded by a Transformer given a certain
  * configuration.
- * 表示给定特定配置的Transformer产生的输出列。
  */
 public class OutputColumns implements Serializable {
 

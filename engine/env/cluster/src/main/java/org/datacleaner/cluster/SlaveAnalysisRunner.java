@@ -34,8 +34,6 @@ import org.slf4j.LoggerFactory;
  * An {@link AnalysisRunner} which is appropriate for use on slave nodes, since
  * it will honor non-distributed tasks like {@link Initialize} and {@link Close}
  * methods that are marked with distributed=false.
- * 一个{@link AnalysisRunner}适用于从属节点，因为它将支持未分配的任务，
- * 例如标记为distributed = false的{@link Initialize}和{@link Close}方法。
  */
 public class SlaveAnalysisRunner extends AnalysisRunnerImpl {
 

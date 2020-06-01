@@ -49,7 +49,6 @@ import org.datacleaner.util.SourceColumnFinder;
 /**
  * Helper class to perform the somewhat intricate
  * {@link AnalysisJobBuilder#importJob(AnalysisJob)} operation.
- * Helper类执行一些复杂的{@link AnalysisJobBuilder＃importJob（AnalysisJob）}操作。
  */
 final class AnalysisJobBuilderImportHelper {
 

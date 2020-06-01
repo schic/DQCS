@@ -23,7 +23,6 @@ import org.datacleaner.api.InputColumn;
 
 /**
  * Container class for metric parameters.
- * 度量标准参数的容器类。
  */
 public class MetricParameters {
 

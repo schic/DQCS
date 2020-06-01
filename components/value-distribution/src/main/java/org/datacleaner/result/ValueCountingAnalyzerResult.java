@@ -27,8 +27,6 @@ import org.datacleaner.api.AnalyzerResult;
  * Interface for analyzer results that generally work as "value counters". Such
  * results have counted the occurrence of certain values, as well as some
  * (optional) value types like unique values, unexpected values etc.
- * 分析仪结果的接口通常用作“值计数器”。
- * 这样的结果已经统计了某些值以及某些（可选）值类型（例如唯一值，意外值等）的出现。
  */
 public interface ValueCountingAnalyzerResult extends AnalyzerResult {
 

@@ -31,7 +31,7 @@ import org.datacleaner.api.Transformer;
 /**
  * Contains static factory and utility methods for descriptors within this
  * package.
- *在此包中包含描述符的静态工厂方法和实用程序方法。
+ *
  *
  */
 public class Descriptors {

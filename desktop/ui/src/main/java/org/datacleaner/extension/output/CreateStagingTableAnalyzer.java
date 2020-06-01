@@ -46,9 +46,10 @@ import org.datacleaner.output.datastore.DatastoreCreationDelegateImpl;
 import org.datacleaner.output.datastore.DatastoreOutputWriterFactory;
 import org.datacleaner.user.UserPreferences;
 
-@Named("CreateStagingTableAnalyzer.name")
+@Named("Create staging table")
 @Alias("Write to Datastore")
-@Description("CreateStagingTableAnalyzer.Description")
+@Description("Write data to DataCleaner's embedded staging database (based on H2), which provides a convenient "
+        + "location for staging data or simply storing data temporarily for further analysis.")
 @Categorized(superCategory = WriteSuperCategory.class)
 @Distributed(false)
 public class CreateStagingTableAnalyzer extends AbstractOutputWriterAnalyzer implements HasLabelAdvice {

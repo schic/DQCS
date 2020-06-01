@@ -31,7 +31,6 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
 /**
  * Defines the bootstrapping options used to start up and initialize
  * DataCleaner.
- * 定义用于启动和初始化DataCleaner的引导选项。
  *
  * @author Kasper Sørensen
  */

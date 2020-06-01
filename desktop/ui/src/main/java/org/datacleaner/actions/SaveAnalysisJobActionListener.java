@@ -53,7 +53,6 @@ import com.google.common.base.Strings;
 
 /**
  * ActionListener for saving an analysis job
- * ActionListener用于保存分析作业
  */
 public final class SaveAnalysisJobActionListener implements ActionListener {
 

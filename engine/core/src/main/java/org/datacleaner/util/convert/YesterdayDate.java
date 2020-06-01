@@ -24,7 +24,6 @@ import java.util.Date;
 
 /**
  * Special date value "YESTERDAY()", meaning the day before today, at midnight.
- * 特殊日期值“ YESTERDAY（）”，表示前一天的午夜。
  */
 public class YesterdayDate extends Date implements ExpressionDate {
 

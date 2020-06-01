@@ -42,11 +42,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Transformer for building maps based on values in a row.
- * 用于基于连续值构建地图的转换器。
  */
-@Named("BuildMapTransformer.name")
+@Named("Build key/value map")
 @Alias("Build map")
-@Description("BuildMapTransformer.Description")
+@Description("Build a map with a variable amount of keys and values. "
+        + "Adds the capability to store complex structures with named entries within it.")
 @Categorized(DataStructuresCategory.class)
 public class BuildMapTransformer implements Transformer {
 

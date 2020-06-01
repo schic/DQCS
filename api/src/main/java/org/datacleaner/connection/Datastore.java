@@ -25,9 +25,8 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Defines a datastore from which data can be queried.
- *定义可以从中查询数据的数据存储。
+ *
  * Datastores are kept in the {@link DatastoreCatalog}.
- * 数据存储区保留在{@link DatastoreCatalog}中。
  */
 public interface Datastore extends Serializable, HasName {
 

@@ -44,7 +44,6 @@ import org.datacleaner.guice.DCModule;
 import org.datacleaner.user.DatastoreSelectedListener;
 import org.datacleaner.user.UserPreferences;
 import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.Alignment;
@@ -134,7 +133,7 @@ public class AddDatastorePanel extends DCPanel {
 
     private PopupButton createCloudButton() {
         final PopupButton cloudButton =
-                WidgetFactory.createDefaultPopupButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.cloud.service"), IconUtils.CLOUD_IMAGEPATH);
+                WidgetFactory.createDefaultPopupButton("Cloud service", IconUtils.CLOUD_IMAGEPATH);
         cloudButton.setFont(WidgetUtils.FONT_HEADER2);
         final List<DatastoreDescriptor> cloudDatastores =
                 new DatastoreDescriptors(_databaseDriverCatalog).getAvailableCloudBasedDatastoreDescriptors();
@@ -150,7 +149,7 @@ public class AddDatastorePanel extends DCPanel {
 
     private PopupButton createDatabaseButton() {
         final PopupButton databaseButton =
-                WidgetFactory.createDefaultPopupButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.database"), IconUtils.GENERIC_DATASTORE_IMAGEPATH);
+                WidgetFactory.createDefaultPopupButton("Database", IconUtils.GENERIC_DATASTORE_IMAGEPATH);
         databaseButton.setFont(WidgetUtils.FONT_HEADER2);
 
         final List<DatastoreDescriptor> databaseBasedDatastores =

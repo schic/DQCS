@@ -31,8 +31,8 @@ import org.datacleaner.components.machinelearning.impl.NeuralNetTrainer;
 import smile.classification.NeuralNetwork.ActivationFunction;
 import smile.classification.NeuralNetwork.ErrorFunction;
 
-@Named("NeuralNetTrainingAnalyzer.name")
-@Description("NeuralNetTrainingAnalyzer.Description")
+@Named("Train Neural Net classifier")
+@Description("Train a classifier of the 'Neural Net' type.")
 public class NeuralNetTrainingAnalyzer extends MLClassificationTrainingAnalyzer {
 
     @Configured

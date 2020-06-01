@@ -33,7 +33,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Represents an InputColumn that is a result of a transformer.
- * 表示作为转换器结果的InputColumn。
  *
  * @param <E>
  */

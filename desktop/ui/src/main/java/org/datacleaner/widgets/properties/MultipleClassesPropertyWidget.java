@@ -43,7 +43,6 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * {@link PropertyWidget} for Class arrays. Displays class options as a set of
  * comboboxes and plus/minus buttons to grow/shrink the array.
- * {@link PropertyWidget}用于类数组。将类选项显示为一组组合框和加/减按钮，以增大/缩小数组。
  */
 public class MultipleClassesPropertyWidget extends AbstractPropertyWidget<Class<?>[]> {
 

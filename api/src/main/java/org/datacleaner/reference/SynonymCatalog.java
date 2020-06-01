@@ -23,16 +23,12 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 
 /**
  * A synonym catalog represents a set of synonyms which are related.
- * 同义词目录表示一组相关的同义词。
  *
  * Meaningful examples of synonym catalogs:
  * <ul>
  * <li>Country names (with ISO code as master term)</li>
  * <li>Given name synonyms (eg. 'William' is the master term for 'Billy')</li>
  * </ul>
- * 同义词目录的有意义的示例：
- * 国家名称（以ISO代码为主要术语）
- * 给定名称的同义词（例如“ William”是“ Billy”的主要术语）
  */
 public interface SynonymCatalog extends ReferenceData {
 

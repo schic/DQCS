@@ -31,7 +31,6 @@ import org.datacleaner.widgets.tabs.CloseableTabbedPane;
 /**
  * ActionListener that will present a popup menu on the tabbed pane to enable
  * the user to rename a component
- * ActionListener将在选项卡式窗格中显示一个弹出菜单，以使用户能够重命名组件
  */
 public class ComponentBuilderTabTextActionListener extends AbstractJobBuilderPopupListener implements ActionListener {
 

@@ -28,11 +28,10 @@ import org.apache.metamodel.util.HasName;
 /**
  * Super-interface for descriptor objects that describe metadata about
  * properties, typically configurable by the user or the framework.
- * 描述符对象的超级接口，该描述符对象描述有关属性的元数据，通常可由用户或框架配置。
  *
  * A property exist within a component, which are described by the
  * {@link ComponentDescriptor} interface.
- *组件内存在一个属性，该属性由{@link ComponentDescriptor}接口描述。
+ *
  *
  */
 public interface PropertyDescriptor extends Comparable<PropertyDescriptor>, Serializable, HasName {

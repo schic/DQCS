@@ -48,7 +48,6 @@ import edu.uci.ics.jung.graph.util.EdgeType;
 /**
  * Object responsible for building the nodes (vertices and edges) of a
  * {@link JobGraph}.
- * 负责构建{@link JobGraph}的节点（顶点和边）的对象。
  */
 class JobGraphNodeBuilder {
 

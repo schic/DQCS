@@ -52,7 +52,6 @@ import org.datacleaner.util.StringUtils;
  * A wrapper around the {@link ComponentDescriptor} object to make it easier for
  * the documentation template to get to certain aspects that should be presented
  * in the documentation.
- * {@link ComponentDescriptor}对象周围的包装器，使文档模板可以更轻松地到达应在文档中呈现的某些方面。
  */
 public class ComponentDocumentationWrapper {
 

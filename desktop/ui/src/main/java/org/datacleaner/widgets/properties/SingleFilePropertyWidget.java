@@ -40,7 +40,6 @@ import org.datacleaner.widgets.FilenameTextField;
 
 /**
  * Property widget for a single {@link File} field.
- * 一个{@link File}字段的属性窗口小部件。
  */
 public final class SingleFilePropertyWidget extends AbstractPropertyWidget<File> {
 

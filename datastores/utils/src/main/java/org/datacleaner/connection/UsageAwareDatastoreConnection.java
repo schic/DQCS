@@ -29,8 +29,6 @@ import org.slf4j.LoggerFactory;
  * times it has been acquired and closed. It encapsulates the closing logic,
  * making sure that it will only close if all usages of the datastore are
  * closed.
- * 摘要池{@link DatastoreConnection}，它知道获取和关闭它的次。
- * 它封装了关闭逻辑，确保仅在关闭所有数据存储使用后才会关闭。
  */
 public abstract class UsageAwareDatastoreConnection<E extends DataContext> extends UsageAwareCloseable
         implements DatastoreConnection {

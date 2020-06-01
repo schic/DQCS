@@ -25,8 +25,6 @@ package org.datacleaner.api;
  * also possible to roll your own. Simply create a class that implements this
  * interface and reference the class in the @RendererBean annotation when
  * implementing renderers.
- * 表示用于渲染的渲染格式。 DataCleaner附带了一些内置的呈现格式（例如HTML和Text），
- * 但是也可以自己滚动。只需创建实现此接口的类，并在实现渲染器时在@RendererBean批注中引用该类。
  *
  * @param <T>
  *

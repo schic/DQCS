@@ -43,7 +43,6 @@ import com.google.common.base.Strings;
 /**
  * Panel used by {@link CreateTableDialog} to show and edit the definition of a
  * column in a table that is being created.
- * {@link CreateTableDialog}用于显示和编辑正在创建的表中列的定义的面板。
  */
 public class CreateTableColumnDefintionPanel extends DCPanel {
 

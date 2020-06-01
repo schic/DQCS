@@ -34,8 +34,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.EncodingCategory;
 
-@Named("HashTransformer.name")
-@Description("HashTransformer.Description")
+@Named("Hash value")
+@Description("It creates a hash from specified input. ")
 @Categorized(EncodingCategory.class)
 public class HashTransformer implements Transformer {
     @Configured

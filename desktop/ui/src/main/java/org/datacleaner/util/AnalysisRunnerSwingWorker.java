@@ -36,7 +36,6 @@ import org.slf4j.LoggerFactory;
 /**
  * A {@link SwingWorker} that fires the execution of an {@link AnalysisJob} and
  * publishes updated to a {@link ResultWindow}.
- * {@link SwingWorker}会触发{@link AnalysisJob}的执行，并且将更新发布到{@link ResultWindow}。
  */
 public final class AnalysisRunnerSwingWorker extends SwingWorker<AnalysisResultFuture, Void> {
 

@@ -31,8 +31,6 @@ import org.datacleaner.windows.DCWindow;
  * Very simple WindowContext implementation used for initialization purposes,
  * loading indicators etc., before the DataCleaner application is ready to serve
  * "real" windows.
- * 在DataCleaner应用程序准备好服务“real”窗口之前，
- * 非常简单的WindowContext实现用于初始化目的，加载指示符等。
  */
 public class SimpleWindowContext implements WindowContext {
 

@@ -33,7 +33,6 @@ import org.jdesktop.swingx.decorator.Highlighter;
 
 /**
  * Highlights special columns in a JXTable
- * 突出显示JXTable中的特殊列
  */
 public final class ColumnHighlighter implements Highlighter {
 

@@ -35,7 +35,6 @@ import org.datacleaner.util.ImageManager;
 /**
  * Menu item that represents opening a "recent" job on the
  * {@link DatastoreManagementPanel} 's "more jobs" drop down menu.
- * 菜单项，表示在{@link DatastoreManagementPanel}的“更多作业”下拉菜单上打开“近期”作业。
  */
 public class OpenAnalysisJobMenuItem extends JMenuItem implements ActionListener {
 

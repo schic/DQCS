@@ -37,7 +37,6 @@ import org.slf4j.LoggerFactory;
  * A batch transformation buffer utility for archieving minor batch operations
  * while preserving the one-by-one transformation interface of
  * {@link Transformer}.
- * 一个批处理转换缓冲区实用程序，用于归档次要批处理操作，同时保留{@link Transformer}的一对一转换接口。
  *
  * @param <I>
  *            the input type

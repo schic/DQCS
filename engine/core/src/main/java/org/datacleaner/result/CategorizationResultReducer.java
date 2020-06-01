@@ -32,7 +32,6 @@ import org.datacleaner.storage.RowAnnotationFactory;
 
 /**
  * Result reducer for {@link CategorizationResult}.
- * {@link CategorizationResult}的结果精简器。
  */
 public class CategorizationResultReducer implements AnalyzerResultReducer<CategorizationResult> {
 

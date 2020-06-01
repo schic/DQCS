@@ -37,7 +37,6 @@ import org.datacleaner.job.runner.AnalysisResultFuture;
 
 /**
  * A simple execution servlet to deploy on a slave node
- * 一个简单的执行servlet，可部署在从属节点上
  */
 public class SlaveServlet extends HttpServlet {
 

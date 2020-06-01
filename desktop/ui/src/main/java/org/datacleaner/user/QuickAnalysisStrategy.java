@@ -39,7 +39,6 @@ import org.datacleaner.util.ReflectionUtils;
 
 /**
  * Defines the strategy and rules for doing quick analysis.
- * 定义进行快速分析的策略和规则。
  *
  * @see QuickAnalysisActionListener
  */

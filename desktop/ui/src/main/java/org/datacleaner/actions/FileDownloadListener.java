@@ -23,7 +23,6 @@ import org.apache.commons.vfs2.FileObject;
 
 /**
  * Listener invoked when file download has finished.
- * 文件下载完成后调用侦听器。
  */
 public interface FileDownloadListener {
 

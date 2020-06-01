@@ -37,7 +37,6 @@ import org.datacleaner.storage.RowAnnotationFactory;
 
 /**
  * A reducer of {@link ValueMatchAnalyzerResult}s.
- * {@link ValueMatchAnalyzerResult}s的简化器。
  */
 public class ValueMatchAnalyzerResultReducer implements AnalyzerResultReducer<ValueMatchAnalyzerResult> {
 

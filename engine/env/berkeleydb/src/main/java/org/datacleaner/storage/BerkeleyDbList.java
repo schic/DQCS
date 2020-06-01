@@ -27,8 +27,6 @@ import java.util.Map;
  * A map wrapped in the List interface. This is used because the berkeley db.
  * Does not support persistent lists, but only maps. Instead a persistent map is
  * wrapped by this List-implementation.
- * 包装在列表界面中的map。之所以使用它是因为berkeley db。
- * 不支持永久列表，仅支持地图。相反，此列表实现封装了一个持久映射。
  */
 final class BerkeleyDbList<E> extends AbstractList<E> implements List<E> {
 

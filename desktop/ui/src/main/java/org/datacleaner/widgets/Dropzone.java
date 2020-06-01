@@ -54,7 +54,12 @@ import org.datacleaner.server.HadoopClusterInformation;
 import org.datacleaner.user.DatastoreSelectedListener;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.*;
+import org.datacleaner.util.DatastoreCreationUtil;
+import org.datacleaner.util.FileFilters;
+import org.datacleaner.util.HadoopResource;
+import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.WidgetFactory;
+import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.windows.HdfsUrlChooser;
 import org.datacleaner.windows.HdfsUrlChooser.OpenType;
 import org.datacleaner.windows.OptionsDialog;
@@ -64,7 +69,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A dropzone where the user can drop files to register them as datastores.
- * 用户可以在其中放置文件以将其注册为数据存储区的放置区。
  */
 public class Dropzone extends DCPanel {
 
@@ -89,14 +93,14 @@ public class Dropzone extends DCPanel {
                 new CompoundBorder(BorderFactory.createDashedBorder(WidgetUtils.BG_COLOR_MEDIUM, 3f, 3.0f, 3.0f, false),
                         new EmptyBorder(30, 30, 30, 30)));
 
-        final DCLabel dropFileLabel = DCLabel.dark("<html><b>" + PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.drop.file.here") + "</b></html>");
+        final DCLabel dropFileLabel = DCLabel.dark("<html><b>Drop file</b> here</html>");
         dropFileLabel.setFont(WidgetUtils.FONT_BANNER);
         add(dropFileLabel,
                 new GridBagConstraints(0, 0, 2, 1, 1.0, 1.0, GridBagConstraints.CENTER, GridBagConstraints.NONE,
                         new Insets(0, 0, 10, 0), 0, 0));
 
         // orclick button
-        final JButton orClickButton = WidgetFactory.createPrimaryButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.click.browse"), IconUtils.FILE_FILE);
+        final JButton orClickButton = WidgetFactory.createPrimaryButton("(Click to browse)", IconUtils.FILE_FILE);
         orClickButton.setFont(WidgetUtils.FONT_HEADER2);
         orClickButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(orClickButton,
@@ -105,7 +109,7 @@ public class Dropzone extends DCPanel {
         orClickButton.addActionListener(e -> showFileChooser());
         // select hadoop file button
         final JButton selectHadoopButton =
-                WidgetFactory.createPrimaryButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.hadoop"), IconUtils.FILE_HDFS);
+                WidgetFactory.createPrimaryButton("Select Hadoop HDFS file", IconUtils.FILE_HDFS);
         selectHadoopButton.setFont(WidgetUtils.FONT_HEADER2);
         selectHadoopButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         add(selectHadoopButton,

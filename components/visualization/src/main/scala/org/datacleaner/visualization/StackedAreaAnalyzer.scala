@@ -9,8 +9,8 @@ object StackedAreaAnalyzer {
   final val PROPERTY_CATEGORY_COLUMN = "Category column"
 }
 
-@Named("StackedAreaAnalyzer.name")
-@Description("StackedAreaAnalyzer.Description")
+@Named("Stacked area plot")
+@Description("Plots a number of related measures in a stacked area chart. Useful visualization for showing the relative influence of each measure compared to the sum of measures.")
 @Categorized(Array(classOf[VisualizationCategory]))
 class StackedAreaAnalyzer extends Analyzer[IStackedAreaAnalyzerResult] {
 

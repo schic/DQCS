@@ -27,8 +27,6 @@ import org.apache.metamodel.util.HasName;
  * Represents an annotation of a metadata element such as a
  * {@link TableMetadata}, {@link ColumnGroupMetadata} or {@link ColumnMetadata}.
  * An annotation is used to
- * 表示元数据元素的注释，例如{@link TableMetadata}，{@link ColumnGroupMetadata}
- * 或{@link ColumnMetadata}。 注释用于
  */
 public interface MetadataAnnotation extends HasName {
 

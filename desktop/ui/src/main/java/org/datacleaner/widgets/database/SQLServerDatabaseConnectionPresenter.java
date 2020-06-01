@@ -23,7 +23,6 @@ import org.datacleaner.util.StringUtils;
 
 /**
  * {@link DatabaseConnectionPresenter} for MS SQL Server database connections
- * {@link DatabaseConnectionPresenter}用于MS SQL Server数据库连接
  */
 public class SQLServerDatabaseConnectionPresenter extends UrlTemplateDatabaseConnectionPresenter {
 

@@ -35,7 +35,6 @@ import org.datacleaner.widgets.Alignment;
 
 /**
  * Renders a DataCleaner-banner as a panel
- * 将DataCleaner横幅呈现为面板
  */
 public class DCBannerPanel extends JPanel {
 

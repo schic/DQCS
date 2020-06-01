@@ -33,7 +33,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Task that collects the {@link AnalyzerResult} from an Analyzer.
- * 从分析器收集{@link AnalyzerResult}的任务。
  */
 public final class CollectResultsTask implements Task {
 

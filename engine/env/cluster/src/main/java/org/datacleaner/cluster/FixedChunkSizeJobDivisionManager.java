@@ -26,8 +26,6 @@ import org.datacleaner.job.AnalysisJob;
  * preferred chunk size. If for instance there's a chunk size of 1000 records,
  * and an incoming job has an expected row count of 30,000 records - then there
  * will be 30 divisions made.
- * 一个简单的{@link JobDivisionManager}，它基于首选块大小来构建分区。
- * 例如，如果块大小为1000条记录，且传入作业的预期行数为30,000条记录-那么将进行30个划分。
  */
 public class FixedChunkSizeJobDivisionManager implements JobDivisionManager {
 

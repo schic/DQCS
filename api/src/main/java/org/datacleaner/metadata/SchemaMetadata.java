@@ -27,7 +27,6 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Defines metadata about a {@link Schema}.
- * 定义有关{@link Schema}的元数据。
  */
 public interface SchemaMetadata extends HasName, HasMetadataAnnotations {
 

@@ -25,7 +25,6 @@ import org.apache.metamodel.schema.Column;
 
 /**
  * Defines methods for objects that contain column metadata.
- * 为包含列元数据的对象定义方法。
  *
  * @see TableMetadata
  * @see ColumnGroupMetadata

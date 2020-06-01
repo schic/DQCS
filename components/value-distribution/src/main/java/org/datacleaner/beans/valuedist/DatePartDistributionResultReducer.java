@@ -36,9 +36,6 @@ import org.datacleaner.result.CrosstabResult;
  * analyzers, for instance {@link YearDistributionAnalyzer},
  * {@link MonthDistributionAnalyzer}, {@link WeekdayDistributionAnalyzer} and
  * {@link WeekNumberDistributionAnalyzer}.
- * {@link AnalyzerResultReducer}用于日期部分分布的结果分析器，
- * 例如{@link YearDistributionAnalyzer}，{@link MonthDistributionAnalyzer}，
- * {@link WeekdayDistributionAnalyzer}和{@link WeekNumberDistributionAnalyzer}。
  */
 public class DatePartDistributionResultReducer extends AbstractCrosstabResultReducer<CrosstabResult> {
 

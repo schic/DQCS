@@ -28,7 +28,6 @@ import org.datacleaner.util.ReflectionUtils;
  * A wrapper around a {@link Filter}s outcome object to make it easier for the
  * documentation template to get to certain aspects that should be presented in
  * the documentation.
- * {@link Filter}的结果对象周围的包装器，使文档模板可以更轻松地到达应在文档中提供的某些方面。
  */
 public class FilterOutcomeDocumentationWrapper {
 

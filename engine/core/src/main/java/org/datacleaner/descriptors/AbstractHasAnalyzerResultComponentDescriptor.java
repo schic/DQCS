@@ -29,7 +29,7 @@ import org.datacleaner.util.ReflectionUtils;
 /**
  * Abstract implementation of the {@link HasAnalyzerResultComponentDescriptor}
  * interface. Convenient for implementing it's subclasses.
- *{@link HasAnalyzerResultComponentDescriptor}接口的抽象实现。方便实现它的子类。
+ *
  *
  *
  * @param <B>

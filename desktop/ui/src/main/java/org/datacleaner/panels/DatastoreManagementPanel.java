@@ -52,7 +52,12 @@ import org.datacleaner.guice.DCModule;
 import org.datacleaner.user.DatastoreChangeListener;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.*;
+import org.datacleaner.util.DCDocumentListener;
+import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.StringUtils;
+import org.datacleaner.util.WidgetFactory;
+import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.widgets.DCLabel;
 import org.datacleaner.widgets.DCPopupBubble;
@@ -70,7 +75,6 @@ import com.google.inject.Injector;
 /**
  * Panel to select which job or datastore to use. Shown in the "source" tab, if
  * no datastore or job has been selected to begin with.
- * 用于选择要使用的作业或数据存储的面板。如果没有选择任何数据存储或作业作为开始，则显示在“源”选项卡中。
  */
 public class DatastoreManagementPanel extends DCSplashPanel implements DatastoreChangeListener {
 
@@ -104,7 +108,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
         _userPreferences = userPreferences;
 
         // initialize "Build job" button
-        _analyzeButton = WidgetFactory.createPrimaryButton(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.build"), IconUtils.MODEL_JOB);
+        _analyzeButton = WidgetFactory.createPrimaryButton("Build job", IconUtils.MODEL_JOB);
         _analyzeButton.addActionListener(e -> {
             for (final DatastorePanel datastorePanel : _datastorePanels) {
                 if (datastorePanel.isSelected()) {
@@ -122,7 +126,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
         });
 
         // initialize search text field
-        _searchDatastoreTextField = WidgetFactory.createTextField(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.search.filter"));
+        _searchDatastoreTextField = WidgetFactory.createTextField("Search/filter datastores");
         _searchDatastoreTextField.getDocument().addDocumentListener(new DCDocumentListener() {
             @Override
             protected void onChange(final DocumentEvent event) {
@@ -159,13 +163,13 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
 
         setLayout(new BorderLayout());
 
-        final JComponent titleLabel = createTitleLabel(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement"), true);
+        final JComponent titleLabel = createTitleLabel("Datastore Management", true);
         add(titleLabel, BorderLayout.NORTH);
 
         final DCPanel containerPanel = new DCPanel();
         containerPanel.setLayout(new VerticalLayout(4));
 
-        final DCLabel registerNewDatastoreLabel = DCLabel.dark(PropertyUtil.getProperty("datacleaner.ui.desktop.text.registernew"));
+        final DCLabel registerNewDatastoreLabel = DCLabel.dark("Register new:");
         registerNewDatastoreLabel.setFont(WidgetUtils.FONT_HEADER2);
 
         _datastoreListPanel = new DCPanel();
@@ -196,7 +200,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
         _datastoreListPanel.removeAll();
         _datastorePanels.clear();
 
-        final DCLabel existingDatastoresLabel = DCLabel.dark(PropertyUtil.getProperty("datacleaner.ui.desktop.text.existingdatastores"));
+        final DCLabel existingDatastoresLabel = DCLabel.dark("Existing datastores:");
         existingDatastoresLabel.setFont(WidgetUtils.FONT_HEADER2);
 
         final DCPanel headerPanel = new DCPanel();
@@ -301,7 +305,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
     private Component createMoreDatabasesButton(final List<DatastoreDescriptor> availableDatastoreDescriptors,
             final Set<String> promotedDatabases) {
         final PopupButton moreDatastoreTypesButton =
-                WidgetFactory.createDefaultPopupButton(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.more"), IconUtils.GENERIC_DATASTORE_IMAGEPATH);
+                WidgetFactory.createDefaultPopupButton("More databases", IconUtils.GENERIC_DATASTORE_IMAGEPATH);
         moreDatastoreTypesButton.setMenuPosition(MenuPosition.TOP);
 
         final JPopupMenu moreDatastoreTypesMenu = moreDatastoreTypesButton.getMenu();
@@ -321,7 +325,7 @@ public class DatastoreManagementPanel extends DCSplashPanel implements Datastore
 
         moreDatastoreTypesMenu.addSeparator();
 
-        final JMenuItem databaseDriversMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.more.driver"),
+        final JMenuItem databaseDriversMenuItem = WidgetFactory.createMenuItem("Manage database drivers...",
                 imageManager.getImageIcon(IconUtils.MENU_OPTIONS, IconUtils.ICON_SIZE_SMALL));
         databaseDriversMenuItem.addActionListener(e -> {
             final OptionsDialog dialog = _optionsDialogProvider.get();

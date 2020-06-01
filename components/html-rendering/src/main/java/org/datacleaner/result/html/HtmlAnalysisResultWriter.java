@@ -52,7 +52,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * {@link AnalysisResultWriter} which writes an analysis result as a HTML page.
- * {@link AnalysisResultWriter}将分析结果写为HTML页面。
  */
 public class HtmlAnalysisResultWriter implements AnalysisResultWriter {
 

@@ -36,11 +36,9 @@ import org.datacleaner.util.sort.SortMergeWriter;
  * A delegate writer for {@link CreateExcelSpreadsheetAnalyzer} to use together
  * with the {@link SortMergeWriter} when inserting records into an excel
  * spreadsheet.
- * 将记录插入excel电子表格时，{@link CreateExcelSpreadsheetAnalyzer}的委托编写者可以与{@link SortMergeWriter}一起使用。
  *
  * Note: Most of this class is actually fairly generic. It could in the future
  * be applied to work on other {@link DataContext} types as well.
- * 注意：此类的大多数实际上是相当通用的。将来可能会应用于其他{@link DataContext}类型。
  */
 class ExcelDataContextWriter implements Closeable {
 

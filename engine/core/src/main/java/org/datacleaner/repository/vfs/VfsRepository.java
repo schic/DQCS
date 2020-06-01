@@ -25,13 +25,10 @@ import org.datacleaner.util.VFSUtils;
 
 /**
  * Repository implementation based of commons VFS.
- * 基于公用VFS的存储库实现。
  *
  * TODO: For now this is a really simple implementation that will only work on
  * local file based {@link FileObject}s. A proper implementation would be much
  * better but this is sufficient for current initial needs.
- * 待办事项：目前，这是一个非常简单的实现，仅适用于基于本地文件的{@link FileObject}。
- * 适当的实施会好得多，但这足以满足当前的最初需求。
  */
 public class VfsRepository extends FileRepository {
 

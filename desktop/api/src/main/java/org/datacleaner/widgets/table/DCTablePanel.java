@@ -34,7 +34,6 @@ import org.datacleaner.util.WidgetUtils;
 /**
  * Defines a panel that wraps a {@link DCTable} (including headers, scrollbars
  * etc).
- * 定义一个包装{@link DCTable}的面板（包括标题，滚动条等）。
  */
 public final class DCTablePanel extends DCPanel {
 

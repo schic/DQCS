@@ -26,7 +26,6 @@ import org.datacleaner.api.InputRow;
 /**
  * A component for retrieving sample {@link InputRow}s that are annotated using
  * with a {@link RowAnnotation}.
- * 用于检索使用加上{@link RowAnnotation}注释的样本{@link InputRow}的组件。
  */
 public interface RowAnnotationSampleContainer {
 

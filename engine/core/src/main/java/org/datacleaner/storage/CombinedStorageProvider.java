@@ -26,7 +26,7 @@ import java.util.Set;
 /**
  * A storage provider that delegates to different backing storage providers,
  * depending on which type of storage entity to use.
- * 委托给不同的后备存储提供者的存储提供者，取决于要使用的存储实体的类型。
+ *
  *
  */
 public final class CombinedStorageProvider implements StorageProvider {

@@ -33,10 +33,10 @@ import org.datacleaner.components.categories.NumbersCategory;
 
 /**
  * Simple transformer for rounding a number
- * 四舍五入的简单转换器
  */
-@Named("RoundNumberTransformer.name")
-@Description("RoundNumberTransformer.Description")
+@Named("Round number")
+@Description(
+        "Transformation for rounding a number, typically to the nearest integer, nearest ten, hundred or thousand.")
 @Categorized(NumbersCategory.class)
 public class RoundNumberTransformer implements Transformer {
 

@@ -24,7 +24,6 @@ import org.datacleaner.job.ComponentJob;
 /**
  * {@link HtmlRenderingContext} which is aware of the component it is rendering
  * for. Wraps an underlying implementation for escaping and element id creation.
- * {@link HtmlRenderingContext}知道要为其渲染的组件。包装用于转义和元素ID创建的基础实现。
  */
 public class ComponentHtmlRenderingContext implements HtmlRenderingContext {
 

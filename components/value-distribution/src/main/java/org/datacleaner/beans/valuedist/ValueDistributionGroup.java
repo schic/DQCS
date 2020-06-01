@@ -42,8 +42,7 @@ import org.slf4j.LoggerFactory;
  * Represents a value distribution within a {@link ValueDistributionAnalyzer}. A
  * {@link ValueDistributionGroup} contains the counted values within a single
  * group.
- * 表示{@link ValueDistributionAnalyzer}中的值分布。
- * {@link ValueDistributionGroup}包含单个组中的计数值。
+ *
  *
  */
 class ValueDistributionGroup {

@@ -29,16 +29,14 @@ import org.datacleaner.result.ValueFrequency;
 
 /**
  * Represents the result of the {@link ValueDistributionAnalyzer}.
- * 表示{@link ValueDistributionAnalyzer}的结果。
  *
  * A value distribution result has two basic forms: Grouped or ungrouped. To
  * find out which type a particular instance has, use the
  * {@link #isGroupingEnabled()} method.
- * 值分配结果具有两种基本形式：分组或未分组。要找出特定实例的类型，请使用{{link #isGroupingEnabled（）}方法。
  *
  * Ungrouped results only contain a single/global value distribution. A grouped
  * result contain multiple value distributions, based on groups.
- * 未分组的结果仅包含单个/全局值分布。分组的结果包含基于组的多个值分布。
+ *
  *
  */
 public class GroupedValueDistributionResult extends ValueDistributionAnalyzerResult

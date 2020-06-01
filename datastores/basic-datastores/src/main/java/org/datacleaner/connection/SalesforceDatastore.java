@@ -25,7 +25,6 @@ import com.google.common.base.Strings;
 
 /**
  * A datastore that uses a Salesforce.com account as it's source.
- * 使用Salesforce.com帐户作为来源的数据存储。
  */
 public class SalesforceDatastore extends UsageAwareDatastore<SalesforceDataContext>
         implements UpdateableDatastore, UsernameDatastore {

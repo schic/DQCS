@@ -19,15 +19,13 @@
  */
 package org.datacleaner.components.categories;
 
-import org.datacleaner.util.PropertyUtil;
-
 public class ImproveSuperCategory extends AbstractComponentSuperCategory {
 
     private static final long serialVersionUID = 1L;
 
     @Override
     public String getDescription() {
-        return PropertyUtil.getProperty("Improve.Description");
+        return "Improve the quality of your data by applying Data Quality functions.";
     }
 
     @Override

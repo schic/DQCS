@@ -27,7 +27,6 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 
 /**
  * Defines the interface for components that write an {@link AnalysisResult}, typically to a file or {@link System#out}.
- * 为通常将{@link AnalysisResult}写入文件或{@link System＃out}的组件定义接口。
  */
 public interface AnalysisResultWriter {
 

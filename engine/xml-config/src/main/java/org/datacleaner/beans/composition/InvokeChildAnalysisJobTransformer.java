@@ -39,8 +39,10 @@ import org.datacleaner.job.AnalysisJob;
 import org.datacleaner.job.JaxbJobReader;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 
-@Named("InvokeChildAnalysisJobTransformer.name")
-@Description( "InvokeChildAnalysisJobTransformer.Description")
+@Named("Invoke child Analysis job")
+@Description( "Wraps another (external) Analysis job's transformations and invokes them as an integrated part of the "
+        + "current job. Using this transformation you can compose parent and child jobs for more coarse or more fine "
+        + "granularity of transformations.")
 @Categorized(CompositionCategory.class)
 public class InvokeChildAnalysisJobTransformer extends AbstractWrappedAnalysisJobTransformer {
 

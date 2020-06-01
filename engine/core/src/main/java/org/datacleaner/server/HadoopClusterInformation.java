@@ -25,7 +25,6 @@ import org.datacleaner.configuration.ServerInformation;
 
 /**
  * Represents a connection to a hadoop cluster. Either by namenode or other means (i.e. in the case of MapR).
- * 表示与Hadoop集群的连接。通过名称节点或其他方式（例如，对于MapR）。
  */
 public interface HadoopClusterInformation extends ServerInformation {
     Configuration getConfiguration();

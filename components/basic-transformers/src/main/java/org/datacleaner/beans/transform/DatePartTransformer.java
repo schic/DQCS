@@ -36,8 +36,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.DateAndTimeCategory;
 
-@Named("DatePartTransformer.name")
-@Description("DatePartTransformer.Description")
+@Named("Extract date part")
+@Description("Extract the parts of a date (year, month, day etc.)")
 @Categorized(DateAndTimeCategory.class)
 public class DatePartTransformer implements Transformer {
 

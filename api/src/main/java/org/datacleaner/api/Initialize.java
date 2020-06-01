@@ -30,7 +30,6 @@ import java.lang.annotation.Target;
  * Annotation that marks method as an initializing method. Use this annotation
  * if you need to initialize the state of a component before it starts executing a
  * job.
- * 将方法标记为初始化方法的注释。如果需要在开始执行作业之前初始化组件的状态，请使用此注释。
  *
  * The @Initialize annotation can be used on methods in the following component
  * types:

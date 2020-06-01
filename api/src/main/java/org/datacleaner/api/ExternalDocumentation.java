@@ -29,7 +29,6 @@ import java.lang.annotation.Target;
 /**
  * Annotation used to provide links to extra documentation (beyond
  * {@link Description} and similar annotations) about a {@link Component}.
- * 用于提供指向{@link Component}的额外文档（除{@link Description}和类似的注释之外）的链接的注释。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE, ElementType.FIELD, ElementType.METHOD })

@@ -37,8 +37,8 @@ import org.datacleaner.components.categories.DateAndTimeCategory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("DateGapAnalyzer.name")
-@Description("DateGapAnalyzer.Description")
+@Named("Date gap analyzer")
+@Description("Analyze the periodic gaps between FROM and TO dates.")
 @Categorized(DateAndTimeCategory.class)
 public class DateGapAnalyzer implements Analyzer<DateGapAnalyzerResult> {
 

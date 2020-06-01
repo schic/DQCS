@@ -24,7 +24,6 @@ import javax.net.ssl.SSLSession;
 
 /**
  * A {@link HostnameVerifier} that always verifies a hostname as true. Use with caution!
- * {@link HostnameVerifier}始终将主机名验证为true。请谨慎使用！
  */
 public class NaiveHostnameVerifier implements HostnameVerifier {
 

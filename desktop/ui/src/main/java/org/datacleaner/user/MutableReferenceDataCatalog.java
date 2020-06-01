@@ -41,8 +41,6 @@ import com.google.common.base.Strings;
  * This is used to enable runtime changes by the user. This reference data
  * catalog wraps an immutable instance, which typically represents what is
  * configured in datacleaner's xml file.
- * 参考数据目录实现，允许进行更改/修改。用于启用用户更改运行时。
- * 该参考数据目录包装了一个不可变的实例，该实例通常表示在datacleaner的xml文件中配置的内容。
  */
 @SuppressWarnings("deprecation")
 public class MutableReferenceDataCatalog implements ReferenceDataCatalog {

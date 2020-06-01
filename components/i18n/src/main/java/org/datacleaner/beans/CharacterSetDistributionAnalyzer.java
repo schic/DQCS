@@ -48,8 +48,9 @@ import org.datacleaner.storage.RowAnnotationFactory;
 
 import com.ibm.icu.text.UnicodeSet;
 
-@Named("CharacterSetDistributionAnalyzer.name")
-@Description("CharacterSetDistributionAnalyzer.Description")
+@Named("Character set distribution")
+@Description("Inspects and maps text characters according to character set affinity, "
+        + "such as Latin, Hebrew, Cyrillic, Chinese and more.")
 @ExternalDocumentation({ @DocumentationLink(title = "Internationalization in DataCleaner",
         url = "https://www.youtube.com/watch?v=ApA-nhtLbhI", type = DocumentationType.VIDEO, version = "3.0") })
 @Concurrent(true)

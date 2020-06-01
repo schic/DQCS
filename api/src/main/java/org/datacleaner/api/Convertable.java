@@ -28,7 +28,6 @@ import java.lang.annotation.Target;
 /**
  * Annotation used to specify a {@link Converter} of a specific type or a
  * specific {@link Configured} property.
- * 用于指定特定类型的{@link Converter}或特定的{@link Configured}属性的注释。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE, ElementType.FIELD })

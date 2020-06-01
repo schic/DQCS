@@ -85,7 +85,6 @@ public class ImageLoadingResourceBundleTest {
         // Only using concrete class directly so static analysis knows that it is being used.
         final ResourceBundle resourceBundle =
                 ModelResourceBundle.getBundle("org.datacleaner.branding.ModelResourceBundle");
-        System.out.println(resourceBundle.getString("model.progress_information"));
         assertTrue(resourceBundle.getObject("model.progress_information") instanceof Image);
     }
 }

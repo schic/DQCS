@@ -21,7 +21,7 @@ package org.datacleaner.beans.filter;
 
 /**
  * A simple category for filters that categorize rows as either valid or invalid
- *用于将行分类为有效或无效的过滤器的简单类别
+ *
  *
  */
 public enum ValidationCategory {

@@ -67,9 +67,10 @@ import org.datacleaner.output.csv.CsvOutputWriterFactory;
 import org.datacleaner.output.excel.ExcelOutputWriterFactory;
 import org.datacleaner.util.sort.SortMergeWriter;
 
-@Named("CreateExcelSpreadsheetAnalyzer.name")
+@Named("Create Excel spreadsheet")
 @Alias("Write to Excel spreadsheet")
-@Description("CreateExcelSpreadsheetAnalyzer.Description")
+@Description(
+        "Write data to an Excel spreadsheet, useful for manually editing and inspecting the data in Microsoft Excel.")
 @Categorized(superCategory = WriteSuperCategory.class)
 @Distributed(false)
 public class CreateExcelSpreadsheetAnalyzer extends AbstractOutputWriterAnalyzer implements HasLabelAdvice {

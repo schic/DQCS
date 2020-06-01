@@ -30,7 +30,6 @@ import org.datacleaner.util.WidgetUtils;
 
 /***
  * A {@link ButtonUI} for default buttons in the DataCleaner user interface.
- * {@link ButtonUI}用于DataCleaner用户界面中的默认按钮。
  */
 public class DefaultButtonUI extends MetalButtonUI {
 

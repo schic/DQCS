@@ -32,9 +32,7 @@ import org.datacleaner.util.ReflectionUtils;
  * Abstract implementation of {@link PropertyDescriptor}. Convenient when
  * implementing sub-interfaces such as {@link ConfiguredPropertyDescriptor} and
  * {@link ProvidedPropertyDescriptor}.
- *{@link PropertyDescriptor}的抽象实现。
- * 实现诸如{@link ConfiguredPropertyDescriptor}和*
- * {@link ProvidedPropertyDescriptor}之类的子接口时很方便。
+ *
  *
  */
 public abstract class AbstractPropertyDescriptor implements PropertyDescriptor {

@@ -28,7 +28,7 @@ import org.datacleaner.components.convert.ConvertToNumberTransformer;
 
 /**
  * Static utility class to convert a value from class Object to the type of a {@link Column} if possible.
- * 静态实用程序类，用于在可能的情况下将Object类中的值转换为{@link Column}的类型。
+ *
  */
 class TypeConverter {
 

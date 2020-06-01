@@ -23,7 +23,6 @@ import java.util.List;
 
 /**
  * Defines methods for objects that contain {@link MetadataAnnotation}s.
- * 为包含{@link MetadataAnnotation}的对象定义方法。
  */
 public interface HasMetadataAnnotations {
 

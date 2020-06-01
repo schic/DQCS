@@ -25,7 +25,6 @@ import org.datacleaner.widgets.visualization.JobGraphContext;
 /**
  * Default implementation of {@link RenameComponentActionListener} which simply
  * refreshes the graph when a name has changed.
- * {@link RenameComponentActionListener}的默认实现简单地在更改名称后刷新图。
  */
 public final class DefaultRenameComponentActionListener extends RenameComponentActionListener {
 

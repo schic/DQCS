@@ -29,8 +29,6 @@ import org.datacleaner.job.FilterOutcomes;
  * Delegate execution object for {@link ConsumeRowHandler}. Contains state
  * particular to processing of a single consumer in the chain, and also handles
  * recursive logic coming from {@link RowProcessingChain} callbacks.
- * 委托{@link ConsumeRowHandler}的执行对象。
- * 包含状态特定于处理链中单个使用者的状态，并且还处理来自{@link RowProcessingChain}回调的递归逻辑。
  */
 final class ConsumeRowHandlerDelegate implements RowProcessingChain {
 

@@ -23,13 +23,10 @@ import java.util.Comparator;
 
 /**
  * Compares the versions of DataCleaner to determine the latest.
- * 比较DataCleaner的版本以确定最新版本。
  *
  * Versions are Strings in format: X.Y.Z or X.Y.Z-SNAPSHOT. The comparator
  * expects only correct inputs, the values should be validated before passing it
  * to the comparator otherwise it will crash.
- * 版本是字符串，格式为：X.Y.Z或X.Y.Z-SNAPSHOT。
- * 比较器仅期望正确的输入，应在将值传递给比较器之前验证值否则它将崩溃。
  */
 public class VersionComparator implements Comparator<String> {
 

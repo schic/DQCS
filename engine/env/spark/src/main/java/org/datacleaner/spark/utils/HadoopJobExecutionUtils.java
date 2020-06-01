@@ -54,7 +54,7 @@ import com.google.common.collect.Iterators;
 
 /**
  * Utility class for creating a job that runs on Hadoop with Spark.
- * 用于创建在Spark上的Hadoop上运行的作业的实用程序类。
+ *
  */
 public class HadoopJobExecutionUtils {
 

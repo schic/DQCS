@@ -24,7 +24,6 @@ import org.datacleaner.job.runner.AnalysisResultFuture;
 
 /**
  * Defines an interface for a cluster and it's management.
- * 为集群及其管理定义接口。
  */
 public interface ClusterManager {
 

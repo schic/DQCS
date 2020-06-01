@@ -29,7 +29,6 @@ import org.eobjects.metamodel.deebase.DbaseDataContext;
 
 /**
  * Datastore implementation for dBase databases.
- * dBase数据库的数据存储实现。
  */
 public final class DbaseDatastore extends UsageAwareDatastore<DataContext> implements FileDatastore {
 

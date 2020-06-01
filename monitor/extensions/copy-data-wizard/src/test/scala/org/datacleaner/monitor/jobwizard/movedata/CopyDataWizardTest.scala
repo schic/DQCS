@@ -1,6 +1,5 @@
 package org.datacleaner.monitor.jobwizard.movedata
 import scala.collection.JavaConversions._
-
 import org.easymock.EasyMock
 import org.datacleaner.configuration.DataCleanerConfigurationImpl
 import org.datacleaner.connection.DatastoreCatalogImpl
@@ -9,9 +8,9 @@ import org.datacleaner.monitor.configuration.TenantContext
 import org.datacleaner.monitor.server.JobWizardContextImpl
 import org.junit.Assert._
 import org.junit.Test
-import org.scalatest.junit.AssertionsForJUnit
+import org.scalatestplus.junit.JUnitSuite
 
-class CopyDataWizardTest extends AssertionsForJUnit {
+class CopyDataWizardTest extends JUnitSuite {
 
   @Test
   def testScenario(): Unit = {

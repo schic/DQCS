@@ -44,7 +44,6 @@ import org.datacleaner.util.StringUtils;
 /**
  * The simplest implementation of {@link SynonymCatalog}. Based on an in-memory
  * {@link Map} of values.
- * {@link SynonymCatalog}的最简单实现。基于内存中的{@link Map}值。
  */
 public final class SimpleSynonymCatalog extends AbstractReferenceData implements SynonymCatalog {
 

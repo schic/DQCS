@@ -37,7 +37,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Default bootstrap options for DataCleaner.
- * DataCleaner的默认引导程序选项。
  */
 public class DefaultBootstrapOptions implements BootstrapOptions {
 

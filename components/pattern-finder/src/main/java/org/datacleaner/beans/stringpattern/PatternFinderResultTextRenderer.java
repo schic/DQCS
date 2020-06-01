@@ -31,7 +31,7 @@ import org.datacleaner.result.renderer.TextRenderingFormat;
 
 /**
  * Text renderer for {@link PatternFinderResult}s
- * {@link PatternFinderResult}s的文本渲染器
+ *
  *
  */
 @RendererBean(TextRenderingFormat.class)

@@ -21,7 +21,6 @@ package org.datacleaner.connection;
 
 /**
  * Simple implementation of the performance characteristics interface.
- * 性能特征接口的简单实现。
  */
 public final class PerformanceCharacteristicsImpl implements PerformanceCharacteristics {
 

@@ -19,8 +19,6 @@
  */
 package org.datacleaner.job;
 
-//import org.datacleaner.job.jaxb.JobMetadataType;
-
 import org.datacleaner.job.jaxb.JobMetadataType;
 
 /**

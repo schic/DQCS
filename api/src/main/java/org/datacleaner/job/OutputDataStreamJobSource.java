@@ -21,7 +21,6 @@ package org.datacleaner.job;
 
 /**
  * Represents a source of {@link OutputDataStreamJob}s.
- * 表示{@link OutputDataStreamJob}的来源。
  */
 public interface OutputDataStreamJobSource {
 

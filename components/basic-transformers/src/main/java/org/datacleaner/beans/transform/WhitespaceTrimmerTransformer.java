@@ -31,8 +31,8 @@ import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.TextCategory;
 import org.datacleaner.util.StringUtils;
 
-@Named("WhitespaceTrimmerTransformer.name")
-@Description("WhitespaceTrimmerTransformer.Description")
+@Named("Whitespace trimmer")
+@Description("Trims your String values either on left, right or both sides.")
 @Categorized(TextCategory.class)
 public class WhitespaceTrimmerTransformer implements Transformer {
 

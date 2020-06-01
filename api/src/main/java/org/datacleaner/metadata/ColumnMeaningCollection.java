@@ -24,7 +24,6 @@ import java.util.stream.Collectors;
 
 /**
  * A collection of {@link HasColumnMeaning} items.
- * {@link HasColumnMeaning}项的集合。
  */
 public interface ColumnMeaningCollection {
     /**

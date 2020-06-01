@@ -21,7 +21,6 @@ package org.datacleaner.connection;
 
 /**
  * Interface for datastores that are based upon a identifyable username.
- * 基于可识别用户名的数据存储的界面。
  */
 public interface UsernameDatastore extends Datastore {
 

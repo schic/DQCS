@@ -49,7 +49,7 @@ import com.sleepycat.je.EnvironmentConfig;
 
 /**
  * Berkeley DB based implementation of the {@link StorageProvider} interface.
- * {@link StorageProvider}接口的基于Berkeley DB的实现。
+ *
  *
  */
 public final class BerkeleyDbStorageProvider implements StorageProvider {

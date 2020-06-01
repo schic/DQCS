@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Minimalistic abstract implementation of the {@link PropertyWidget} interface.
- * {@link PropertyWidget}接口的简约抽象实现
+ *
  * @param <E>
  */
 public abstract class MinimalPropertyWidget<E> implements PropertyWidget<E> {

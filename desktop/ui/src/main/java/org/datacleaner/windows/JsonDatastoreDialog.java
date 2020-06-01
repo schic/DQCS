@@ -34,7 +34,6 @@ import org.datacleaner.widgets.ResourceSelector;
 
 /**
  * Dialog for {@link JsonDatastore}s
- * {@link JsonDatastore}的对话框
  */
 public final class JsonDatastoreDialog extends AbstractResourceBasedDatastoreDialog<JsonDatastore> {
 

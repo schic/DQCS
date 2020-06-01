@@ -52,7 +52,6 @@ import com.google.inject.Injector;
 
 /**
  * Provides an action for the user to save a table as a CSV file
- * 为用户提供将表格另存为CSV文件的操作
  */
 public final class SaveTableAsCsvFileActionListener implements ActionListener {
 

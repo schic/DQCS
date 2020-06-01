@@ -42,7 +42,6 @@ import org.datacleaner.util.convert.ResourceConverter.ResourceTypeHandler;
 
 /**
  * A widget which allows the user to select/enter a {@link Resource} to use for some file-like operation.
- * 一个小部件，允许用户选择/输入{@link Resource}以用于类似文件的操作。
  */
 public class ResourceSelector extends DCPanel implements ResourceTypePresenter<Resource> {
     private static final long serialVersionUID = 1L;

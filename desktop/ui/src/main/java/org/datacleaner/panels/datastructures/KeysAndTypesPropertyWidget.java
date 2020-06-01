@@ -44,7 +44,6 @@ import org.jdesktop.swingx.JXTextField;
 /**
  * Specialized {@link PropertyWidget} for the key/type mapping of
  * {@link SelectFromMapTransformer}.
- * 专用于{@link SelectFromMapTransformer}的键/类型映射的{@link PropertyWidget}。
  */
 public class KeysAndTypesPropertyWidget extends MultipleStringPropertyWidget {
 

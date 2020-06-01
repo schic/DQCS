@@ -19,6 +19,5 @@
  */
 /**
  * Components for referential integrity checking.
- * 参照完整性检查的组件。
  */
 package org.datacleaner.beans.referentialintegrity;

@@ -36,7 +36,7 @@ import org.joda.time.Years;
 
 /**
  * A transformer for turning a date into age (both in years and in days).
- *用于将日期转换为年龄（以年和天为单位）的转换器。
+ *
  * The transformer and it's intended usage is depicted in this graph:
  *
  * <img src="doc-files/DateToAgeTransformer.jpg" alt=""/>
@@ -48,8 +48,8 @@ import org.joda.time.Years;
  * >Developing a value transformer</a>.
  * </p>
  */
-@Named("DateToAgeTransformer.name")
-@Description("DateToAgeTransformer.Description")
+@Named("Date to age")
+@Description("Turn a Date-column into columns of age (both in years and in days).")
 @Categorized(DateAndTimeCategory.class)
 public class DateToAgeTransformer implements Transformer {
 

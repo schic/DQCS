@@ -25,7 +25,6 @@ import java.util.List;
 /**
  * Represents a pattern of token symbols that are matchable against a series of
  * concrete tokens.
- * 表示可与一系列具体令牌匹配的令牌符号模式。
  */
 public interface TokenPattern extends Serializable {
 

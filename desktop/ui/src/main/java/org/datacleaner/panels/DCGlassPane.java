@@ -34,7 +34,6 @@ import org.datacleaner.util.WidgetUtils;
 
 /**
  * Encapsulated Swing glass pane, ensures correct access to it.
- * 密封的Swing玻璃窗格可确保正确访问它。
  */
 public class DCGlassPane {
     private final JRootPane _rootPane;

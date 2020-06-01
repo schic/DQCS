@@ -23,8 +23,6 @@ package org.datacleaner.job;
 /**
  * Interface for RowProcessingConsumers to add outcomes to and for others to
  * detect the {@link FilterOutcome} state of a record.
- * RowProcessingConsumers的接口，用于向其他人添加结果，
- * 或用于其他人检测记录的{@link FilterOutcome}状态。
  */
 public interface FilterOutcomes extends Cloneable {
 

@@ -32,9 +32,10 @@ import org.datacleaner.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("IpToNumberConverter.name")
+@Named("Convert IP to number")
 @Categorized(NetworkToolsCategory.class)
-@Description("IpToNumberConverter.Description")
+@Description(
+        "Converts an IPv4 string to a number value, which makes it appropriate for eg. persisting in a number column.")
 public class IpToNumberConverter implements Transformer {
     private static final Logger logger = LoggerFactory.getLogger(IpToNumberConverter.class);
 

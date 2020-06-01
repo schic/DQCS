@@ -37,8 +37,6 @@ import org.datacleaner.util.LabelUtils;
  * Object capable of building a menu for changing a component's scope - aka
  * which {@link AnalysisJobBuilder} it belongs to (defined by whether it is
  * applied to a source data stream or an {@link OutputDataStream}).
- * 能够构建用于更改组件范围的菜单的对象-aka 所属的{@link AnalysisJobBuilder}
- * （由应用于源数据流还是{@link OutputDataStream}定义）。
  */
 public class ComponentScopeMenuBuilder {
 

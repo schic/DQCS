@@ -38,8 +38,7 @@ import org.slf4j.LoggerFactory;
  * A factory that can resolve the best suited {@link Renderer} for a particular
  * {@link Renderable}. The resolving mechanism inspects the available renderers
  * in the {@link DescriptorProvider}.
- * 可以为特定的{{link Renderable}解决最合适的{@link Renderer}的工厂。
- * 解析机制检查{@link DescriptorProvider}中可用的渲染器。
+ *
  *
  */
 public final class RendererFactory {

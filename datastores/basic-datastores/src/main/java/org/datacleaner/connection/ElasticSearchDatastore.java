@@ -39,7 +39,6 @@ import com.google.common.base.Strings;
 
 /**
  * Datastore providing access to an ElasticSearch index.
- * 提供对ElasticSearch索引的访问的数据存储。
  */
 public class ElasticSearchDatastore extends UsageAwareDatastore<UpdateableDataContext> implements UpdateableDatastore {
 

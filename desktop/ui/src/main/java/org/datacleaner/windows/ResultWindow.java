@@ -101,7 +101,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Window in which the result (and running progress information) of job
  * execution is shown.
- * 显示作业执行的结果（和运行进度信息）的窗口。
  */
 public final class ResultWindow extends AbstractWindow implements WindowListener {
     public static final List<Function<ResultWindow, JComponent>> PLUGGABLE_BANNER_COMPONENTS = new ArrayList<>(0);

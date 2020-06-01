@@ -54,9 +54,6 @@ import com.google.inject.Injector;
  * properties. A widget wanting to represent a component with @Configured
  * properties should keep it's reference to the property widget factory and use
  * it to retrieve the properties in case of listener callbacks.
- * 表示用于@Configured 属性的窗口小部件的工厂和目录。
- * 想要表示具有@Configured属性的组件的窗口小部件应保留其对属性窗口小部件工厂的引用，
- * 并在监听器回调的情况下使用来检索属性。
  */
 public final class PropertyWidgetFactoryImpl implements PropertyWidgetFactory {
 

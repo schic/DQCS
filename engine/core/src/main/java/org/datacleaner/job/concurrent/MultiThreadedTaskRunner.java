@@ -36,7 +36,6 @@ import org.slf4j.LoggerFactory;
  * The preferred {@link TaskRunner} implementation based on the
  * java.util.concurrent package (specifically the {@link ExecutorService}
  * class).
- * 基于java.util.concurrent包（特别是{@link ExecutorService}类）的首选{@link TaskRunner}实现。
  */
 public final class MultiThreadedTaskRunner implements ScheduledTaskRunner {
 

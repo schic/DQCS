@@ -53,7 +53,6 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  * A dialog which gives the user the ability to create a table in a datastore.
- * 一个对话框，使用户能够在数据存储区中创建表。
  */
 public class CreateTableDialog extends AbstractDialog {
 

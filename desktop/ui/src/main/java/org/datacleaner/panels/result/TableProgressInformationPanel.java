@@ -43,7 +43,6 @@ import org.datacleaner.widgets.DCProgressBar;
 
 /**
  * A panel that shows progress information about the processing of a table
- * 一个面板，显示有关表处理的进度信息
  */
 public class TableProgressInformationPanel extends DCPanel {
 

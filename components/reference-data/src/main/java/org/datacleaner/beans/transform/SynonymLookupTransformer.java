@@ -51,11 +51,10 @@ import com.google.common.base.Joiner;
 /**
  * A simple transformer that uses a synonym catalog to replace a synonym with
  * it's master term.
- * 一个简单的转换器，使用同义词目录将同义词替换为其主要术语。
  */
-@Named("SynonymLookupTransformer.name")
+@Named("Synonym lookup")
 @Alias("Synonym replacement")
-@Description("SynonymLookupTransformer.Description")
+@Description("Replaces strings with their synonyms")
 @ExternalDocumentation({ @DocumentationLink(title = "Segmenting customers on messy data",
         url = "https://www.youtube.com/watch?v=iy-j5s-uHz4", type = DocumentationType.VIDEO, version = "4.0"),
         @DocumentationLink(title = "Understanding and using Synonyms",

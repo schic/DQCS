@@ -43,9 +43,9 @@ import org.datacleaner.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("GroovySimpleTransformer.name")
+@Named("Groovy transformer (simple)")
 @Categorized(ScriptingCategory.class)
-@Description("GroovySimpleTransformer.Description")
+@Description("Perform a data transformation with the use of the Groovy language.")
 public class GroovySimpleTransformer implements Transformer {
 
     private static final Logger logger = LoggerFactory.getLogger(GroovySimpleTransformer.class);

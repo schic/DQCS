@@ -41,8 +41,8 @@ import org.datacleaner.api.Provided;
 import org.datacleaner.storage.RowAnnotationFactory;
 import org.datacleaner.util.LabelUtils;
 
-@Named("FillPatternAnalyzer.name")
-@Description("FillPatternAnalyzer.Description")
+@Named("Fill pattern")
+@Description("Determines the patterns of filling specific fields")
 public class FillPatternAnalyzer implements Analyzer<FillPatternResult> {
 
     private static final String GROUP_NAME_SINGLE = "__single_group__";

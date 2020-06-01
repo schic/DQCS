@@ -27,7 +27,6 @@ import org.datacleaner.job.OutputDataStreamJob;
 
 /**
  * Represents a stream of data that is being processed by DataCleaner.
- * 表示由DataCleaner处理的数据流。
  */
 public class RowProcessingStream {
 

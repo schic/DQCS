@@ -37,7 +37,6 @@ import org.datacleaner.api.Transformer;
 /**
  * DescriptorProvider that provides a composite view of descriptors from a list
  * of delegate providers.
- * DescriptorProvider，它提供来自委托提供者列表的描述符的复合视图。
  */
 public class CompositeDescriptorProvider implements DescriptorProvider {
 

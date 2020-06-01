@@ -49,7 +49,6 @@ import org.slf4j.LoggerFactory;
 /**
  * An extension of JTable that provides a styling consistent with DataCleaner
  * GUI and some functional improvements like right-click menu's etc.
- * JTable的扩展，提供与DataCleaner GUI一致的样式以及一些功能改进，例如右键单击菜单等。
  */
 public class DCTable extends DCBaseTable implements MouseListener {
 

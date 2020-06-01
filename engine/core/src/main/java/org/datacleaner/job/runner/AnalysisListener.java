@@ -31,8 +31,7 @@ import org.datacleaner.job.ComponentJob;
  * maybe also system services would implement this interface to be able to react
  * to progress notifications or errors occurring in the execution of the
  * analysis.
- *用于执行分析的侦听器接口。通常，用户界面以及也许还有系统服务都将实现此界面，
- * 以便能够对进度通知或分析执行中发生的错误做出反应。
+ *
  *
  */
 public interface AnalysisListener {

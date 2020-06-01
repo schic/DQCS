@@ -42,8 +42,6 @@ import com.google.common.base.Strings;
  * Generic {@link ResourceTypePresenter} that uses a simple text field to
  * represent any {@link Resource} as per it's {@link ResourceTypeHandler}'s
  * capability to create and parse paths.
- * 通用的{@link ResourceTypePresenter}使用一个简单的文本字段来表示任何{@link Resource}，
- * 这取决于其{@link ResourceTypeHandler}创建和解析路径的功能。
  */
 public class TextFieldResourceTypePresenter implements ResourceTypePresenter<Resource> {
 

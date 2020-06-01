@@ -22,7 +22,7 @@ package org.datacleaner.job;
 /**
  * Exception thrown in case a job is being opened and it references an
  * unexisting datastore.
- * 如果作业正在打开并且引用了不存在的数据存储区，则引发异常。
+ *
  *
  */
 public class NoSuchDatastoreException extends RuntimeException {

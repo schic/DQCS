@@ -27,7 +27,7 @@ import org.datacleaner.util.HasAliases;
 /**
  * Descriptor for user-configured properties. Typically such properties are
  * registered using the {@link Configured} annotation.
- *用户配置属性的描述符。通常，这些属性是使用{@link Configured}注释注册的。
+ *
  * @see Configured
  *
  *

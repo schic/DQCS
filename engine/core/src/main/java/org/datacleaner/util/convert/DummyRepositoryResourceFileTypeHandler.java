@@ -31,9 +31,6 @@ import org.datacleaner.util.convert.ResourceConverter.ResourceTypeHandler;
  * {@link InMemoryResource}s for these requests. While this may cause data to be
  * missing from these resources, it does cover the basic scenarios of being able
  * to load jobs etc.
- * 一个{@link ResourceTypeHandler}，它使用由DataCleaner监视器生成的“回购”方案来处理资源。
- * 由于桌面客户端未连接到监视器存储库，因此我们将仅为这些请求提供空的{@link InMemoryResource}。
- * 虽然这可能会导致这些资源中的数据丢失，但它确实涵盖了能够加载作业等的基本情况。
  */
 public class DummyRepositoryResourceFileTypeHandler implements ResourceTypeHandler<InMemoryResource> {
 

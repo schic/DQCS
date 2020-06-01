@@ -33,7 +33,6 @@ import com.google.common.collect.ImmutableMap;
 
 /**
  * Immutable implementation of {@link AnalysisJobMetadata}.
- * {@link AnalysisJobMetadata}的不变实现。
  */
 public class ImmutableAnalysisJobMetadata extends BaseObject implements AnalysisJobMetadata {
 

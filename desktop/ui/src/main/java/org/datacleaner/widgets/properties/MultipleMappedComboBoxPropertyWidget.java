@@ -44,8 +44,6 @@ import org.datacleaner.widgets.DCGroupComboBox;
 /**
  * A specialized property widget for multiple input columns that are mapped to string values.
  * This widget looks like the {@link MultipleInputColumnsPropertyWidget}, but is enhanced with combo boxes.
- * 一个专用的属性小部件，用于映射到字符串值的多个输入列。
- * 此小部件看起来像{@link MultipleInputColumnsPropertyWidget}，但通过组合框进行了增强。
  */
 public class MultipleMappedComboBoxPropertyWidget extends MultipleInputColumnsPropertyWidget {
 

@@ -28,7 +28,7 @@ import org.datacleaner.api.QueryOptimizedFilter;
 
 /**
  * {@link ComponentDescriptor} interface for {@link Filter}s.
- *{@link Filter}的{@link ComponentDescriptor}接口。
+ *
  * @param <F>
  *            the type of {@link Filter}
  * @param <C>

@@ -27,7 +27,6 @@ import org.datacleaner.api.InputColumn;
 
 /**
  * Result reducer for {@link CharacterSetDistributionResult}s
- * {@link CharacterSetDistributionResult} s的结果归约器
  */
 public class CharacterSetDistributionResultReducer
         extends AbstractCrosstabResultReducer<CharacterSetDistributionResult> {

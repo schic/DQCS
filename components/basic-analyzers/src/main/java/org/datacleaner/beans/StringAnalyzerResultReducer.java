@@ -34,7 +34,6 @@ import org.datacleaner.util.AverageBuilder;
 
 /**
  * Result reducer for {@link StringAnalyzerResult}s
- * {@link StringAnalyzerResult} s的结果归约器
  */
 public class StringAnalyzerResultReducer extends AbstractCrosstabResultReducer<StringAnalyzerResult> {
 

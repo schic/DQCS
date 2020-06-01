@@ -22,7 +22,7 @@ package org.datacleaner.job;
 /**
  * Exception thrown in case a job is being opened and it references an
  * unexisting column in the datastore.
- * 如果作业正在打开，并且引用了数据存储中不存在的列，则会引发异常。
+ *
  *
  */
 public class NoSuchColumnException extends RuntimeException {

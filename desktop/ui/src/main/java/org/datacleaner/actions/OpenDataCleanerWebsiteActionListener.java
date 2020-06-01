@@ -28,7 +28,6 @@ import org.jdesktop.swingx.action.OpenBrowserAction;
 /**
  * ActionListener class for opening up the DataCleaner website in the client
  * computer's browser.
- * 用于在客户端计算机的浏览器中打开DataCleaner网站的ActionListener类。
  */
 public class OpenDataCleanerWebsiteActionListener implements ActionListener {
 

@@ -65,7 +65,7 @@ import com.google.inject.Injector;
 /**
  * Renderer for {@link PatternFinderAnalyzer} results. Displays crosstabs with
  * optional charts displaying the distribution of the patterns.
- * {@link PatternFinderAnalyzer}结果的渲染器。显示带有可选图表的交叉表，这些图表显示模式的分布。
+ *
  * @author Kasper Sørensen
  *
  */

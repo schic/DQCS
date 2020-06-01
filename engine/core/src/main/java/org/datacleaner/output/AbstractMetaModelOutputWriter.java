@@ -33,11 +33,9 @@ import org.slf4j.LoggerFactory;
 /**
  * Abstract {@link OutputWriter} implementation for all
  * {@link UpdateableDataContext}s.
- * 所有{@link UpdateableDataContext}的抽象{@link OutputWriter}实现。
  *
  * This implementation holds a buffer of records to write, to avoid hitting the
  * executeUpdate() method for every single record.
- * 此实现保留要写入的记录的缓冲区，以避免为每条记录都击中executeUpdate（）方法。
  */
 public abstract class AbstractMetaModelOutputWriter implements OutputWriter {
 

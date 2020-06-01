@@ -26,7 +26,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Represents a Runnable wrapper for a task. A task might have also a listener
  * which will be invoked based on the outcome of the task.
- * 表示任务的可运行包装器。一个任务可能还会有一个侦听器，它将根据任务的结果被调用。
  */
 public final class TaskRunnable implements Runnable {
 

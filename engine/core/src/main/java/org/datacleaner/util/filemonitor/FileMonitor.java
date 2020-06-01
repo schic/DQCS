@@ -24,7 +24,6 @@ import java.nio.file.WatchService;
 /**
  * A monitoring mechanism for file change events. Typically used by file-based
  * reference data to monitor changes to the reference data files.
- * 文件更改事件的监视机制。通常由基于文件的参考数据用于监视对参考数据文件的更改。
  *
  * @deprecated as of Java 7 the preferred way to monitor files is to use
  *             {@link WatchService}.

@@ -50,9 +50,6 @@ import org.slf4j.LoggerFactory;
  * physical columns. This widget looks like the
  * {@link MultipleInputColumnsPropertyWidget}, but is enhanced with source
  * column combo boxes and awareness of changes to selected table.
- * 一个专用的属性小部件，用于映射到物理列的多个输入列。
- * 该小部件看起来像{@link MultipleInputColumnsPropertyWidget}，
- * 但是通过源列组合框和对选定表的更改的感知得到了增强。
  */
 public class MultipleMappedColumnsPropertyWidget extends MultipleInputColumnsPropertyWidget {
 

@@ -29,7 +29,6 @@ import com.google.common.base.Strings;
 
 /**
  * Determines and exposes the version of DataCleaner.
- * 确定并公开DataCleaner的版本。
  */
 public class Version {
 

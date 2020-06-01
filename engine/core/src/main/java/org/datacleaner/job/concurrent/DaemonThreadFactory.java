@@ -27,8 +27,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * This is a copy of the {@link Executors#defaultThreadFactory()} thread
  * factory, except that it uses different thread naming and thread daemon
  * settings.
- *这是{@link Executors＃defaultThreadFactory（）}线程工厂的副本，
- * 但它使用了不同的线程命名和线程守护程序设置。
+ *
  *
  */
 public class DaemonThreadFactory implements ThreadFactory {

@@ -27,7 +27,6 @@ import org.datacleaner.job.OutputDataStreamJob;
 /**
  * Represents a lazily evaluated {@link OutputDataStreamJob} which is still
  * being built.
- * 表示一个仍在构建中的惰性计算的{@link OutputDataStreamJob}。
  */
 public class LazyOutputDataStreamJob implements OutputDataStreamJob {
 

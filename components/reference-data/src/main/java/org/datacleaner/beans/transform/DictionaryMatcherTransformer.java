@@ -38,8 +38,9 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.reference.Dictionary;
 import org.datacleaner.reference.DictionaryConnection;
 
-@Named("DictionaryMatcherTransformer.name")
-@Description("DictionaryMatcherTransformer.Description")
+@Named("Dictionary matcher")
+@Description("Matches string values against a set of dictionaries, producing a corresponding set of output columns "
+        + "specifying whether or not the values exist in those dictionaries")
 @Categorized(superCategory = ImproveSuperCategory.class, value = ReferenceDataCategory.class)
 public class DictionaryMatcherTransformer implements Transformer {
 

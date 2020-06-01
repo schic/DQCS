@@ -25,7 +25,6 @@ import javax.swing.Icon;
 
 /**
  * Object responsible for retrieving icons for a file or folder.
- * 负责检索文件或文件夹图标的对象。
  *
  * @author Kasper Sørensen
  */

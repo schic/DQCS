@@ -30,7 +30,6 @@ import org.datacleaner.connection.SalesforceDatastore;
 /**
  * Contains information about the initial configuration with demo datastores,
  * jobs etc.
- * 包含有关带有演示数据存储，作业等的初始配置的信息。
  */
 public class DemoConfiguration implements InitialConfiguration {
 

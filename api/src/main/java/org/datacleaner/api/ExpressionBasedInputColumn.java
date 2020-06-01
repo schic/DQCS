@@ -23,7 +23,6 @@ package org.datacleaner.api;
  * Interface for input columns that contain an expression that is evaluated when
  * the a value is extracted from the row, as opposed to being written to the row
  * in advance.
- * 输入列的接口，其中包含一个表达式，该表达式在从该行中提取一个值时进行评估，而不是预先写入该行中。
  *
  * @param <E>
  */

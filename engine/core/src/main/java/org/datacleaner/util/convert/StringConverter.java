@@ -37,7 +37,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Helper class for converting objects to and from string representations as
  * used for example in serialized XML jobs.
- * 用于将对象与字符串表示形式进行来回转换的Helper类，例如用于序列化XML作业中的。
  *
  * The string converter currently supports instances and arrays of:
  * <ul>

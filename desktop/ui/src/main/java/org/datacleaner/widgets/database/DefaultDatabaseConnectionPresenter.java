@@ -42,7 +42,6 @@ import org.jdesktop.swingx.JXTextField;
 /**
  * Default implementation of {@link DatabaseConnectionPresenter}, which simply
  * presents each field as a text box.
- * {@link DatabaseConnectionPresenter}的默认实现，它简单地将每个字段显示为文本框。
  */
 public class DefaultDatabaseConnectionPresenter extends AbstractDatabaseConnectionPresenter {
 

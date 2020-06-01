@@ -42,11 +42,9 @@ import org.datacleaner.util.LookAndFeelManager;
 
 /**
  * A toggle button that when selected shows a popup menu.
- * 一个切换按钮，选中后会显示一个弹出菜单。
  *
  * To use this button, access the popup menu via {@link #getMenu()} and add
  * items to it.
- * 要使用此按钮，请通过{@link #getMenu（）}访问弹出菜单，并在其中添加项。
  */
 public class PopupButton extends JToggleButton {
 

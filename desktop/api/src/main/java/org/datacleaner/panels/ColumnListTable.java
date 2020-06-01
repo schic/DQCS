@@ -47,14 +47,17 @@ import org.datacleaner.api.InputColumn;
 import org.datacleaner.bootstrap.WindowContext;
 import org.datacleaner.data.MutableInputColumn;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
-import org.datacleaner.util.*;
+import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.LabelUtils;
+import org.datacleaner.util.WidgetFactory;
+import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.table.DCTable;
 import org.jdesktop.swingx.table.TableColumnExt;
 
 /**
  * Panel that displays columns in a table-layout. Used for both the "Source" tab
  * and for transformer panels in DataCleaner desktop application.
- * 在表格布局中显示列的面板。用于“源”选项卡和DataCleaner桌面应用程序中的转换器面板。
  */
 public final class ColumnListTable extends DCPanel {
 
@@ -138,7 +141,7 @@ public final class ColumnListTable extends DCPanel {
 
             if (_editable) {
                 final JButton removeButton = WidgetFactory.createSmallButton(IconUtils.ACTION_REMOVE_DARK);
-                removeButton.setToolTipText(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.table"));
+                removeButton.setToolTipText("Remove table from source");
                 removeButton.addActionListener(e -> _analysisJobBuilder.removeSourceTable(_table));
                 headerPanel.add(Box.createHorizontalStrut(4));
                 headerPanel.add(removeButton);

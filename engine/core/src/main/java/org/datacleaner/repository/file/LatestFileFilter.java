@@ -25,7 +25,6 @@ import java.io.FileFilter;
 /**
  * A file filter decoration used to find the latest of all files that pass
  * through another {@link FileFilter}.
- * 一种文件过滤器修饰，用于查找通过另一个{@link FileFilter}传递的所有文件中的最新文件。
  */
 public class LatestFileFilter implements FileFilter {
 

@@ -28,12 +28,10 @@ import java.lang.annotation.Target;
 /**
  * Annotation used to specify optional alias(es) for a component, a
  * {@link Configured} property or a {@link Metric} method.
- * 用于为组件，{@link Configured}属性或{@link Metric}方法指定可选别名的注释。
  *
  * Aliases can be used as a way of providing backwards compatibility to
  * components or properties that are renamed (by specifying the old name as an
  * alias).
- * 别名可以用作向被重命名的组件或属性提供向后兼容性的方式（通过将旧名称指定为别名）。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD, ElementType.METHOD, ElementType.TYPE })

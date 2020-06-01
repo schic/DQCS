@@ -29,7 +29,6 @@ import org.datacleaner.api.Close;
  * Descriptor for a close method. The most common way of registering a close
  * method is by using the @Close annotation or by implementing the Closeable
  * interface.
- * 封闭方法的描述符。注册close方法的最常见方法是使用@Close批注或实现Closeable接口。
  *
  * @see Close
  *

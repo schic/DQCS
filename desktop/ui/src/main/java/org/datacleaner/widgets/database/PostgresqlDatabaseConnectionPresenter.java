@@ -21,8 +21,6 @@ package org.datacleaner.widgets.database;
 
 /**
  * {@link DatabaseConnectionPresenter} for PostgreSQL database connections
- * {@link DatabaseConnectionPresenter}用于PostgreSQL数据库连接
- *
  */
 public class PostgresqlDatabaseConnectionPresenter extends UrlTemplateDatabaseConnectionPresenter {
 

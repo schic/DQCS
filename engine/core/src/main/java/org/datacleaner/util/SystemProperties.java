@@ -26,7 +26,6 @@ import com.google.common.base.Strings;
 /**
  * Represents commonly referenced system properties which DataCleaner makes use
  * of.
- * 表示DataCleaner使用的常用参考系统属性。
  */
 public class SystemProperties {
 

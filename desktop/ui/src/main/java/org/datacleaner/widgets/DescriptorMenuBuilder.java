@@ -48,8 +48,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Builder object that can build menus with {@link ComponentDescriptor} items in
  * it. Click a {@link ComponentDescriptor} will add it to the job
- * 可以构建带有@中的{@link ComponentDescriptor}项的菜单的Builder对象。
- * 单击{@link ComponentDescriptor}会将其添加到作业中
  */
 public final class DescriptorMenuBuilder {
 
@@ -150,7 +148,6 @@ public final class DescriptorMenuBuilder {
                 logger.info("Disregarding menu for category '{}' because of no components", category);
                 categories.remove(category);
             } else {
-                //callback.addCategory();
                 callback.addCategory(category);
             }
         }

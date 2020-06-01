@@ -35,7 +35,6 @@ import org.slf4j.LoggerFactory;
 /**
  * A catalog of metadata about database drivers and their current installation
  * status.
- * 有关数据库驱动程序及其当前安装状态的元数据目录。
  */
 @Singleton
 public class DatabaseDriverCatalog implements Serializable {

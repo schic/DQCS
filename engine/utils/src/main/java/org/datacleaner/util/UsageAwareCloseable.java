@@ -33,9 +33,6 @@ import org.slf4j.LoggerFactory;
  * aware of usage/consumption by more than one consumer. Therefore the abstract
  * {@link #closeInternal()} method will only be invoked once, when all usage has
  * stopped.
- * {@link Closeable}的实用程序{@link Closeable}实现，
- * 知道多个用户的使用/消费。因此，当所有用法都已停止时，
- * 抽象的{@link #closeInternal（）}方法将仅被调用一次。
  */
 public abstract class UsageAwareCloseable implements Closeable {
 

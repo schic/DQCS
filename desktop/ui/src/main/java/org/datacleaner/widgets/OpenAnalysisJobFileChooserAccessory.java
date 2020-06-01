@@ -58,7 +58,6 @@ import com.google.inject.Injector;
 /**
  * The FileChooser "accessory" that will display analysis job information when
  * the user selected a job file.
- * 当用户选择作业文件时，FileChooser“附件”将显示分析作业信息。
  */
 public class OpenAnalysisJobFileChooserAccessory extends DCPanel implements PropertyChangeListener {
 

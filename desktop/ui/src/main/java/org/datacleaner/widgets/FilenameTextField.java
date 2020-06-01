@@ -35,13 +35,10 @@ import org.datacleaner.util.WidgetUtils;
 /**
  * A widget for selecting a file(name). It will be represented as a textfield
  * with a browse button.
- * 用于选择文件（名称）的小部件。它将带有浏览按钮表示为文本字段。
  *
  * It is preferred to use this widget's "big brother" implementation,
  * {@link ResourceSelector} which will work with any type of {@link Resource},
  * not just files (e.g. {@link FileResource} and others).
- * 最好使用此小部件的“big brother”实现{@link ResourceSelector}，
- * 它将与任何类型的{@link Resource}一起使用，不仅适用于文件（例如{@link FileResource}等）。
  */
 public final class FilenameTextField extends AbstractResourceTextField<FileResource> {
 

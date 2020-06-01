@@ -32,12 +32,10 @@ import org.datacleaner.panels.ConfiguredPropertyTaskPane;
 import org.datacleaner.panels.FilterComponentBuilderPanel;
 import org.datacleaner.panels.FilterComponentBuilderPresenter;
 import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 
 /**
  * Specialized {@link FilterComponentBuilderPresenter} for the {@link EqualsFilter}.
- * 专用于{@link EqualsFilter}的{@link FilterComponentBuilderPresenter}。
  */
 class EqualsFilterComponentBuilderPresenter extends FilterComponentBuilderPanel {
 
@@ -56,7 +54,7 @@ class EqualsFilterComponentBuilderPresenter extends FilterComponentBuilderPanel 
 
         // create a single task pane
         final List<ConfiguredPropertyTaskPane> result = new ArrayList<>();
-        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.required.properties"), IconUtils.MODEL_COLUMN, configuredProperties));
+        result.add(new ConfiguredPropertyTaskPane("Required properties", IconUtils.MODEL_COLUMN, configuredProperties));
 
         return result;
     }

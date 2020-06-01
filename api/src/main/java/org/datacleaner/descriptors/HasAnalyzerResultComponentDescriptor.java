@@ -24,7 +24,7 @@ import org.datacleaner.api.HasAnalyzerResult;
 
 /**
  * Descriptor interface for components that produce {@link AnalyzerResult}s.
- *产生{@link AnalyzerResult}的组件的描述符接口。
+ *
  * @param <B>
  */
 public interface HasAnalyzerResultComponentDescriptor<B extends HasAnalyzerResult<?>>

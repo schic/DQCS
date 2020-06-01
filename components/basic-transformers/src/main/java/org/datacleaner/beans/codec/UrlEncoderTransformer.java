@@ -35,8 +35,8 @@ import org.datacleaner.data.MockInputColumn;
 import com.google.common.escape.Escaper;
 import com.google.common.net.UrlEscapers;
 
-@Named("UrlEncoderTransformer.name")
-@Description("UrlEncoderTransformer.Description")
+@Named("URL encoder")
+@Description("Encodes/escapes a URL or part of a URL")
 @Categorized(EncodingCategory.class)
 public class UrlEncoderTransformer implements Transformer {
 

@@ -27,8 +27,6 @@ import java.util.concurrent.Callable;
  * invocations will be {@link ServiceResult}, which allows for explicit error
  * handling, and for implicit aspects like retrying, pooling/limiting of
  * requests etc.
- * 表示与Web服务交互的会话。服务调用的结果将是{@link ServiceResult}，
- * 它允许显式错误处理，以及隐式方面，例如重试，请求的池化/限制等。
  *
  * @param <R>
  *            the type of result to expect from service invocations in this

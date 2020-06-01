@@ -41,7 +41,6 @@ import org.jdesktop.swingx.JXCollapsiblePane.Direction;
 /**
  * A panel that has a title, a small collapse/expand button and a label, which
  * is used to show/hide a panel underneath it.
- * 具有标题，小折叠/展开按钮和标签的面板，用于显示/隐藏其下方的面板。
  */
 public class DCCollapsiblePanel {
 

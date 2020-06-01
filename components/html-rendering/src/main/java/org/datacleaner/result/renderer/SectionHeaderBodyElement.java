@@ -25,7 +25,6 @@ import org.datacleaner.result.html.HtmlRenderingContext;
 /**
  * A {@link BodyElement} which prints a header. Useful for subdivisioning
  * (sectioning) the result rendering.
- * {@link BodyElement}打印标题。对于细分（剖切）结果渲染很有用。
  */
 public class SectionHeaderBodyElement implements BodyElement {
 

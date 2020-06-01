@@ -26,7 +26,6 @@ import org.apache.hadoop.conf.Configuration;
 
 /**
  * Environment based configuration
- * 基于环境的配置
  */
 public class EnvironmentBasedHadoopClusterInformation extends DirectoryBasedHadoopClusterInformation
         implements HadoopClusterInformation {

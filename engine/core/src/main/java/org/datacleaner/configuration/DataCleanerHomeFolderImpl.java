@@ -29,7 +29,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Default (immutable) implementation of {@link DataCleanerHomeFolder}.
- * {@link DataCleanerHomeFolder}的默认（不可变）实现。
  */
 public class DataCleanerHomeFolderImpl implements DataCleanerHomeFolder {
 

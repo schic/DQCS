@@ -35,9 +35,9 @@ import org.datacleaner.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("ResolveHostnameTransformer.name")
+@Named("Resolve hostname")
 @Categorized(NetworkToolsCategory.class)
-@Description("ResolveHostnameTransformer.Description")
+@Description("Resolves the IP of a hostname")
 public class ResolveHostnameTransformer implements Transformer {
 
     private static final Logger logger = LoggerFactory.getLogger(ResolveHostnameTransformer.class);

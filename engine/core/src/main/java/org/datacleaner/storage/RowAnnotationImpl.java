@@ -29,7 +29,6 @@ import org.datacleaner.util.ReadObjectBuilder;
 /**
  * Simple implementation of the {@link RowAnnotation} interface which allows
  * incrementing row count by a member method.
- * {@link RowAnnotation}接口的简单实现，允许通过成员方法增加行数。
  */
 public final class RowAnnotationImpl implements RowAnnotation {
 

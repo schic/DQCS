@@ -25,12 +25,9 @@ import java.io.Serializable;
  * Represents an annotation (aka a mark, a label or a categorization) of a row.
  * RowAnnotations are used typically by analyzers in order to label rows for
  * later use, typically drill-to-detail functionality.
- * 表示行的注释（又名标记，标签或分类）。
- * 分析器通常使用RowAnnotations来标记行以供以后使用，通常是钻取到细节功能。
  *
  * RowAnnotations are created through the RowAnnotationFactory, which is
  * injectable using the @Provided annotation.
- * RowAnnotations是通过RowAnnotationFactory创建的，该工厂可以使用@Provided注解进行注入。
  *
  * @see RowAnnotationFactory
  */

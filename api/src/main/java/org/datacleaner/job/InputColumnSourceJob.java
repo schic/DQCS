@@ -23,7 +23,7 @@ import org.datacleaner.api.InputColumn;
 
 /**
  * Interface for job objects that generate (virtual) input columns in a job.
- *用于在作业中生成（虚拟）输入列的作业对象的接口。
+ *
  *
  */
 public interface InputColumnSourceJob {

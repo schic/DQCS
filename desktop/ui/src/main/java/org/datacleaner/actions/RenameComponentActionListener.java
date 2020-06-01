@@ -31,7 +31,6 @@ import org.datacleaner.util.LabelUtils;
 /**
  * {@link ActionListener} used when renaming a component, such as an analyzer, a
  * filter or a transformer.
- * 重命名组件（例如分析器，过滤器或转换器）时使用的{@link ActionListener}。
  */
 public abstract class RenameComponentActionListener implements ActionListener {
 

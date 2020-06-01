@@ -26,7 +26,6 @@ import org.datacleaner.util.ImageManager;
 
 /**
  * A toggle button for the visibility of a {@link MutableInputColumn}.
- * 用于切换{@link MutableInputColumn}可见性的切换按钮。
  */
 public class OutputColumnVisibilityButton extends DCCheckBox<MutableInputColumn<?>>
         implements DCCheckBox.Listener<MutableInputColumn<?>> {

@@ -24,7 +24,6 @@ import java.util.Date;
 
 /**
  * Special date value "TODAY()", meaning this day at midnight.
- * 特殊日期值“ TODAY（）”，表示这一天的午夜。
  */
 public class TodayDate extends Date implements ExpressionDate {
 

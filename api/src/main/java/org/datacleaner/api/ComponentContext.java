@@ -28,9 +28,6 @@ import org.datacleaner.job.AnalysisJob;
  * any component ( {@link Transformer}, {@link Analyzer} or {@link Filter}) that
  * provides information and actions that affect the outside environment of the
  * component.
- * 任何提供影响信息和行为的组件（{@link Transformer}，
- * {@ link Analyzer}或{@link Filter}）的可注入
- * （使用{@link Inject}和/或{@link Provided}）上下文对象组件的外部环境。
  */
 public interface ComponentContext {
 

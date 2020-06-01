@@ -63,7 +63,6 @@ import org.joda.time.DateTime;
 
 /**
  * A dialog for browsing the online RegexSwap repository.
- * 浏览在线RegexSwap存储库的对话框。
  */
 public class RegexSwapDialog extends AbstractDialog {
 

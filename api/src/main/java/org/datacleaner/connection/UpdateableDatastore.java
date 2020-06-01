@@ -22,7 +22,6 @@ package org.datacleaner.connection;
 /**
  * Subclass of {@link Datastore}, used to indicate that the DataContext provided
  * is updateable.
- * {@link Datastore}的子类，用于指示提供的DataContext是可更新的。
  */
 public interface UpdateableDatastore extends Datastore {
 

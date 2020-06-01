@@ -38,8 +38,6 @@ import org.datacleaner.job.concurrent.PreviousErrorsExistException;
  * The type of {@link OutputRowCollector} used for {@link OutputDataStreamJob}
  * execution. This instance will eventually be passed into the
  * {@link HasOutputDataStreams#initializeOutputDataStream(OutputDataStream, Query, OutputRowCollector)}
- * 用于执行{@link OutputDataStreamJob}的{@link OutputRowCollector}类型。
- * 该实例最终将传递给{@link HasOutputDataStreams＃initializeOutputDataStream（OutputDataStream，Query，OutputRowCollector）}
  */
 public class OutputDataStreamRowCollector implements OutputRowCollector {
 

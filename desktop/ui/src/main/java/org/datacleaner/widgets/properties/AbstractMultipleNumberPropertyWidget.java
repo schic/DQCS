@@ -45,7 +45,6 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * {@link PropertyWidget} for Number arrays. Displays number arrays as a set of
  * text boxes and plus/minus buttons to grow/shrink the array.
- * {@link PropertyWidget}用于数字数组。将数字数组显示为一组文本框和加/减按钮，以增大/缩小该数组。
  */
 public abstract class AbstractMultipleNumberPropertyWidget<N> extends AbstractPropertyWidget<N> {
 

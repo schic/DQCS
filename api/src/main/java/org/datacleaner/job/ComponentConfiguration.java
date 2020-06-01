@@ -26,7 +26,6 @@ import org.datacleaner.descriptors.ConfiguredPropertyDescriptor;
 /**
  * Represents the configuration (values of all
  * {@link ConfiguredPropertyDescriptor}s) of a component.
- * 表示组件的配置（所有{@link ConfiguredPropertyDescriptor}的值）。
  */
 public interface ComponentConfiguration extends Serializable {
 

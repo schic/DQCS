@@ -23,7 +23,6 @@ import java.util.List;
 
 /**
  * Represents a fragment of HTML to be inserted into a HTML page.
- * 表示要插入HTML页面的HTML片段。
  */
 public interface HtmlFragment {
 

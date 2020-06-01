@@ -35,7 +35,6 @@ import org.datacleaner.job.runner.JobStatus;
 /**
  * An analysis result which is errornous because of a single issue, typically
  * while initializing the job.
- * 由于单个问题而产生错误分析结果，通常是在初始化作业时。
  */
 public class FailedAnalysisResultFuture implements AnalysisResultFuture {
 

@@ -25,7 +25,6 @@ import org.datacleaner.api.Filter;
 
 /**
  * Represents an outcome of a {@link Filter}.
- * 代表{@link Filter}的结果。
  *
  * @see FilterJob
  */

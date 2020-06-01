@@ -39,7 +39,6 @@ import org.datacleaner.panels.DCPanel;
 import org.datacleaner.panels.TransformerComponentBuilderPanel;
 import org.datacleaner.panels.TransformerComponentBuilderPresenter;
 import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.widgets.properties.PropertyWidget;
 import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 import org.datacleaner.widgets.properties.SingleEnumPropertyWidget;
@@ -50,7 +49,7 @@ public class TextCaseTransformerPresenter extends TransformerComponentBuilderPan
     
     private static final long serialVersionUID = 1L;
     
-    private static final String TASK_PANE_TITLE_DICTIONARIES = PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.dictionaries");
+    private static final String TASK_PANE_TITLE_DICTIONARIES = "Dictionaries";
     private final ConfiguredPropertyDescriptor _valueProperty;
     private final ConfiguredPropertyDescriptor _modeProperty;
     private final ConfiguredPropertyDescriptor _allWordsDictionaryProperty;
@@ -81,9 +80,9 @@ public class TextCaseTransformerPresenter extends TransformerComponentBuilderPan
     protected List<ConfiguredPropertyTaskPane> createPropertyTaskPanes() {
         final List<ConfiguredPropertyTaskPane> result = new ArrayList<>();
 
-        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.input.columns"), IconUtils.MODEL_COLUMN,
+        result.add(new ConfiguredPropertyTaskPane("Input columns", IconUtils.MODEL_COLUMN,
                 Collections.singletonList(_valueProperty)));
-        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.required.properties"), IconUtils.MENU_OPTIONS,
+        result.add(new ConfiguredPropertyTaskPane("Required properties", IconUtils.MENU_OPTIONS,
                 Collections.singletonList(_modeProperty)));
         result.add(new ConfiguredPropertyTaskPane(TASK_PANE_TITLE_DICTIONARIES, IconUtils.ACTION_EDIT,
                 Arrays.asList(_allWordsDictionaryProperty, _wordDictionaryProperty, _beginWordDictionaryProperty,

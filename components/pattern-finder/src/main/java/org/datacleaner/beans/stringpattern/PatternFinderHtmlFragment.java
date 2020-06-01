@@ -36,7 +36,6 @@ import org.datacleaner.result.renderer.RendererFactory;
 /**
  * The {@link HtmlFragment} created by a HTML rendering of a
  * {@link PatternFinderResult}
- * 由{{linkPatternFinderResult}的HTML呈现创建的{@link HtmlFragment}
  */
 class PatternFinderHtmlFragment implements HtmlFragment {
 

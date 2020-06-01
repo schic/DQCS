@@ -42,7 +42,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Utility/convenience class for doing simple lifecycle management and/or
  * mimicing the lifecycle of components lifecycle in a job execution.
- * 实用程序/便利类，用于执行简单的生命周期管理和/或模仿作业执行中组件生命周期的生命周期。
  */
 public final class LifeCycleHelper {
 

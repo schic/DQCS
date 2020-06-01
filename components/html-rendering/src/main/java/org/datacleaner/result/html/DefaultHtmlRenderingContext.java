@@ -26,7 +26,6 @@ import org.datacleaner.job.ComponentJob;
 
 /**
  * Default implementation of {@link HtmlRenderingContext}
- * {@link HtmlRenderingContext}的默认实现
  */
 public class DefaultHtmlRenderingContext implements HtmlRenderingContext {
 

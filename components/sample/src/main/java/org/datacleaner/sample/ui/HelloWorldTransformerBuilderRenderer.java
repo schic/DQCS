@@ -36,11 +36,9 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * A sample renderer which provides a presenter object for the configuration
  * panel of a transformer.
- * 提供渲染器对象的示例渲染器，用于转换器的配置面板。
  *
  * Renderers like this are optional, but allows for absolute control over the
  * User Interface which may be useful for certain types of extensions.
- * 这样的渲染器是可选的，但可以对用户界面进行绝对控制，这对于某些类型的扩展可能很有用。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class HelloWorldTransformerBuilderRenderer

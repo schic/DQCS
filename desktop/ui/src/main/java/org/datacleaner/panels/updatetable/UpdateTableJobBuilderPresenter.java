@@ -50,7 +50,6 @@ import org.datacleaner.widgets.properties.SingleTableNamePropertyWidget;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link UpdateTableAnalyzer}.
- * 专用于{@link UpdateTableAnalyzer}的{@link TransformerComponentBuilderPresenter}。
  *
  * @author Kasper Sørensen
  */

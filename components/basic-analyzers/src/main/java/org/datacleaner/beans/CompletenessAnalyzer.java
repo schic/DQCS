@@ -49,8 +49,8 @@ import org.datacleaner.storage.RowAnnotationFactory;
 
 import com.google.common.base.Strings;
 
-@Named("CompletenessAnalyzer.name")
-@Description("CompletenessAnalyzer.Description")
+@Named("Completeness analyzer")
+@Description("Asserts the completeness of your data by ensuring that all required fields are filled.")
 public class CompletenessAnalyzer implements Analyzer<CompletenessAnalyzerResult>, HasOutputDataStreams {
     public enum Condition implements HasName {
 

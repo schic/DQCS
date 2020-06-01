@@ -56,7 +56,6 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * A panel that presents options for the user to execute a job that has no
  * {@link Analyzer}s configured.
- * 一个面板，为用户提供选项以执行未配置* {@link Analyzer}的作业。
  */
 public class ExecuteJobWithoutAnalyzersDialog extends AbstractDialog {
 

@@ -25,7 +25,6 @@ import javax.swing.filechooser.FileFilter;
 
 /**
  * Contains commonly used file filters.
- * 包含常用的文件过滤器。
  */
 public final class FileFilters {
 

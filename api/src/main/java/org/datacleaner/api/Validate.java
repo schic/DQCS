@@ -29,12 +29,10 @@ import java.lang.annotation.Target;
 /**
  * Annotation that marks method as a validation method. Use this annotation if
  * you want to validate property values before initialization.
- * 将方法标记为验证方法的注释。如果要在初始化之前验证属性值，请使用此注释。
  * 
  * If any property/configuration of the component is badly configured, any
  * exception can be thrown by the method, which will then be propagated to
  * the user.
- * 如果组件的任何属性/配置配置不正确，则该方法可能会抛出任何异常，然后该异常会传播给用户。
  *
  * The @Validate annotation can be used on methods in the following component
  * types:

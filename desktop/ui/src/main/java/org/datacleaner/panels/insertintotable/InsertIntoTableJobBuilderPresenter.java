@@ -50,7 +50,6 @@ import org.datacleaner.widgets.properties.SingleTableNamePropertyWidget;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link InsertIntoTableAnalyzer}.
- * {@link InsertIntoTableAnalyzer}专用的{@link TransformerComponentBuilderPresenter}。
  */
 class InsertIntoTableJobBuilderPresenter extends AnalyzerComponentBuilderPanel {
 

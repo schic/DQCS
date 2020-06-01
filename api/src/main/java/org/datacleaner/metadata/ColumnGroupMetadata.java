@@ -26,7 +26,6 @@ import org.apache.metamodel.util.HasName;
  * Defines metadata about a group of {@link Column}s that logically belong
  * together, e.g. all columns pertaining to an address, a name or something like
  * that.
- * 定义有关一组在逻辑上属于的{@link Column}的元数据，例如与地址，名称或类似的所有列。
  */
 public interface ColumnGroupMetadata extends HasName, HasMetadataAnnotations, HasColumnMetadata {
 

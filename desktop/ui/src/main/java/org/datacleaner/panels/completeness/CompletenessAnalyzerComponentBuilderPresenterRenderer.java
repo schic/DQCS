@@ -35,7 +35,6 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link AnalysisJobBuilder} for
  * {@link CompletenessAnalyzer}.
- * 专为{@link CompletenessAnalyzer}的{@link AnalysisJobBuilder}设计的{@link Renderer}。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class CompletenessAnalyzerComponentBuilderPresenterRenderer

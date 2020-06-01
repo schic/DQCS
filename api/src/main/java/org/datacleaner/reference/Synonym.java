@@ -24,7 +24,6 @@ import java.util.Collection;
 /**
  * Represents a single set of synonymuous terms. Each will have a master term
  * (e.g. "William") and a set of synonyms (e.g. "Bill", "Will")
- * 表示一组同义术语。每个人都有一个主术语（例如“ William”）和一组同义词（例如“ Bill”，“ Will”）
  */
 public interface Synonym {
 

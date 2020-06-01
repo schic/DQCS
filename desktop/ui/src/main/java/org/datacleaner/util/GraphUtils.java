@@ -39,7 +39,6 @@ import edu.uci.ics.jung.visualization.util.ArrowFactory;
 
 /**
  * Contains features related to layout and styling of JUNG based graphs.
- * 包含与基于JUNG的图的布局和样式相关的功能。
  */
 public class GraphUtils {
 

@@ -48,8 +48,6 @@ import org.datacleaner.widgets.EnumComboBoxListRenderer;
  * enum values. This widget looks like the
  * {@link MultipleInputColumnsPropertyWidget}, but is enhanced with enum combo
  * boxes.
- * 一个专用的属性小部件，用于映射到枚举值的多个输入列。
- * 这个小部件看起来像{@link MultipleInputColumnsPropertyWidget}，但是通过枚举组合框得到了增强。
  */
 public class MultipleMappedEnumsPropertyWidget extends MultipleInputColumnsPropertyWidget {
 

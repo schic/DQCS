@@ -37,7 +37,6 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  * Panel that displays {@link OutputDataStream}s published by the component.
- * 显示由组件发布的{@link OutputDataStream}的面板。
  */
 public final class OutputDataStreamsViewer extends DCPanel {
 

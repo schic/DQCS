@@ -48,12 +48,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Helper class for traversing dependencies between virtual and physical columns.
- * 用于遍历虚拟列和物理列之间的依赖关系的Helper类。
  *
  * For performance reasons this class stores found sources in an internal cache. As there is no mechanism to
  * invalidate or refresh this cache, instances of this class should not be assigned to fields of other
  * classes.
- * 出于性能原因，此类将找到的源存储在内部缓存中。由于没有使该缓存无效或刷新的机制，因此不应将此类的实例分配给其他类的字段。
  */
 public class SourceColumnFinder {
 

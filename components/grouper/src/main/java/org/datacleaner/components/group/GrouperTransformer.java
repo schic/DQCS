@@ -49,8 +49,8 @@ import org.datacleaner.components.categories.CompositionCategory;
 import org.datacleaner.job.output.OutputDataStreamBuilder;
 import org.datacleaner.job.output.OutputDataStreams;
 
-@Named("GrouperTransformer.Name")
-@Description("GrouperTransformer.Description")
+@Named("Grouper")
+@Description("A component that allows grouping and aggregating values with the same key.")
 @Categorized(value = CompositionCategory.class)
 @Distributed(false)
 public class GrouperTransformer extends MultiStreamComponent {

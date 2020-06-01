@@ -29,7 +29,6 @@ import org.datacleaner.util.WidgetUtils;
 
 /**
  * A convenient, decorated {@link JLabel} which supports multiple lines and more.
- * 装饰方便的{@link JLabel}，支持多行及更多行。
  */
 public class DCLabel extends JLabel {
 

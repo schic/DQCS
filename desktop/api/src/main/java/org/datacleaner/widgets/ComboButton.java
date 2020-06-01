@@ -48,7 +48,6 @@ import org.jdesktop.swingx.HorizontalLayout;
 /**
  * Represents a set of related buttons; typically a set of toggle buttons or a
  * button with an alternate mode/dropdown selector.
- * 代表一组相关的按钮；通常是一组切换按钮或带有备用模式/下拉选择器的按钮。
  */
 public class ComboButton extends JPanel {
 

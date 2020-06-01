@@ -24,7 +24,6 @@ import org.apache.metamodel.schema.Column;
 /**
  * A mock-implementation of the input column. Use this only for testing purposes
  * or in cases where you want to circumvent the actual framework!
- *输入列的模拟实现。仅用于测试目的或要绕过实际框架的情况！
  *
  * @param <E>
  */

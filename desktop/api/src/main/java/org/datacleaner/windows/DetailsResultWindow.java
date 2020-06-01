@@ -46,7 +46,6 @@ import org.jdesktop.swingx.JXTaskPane;
 /**
  * Window for showing a single analysis result in a separate window. Typically
  * used for "details", eg. interactionable parts of the result.
- * 在单独的窗口中显示单个分析结果的窗口。通常用于“细节”，例如。结果的可交互部分。
  */
 public final class DetailsResultWindow extends AbstractWindow {
 

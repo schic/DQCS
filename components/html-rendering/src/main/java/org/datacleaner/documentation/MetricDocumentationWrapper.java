@@ -26,7 +26,6 @@ import org.datacleaner.descriptors.MetricDescriptor;
  * A wrapper around a {@link HasAnalyzerResult}s result metrics to make it
  * easier for the documentation template to get to certain aspects that should
  * be presented in the documentation.
- * {@link HasAnalyzerResult}的结果度量值的包装使模板文档更轻松地应该在文档中呈现的某些方面。
  */
 public class MetricDocumentationWrapper {
 

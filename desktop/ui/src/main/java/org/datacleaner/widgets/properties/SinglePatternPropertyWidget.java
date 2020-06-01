@@ -35,7 +35,7 @@ import org.jdesktop.swingx.JXTextField;
 
 /**
  * Property widget for regular expression Pattern properties.
- * 用于正则表达式Pattern属性的属性小部件。
+ *
  * @author Stefan Janssen
  */
 public class SinglePatternPropertyWidget extends AbstractPropertyWidget<Pattern> implements DocumentListener {

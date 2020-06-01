@@ -29,7 +29,6 @@ import org.datacleaner.job.FilterOutcome;
 /**
  * Represents a "link" (rendered as an edge) between two items in the
  * {@link JobGraph}.
- * 表示{@link JobGraph}中两个项目之间的“链接”（显示为边缘）。
  */
 final class JobGraphLink {
 

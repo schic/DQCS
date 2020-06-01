@@ -24,7 +24,7 @@ import java.util.ListIterator;
 /**
  * An iterator (with additional helper methods) for characters. The iterator
  * does not support the add(...) method.
- * 字符的迭代器（带有附加的辅助方法）。迭代器不支持add（...）方法。
+ *
  *
  */
 public class CharIterator implements ListIterator<Character> {

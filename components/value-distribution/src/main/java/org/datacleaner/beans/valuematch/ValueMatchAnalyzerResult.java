@@ -40,7 +40,6 @@ import org.datacleaner.util.LabelUtils;
 
 /**
  * Represents the result of the {@link ValueMatchAnalyzer}.
- * 表示{@link ValueMatchAnalyzer}的结果。
  */
 @Distributed(reducer = ValueMatchAnalyzerResultReducer.class)
 public class ValueMatchAnalyzerResult extends AbstractValueCountingAnalyzerResult {

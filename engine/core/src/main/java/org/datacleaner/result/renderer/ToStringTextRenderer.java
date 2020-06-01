@@ -28,11 +28,9 @@ import org.datacleaner.api.RendererPrecedence;
 
 /**
  * A very simple renderer that "renders" the toString() method of results, if a specialized toString() method is available.
- * 一个非常简单的渲染器，如果可以使用专用的toString（）方法，则将其“渲染”结果的toString（）方法。
  *
  * Mostly used for testing (or result types that implement a meaningful
  * toString() method.
- * 通常用于测试（或实现有意义的toString（）方法的结果类型。
  */
 @RendererBean(TextRenderingFormat.class)
 public class ToStringTextRenderer implements Renderer<AnalyzerResult, String> {

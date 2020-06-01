@@ -33,7 +33,6 @@ import org.w3c.dom.Node;
 /**
  * Client class for the RegexSwap, which allows for easy retrieval of shared
  * regular expressions.
- * RegexSwap的客户端类，可轻松检索共享的正则表达式。
  *
  * @author Kasper Sørensen
  */

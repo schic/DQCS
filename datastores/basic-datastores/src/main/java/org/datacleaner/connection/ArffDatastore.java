@@ -25,7 +25,6 @@ import org.apache.metamodel.util.Resource;
 
 /**
  * Datastore implementation for .arff files.
- * .arff文件的数据存储实现。
  */
 public class ArffDatastore extends UsageAwareDatastore<DataContext> implements ResourceDatastore {
 

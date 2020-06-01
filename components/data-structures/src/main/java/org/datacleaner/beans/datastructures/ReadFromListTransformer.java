@@ -37,10 +37,9 @@ import org.datacleaner.components.categories.DataStructuresCategory;
 
 /**
  * Transformer for extracting elements from lists.
- * 用于从列表中提取元素的转换器。
  */
-@Named("ReadFromListTransformer.name")
-@Description("ReadFromListTransformer.Description")
+@Named("Read elements from list")
+@Description("Reads all elements of a list, creating a record for each value")
 @Categorized(DataStructuresCategory.class)
 public class ReadFromListTransformer implements Transformer {
 

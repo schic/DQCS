@@ -33,7 +33,6 @@ import com.google.common.cache.Cache;
 
 /**
  * The {@link ImageManager} class serves as a utility for fetching images used in DataCleaner.
- * {@link ImageManager}类用作获取DataCleaner中使用的图像的实用程序。
  */
 public final class ImageManager {
 

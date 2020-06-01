@@ -22,7 +22,6 @@ package org.datacleaner.job;
 /**
  * Interface for components that generate ID's for items in an
  * {@link AnalysisJob}.
- * 用于为{@link AnalysisJob}中的项目生成ID的组件的接口。
  */
 public interface IdGenerator {
 

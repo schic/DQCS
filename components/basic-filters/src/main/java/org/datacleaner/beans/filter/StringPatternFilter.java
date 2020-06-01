@@ -36,9 +36,9 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.reference.StringPattern;
 import org.datacleaner.reference.StringPatternConnection;
 
-@Named("StringPatternFilter.name")
+@Named("Validate with string pattern")
 @Alias("String pattern match")
-@Description("StringPatternFilter.Description")
+@Description("Filters values that matches and does not match string patterns")
 @Categorized(FilterCategory.class)
 public class StringPatternFilter implements Filter<ValidationCategory> {
 

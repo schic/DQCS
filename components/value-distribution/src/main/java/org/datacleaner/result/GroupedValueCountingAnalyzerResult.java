@@ -24,7 +24,6 @@ import java.util.Collection;
 /**
  * Represents a composite ValueCountingAnalyzerResults, which wraps underlying
  * ("grouped") results.
- * 表示一个复合ValueCountingAnalyzerResults，它包装基础的（“分组”）结果。
  */
 public interface GroupedValueCountingAnalyzerResult extends ValueCountingAnalyzerResult {
 

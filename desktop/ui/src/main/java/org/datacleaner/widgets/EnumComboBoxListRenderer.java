@@ -29,7 +29,6 @@ import org.datacleaner.util.StringUtils;
 
 /**
  * {@link ListCellRenderer} for enums in a combobox.
- * {@link ListCellRenderer}用于组合框中的枚举。
  */
 public class EnumComboBoxListRenderer extends DCListCellRenderer {
 

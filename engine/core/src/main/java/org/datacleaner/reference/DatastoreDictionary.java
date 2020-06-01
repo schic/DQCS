@@ -38,13 +38,10 @@ import org.datacleaner.util.ReadObjectBuilder;
 
 /**
  * A dictionary backed by a column in a datastore.
- * 由数据存储中的列支持的字典。
  *
  * Note that even though this datastore <i>is</i> serializable it is not
  * entirely able to gracefully deserialize. The user of the dictionary will have
  * to inject the DatastoreCatalog using the setter method for this.
- * 请注意，即使此数据存储区<i> is</ i>是可序列化的，
- * 它也不能完全能够正常地反序列化。字典的用户将使用的setter方法将注入DatastoreCatalog。
  *
  *
  */

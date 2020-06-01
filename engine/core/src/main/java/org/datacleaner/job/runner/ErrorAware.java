@@ -24,7 +24,6 @@ import java.util.List;
 /**
  * Interface for components that are aware of errors in a job and is able to
  * inform other components of them.
- * 组件的接口，这些组件知道作业中的错误并能够通知其他组件。
  */
 public interface ErrorAware {
 

@@ -23,7 +23,6 @@ import org.apache.metamodel.schema.Schema;
 
 /**
  * Interface for any object that can create or provide a schema.
- * 可以创建或提供架构的任何对象的接口。
  */
 public interface SchemaFactory {
 

@@ -22,7 +22,6 @@ package org.datacleaner.output;
 /**
  * Represents an object which can be used to write rows of data to some output
  * (typically a database or a file).
- * 表示一个对象，该对象可用于将数据行写入某些输出（通常是数据库或文件）。
  */
 public interface OutputWriter {
 

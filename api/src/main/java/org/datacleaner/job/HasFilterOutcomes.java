@@ -23,7 +23,6 @@ import java.util.Collection;
 
 /**
  * Represents an object that has/produces {@link FilterOutcome}.
- * 表示具有/产生{@link FilterOutcome}的对象。
  */
 public interface HasFilterOutcomes {
 

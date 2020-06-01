@@ -24,13 +24,10 @@ import org.datacleaner.api.InputColumn;
 /**
  * Listener interface for receiving notifications when source columns are being
  * added or removed from the job.
- * 在从作业中添加或删除源列时用于接收通知的侦听器界面。
  *
  * Note that other columns than source columns may be of interest since
  * transformers generate virtual columns as well. Use a
  * TransformerChangeListener to receive notifications about such columns.
- * 请注意，除源列之外的其他列也可能是您感兴趣的，因为转换器也生成虚拟列。
- * 使用TransformerChangeListener接收有关此类列的通知。
  *
  * @see TransformerChangeListener
  *

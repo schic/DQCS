@@ -38,7 +38,6 @@ import org.datacleaner.result.AbstractAnalysisResult;
 /**
  * {@link AnalysisResultFuture} implementation for clustered/distributed
  * set-ups.
- * 群集/分布式设置的{@link AnalysisResultFuture}实现。
  */
 public final class DistributedAnalysisResultFuture extends AbstractAnalysisResult implements AnalysisResultFuture {
 

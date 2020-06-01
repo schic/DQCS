@@ -28,7 +28,6 @@ import org.datacleaner.util.LabelUtils;
 
 /**
  * Body element that renders a HTML table based on a {@link TableModel}.
- * 根据{@link TableModel}呈现HTML表的Body元素。
  */
 public class TableBodyElement implements BodyElement {
 

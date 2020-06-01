@@ -25,7 +25,6 @@ import org.datacleaner.job.tasks.Task;
 
 /**
  * Extended TaskRunner for scheduled tasks.
- * 用于计划任务的扩展TaskRunner。
  */
 public interface ScheduledTaskRunner extends TaskRunner {
 

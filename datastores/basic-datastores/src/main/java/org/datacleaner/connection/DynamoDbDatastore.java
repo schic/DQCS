@@ -32,7 +32,6 @@ import com.google.common.base.Strings;
 
 /**
  * Datastore providing access to AWS DynamoDB
- * 数据存储提供对AWS DynamoDB的访问
  */
 public class DynamoDbDatastore extends UsageAwareDatastore<DynamoDbDataContext> implements UpdateableDatastore {
 

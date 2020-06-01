@@ -32,8 +32,6 @@ import org.datacleaner.api.Transformer;
  * A simple descriptor provider with a method signature suitable externalizing
  * class names of analyzer and transformer beans. For example, if you're using
  * the Spring Framework you initialize this descriptor provider as follows:
- *具有方法签名的简单描述符提供程序，适合将分析器和转换器bean的类名外部化。
- * 例如，如果您使用的是Spring Framework，则按如下所示初始化此描述符提供程序：
  *
  * <pre>
  * &lt;bean id="descriptorProvider" class="org.datacleaner.descriptors.SimpleDescriptorProvider"&gt;

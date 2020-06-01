@@ -26,7 +26,6 @@ import org.datacleaner.api.OutputDataStream;
 /**
  * Represents an entry to run an {@link AnalysisJob} for a particular
  * {@link OutputDataStream}.
- * 表示为特定{@link OutputDataStream}运行{@link AnalysisJob}的条目。
  */
 public interface OutputDataStreamJob extends Serializable {
 

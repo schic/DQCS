@@ -32,7 +32,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A {@link Converter} implementation for array types.
- * 数组类型的{@link Converter}实现。
  */
 public class ArrayConverter implements Converter<Object> {
 

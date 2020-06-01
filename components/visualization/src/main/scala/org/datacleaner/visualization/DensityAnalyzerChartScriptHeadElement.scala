@@ -8,7 +8,6 @@ import scala.collection.JavaConversions._
 import scala.collection.mutable.{ListBuffer, Map}
 /**
  * Head element that writes a script specific to the rendering of a single result
-  * Head元素，该元素编写特定于单个结果呈现的脚本
  */
 class DensityAnalyzerChartScriptHeadElement(result: IDensityAnalyzerResult, elementId: String) extends HeadElement {
 

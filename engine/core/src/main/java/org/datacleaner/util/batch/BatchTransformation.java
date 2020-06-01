@@ -22,7 +22,6 @@ package org.datacleaner.util.batch;
 /**
  * Defines a batch transformation, to be implemented and supplied by the
  * consuming code.
- * 定义要由使用的代码实现和提供的批处理转换。
  *
  * @param <I>
  *            the transformation input type

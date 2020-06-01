@@ -21,10 +21,8 @@ package org.datacleaner.connection;
 
 /**
  * Interface for datastores that are based upon a file.
- * 基于文件的数据存储的接口。
  *
  * File datastores are often also {@link ResourceDatastore}s.
- * 文件数据存储通常也是{@link ResourceDatastore}。
  */
 public interface FileDatastore extends Datastore {
 

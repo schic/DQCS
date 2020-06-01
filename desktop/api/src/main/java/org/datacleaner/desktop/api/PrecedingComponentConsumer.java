@@ -30,8 +30,6 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
  * Interface for {@link Component}s that are capable of placing itself as a
  * consumer (succeeding component) of a preceding {@link Transformer} or
  * {@link Filter}.
- * {@link Component}的接口，
- * 这些接口能够将自身放置为先前{@link Transformer}或{@link Filter}的使用者（后继组件）。
  */
 public interface PrecedingComponentConsumer extends Component {
 

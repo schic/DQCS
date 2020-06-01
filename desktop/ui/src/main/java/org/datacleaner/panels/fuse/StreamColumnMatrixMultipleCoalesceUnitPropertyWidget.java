@@ -55,14 +55,10 @@ import com.google.common.collect.Multimap;
  * A {@link PropertyWidget} for representing both a property with an array of
  * {@link CoalesceUnit}s and another property with an array of
  * {@link InputColumn}s.
- * 一个{@link PropertyWidget}，既可以表示一个带有{@link CoalesceUnit}数组的属性，
- * 又可以表示另一个带有{@link InputColumn}s数组的属性。
  *
  * This widget presents the incoming streams as columns and available
  * {@link InputColumn}s from each stream as rows in a matrix where the user gets
  * the design a new {@link OutputDataStream}.
- * 此小部件将传入流显示为列，而每个流中可用的{@link InputColumn}则显示为矩阵中的行，
- * 用户可以在其中获取设计新的{@link OutputDataStream}。
  */
 public class StreamColumnMatrixMultipleCoalesceUnitPropertyWidget extends AbstractPropertyWidget<InputColumn<?>[]>
         implements TransformerChangeListener, MutableInputColumn.Listener {

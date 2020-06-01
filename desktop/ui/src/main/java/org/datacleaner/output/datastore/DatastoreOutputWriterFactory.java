@@ -34,7 +34,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Factory for output writers that write new datastores.
- * 用于编写新数据存储区的输出编写器的工厂。
  */
 public final class DatastoreOutputWriterFactory {
 

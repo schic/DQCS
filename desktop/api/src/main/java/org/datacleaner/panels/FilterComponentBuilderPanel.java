@@ -37,7 +37,6 @@ import org.datacleaner.job.builder.FilterChangeListener;
 import org.datacleaner.job.builder.FilterComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.widgets.ChangeRequirementMenuBuilder;
@@ -48,7 +47,6 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 
 /**
  * Specialization of {@link AbstractComponentBuilderPanel} for {@link Filter}s.
- * {@link AbstractComponentBuilderPanel}专门用于{@link Filter}。
  */
 public class FilterComponentBuilderPanel extends AbstractComponentBuilderPanel
         implements FilterComponentBuilderPresenter, FilterChangeListener {
@@ -123,7 +121,7 @@ public class FilterComponentBuilderPanel extends AbstractComponentBuilderPanel
         final FormPanel outcomeFormPanel = new FormPanel();
         outcomeFormPanel.addFormEntry("This filter categorizes records as", null, _outcomePanel);
 
-        addTaskPane(IconUtils.FILTER_OUTCOME_PATH, PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.outcomes"), outcomeFormPanel);
+        addTaskPane(IconUtils.FILTER_OUTCOME_PATH, "Outcomes", outcomeFormPanel);
         return result;
     }
 

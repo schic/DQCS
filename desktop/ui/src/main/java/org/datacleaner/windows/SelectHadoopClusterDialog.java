@@ -36,7 +36,11 @@ import javax.swing.ScrollPaneConstants;
 import org.datacleaner.bootstrap.WindowContext;
 import org.datacleaner.configuration.ServerInformationCatalog;
 import org.datacleaner.panels.DCPanel;
-import org.datacleaner.util.*;
+import org.datacleaner.util.HadoopResource;
+import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.WidgetFactory;
+import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.DCLabel;
 import org.jfree.ui.tabbedui.VerticalLayout;
 
@@ -78,7 +82,7 @@ public class SelectHadoopClusterDialog extends AbstractDialog {
             _selectedConfiguration = _mappedServers.get(selectedValue);
             dispose();
         });
-        _optionsButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.options"), IconUtils.MENU_OPTIONS);
+        _optionsButton = WidgetFactory.createDefaultButton("Options", IconUtils.MENU_OPTIONS);
         _optionsButton.addActionListener(e -> {
             SelectHadoopClusterDialog.this.close();
             final OptionsDialog optionsDialog = _optionsDialogProvider.get();

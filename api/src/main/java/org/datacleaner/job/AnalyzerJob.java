@@ -24,7 +24,6 @@ import org.datacleaner.descriptors.AnalyzerDescriptor;
 
 /**
  * {@link ComponentJob} subinterface for {@link Analyzer}s.
- * {@link Analyzer}的{@link ComponentJob}子界面。
  *
  * @see Analyzer
  */

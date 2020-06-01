@@ -34,9 +34,6 @@ import org.datacleaner.util.StringUtils;
  * allow the user to change the catalog of ServerInformation at runtime. This server information
  * catalog wraps an immutable instance, which typically represents what is
  * configured in datacleaner's xml file.
- * {@link ServerInformationCatalog}接口的可变/可修改的实现。
- * 用于允许用户在运行时更改ServerInformation的目录。
- * 该服务器信息目录包装了一个不可变的实例，该实例通常表示在datacleaner的xml文件中配置的内容。
  */
 
 public class MutableServerInformationCatalog implements ServerInformationCatalog {

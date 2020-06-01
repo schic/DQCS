@@ -45,8 +45,6 @@ import org.jdesktop.swingx.VerticalLayout;
  * Property widget for the {@link TableLookupTransformer}'s output columns
  * property, which is defined as a String array, but should be shown as a list
  * of {@link SourceColumnComboBox}es.
- * {@link TableLookupTransformer}输出列属性的属性窗口小部件属性定义为String数组，
- * 但应显示为{@link SourceColumnComboBox}列表。
  *
  * @author Kasper Sørensen
  */

@@ -27,7 +27,6 @@ import org.apache.metamodel.schema.TableType;
 
 /**
  * A {@link DatastoreConnection} based on a {@link DataSource}.
- * 基于{@link DataSource}的{@link DatastoreConnection}。
  */
 public class DataSourceDatastoreConnection extends UsageAwareDatastoreConnection<UpdateableDataContext>
         implements UpdateableDatastoreConnection {

@@ -31,7 +31,6 @@ import org.datacleaner.lifecycle.PropertyInjectionPoint;
 /**
  * Default renderer initializer which uses an {@link InjectionManager} to
  * initialize renderers.
- * 默认的渲染器初始化器，它使用{@link InjectionManager}来初始化渲染器。
  */
 public class DefaultRendererInitializer implements RendererInitializer {
 

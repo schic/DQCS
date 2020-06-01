@@ -19,9 +19,6 @@
  */
 package org.datacleaner.util;
 
-import java.util.Locale;
-import java.util.ResourceBundle;
-
 /**
  * StringUtils for datacleaner Api
  */
@@ -64,8 +61,6 @@ public class ApiStringUtils {
                 }
             }
         }
-        //System.out.println(sb.toString());
-        return PropertyUtil.getProperty(sb.toString(),sb.toString());
-        //return sb.toString();
+        return sb.toString();
     }
 }

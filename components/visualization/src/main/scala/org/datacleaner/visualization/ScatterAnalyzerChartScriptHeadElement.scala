@@ -5,7 +5,6 @@ import org.datacleaner.result.html.{HeadElement, HtmlRenderingContext}
 import scala.collection.JavaConverters._
 /**
  * Head element that writes a script specific to the rendering of a single result
-  * Head元素，该元素编写特定于单个结果呈现的脚本
  */
 class ScatterAnalyzerChartScriptHeadElement(result: IScatterAnalyzerResult, elementId: String) extends HeadElement {
 

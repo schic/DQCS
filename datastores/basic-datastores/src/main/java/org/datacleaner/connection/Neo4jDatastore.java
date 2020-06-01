@@ -23,7 +23,6 @@ import org.apache.metamodel.neo4j.Neo4jDataContext;
 
 /**
  * Datastore providing access to Neo4j graph database
- * 数据存储提供对Neo4j图形数据库的访问
  */
 public class Neo4jDatastore extends UsageAwareDatastore<Neo4jDataContext> {
 

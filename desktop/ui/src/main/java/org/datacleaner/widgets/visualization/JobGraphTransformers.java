@@ -60,7 +60,6 @@ import edu.uci.ics.jung.visualization.renderers.EdgeLabelRenderer;
 
 /**
  * Collection of {@link Function} (and {@link Predicate} and so on) instances to use in the {@link JobGraph}.
- * {@link Function}（和{@link Predicate}等）实例的集合，以在{@link JobGraph}中使用。
  */
 public class JobGraphTransformers {
 

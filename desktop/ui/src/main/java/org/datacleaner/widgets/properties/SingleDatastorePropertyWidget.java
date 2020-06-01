@@ -57,7 +57,7 @@ import com.google.inject.Injector;
 
 /**
  * {@link PropertyWidget} for single datastore properties. Shown as a combo box.
- * {@link PropertyWidget}用于单个数据存储属性。显示为组合框。
+ *
  * @author Kasper Sørensen
  */
 public class SingleDatastorePropertyWidget extends AbstractPropertyWidget<Datastore>

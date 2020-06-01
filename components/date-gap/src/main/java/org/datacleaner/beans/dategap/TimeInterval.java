@@ -28,8 +28,7 @@ import org.datacleaner.util.CompareUtils;
  * Represents an interval consisting of two points in time. Either points (from
  * and to) in time can also be infinite, meaning that they span from "the past"
  * to a point in time or from a point in time to "the future".
- *表示由两个时间点组成的间隔。时间点（从 到 ）也可以是无限的，
- * 这意味着它们从“过去” 到某个时间点或从某个时间点到“未来”。
+ *
  *
  *
  */

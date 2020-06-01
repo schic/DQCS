@@ -25,7 +25,6 @@ import org.datacleaner.job.FilterOutcomes;
 /**
  * Defines a callback for {@link RowProcessingConsumer}s to request a
  * {@link InputRow} to have it's next steps processed.
- * 为{@link RowProcessingConsumer}定义一个回调，以请求{@link InputRow}对其进行后续处理。
  */
 public interface RowProcessingChain {
 

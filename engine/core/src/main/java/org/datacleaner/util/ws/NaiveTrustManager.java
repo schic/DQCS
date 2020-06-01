@@ -26,7 +26,6 @@ import javax.net.ssl.X509TrustManager;
 
 /**
  * A {@link X509TrustManager} that always trusts remote certificates. Use with caution!
- * 始终信任远程证书的{@link X509TrustManager}。请谨慎使用！
  */
 public class NaiveTrustManager implements X509TrustManager {
 

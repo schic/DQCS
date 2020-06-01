@@ -28,7 +28,6 @@ import org.apache.metamodel.util.SerializableRef;
 
 /**
  * Datastore implementation for JSON files
- * JSON文件的数据存储实现
  */
 public class JsonDatastore extends UsageAwareDatastore<JsonDataContext> implements ResourceDatastore {
 

@@ -22,7 +22,6 @@ package org.datacleaner.descriptors;
 /**
  * Listener interface for objects that wish to listen in on changes to
  * descriptor providers.
- * 希望在描述符提供程序的更改上侦听的对象的侦听器接口。
  */
 public interface DescriptorProviderListener {
 

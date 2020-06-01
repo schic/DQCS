@@ -25,7 +25,6 @@ import org.datacleaner.descriptors.ConfiguredPropertyDescriptor;
 
 /**
  * Defines a task pane with configured properties for a component.
- * 定义具有配置的组件属性的任务窗格。
  */
 public final class ConfiguredPropertyTaskPane {
 

@@ -27,12 +27,10 @@ import org.datacleaner.job.builder.LazyFilterOutcome;
 /**
  * Provides hashCode, equals and toString implementations for FilterOutcome,
  * making them comparable across different implementations.
- * 为FilterOutcome提供hashCode，equals和toString实现，使它们在不同的实现之间具有可比性。
  *
  * Specifically this has been designed to make it possible to use the
  * equals(...) method with both ImmutableFilterOutcome and LazyFilterOutcome
  * instances.
- * 特别是，这被设计为使ImmutableFilterOutcome和LazyFilterOutcome实例都可以使用equals（...）方法。
  *
  * @see ImmutableFilterOutcome
  * @see LazyFilterOutcome

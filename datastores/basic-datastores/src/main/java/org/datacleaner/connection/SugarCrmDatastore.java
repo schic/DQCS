@@ -23,7 +23,6 @@ import org.apache.metamodel.sugarcrm.SugarCrmDataContext;
 
 /**
  * A datastore that connects to a SugarCRM instance to fetch data
- * 连接到SugarCRM实例以获取数据的数据存储
  */
 public class SugarCrmDatastore extends UsageAwareDatastore<SugarCrmDataContext> implements UsernameDatastore {
 

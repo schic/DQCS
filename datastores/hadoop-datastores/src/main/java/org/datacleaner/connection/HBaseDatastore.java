@@ -28,7 +28,6 @@ import org.apache.metamodel.util.SimpleTableDef;
 
 /**
  * Datastore implementation for HBase.
- * HBase的数据存储区实现。
  */
 public class HBaseDatastore extends UsageAwareDatastore<HBaseDataContext> {
 

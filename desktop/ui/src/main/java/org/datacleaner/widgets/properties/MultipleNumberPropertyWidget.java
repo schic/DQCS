@@ -26,7 +26,6 @@ import org.datacleaner.job.builder.ComponentBuilder;
 
 /**
  * Default {@link PropertyWidget} for number arrays.
- * 数字数组的默认{@link PropertyWidget}。
  */
 public class MultipleNumberPropertyWidget extends AbstractMultipleNumberPropertyWidget<Number[]> {
 

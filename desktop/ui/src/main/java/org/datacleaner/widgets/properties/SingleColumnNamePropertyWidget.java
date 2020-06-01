@@ -34,7 +34,6 @@ import org.datacleaner.widgets.SourceColumnComboBox;
 
 /**
  * Property widget for a {@link String} that represents a {@link Column} name.
- * 代表{@link Column}名称的{@link String}的属性小部件。
  */
 public final class SingleColumnNamePropertyWidget extends AbstractPropertyWidget<String> {
 

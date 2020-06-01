@@ -29,8 +29,8 @@ import org.datacleaner.api.InputColumn;
 import org.datacleaner.api.InputRow;
 import org.datacleaner.components.categories.FilterCategory;
 
-@Named("StringContainsFilter.name")
-@Description("StringContainsFilter.Description")
+@Named("String contains filter")
+@Description("Check if your string values contain specific substrings in order to filter them in or out.")
 @Categorized(FilterCategory.class)
 public class StringContainsFilter implements Filter<StringContainsFilter.Category> {
 

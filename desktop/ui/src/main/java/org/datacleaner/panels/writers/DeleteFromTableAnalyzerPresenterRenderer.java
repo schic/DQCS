@@ -36,7 +36,6 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link AnalyzerComponentBuilder} for
  * {@link DeleteFromTableAnalyzer}.
- * 针对{@link DeleteFromTableAnalyzer}的{@link AnalyzerComponentBuilder}的专用{@link Renderer}。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class DeleteFromTableAnalyzerPresenterRenderer

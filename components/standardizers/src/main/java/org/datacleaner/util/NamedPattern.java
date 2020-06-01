@@ -35,7 +35,7 @@ import org.slf4j.LoggerFactory;
  * Provides a useful abstraction over regular expressions where the groups are
  * named and not nescesarily ordered in the way specified by the enum that holds
  * the group names.
- * 对正则表达式提供有用的抽象，在正则表达式中，组的名称是且不一定以持有组名称的枚举指定的方式进行排序。
+ *
  *
  */
 public class NamedPattern<E extends Enum<E>> {

@@ -35,7 +35,6 @@ import org.datacleaner.api.InputColumn;
 /**
  * A mock implementation of the InputRow interface. Allows for adhoc generation
  * of a row using the put(...) method.
- * InputRow接口的模拟实现。允许使用put（...）方法自动生成行。
  */
 public class MockInputRow extends AbstractLegacyAwareInputRow {
 

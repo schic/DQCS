@@ -26,7 +26,7 @@ import javax.inject.Inject;
 /**
  * Defines an injection point in a component. An injection point is typically
  * derived from the {@link Inject} annotation
- *在组件中定义注入点。注入点通常来自{@link Inject}注释
+ *
  * @param <E>
  */
 public interface InjectionPoint<E> {

@@ -30,7 +30,7 @@ import org.datacleaner.beans.CharacterSetDistributionAnalyzer;
 
 /**
  * Represents the result of a {@link CharacterSetDistributionAnalyzer} analyzer
- *表示{@link CharacterSetDistributionAnalyzer}分析器的结果
+ *
  *
  *
  */

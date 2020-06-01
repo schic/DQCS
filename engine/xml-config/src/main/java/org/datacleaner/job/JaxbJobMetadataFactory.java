@@ -24,7 +24,6 @@ import org.datacleaner.job.jaxb.JobMetadataType;
 /**
  * Interface that acts as an optional hook for {@link JaxbJobWriter} to define
  * custom job metadata.
- * 充当{@link JaxbJobWriter}定义自定义作业元数据的可选挂钩的接口。
  */
 public interface JaxbJobMetadataFactory {
 

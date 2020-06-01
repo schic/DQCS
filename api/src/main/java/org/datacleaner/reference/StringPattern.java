@@ -24,9 +24,6 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 /**
  * A string pattern defines a pattern to which you can match strings to see if
  * they share a similar pattern. Examples of string patterns are:
- * 字符串模式定义了一个模式，您可以将其与字符串匹配以查看它们是否共享相似的模式。字符串模式的示例包括：
- *模式“ Aaaaaa Aaaaaaaaaaa”是典型的名字和姓氏模式。
- * 他使用“。* @。*”模式，这是一种识别带有的字符串的简单方法，“-”在其中签名（可能的电子邮件）。
  *
  * <ul>
  * <li>The pattern "Aaaaaa Aaaaaaaaaa" which is a typical firstname and lastname

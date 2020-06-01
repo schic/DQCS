@@ -30,7 +30,6 @@ import org.datacleaner.util.WidgetUtils;
 
 /***
  * A {@link ButtonUI} for dark buttons in the DataCleaner user interface.
- * {@link ButtonUI}用于DataCleaner用户界面中的深色按钮。
  */
 public class DarkButtonUI extends MetalButtonUI {
 

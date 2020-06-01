@@ -30,8 +30,6 @@ import java.lang.annotation.Target;
  * component (transformer, filter or analyzer) with this annotation can define
  * whether or not the framework should be allowed to invoke the component
  * concurrently (ie. from several threads at the same time) or not.
- * 用于覆盖默认组件并发模型的注释。
- * 具有此批注的任何组件（转换器，过滤器或分析器）都可以定义是否应允许框架同时（即从多个线程同时）调用该组件。
  *
  * The default behaviour of the components is:
  *
@@ -44,11 +42,7 @@ import java.lang.annotation.Target;
  * default value is that analyzers are expected to build up it's result during
  * execution and thus will typically be stateful.</li>
  * </ul>
- * 组件的默认行为是：
- * 转换器和过滤器被同时调用。
- * 这个默认值的基本原理是被调用的方法（transform（...）和categorize（...））都立即返回其结果，
- * 因此无状态实现将是正常情况。
- *  不能同时调用分析器。该默认值的基本原理是，期望分析器在执行期间建立其结果，因此通常是有状态的。
+ *
  * @see Component
  */
 @Retention(RetentionPolicy.RUNTIME)

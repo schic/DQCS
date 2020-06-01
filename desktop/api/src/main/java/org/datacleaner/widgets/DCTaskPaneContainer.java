@@ -32,7 +32,6 @@ import org.jdesktop.swingx.JXTaskPaneContainer;
 /**
  * Minor improvement to the regular JXTaskPaneContainer, wrapping all task panes
  * in a bordered panel.
- * 对常规JXTaskPaneContainer的较小改进，将所有任务窗格包装在带边框的面板中。
  */
 public class DCTaskPaneContainer extends JXTaskPaneContainer {
 

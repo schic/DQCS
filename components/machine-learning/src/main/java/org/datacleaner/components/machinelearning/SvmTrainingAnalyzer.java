@@ -30,8 +30,8 @@ import org.datacleaner.components.machinelearning.impl.SvmClasificationTrainer;
 
 import smile.classification.SVM.Multiclass;
 
-@Named("SvmTrainingAnalyzer.name")
-@Description("SvmTrainingAnalyzer.Description")
+@Named("Train SVM classifier")
+@Description("Train a classifier of the 'Support Vector Machine' (SVM) type.")
 public class SvmTrainingAnalyzer extends MLClassificationTrainingAnalyzer {
 
     @Configured

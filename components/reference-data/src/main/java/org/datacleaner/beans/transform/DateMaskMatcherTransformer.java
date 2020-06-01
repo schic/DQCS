@@ -35,8 +35,9 @@ import org.datacleaner.components.categories.DateAndTimeCategory;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-@Named("DateMaskMatcherTransformer.name")
-@Description("DateMaskMatcherTransformer.Description")
+@Named("Date mask matcher")
+@Description("Matches String values against a set of date masks, producing a corresponding set of output columns, "
+        + "specifying whether or not the strings could be interpreted as dates given those date masks")
 @Categorized({ DateAndTimeCategory.class })
 public class DateMaskMatcherTransformer implements Transformer {
 

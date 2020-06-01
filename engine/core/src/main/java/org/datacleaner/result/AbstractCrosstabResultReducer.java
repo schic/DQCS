@@ -33,8 +33,6 @@ import org.datacleaner.api.AnalyzerResultReducer;
  * and the dimensions are the same on all slave results. This scenario is quite
  * common since a lot of analyzers produce crosstabs with measures on one
  * dimension and column names on another.
- * 二维的{@link CrosstabResult}的抽象化简器类，所有从属结果的维都相同。
- * 这种情况相当普遍，因为许多分析器会生成带有一个维的度量值和另一个维的列名的交叉表。
  */
 public abstract class AbstractCrosstabResultReducer<R extends CrosstabResult> implements AnalyzerResultReducer<R> {
 

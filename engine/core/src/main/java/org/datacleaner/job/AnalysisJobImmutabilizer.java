@@ -37,12 +37,10 @@ import org.datacleaner.job.builder.TransformerComponentBuilder;
 /**
  * Class that will load mutable and lazy components into their immutable
  * variants. For instance {@link LazyFilterOutcome}.
- * 将可变和惰性组件加载到其不可变变体的类。例如{@link LazyFilterOutcome}。
  *
  * This is important for serialization and decoupling of object graphs, to
  * ensure that the lazy references (to builder objects) become fixed on
  * immutable job objects.
- * 这对于对象图的序列化和解耦很重要，以确保（对生成器对象的）惰性引用固定在不可变的作业对象上。
  */
 public final class AnalysisJobImmutabilizer {
 

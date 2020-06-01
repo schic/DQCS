@@ -32,7 +32,6 @@ import com.google.common.collect.Maps;
 /**
  * A utility function for reading properties as a {@link Map} of Strings from an
  * {@link InputStream}.
- * 一个实用程序函数，用于从{@link InputStream}读取属性作为字符串的{@link Map}。
  */
 public class InputStreamToPropertiesMapFunc implements Function<InputStream, Map<String, String>> {
 

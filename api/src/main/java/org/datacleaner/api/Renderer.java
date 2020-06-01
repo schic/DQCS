@@ -24,8 +24,6 @@ package org.datacleaner.api;
  * Interface for renderers of analyzer results. Renderers are used to transform
  * the logical results into readable results such as HTML pages, Swing
  * components, Text or XML files.
- * 分析器结果渲染器的接口。渲染器用于将逻辑结果转换为可读的结果，
- * 例如HTML页面，Swing组件，文本或XML文件。
  *
  * @param <I>
  *            the input of the renderer, ie. the result type (or

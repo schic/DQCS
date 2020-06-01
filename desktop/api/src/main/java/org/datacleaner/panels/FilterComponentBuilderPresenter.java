@@ -24,7 +24,6 @@ import org.datacleaner.job.builder.FilterComponentBuilder;
 /**
  * Interface for presenter widgets that present {@link FilterComponentBuilder}
  * objects.
- * 呈现{@link FilterComponentBuilder}对象的呈现器小部件的界面。
  */
 public interface FilterComponentBuilderPresenter extends ComponentBuilderPresenter {
 

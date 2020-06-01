@@ -25,7 +25,6 @@ import org.datacleaner.job.builder.ComponentBuilder;
 /**
  * Represents a factory for {@link PropertyWidget}s. An implementation is
  * expected to be able to deliver default widgets.
- * 代表{@link PropertyWidget}的工厂。期望实现能够传递默认的小部件。
  */
 public interface PropertyWidgetFactory {
 

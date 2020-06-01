@@ -28,7 +28,7 @@ import org.datacleaner.api.Validate;
 /**
  * Descriptor for a validation method. The most common way of registering a
  * validateion method is using the @Validate annotation.
- *验证方法的描述符。注册验证方法的最常见方法是使用@Validate批注。
+ *
  * @see Validate
  */
 public interface ValidateMethodDescriptor extends Serializable {

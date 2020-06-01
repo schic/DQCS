@@ -26,7 +26,6 @@ import org.apache.metamodel.util.Action;
 
 /**
  * Represents a folder in the {@link Repository}.
- * 代表{@link Repository}中的文件夹。
  */
 public interface RepositoryFolder extends RepositoryNode {
 

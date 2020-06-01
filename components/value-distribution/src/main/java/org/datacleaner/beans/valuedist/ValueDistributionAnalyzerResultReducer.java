@@ -37,7 +37,6 @@ import org.datacleaner.storage.RowAnnotationFactory;
 
 /**
  * A reducer of {@link ValueDistributionAnalyzerResult}s.
- * {@link ValueDistributionAnalyzerResult}s的简化器。
  */
 public class ValueDistributionAnalyzerResultReducer implements AnalyzerResultReducer<ValueDistributionAnalyzerResult> {
 

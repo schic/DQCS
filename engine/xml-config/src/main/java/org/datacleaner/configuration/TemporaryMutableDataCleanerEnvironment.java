@@ -27,7 +27,6 @@ import org.datacleaner.storage.StorageProvider;
  * A temporary and mutable implementation of {@link DataCleanerEnvironment} -
  * used only while building a {@link DataCleanerConfiguration} in
  * {@link JaxbConfigurationReader}.
- * {@link DataCleanerEnvironment}的临时可变实现-仅在在{@link JaxbConfigurationReader}中构建{@link DataCleanerConfiguration}时使用。
  */
 final class TemporaryMutableDataCleanerEnvironment implements DataCleanerEnvironment {
 

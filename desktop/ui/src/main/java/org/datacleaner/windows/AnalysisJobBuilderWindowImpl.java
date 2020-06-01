@@ -100,7 +100,13 @@ import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.MutableReferenceDataCatalog;
 import org.datacleaner.user.ReferenceDataChangeListener;
 import org.datacleaner.user.UserPreferences;
-import org.datacleaner.util.*;
+import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.LabelUtils;
+import org.datacleaner.util.StringUtils;
+import org.datacleaner.util.WidgetFactory;
+import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.WindowSizePreferences;
 import org.datacleaner.widgets.CollapsibleTreePanel;
 import org.datacleaner.widgets.CommunityEditionStatusLabel;
 import org.datacleaner.widgets.DCLabel;
@@ -119,9 +125,6 @@ import org.slf4j.LoggerFactory;
  * AnalysisJobBuilderWindow because it's main purpose is to present a job that
  * is being built. Behind the covers this job state is respresented in the
  * {@link AnalysisJobBuilder} class.
- * DataCleaner GUI中的主窗口。该窗口称为AnalysisJobBuilderWindow，
- * 因为它的主要目的是显示正在构建的作业。在封面后面，
- * 此工作状态在{@link AnalysisJobBuilder}类中表示。
  */
 @Singleton
 public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
@@ -359,8 +362,8 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         _mutableReferenceCatalog.addDictionaryListener(_dictionaryChangeListener);
         _mutableReferenceCatalog.addSynonymCatalogListener(_synonymCatalogListener);
 
-        _saveButton = WidgetFactory.createToolbarButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.save"), IconUtils.ACTION_SAVE_BRIGHT);
-        _saveAsButton = WidgetFactory.createToolbarButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.save.as"), IconUtils.ACTION_SAVE_BRIGHT);
+        _saveButton = WidgetFactory.createToolbarButton("Save", IconUtils.ACTION_SAVE_BRIGHT);
+        _saveAsButton = WidgetFactory.createToolbarButton("Save As...", IconUtils.ACTION_SAVE_BRIGHT);
 
         _welcomePanel =
                 new WelcomePanel(this, _userPreferences, _openAnalysisJobActionListenerProvider.get(), _dcModule);
@@ -615,12 +618,10 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
 
             if (isJobUnsaved(getJobFile(), _analysisJobBuilder) && (_saveButton.isEnabled())) {
 
-                final Object[] buttons = { PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.save"),
-                        PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.discard"),
-                        PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.cancel") };
+                final Object[] buttons = { "Save changes", "Discard changes", "Cancel" };
                 final int unsavedChangesChoice = JOptionPane
-                        .showOptionDialog(this, PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.Description"),
-                                PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.exit.title"), JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
+                        .showOptionDialog(this, "The job has unsaved changes. What would you like to do?",
+                                "Unsaved changes detected", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
                                 null, buttons, buttons[1]);
 
                 if (unsavedChangesChoice == 0) { // save changes
@@ -768,10 +769,10 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         _saveAsButton.addActionListener(saveAnalysisJobActionListener);
         _saveAsButton.setActionCommand(SaveAnalysisJobActionListener.ACTION_COMMAND_SAVE_AS);
 
-        final JButton newJobButton = WidgetFactory.createToolbarButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.new"), IconUtils.MENU_NEW);
+        final JButton newJobButton = WidgetFactory.createToolbarButton("New", IconUtils.MENU_NEW);
         newJobButton.addActionListener(_newAnalysisJobActionListenerProvider.get());
 
-        final JButton openJobButton = WidgetFactory.createToolbarButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.open"), IconUtils.MENU_OPEN);
+        final JButton openJobButton = WidgetFactory.createToolbarButton("Open", IconUtils.MENU_OPEN);
         openJobButton.addActionListener(_openAnalysisJobActionListenerProvider.get());
 
         final JToggleButton moreButton = createMoreMenuButton();
@@ -834,7 +835,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
     }
 
     private JToggleButton createMoreMenuButton() {
-        final JMenuItem optionsMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.options"), IconUtils.MENU_OPTIONS);
+        final JMenuItem optionsMenuItem = WidgetFactory.createMenuItem("Options", IconUtils.MENU_OPTIONS);
         optionsMenuItem.addActionListener(e -> {
             final OptionsDialog optionsDialog = _optionsDialogProvider.get();
             optionsDialog.getTabbedPane().setSelectedIndex(0);
@@ -842,7 +843,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         });
 
         final JMenuItem dictionariesMenuItem =
-                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.dictionaries"), IconUtils.DICTIONARY_IMAGEPATH);
+                WidgetFactory.createMenuItem("Dictionaries", IconUtils.DICTIONARY_IMAGEPATH);
         dictionariesMenuItem.addActionListener(e -> {
             final ReferenceDataDialog referenceDataDialog = _referenceDataDialogProvider.get();
             referenceDataDialog.selectDictionariesTab();
@@ -850,7 +851,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         });
 
         final JMenuItem synonymCatalogsMenuItem =
-                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.synonyms"), IconUtils.SYNONYM_CATALOG_IMAGEPATH);
+                WidgetFactory.createMenuItem("Synonyms", IconUtils.SYNONYM_CATALOG_IMAGEPATH);
         synonymCatalogsMenuItem.addActionListener(e -> {
             final ReferenceDataDialog referenceDataDialog = _referenceDataDialogProvider.get();
             referenceDataDialog.selectSynonymsTab();
@@ -858,7 +859,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         });
 
         final JMenuItem stringPatternsMenuItem =
-                WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.string.patterns"), IconUtils.STRING_PATTERN_IMAGEPATH);
+                WidgetFactory.createMenuItem("String patterns", IconUtils.STRING_PATTERN_IMAGEPATH);
         stringPatternsMenuItem.addActionListener(e -> {
             final ReferenceDataDialog referenceDataDialog = _referenceDataDialogProvider.get();
             referenceDataDialog.selectStringPatternsTab();
@@ -866,10 +867,10 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         });
 
         final PopupButton popupButton =
-                new PopupButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more"), imageManager.getImageIcon(IconUtils.ACTION_SCROLLDOWN_BRIGHT));
+                new PopupButton("More", imageManager.getImageIcon(IconUtils.ACTION_SCROLLDOWN_BRIGHT));
         applyMenuPopupButttonStyling(popupButton);
 
-        final JMenu windowsMenuItem = WidgetFactory.createMenu(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.windows"), 'w');
+        final JMenu windowsMenuItem = WidgetFactory.createMenu("Windows", 'w');
         windowsMenuItem.setIcon(imageManager.getImageIcon("images/menu/windows.png", IconUtils.ICON_SIZE_SMALL));
         final List<DCWindow> windows = getWindowContext().getWindows();
 
@@ -894,7 +895,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
 
             windowsMenuItem.add(new JSeparator());
 
-            final JMenuItem closeAllWindowsItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.more.windows.close"), (ImageIcon) null);
+            final JMenuItem closeAllWindowsItem = WidgetFactory.createMenuItem("Close all dialogs", (ImageIcon) null);
             closeAllWindowsItem.addActionListener(e1 -> {
                 final List<DCWindow> windows1 = new ArrayList<>(getWindowContext().getWindows());
                 for (final DCWindow window : windows1) {

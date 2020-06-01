@@ -35,17 +35,14 @@ import org.datacleaner.result.QueryParameterizableMetric;
 
 /**
  * Represents the result of the {@link PatternFinderAnalyzer}.
- * 表示{@link PatternFinderAnalyzer}的结果。
  *
  * A pattern finder result has two basic forms: Grouped or ungrouped. To find
  * out which type a particular instance has, use the
  * {@link #isGroupingEnabled()} method.
- * 模式查找器结果具有两种基本形式：分组或未分组。
- * 要找出特定实例的类型，请使用{@link #isGroupingEnabled（）}方法。
  *
  * Ungrouped results only contain a single/global crosstab. A grouped result
  * contain multiple crosstabs, based on groups.
- * 未分组的结果仅包含一个/全局交叉表。分组结果*基于组包含多个交叉表。
+ *
  *
  */
 @Distributed(reducer = PatternFinderResultReducer.class)

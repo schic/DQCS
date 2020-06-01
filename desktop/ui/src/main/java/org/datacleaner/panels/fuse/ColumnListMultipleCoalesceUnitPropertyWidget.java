@@ -58,12 +58,9 @@ import org.slf4j.LoggerFactory;
 /**
  * {@link PropertyWidget} for two properties at one time: An array of
  * {@link InputColumn}s and an array of {@link CoalesceUnit}s.
- * {@link PropertyWidget}可以同时具有两个属性：
- * {@link InputColumn}数组和{@link CoalesceUnit}数组。
  *
  * This widget displays a list of {@link CoalesceUnit}s with {@link InputColumn}
  * s that the user can add an remove from.
- * 该小部件显示{@link CoalesceUnit}列表，其中包含{@link InputColumn}，用户可以从中添加删除项。
  */
 public class ColumnListMultipleCoalesceUnitPropertyWidget extends AbstractPropertyWidget<InputColumn<?>[]>
         implements SourceColumnChangeListener, TransformerChangeListener, MutableInputColumn.Listener {

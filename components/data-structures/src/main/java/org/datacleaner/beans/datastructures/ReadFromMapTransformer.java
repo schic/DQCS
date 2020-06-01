@@ -37,11 +37,11 @@ import org.datacleaner.components.categories.DataStructuresCategory;
 
 /**
  * Transformer for extracting elements from lists.
- *用于从列表中提取元素的转换器。
+ *
  *
  */
-@Named("ReadFromMapTransformer.name")
-@Description("ReadFromMapTransformer.Description")
+@Named("Read keys and values from map")
+@Description("Reads all key/value pairs of a map, creating a record for each pair")
 @Categorized(DataStructuresCategory.class)
 public class ReadFromMapTransformer implements Transformer {
 

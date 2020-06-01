@@ -26,7 +26,6 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Defines metadata about a {@link Table}.
- * 定义有关{@link Table}的元数据。
  */
 public interface TableMetadata extends HasName, HasMetadataAnnotations, HasColumnMetadata {
 

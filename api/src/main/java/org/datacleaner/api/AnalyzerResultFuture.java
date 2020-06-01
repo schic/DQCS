@@ -25,16 +25,12 @@ import org.apache.metamodel.util.HasName;
 
 /**
  * Represents an {@link AnalyzerResult} that is still being produced.
- * 表示仍在生成的{@link AnalyzerResult}。
  *
  * Usually {@link AnalyzerResult}s are produced immediately by the
  * {@link Analyzer#getResult()} method, but in cases where this may take a long
  * time, an {@link Analyzer} can instead return a result of this type and
  * thereby indicate that some process is still going on, but the rest of the job
  * is ready to return.
- * 通常，{@link AnalyzerResult}由{@link Analyzer＃getResult（）}方法立即产生，
- * 但是如果这可能花费很长时间，则{@link Analyzer}可以返回此类型的结果并且表示某些过程仍在进行中，
- * 但是其余工作可以返回了。
  *
  * @param <R>
  *            the wrapped {@link AnalyzerResult} type.

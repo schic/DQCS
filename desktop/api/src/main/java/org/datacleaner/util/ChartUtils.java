@@ -44,7 +44,6 @@ import org.jfree.util.UnitType;
 
 /**
  * Contains features related to layout and styling of JFreeChart based charts.
- * 包含与基于JFreeChart的图表的布局和样式相关的功能。
  */
 public final class ChartUtils {
 

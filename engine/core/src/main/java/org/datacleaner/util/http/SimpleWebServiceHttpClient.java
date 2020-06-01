@@ -31,8 +31,6 @@ import org.datacleaner.user.UserPreferences;
  * Simple HTTP client implementation that does not do anything except delegate
  * to a wrapped {@link HttpClient}. Can be used for non-secured connection or
  * wrapping {@link UserPreferences#createHttpClient()}.
- * 简单的HTTP客户端实现，除了将委托给包装的{@link HttpClient}外，不执行任何其他操作。
- * 可以用于非安全连接或包装{@link UserPreferences＃createHttpClient（）}。
  */
 public class SimpleWebServiceHttpClient implements WebServiceHttpClient {
 

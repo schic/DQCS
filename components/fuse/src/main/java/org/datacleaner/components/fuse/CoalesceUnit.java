@@ -30,7 +30,6 @@ import org.datacleaner.util.ReflectionUtils;
 
 /**
  * Represents a set of columns to be coalesced.
- * 表示要合并的一组列。
  */
 @Convertable(CoalesceUnitConverter.class)
 public class CoalesceUnit {

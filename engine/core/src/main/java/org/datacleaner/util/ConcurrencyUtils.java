@@ -44,7 +44,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Utilities for handling concurrency - mostly the oriented around the
  * java.util.concurrent classes.
- * 处理并发性的实用程序-主要围绕着java.util.concurrent类。
  */
 public class ConcurrencyUtils {
 

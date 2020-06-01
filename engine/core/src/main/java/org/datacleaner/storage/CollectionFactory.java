@@ -28,8 +28,6 @@ import java.util.Set;
  * collections are provided by the framework an are implemented using some
  * persistent storage strategy, making them safe to fill with even millions of
  * elements without running out of memory.
- * 组件要使用的集合的工厂。通常，这些集合是由框架提供的，并使用某种持久存储策略来实现，
- * 从而使它们可以安全地填充甚至数百万个元素而不会耗尽内存。
  *
  *
  */

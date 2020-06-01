@@ -41,7 +41,7 @@ import org.datacleaner.result.Crosstab;
 
 import com.google.common.io.Files;
 
-@Named("MLEvaluationAnalyzer.name")
+@Named("Classifier cross-evaluation")
 @Categorized(MachineLearningCategory.class)
 public class MLEvaluationAnalyzer implements Analyzer<MLClassificationAnalyzerResult> {
 

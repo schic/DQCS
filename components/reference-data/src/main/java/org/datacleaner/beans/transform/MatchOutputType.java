@@ -24,7 +24,7 @@ import org.apache.metamodel.util.HasName;
 /**
  * Defines a type of matching output, which can be either true/false or the
  * matched input (if correct) or null (if incorrect).
- * 定义匹配输出的类型，可以为true / false或匹配的输入（如果正确）或为null（如果不正确）。
+ *
  *
  */
 public enum MatchOutputType implements HasName {

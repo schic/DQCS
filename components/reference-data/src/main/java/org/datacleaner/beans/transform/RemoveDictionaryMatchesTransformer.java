@@ -55,8 +55,9 @@ import org.datacleaner.util.StringUtils;
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
 
-@Named("RemoveDictionaryMatchesTransformer.name")
-@Description("RemoveDictionaryMatchesTransformer.Description")
+@Named("Remove dictionary matches")
+@Description( "Removes any part of a string that is matched against a dictionary. Use it to standardize or prepare "
+        + "values, for instance by removing adjectives that make comparison of similar terms difficult.")
 @ExternalDocumentation({ @DocumentationLink(title = "Segmenting customers on messy data",
         url = "https://www.youtube.com/watch?v=iy-j5s-uHz4", type = DocumentationType.VIDEO, version = "4.0") })
 @Categorized(superCategory = ImproveSuperCategory.class, value = ReferenceDataCategory.class)

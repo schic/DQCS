@@ -43,7 +43,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Datastore based on fixed width files
- * 基于固定宽度文件的数据存储
  */
 public class FixedWidthDatastore extends UsageAwareDatastore<DataContext> implements FileDatastore, ResourceDatastore {
 

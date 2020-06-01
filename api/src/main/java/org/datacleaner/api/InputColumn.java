@@ -29,8 +29,6 @@ import org.apache.metamodel.util.HasName;
  * column can be either physical (based directly on a database column) or
  * virtual if the values yielded by this column are have been transformed (eg.
  * tokenized, sampled etc.)
- * 表示一列，用于从一行数据中检索值。
- * 列可以是物理的（直接基于数据库列）或虚拟的（如果此列产生的值已被转换（例如标记化，采样等））
  *
  * @param <E>
  *            the data type of the column

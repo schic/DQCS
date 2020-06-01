@@ -43,8 +43,6 @@ import org.slf4j.LoggerFactory;
  * A converter for {@link Resource}s. Because of different {@link Resource}
  * implementations, this converter delegates to a number of 'handlers' which
  * implement part of the conversion for a specific type of resource.
- * {@link资源}的转换器。由于使用不同的{@link Resource}实现，
- * 此转换器将委派给多个“处理程序”，这些“处理程序”为特定类型的资源实现部分转换。
  */
 public class ResourceConverter implements Converter<Resource> {
 

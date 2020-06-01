@@ -27,7 +27,6 @@ import org.apache.metamodel.util.Resource;
 /**
  * Interface for widgets that present a {@link Resource} to the user and
  * possibly allows him to edit it
- * 小部件的界面，向用户显示{@link Resource}，并且可能允许他对其进行编辑
  *
  * @param <R>
  *            the type of resource

@@ -47,7 +47,6 @@ import com.google.inject.Inject;
 
 /**
  * Datastore dialog for SugarCRM datastores
- * SugarCRM数据存储的“数据存储”对话框
  */
 public class SugarCrmDatastoreDialog extends AbstractDatastoreDialog<SugarCrmDatastore> {
 

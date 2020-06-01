@@ -45,8 +45,8 @@ import org.datacleaner.api.InputRow;
 import org.datacleaner.util.WriteBuffer;
 import org.datacleaner.util.sort.SortMergeWriter;
 
-@Named("UniqueKeyCheckAnalyzer.name")
-@Description("UniqueKeyCheckAnalyzer.Description")
+@Named("Unique key check")
+@Description("Check your keys (or other fields) for uniqueness")
 @Concurrent(true)
 public class UniqueKeyCheckAnalyzer implements Analyzer<UniqueKeyCheckAnalyzerResult> {
 

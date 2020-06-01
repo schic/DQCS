@@ -39,7 +39,6 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link BuildMapTransformer}.
- * 专用于{@link BuildMapTransformer}的{@link TransformerComponentBuilderPresenter}。
  */
 final class BuildMapJobBuilderPresenter extends TransformerComponentBuilderPanel {
 

@@ -19,15 +19,13 @@
  */
 package org.datacleaner.components.categories;
 
-import org.datacleaner.util.PropertyUtil;
-
 public class WriteSuperCategory extends AbstractComponentSuperCategory {
 
     private static final long serialVersionUID = 1L;
 
     @Override
     public String getDescription() {
-        return PropertyUtil.getProperty("Write.Description");
+        return "Write your data to files, databases or other destinations.";
     }
 
     @Override

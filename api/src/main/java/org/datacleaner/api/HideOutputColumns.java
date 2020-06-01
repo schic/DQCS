@@ -29,7 +29,6 @@ import java.lang.annotation.Target;
 /**
  * Determines if the output columns {@link Transformer#getOutputColumns()} of
  * transformer should be hidden in other components
- * 确定转换器的输出列{@link Transformer＃getOutputColumns（）}是否应隐藏在其他组件中
  *
  */
 

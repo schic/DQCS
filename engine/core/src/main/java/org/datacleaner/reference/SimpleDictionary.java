@@ -40,7 +40,6 @@ import com.google.common.collect.Sets;
 /**
  * The simplest possible Dictionary implementation. Based on an in-memory
  * {@link Set} of values.
- * 最简单的字典实现。基于内存中的{@link Set}值。
  */
 public final class SimpleDictionary extends AbstractReferenceData implements Dictionary {
 

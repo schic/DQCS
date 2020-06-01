@@ -52,16 +52,12 @@ import org.slf4j.LoggerFactory;
 /**
  * Incapsulation of the DATACLEANER_HOME folder. This folder is resolved using
  * the following ordered approach:
- * DATACLEANER HOME文件夹的封装。使用以下有序方法来解决此文件夹：
  *
  * <ol>
  * <li>If a DATACLEANER_HOME environment variable exists, it will be used.</li>
- * 如果存在DATACLEANER_HOME环境变量，将使用它。
  * <li>If the application is running in Java WebStart mode, a sandbox folder
  * will be used.</li>
- * 如果应用程序以Java WebStart模式运行，将使用沙箱文件夹。
  * <li>If none of the above, the current folder "." will be used.</li>
- * 如果以上都不是，则当前文件夹为“.”。将会被使用。
  * </ol>
  */
 public final class DataCleanerHome {

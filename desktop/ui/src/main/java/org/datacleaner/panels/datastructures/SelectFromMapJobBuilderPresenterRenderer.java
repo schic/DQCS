@@ -36,7 +36,6 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link TransformerComponentBuilder} for the
  * {@link SelectFromMapTransformer}.
- * 专门用于{@link SelectFromMapTransformer}的{@link TransformerComponentBuilder}的{@link Renderer}。
  *
  * @author Kasper Sørensen
  */

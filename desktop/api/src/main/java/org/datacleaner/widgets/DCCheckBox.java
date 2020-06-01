@@ -38,7 +38,6 @@ import org.datacleaner.util.WidgetUtils;
 /**
  * A checkbox that carries a value, which is convenient for modelling the object
  * that the checkbox represents (such as a Dictionary, a Datastore etc.)
- * 带有值的复选框，便于建模该复选框表示的对象（例如Dictionary，Datastore等）
  *
  * @param <E>
  *            the type of element that the checkbox represents

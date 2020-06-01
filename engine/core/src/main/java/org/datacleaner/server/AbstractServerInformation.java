@@ -24,7 +24,6 @@ import org.datacleaner.configuration.ServerInformation;
 
 /**
  * Base class for all ServerInformation implementations.
- * 所有ServerInformation实现的基类。
  */
 public abstract class AbstractServerInformation implements ServerInformation {
     private static final long serialVersionUID = 1L;

@@ -22,7 +22,6 @@ package org.datacleaner.result.html;
 /**
  * Represents a part of a {@link HtmlFragment} that should be included in the
  * HTML body section.
- * 表示{@link HtmlFragment}的一部分，应包含在HTML正文部分中。
  */
 public interface BodyElement {
 

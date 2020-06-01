@@ -41,7 +41,6 @@ import com.google.inject.Injector;
 
 /**
  * ActionListener for performing a quick analysis based on standard analyzers.
- * ActionListener用于基于标准分析器执行快速分析。
  */
 public class QuickAnalysisActionListener implements ActionListener {
 

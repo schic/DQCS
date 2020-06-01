@@ -76,8 +76,6 @@ import com.google.common.base.Strings;
  * Factory class for various commonly used widgets in DataCleaner. Typically the
  * factory is being used to cut down boilerplate code for typical features such
  * as setting mnemonics, tooltips etc.
- * DataCleaner中各种常用小部件的工厂类。
- * 通常，工厂用于减少典型功能的样板代码，例如设置助记符，工具提示等。
  */
 public final class WidgetFactory {
 

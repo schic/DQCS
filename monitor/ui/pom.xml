@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.eobjects.datacleaner</groupId>
 		<artifactId>DataCleaner-monitor</artifactId>
-		<version>5.7.1-SNAPSHOT</version>
+		<version>5.7.2-SNAPSHOT</version>
 	</parent>
 	<artifactId>DataCleaner-monitor-ui</artifactId>
 	<packaging>war</packaging>
@@ -21,29 +21,28 @@
 		</testResources>
 
 		<plugins>
-			<!--需要编译时候打开-->
-		<!--	<plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
 				<version>${gwt.version}</version>
 				<configuration>
-					&lt;!&ndash; GWT uses ASM v5 and we have v4 on classpath. This flag avoids the
-						conflict during GWT compile &ndash;&gt;
+					<!-- GWT uses ASM v5 and we have v4 on classpath. This flag avoids the
+						conflict during GWT compile -->
 					<gwtSdkFirstInClasspath>true</gwtSdkFirstInClasspath>
 				</configuration>
 				<executions>
 					<execution>
-						&lt;!&ndash; GWT plugin, used to compile JavaScript &ndash;&gt;
+						<!-- GWT plugin, used to compile JavaScript -->
 						<id>gwt-compile</id>
 						<goals>
 							<goal>compile</goal>
 						</goals>
 						<configuration>
-							<sourceLevel>1.8</sourceLevel> &lt;!&ndash; 1.6 or 1.7 &ndash;&gt;
+							<sourceLevel>1.8</sourceLevel> <!-- 1.6 or 1.7 -->
 						</configuration>
 					</execution>
 					<execution>
-						&lt;!&ndash; Run GwtTestCases with the gwt driver &ndash;&gt;
+						<!-- Run GwtTestCases with the gwt driver -->
 						<id>gwt-test</id>
 						<goals>
 							<goal>test</goal>
@@ -53,7 +52,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>-->
+			</plugin>
 			<plugin>
 				<!-- Delete directories created by GWT eclipse plugin on clean -->
 				<groupId>org.apache.maven.plugins</groupId>
@@ -124,13 +123,13 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
+			<!--<plugin>
 				<groupId>org.jboss.tattletale</groupId>
 				<artifactId>tattletale-maven</artifactId>
 				<configuration>
 					<source>${project.build.directory}/${project.build.finalName}/WEB-INF/lib</source>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
 
@@ -288,10 +287,10 @@
 
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-launcher_2.11</artifactId>
+			<artifactId>spark-launcher_2.12</artifactId>
 		</dependency>
 		<!-- DataCleaner monitor extensions -->
-	<!--	<dependency>
+		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-completeness-analysis-wizard</artifactId>
 			<version>${project.version}</version>
@@ -340,7 +339,7 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-referencedata-wizards</artifactId>
 			<version>${project.version}</version>
-		</dependency>-->
+		</dependency>
 		
 		<!-- JDBC drivers -->
 		<dependency>
@@ -382,10 +381,6 @@
 				<exclusion>
 					<artifactId>libthrift</artifactId>
 					<groupId>org.apache.thrift</groupId>
-				</exclusion>
-				<exclusion>
-					<artifactId>httpcore</artifactId>
-					<groupId>org.apache.httpcomponents</groupId>
 				</exclusion>
 				<exclusion>
 					<artifactId>avro</artifactId>
@@ -470,12 +465,10 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>
-			<scope>provided</scope>
 		</dependency>
 
 		<!-- JSTL -->
@@ -493,16 +486,16 @@
 			<version>8.1.18.v20150929</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.ow2.asm</groupId>
-			<artifactId>asm</artifactId>
-			<version>5.0.3</version>
-		</dependency>
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>3.0.1</version>
-			<scope>test</scope>
-		</dependency>
+		<!--	<dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>5.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>3.0.1</version>
+                <scope>test</scope>
+            </dependency>-->
 	</dependencies>
 </project>

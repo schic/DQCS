@@ -33,10 +33,6 @@ import java.lang.annotation.Target;
  * distributed component will have multiple instances, all with the same
  * configuration. But since there are more instances, naturally they need to be
  * either stateless or have a state-logic which supports separate execution.
- * 用于覆盖默认组件分布和聚类模型的注释。
- * 具有此注释的任何组件（转换器，过滤器或分析器）都可以定义它是否可以分布在服务器群集中。
- * 分布式组件将具有多个实例，所有实例都具有相同的配置。
- * 但是由于存在更多的实例，因此它们自然需要是无状态的或具有支持单独执行的状态逻辑。
  *
  * The default behaviour of the components is:
  *
@@ -51,13 +47,6 @@ import java.lang.annotation.Target;
  * distributed, it needs, or it's {@link AnalyzerResult} class needs, to specify
  * a {@link AnalyzerResultReducer} value for the {@link #reducer()} field.</li>
  * </ul>
- * 组件的默认行为是：
- *   默认情况下，转换器和过滤器是分布式的。
- * 这个默认值的基本原理是被调用的方法（transform（...）和categorize（...））都立即返回其结果，
- * 因此无状态实现将是正常情况。
- *   默认情况下，分析器不分发。此默认值的基本原理是，分析人员应在执行过程中构建其结果，
- * 因此通常是有状态的。如果要分发分析器，
- * 则需要或它的{@link AnalyzerResult}类需要为{@link #reducer（）}字段指定一个{@link AnalyzerResultReducer}值。
  *
  * @see Filter
  * @see Transformer

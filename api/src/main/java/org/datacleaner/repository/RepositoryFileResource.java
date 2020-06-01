@@ -32,7 +32,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A {@link Resource} wrapping of a {@link RepositoryFile}.
- * {@link RepositoryFile}的{@link Resource}包装。
  */
 public class RepositoryFileResource extends AbstractResource implements Serializable {
 

@@ -29,14 +29,12 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.widgets.ChangeRequirementMenu;
 
 /**
  * Abstract class containing the action method that will display a popup with
  * options as to change a job builder.
- * 包含操作方法的抽象类，该方法将显示带有选项的弹出窗口，以更改作业生成器。
  */
 public abstract class AbstractJobBuilderPopupListener {
 
@@ -59,7 +57,7 @@ public abstract class AbstractJobBuilderPopupListener {
 
     public void showPopup(final Component parentComponent, final int x, final int y) {
         final Icon renameIcon = ImageManager.get().getImageIcon(IconUtils.ACTION_RENAME, IconUtils.ICON_SIZE_SMALL);
-        final JMenuItem renameMenuItem = WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.rename.component"), renameIcon);
+        final JMenuItem renameMenuItem = WidgetFactory.createMenuItem("Rename component", renameIcon);
         renameMenuItem.addActionListener(new RenameComponentActionListener(_componentBuilder) {
             @Override
             protected void onNameChanged() {

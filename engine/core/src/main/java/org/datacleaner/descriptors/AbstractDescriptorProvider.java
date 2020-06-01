@@ -39,7 +39,6 @@ import com.google.common.collect.Iterables;
 /**
  * Abstract descriptor provider implementation that implements most trivial
  * methods.
- * 实现大多数普通方法的抽象描述符提供程序实现。
  */
 public abstract class AbstractDescriptorProvider implements DescriptorProvider {
 

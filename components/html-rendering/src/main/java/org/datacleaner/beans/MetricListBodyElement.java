@@ -38,7 +38,6 @@ import org.datacleaner.result.html.HtmlRenderingContext;
 
 /**
  * Body element which simply produces a list of metrics as per the descriptor of the component job being rendered.
- * Body元素仅根据要渲染的组件作业的描述符生成一系列指标。
  */
 public class MetricListBodyElement implements BodyElement {
 

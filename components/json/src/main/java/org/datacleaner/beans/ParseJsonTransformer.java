@@ -38,8 +38,8 @@ import org.datacleaner.util.StringUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 
-@Named("ParseJsonTransformer.name")
-@Description("ParseJsonTransformer.Description")
+@Named("Read & parse JSON document")
+@Description("Parses a JSON document (as a string) and materializes the data structure it represents")
 @Categorized(DataStructuresCategory.class)
 public class ParseJsonTransformer implements Transformer {
 

@@ -33,8 +33,6 @@ import org.datacleaner.util.StringUtils;
  * allow the user to change the catalog of datastores at runtime. This datastore
  * catalog wraps an immutable instance, which typically represents what is
  * configured in datacleaner's xml file.
- * 数据存储目录接口的可变/可修改的实现。用于允许用户在运行时更改数据存储的目录。
- * 该数据存储目录包装了一个不可变的实例，该实例通常表示在datacleaner的xml文件中配置的内容。
  */
 public class MutableDatastoreCatalog implements DatastoreCatalog, Serializable {
 

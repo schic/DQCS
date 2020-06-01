@@ -20,14 +20,10 @@
 package org.datacleaner;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,14 +34,11 @@ import org.datacleaner.bootstrap.BootstrapOptions;
 import org.datacleaner.bootstrap.DefaultBootstrapOptions;
 import org.datacleaner.extensions.ClassLoaderUtils;
 import org.datacleaner.user.DataCleanerHome;
-import org.datacleaner.util.PropertyUtil;
 
 /**
  * The main executable class of DataCleaner. This class primarily sets up
  * logging, system properties and delegates to the {@link Bootstrap} class for
  * actual application startup.
- * DataCleaner的主要可执行类。
- * 此类主要设置日志记录，系统属性，并委托给{@link Bootstrap}类，以用于实际的应用程序启动。
  */
 public final class Main {
 
@@ -67,42 +60,6 @@ public final class Main {
                 System.setProperty(key, value);
             }
         }
-
-      /* Properties  props = new Properties();
-        InputStream in = null;
-        try {
-            in =Main.class.getResource("config.properties");
-            props.load(in);
-            System.setProperties(props);
-        } catch (FileNotFoundException e) {
-
-           // logger.error("dbconfig.properties文件未找到");
-
-        } catch (IOException e) {
-
-           // logger.error("出现IOException");
-
-        } finally {
-
-            try {
-
-                if (null != in) {
-
-                    in.close();
-
-                }
-
-            } catch (IOException e) {
-
-              //  logger.error("dbconfig.properties文件流关闭出现异常");
-
-            }
-
-        }
-
-        //logger.info("加载properties文件内容完成...........");
-
-        //logger.info("properties文件内容：" + props);*/
         return result;
     }
 

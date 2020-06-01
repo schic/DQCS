@@ -31,13 +31,10 @@ import com.google.inject.Guice;
 
 /**
  * A simple main class for triggering documentation building.
- * 一个用于触发文档构建的简单主类。
  *
  * Eventually we may want to integrate this into the normal CLI of DataCleaner
  * but at this stage it is experimentation-ware so keeping it separate is both
  * easier and more safe to avoid integration issues.
- * 最终，我们可能希望将其集成到DataCleaner的常规CLI中，
- * 但是在现阶段，它是实验软件，因此将其分开既容易又安全，可以避免集成问题。
  */
 public class Main {
 

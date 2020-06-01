@@ -3,7 +3,6 @@ import org.datacleaner.result.html.{FlotChartLocator, HeadElement, HtmlRendering
 
 /**
  * Defines reusable script parts for value distribution results
-  * 定义可重复使用的脚本部分以实现价值分配结果
  */
 object ValueDistributionReusableScriptHeadElement extends HeadElement {
 

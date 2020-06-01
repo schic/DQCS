@@ -33,7 +33,6 @@ import org.slf4j.LoggerFactory;
  * Wrapper for the TaskRunner that only submits jobs when no errors have been
  * reported yet. This makes sure that a job will finish early if an error is
  * reported.
- * TaskRunner的包装程序，仅在尚未报告任何错误时提交作业。这样可以确保如果报告错误，则作业将尽早完成。
  */
 final class ErrorAwareTaskRunnerWrapper implements TaskRunner, ErrorAware {
 

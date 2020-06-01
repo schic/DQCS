@@ -82,7 +82,6 @@ import com.google.inject.util.Modules;
 /**
  * Google Guice module for DataCleaner. Defines the main contextual components
  * of a DataCleaner session.
- * 适用于DataCleaner的Google Guice模块。定义DataCleaner会话的主要上下文组件。
  */
 public class DCModuleImpl extends AbstractModule implements DCModule {
 

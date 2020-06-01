@@ -36,15 +36,11 @@ import com.google.common.base.Splitter;
 /**
  * Default {@link EnumMatcher} implementation that uses a normalized/trimmed
  * version of the following values for exact matching:
- * 默认的{@link EnumMatcher}实现使用以下值的规范化/修剪版本进行精确匹配：
  *
  * <ul>
  * <li>The constant name of the enum</li>
- * 枚举的常量名称
  * <li>The name of the enum, if it implements {@link HasName}</li>
- * 枚举的名称（如果实现了{@link HasName}）
  * <li>The alias(es) of the enum, if it implements {@link HasAliases}</li>
- * 枚举的别名（如果实现{@link HasAliases}）
  * </ul>
  *
  */

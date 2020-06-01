@@ -68,7 +68,6 @@ import org.w3c.dom.NodeList;
 /**
  * Convenient utility class for reading and writing POJO datastores from and to
  * XML (JAXB) elements.
- * 方便的实用程序类，用于从XML（JAXB）元素读取和写入POJO数据存储。
  */
 public class JaxbPojoDatastoreAdaptor {
 

@@ -44,7 +44,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Reads {@link DataCleanerConfiguration} from conf.xml and decorates it with
  * additional configuration from {@link UserPreferences}.
- * 从conf.xml中读取{@link DataCleanerConfiguration}，并用来自{@link UserPreferences}的附加配置来修饰它。
  */
 public class DataCleanerConfigurationReader extends LazyRef<DataCleanerConfiguration> {
 

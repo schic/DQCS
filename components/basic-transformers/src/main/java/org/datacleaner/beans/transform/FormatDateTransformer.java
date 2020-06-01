@@ -33,8 +33,8 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.DateAndTimeCategory;
 
-@Named("FormatDateTransformer.name")
-@Description("FormatDateTransformer.Description")
+@Named("Format date")
+@Description("Allows you to format a date as a string by applying your own date format.")
 @Categorized(DateAndTimeCategory.class)
 public class FormatDateTransformer implements Transformer {
 

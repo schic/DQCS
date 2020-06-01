@@ -35,9 +35,6 @@ import org.apache.metamodel.schema.Schema;
  * reference to a {@link Schema}. The reference may be a hard reference (an
  * actual {@link Schema}) or just a simple String reference (usually to make it
  * easier to serialize and deserialize state and handle schema changes).
- * 提供关于属性的额外元数据的注释，该属性是对{@link Schema}的引用。
- * 该引用可以是硬引用（实际的{@link Schema}），
- * 也可以是简单的String引用（通常是为了使状态的序列化和反序列化以及处理模式更改更容易）。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD })

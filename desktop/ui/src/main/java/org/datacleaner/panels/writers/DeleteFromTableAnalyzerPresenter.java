@@ -51,7 +51,6 @@ import org.datacleaner.widgets.properties.SingleTableNamePropertyWidget;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link DeleteFromTableAnalyzer}.
- * 专用于{@link DeleteFromTableAnalyzer}的{@link TransformerComponentBuilderPresenter}。
  */
 class DeleteFromTableAnalyzerPresenter extends AnalyzerComponentBuilderPanel {
 

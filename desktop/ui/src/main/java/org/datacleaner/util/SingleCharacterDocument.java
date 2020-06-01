@@ -26,7 +26,6 @@ import javax.swing.text.PlainDocument;
 
 /**
  * A {@link Document} used for holding a single character.
- * {@link Document}，用于保存单个字符。
  */
 public class SingleCharacterDocument extends PlainDocument {
 

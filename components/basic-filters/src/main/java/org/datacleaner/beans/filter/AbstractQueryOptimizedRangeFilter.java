@@ -36,7 +36,6 @@ import org.datacleaner.api.Validate;
 /**
  * Abstract {@link QueryOptimizedFilter} which implementation for range filters
  * which demarcate valid value bounds.
- * 摘要{@link QueryOptimizedFilter}，它用于范围过滤器，用于划分有效值范围。
  */
 @Distributed(true)
 abstract class AbstractQueryOptimizedRangeFilter<E>

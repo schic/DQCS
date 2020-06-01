@@ -28,7 +28,6 @@ import org.datacleaner.storage.StorageProvider;
 
 /**
  * Default (immutable) implementation of {@link DataCleanerEnvironmentImpl}.
- * {@link DataCleanerEnvironmentImpl}的默认（不可变）实现。
  */
 public class DataCleanerEnvironmentImpl implements DataCleanerEnvironment {
 

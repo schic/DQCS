@@ -28,10 +28,8 @@ import java.util.regex.Pattern;
 
 /**
  * Contains various utility methods regarding string handling.
- * 包含有关字符串处理的各种实用程序方法。
  *
  * Consider using Guava's "Strings" instead.
- * 考虑使用Guava's "Strings"代替
  */
 public final class StringUtils {
 

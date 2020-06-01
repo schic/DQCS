@@ -25,8 +25,6 @@ import org.datacleaner.job.AnalysisJob;
  * A simple {@link JobDivisionManager} which builds divisions based on a
  * preferred fixed number of divisions. Typically this fixed number will be the
  * number of slave nodes in the cluster.
- * 一个简单的{@link JobDivisionManager}，它基于首选块大小来构建分区。
- * 例如，如果块大小为1000条记录，且传入作业的预期行数为30,000条记录-那么将进行30个划分。
  */
 public class FixedDivisionsCountJobDivisionManager implements JobDivisionManager {
 

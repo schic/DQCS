@@ -29,7 +29,7 @@ import java.util.TreeSet;
 
 /**
  * Represents a timeline of some entity. A timeline contains several intervals.
- *代表某个实体的时间轴。时间线包含几个间隔。
+ *
  *
  */
 public class TimeLine implements Serializable {

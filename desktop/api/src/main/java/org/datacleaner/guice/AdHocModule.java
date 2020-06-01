@@ -39,8 +39,6 @@ import com.google.inject.util.Providers;
 /**
  * Module with ad hoc variables for limited scoping. Useful module to use as an
  * argument to {@link Injector#createChildInjector(Module...)};
- * 具有临时变量的模块，用于有限的作用域。
- * 用作{@link Injector＃createChildInjector（Module ...）}的参数的有用模块；
  */
 final class AdHocModule implements Module {
 

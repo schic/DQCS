@@ -44,7 +44,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * ASM class visitor for DataCleaner components.
- * DataCleaner组件的ASM类访问者。
  */
 final class DCClassVisitor extends ClassVisitor {
 

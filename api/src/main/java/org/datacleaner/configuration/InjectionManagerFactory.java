@@ -25,8 +25,6 @@ import org.datacleaner.job.AnalysisJob;
  * Factory for {@link InjectionManager} instances. Since such instances
  * represent job-level context, they much be created individually for each job
  * execution.
- * {@link InjectionManager}实例的工厂。由于此类实例表示作业级别的上下文，
- * 因此它们很多是为每个作业执行而单独创建的。
  */
 public interface InjectionManagerFactory {
 

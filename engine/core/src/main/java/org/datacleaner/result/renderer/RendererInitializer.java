@@ -25,7 +25,7 @@ import org.datacleaner.descriptors.RendererBeanDescriptor;
 /**
  * Callback interface allowing to initialize renderers before any actions are
  * performed on them.
- * 回调接口允许在对渲染器执行任何操作之前初始化渲染器。
+ *
  *
  */
 public interface RendererInitializer {

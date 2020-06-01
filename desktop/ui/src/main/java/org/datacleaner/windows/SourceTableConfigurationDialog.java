@@ -42,7 +42,6 @@ import org.datacleaner.widgets.Alignment;
 
 /**
  * Dialog used for configuring a source table of a job.
- * 用于配置作业的源表的对话框。
  */
 public class SourceTableConfigurationDialog extends AbstractDialog implements SourceColumnChangeListener {
 

@@ -35,7 +35,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Abstract datastore implementation that uses a shared
  * UsageAwareDataContextProvider when posssible.
- * 可能时使用共享的UsageAwareDataContextProvider的抽象数据存储区实现。
  *
  * @see UsageAwareDatastoreConnection
  */

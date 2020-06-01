@@ -36,7 +36,6 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link TransformerComponentBuilderPresenter} for
  * {@link TableLookupTransformer}.
- * 针对{@link TableLookupTransformer}的{@link TransformerComponentBuilderPresenter}进行了专门的{@link Renderer}。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class TableLookupJobBuilderPresenterRenderer

@@ -29,7 +29,6 @@ import org.datacleaner.job.ComponentJob;
 
 /**
  * Represents a collection of results for an {@link AnalysisJob}.
- * 表示{@link AnalysisJob}的结果集合。
  */
 public interface AnalysisResult {
 

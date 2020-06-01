@@ -39,7 +39,6 @@ import org.datacleaner.widgets.Alignment;
 /**
  * Useful extension of {@link JPanel} which provides utility methods, background
  * image rendering and coloring.
- * {@link JPanel}的有用扩展，提供实用方法，背景图像渲染和着色。
  */
 public class DCPanel extends JPanel {
 

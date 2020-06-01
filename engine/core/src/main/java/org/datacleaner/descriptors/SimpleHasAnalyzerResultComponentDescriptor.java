@@ -26,7 +26,6 @@ import org.datacleaner.components.categories.AnalyzeSuperCategory;
 /**
  * Simple and disposable implementation of
  * {@link HasAnalyzerResultComponentDescriptor}.
- * {@link HasAnalyzerResultComponentDescriptor}的简单且一次性的实现。
  *
  * @param <C>
  *            the component type

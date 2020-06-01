@@ -23,7 +23,6 @@ import java.util.List;
 
 /**
  * Defines a provider which provides wizards which can be used to create a job.
- * 定义提供程序，该提供程序提供可用于创建作业的向导。
  */
 public interface WizardProvider {
     /**

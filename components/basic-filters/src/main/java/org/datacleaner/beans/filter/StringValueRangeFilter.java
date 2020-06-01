@@ -30,8 +30,8 @@ import org.datacleaner.api.InputRow;
 import org.datacleaner.api.Validate;
 import org.datacleaner.components.categories.FilterCategory;
 
-@Named("StringValueRangeFilter.name")
-@Description("StringValueRangeFilter.Description")
+@Named("String value range")
+@Description("A filter that filters out values outside a specified value range")
 @Categorized(FilterCategory.class)
 public class StringValueRangeFilter implements Filter<RangeFilterCategory> {
 

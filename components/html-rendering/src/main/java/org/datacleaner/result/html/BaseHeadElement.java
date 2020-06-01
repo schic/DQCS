@@ -23,7 +23,6 @@ import java.net.URI;
 
 /**
  * The obligatory head element which includes required stylesheets, scripts etc.
- * 必须的head元素，包括必需的样式表，脚本等。
  */
 public final class BaseHeadElement implements HeadElement {
 

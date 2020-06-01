@@ -48,8 +48,8 @@ import org.datacleaner.result.CrosstabDimension;
 import org.datacleaner.result.CrosstabNavigator;
 import org.datacleaner.result.CrosstabResult;
 
-@Named("YearDistributionAnalyzer.name")
-@Description("YearDistributionAnalyzer.Description")
+@Named("Year distribution")
+@Description("Finds the distribution of years from Date values.")
 @Concurrent(true)
 @Categorized(DateAndTimeCategory.class)
 @Distributed(reducer = DatePartDistributionResultReducer.class)

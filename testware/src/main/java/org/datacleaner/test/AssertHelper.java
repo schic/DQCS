@@ -21,7 +21,7 @@ package org.datacleaner.test;
 
 /**
  * A utility class containing methods useful during unit testing.
- * 一个实用程序类，其中包含在单元测试中有用的方法。
+ *
  */
 public class AssertHelper {
 

@@ -28,7 +28,6 @@ import org.datacleaner.descriptors.ComponentDescriptor;
 /**
  * Super-interface for all job entries in an Analysis. A {@link ComponentJob}
  * represents a component's configuration in a {@link AnalysisJob}.
- * 分析中所有作业条目的超级接口。 {@link ComponentJob}表示{@link AnalysisJob}中组件的配置。
  */
 public interface ComponentJob extends HasName, InputColumnSinkJob, OutputDataStreamJobSource, HasComponentRequirement,
         HasComponentConfiguration, Serializable {

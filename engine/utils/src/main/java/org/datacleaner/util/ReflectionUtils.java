@@ -46,7 +46,7 @@ import com.googlecode.gentyref.GenericTypeReflector;
 
 /**
  * Various static methods for reflection related tasks.
- * 用于反射相关任务的各种静态方法。
+ *
  *
  */
 public final class ReflectionUtils {

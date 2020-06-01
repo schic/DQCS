@@ -41,7 +41,6 @@ import org.datacleaner.widgets.ResourceTypePresenter;
 
 /**
  * Property widget for a single {@link Resource} field.
- * 单个{@link Resource}字段的属性窗口小部件。
  */
 public final class SingleResourcePropertyWidget extends AbstractPropertyWidget<Resource> {
 

@@ -31,7 +31,6 @@ import org.slf4j.LoggerFactory;
  * Wraps a standard {@link InjectionManager} and adds support for all Guice
  * based injections (only triggered in case the standard
  * {@link InjectionManager} is not useful
- * 包装标准{@link InjectionManager}并添加对所有基于Guice的注入的支持（仅在标准{@link InjectionManager}无效的情况下触发
  */
 final class GuiceInjectionManager extends InjectionManagerImpl {
 

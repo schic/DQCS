@@ -33,14 +33,11 @@ import scala.Tuple2;
 /**
  * Mapper function that changes takes Object arrays representing physical
  * records into the format of an {@link InputRow}.
- * 更改的映射器函数将表示物理记录的Object数组转换为{@link InputRow}的格式。
  *
  * Currently this is implemented very strictly by just investigating the column
  * indices of the job's source columns.
- * 目前，仅通过调查作业的源列的列就可以非常严格地实施此操作。
  *
  * It is assumed that the job is based on a single source {@link Table}.
- * 假定该作业基于单个来源{@link Table}。
  */
 public class ValuesToInputRowFunction implements Function<Tuple2<Object[], Long>, InputRow> {
 

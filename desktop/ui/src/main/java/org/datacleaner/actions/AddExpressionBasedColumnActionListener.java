@@ -34,7 +34,6 @@ import org.datacleaner.widgets.properties.PropertyWidget;
 
 /**
  * Action listener for adding an expression based input column
- * 动作侦听器，用于添加基于表达式的输入列
  *
  * @author Kasper Sørensen
  */

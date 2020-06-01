@@ -69,7 +69,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Delegate for {@link ValueDistributionResultSwingRenderer}, which renders a
  * single Value Distribution group result.
- * 代表{@link ValueDistributionResultSwingRenderer}，它呈现一个单个“值分布”组结果。
  */
 final class ValueDistributionResultSwingRendererGroupDelegate {
 

@@ -42,7 +42,6 @@ import org.datacleaner.metadata.HasMetadataProperties;
 
 /**
  * Represents a builder object for components in a {@link AnalysisJob}.
- * 表示{@link AnalysisJob}中组件的构建器对象。
  */
 public interface ComponentBuilder
         extends HasMetadataProperties, InputColumnSinkJob, OutputDataStreamJobSource, HasComponentRequirement, HasName,

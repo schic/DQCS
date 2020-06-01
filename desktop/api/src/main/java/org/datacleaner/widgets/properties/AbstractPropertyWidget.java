@@ -35,12 +35,11 @@ import org.slf4j.LoggerFactory;
 /**
  * Abstract implementation of the PropertyWidget interface. An implementing
  * class should preferably:
- * PropertyWidget接口的抽象实现。实现类最好：
  *
  * <ul>
- * <li>add(...) a single widget in the constructor.</li>在构造函数中add(...)一个小部件。
+ * <li>add(...) a single widget in the constructor.</li>
  * <li>call fireValueChanged() each time the contents/value of the widget has
- * changed.</li>每次小部件的内容/值发生更改时，请调用fireValueChanged（）。
+ * changed.</li>
  * </ul>
  *
  * @param <E>

@@ -24,13 +24,10 @@ import java.io.Serializable;
 /**
  * An {@link AnalyzerResult} represents the result of an {@link Analyzer}s
  * execution.
- * {@link AnalyzerResult}表示执行{@link Analyzer}的结果。
  *
  * It is advised that {@link AnalyzerResult} implementations expose a number of
  * result metrics. This is done by having getter methods annotated with the
  * {@link Metric} annotation.
- * 建议{@link AnalyzerResult}实现实现多个结果指标。
- * 这可以通过使用带有{@link Metric}批注的getter方法来完成。
  *
  * @see Metric
  */

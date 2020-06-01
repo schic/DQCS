@@ -25,7 +25,6 @@ import org.apache.metamodel.util.FileHelper;
 
 /**
  * Main class for the DataCleaner Command-line interface (CLI).
- * DataCleaner命令行界面（CLI）的主类。
  */
 public final class Main {
 

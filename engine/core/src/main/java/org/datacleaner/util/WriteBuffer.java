@@ -33,7 +33,6 @@ import org.slf4j.LoggerFactory;
 /**
  * Provides a buffering mechanism that enables writing rows periodically instead
  * of instantly.
- * 提供一种缓冲机制，该机制使定期（而不是立即）写入行成为可能。
  */
 public class WriteBuffer {
 

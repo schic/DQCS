@@ -34,8 +34,6 @@ import org.datacleaner.job.ComponentJob;
  * A simple (and Serializable!) implementation of the {@link AnalysisResult}
  * interface. Useful for storing and loading in files or other binary
  * destinations, using Java's serialization API.
- * {@link AnalysisResult}接口的简单（可序列化！）实现。
- * 使用Java的序列化API，对于在文件或其他二进制目标中存储和加载很有用。
  */
 public class SimpleAnalysisResult extends AbstractAnalysisResult implements Serializable, AnalysisResult {
 

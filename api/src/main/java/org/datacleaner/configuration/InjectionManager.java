@@ -23,7 +23,6 @@ import org.datacleaner.api.Component;
 
 /**
  * Component that manages injections made into {@link Component}s.
- * 管理注入到{@link Component}中的注入的组件。
  */
 public interface InjectionManager {
 

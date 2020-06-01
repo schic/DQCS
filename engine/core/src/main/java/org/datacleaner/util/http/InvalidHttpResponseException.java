@@ -24,7 +24,6 @@ import org.apache.http.HttpResponse;
 /**
  * Represents an exception occurring because a HTTP response was invalid
  * (typically based on status code).
- * 表示由于HTTP响应无效（通常基于状态码）而发生的异常。
  */
 public class InvalidHttpResponseException extends RuntimeException {
 

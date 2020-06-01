@@ -31,7 +31,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Simple HTML viewer.
- * 简单的HTML查看器。
  */
 public class DCHtmlBox extends JEditorPane {
     private static final Logger logger = LoggerFactory.getLogger(DCHtmlBox.class);

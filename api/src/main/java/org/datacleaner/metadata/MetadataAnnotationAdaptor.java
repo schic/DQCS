@@ -23,7 +23,6 @@ package org.datacleaner.metadata;
  * Component with responsibility to adapt a particular type of
  * {@link MetadataAnnotation} into a specialized class which is easier to
  * consume and use for specialized use-cases.
- * 负责将特定类型的{@link MetadataAnnotation}改编为专门类的组件，该类更易于消费和用于专门用例。
  *
  * @param <T>
  *            the object type that will be converted to/from the

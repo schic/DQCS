@@ -29,7 +29,6 @@ import org.datacleaner.util.ReflectionUtils;
  * Represents the types of functions can be applied to columns for transforming
  * them into features. The functions are applied to the values of the raw data
  * and transforms it to a set of numeric features.
- * 表示函数的类型可以应用于将列转换为特征的列。这些函数将应用于原始数据的值，并将其转换为一组数字特征。
  */
 public enum MLFeatureModifierType implements HasName {
 

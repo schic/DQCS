@@ -653,8 +653,8 @@ public class JaxbJobReaderTest extends TestCase {
         final FileResource propertyFile = (FileResource) linkedList
                 .get(3);
         String absolutePath = propertyFile.getFile().getAbsolutePath();
-        absolutePath = absolutePath.replace("\\", "/"); 
-        absolutePath = absolutePath.replace("C:", "");
+        absolutePath = absolutePath.replace("\\", "/");
+        absolutePath = absolutePath.replaceAll("^([a-zA-Z]):", "");
         assertEquals("/tmp/ignite/hotfolder/dc_input - 2016-12-12 14:14:56 - samples.csv", absolutePath);
     }
     
@@ -678,7 +678,8 @@ public class JaxbJobReaderTest extends TestCase {
         final FileResource propertyFile = (FileResource) linkedList.get(3);
         String absolutePath = propertyFile.getFile().getAbsolutePath();
         absolutePath = absolutePath.replace("\\", "/");
-        absolutePath = absolutePath.replace("C:", "");
+        absolutePath = absolutePath.replaceAll("^([a-zA-Z]):", "");
+
         assertEquals("/Users/claudiap/Documents/OutgoingHotFolder/myFile/1482244133378-samples.csv", absolutePath);
     }
 

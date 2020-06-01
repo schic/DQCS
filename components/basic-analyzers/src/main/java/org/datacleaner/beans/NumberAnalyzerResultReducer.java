@@ -39,15 +39,13 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Result reducer for {@link NumberAnalyzerResult}s.
- *{@link NumberAnalyzerResult} s的结果归约器。
+ *
  * Note: Some of the result metrics of {@link NumberAnalyzerResult} are NOT
  * reduceable. Since the inclusion of these metrics are anyways optional (based
  * on a configuration property), we take the optimistic approach and reduce what
  * we can.
- *注意：{@link NumberAnalyzerResult}的某些结果指标不可归约。
- * 由于这些指标的包含始终是可选的（基于配置属性），因此我们采用了乐观的方法并减少了可以做的事情。
+ *
  * Warnings will be raised if non-reduceable metrics are encountered.
- * 如果遇到不可减少的度量标准，则会发出警告。
  */
 public class NumberAnalyzerResultReducer extends AbstractCrosstabResultReducer<NumberAnalyzerResult> {
 

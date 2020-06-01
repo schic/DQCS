@@ -34,7 +34,7 @@ import org.joda.time.LocalTime;
  * Helper class for the Date/time Analyzer. This class collects all the
  * statistics for a single column. The Date/time Analyzer then consists of a
  * number of these delegates.
- *日期/时间分析器的帮助程序类。此类收集单个列的所有统计信息。然后，日期/时间分析器由个这些委托组成。
+ *
  *
  */
 final class DateAndTimeAnalyzerColumnDelegate {

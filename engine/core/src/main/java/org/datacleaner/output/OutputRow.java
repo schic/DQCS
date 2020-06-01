@@ -24,7 +24,6 @@ import org.datacleaner.api.InputRow;
 
 /**
  * Represents a row that is being written to some output (typically a file or a database)
- * 表示正在写入某些输出（通常是文件或数据库）的行
  */
 public interface OutputRow {
 

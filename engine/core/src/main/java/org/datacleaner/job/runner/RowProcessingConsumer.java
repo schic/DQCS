@@ -33,7 +33,6 @@ import org.datacleaner.job.OutputDataStreamJob;
 
 /**
  * Interface for objects that recieve rows from the RowProcessingPublisher.
- * 用于从行处理发布器接收行的对象的接口。
  */
 public interface RowProcessingConsumer {
 

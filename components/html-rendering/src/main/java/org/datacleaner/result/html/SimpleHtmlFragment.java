@@ -25,8 +25,6 @@ import java.util.List;
 /**
  * Simple {@link HtmlFragment} implementation which function just as a simple
  * collection of {@link HeadElement}s and {@link BodyElement}s.
- * 简单的{@link HtmlFragment}实现，
- * 其功能类似于{@link HeadElement}和{@link BodyElement}的简单集合。
  */
 public class SimpleHtmlFragment implements HtmlFragment {
 

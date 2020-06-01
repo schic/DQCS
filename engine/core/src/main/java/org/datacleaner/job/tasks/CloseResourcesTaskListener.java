@@ -27,7 +27,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Task listener that calls closing methods for any closeables.
- * 任务侦听器，它调用任何可关闭对象的关闭方法。
  */
 public class CloseResourcesTaskListener implements TaskListener {
 

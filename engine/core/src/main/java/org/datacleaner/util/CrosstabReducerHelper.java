@@ -30,7 +30,6 @@ import org.datacleaner.result.CrosstabNavigator;
 
 /**
  * Helper class for reductions of crosstabs
- * 减少交叉表的助手类
  *
  */
 public class CrosstabReducerHelper {

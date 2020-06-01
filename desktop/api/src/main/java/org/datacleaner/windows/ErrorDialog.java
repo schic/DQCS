@@ -39,7 +39,6 @@ import com.google.common.base.Strings;
 
 /**
  * Error dialog for simple error messages (without stack traces) in DataCleaner.
- * DataCleaner中的简单错误消息（无堆栈跟踪）的错误对话框。
  */
 public class ErrorDialog extends AbstractDialog {
 

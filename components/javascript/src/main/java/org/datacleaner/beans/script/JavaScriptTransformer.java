@@ -40,11 +40,10 @@ import org.mozilla.javascript.ScriptableObject;
 
 /**
  * A transformer that uses userwritten JavaScript to generate a value
- * 使用用户编写的JavaScript生成值的转换器
  */
-@Named("JavaScriptTransformer.name")
+@Named("JavaScript transformer (simple)")
 @Alias("JavaScript transformer")
-@Description("JavaScriptTransformer.Description")
+@Description("Supply your own piece of JavaScript to do a custom transformation")
 @Categorized(ScriptingCategory.class)
 public class JavaScriptTransformer implements Transformer {
 

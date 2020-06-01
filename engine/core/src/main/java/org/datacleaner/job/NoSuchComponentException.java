@@ -25,8 +25,7 @@ import org.datacleaner.descriptors.DescriptorProvider;
  * Exception thrown in case a job is being opened and it references an
  * unexisting component, such as an analyzer or transformer name which is not
  * resolved using the {@link DescriptorProvider}.
- * 如果作业正在打开并且引用了一个不存在的组件，
- * 例如使用{@link DescriptorProvider}无法解析的分析器或转换器名称，则会引发异常。
+ *
  *
  */
 public class NoSuchComponentException extends RuntimeException {

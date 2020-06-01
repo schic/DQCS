@@ -36,7 +36,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * AnalysisListener that will register errors
- * 将注册错误的AnalysisListener
+ *
  *
  */
 public final class ErrorAwareAnalysisListener extends AnalysisListenerAdaptor implements ErrorAware {

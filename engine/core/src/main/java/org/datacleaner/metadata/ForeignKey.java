@@ -29,7 +29,6 @@ import org.datacleaner.connection.DatastoreConnection;
 
 /**
  * A metadata object representing a foreign key
- * 表示外键的元数据对象
  */
 public final class ForeignKey {
 

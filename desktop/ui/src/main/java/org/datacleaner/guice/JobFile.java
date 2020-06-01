@@ -26,7 +26,6 @@ import javax.inject.Qualifier;
 
 /**
  * Qualifier annotation used for specifying job filename in various contexts.
- * 限定符注释，用于在各种上下文中指定作业文件名。
  *
  * @author Kasper Sørensen
  */

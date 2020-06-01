@@ -27,7 +27,6 @@ import org.datacleaner.api.InputRow;
 /**
  * An outcome that represents "Any outcome", ie. all other requirements/outcomes
  * are satisifed.
- * 代表“结果”的结果是。满足所有其他要求/结果。
  */
 public class AnyComponentRequirement implements ComponentRequirement {
 

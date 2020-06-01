@@ -22,7 +22,6 @@ package org.datacleaner.api;
 /**
  * Interface for components that are labeled (typically in a UI) and wish to
  * influence/suggest the label to present.
- * 带有标签（通常在UI中）并希望影响/建议标签显示的组件的接口。
  */
 public interface HasLabelAdvice {
 

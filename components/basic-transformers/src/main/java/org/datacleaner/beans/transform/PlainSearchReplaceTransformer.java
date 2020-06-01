@@ -45,8 +45,8 @@ import org.datacleaner.util.convert.StringConverter;
 
 import com.google.common.base.Strings;
 
-@Named("PlainSearchReplaceTransformer.name")
-@Description("PlainSearchReplaceTransformer.Description")
+@Named("Plain search/replace")
+@Description("Search and replace text in String values.")
 @Categorized(TextCategory.class)
 public class PlainSearchReplaceTransformer implements Transformer {
 

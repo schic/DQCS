@@ -23,7 +23,7 @@ import org.datacleaner.windows.AbstractDatastoreDialog;
 
 /**
  * A descriptor class for a datastore types in DataCleaner.
- * DataCleaner中数据存储区的描述符类。
+ *
  */
 public interface DatastoreDescriptor {
 

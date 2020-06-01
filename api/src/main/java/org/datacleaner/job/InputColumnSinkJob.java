@@ -23,7 +23,7 @@ import org.datacleaner.api.InputColumn;
 
 /**
  * Interface for job objects that consume input columns in a job.
- *消耗作业中输入列的作业对象的接口。
+ *
  *
  */
 public interface InputColumnSinkJob {

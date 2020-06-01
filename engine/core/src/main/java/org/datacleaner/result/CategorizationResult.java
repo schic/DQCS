@@ -36,7 +36,6 @@ import org.datacleaner.storage.RowAnnotationImpl;
 
 /**
  * A simple {@link AnalyzerResult} that exposes a set of categories/annotations
- * 一个简单的{@link AnalyzerResult}，它公开了一组类别/注释
  */
 @Distributed(reducer = CategorizationResultReducer.class)
 public class CategorizationResult implements AnalyzerResult {

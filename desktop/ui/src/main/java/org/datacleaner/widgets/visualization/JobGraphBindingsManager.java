@@ -40,7 +40,6 @@ import org.datacleaner.job.builder.TransformerComponentBuilder;
 
 /**
  * Key-bindings manager for the {@link JobGraph}.
- * {@link JobGraph}的键绑定管理器。
  */
 public class JobGraphBindingsManager {
     private abstract static class JobGraphBindingAction implements Action {

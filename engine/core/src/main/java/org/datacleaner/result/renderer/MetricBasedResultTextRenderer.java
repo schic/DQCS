@@ -34,7 +34,6 @@ import org.datacleaner.util.LabelUtils;
 
 /**
  * The last-resort text renderer, which prints every metric available
- * 最后一种文本渲染器，可打印所有可用的指标
  */
 @RendererBean(TextRenderingFormat.class)
 public class MetricBasedResultTextRenderer implements Renderer<AnalyzerResult, String> {

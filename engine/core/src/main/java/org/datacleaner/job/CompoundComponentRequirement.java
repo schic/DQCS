@@ -30,7 +30,6 @@ import org.datacleaner.api.InputRow;
 /**
  * Represents an outcome that is a product of multiple other outcomes and thus
  * requires just any of the provided outcomes.
- * 表示结果是多个其他结果的乘积，因此仅需要提供的任何结果。
  */
 public class CompoundComponentRequirement implements ComponentRequirement {
     private static final long serialVersionUID = 1L;

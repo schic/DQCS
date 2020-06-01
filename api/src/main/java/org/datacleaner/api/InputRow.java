@@ -24,11 +24,9 @@ import java.util.List;
 
 /**
  * Represents a row of data where each value pertain to a column.
- * 代表一行数据，其中每个值都与一列有关。
  *
  * An InputRow can contain both values that are physical (ie. a raw output from
  * a datastore) and virtual (ie. generated values, created by Transformers).
- * InputRow可以包含物理值（即，来自数据存储的原始输出）和虚拟值（即，由Transformers创建的值）。
  *
  * @see Transformer
  * @see InputColumn

@@ -78,8 +78,8 @@ import org.datacleaner.util.WriteBuffer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("DeleteFromTableAnalyzer.name")
-@Description("DeleteFromTableAnalyzer.Description")
+@Named("Delete from table")
+@Description("Delete records in a table. Records matching the specified condition(s) will be deleted in batch.")
 @Categorized(superCategory = WriteSuperCategory.class)
 @Concurrent(true)
 public class DeleteFromTableAnalyzer

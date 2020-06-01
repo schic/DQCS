@@ -36,7 +36,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Object that can build a complete Component Reference documentation folder
- * 可以构建完整的组件参考文档文件夹的对象
  */
 public class ComponentReferenceDocumentationBuilder {
 

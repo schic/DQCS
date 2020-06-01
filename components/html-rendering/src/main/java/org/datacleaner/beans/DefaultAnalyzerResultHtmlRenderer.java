@@ -29,7 +29,6 @@ import org.datacleaner.result.renderer.HtmlRenderingFormat;
 
 /**
  * The default HTML renderer for any AnalyzerResult.
- * 任何AnalyzerResult的默认HTML渲染器。
  */
 @RendererBean(HtmlRenderingFormat.class)
 public class DefaultAnalyzerResultHtmlRenderer implements Renderer<AnalyzerResult, HtmlFragment> {

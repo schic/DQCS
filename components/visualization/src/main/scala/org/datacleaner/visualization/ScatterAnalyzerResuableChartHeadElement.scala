@@ -4,7 +4,6 @@ import org.datacleaner.result.html.{FlotChartLocator, HeadElement, HtmlRendering
 
 /**
  * Head element which defines the necesary script and style elements for scatter charts
-  * Head元素，定义散点图所需的脚本和样式元素
  */
 object ScatterAnalyzerResuableChartHeadElement extends HeadElement {
 

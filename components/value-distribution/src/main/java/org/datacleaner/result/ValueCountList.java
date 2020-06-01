@@ -24,7 +24,6 @@ import java.util.List;
 
 /**
  * Represents a list of value counts
- * 代表值计数列表
  */
 public interface ValueCountList extends Serializable {
 

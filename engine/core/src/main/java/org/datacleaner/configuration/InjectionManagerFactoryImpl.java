@@ -23,7 +23,6 @@ import org.datacleaner.job.AnalysisJob;
 
 /**
  * Default {@link InjectionManagerFactory} implementation
- * 默认的{@link InjectionManagerFactory}实现
  */
 public class InjectionManagerFactoryImpl implements InjectionManagerFactory {
 

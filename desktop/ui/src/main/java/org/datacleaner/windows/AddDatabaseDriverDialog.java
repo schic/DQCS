@@ -53,7 +53,6 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  * Dialog for adding a database driver based on local JAR file(s).
- * 用于基于本地JAR文件添加数据库驱动程序的对话框。
  *
  * @author Kasper Sørensen
  */

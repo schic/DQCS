@@ -23,7 +23,6 @@ import org.apache.metamodel.util.Resource;
 
 /**
  * Interface for datastores that are based upon a {@link Resource}.
- * 基于{@link Resource}的数据存储的接口。
  */
 public interface ResourceDatastore extends Datastore {
 

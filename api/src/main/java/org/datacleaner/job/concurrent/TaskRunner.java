@@ -26,8 +26,6 @@ import org.datacleaner.job.tasks.Task;
  * responsible for executing tasks, typically of rather small sizes. A task
  * runner is an abstraction over such execution details as thread pools, timer
  * services and clustering environments.
- * DataCleaner中工作执行者的界面。 {@link TaskRunner}负责执行通常很小的任务。
- * 任务运行程序是对诸如线程池，计时器服务和集群环境等执行细节的抽象。
  */
 public interface TaskRunner {
 

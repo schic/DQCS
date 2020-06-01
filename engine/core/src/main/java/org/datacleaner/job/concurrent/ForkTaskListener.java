@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Task listener that will fork into a new set of tasks, once it's predecessors
  * have ben completed.
- * 一旦完成了任务监听器，它将侦听到一组新任务中。
+ *
  *
  */
 public final class ForkTaskListener implements TaskListener {

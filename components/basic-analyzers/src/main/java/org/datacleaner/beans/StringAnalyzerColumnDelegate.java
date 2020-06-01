@@ -31,7 +31,7 @@ import org.datacleaner.util.CharIterator;
  * Helper class for the String Analyzer. This class collects all the statistics
  * for a single column. The String Analyzer then consists of a number of these
  * delegates.
- *字符串分析器的帮助器类。此类收集单个列的所有统计信息。然后，字符串分析器由许多这些委托组成。
+ *
  *
  */
 final class StringAnalyzerColumnDelegate {

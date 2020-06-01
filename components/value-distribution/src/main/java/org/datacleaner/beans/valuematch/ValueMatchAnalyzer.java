@@ -40,8 +40,9 @@ import org.datacleaner.storage.RowAnnotation;
 import org.datacleaner.storage.RowAnnotationFactory;
 import org.datacleaner.util.StringUtils;
 
-@Named("ValueMatchAnalyzer.name")
-@Description("ValueMatchAnalyzer.Description")
+@Named("Value matcher")
+@Description("Matches actual values against a set of expected values.\nUse this analyzer as a way to narrow down "
+        + "unexpected values, spelling mistakes, missing values and errors.")
 @Concurrent(true)
 public class ValueMatchAnalyzer implements Analyzer<ValueMatchAnalyzerResult>, HasLabelAdvice {
 

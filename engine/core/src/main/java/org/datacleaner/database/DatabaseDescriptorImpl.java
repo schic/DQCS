@@ -25,7 +25,6 @@ import org.apache.metamodel.util.BaseObject;
 
 /**
  * Default implementation of {@link DatabaseDriverDescriptor}.
- * {@link DatabaseDriverDescriptor}的默认实现。
  */
 public final class DatabaseDescriptorImpl extends BaseObject implements DatabaseDriverDescriptor {
 

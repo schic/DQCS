@@ -21,7 +21,6 @@ package org.datacleaner.database;
 
 /**
  * Simple interface to allow preparing for the driver (i.e. set properties) before loading it.
- * 简单的界面，允许在加载驱动程序之前对其进行准备（即设置属性）。
  */
 public interface DriverPreparer {
     void prepare();

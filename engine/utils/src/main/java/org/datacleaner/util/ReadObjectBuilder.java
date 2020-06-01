@@ -38,16 +38,13 @@ import org.slf4j.LoggerFactory;
 /**
  * Builder object to make it convenient to implement a readObject(
  * {@link ObjectInputStream}) method in a Serializable class.
- * Builder对象，以方便在Serializable类中实现readObject（{@link ObjectInputStream}）方法。
  *
  * The main functionality of this helper is to aid in setting field values of
  * fields that have been moved around in the class hierarchy. This is eg. the
  * case with implementations of UsageAwareDatastore and
  * AbstractReferenceData (where the _name fields have been moved to
  * these super classes).
- * 该帮助程序的主要功能是帮助设置已在类层次结构中移动的字段的字段值。
- * 这是例如。使用UsageAwareDatastore和AbstractReferenceData的实现
- * （其中_name字段已移至这些超级类）。
+ *
  *
  */
 public final class ReadObjectBuilder<E extends Serializable> {

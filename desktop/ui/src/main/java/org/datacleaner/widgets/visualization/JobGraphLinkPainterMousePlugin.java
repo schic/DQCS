@@ -36,8 +36,6 @@ import edu.uci.ics.jung.visualization.control.GraphMousePlugin;
  * {@link GraphMousePlugin} inpsired by {@link EditingGraphMousePlugin} to
  * support the creation of new links between parts of a visualized DataCleaner
  * job.
- * {@link GraphMousePlugin}受{@link EditingGraphMousePlugin}的启发，
- * 支持在可视化DataCleaner作业的各个部分之间创建新链接。
  */
 public class JobGraphLinkPainterMousePlugin extends AbstractGraphMousePlugin
         implements MouseListener, MouseMotionListener {

@@ -61,14 +61,10 @@ import org.slf4j.LoggerFactory;
 /**
  * {@link ObjectInputStream} implementation that is aware of changes such as class or package renaming. This can be used
  * to deserialize classes with historic/legacy class names.
- * {@link ObjectInputStream}实现，可了解类或包重命名等更改。可以使用反序列化具有历史/旧类名称的类。
  *
  * Furthermore the deserialization mechanism is aware of multiple {@link ClassLoader}s. This means that if the object
  * being deserialized pertains to a different {@link ClassLoader}, then this classloader can be added using the
  * {@link #addClassLoader(ClassLoader)} method.
- * 此外，反序列化机制知道多个{@link ClassLoader}。
- * 这意味着如果要反序列化的对象属于不同的{@link ClassLoader}，
- * 则可以使用{{link #addClassLoader（ClassLoader）}方法添加该类加载器。
  *
  *
  */

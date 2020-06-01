@@ -26,7 +26,7 @@ import org.datacleaner.widgets.tabs.CloseableTabbedPane;
 
 /**
  * Listener used to switch between shown/hidden titles of tabs
- * 侦听器，用于在显示/隐藏的选项卡标题之间切换
+ *
  * @author Kasper Sørensen
  */
 public final class HideTabTextActionListener implements ActionListener {

@@ -45,8 +45,8 @@ import org.datacleaner.components.machinelearning.impl.MLClassificationRecordImp
 
 import com.google.common.io.Files;
 
-@Named("MLClassificationTransformer.name")
-@Description("MLClassificationTransformer.Description")
+@Named("Apply classifier")
+@Description("Applies a classifier to incoming records. Note that the classifier must first be trained using one of the analyzers found in the 'Machine Learning' category.")
 @Categorized(MachineLearningCategory.class)
 public class MLClassificationTransformer implements Transformer {
 

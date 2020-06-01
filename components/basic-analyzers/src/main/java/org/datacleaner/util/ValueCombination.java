@@ -30,10 +30,10 @@ import org.slf4j.LoggerFactory;
  * Represents a combination of values that are of interest to the user.
  * Typically such a combination is used to find dependencies between the values
  * of a couple of columns.
- *表示用户感兴趣的值的组合。 通常，这种组合用于查找几列的值之间的依赖关系。
+ *
  * A ValueCombination has proper hashCode and equals methods. It also implements
  * Comparable, comparing value-by-value.
- *ValueCombination具有适当的hashCode和equals方法。它还实现可比较，逐个值比较。
+ *
  *
  */
 public class ValueCombination<E> extends BaseObject implements Comparable<ValueCombination<E>> {

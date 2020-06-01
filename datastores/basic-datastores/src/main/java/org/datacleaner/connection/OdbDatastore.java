@@ -30,7 +30,6 @@ import org.datacleaner.util.ReadObjectBuilder;
 
 /**
  * Datastore implementation for OpenOffice database files (.odb).
- * OpenOffice数据库文件（.odb）的数据存储实现。
  */
 public final class OdbDatastore extends UsageAwareDatastore<DataContext> implements FileDatastore {
 

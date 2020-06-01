@@ -33,9 +33,6 @@ import org.apache.metamodel.schema.Column;
  * reference to a {@link Column}. The reference may be a hard reference (an
  * actual {@link Column}) or just a simple String reference (usually to make it
  * easier to serialize and deserialize state and handle schema changes).
- * 提供关于属性的额外元数据的注释，该属性是对{@link Column}的引用。
- * 该引用可以是硬引用（实际的{@link Column}），
- * 也可以是简单的String引用（通常使更容易序列化和反序列化状态以及处理模式更改）。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD })

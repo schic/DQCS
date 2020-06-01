@@ -40,7 +40,6 @@ import org.slf4j.LoggerFactory;
  * Dictionary based on a simple text file containing the values of the
  * dictionary. Each line of the file will be treated as a value within the
  * dictionary.
- * 基于包含字典值的简单文本文件的字典。文件的每一行都将被视为词典中的值。
  */
 public final class TextFileDictionary extends AbstractReferenceData implements Dictionary {
 

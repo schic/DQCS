@@ -26,7 +26,6 @@ import org.datacleaner.result.AbstractValueCountingAnalyzerResult;
 /**
  * Defines abstract methods, metrics etc. for analyzer results of the Value
  * Distribution analyzer.
- * 为“值分布”分析器的分析器结果定义抽象方法，度量标准等。
  */
 @Distributed(reducer = ValueDistributionAnalyzerResultReducer.class)
 public abstract class ValueDistributionAnalyzerResult extends AbstractValueCountingAnalyzerResult {

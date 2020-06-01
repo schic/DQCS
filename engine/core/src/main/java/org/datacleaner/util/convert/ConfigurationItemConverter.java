@@ -42,7 +42,7 @@ import org.slf4j.LoggerFactory;
 /**
  * A {@link Converter} implementation for DataCleaner configuration items,
  * specifically:
- *用于DataCleaner配置项的{@link Converter}实现，特别是：
+ *
  * <ul>
  * <li>org.datacleaner.reference.Dictionary</li>
  * <li>org.datacleaner.reference.SynonymCatalog</li>

@@ -25,7 +25,7 @@ import javax.swing.Icon;
 
 /**
  * Represents the state of a tab in a tabbed pane.
- * 表示选项卡式窗格中选项卡的状态。
+ *
  * @param <C>
  *            the component type that is shown in this tab's content pane
  */

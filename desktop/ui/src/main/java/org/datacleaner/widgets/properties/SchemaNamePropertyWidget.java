@@ -36,7 +36,6 @@ import org.datacleaner.widgets.SchemaStructureComboBoxListRenderer;
 /**
  * Alternative String property widget, specifically built for components that
  * need a {@link Schema} name drop down.
- * 备用字符串属性窗口小部件，专门为需要{@link Schema}名称下拉列表的组件而构建。
  *
  * @author Kasper Sørensen
  */

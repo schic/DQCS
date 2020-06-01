@@ -28,7 +28,6 @@ import org.datacleaner.job.AnalysisJob;
 
 /**
  * A {@link InjectionManagerFactory} which is aware of the underlying Guice system for dependency injection
- * {@link InjectionManagerFactory}知道潜在的依赖注入的Guice系统
  */
 public class GuiceInjectionManagerFactory implements InjectionManagerFactory {
 

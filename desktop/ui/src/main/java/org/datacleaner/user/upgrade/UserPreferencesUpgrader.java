@@ -27,7 +27,6 @@ import org.datacleaner.user.UserPreferencesImpl;
 /**
  * Object responsible for upgrading {@link UserPreferencesImpl} if found during
  * {@link DataCleanerHomeUpgrader} routines.
- * 如果在{@link DataCleanerHomeUpgrader}例程中发现了负责升级{@link UserPreferencesImpl}的对象。
  */
 class UserPreferencesUpgrader {
 

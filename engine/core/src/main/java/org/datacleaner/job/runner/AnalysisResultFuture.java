@@ -31,20 +31,16 @@ import org.datacleaner.result.AnalysisResult;
  * Represents the result of an analysis. The analysis may still be running,
  * which is why this interface contains the isDone(), await() and
  * await(long,TimeUnit) methods.
- * 表示分析结果。分析可能仍在运行，这就是为什么此接口包含isDone（），await（）和await（long，TimeUnit）方法的原因。
  *
  * When the result is done it may either be successful or erroneous. Clients can
  * find out using the isSuccessful() or isErrornous() methods.
- * 结果完成后，它可能成功或错误。客户端可以使用isSuccessful（）或isErrornous（）方法来查找。
  *
  * If successful, the results can be retrieved like specified in the
  * {@link AnalysisResult} interface - using the getResults() method. If
  * erroneous the error messages can be retrieved using the getErrors() method.
  * If the analysis was only partly erroneous, there may be both result and
  * errors, but isSuccessful() will return false.
- *如果成功，则可以使用getResults（）方法像在{@link AnalysisResult}接口中指定的那样检索结果。
- * 如果错误，则可以使用getErrors（）方法检索错误消息。
- * 如果分析只是部分错误，则可能同时有结果和错误，但是isSuccessful（）将返回false。
+ *
  *
  */
 public interface AnalysisResultFuture extends ErrorAware, AnalysisResult {

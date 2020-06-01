@@ -44,8 +44,8 @@ import org.datacleaner.storage.RowAnnotationFactory;
 import org.datacleaner.storage.RowAnnotations;
 import org.datacleaner.util.ValueCombination;
 
-@Named("BooleanAnalyzer.name")
-@Description("BooleanAnalyzer.Description")
+@Named("Boolean analyzer")
+@Description("Inspect your boolean values. How is the distribution of true/false? Are there null values?")
 public class BooleanAnalyzer implements Analyzer<BooleanAnalyzerResult> {
 
     public static final String MEASURE_LEAST_FREQUENT = "Least frequent";
