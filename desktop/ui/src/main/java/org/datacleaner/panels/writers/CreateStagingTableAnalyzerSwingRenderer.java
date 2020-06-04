@@ -24,6 +24,7 @@ import javax.inject.Inject;
 import org.datacleaner.api.Renderer;
 import org.datacleaner.api.RendererBean;
 import org.datacleaner.api.RendererPrecedence;
+import org.datacleaner.extension.output.CreateStagingTableAnalyzer;
 import org.datacleaner.guice.DCModule;
 import org.datacleaner.job.builder.AnalyzerComponentBuilder;
 import org.datacleaner.panels.AnalyzerComponentBuilderPresenter;
