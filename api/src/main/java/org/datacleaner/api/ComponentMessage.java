@@ -23,6 +23,7 @@ package org.datacleaner.api;
  * Represents a message sent by a component. Message implementations may vary
  * widely, allowing them to carry information of different granularity and
  * relevance.
+ * 表示组件发送的消息。消息实现可能有很大的不同，从而使它们可以承载不同粒度和相关性的信息。
  */
 public interface ComponentMessage {
 

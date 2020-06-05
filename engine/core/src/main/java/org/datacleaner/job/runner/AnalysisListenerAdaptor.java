@@ -32,6 +32,7 @@ import org.datacleaner.job.TransformerJob;
  * An {@link AnalysisListener} that does nothing. Useful base-class for
  * implementing only particular methods of the {@link AnalysisListener}
  * interface.
+ * {@link AnalysisListener}不执行任何操作。仅用于实现{@link AnalysisListener}接口的特定方法的有用基类。
  */
 public class AnalysisListenerAdaptor implements AnalysisListener {
 

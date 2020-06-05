@@ -56,7 +56,8 @@ import org.datacleaner.data.ConstantInputColumn;
 import org.datacleaner.descriptors.Descriptors;
 import org.datacleaner.descriptors.SimpleDescriptorProvider;
 import org.datacleaner.extension.output.CreateCsvFileAnalyzer;
-import org.datacleaner.job.EmptyJaxbJobMetadataFactory;
+//import org.datacleaner.job.EmptyJaxbJobMetadataFactory;
+import org.datacleaner.job.JaxbJobMetadataFactoryImpl;
 import org.datacleaner.job.JaxbJobReader;
 import org.datacleaner.job.JaxbJobWriter;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
@@ -481,7 +482,7 @@ public class PreviewTransformedDataActionListenerTest {
         final AnalysisJobBuilder ajb = previewJob.analysisJobBuilder;
         ajb.getAnalysisJobMetadata().getProperties().put(PreviewUtils.METADATA_PROPERTY_MARKER, "test");
 
-        final JaxbJobWriter writer = new JaxbJobWriter(ajb.getConfiguration(), new EmptyJaxbJobMetadataFactory());
+        final JaxbJobWriter writer = new JaxbJobWriter(ajb.getConfiguration(), new JaxbJobMetadataFactoryImpl());
 
         try (FileOutputStream out = new FileOutputStream(outputFile)) {
             writer.write(ajb.toAnalysisJob(), out);

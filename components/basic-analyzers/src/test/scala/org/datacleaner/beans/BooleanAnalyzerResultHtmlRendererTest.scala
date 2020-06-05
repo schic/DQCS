@@ -8,7 +8,7 @@ import org.datacleaner.result.html.DefaultHtmlRenderingContext
 import org.datacleaner.result.renderer.RendererFactory
 import org.junit.Test
 import org.junit.Assert
-import org.scalatestplus.junit.AssertionsForJUnit
+import org.scalatest.junit.AssertionsForJUnit
 
 class BooleanAnalyzerResultHtmlRendererTest extends AssertionsForJUnit {
   

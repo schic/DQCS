@@ -25,6 +25,7 @@ import org.datacleaner.repository.RepositoryFolder;
 
 /**
  * Represents the home folder of a user's {@link DataCleanerConfiguration}.
+ * 表示用户的{@link DataCleanerConfiguration}的主文件夹。
  *
  * In most cases the home folder is based on a physical directory ({@link File})
  * but in certain deployments it may be a virtual directory represented as a
@@ -32,6 +33,10 @@ import org.datacleaner.repository.RepositoryFolder;
  * {@link RepositoryFolder} type if it is appropriate - otherwise keep in mind
  * that the {@link File} representation may return a placeholder directory such
  * as a temporary directory or the user home directory.
+ * 在大多数情况下，主文件夹基于物理目录（{@link File}），
+ * 但在某些部署中，它可能是一个虚拟目录，表示为{@link RepositoryFolder}。
+ * 因此，建议在适当的情况下使用{@link RepositoryFolder}类型-否则请记住，
+ * {@link File}表示形式可能会返回一个占位符目录，例如临时目录或用户主目录。
  */
 public interface DataCleanerHomeFolder {
 

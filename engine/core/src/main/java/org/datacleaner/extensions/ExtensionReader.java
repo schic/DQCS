@@ -47,6 +47,8 @@ import org.w3c.dom.Element;
  * Component used for reading {@link ExtensionPackage} objects from the
  * classpath (aka. "Internal" extensions) and from external files (aka.
  * "External" extensions).
+ * 用于从类路径（也称为“内部”扩展名）和外部文件（也称为*“外部”扩展名）中
+ * 读取{@link ExtensionPackage}对象的组件。
  */
 public class ExtensionReader {
 

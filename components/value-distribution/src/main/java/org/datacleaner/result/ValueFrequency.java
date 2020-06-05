@@ -28,6 +28,8 @@ import org.apache.metamodel.util.HasName;
  * Represents a frequency of values. Value frequencies can either represent a single
  * value or a composite list of other values (for instance - "&lt;unique&gt;" is
  * a typical composite group of values - all with a frequency of 1).
+ * 代表值的频率。值频率可以表示单个值，
+ * 也可以表示其他值的组合列表（例如-“ <unique>”是典型的一组值组合-所有频率均为1）。
  */
 public interface ValueFrequency extends HasName, Serializable, Comparable<ValueFrequency> {
 

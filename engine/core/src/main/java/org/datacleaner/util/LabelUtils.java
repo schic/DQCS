@@ -44,6 +44,7 @@ import com.google.common.base.Strings;
 /**
  * Utility class for reusable methods and constants that represent user readable
  * labels
+ * 实用程序类，用于表示用户可读的标签的可重用方法和常量
  */
 public final class LabelUtils {
 

@@ -22,6 +22,7 @@ package org.datacleaner.util;
 /**
  * Defines an interface for tokens within a {@link NamedPattern} who can define
  * it's own group literal (regex).
+ * 为{@link NamedPattern}中的令牌定义一个接口，该接口可以定义是其自己的组文字（正则表达式）。
  */
 public interface HasGroupLiteral {
 

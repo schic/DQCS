@@ -44,6 +44,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Action listener used to fire an export of an analysis result
+ * 用于侦听分析结果的动作侦听器
  */
 public class ExportResultToHtmlActionListener implements ActionListener {
 

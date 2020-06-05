@@ -27,7 +27,7 @@ import org.datacleaner.result.CrosstabResult;
 
 /**
  * Result type of the StringAnalyzer
- *
+ *StringAnalyzer的结果类型
  *
  */
 @Distributed(reducer = StringAnalyzerResultReducer.class)

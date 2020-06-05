@@ -28,6 +28,7 @@ import org.datacleaner.util.LabelUtils;
  * Represents a simple value and count pair, used by the
  * {@link ValueDistributionAnalyzer} to represent which values occur at what
  * frequencies.
+ * 表示一个简单的值和计数对，由{@link ValueDistributionAnalyzer}用来表示哪些值以什么频率出现。
  */
 public final class SingleValueFrequency extends AbstractValueFrequency implements ValueFrequency {
 

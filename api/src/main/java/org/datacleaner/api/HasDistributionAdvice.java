@@ -22,6 +22,7 @@ package org.datacleaner.api;
 /**
  * Interface for components whose distribution property (normally set via
  * {@link Distributed}) is dynamically adjusted depending on its configuration.
+ * 组件的接口，其分配属性（通常通过{@link Distributed}设置）根据其配置动态调整。
  */
 public interface HasDistributionAdvice {
 

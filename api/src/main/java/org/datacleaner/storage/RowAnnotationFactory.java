@@ -28,9 +28,13 @@ import org.datacleaner.api.Provided;
  * and thus provide a convenient storage mechanism for situations where a
  * component needs to manage a set of labels but where storing them in
  * collections would be too complicated and would fill up memory.
+ * RowAnnotationFactory表示一种用于在执行过程中对数据行进行注释/标签的机制。
+ * 通常，这些批注将存储在磁盘上，
+ * 从而为组件需要管理一组标签但将它们存储在集合中的情况过于复杂并会占用内存的情况提供一种便捷的存储机制。
  *
  * The RowAnnotationFactory is injectable into any {@link Component} (analyzer,
  * transformer, filter) using the {@link Provided} annotation.
+ * 使用{@link Provided}批注，可以将RowAnnotationFactory注入到任何{@link Component}（分析仪，转换器，过滤器）中。
  */
 public interface RowAnnotationFactory extends RowAnnotationSampleContainer, RowAnnotationHandler {
 

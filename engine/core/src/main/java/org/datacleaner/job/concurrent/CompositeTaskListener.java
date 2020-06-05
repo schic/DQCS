@@ -23,6 +23,7 @@ import org.datacleaner.job.tasks.Task;
 
 /**
  * {@link TaskListener} that wraps several other {@link TaskListener}s
+ * {@link TaskListener}包装了其他几个{@link TaskListener}
  */
 public class CompositeTaskListener implements TaskListener {
 

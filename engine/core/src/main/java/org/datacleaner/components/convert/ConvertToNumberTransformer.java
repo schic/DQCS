@@ -41,9 +41,10 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Attempts to convert anything to a Number (Double) value
+ * 尝试将任何内容转换为数字（双精度）值
  */
-@Named("Convert to number")
-@Description("Converts anything to a number (or null if not possible).")
+@Named("ConvertToNumberTransformer.name")
+@Description("ConvertToNumberTransformer.Description")
 @Categorized(ConversionCategory.class)
 public class ConvertToNumberTransformer implements Transformer {
 

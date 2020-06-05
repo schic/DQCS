@@ -188,6 +188,7 @@ import com.google.common.base.Strings;
 
 /**
  * Configuration reader that uses the JAXB model to read XML file based configurations for DataCleaner.
+ * 使用JAXB模型读取DataCleaner的基于XML文件的配置的配置读取器。
  */
 public final class JaxbConfigurationReader implements ConfigurationReader<InputStream> {
 

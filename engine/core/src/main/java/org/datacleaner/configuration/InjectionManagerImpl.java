@@ -52,6 +52,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Simple injection manager implementation, which is aware of catalogs used
  * within the {@link AnalyzerBeansConfiguration}, but not anymore.
+ * 简单的注入管理器实现，它知道{@link AnalyzerBeansConfiguration}中使用的目录，但现在不再了。
  */
 public class InjectionManagerImpl implements InjectionManager {
 

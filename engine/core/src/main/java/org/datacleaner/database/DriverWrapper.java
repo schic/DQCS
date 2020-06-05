@@ -32,6 +32,9 @@ import java.util.logging.Logger;
  * DriverManager will only accept Driver instances that have the same
  * ClassLoader as the DriverManager it self and sometimes we use dynamic class
  * loading for the drivers.
+ * 此类仅包装JDBC驱动程序。必须包装它们，
+ * 因为DriverManager将只接受与其自身具有相同ClassLoader的Driver实例，
+ * 有时我们会为驱动程序使用动态类加载。
  */
 public final class DriverWrapper implements Driver {
 

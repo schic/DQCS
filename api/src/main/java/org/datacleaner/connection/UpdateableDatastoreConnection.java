@@ -24,6 +24,7 @@ import org.apache.metamodel.UpdateableDataContext;
 
 /**
  * Represents a connection to a datastore that is updateable/writable.
+ * 表示与可更新/可写的数据存储的连接。
  */
 public interface UpdateableDatastoreConnection extends DatastoreConnection {
 

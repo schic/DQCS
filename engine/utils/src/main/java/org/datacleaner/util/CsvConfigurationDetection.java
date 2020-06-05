@@ -48,6 +48,7 @@ import com.ibm.icu.text.CharsetMatch;
 /**
  * Provides an auto-detection mechanism for the properties of a
  * {@link CsvConfiguration}.
+ * 为{@link CsvConfiguration}的属性提供自动检测机制。
  */
 public class CsvConfigurationDetection {
 

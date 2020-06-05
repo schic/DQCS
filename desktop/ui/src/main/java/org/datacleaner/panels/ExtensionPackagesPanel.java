@@ -53,6 +53,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Panel for configuring extension packages.
+ * 用于配置扩展软件包的面板。
  */
 public class ExtensionPackagesPanel extends DCPanel {
 

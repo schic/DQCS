@@ -72,13 +72,7 @@ import org.datacleaner.guice.InjectorBuilder;
 import org.datacleaner.guice.Nullable;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.panels.DCPanel;
-import org.datacleaner.util.DragDropUtils;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.SchemaComparator;
-import org.datacleaner.util.StringUtils;
-import org.datacleaner.util.WidgetScreenResolutionAdjuster;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.DCLabel;
 import org.datacleaner.widgets.DescriptorMenuBuilder;
 import org.datacleaner.widgets.DescriptorMenuBuilder.MenuCallback;
@@ -93,7 +87,7 @@ import org.slf4j.LoggerFactory;
 import com.google.inject.Injector;
 
 public class SchemaTree extends JXTree implements TreeWillExpandListener, TreeCellRenderer, DescriptorProviderListener {
-    
+
     private final WidgetScreenResolutionAdjuster adjuster = WidgetScreenResolutionAdjuster.get();
 
     class LoadTablesSwingWorker extends SwingWorker<Void, Table> {
@@ -199,7 +193,7 @@ public class SchemaTree extends JXTree implements TreeWillExpandListener, TreeCe
     public static final String LOADING_TABLES_STRING = "Loading tables...";
     public static final String LOADING_COLUMNS_STRING = "Loading columns...";
     public static final String UNNAMED_SCHEMA_STRING = "(unnamed schema)";
-    public static final String LIBRARY_STRING = "Library";
+    public static final String LIBRARY_STRING = PropertyUtil.getProperty("Library");
     public static final String ROOT_NODE_STRING = "Schemas";
     private static final long serialVersionUID = 7763827443642264329L;
     private static final Logger logger = LoggerFactory.getLogger(SchemaTree.class);

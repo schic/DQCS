@@ -27,6 +27,7 @@ import java.util.Set;
 import org.datacleaner.database.DatabaseDriverCatalog;
 import org.datacleaner.database.DatabaseDriverDescriptor;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.windows.AccessDatastoreDialog;
 import org.datacleaner.windows.CassandraDatastoreDialog;
 import org.datacleaner.windows.CompositeDatastoreDialog;
@@ -149,11 +150,12 @@ public class DatastoreDescriptors {
                     "images/datastore-types/databases/microsoft.png", true);
 
     private static final DatastoreDescriptor COMPOSITE_DATASTORE_DESCRIPTOR =
-            new DatastoreDescriptorImpl("Composite datastore", "Create a composite datastore", CompositeDatastore.class,
+            new DatastoreDescriptorImpl(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.more.composite"), "Create a composite datastore", CompositeDatastore.class,
                     CompositeDatastoreDialog.class, IconUtils.COMPOSITE_IMAGEPATH, false);
 
     private static final DatastoreDescriptor OTHER_DATASTORE_DESCRIPTOR =
-            new DatastoreDescriptorImpl("Other database", "Connect to other database", JdbcDatastore.class,
+            new DatastoreDescriptorImpl(PropertyUtil.getProperty("datacleaner.ui.desktop.text.datastoreManagement.more.other"),
+                    "Connect to other database", JdbcDatastore.class,
                     JdbcDatastoreDialog.class, IconUtils.GENERIC_DATASTORE_IMAGEPATH, false);
 
     private DatabaseDriverCatalog _databaseDriverCatalog;

@@ -32,6 +32,7 @@ import org.slf4j.LoggerFactory;
 /**
  * A renderer for analyzers returning {@link AnalyzerFutureResult}. Waits for the Future to
  * finish processing and renders the wrapped {@link AnalyzerResult}.
+ * 分析器的渲染器，返回{@link AnalyzerFutureResult}。等待Future完成处理并呈现包装的{@link AnalyzerResult}。
  */
 @RendererBean(TextRenderingFormat.class)
 public class ToStringFutureTextRenderer implements Renderer<AnalyzerResultFuture<? extends AnalyzerResult>, String> {

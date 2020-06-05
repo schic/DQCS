@@ -24,6 +24,7 @@ import java.util.Map.Entry;
 
 /**
  * An immutable entry implementation
+ * 不变的入口实现
  *
  * @param <K>
  * @param <V>

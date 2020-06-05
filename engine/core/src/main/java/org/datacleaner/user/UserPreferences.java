@@ -34,6 +34,7 @@ import org.datacleaner.reference.SynonymCatalog;
 
 /**
  * Defines the settings provided at runtime by the user in DataCleaner
+ * 定义用户在运行时在DataCleaner中提供的设置
  */
 public interface UserPreferences {
 

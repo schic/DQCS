@@ -32,6 +32,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Task that runs for every component to initialize it before execution of a job
+ * 为每个组件运行的任务在执行作业之前对其进行初始化
  */
 public final class InitializeTask implements Task {
 

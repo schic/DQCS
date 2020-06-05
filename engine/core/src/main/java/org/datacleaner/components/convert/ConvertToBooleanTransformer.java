@@ -34,9 +34,10 @@ import org.datacleaner.components.categories.ConversionCategory;
 
 /**
  * Attempts to convert anything to a Boolean value
+ * 尝试将任何内容转换为布尔值
  */
-@Named("Convert to boolean")
-@Description("Converts anything to a boolean (or null).")
+@Named("ConvertToBooleanTransformer.name")
+@Description("ConvertToBooleanTransformer.Description")
 @Categorized(ConversionCategory.class)
 public class ConvertToBooleanTransformer implements Transformer {
 

@@ -27,6 +27,7 @@ import org.datacleaner.api.RendererPrecedence;
 
 /**
  * An extension of the renderer interface, useful for most simple HTML renderers.
+ * 渲染器接口的扩展，对大多数简单的HTML渲染器有用。
  */
 public abstract class HtmlRenderer<R extends Renderable> implements Renderer<R, HtmlFragment> {
 

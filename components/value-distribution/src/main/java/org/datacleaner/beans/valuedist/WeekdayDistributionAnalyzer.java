@@ -42,8 +42,8 @@ import org.datacleaner.result.CrosstabDimension;
 import org.datacleaner.result.CrosstabNavigator;
 import org.datacleaner.result.CrosstabResult;
 
-@Named("Weekday distribution")
-@Description("Finds the distribution of weekdays from Date values.")
+@Named("WeekdayDistributionAnalyzer.name")
+@Description("WeekdayDistributionAnalyzer.Description")
 @Concurrent(true)
 @Categorized(DateAndTimeCategory.class)
 @Distributed(reducer = WeekdayDistributionResultReducer.class)

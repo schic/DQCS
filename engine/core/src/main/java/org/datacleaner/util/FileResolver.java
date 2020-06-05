@@ -29,6 +29,7 @@ import org.datacleaner.configuration.DataCleanerHomeFolder;
 /**
  * Helper class for resolving {@link File}s based on their path and a
  * base-directory and vice-versa.
+ * 用于根据{@link File}的路径和基本目录来解析{@link File}的帮助程序类，反之亦然。
  */
 public class FileResolver {
 

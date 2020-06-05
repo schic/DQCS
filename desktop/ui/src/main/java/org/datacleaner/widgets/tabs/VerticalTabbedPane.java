@@ -44,6 +44,7 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * The vertical tabbed pane used in the {@link ResultWindow} to present the
  * available analyzer results
+ * {@link ResultWindow}中用于显示可用分析器结果的垂直选项卡式窗格
  */
 public class VerticalTabbedPane extends DCPanel {
 

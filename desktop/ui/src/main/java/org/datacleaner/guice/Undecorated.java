@@ -30,6 +30,8 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
  * Qualifier annotation used for specifying that a component is undecorated.
  * Typically this qualifier applies to the {@link DataCleanerConfiguration} and
  * related objects which are decorated by DC.
+ * 用于指定组件未修饰的限定符批注。通常，
+ * 该限定符适用于{@link DataCleanerConfiguration}和由DC装饰的相关对象。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Qualifier

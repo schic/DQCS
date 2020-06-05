@@ -23,7 +23,7 @@ import org.datacleaner.api.Transformer;
 
 /**
  * {@link ComponentDescriptor} interface for {@link Transformer}s.
- *
+ *{@link Transformer}的{@link ComponentDescriptor}接口。
  * @param <B>
  *            the type of {@link Transformer}
  */

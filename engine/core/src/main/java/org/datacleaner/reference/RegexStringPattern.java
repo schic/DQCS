@@ -33,7 +33,9 @@ import org.datacleaner.util.ReadObjectBuilder;
  * There are two basic modes of matching when using a regex string pattern:
  * Using entire string matching or subsequence matching. This mode is determined
  * using the <code>matchEntireString</code> property.
- *
+ * 表示基于正则表达式（regex）的字符串模式。使用正则表达式字符串模式时，
+ * 有两种基本的匹配模式：使用整个字符串匹配或子序列匹配。
+ * 使用<code> matchEntireString </ code>属性确定此模式。
  *
  */
 public final class RegexStringPattern extends AbstractReferenceData implements StringPattern {

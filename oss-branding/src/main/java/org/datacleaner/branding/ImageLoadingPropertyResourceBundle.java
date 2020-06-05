@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This loads images from a property file containing resource paths.
+ * 这将从包含资源路径的属性文件中加载图像。
  */
 public class ImageLoadingPropertyResourceBundle extends ResourceBundle {
     private static final Logger logger = LoggerFactory.getLogger(ImageLoadingPropertyResourceBundle.class);

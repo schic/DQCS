@@ -21,6 +21,7 @@ package org.datacleaner.widgets.database;
 
 /**
  * {@link DatabaseConnectionPresenter} for MySQL database connections
+ * {@link DatabaseConnectionPresenter}用于MySQL数据库连接
  */
 public class MysqlDatabaseConnectionPresenter extends UrlTemplateDatabaseConnectionPresenter {
 

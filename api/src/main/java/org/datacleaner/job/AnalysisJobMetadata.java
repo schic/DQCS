@@ -32,6 +32,9 @@ import org.apache.metamodel.schema.ColumnType;
  * various verifications. In particular it is needed that the datastore name is
  * matched in the current configuration and that the source column paths are
  * present in that particular datastore.
+ * 定义作业的元数据。此元数据类型可用于在用户决定打开作业之前向其呈现有关该作业的基本信息。
+ * 因为打开工作可能失败，所以元数据也可以用于进行各种验证。
+ * 尤其需要在当前配置中匹配数据存储名称，并且在该特定数据存储中存在源列路径。
  */
 public interface AnalysisJobMetadata {
 

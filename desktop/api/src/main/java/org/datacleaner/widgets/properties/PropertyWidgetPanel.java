@@ -29,6 +29,7 @@ import org.datacleaner.util.StringUtils;
 /**
  * A panel which presents multiple property widgets and their labels in a
  * form-like view.
+ * 一个面板，以类似于表格的形式显示多个属性窗口小部件及其标签。
  */
 public abstract class PropertyWidgetPanel extends FormPanel {
 

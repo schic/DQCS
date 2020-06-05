@@ -24,6 +24,7 @@ import org.datacleaner.descriptors.TransformerDescriptor;
 
 /**
  * {@link ComponentJob} subinterface for {@link Transformer}s.
+ * {@link Transformer}的{@link ComponentJob}子界面。
  *
  * @see Transformer
  */

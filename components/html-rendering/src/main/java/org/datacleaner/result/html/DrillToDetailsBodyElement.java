@@ -29,6 +29,7 @@ import org.datacleaner.result.renderer.RendererFactory;
 /**
  * Body element to be included when facilitating "Drill to detail" behaviour.
  * Use this in conjunction with the {@link DrillToDetailsHeadElement}.
+ * 促进“细化”行为时要包括的主体元素。与{@link DrillToDetailsHeadElement}结合使用。
  */
 public class DrillToDetailsBodyElement implements BodyElement {
 

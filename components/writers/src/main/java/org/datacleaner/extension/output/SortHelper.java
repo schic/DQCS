@@ -34,6 +34,7 @@ public class SortHelper {
     /**
      * Creates a comparator for the {@link InputColumn} based on its type
      * (sorting numerically or lexicographically).
+     * 根据{@link InputColumn}的类型（按数字或词典顺序排序）创建一个比较器。
      *
      * @param column
      *            the column to sort on

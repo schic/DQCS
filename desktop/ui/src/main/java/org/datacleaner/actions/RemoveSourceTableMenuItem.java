@@ -28,6 +28,7 @@ import org.apache.metamodel.schema.Table;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 
 public class RemoveSourceTableMenuItem extends JMenuItem implements ActionListener {
 
@@ -37,7 +38,7 @@ public class RemoveSourceTableMenuItem extends JMenuItem implements ActionListen
     private final Table _table;
 
     public RemoveSourceTableMenuItem(final AnalysisJobBuilder analysisJobBuilder, final Table table) {
-        super("Remove table from source",
+        super(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remove.table"),
                 ImageManager.get().getImageIcon(IconUtils.ACTION_REMOVE_DARK, IconUtils.ICON_SIZE_SMALL));
         _analysisJobBuilder = analysisJobBuilder;
         _table = table;

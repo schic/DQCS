@@ -29,6 +29,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Enum that contains all ISO code countries.
+ * 包含所有ISO代码国家/地区的枚举。
  *
  * The enum values where generated based on this list:
  *

@@ -48,8 +48,8 @@ import org.datacleaner.reference.DictionaryConnection;
 import com.ibm.icu.lang.UCharacter;
 import com.ibm.icu.text.BreakIterator;
 
-@Named("Text case transformer")
-@Description("Modifies the text case/capitalization of Strings.")
+@Named("TextCaseTransformer.name")
+@Description("TextCaseTransformer.Description")
 @Categorized(TextCategory.class)
 public class TextCaseTransformer implements Transformer {
     /**

@@ -46,6 +46,7 @@ import com.jgoodies.looks.plastic.PlasticXPLookAndFeel;
 /**
  * Class that encapsulates all central configuration of look and feel and
  * similar Swing constructs.
+ * 封装外观和感觉以及类似的Swing构造的所有主要配置的类。
  */
 public final class LookAndFeelManager {
 

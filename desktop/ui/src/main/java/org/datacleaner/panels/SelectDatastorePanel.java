@@ -28,6 +28,7 @@ import org.datacleaner.database.DatabaseDriverCatalog;
 import org.datacleaner.guice.DCModule;
 import org.datacleaner.user.DatastoreSelectedListener;
 import org.datacleaner.user.UserPreferences;
+import org.datacleaner.util.PropertyUtil;
 import org.jdesktop.swingx.VerticalLayout;
 
 public class SelectDatastorePanel extends DCPanel {
@@ -48,7 +49,7 @@ public class SelectDatastorePanel extends DCPanel {
         if (showExistingDatastoresAsLongList) {
             // no need to show this label if existing datastores are shown as
             // popup button
-            final JComponent newDatastoreLabel = DCSplashPanel.createSubtitleLabel("Use new datastore");
+            final JComponent newDatastoreLabel = DCSplashPanel.createSubtitleLabel(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.use.new.datastore"));
             add(newDatastoreLabel);
         }
 
@@ -56,7 +57,7 @@ public class SelectDatastorePanel extends DCPanel {
                 datastoreSelectListener, userPreferences, !showExistingDatastoresAsLongList));
 
         if (showExistingDatastoresAsLongList) {
-            final JComponent existingDatastoreLabel = DCSplashPanel.createSubtitleLabel("Use existing datastore");
+            final JComponent existingDatastoreLabel = DCSplashPanel.createSubtitleLabel(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.use.existing.datastore"));
             _existingDatastoresPanel = new ExistingDatastorePanel(datastoreCatalog, datastoreSelectListener);
 
             add(Box.createVerticalStrut(20));

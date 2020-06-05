@@ -29,12 +29,15 @@ import java.lang.annotation.Target;
 /**
  * Annotation that marks a method as a closing method. The method is invoked to
  * release resources that the object is holding (such as open files).
+ * 将方法标记为关闭方法的注释。调用该方法以释放对象所拥有的资源（例如打开的文件）。
  *
  * Components can either annotate methods with this annotation or implement the
  * java.io.Closeable interface to ensure that resources are released.
+ * 组件可以使用此注释对方法进行注释，也可以实现java.io.Closeable接口以确保释放资源。
  *
  * This annotation is to be understood as the opposite of the @Initialize
  * method.
+ * 该注释应被理解为与@Initialize方法相反。
  *
  * @see Initialize
  */

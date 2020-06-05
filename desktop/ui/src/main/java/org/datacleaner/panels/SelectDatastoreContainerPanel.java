@@ -35,11 +35,13 @@ import org.datacleaner.user.DatastoreChangeListener;
 import org.datacleaner.user.DatastoreSelectedListener;
 import org.datacleaner.user.MutableDatastoreCatalog;
 import org.datacleaner.user.UserPreferences;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.windows.AnalysisJobBuilderWindow;
 
 /**
  * The usual container panel of {@link SelectDatastorePanel} when selecting to
  * build job from scratch.
+ * 选择从头开始构建作业时，{@link SelectDatastorePanel}的常规容器面板。
  */
 public class SelectDatastoreContainerPanel extends DCSplashPanel
         implements DatastoreSelectedListener, DatastoreChangeListener {
@@ -61,7 +63,7 @@ public class SelectDatastoreContainerPanel extends DCSplashPanel
 
         setLayout(new BorderLayout());
         final JScrollPane scroll = wrapContent(_selectDatastorePanel);
-        add(createTitleLabel("Select datastore", true), BorderLayout.NORTH);
+        add(createTitleLabel(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.datastore"), true), BorderLayout.NORTH);
         add(scroll, BorderLayout.CENTER);
 
         addComponentListener(new ComponentAdapter() {

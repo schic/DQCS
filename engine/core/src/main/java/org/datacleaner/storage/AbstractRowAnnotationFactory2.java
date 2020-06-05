@@ -25,11 +25,15 @@ import org.datacleaner.api.InputRow;
 
 /**
  * Abstract implementation of {@link RowAnnotationSampleContainer}.
+ * {@link RowAnnotationSampleContainer}的抽象实现。
  *
  * This class is the successor of {@link AbstractRowAnnotationFactory} which was
  * found to be too wasteful in terms of memory usage. A new class was added to
  * allow deserialization of old DataCleaner results, yet this class fully
  * replaces the old one functionally.
+ * 此类是{@link AbstractRowAnnotationFactory}的继承者，
+ * 该类在内存使用方面被发现太浪费了。
+ * 添加了一个新类允许对旧的DataCleaner结果进行反序列化，但是该类在功能上完全替代了旧的类。
  */
 public abstract class AbstractRowAnnotationFactory2
         implements RowAnnotationFactory, RowAnnotationSampleContainer, RowAnnotationHandler {

@@ -46,8 +46,8 @@ import org.datacleaner.result.CrosstabDimension;
 import org.datacleaner.result.CrosstabNavigator;
 import org.datacleaner.result.CrosstabResult;
 
-@Named("Month distribution")
-@Description("Finds the distribution of months from Date values.")
+@Named("MonthDistributionAnalyzer.name")
+@Description("MonthDistributionAnalyzer.Description")
 @Concurrent(true)
 @Categorized(DateAndTimeCategory.class)
 @Distributed(reducer = MonthDistributionResultReducer.class)

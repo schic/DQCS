@@ -26,6 +26,7 @@ import org.apache.metamodel.util.CollectionUtils;
 
 /**
  * Represents a group of values, counted as one item.
+ * 代表一组值，计为一项。
  */
 public final class CompositeValueFrequency extends AbstractValueFrequency implements ValueFrequency {
 

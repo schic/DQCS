@@ -36,6 +36,8 @@ import org.datacleaner.util.convert.ResourceConverter.ResourceTypeHandler;
  * Defines a default implementation of the
  * {@link ConfigurationReaderInterceptor} interface. This implementation does
  * not intercept or perform any special treatment when invoked.
+ * 定义{@link ConfigurationReaderInterceptor}接口的默认实现。
+ * 该实现在被调用时不会拦截或执行任何特殊处理。
  */
 public class DefaultConfigurationReaderInterceptor implements ConfigurationReaderInterceptor {
     private final Map<String, String> _propertyOverrides;

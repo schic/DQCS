@@ -30,7 +30,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * A string pattern finder. This component can consume rows and produce string
  * patterns. It does not contain the actual logic to store/persist the rows, but
  * has callback methods so that it's rather easy to implement this on your own.
- *
+ *字符串模式查找器。该组件可以消耗行并产生字符串模式。
+ * 它不包含存储/保留行的实际逻辑，但是具有回调方法，因此您可以很容易地自己实现。
  *
  *
  * @param <R>

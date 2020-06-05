@@ -25,6 +25,7 @@ import org.datacleaner.job.ComponentJob;
 
 /**
  * Provides useful metrics and information about an analysis job.
+ * 提供有用的指标和有关分析作业的信息。
  */
 public interface AnalysisJobMetrics {
 

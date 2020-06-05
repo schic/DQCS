@@ -36,6 +36,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Represents a row with transformed values as well as a delegate row (typically
  * a {@link MetaModelInputRow} delegate).
+ * 表示具有转换值的行以及委托行（通常{@link MetaModelInputRow}委托）。
  */
 public final class TransformedInputRow extends AbstractLegacyAwareInputRow {
 

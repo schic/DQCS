@@ -54,6 +54,7 @@ import com.google.common.base.Strings;
  * A window that presents a tabular dataset to the end user. The dataset may be
  * based on queried data, transformed data, a record sample or other such
  * source.
+ * 一个将表格数据集呈现给最终用户的窗口。数据集可以基于查询的数据，转换的数据，记录样本或其他此类源。
  */
 public class DataSetWindow extends AbstractWindow {
 

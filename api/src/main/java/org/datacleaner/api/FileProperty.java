@@ -35,6 +35,8 @@ import org.apache.metamodel.util.Resource;
  * Annotation containing supplementary metadata about a {@link File} or
  * {@link Resource} property. This metadata can be used as a way to give hints
  * to the UI as to how the content should be presented.
+ * 包含有关{@link File}或{@link Resource}属性的补充元数据的注释。
+ * 该元数据可用作向UI提供有关内容呈现方式的提示的方式
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD })

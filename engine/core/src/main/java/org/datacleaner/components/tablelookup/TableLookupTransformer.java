@@ -74,10 +74,11 @@ import com.google.common.cache.Cache;
 /**
  * A transformer that can do a lookup (like a left join) based on a set of
  * columns in any datastore.
+ * 可以根据任何数据存储区中的一组列进行查找（如左联接）的转换器。
  */
-@Named("Table lookup")
+@Named("TableLookupTransformer.name")
 @Alias("Datastore lookup")
-@Description("Perform a lookup based on a table in any of your registered datastore (like a LEFT join).")
+@Description("TableLookupTransformer.Description")
 @Concurrent(true)
 @Categorized(superCategory = ImproveSuperCategory.class, value = ReferenceDataCategory.class)
 public class TableLookupTransformer implements Transformer, HasLabelAdvice, HasAnalyzerResult<CategorizationResult> {

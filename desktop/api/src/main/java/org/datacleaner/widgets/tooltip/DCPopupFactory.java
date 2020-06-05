@@ -28,6 +28,7 @@ import javax.swing.PopupFactory;
 
 /**
  * Specialized {@link PopupFactory} for {@link DCToolTip}s.
+ * 专用于{@link DCToolTip}的{@link PopupFactory}。
  */
 public class DCPopupFactory extends PopupFactory {
 

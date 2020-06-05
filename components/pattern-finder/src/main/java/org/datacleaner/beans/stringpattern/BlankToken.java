@@ -23,6 +23,7 @@ import org.datacleaner.util.LabelUtils;
 
 /**
  * Token which represents a null
+ * 表示空值的令牌
  */
 public class BlankToken implements Token {
 

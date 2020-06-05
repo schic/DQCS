@@ -22,7 +22,7 @@ package org.datacleaner.util;
 /**
  * Represents a percentage number, which has a range between 0 and 100 fractions
  * of 100.
- *
+ * 表示百分比数字，范围为0到100的分数100。
  *
  *
  *

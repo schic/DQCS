@@ -49,6 +49,7 @@ import org.datacleaner.windows.AnalysisJobBuilderWindow.AnalysisWindowPanelType;
 /**
  * Panel super class for those panels that show up as a splash in the welcoming
  * section of the application.
+ * 面板超类，用于那些在应用程序的欢迎部分中显示为飞溅的面板。
  */
 public class DCSplashPanel extends DCPanel {
 

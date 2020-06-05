@@ -34,6 +34,7 @@ import org.datacleaner.actions.ComponentReferenceDocumentationActionListener;
 import org.datacleaner.descriptors.ComponentDescriptor;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 
 public class ComponentDescriptorMouseListener extends MouseAdapter {
@@ -75,7 +76,7 @@ public class ComponentDescriptorMouseListener extends MouseAdapter {
             addTableItem.addActionListener(e -> _analysisJobBuilder.addComponent(componentDescriptor));
 
             final JMenuItem referenceDocumentationItem =
-                    WidgetFactory.createMenuItem("Documentation", IconUtils.MENU_DOCUMENTATION);
+                    WidgetFactory.createMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.documentation"), IconUtils.MENU_DOCUMENTATION);
             referenceDocumentationItem.addActionListener(
                     new ComponentReferenceDocumentationActionListener(_analysisJobBuilder.getConfiguration(),
                             componentDescriptor));

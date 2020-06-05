@@ -34,6 +34,7 @@ import org.datacleaner.windows.OptionsDialog;
 
 /**
  * The "Memory" panel found in the {@link OptionsDialog}
+ * 在{@link OptionsDialog}中找到的“内存”面板
  */
 public class MemoryOptionsPanel extends DCPanel {
 

@@ -46,6 +46,7 @@ import edu.uci.ics.jung.graph.DirectedGraph;
 
 /**
  * Transformer that makes 2D points for each vertex in the graph.
+ * 为图形中的每个顶点制作2D点的变压器。
  */
 public class JobGraphLayoutTransformer implements Function<Object, Point2D> {
 

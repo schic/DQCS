@@ -28,6 +28,7 @@ import org.datacleaner.util.WidgetUtils;
 /**
  * A specific type of label with description texts, typically placed below a
  * {@link DCBannerPanel}.
+ * 带有描述文本的特定类型的标签，通常放置在{@link DCBannerPanel}下面。
  */
 public class DescriptionLabel extends DCLabel {
 

@@ -20,7 +20,6 @@
 package org.datacleaner.spark.utils;
 
 import java.io.IOException;
-import java.io.UncheckedIOException;
 import java.net.URI;
 
 import org.apache.hadoop.conf.Configuration;
@@ -40,6 +39,7 @@ import com.google.common.base.Strings;
 
 /**
  * Helper class for interacting with HDFS.
+ * 与HDFS交互的Helper类。
  */
 public class HdfsHelper {
 
@@ -72,10 +72,12 @@ public class HdfsHelper {
      */
     public static HdfsHelper createHelper() {
         Configuration configuration = _lastKnownConfiguration;
-        if (configuration == null && !Strings.isNullOrEmpty(System.getProperty("SPARK_YARN_MODE"))) {
+        if (configuration == null) {
             try {
                 final SparkHadoopUtil sparkHadoopUtil = SparkHadoopUtil.get();
-                configuration = sparkHadoopUtil.conf();
+                if (sparkHadoopUtil.isYarnMode()) {
+                    configuration = sparkHadoopUtil.conf();
+                }
             } catch (final Exception e) {
                 // the above is developer API so we don't consider it very
                 // stable.
@@ -171,9 +173,9 @@ public class HdfsHelper {
             final FileSystem fileSystem = ((HdfsResource) resource).getHadoopFileSystem();
             final Path hadoopPath = ((HdfsResource) resource).getHadoopPath();
             try {
-                return fileSystem.getFileStatus(hadoopPath).isDirectory();
+                return fileSystem.isDirectory(hadoopPath);
             } catch (final IOException e) {
-                throw new UncheckedIOException(e);
+                throw new IllegalStateException(e);
             }
         }
         // actually we don't know, but most likely it's not a directory

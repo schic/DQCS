@@ -27,6 +27,7 @@ import java.util.StringTokenizer;
 /**
  * Tokenizer that can be used to "reverse engineer" a pattern string into a
  * proper list of tokens
+ * 令牌生成器，可用于将模式字符串“反向工程”为正确的令牌列表
  */
 public class ReverseTokenizer implements Tokenizer {
 

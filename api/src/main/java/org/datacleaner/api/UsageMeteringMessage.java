@@ -24,6 +24,8 @@ import java.io.Serializable;
 /**
  * Message that can be used to report a component usage (by the component). Consumer of this message type can
  * use the information provided to gather usage statistics/metering etc.
+ * 可用于报告组件使用情况的消息（按组件）。
+ * 此消息类型的消费者可以使用提供的信息来收集使用情况统计信息/计量表等。
  */
 public class UsageMeteringMessage implements Serializable, ComponentMessage {
 

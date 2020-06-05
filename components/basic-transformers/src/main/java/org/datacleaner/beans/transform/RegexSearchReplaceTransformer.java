@@ -37,8 +37,8 @@ import org.datacleaner.api.PatternProperty;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.TextCategory;
 
-@Named("Regex search/replace")
-@Description("Search and replace text in String values using regular expressions.")
+@Named("RegexSearchReplaceTransformer.name")
+@Description("RegexSearchReplaceTransformer.Description")
 @ExternalDocumentation({ @DocumentationLink(title = "Java Tutorials: Regular Expressions Lesson",
         url = "https://docs.oracle.com/javase/tutorial/essential/regex/", type = DocumentationType.TECH,
         version = "3.0") })

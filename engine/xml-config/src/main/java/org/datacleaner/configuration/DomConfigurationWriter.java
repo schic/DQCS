@@ -77,9 +77,13 @@ import com.google.common.base.Strings;
 
 /**
  * Utility class for writing configuration elements to the XML format of conf.xml.
+ * 实用程序类，用于将配置元素写入conf.xml的XML格式。
  *
  * Generally speaking, XML elements created by this class, and placed in a the &lt;datastore-catalog&gt; and
  * &lt;reference-data-catalog&gt; elements of conf.xml, will be readable by {@link JaxbConfigurationReader}.
+ * 一般来说，由此类创建的XML元素将被放置在conf.xml的
+ * <datastore-catalog>和<reference-data-catalog>元素中，
+ * {@link JaxbConfigurationReader}可以读取。
  */
 public class DomConfigurationWriter {
 

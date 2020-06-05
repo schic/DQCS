@@ -34,6 +34,7 @@ import org.datacleaner.util.ReadObjectBuilder;
 
 /**
  * Datastore implementation for Excel spreadsheets.
+ * Excel电子表格的数据存储区实现。
  */
 public final class ExcelDatastore extends UsageAwareDatastore<UpdateableDataContext>
         implements FileDatastore, ResourceDatastore, UpdateableDatastore {

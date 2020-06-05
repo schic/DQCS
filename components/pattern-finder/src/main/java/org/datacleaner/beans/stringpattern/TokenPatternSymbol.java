@@ -24,6 +24,7 @@ import java.io.Serializable;
 /**
  * Represents a symbol/element in a token pattern. If for example the pattern is
  * "aaa@aaa.aa", then there will be 5 symbols:
+ * 表示令牌模式中的符号/元素。例如，如果模式为*“ aaa@aaa.aa”，则将有5个符号：
  * <ul>
  * <li>aaa</li>
  * <li>@</li>
@@ -35,12 +36,12 @@ import java.io.Serializable;
  * The token pattern symbol is different from a pattern in the way that it is
  * more abstract. A symbol will not retain the concrete values of most tokens.
  * Thus the information stored in a symbol will often be limited to:
- *
+ * 令牌模式符号与模式的不同之处在于更抽象。符号不会保留大多数令牌的具体值。因此，存储在符号中的信息通常将限于：
  * <ul>
- * <li>The TokenType</li>
- * <li>The length of the symbol</li>
+ * <li>The TokenType</li>令牌类型
+ * <li>The length of the symbol</li>符号的长度
  * <li>Metadata about the symbol such as: Is it a negativ number, is it
- * uppercase, does it contain decimals etc.</li>
+ * uppercase, does it contain decimals etc.</li>有关符号的元数据，例如：是负数，是大写，是否包含小数等。
  * </ul>
  *
  * @see Token

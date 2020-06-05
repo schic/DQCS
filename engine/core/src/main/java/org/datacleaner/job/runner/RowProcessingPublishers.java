@@ -57,6 +57,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Class which partitions a single {@link AnalysisJob}'s components into
  * {@link RowProcessingPublisher}s.
+ * 该类将单个{@link AnalysisJob}的组件划分为{@link RowProcessingPublisher} s。
  */
 public final class RowProcessingPublishers {
 

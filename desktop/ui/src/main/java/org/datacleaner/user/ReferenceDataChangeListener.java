@@ -21,6 +21,7 @@ package org.datacleaner.user;
 
 /**
  * Interface for adding, removing, changing the value of a Reference
+ * 用于添加，移除，更改参考值的界面
  * @param <R>
  */
 public interface ReferenceDataChangeListener<R> {

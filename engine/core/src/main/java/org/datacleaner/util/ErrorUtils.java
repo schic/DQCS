@@ -25,6 +25,7 @@ import com.google.common.base.Strings;
 
 /**
  * Utility/convenience methods for handling errors
+ * 处理错误的实用/便捷方法
  */
 public class ErrorUtils {
 

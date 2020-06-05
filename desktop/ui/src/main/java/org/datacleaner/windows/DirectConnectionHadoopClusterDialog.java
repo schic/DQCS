@@ -48,6 +48,7 @@ import org.jdesktop.swingx.JXTextField;
 
 /**
  * Dialog for creating and editing a direct connection to Hadoop namenode
+ * 用于创建和编辑与Hadoop名称节点的直接连接的对话框
  */
 public class DirectConnectionHadoopClusterDialog extends AbstractDialog {
 

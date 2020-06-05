@@ -21,6 +21,7 @@ package org.datacleaner.job;
 
 /**
  * Represents any object that contains a {@link ComponentRequirement}.
+ * 表示任何包含{@link ComponentRequirement}的对象。
  */
 public interface HasComponentRequirement {
 

@@ -26,6 +26,7 @@ import org.datacleaner.descriptors.ConfiguredPropertyDescriptor;
 /**
  * Defines an interface for (wrappers of) widgets that are used to edit
  * configurable properties of analyzers, transformers and filters.
+ * 为小部件（的包装）定义一个接口，这些小部件用于编辑分析器，转换器和过滤器的可配置属性。
  *
  * @param <E>
  */

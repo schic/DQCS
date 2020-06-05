@@ -37,8 +37,8 @@ import org.datacleaner.util.NamedPatternMatch;
 /**
  * Tokenizes/standardizes the components of an email: Username and Domain
  */
-@Named("Email standardizer")
-@Description("Retrieve the username or domain from an email address.")
+@Named("EmailStandardizerTransformer.name")
+@Description("EmailStandardizerTransformer.Description")
 @Categorized({ ContactDataCategory.class })
 @Deprecated
 public class EmailStandardizerTransformer implements Transformer {

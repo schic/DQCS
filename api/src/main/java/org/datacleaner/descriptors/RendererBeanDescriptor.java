@@ -26,7 +26,7 @@ import org.datacleaner.api.RenderingFormat;
 
 /**
  * Defines an abstract {@link ComponentDescriptor} for {@link Renderer}s.
- *
+ *为{@link Renderer}定义一个抽象{@link ComponentDescriptor}。
  * @see RendererBean
  *
  * @param <R>

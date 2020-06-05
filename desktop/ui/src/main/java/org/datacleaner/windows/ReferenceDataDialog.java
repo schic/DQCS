@@ -36,10 +36,7 @@ import org.datacleaner.panels.DCPanel;
 import org.datacleaner.panels.DictionaryListPanel;
 import org.datacleaner.panels.StringPatternListPanel;
 import org.datacleaner.panels.SynonymCatalogListPanel;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.Alignment;
 import org.datacleaner.widgets.DescriptionLabel;
 import org.datacleaner.widgets.tabs.CloseableTabbedPane;
@@ -114,7 +111,7 @@ public final class ReferenceDataDialog extends AbstractDialog {
         final StringPatternListPanel stringPatternListPanel =
                 injectorWithGlassPane.getInstance(StringPatternListPanel.class);
 
-        _tabbedPane.addTab("Dictionaries",
+        _tabbedPane.addTab(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.dictionaries"),
                 new ImageIcon(imageManager.getImage(IconUtils.DICTIONARY_IMAGEPATH, IconUtils.ICON_SIZE_TAB)),
                 scrolleable(dictionaryListPanel));
         _tabbedPane.addTab("Synonyms",

@@ -55,6 +55,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Unregistered renderer for crosstab results that are programmatically created
  * in {@link PatternFinderResultSwingRenderer}.
+ * 在{@link PatternFinderResultSwingRenderer}中以编程方式创建的交叉表结果的未注册渲染器。
  */
 class PatternFinderResultSwingRendererCrosstabDelegate extends AbstractCrosstabResultSwingRenderer<CrosstabResult> {
 

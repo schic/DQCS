@@ -21,6 +21,7 @@ package org.datacleaner.job;
 
 /**
  * Abstract interface for objects that have a {@link ComponentConfiguration}.
+ * 具有{@link ComponentConfiguration}的对象的抽象接口。
  */
 public interface HasComponentConfiguration {
 

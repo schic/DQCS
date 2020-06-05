@@ -79,10 +79,13 @@ import org.slf4j.LoggerFactory;
  * Main entry to the Job Builder API. Use this class to build jobs either
  * programmatically, while parsing a marshalled job-representation (such as an
  * XML job definition) or for making an end-user able to build a job in a UI.
+ * Job Builder API的主要条目。使用此类可通过以编程方式构建作业，
+ * 同时解析编组的作业表示形式（例如XML作业定义），或使最终用户能够在UI中构建作业。
  *
  * The AnalysisJobBuilder supports a wide variety of listeners to make it
  * possible to be informed of changes to the state and dependencies between the
  * components/beans that defines the job.
+ * AnalysisJobBuilder支持各种侦听器，以使可以通知状态更改以及定义作业的组件/ bean之间的依赖关系。
  */
 public final class AnalysisJobBuilder implements Closeable {
 

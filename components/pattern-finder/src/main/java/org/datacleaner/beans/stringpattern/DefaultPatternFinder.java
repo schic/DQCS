@@ -30,6 +30,7 @@ import org.datacleaner.storage.RowAnnotations;
 
 /**
  * Default PatternFinder implementation, used by the PatternFinderAnalyzer.
+ * 由PatternFinderAnalyzer使用的默认PatternFinder实现。
  */
 public final class DefaultPatternFinder extends PatternFinder<InputRow> {
 

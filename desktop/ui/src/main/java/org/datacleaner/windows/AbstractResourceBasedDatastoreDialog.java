@@ -72,6 +72,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Superclass for {@link Resource}-based datastores such as {@link CsvDatastore}
  * and {@link JsonDatastore} etc.
+ * 基于{@link Resource}的数据存储区的超类，例如{@link CsvDatastore}和{@link JsonDatastore}等。
  *
  * @param <D>
  *            the type of datastore

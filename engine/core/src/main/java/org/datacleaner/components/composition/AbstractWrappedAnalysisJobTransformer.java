@@ -42,10 +42,13 @@ import org.datacleaner.job.runner.ConsumeRowHandler;
 /**
  * An abstract transformer that wraps another {@link AnalysisJob}'s
  * transformation section and applies it as a single transformation.
+ * 一个抽象转换器，包装了另一个{@link AnalysisJob}的转换部分，并将其作为单个转换应​​用。
  *
  * This class is abstract since the logic of how the wrapped {@link AnalysisJob}
  * is configured/set might differ. Some implementations might simply have a
  * hardcoded job configured, others might dynamically load it from a file.
+ * 此类是抽象的，因为包装/配置{@link AnalysisJob}的逻辑可能不同。
+ * 一些实现可能仅配置了一个硬编码的作业，而其他一些则可能从文件动态加载它。
  */
 public abstract class AbstractWrappedAnalysisJobTransformer implements Transformer {
 

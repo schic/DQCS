@@ -29,9 +29,9 @@ import org.datacleaner.api.InputRow;
 import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 
-@Named("Convert number to IP")
+@Named("NumberToIpConverter.name")
 @Categorized(NetworkToolsCategory.class)
-@Description("Converts a number representation of an IPv4 address to it's regular string representation.")
+@Description("NumberToIpConverter.Description")
 public class NumberToIpConverter implements Transformer {
 
     @Configured("IP number column")

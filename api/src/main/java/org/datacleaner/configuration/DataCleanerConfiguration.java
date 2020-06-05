@@ -28,6 +28,8 @@ import org.datacleaner.reference.ReferenceDataCatalog;
  * Represents the configuration of a DataCleaner instance. Usually there is just
  * one configuration active but it is possible to have multiple configurations,
  * for instance within the same {@link DataCleanerEnvironment}.
+ * 表示DataCleaner实例的配置。通常，只有一个配置处于活动状态，
+ * 但是可以有多个配置，例如在同一{@link DataCleanerEnvironment}中。
  */
 public interface DataCleanerConfiguration extends Serializable {
 

@@ -19,13 +19,15 @@
  */
 package org.datacleaner.components.categories;
 
+import org.datacleaner.util.PropertyUtil;
+
 public class TransformSuperCategory extends AbstractComponentSuperCategory {
 
     private static final long serialVersionUID = 1L;
 
     @Override
     public String getDescription() {
-        return "Preprocess or filter your data in order to extract, limit, combine or generate separate values.";
+        return PropertyUtil.getProperty("Transform.Description");
     }
 
     @Override

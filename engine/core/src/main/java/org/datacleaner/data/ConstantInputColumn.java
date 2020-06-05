@@ -24,10 +24,13 @@ import org.datacleaner.api.InputRow;
 /**
  * Defines an InputColumn which has a fixed/constant value, regardless of the
  * row.
+ * 定义一个InputColumn，无论行如何，它都具有固定/恒定值。
  *
  * These columns can be used for various purposes, eg. to mark a filter outcome
  * in the data, to open jobs as templates, even though the new datastore is
  * missing some columns etc.
+ * 这些列可以用于各种目的，例如。在数据中标记过滤器结果，
+ * 以将作业作为模板打开，即使新的数据存储区缺少某些列等。
  */
 public final class ConstantInputColumn extends AbstractExpressionBasedInputColumn<String> {
 

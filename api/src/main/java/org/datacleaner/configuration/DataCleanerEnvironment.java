@@ -25,6 +25,7 @@ import org.datacleaner.storage.StorageProvider;
 
 /**
  * Represents the environment of one or more DataCleaner instances.
+ * 表示一个或多个DataCleaner实例的环境。
  *
  * @see DataCleanerConfiguration
  */

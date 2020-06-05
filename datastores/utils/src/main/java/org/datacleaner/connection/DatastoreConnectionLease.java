@@ -29,6 +29,8 @@ import org.slf4j.LoggerFactory;
  * A datastore connection lease that ensures that the connection can only be
  * closed once by a particular user. The underlying (delegated) connection can
  * thus be shared safely without risking premature closing by other parties.
+ * 数据存储连接租约，可确保特定用户只能关闭一次连接。
+ * 因此，可以安全地共享基础（委托）连接，而不必担心其他方过早关闭。
  */
 public class DatastoreConnectionLease implements DatastoreConnection {
 

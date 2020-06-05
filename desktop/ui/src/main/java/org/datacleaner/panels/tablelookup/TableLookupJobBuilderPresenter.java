@@ -39,6 +39,7 @@ import org.datacleaner.panels.ConfiguredPropertyTaskPane;
 import org.datacleaner.panels.TransformerComponentBuilderPanel;
 import org.datacleaner.panels.TransformerComponentBuilderPresenter;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.widgets.properties.MultipleMappedColumnsPropertyWidget;
 import org.datacleaner.widgets.properties.PropertyWidget;
 import org.datacleaner.widgets.properties.PropertyWidgetFactory;
@@ -49,6 +50,7 @@ import org.datacleaner.widgets.properties.SingleTableNamePropertyWidget;
 /**
  * Specialized {@link TransformerComponentBuilderPresenter} for the
  * {@link TableLookupTransformer}.
+ *  {@link TableLookupTransformer}专用的{@link TransformerComponentBuilderPresenter}。
  *
  * @author Kasper Sørensen
  */
@@ -145,11 +147,11 @@ class TableLookupJobBuilderPresenter extends TransformerComponentBuilderPanel {
         final List<ConfiguredPropertyTaskPane> propertyTaskPanes = new ArrayList<>();
 
         final ConfiguredPropertyTaskPane inputMappingTaskPane =
-                new ConfiguredPropertyTaskPane("Input mapping", "images/model/column.png",
+                new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.component.input.mapping"), "images/model/column.png",
                         Arrays.asList(_datastoreProperty, _schemaNameProperty, _tableNameProperty,
                                 _inputColumnArrayProperty, _columnNameArrayProperty));
         final ConfiguredPropertyTaskPane outputMappingTaskPane =
-                new ConfiguredPropertyTaskPane("Output mapping", IconUtils.MENU_OPTIONS,
+                new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.component.output.mapping"), IconUtils.MENU_OPTIONS,
                         Arrays.asList(_outputColumnsProperty, _joinSemanticProperty, _cacheLookupsProperty));
         propertyTaskPanes.add(inputMappingTaskPane);
         propertyTaskPanes.add(outputMappingTaskPane);

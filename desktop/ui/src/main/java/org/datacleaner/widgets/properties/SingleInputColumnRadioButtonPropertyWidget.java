@@ -51,6 +51,7 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * {@link PropertyWidget} for single {@link InputColumn}s. Displays the
  * selection as a series of radiobuttons. Used for required input columns.
+ * {@link PropertyWidget}用于单个{@link InputColumn}。将选择显示为一系列单选按钮。用于必需的输入列。
  */
 public class SingleInputColumnRadioButtonPropertyWidget extends AbstractPropertyWidget<InputColumn<?>>
         implements SourceColumnChangeListener, TransformerChangeListener, MutableInputColumn.Listener {

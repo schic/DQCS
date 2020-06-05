@@ -26,6 +26,7 @@ import org.datacleaner.descriptors.ComponentDescriptor;
 /**
  * Predicate that discards all {@link ComponentDescriptor} that represent a
  * {@link Deprecated} component.
+ * 谓词，它丢弃代表{@link Deprecated}组件的所有{@link ComponentDescriptor}。
  */
 public class DeprecatedComponentPredicate implements Predicate<ComponentDescriptor<?>> {
 

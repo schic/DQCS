@@ -35,12 +35,11 @@ import org.datacleaner.components.categories.DataStructuresCategory;
 
 /**
  * Transformer for selecting values from maps.
- *
+ *用于从List中选择值的转换器。(此次源码描述中感觉有错，不应从maps中)
  *
  */
-@Named("Select values from list")
-@Description( "Given a specified list of indices, this transformer will select the values from a list "
-        + "and place them as columns within the record")
+@Named("SelectFromListTransformer.name")
+@Description( "SelectFromListTransformer.Description")
 @Categorized(DataStructuresCategory.class)
 public class SelectFromListTransformer implements Transformer {
 

@@ -38,10 +38,11 @@ package org.datacleaner.util;
 /**
  * Utility class for building an average from the values added using the
  * addValue(Number) method.
+ * 实用程序类，用于根据使用addValue（Number）方法添加的值构建平均值。
  *
  * Note that this class is NOT thread-safe, so do not share an instance between
  * threads (or at least make sure to synchronize).
- *
+ * 请注意，此类不是线程安全的，因此不要在*线程之间共享实例（或至少确保同步）。
  *
  */
 public class AverageBuilder {

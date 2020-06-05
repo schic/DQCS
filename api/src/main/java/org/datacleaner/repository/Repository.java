@@ -21,6 +21,7 @@ package org.datacleaner.repository;
 
 /**
  * Defines a repository of nodes (files or folders) in DataCleaner.
+ * 在DataCleaner中定义节点（文件或文件夹）的存储库。
  */
 public interface Repository extends RepositoryFolder {
 

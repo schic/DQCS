@@ -29,6 +29,7 @@ import org.datacleaner.api.InputRow;
 
 /**
  * Abstract implementation of the InputRow.
+ * InputRow的抽象实现。
  */
 public abstract class AbstractInputRow implements InputRow {
 

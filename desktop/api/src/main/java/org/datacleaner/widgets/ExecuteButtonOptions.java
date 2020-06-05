@@ -35,18 +35,16 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.job.builder.AnalyzerComponentBuilder;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.job.concurrent.SingleThreadedTaskRunner;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.PreviewUtils;
-import org.datacleaner.util.SourceColumnFinder;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.windows.AnalysisJobBuilderWindow;
 
 /**
  * This class provides an API for hooking in "Execute" button options.
+ * 此类提供了用于挂钩“执行”按钮选项的API。
  *
  * Each hook is represented as an {@link ExecutionMenuItem} that will be shown
  * when the user clicks the caret symbol next to the "Execute" button.
+ * 每个挂钩都表示为{@link ExecutionMenuItem}，当用户单击“执行”按钮旁边的插入符号时，它将显示。
  */
 public class ExecuteButtonOptions {
 
@@ -141,7 +139,7 @@ public class ExecuteButtonOptions {
 
     static {
         // initialize the default menu items
-        addMenuItem(new SimpleExecutionMenuItem("Run normally", IconUtils.ACTION_EXECUTE) {
+        addMenuItem(new SimpleExecutionMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.execute.run.normally"), IconUtils.ACTION_EXECUTE) {
             @Override
             protected void run(final AnalysisJobBuilder analysisJobBuilder,
                     final Action<AnalysisJobBuilder> executeAction,
@@ -150,7 +148,7 @@ public class ExecuteButtonOptions {
             }
         });
 
-        addMenuItem(new SimpleExecutionMenuItem("Run first N records", IconUtils.ACTION_PREVIEW) {
+        addMenuItem(new SimpleExecutionMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.execute.run.first"), IconUtils.ACTION_PREVIEW) {
             @Override
             protected void run(final AnalysisJobBuilder analysisJobBuilder,
                     final Action<AnalysisJobBuilder> executeAction,
@@ -192,7 +190,7 @@ public class ExecuteButtonOptions {
             }
         });
 
-        addMenuItem(new SimpleExecutionMenuItem("Run single-threaded", IconUtils.MODEL_ROW) {
+        addMenuItem(new SimpleExecutionMenuItem(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.execute.run.single"), IconUtils.MODEL_ROW) {
             @Override
             protected void run(final AnalysisJobBuilder analysisJobBuilder,
                     final Action<AnalysisJobBuilder> executeAction,

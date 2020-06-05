@@ -25,6 +25,7 @@ import java.io.Serializable;
  * Represents the performance characteristics of a {@link Datastore}.
  * Performance characteristics can be used to optimize the execution plan of a
  * job or interaction with the datastore.
+ * 表示{@link数据存储}的性能特征。性能特征可用于优化作业的执行计划或与数据存储的交互。
  */
 public interface PerformanceCharacteristics extends Serializable {
 

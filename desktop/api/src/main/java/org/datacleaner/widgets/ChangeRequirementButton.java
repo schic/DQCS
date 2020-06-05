@@ -42,6 +42,7 @@ import org.slf4j.LoggerFactory;
 /**
  * A button that displays the {@link ComponentRequirement} of a particular
  * component that is being built.
+ * 显示正在构建的特定组件的{@link ComponentRequirement}的按钮。
  */
 public class ChangeRequirementButton extends JButton implements ActionListener {
 

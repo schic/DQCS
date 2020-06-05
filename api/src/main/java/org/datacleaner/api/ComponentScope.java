@@ -29,6 +29,7 @@ import java.lang.annotation.Target;
 
 /**
  * Annotation used to provide additional information about available services
+ * 用于提供有关可用服务的附加信息的注释
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE })

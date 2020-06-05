@@ -61,6 +61,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Dialog for setting up CSV datastores.
+ * 设置CSV数据存储的对话框。
  */
 public final class CsvDatastoreDialog extends AbstractResourceBasedDatastoreDialog<CsvDatastore> {
 

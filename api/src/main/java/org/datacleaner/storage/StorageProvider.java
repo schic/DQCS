@@ -27,6 +27,7 @@ import java.util.Set;
  * Configurable component which provides storage (for instance cached/persistent
  * or in-memory based) for collections and other types that are needed during
  * execution.
+ * 可配置组件，为执行过程中所需的集合和其他类型提供存储（例如，缓存的/持久的或基于内存的）。
  */
 public interface StorageProvider {
 

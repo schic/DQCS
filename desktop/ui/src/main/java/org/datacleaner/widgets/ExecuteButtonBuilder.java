@@ -33,6 +33,7 @@ import org.datacleaner.guice.DCModule;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.panels.ExecuteJobWithoutAnalyzersDialog;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.ExecuteButtonOptions.ExecutionMenuItem;
@@ -40,6 +41,7 @@ import org.datacleaner.windows.AnalysisJobBuilderWindow;
 
 /**
  * A builder for the "Execute" button in the job builder window of DataCleaner
+ * DataCleaner的作业构建器窗口中的“执行”按钮的构建器
  */
 public class ExecuteButtonBuilder {
 
@@ -52,7 +54,7 @@ public class ExecuteButtonBuilder {
         _window = window;
         _analysisJobBuilder = window.getAnalysisJobBuilder();
 
-        _mainButton = WidgetFactory.createToolbarButton("Execute", IconUtils.MENU_EXECUTE);
+        _mainButton = WidgetFactory.createToolbarButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.execute"), IconUtils.MENU_EXECUTE);
         _alternativesButton = WidgetFactory.createToolbarButton(WidgetUtils.CHAR_CARET_DOWN, null);
         _alternativesButton.setFont(WidgetUtils.FONT_FONTAWESOME);
 

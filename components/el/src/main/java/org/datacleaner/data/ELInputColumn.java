@@ -39,7 +39,7 @@ import de.odysseus.el.util.SimpleContext;
  * InputColumn that evaluates an EL expression in order to return a computed
  * value. This can be used as a lightweight alternative to eg. JavaScript
  * transformation.
- *
+ *InputColumn评估EL表达式以返回计算的值。这可以用作例如的轻量级替代。 JavaScript转换。
  *
  */
 public class ELInputColumn extends AbstractExpressionBasedInputColumn<String> {

@@ -41,6 +41,10 @@ import org.slf4j.LoggerFactory;
  * and compose conversions based on relevant converter implementations, such as
  * {@link NullConverter}, {@link ArrayConverter}, {@link StandardTypeConverter}
  * and {@link ConfigurationItemConverter}.
+ * {@link StringConverter}使用的主转换器。
+ * 该转换器将委派并根据相关的转换器实现（例如{@link NullConverter}，
+ * {@link ArrayConverter}，{@link StandardTypeConverter}
+ * 和{@link ConfigurationItemConverter}）组成转换。
  */
 public class DelegatingConverter implements Converter<Object> {
 

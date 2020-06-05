@@ -26,6 +26,7 @@ import org.datacleaner.api.AnalyzerResult;
 /**
  * Interface for all AnalyzerResults that can be represented/visualized as a
  * {@link TableModel}.
+ * 所有AnalyzerResults的接口，都可以表示为 {@link TableModel}。
  */
 public interface TableModelResult extends AnalyzerResult {
 

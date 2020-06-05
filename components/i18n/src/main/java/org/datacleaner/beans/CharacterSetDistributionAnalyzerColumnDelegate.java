@@ -38,7 +38,7 @@ import com.ibm.icu.text.UnicodeSet;
 /**
  * Performs character set distribution analysis for a single column. Used by the
  * {@link CharacterSetDistributionAnalyzer} for splitting up work.
- *
+ *对单个列执行字符集分布分析。{@link CharacterSetDistributionAnalyzer}使用它来分割工作。
  *
  */
 final class CharacterSetDistributionAnalyzerColumnDelegate {

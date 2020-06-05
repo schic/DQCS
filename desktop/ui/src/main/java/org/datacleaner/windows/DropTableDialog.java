@@ -31,10 +31,7 @@ import org.datacleaner.bootstrap.WindowContext;
 import org.datacleaner.connection.UpdateableDatastore;
 import org.datacleaner.connection.UpdateableDatastoreConnection;
 import org.datacleaner.panels.DCPanel;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.DCLabel;
 import org.datacleaner.widgets.tree.SchemaTree;
 import org.jdesktop.swingx.JXTextField;
@@ -58,12 +55,12 @@ public class DropTableDialog extends AbstractDialog {
 
     @Override
     public String getWindowTitle() {
-        return "Drop table '" + _table.getName() + "'";
+        return PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.drop.table") + "'" + _table.getName() + "'";
     }
 
     @Override
     protected String getBannerTitle() {
-        return "Drop table\n" + _table.getName();
+        return PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.drop.table") + "\n" + _table.getName();
     }
 
     @Override
@@ -80,7 +77,7 @@ public class DropTableDialog extends AbstractDialog {
                         + "'Drop table' button to confirm the operation.");
         final JXTextField confirmTextField = WidgetFactory.createTextField("Enter the table's name to confirm");
 
-        final JButton dropTableButton = WidgetFactory.createPrimaryButton("Drop table", IconUtils.ACTION_DROP_TABLE);
+        final JButton dropTableButton = WidgetFactory.createPrimaryButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.drop.table"), IconUtils.ACTION_DROP_TABLE);
         dropTableButton.addActionListener(e -> {
             if (!confirmTextField.getText().trim().equalsIgnoreCase(_table.getName().trim())) {
                 WidgetUtils.showErrorMessage("Enter the table's name to confirm",

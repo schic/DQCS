@@ -25,6 +25,7 @@ import org.junit.Assert;
 
 /**
  * An EasyMock matcher for checking that a {@link Query} matches a certain string.
+ * 一个EasyMock匹配器，用于检查{@link Query}是否匹配某个字符串。
  */
 public class QueryMatcher implements IArgumentMatcher {
 

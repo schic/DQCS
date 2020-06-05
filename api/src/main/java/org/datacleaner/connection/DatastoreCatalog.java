@@ -23,6 +23,7 @@ import java.io.Serializable;
 
 /**
  * Represents a collection of datastores, referenceable and usable by jobs.
+ * 表示作业可引用和可用的数据存储的集合。
  */
 public interface DatastoreCatalog extends Serializable {
 

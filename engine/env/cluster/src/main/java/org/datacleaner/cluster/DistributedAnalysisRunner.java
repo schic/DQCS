@@ -56,6 +56,7 @@ import org.slf4j.LoggerFactory;
 /**
  * An {@link AnalysisRunner} which executes {@link AnalysisJob}s accross a
  * distributed set of slave nodes.
+ * 一个{@link AnalysisRunner}，它跨一组分散的从属节点执行{@link AnalysisJob}。
  */
 public final class DistributedAnalysisRunner implements AnalysisRunner {
 

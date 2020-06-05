@@ -42,6 +42,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A physical {@link InputRow} originating from a MetaModel {@link Row} object.
+ * 来自MetaModel {@link Row}对象的物理{@link InputRow}。
  */
 public final class MetaModelInputRow extends AbstractLegacyAwareInputRow {
 

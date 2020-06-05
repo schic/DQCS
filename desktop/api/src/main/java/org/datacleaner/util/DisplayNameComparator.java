@@ -27,6 +27,7 @@ import org.datacleaner.descriptors.ComponentDescriptor;
 /**
  * Comparator of {@link ComponentDescriptor} objects, which sorts based on
  * display name.
+ * {@link ComponentDescriptor}对象的比较器，该对象根据显示名称进行排序。
  */
 public class DisplayNameComparator implements Comparator<ComponentDescriptor<?>>, Serializable {
 

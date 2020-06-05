@@ -34,6 +34,8 @@ import org.datacleaner.result.ResultProducer;
  * in the correct order, if it is to be rendered using two axes (horizontal and
  * vertical). The actual output of the rendering is not specified by this class
  * - it uses a callback class for all the concrete rendering.
+ * 如果要使用两个轴（水平轴和垂直轴）呈现交叉表，则该类封装正确顺序遍历交叉表的所有复杂逻辑。
+ * 此类的未指定渲染的实际输出-它对所有具体渲染都使用回调类。
  *
  * @see CrosstabRendererCallback
  *

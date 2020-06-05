@@ -52,6 +52,7 @@ import org.datacleaner.windows.CreateTableDialog;
 /**
  * Alternative String property widget, specifically built for components that
  * need a {@link Table} name drop down.
+ * 备用字符串属性窗口小部件，专门为需要{@link Table}名称下拉列表的组件而构建。
  */
 public class SingleTableNamePropertyWidget extends AbstractPropertyWidget<String> {
 

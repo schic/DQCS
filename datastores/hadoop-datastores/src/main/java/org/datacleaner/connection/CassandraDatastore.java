@@ -27,6 +27,7 @@ import com.datastax.driver.core.Cluster.Builder;
 
 /**
  * Datastore providing access to Apache Cassandra.
+ * 数据存储区，提供对Apache Cassandra的访问。
  */
 public class CassandraDatastore extends UsageAwareDatastore<CassandraDataContext> {
 

@@ -21,6 +21,7 @@ package org.datacleaner.job.tasks;
 
 /**
  * Represents a (sub)task that can run in parallel when running an analysis job.
+ * 表示在运行分析作业时可以并行运行的（子）任务。
  */
 public interface Task {
 

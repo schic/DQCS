@@ -35,9 +35,11 @@ import org.slf4j.LoggerFactory;
 /**
  * Task listener that runs for every component to close it after execution of a
  * job.
+ * 执行作业后，为每个组件运行的任务侦听器将其关闭。
  *
  * This class is NOT a {@link Task} because it needs to run regardless of
  * errors, which tasks don't.
+ * 此类不是{@link Task}，因为它需要运行，而不管错误是什么，而没有错误。
  */
 public class CloseTaskListener implements TaskListener {
 

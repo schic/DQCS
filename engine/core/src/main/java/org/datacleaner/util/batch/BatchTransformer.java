@@ -26,6 +26,7 @@ import org.datacleaner.api.Transformer;
 
 /**
  * An abstract {@link Transformer} that supports batch/chunked operations.
+ * 支持批量/块操作的抽象{@link Transformer}。
  */
 public abstract class BatchTransformer implements Transformer, BatchTransformation<InputRow, Object[]> {
 

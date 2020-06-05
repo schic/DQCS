@@ -39,6 +39,7 @@ import org.slf4j.LoggerFactory;
  * Represents an extension/plug-in package that the user has installed. An
  * extension is based on a set of (JAR) files and optionally some metadata about
  * these.
+ * 表示用户已安装的扩展程序/插件程序包。扩展名基于一组（JAR）文件以及可选的有关这些文件的元数据。
  */
 public final class ExtensionPackage implements Serializable, HasName {
 

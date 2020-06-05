@@ -33,6 +33,7 @@ import org.datacleaner.widgets.AbstractResourceTextField;
 
 /**
  * Datastore configuration dialog for MS Access datastores.
+ * MS Access数据存储的数据存储配置对话框。
  *
  * @author Kasper Sørensen
  */

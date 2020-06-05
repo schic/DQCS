@@ -28,6 +28,8 @@ import org.datacleaner.job.runner.RowProcessingMetrics;
 /**
  * A {@link Task} that dispatches ("consumes") a record to all relevant
  * {@link RowProcessingConsumer}s (eg. analyzerbeans components).
+ * 一个{@link Task}，它向所有相关{@link RowProcessingConsumer}
+ * （例如，analyzerbeans组件）调度（“消费”）一条记录。
  */
 public final class ConsumeRowTask implements Task {
 

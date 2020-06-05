@@ -42,6 +42,7 @@ import com.google.common.base.Strings;
 /**
  * Panel which is shown in a popup to modify visual/UI preferences of the job
  * graph.
+ * 弹出窗口中显示的面板，用于修改作业图形的视觉/ UI首选项。
  */
 public class JobGraphPreferencesPanel extends DCPanel {
 

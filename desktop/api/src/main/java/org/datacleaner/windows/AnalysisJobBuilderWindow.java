@@ -26,27 +26,32 @@ import org.datacleaner.connection.Datastore;
 import org.datacleaner.guice.DCModule;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.user.UserPreferences;
+import org.datacleaner.util.PropertyUtil;
 
 /**
  * This interface represents the main window in the DataCleaner GUI. An
  * {@link AnalysisJobBuilderWindow} has it's name because it's primary purpose
  * is to present a job that is being built. Behind the covers this job state is
  * respresented in the {@link AnalysisJobBuilder} class.
+ * 此界面表示DataCleaner GUI中的主窗口。
+ * {@link AnalysisJobBuilderWindow}的名称是因为它的主要目的是表示正在构建的作业。
+ * 封面的后面是该工作状态*在{@link AnalysisJobBuilder}类中表示。
  *
  * Besides job building, an {@link AnalysisJobBuilderWindow} also handles
  * datastore selection and menus in general.
+ * 除工作建立外，{@link AnalysisJobBuilderWindow}通常还处理数据存储区选择和菜单。
  */
 public interface AnalysisJobBuilderWindow extends DCWindow {
 
     enum AnalysisWindowPanelType implements HasName {
 
-        WELCOME("Welcome"),
+        WELCOME(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.welcome")),
 
-        SELECT_DS("Select datastore"),
+        SELECT_DS(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.select.datastore")),
 
-        MANAGE_DS("Manage datastores"),
+        MANAGE_DS(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.manage.datastores")),
 
-        EDITING_CONTEXT("Analysis Job");
+        EDITING_CONTEXT(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.analyisi.job"));
 
         private final String _name;
 

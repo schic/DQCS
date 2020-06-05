@@ -30,6 +30,7 @@ import org.datacleaner.repository.file.FileRepository;
 
 /**
  * Default (immutable) implementation of {@link DataCleanerConfiguration}
+ * {@link DataCleanerConfiguration}的默认（不可变）实现
  */
 public class DataCleanerConfigurationImpl implements DataCleanerConfiguration {
 

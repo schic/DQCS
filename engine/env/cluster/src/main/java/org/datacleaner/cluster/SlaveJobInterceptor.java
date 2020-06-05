@@ -27,6 +27,8 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
  * been parsed/read by the slave node. Using this component type, slaves can be
  * configured to e.g. replace certain job configuration options, perform local
  * logging operations or similar actions.
+ * 表示一个可选组件，该组件可以拦截从属节点已经解析/读取的从属作业。
+ * 使用此组件类型，可以将从站配置为。替换某些作业配置选项，执行本地日志记录操作或类似操作。
  */
 public interface SlaveJobInterceptor {
 

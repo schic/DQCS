@@ -29,6 +29,7 @@ import java.lang.annotation.Target;
 /**
  * Annotation used to provide a description of a component or a configured
  * property.
+ * 用于提供组件或已配置属性的描述的注释。
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.TYPE, ElementType.FIELD, ElementType.METHOD })

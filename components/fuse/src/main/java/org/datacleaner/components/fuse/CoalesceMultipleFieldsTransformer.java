@@ -40,13 +40,9 @@ import org.datacleaner.components.categories.CompositionCategory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Fuse / Coalesce fields")
+@Named("CoalesceMultipleFieldsTransformer.name")
 @Alias("Coalesce multiple fields")
-@Description("Lets you combine multiple fields into one, selecting the first value that is non-null.\n\n"
-        + "Use it to fuse data streams coming from different filter requirements. You can define new fields whose "
-        + "values represent whatever is available from one of the input streams.\n\n"
-        + "Or use it to identify the most accurate or most recent observation, "
-        + "if multiple entries have been recorded in separate columns.")
+@Description("CoalesceMultipleFieldsTransformer.Description")
 @Categorized(CompositionCategory.class)
 public class CoalesceMultipleFieldsTransformer implements Transformer {
     public static final String PROPERTY_UNITS = "Units";

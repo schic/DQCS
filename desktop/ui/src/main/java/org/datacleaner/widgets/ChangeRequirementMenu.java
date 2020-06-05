@@ -27,13 +27,14 @@ import javax.swing.JMenuItem;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 
 public class ChangeRequirementMenu extends JMenu {
 
     private static final long serialVersionUID = 1L;
 
     public ChangeRequirementMenu(final ComponentBuilder componentBuilder) {
-        super("Set requirement");
+        super(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.set.requirement"));
         setIcon(ImageManager.get().getImageIcon(IconUtils.FILTER_OUTCOME_PATH, IconUtils.ICON_SIZE_SMALL));
 
         final ChangeRequirementMenuBuilder menuBuilder = new ChangeRequirementMenuBuilder(componentBuilder);

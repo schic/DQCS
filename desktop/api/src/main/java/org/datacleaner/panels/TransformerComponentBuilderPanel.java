@@ -41,6 +41,7 @@ import org.datacleaner.data.MutableInputColumn;
 import org.datacleaner.job.builder.TransformerChangeListener;
 import org.datacleaner.job.builder.TransformerComponentBuilder;
 import org.datacleaner.util.IconUtils;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.WidgetFactory;
 import org.datacleaner.util.WidgetUtils;
 import org.datacleaner.widgets.ComboButton;
@@ -51,10 +52,12 @@ import org.slf4j.LoggerFactory;
 /**
  * Specialization of {@link AbstractComponentBuilderPanel} for
  * {@link Transformer}s.
+ * {@link AbstractComponentBuilderPanel}专门用于{@link Transformer} s。
  *
  * This panel will show the transformers configuration properties as well as
  * output columns, a "write data" button, a preview button and a context
  * visualization.
+ * 该面板将显示转换器的配置属性以及输出列，“写入数据”按钮，预览按钮和上下文可视化。
  */
 public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPanel
         implements TransformerComponentBuilderPresenter, TransformerChangeListener {
@@ -93,10 +96,10 @@ public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPa
 
         _outputColumnsTable = new ColumnListTable(outputColumns, getAnalysisJobBuilder(), false, _windowContext);
 
-        _writeDataButton = WidgetFactory.createDefaultButton("Write data", IconUtils.COMPONENT_TYPE_WRITE_DATA);
+        _writeDataButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.component.write"), IconUtils.COMPONENT_TYPE_WRITE_DATA);
         _writeDataButton.addActionListener(new DisplayOutputWritersForTransformedDataActionListener(_componentBuilder));
 
-        _previewButton = WidgetFactory.createDefaultButton("Preview data", IconUtils.ACTION_PREVIEW);
+        _previewButton = WidgetFactory.createDefaultButton(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.preview.data"), IconUtils.ACTION_PREVIEW);
         _previewButton.setBorder(WidgetUtils.BORDER_EMPTY);
         _previewAlternativesButton = WidgetFactory.createDefaultButton(WidgetUtils.CHAR_CARET_DOWN);
         final int defaultPreviewRows = getPreviewRows();
@@ -185,7 +188,7 @@ public class TransformerComponentBuilderPanel extends AbstractComponentBuilderPa
             outputColumnsPanel.add(WidgetUtils.decorateWithShadow(_outputColumnsTable), BorderLayout.CENTER);
             outputColumnsPanel.add(bottomButtonPanel, BorderLayout.SOUTH);
 
-            addTaskPane(IconUtils.MODEL_SOURCE, "Output columns", outputColumnsPanel);
+            addTaskPane(IconUtils.MODEL_SOURCE, PropertyUtil.getProperty("datacleaner.ui.desktop.component.output.columns"), outputColumnsPanel);
         }
         return result;
     }

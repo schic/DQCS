@@ -33,8 +33,8 @@ import org.datacleaner.components.categories.ScriptingCategory;
 import org.datacleaner.data.ConstantInputColumn;
 import org.datacleaner.data.ELInputColumn;
 
-@Named("Expression language (EL) transformer")
-@Description("Generates a column based on an EL expression")
+@Named("ELTransformer.name")
+@Description("ELTransformer.Description")
 @Categorized({ ScriptingCategory.class })
 public class ELTransformer implements Transformer {
 

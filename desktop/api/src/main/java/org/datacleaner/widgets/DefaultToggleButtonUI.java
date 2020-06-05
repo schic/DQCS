@@ -32,6 +32,7 @@ import org.datacleaner.util.WidgetUtils;
 /***
  * A {@link ButtonUI} for default {@link JToggleButton}s in the DataCleaner user
  * interface.
+ * DataCleaner用户界面中默认{@link JToggleButton}的{@link ButtonUI}。
  */
 public class DefaultToggleButtonUI extends MetalToggleButtonUI {
 

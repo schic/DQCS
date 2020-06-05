@@ -52,6 +52,7 @@ import org.slf4j.LoggerFactory;
 /**
  * ActionListener responsible for previewing transformed data in a
  * {@link DataSetWindow}.
+ * ActionListener负责预览{@link DataSetWindow}中的转换数据。
  */
 public final class PreviewTransformedDataActionListener implements ActionListener, Callable<TableModel> {
 

@@ -35,6 +35,7 @@ import org.datacleaner.widgets.properties.PropertyWidgetFactory;
 /**
  * Specialized {@link Renderer} for a {@link FilterComponentBuilderPresenter}
  * for {@link EqualsFilter}.
+ * 针对{@link EqualsFilter}的{@link FilterComponentBuilderPresenter}的专用{@link Renderer}。
  */
 @RendererBean(ComponentBuilderPresenterRenderingFormat.class)
 public class EqualsFilterComponentBuilderPresenterRenderer implements

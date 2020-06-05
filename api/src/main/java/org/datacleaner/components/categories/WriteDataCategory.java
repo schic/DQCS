@@ -24,6 +24,7 @@ import org.datacleaner.api.Categorized;
 /**
  * Category used both for {@link Categorized#superCategory()} and
  * {@link Categorized#value()} categorization.
+ * 用于{@link Categorized＃superCategory（）}和{@link Categorized＃value（）}分类的类别。
  */
 public class WriteDataCategory extends AbstractComponentCategory {
 

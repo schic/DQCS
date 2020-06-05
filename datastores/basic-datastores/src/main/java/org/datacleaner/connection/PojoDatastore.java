@@ -29,6 +29,7 @@ import org.apache.metamodel.pojo.TableDataProvider;
 
 /**
  * A {@link Datastore} that works entirely on in-memory Java objects.
+ * 一个{@link Datastore}，它完全适用于内存Java对象。
  */
 public class PojoDatastore implements UpdateableDatastore, Serializable {
 

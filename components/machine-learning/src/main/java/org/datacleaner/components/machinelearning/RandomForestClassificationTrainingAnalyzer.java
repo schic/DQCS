@@ -28,8 +28,8 @@ import org.datacleaner.components.machinelearning.api.MLClassificationTrainer;
 import org.datacleaner.components.machinelearning.api.MLTrainingOptions;
 import org.datacleaner.components.machinelearning.impl.RandomForestClassificationTrainer;
 
-@Named("Train Random Forest classifier")
-@Description("Train a classifier of the 'Random Forest' type.")
+@Named("RandomForestClassificationTrainingAnalyzer.name")
+@Description("RandomForestClassificationTrainingAnalyzer.Description")
 public class RandomForestClassificationTrainingAnalyzer extends MLClassificationTrainingAnalyzer {
 
     @Configured("Number of trees")

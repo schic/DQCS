@@ -49,6 +49,7 @@ import org.datacleaner.api.Initialize;
 import org.datacleaner.api.MultiStreamComponent;
 import org.datacleaner.api.Provided;
 import org.datacleaner.api.Validate;
+import org.datacleaner.util.PropertyUtil;
 import org.datacleaner.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,10 +58,14 @@ import org.slf4j.LoggerFactory;
  * A {@link ComponentDescriptor} for simple components. Simple components covers
  * reference data types (Dictionary, SynonymCatalog, StringPattern) as well as
  * custom configuration components.
+ * {@link ComponentDescriptor}用于简单的组件。
+ * 简单的组件包括参考数据类型（字典，SynonymCatalog，StringPattern）以及自定义配置组件。
  *
  * Simple components support the {@link Configured}, {@link Validate},
  * {@link Initialize} and {@link Close} annotations as well as the
  * {@link Closeable} interface.
+ * 简单的组件支持{@link Configured}，{@link Validate}，{@link Initialize}和
+ * {@link Close}批注以及{@link Closeable}接口。
  *
  * @see Initialize
  * @see Validate
@@ -109,14 +114,18 @@ class SimpleComponentDescriptor<B> extends AbstractDescriptor<B> implements Comp
         }
         return named.value();
     }
-
+    /**
+     * 拦截组件描述  支持国际化
+     * @return
+     */
     @Override
     public final String getDescription() {
         final Description description = getAnnotation(Description.class);
         if (description == null) {
             return null;
         }
-        return description.value();
+
+        return PropertyUtil.getProperty(description.value(),description.value());
     }
 
     @Override

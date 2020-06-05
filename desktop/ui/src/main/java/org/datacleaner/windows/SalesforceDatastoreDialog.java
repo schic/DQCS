@@ -51,6 +51,7 @@ import com.google.inject.Inject;
 
 /**
  * Datastore dialog for Salesforce.com datastores
+ * Salesforce.com数据存储的“数据存储”对话框
  */
 public class SalesforceDatastoreDialog extends AbstractDatastoreDialog<SalesforceDatastore> {
     private static final String DEFAULT_SALESFORCE_LABEL = "Default Salesforce.com endpoint";

@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 
 /**
  * A body element which wraps several other body elements in a div
+ * 一个body元素，将其他几个body元素包装在div中
  */
 public class CompositeBodyElement implements BodyElement {
 

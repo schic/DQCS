@@ -30,6 +30,9 @@ import org.apache.metamodel.schema.TableType;
  * {@link Datastore}. It is preferred to use this component instead of the
  * {@link DataContext} directly, since it is shared amongst connections while a
  * DataContext may be created per connection (depending on the datastore type).
+ * 一个方便的组件，用于浏览/导航{@link Datastore}的架构。
+ * 最好直接使用此组件而不是{@link DataContext}，因为它是在连接之间共享的，
+ * 而每个连接可以创建DataContext（取决于数据存储类型）。
  */
 public final class SchemaNavigator {
 

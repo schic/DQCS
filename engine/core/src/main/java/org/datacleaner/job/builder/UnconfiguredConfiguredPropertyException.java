@@ -26,6 +26,7 @@ import org.datacleaner.job.ComponentConfigurationException;
 /**
  * Exception thrown when a required {@link Configured} property of a component
  * is not set.
+ * 未设置组件的必需{@link Configured}属性时抛出的异常。
  */
 public class UnconfiguredConfiguredPropertyException extends ComponentConfigurationException {
 

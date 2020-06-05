@@ -25,6 +25,7 @@ import org.datacleaner.job.ComponentJob;
 /**
  * Represents a reference to a component job (Typically AnalyzerJob) and it's
  * result
+ * 表示对组件作业的引用（通常为AnalyzerJob），它的结果为
  */
 public final class JobAndResult {
 

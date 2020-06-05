@@ -47,8 +47,10 @@ import com.google.common.base.Splitter;
 
 /**
  * Dialog for setup of Apache Kafka stream. I used the CouchDbDatastoreDialog as the template (copy-paste source) for this one.
+ * 设置Apache Kafka流的对话框。我使用CouchDbDatastoreDialog作为该模板的模板（复制粘贴源）。
  * 
  * The "Topics" text field is comma delimited for simplicism.
+ * “主题”（Topics）文本字段以逗号分隔，以简化表示。
  * 
  * @author davkrause
  */

@@ -10,7 +10,7 @@ import org.datacleaner.job.runner.AnalysisRunnerImpl
 import org.datacleaner.result.html.HtmlAnalysisResultWriter
 import org.datacleaner.test.TestHelper
 import org.junit.Test
-import org.scalatestplus.junit.AssertionsForJUnit
+import org.scalatest.junit.AssertionsForJUnit
 
 class ScatterAnalyzerResultHtmlRendererTest extends AssertionsForJUnit {
 

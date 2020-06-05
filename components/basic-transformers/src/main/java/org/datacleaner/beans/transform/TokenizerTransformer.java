@@ -41,11 +41,11 @@ import org.datacleaner.components.categories.TextCategory;
 
 /**
  * Tokenizes values into a configurable amount of tokens.
- *
+ *将值标记为可配置的标记数量。
  *
  */
-@Named("Tokenizer")
-@Description("Tokenizes a String value (splits into substrings).")
+@Named("TokenizerTransformer.name")
+@Description("TokenizerTransformer.Description")
 @Categorized(TextCategory.class)
 public class TokenizerTransformer implements Transformer {
 

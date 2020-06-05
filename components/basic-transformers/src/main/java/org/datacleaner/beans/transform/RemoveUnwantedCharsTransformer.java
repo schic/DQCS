@@ -31,9 +31,8 @@ import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.TextCategory;
 import org.datacleaner.util.CharIterator;
 
-@Named("Remove unwanted characters")
-@Description( "Removes characters from strings that are not wanted. Use it to cleanse codes and identifiers "
-        + "that may have additional dashes, punctuations, unwanted letters etc.")
+@Named("RemoveUnwantedCharsTransformer.name")
+@Description("RemoveUnwantedCharsTransformer.Description")
 @Categorized(TextCategory.class)
 public class RemoveUnwantedCharsTransformer implements Transformer {
 

@@ -31,6 +31,7 @@ import com.google.common.html.HtmlEscapers;
  * A wrapper around the {@link ConfiguredPropertyDescriptor} object to make it
  * easier for the documentation template to get to certain aspects that should
  * be presented in the documentation.
+ * {@link ConfiguredPropertyDescriptor}对象周围的包装器可以使文档模板更轻松地访问应在文档中提供的某些方面。
  */
 public class ConfiguredPropertyDocumentationWrapper {
 

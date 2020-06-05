@@ -27,16 +27,23 @@ import org.apache.metamodel.data.Row;
  * An {@link OutputRowCollector} is a consumer of output rows from
  * {@link Transformer}s, as well as {@link Analyzer}s implementing
  * {@link HasOutputDataStreams}.
+ * {@link OutputRowCollector}是{@link Transformer}
+ * 和实现{{link HasOutputDataStreams}的{@link Analyzer}的输出行的使用者。
  *
  * Usually {@link Transformer}s don't need to interact directly with an
  * {@link OutputRowCollector}, because the returned values of the
  * {@link Transformer#transform(org.datacleaner.data.InputRow)} method
  * automatically get's channeled to the {@link OutputRowCollector} by the
  * framework.
+ * 通常，{@ link Transformer}不需要直接与{@link OutputRowCollector}进行交互，
+ * 因为{@link Transformer＃transform（org.datacleaner.data.InputRow）}方法的返回值
+ * 会自动获取框架将其引导至{@link OutputRowCollector}。
  *
  * But some advanced {@link Transformer}s may have a need to put several rows
  * into the stream of output rows, and for this, a {@link Transformer} can
  * inject an {@link OutputRowCollector} in order to generate multiple records.
+ * 但是某些高级{@link Transformer}可能需要将几行放入输出行流中，
+ * 为此，{@ link Transformer}可以注入{@link OutputRowCollector}以生成多个记录。
  *
  * {@link OutputRowCollector} can be injected into {@link Transformer}s using
  * the {@link Provided} and {@link Inject} annotations.

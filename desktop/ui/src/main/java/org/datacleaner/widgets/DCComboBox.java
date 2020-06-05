@@ -41,6 +41,8 @@ import org.datacleaner.util.LookAndFeelManager;
  * Defines a common combobox class that has a more convenient listening
  * mechanism (the JComboBox can be quite confusing because of the cycle of
  * {@link ActionListener}s and {@link ItemListener}s).
+ * 定义一个通用的combobox类，该类具有更方便的侦听机制（
+ * 由于{@link ActionListener}和{@link ItemListener}的循环，JComboBox可能会造成很大的混乱）。
  *
  * @param <E>
  *            the type of element in the combo

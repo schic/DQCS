@@ -35,6 +35,7 @@ import org.datacleaner.util.ws.NaiveTrustManager;
 
 /**
  * Utility methods for security concerns.
+ * 出于安全考虑的实用方法。
  */
 public class SecurityUtils {
     static final String PREFIX = "enc:";

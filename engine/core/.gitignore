@@ -2,5 +2,6 @@
 /.settings
 /.classpath
 /target
-
-
+/target/
+/target/
+/target/

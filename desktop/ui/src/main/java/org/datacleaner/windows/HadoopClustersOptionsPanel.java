@@ -45,6 +45,7 @@ import org.datacleaner.widgets.PopupButton;
 
 /**
  * Dialog for managing the Hadoop configurations
+ * 用于管理Hadoop配置的对话框
  */
 public class HadoopClustersOptionsPanel extends DCPanel implements ServerInformationChangeListener {
 

@@ -25,6 +25,7 @@ import org.datacleaner.job.builder.ComponentBuilder;
 /**
  * Renderer format for component job builder presenters. Renderers of
  * {@link ComponentBuilder}s should use this rendering format.
+ * 组件作业生成器演示者的渲染器格式。{@link ComponentBuilder}的渲染器应使用此渲染格式。
  */
 public class ComponentBuilderPresenterRenderingFormat implements RenderingFormat<ComponentBuilderPresenter> {
 

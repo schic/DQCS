@@ -15,8 +15,8 @@ object ScatterAnalyzer {
   final val PROPERTY_GROUP_COLUMN = "Group column"
 }
 
-@Named("Scatter plot")
-@Description("Plots the occurences of two number variables in a scatter plot chart. A useful visualization for identifying outliers in numeric data relationships.")
+@Named("ScatterAnalyzer.name")
+@Description("ScatterAnalyzer.Description")
 @Categorized(Array(classOf[VisualizationCategory]))
 class ScatterAnalyzer extends Analyzer[IScatterAnalyzerResult] {
 

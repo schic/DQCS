@@ -52,9 +52,8 @@ import org.datacleaner.components.convert.ConvertToNumberTransformer;
 import org.datacleaner.components.convert.ConvertToStringTransformer;
 import org.datacleaner.util.ReflectionUtils;
 
-@Named("Compare")
-@Description("Compare two values using an operator of your choice. The options available in this filter resemble those "
-        + "of a SQL WHERE clause - you can specify columns, fixed values and use operators including the LIKE operator.")
+@Named("CompareFilter.name")
+@Description("CompareFilter.Description")
 @Categorized(FilterCategory.class)
 @Distributed(true)
 public class CompareFilter implements QueryOptimizedFilter<CompareFilter.Category>, HasLabelAdvice {

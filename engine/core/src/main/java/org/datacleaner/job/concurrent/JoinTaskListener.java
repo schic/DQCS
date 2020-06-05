@@ -28,6 +28,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Task listener that will wait (join) for a set of tasks to complete before
  * invoking onComplete(...) on a nested task listener.
+ * 在嵌套任务侦听器上调用onComplete（...）之前，将等待（加入）一组任务的任务侦听器。
  */
 public final class JoinTaskListener implements TaskListener {
 

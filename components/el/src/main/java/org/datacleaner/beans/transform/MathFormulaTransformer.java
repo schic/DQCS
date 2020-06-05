@@ -42,9 +42,8 @@ import org.datacleaner.util.StringUtils;
 import de.odysseus.el.ExpressionFactoryImpl;
 import de.odysseus.el.util.SimpleContext;
 
-@Named("Math formula")
-@Description("Provide a mathematical formula to perform arbitrary calculations.\n"
-        + "Formulas support basic operators like plus (+), minus (-), divide (/), multiply (*) and modulus (%).")
+@Named("MathFormulaTransformer.name")
+@Description("MathFormulaTransformer.Description")
 @Categorized({ NumbersCategory.class })
 public class MathFormulaTransformer implements Transformer {
 

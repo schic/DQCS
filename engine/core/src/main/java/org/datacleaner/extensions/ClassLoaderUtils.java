@@ -34,6 +34,9 @@ import org.slf4j.LoggerFactory;
  * this class is to ease with handling the diversity of situations that the
  * application can be deployed to: Embedded in a non-system classloader, a Java
  * Web Start classloader and running in a regular system classloader.
+ * 用于处理{@link ClassLoader}的实用程序类。
+ * 该类的主要重点是简化应用程序可以部署到的各种情况的处理：嵌入非系统类加载器，
+ * Java Web Start类加载器并在常规系统类加载器中运行。
  */
 public final class ClassLoaderUtils {
 

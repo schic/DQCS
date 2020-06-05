@@ -31,6 +31,7 @@ import org.datacleaner.util.WidgetFactory;
 
 /**
  * Custom {@link ComboBoxUI} for DataCleaner
+ * 自定义{@link ComboBoxUI}用于DataCleaner
  */
 public class DCComboBoxUI extends BasicComboBoxUI {
 

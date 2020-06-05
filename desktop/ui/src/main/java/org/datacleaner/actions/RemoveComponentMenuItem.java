@@ -31,9 +31,11 @@ import org.datacleaner.job.builder.FilterComponentBuilder;
 import org.datacleaner.job.builder.TransformerComponentBuilder;
 import org.datacleaner.util.IconUtils;
 import org.datacleaner.util.ImageManager;
+import org.datacleaner.util.PropertyUtil;
 
 /**
  * menu item and action listener for removing a component from a job.
+ * 菜单项和动作侦听器，用于从作业中删除组件。
  */
 public class RemoveComponentMenuItem extends JMenuItem implements ActionListener {
 
@@ -42,7 +44,7 @@ public class RemoveComponentMenuItem extends JMenuItem implements ActionListener
     private final ComponentBuilder _componentBuilder;
 
     public RemoveComponentMenuItem(final ComponentBuilder componentBuilder) {
-        super("Remove component",
+        super(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.remone.component"),
                 ImageManager.get().getImageIcon(IconUtils.ACTION_REMOVE_DARK, IconUtils.ICON_SIZE_SMALL));
         _componentBuilder = componentBuilder;
         addActionListener(this);

@@ -26,6 +26,7 @@ import javax.swing.plaf.basic.BasicScrollBarUI;
 
 /**
  * Custom scrollbar UI for DataCleaner
+ * DataCleaner的自定义滚动条UI
  */
 public class DCScrollBarUI extends BasicScrollBarUI {
 

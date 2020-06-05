@@ -34,6 +34,7 @@ import org.datacleaner.util.ReflectionUtils;
 /**
  * Abstract descriptor for things that are represented by a method on a
  * component class.
+ * 由组件类上的方法表示的事物的抽象描述符。
  */
 class AbstractMethodDescriptor extends BaseObject implements Serializable {
 

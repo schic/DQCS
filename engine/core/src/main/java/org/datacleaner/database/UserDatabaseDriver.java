@@ -38,6 +38,8 @@ import org.slf4j.LoggerFactory;
  * Represents a database driver that the user has installed. Such database
  * drivers are based on (JAR) files on the filesystem and are loaded dynamically
  * (as opposed to statically loaded drivers, which are loaded at startup time).
+ * 表示用户已安装的数据库驱动程序。此类数据库驱动程序基于文件系统上的（JAR）文件，
+ * 并且是动态加载的（与在启动时加载的静态加载的驱动程序相反）。
  */
 public final class UserDatabaseDriver implements Serializable {
 

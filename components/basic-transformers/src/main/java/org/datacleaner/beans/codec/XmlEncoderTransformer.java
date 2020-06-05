@@ -34,8 +34,8 @@ import org.datacleaner.data.MockInputColumn;
 import com.google.common.escape.Escaper;
 import com.google.common.xml.XmlEscapers;
 
-@Named("XML encoder")
-@Description("Encodes/escapes plain text into XML content")
+@Named("XmlEncoderTransformer.name")
+@Description("XmlEncoderTransformer.Description")
 @Categorized(EncodingCategory.class)
 public class XmlEncoderTransformer implements Transformer {
 

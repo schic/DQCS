@@ -27,6 +27,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * if updates to the count would be significant to a user. It allows you to set
  * a count value atomically, and only if it is greater than other informed
  * counter values.
+ * 一个进度计数器，可以跟踪例如当前行计数，并告诉计数的更新对用户是否有意义。
+ * 它允许您自动设置计数值，并且仅当它大于其他通知的计数器值时。
  */
 public class ProgressCounter implements Serializable {
 

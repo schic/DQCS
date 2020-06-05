@@ -72,6 +72,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Property widget for multiple input columns. Displays these as checkboxes.
+ * 多个输入列的属性窗口小部件。将其显示为复选框。
  */
 public class MultipleInputColumnsPropertyWidget extends AbstractPropertyWidget<InputColumn<?>[]>
         implements SourceColumnChangeListener, TransformerChangeListener, MutableInputColumn.Listener,

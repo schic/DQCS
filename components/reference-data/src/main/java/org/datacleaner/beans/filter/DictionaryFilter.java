@@ -36,9 +36,9 @@ import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.reference.Dictionary;
 import org.datacleaner.reference.DictionaryConnection;
 
-@Named("Validate in dictionary")
+@Named("DictionaryFilter.name")
 @Alias("Dictionary lookup")
-@Description("Filters values based on their existence in a dictionary")
+@Description("DictionaryFilter.Description")
 @Categorized(FilterCategory.class)
 public class DictionaryFilter implements Filter<DictionaryFilter.Category> {
 

@@ -56,6 +56,7 @@ import com.google.common.base.Strings;
 /**
  * Panel that shows various progress information widgets within the
  * {@link ResultWindow}.
+ * 显示{@link ResultWindow}中各种进度信息小部件的面板。
  */
 public class ProgressInformationPanel extends DCPanel {
 

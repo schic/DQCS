@@ -32,8 +32,8 @@ import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.EncodingCategory;
 import org.datacleaner.data.MockInputColumn;
 
-@Named("XML decoder")
-@Description("Decodes XML content into plain text")
+@Named("XmlDecoderTransformer.name")
+@Description("XmlDecoderTransformer.Description")
 @Categorized(EncodingCategory.class)
 public class XmlDecoderTransformer implements Transformer {
 

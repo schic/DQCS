@@ -65,6 +65,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Represents the panel in the Options dialog where the user can get an overview
  * and configure database drivers.
+ * 代表“选项”对话框中的面板，用户可以在其中获得概述并配置数据库驱动程序。
  */
 public class DatabaseDriversPanel extends DCPanel {
 

@@ -33,6 +33,7 @@ import org.jdesktop.swingx.JXTextField;
 /**
  * Abstract implementation of {@link DatabaseConnectionPresenter}, which only
  * provides the username/password (credentials) part.
+ * {@link DatabaseConnectionPresenter}的抽象实现，仅提供用户名/密码（凭证）部分。
  */
 public abstract class AbstractDatabaseConnectionPresenter implements DatabaseConnectionPresenter {
 

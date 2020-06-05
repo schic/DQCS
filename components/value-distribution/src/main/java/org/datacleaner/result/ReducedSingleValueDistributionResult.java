@@ -33,6 +33,7 @@ import org.datacleaner.beans.valuedist.ValueDistributionAnalyzerResultReducer;
  * A simple and light-weight implementation of
  * {@link ValueDistributionAnalyzerResult} produced by the
  * {@link ValueDistributionAnalyzerResultReducer}.
+ *  {@link ValueDistributionAnalyzerResultReducer}生成的{@link ValueDistributionAnalyzerResult}的简单轻量级实现。
  */
 public class ReducedSingleValueDistributionResult extends ValueDistributionAnalyzerResult {
 

@@ -30,6 +30,8 @@ import org.datacleaner.job.AnalyzerJob;
  * {@link AnalyzerResultReducer} failed. This condition indicates that results
  * where succesfully produced by all slave nodes in a cluster, but the results
  * could not be combined/reduced without errors.
+ * 通过{@link AnalyzerResultReducer}执行归约时引发的异常失败。
+ * 此条件表明结果由集群中的所有从属节点成功生成，但结果不能正确组合/减少。
  */
 public class AnalysisResultReductionException extends IllegalStateException {
 

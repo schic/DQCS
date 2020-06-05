@@ -26,6 +26,8 @@ import org.datacleaner.job.AnalysisJob;
  * Exception thrown if trying to build an {@link AnalysisJob} from an
  * {@link AnalysisJobBuilder} while it does not yet contain any
  * {@link HasAnalyzerResult} components.
+ * 如果尝试从{@link AnalysisJobBuilder}构建{@link AnalysisJob}时抛出异常，
+ * 而该尚不包含任何{@link HasAnalyzerResult}组件。
  */
 public class NoResultProducingComponentsException extends RuntimeException {
 

@@ -29,6 +29,7 @@ import org.datacleaner.api.AnalyzerResult;
 /**
  * A mock-implementation of the {@link MetricDescriptor} interface. Use this only for testing purposes
  * or in cases where you want to circumvent the actual framework!
+ * {@link MetricDescriptor}接口的模拟实现。仅用于测试目的或要绕过实际框架的情况！
  */
 public class MockMetricDescriptor extends AbstractMetricDescriptor implements MetricDescriptor {
 

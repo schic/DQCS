@@ -26,6 +26,7 @@ import org.datacleaner.job.builder.AnalysisJobBuilder;
 /**
  * Defines a callback for a JobWizard which contains some logic which may be invoked when or when done using a
  * {@link JobWizard}.
+ * 为JobWizard定义一个回调，该回调包含一些逻辑，当使用{@link JobWizard}完成操作时，可以调用该逻辑。
  */
 public interface JobWizardCallback {
 

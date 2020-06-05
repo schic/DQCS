@@ -39,6 +39,7 @@ import org.datacleaner.job.InputColumnSourceJob;
 /**
  * Helping class for the row processing publisher, that will help sort the
  * consumers correctly
+ * 行处理发布者的帮助类，它将帮助正确地对使用者进行排序
  */
 class RowProcessingConsumerSorter {
 

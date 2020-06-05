@@ -31,6 +31,7 @@ import org.datacleaner.storage.RowAnnotationFactory;
 
 /**
  * Represents a group of scattered points
+ * 代表一组分散的点
  */
 @SuppressWarnings("SuspiciousNameCombination")
 public class JavaScatterGroup implements IScatterGroup {

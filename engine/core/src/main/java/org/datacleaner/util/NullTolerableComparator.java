@@ -25,7 +25,7 @@ import java.util.Comparator;
 /**
  * A comparable that delegates to {@link Comparator} methods, but tolerates null
  * values by checking for this before delegating.
- *
+ * 委托给{@link Comparator}方法的可比对象，但在委托之前通过检查此值来允许null值。
  *
  *
  * @param <E>

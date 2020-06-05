@@ -25,7 +25,7 @@ import org.datacleaner.descriptors.DescriptorProvider;
 
 /**
  * An object that is capable of reading an AnalysisJob from a source.
- *
+ * 能够从源读取和分析作业的对象。
  *
  *
  * @param <E>

@@ -23,7 +23,8 @@ package org.datacleaner.beans.stringpattern;
  * Defines a "predefined" token which is a token type that have been found based
  * on the users entered patterns, before any other pattern finding processing.
  * using a set of regular expressions and given a name.
- *
+ * 定义“预定义”令牌，该令牌是在任何其他模式查找处理之前根据用户输入的模式找到的令牌类型。
+ * 使用一组正则表达式并命名。
  *
  *
  */

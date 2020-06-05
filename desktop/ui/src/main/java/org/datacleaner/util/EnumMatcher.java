@@ -21,7 +21,7 @@ package org.datacleaner.util;
 
 /**
  * Represents a component capable of matching Strings to enum values
- *
+ * 表示一个能够将字符串与枚举值匹配的组件
  * @param <E>
  */
 public interface EnumMatcher<E> {

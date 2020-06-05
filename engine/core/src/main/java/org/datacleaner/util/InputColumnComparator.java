@@ -29,7 +29,7 @@ import org.datacleaner.data.TransformedInputColumn;
 /**
  * Comparator for input columns. Physical columns will be ordered first, sorted
  * by their column numbers.
- *
+ * 输入列的比较器。物理列将首先排序，并按其列号排序。
  *
  */
 public class InputColumnComparator implements Comparator<InputColumn<?>>, Serializable {

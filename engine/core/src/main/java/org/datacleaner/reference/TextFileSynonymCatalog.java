@@ -37,9 +37,11 @@ import com.opencsv.CSVParser;
 
 /**
  * Synonym catalog based on a text file.
+ * 基于文本文件的同义词目录。
  *
  * Each line in the file should contain a master term with trailing
  * comma-separated synonyms.
+ * 文件中的每一行都应包含一个主用语，并在其后加逗号分隔的同义词。
  *
  * Example:
  *

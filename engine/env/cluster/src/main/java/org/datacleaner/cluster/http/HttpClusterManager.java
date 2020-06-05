@@ -55,6 +55,7 @@ import org.slf4j.LoggerFactory;
 /**
  * A cluster manager that uses HTTP servlet transport to communicate between
  * nodes.
+ * 使用HTTP Servlet传输在节点之间进行通信的集群管理器。
  */
 public class HttpClusterManager implements ClusterManager {
 

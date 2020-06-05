@@ -30,6 +30,7 @@ import org.datacleaner.util.LabelUtils;
 /**
  * An abstract implementation of {@link ValueCountingAnalyzerResult} which
  * implements the most important metric: The value count.
+ * {@link ValueCountingAnalyzerResult}的抽象实现，其中实现了最重要的指标：值计数。
  */
 public abstract class AbstractValueCountingAnalyzerResult implements ValueCountingAnalyzerResult {
 

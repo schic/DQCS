@@ -42,6 +42,8 @@ import org.datacleaner.widgets.Alignment;
  * A dialog presenting a {@link SimpleTableDefsPanel} and a save button. Used
  * for defining tables for {@link MongoDbDatastore}s and
  * {@link CouchDbDatastore}s.
+ * 一个对话框，显示一个{@link SimpleTableDefsPanel}和一个保存按钮。
+ * 用于为{@link MongoDbDatastore}和{@link CouchDbDatastore}定义表。
  */
 public class TableDefinitionDialog extends AbstractDialog {
 

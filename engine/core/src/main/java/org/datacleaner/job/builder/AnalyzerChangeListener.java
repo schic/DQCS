@@ -22,6 +22,7 @@ package org.datacleaner.job.builder;
 /**
  * Listener interface for receiving notifications that analyzers are being added
  * or removed from a job that is being built.
+ * 侦听器界面，用于接收有关正在添加或从正在构建的作业中删除分析器的通知。
  */
 public interface AnalyzerChangeListener extends ComponentChangeListener<AnalyzerComponentBuilder<?>> {
 

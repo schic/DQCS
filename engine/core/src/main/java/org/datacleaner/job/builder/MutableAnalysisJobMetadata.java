@@ -30,6 +30,7 @@ import org.datacleaner.job.AnalysisJobMetadata;
 /**
  * A mutable {@link AnalysisJobMetadata} object, used by
  * {@link AnalysisJobBuilder} to allow easy setting of metadata items.
+ * 可变的{@link AnalysisJobMetadata}对象，由{@link AnalysisJobBuilder}使用，可以轻松设置元数据项。
  */
 public class MutableAnalysisJobMetadata implements AnalysisJobMetadata {
 

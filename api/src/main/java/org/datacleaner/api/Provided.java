@@ -30,14 +30,18 @@ import java.lang.annotation.Target;
  * Methods and fields with the @Provided annotation are used to let component
  * retrieve service-objects such as persistent collections, the current
  * SchemaNavigator or DataContext.
+ * 带有@Provided批注的方法和字段用于使组件检索服务对象，
+ * 例如持久性集合，当前的SchemaNavigator或DataContext。
  *
  * This features ensures separation of concerns: The framework will make sure
  * that persistence is handled and the component developer will not have to worry
  * about memory problems related to his/her collection(s).
+ * 此功能可确保关注点分离：框架将确保处理持久性，并且组件开发人员将不必担心与他/她的收藏相关的内存问题。
  *
  * Additionally components can use the @Provided annotation to inject a
  * SchemaNavigator in order to perform metadata-based analysis. A Datastore
  * can also be injected.
+ * 另外，组件可以使用@Provided批注注入SchemaNavigator，以执行基于元数据的分析。还可以注入数据存储。
  *
  * Valid types for @Provided annotated fields and method arguments are:
  * <ul>

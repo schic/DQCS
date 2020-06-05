@@ -29,6 +29,7 @@ import org.datacleaner.util.convert.StringConverter;
 /**
  * An abstract parser of metric parameters which supports IN [...] and NOT IN
  * [...] expressions.
+ * 支持IN [...]和NOT IN [...]表达式的度量参数的抽象解析器。
  *
  * @see Metric#supportsInClause()
  */

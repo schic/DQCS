@@ -45,6 +45,7 @@ import org.jdesktop.swingx.VerticalLayout;
 /**
  * {@link PropertyWidget} for String arrays. Displays string arrays as a set of
  * text boxes and plus/minus buttons to grow/shrink the array.
+ * {@link PropertyWidget}用于字符串数组。将字符串数组显示为一组文本框和加/减按钮以增大/缩小数组。
  */
 public class MultipleStringPropertyWidget extends AbstractPropertyWidget<String[]> {
 

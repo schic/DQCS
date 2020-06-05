@@ -32,10 +32,13 @@ import org.datacleaner.api.InputRow;
  * Abstract super-class for {@link InputRow} implementations that are aware of
  * (and impacted by) the change of {@link InputRow#getId()} which was changed
  * from type int to long.
+ * {@link InputRow}实现的抽象超类，了解（并受其影响）{@link InputRow＃getId（）}的更改，
+ * 该更改已从int类型更改为long类型。
  *
  * To enable deserialization of old objects where the value is stored as an int,
  * but should be deserialized into a long, this class provides a mechanism for
  * converting the values.
+ * 为了对值存储为int的旧对象启用反序列化，但应将其反序列化为long，此类提供了转换值的机制。
  */
 abstract class AbstractLegacyAwareInputRow extends AbstractInputRow {
 

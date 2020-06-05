@@ -24,6 +24,8 @@ import java.util.Collection;
 /**
  * Constant value for {@link Distributed} representing that an {@link Analyzer}
  * or {@link AnalyzerResult} does not have a {@link AnalyzerResultReducer}
+ * {@link Distributed}的常量值，
+ * 表示{@link Analyzer}或{@link AnalyzerResult}没有{@link AnalyzerResultReducer}
  */
 public final class NoAnalyzerResultReducer implements AnalyzerResultReducer<AnalyzerResult> {
 

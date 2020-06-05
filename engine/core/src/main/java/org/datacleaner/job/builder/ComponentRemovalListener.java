@@ -21,6 +21,7 @@ package org.datacleaner.job.builder;
 
 /**
  * Listener interface for removals of {@link ComponentBuilder}s.
+ * 用于删除{@link ComponentBuilder}的侦听器界面。
  */
 public interface ComponentRemovalListener<C extends ComponentBuilder> {
 

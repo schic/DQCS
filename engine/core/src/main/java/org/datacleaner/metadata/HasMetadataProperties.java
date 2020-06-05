@@ -23,6 +23,7 @@ import java.util.Map;
 
 /**
  * Represents any component that has metadata properties
+ * 表示任何具有元数据属性的组件
  */
 public interface HasMetadataProperties {
 

@@ -29,7 +29,7 @@ import org.mozilla.javascript.ScriptableObject;
 
 /**
  * Various utility methods for dealing with JavaScript (Mozilla Rhino)
- *
+ *各种处理JavaScript的实用方法（Mozilla Rhino）
  *
  */
 final class JavaScriptUtils {

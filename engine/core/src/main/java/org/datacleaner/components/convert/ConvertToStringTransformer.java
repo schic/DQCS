@@ -43,9 +43,10 @@ import org.datacleaner.components.categories.ConversionCategory;
 
 /**
  * Attempts to convert anything to a String value.
+ * 尝试将任何内容转换为String值。
  */
-@Named("Convert to string")
-@Description("Converts anything to a string (or null).")
+@Named("ConvertToStringTransformer.name")
+@Description("ConvertToStringTransformer.Description")
 @Categorized(ConversionCategory.class)
 public class ConvertToStringTransformer implements Transformer {
 

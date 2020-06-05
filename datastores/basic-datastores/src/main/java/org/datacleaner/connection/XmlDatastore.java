@@ -32,6 +32,7 @@ import org.datacleaner.util.ReadObjectBuilder;
 
 /**
  * Datastore implementation for XML files.
+ * XML文件的数据存储区实现。
  */
 public class XmlDatastore extends UsageAwareDatastore<DataContext> implements FileDatastore {
 

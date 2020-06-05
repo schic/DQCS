@@ -38,8 +38,8 @@ import org.datacleaner.api.QueryOptimizedFilter;
 import org.datacleaner.api.Validate;
 import org.datacleaner.components.categories.FilterCategory;
 
-@Named("Max rows")
-@Description("Sets a maximum number of rows to process.")
+@Named("MaxRowsFilter.name")
+@Description("MaxRowsFilter.Description")
 @Categorized(value = FilterCategory.class)
 @Distributed(false)
 public class MaxRowsFilter implements QueryOptimizedFilter<MaxRowsFilter.Category>, HasLabelAdvice {

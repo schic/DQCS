@@ -79,8 +79,9 @@ import org.datacleaner.util.WriteBuffer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Named("Update table")
-@Description("Update records in a table in a registered datastore. This component allows you to map the values "
+@Named("UpdateTableAnalyzer.name")
+@Description("UpdateTableAnalyzer.Description")
+/*@Description("Update records in a table in a registered datastore. This component allows you to map the values "
         + "available in the flow with the columns of the target table, in order to update the values of these columns "
         + "in the datastore.\nTo understand the configuration of the Update table component, consider a typical SQL "
         + "update statement:\n<blockquote>UPDATE table SET name = 'John Doe' WHERE id = 42</blockquote>\nHere we see "
@@ -89,7 +90,7 @@ import org.slf4j.LoggerFactory;
         + "'42'. You have a field in your DC job that you want to map to fields in your database.\nUsually the "
         + "'condition value' would be a mapping of the key that you have in your job towards the key that is in the "
         + "database. The 'values to update' property would include the columns that you wish to update based on the "
-        + "values you have in your job.")
+        + "values you have in your job.")*/
 @Categorized(superCategory = WriteSuperCategory.class)
 @Concurrent(true)
 public class UpdateTableAnalyzer

@@ -22,6 +22,7 @@ package org.datacleaner.job;
 /**
  * Super-type for exceptions thrown when a job is being read, and a component in
  * it not correctly configured.
+ * 读取作业时抛出的异常的超类型，并且中的组件未正确配置。
  */
 public class ComponentConfigurationException extends RuntimeException {
 

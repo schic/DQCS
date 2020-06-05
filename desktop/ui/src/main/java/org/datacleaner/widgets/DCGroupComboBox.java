@@ -30,6 +30,7 @@ import org.datacleaner.util.StringUtils;
 
 /**
  * Defines a group combo-box class that has a more convenient listening mechanism.
+ * 定义具有更方便侦听机制的组组合框类。
  */
 public class DCGroupComboBox extends DCComboBox<HasName> {
     private static final long serialVersionUID = 1L;

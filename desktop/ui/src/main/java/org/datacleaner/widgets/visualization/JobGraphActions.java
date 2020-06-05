@@ -36,6 +36,7 @@ import org.datacleaner.windows.SourceTableConfigurationDialog;
 
 /**
  * Implements various user actions for use in the {@link JobGraph}.
+ * 实现各种用户操作，以在{@link JobGraph}中使用。
  */
 public class JobGraphActions {
 

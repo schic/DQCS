@@ -34,6 +34,7 @@ import org.datacleaner.util.ReflectionUtils;
 /**
  * Default {@link ResultDescriptor} implementation which can be used stand-alone
  * or as a delegate for e.g. an {@link AnalyzerDescriptor} implementation.
+ * 默认的{@link ResultDescriptor}实现可独立使用或作为例如{@link AnalyzerDescriptor}实现。
  */
 public final class ResultDescriptorImpl implements ResultDescriptor {
 

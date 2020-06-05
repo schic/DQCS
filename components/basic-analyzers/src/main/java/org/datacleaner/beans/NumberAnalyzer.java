@@ -47,19 +47,19 @@ import org.datacleaner.storage.RowAnnotations;
 
 /**
  * Number analyzer, which provides statistical information for number values:
- *
+ *数字分析器，它提供数字值的统计信息：
  * <ul>
- * <li>Highest value</li>
- * <li>Lowest value</li>
- * <li>Sum</li>
- * <li>Mean</li>
- * <li>Geometric mean</li>
- * <li>Standard deviation</li>
- * <li>Variance</li>
+ * <li>Highest value</li>最高值
+ * <li>Lowest value</li>最低值
+ * <li>Sum</li>和
+ * <li>Mean</li>平均值
+ * <li>Geometric mean</li>几何平均数
+ * <li>Standard deviation</li>标准偏差
+ * <li>Variance</li>方差
  * </ul>
  */
-@Named("Number analyzer")
-@Description("Provides insight into number-column values.")
+@Named("NumberAnalyzer.name")
+@Description("NumberAnalyzer.Description")
 @Concurrent(true)
 public class NumberAnalyzer implements Analyzer<NumberAnalyzerResult> {
 

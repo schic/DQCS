@@ -45,10 +45,13 @@ import org.datacleaner.storage.RowAnnotations;
 /**
  * Represents a typical "drill to detail" result consisting of a set of
  * annotated rows.
+ * 表示典型的“详细钻探”结果，该结果由一组带注释的行组成。
  *
  * Furthermore, if classes inherit from {@link AnnotatedRowsResult}, they can be
  * annotated with the {@link Description} annotation to provide a labeling
  * description, used often in rendering.
+ * 此外，如果类继承自{@link AnnotatedRowsResult}，
+ * 则可以使用{@link Description}批注对它们进行注解，以提供标签描述，该描述经常在渲染中使用。
  *
  *
  */

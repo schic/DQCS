@@ -30,7 +30,8 @@ import java.util.Set;
  * StorageProvider that actually doesn't store data on disk, but only in memory.
  * This implementation is prone to out of memory errors, but is on the other
  * hand very quick for small jobs.
- *
+ * 实际上不将数据存储在磁盘上，而是仅存储在内存中的StorageProvider。
+ * 此实现易于出现内存不足错误，但另一方面对于小型作业，它非常快。
  *
  */
 public final class InMemoryStorageProvider implements StorageProvider {

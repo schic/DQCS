@@ -27,6 +27,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Default/simple/base implementation of {@link ServiceSession}.
+ * {@link ServiceSession}的默认/简单/基本实现。
  *
  * @param <R>
  */

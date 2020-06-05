@@ -26,6 +26,7 @@ import org.datacleaner.connection.Datastore;
 
 /**
  * Defines metadata about a {@link Datastore}.
+ * 定义有关{@link数据存储区}的元数据。
  */
 public interface DatastoreMetadata extends HasMetadataAnnotations {
 

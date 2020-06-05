@@ -25,12 +25,15 @@ import org.apache.metamodel.DataContext;
 
 /**
  * Represents an open connection to a {@link Datastore}.
+ * 表示与{@link Datastore}的开放连接。
  *
  * Connections are often pooled/shared and in those cases, the connection
  * represents a single client of the pool.
+ * 连接通常是池/共享的，在这种情况下，连接表示池的单个客户端。
  *
  * {@link DatastoreConnection}s should be closed using the {@link #close()}
  * method.
+ * {@link DatastoreConnection}应该使用{@link #close（）}方法关闭。
  */
 public interface DatastoreConnection extends Closeable {
 

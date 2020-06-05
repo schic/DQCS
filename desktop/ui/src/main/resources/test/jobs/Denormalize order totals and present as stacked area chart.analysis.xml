@@ -164,9 +164,9 @@
 		var index = values&amp;#91;0&amp;#93; - 1; // month index
 		var price = values&amp;#91;1&amp;#93;;
 		result&amp;#91;index&amp;#93; = price;
-		
+
 		outputCollector.putValues(result)
-		
+
 	}&amp;#44;
 
 	close: function() {

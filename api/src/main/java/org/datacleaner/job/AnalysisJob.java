@@ -29,15 +29,21 @@ import org.datacleaner.connection.Datastore;
 
 /**
  * Defines a job to be executed by DataCleaner.
+ * 定义要由DataCleaner执行的作业。
  *
  * A {@link AnalysisJob} contains a set of components.
+ * {@link AnalysisJob}包含一组组件。
  *
  * A {@link AnalysisJob} references a source {@link Datastore} and some
  * {@link Column}s (represented via {@link InputColumn}s) of this datastore.
+ * {@link AnalysisJob}引用源{@link Datastore}和该数据存储的一些{@link Column}
+ * （通过{@link InputColumn}表示）。
  *
  * Building jobs is usually done using the <b>AnalysisJobBuilder</b> class.
+ * 通常使用 AnalysisJobBuilder 类完成构建作业。
  *
  * Executing jobs is usually done using the <b>AnalysisRunner</b> interface.
+ * 执行作业通常是使用 AnalysisRunner 界面完成的。
  */
 public interface AnalysisJob {
 

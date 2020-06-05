@@ -24,6 +24,7 @@ import org.apache.metamodel.UpdateableDataContext;
 /**
  * Subclass of {@link DatastoreConnectionLease} for {@link UpdateableDatastore}
  * implementations.
+ * {@link UpdateableDatastore}实现的{@link DatastoreConnectionLease}的子类。
  *
  * @see DatastoreConnectionLease
  */

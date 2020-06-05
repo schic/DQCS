@@ -62,8 +62,11 @@ import org.slf4j.LoggerFactory;
 /**
  * Descriptor provider implementation that works by scanning particular packages in the classpath for annotated classes.
  * Descriptors will be generated based on encountered annotations.
+ * 描述符提供程序实现，可以通过扫描类路径中的特定程序包以查找带注释的类来工作。
+ * 描述符将基于遇到的注释生成。
  *
  * This implementation also supports adding single descriptors by using the add... methods.
+ * 此实现还支持通过使用add ...方法添加单个描述符。
  *
  * Classes with the {@link Named} annotation will be picked by the classpath scanner. Furthermore the legacy annotations
  * {@link org.eobjects.analyzer.beans.api.AnalyzerBean}, {@link org.eobjects.analyzer.beans.api.TransformerBean} and

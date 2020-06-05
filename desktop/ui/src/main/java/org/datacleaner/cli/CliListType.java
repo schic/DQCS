@@ -21,6 +21,7 @@ package org.datacleaner.cli;
 
 /**
  * Defines the list types that the user can query for in the CLI.
+ * 定义用户可以在CLI中查询的列表类型。
  */
 public enum CliListType {
 

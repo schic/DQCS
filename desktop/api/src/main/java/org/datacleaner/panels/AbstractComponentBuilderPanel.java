@@ -39,10 +39,7 @@ import org.datacleaner.descriptors.ConfiguredPropertyDescriptor;
 import org.datacleaner.job.builder.AnalysisJobBuilder;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.job.builder.UnconfiguredConfiguredPropertyException;
-import org.datacleaner.util.IconUtils;
-import org.datacleaner.util.ImageManager;
-import org.datacleaner.util.WidgetFactory;
-import org.datacleaner.util.WidgetUtils;
+import org.datacleaner.util.*;
 import org.datacleaner.widgets.ChangeRequirementButton;
 import org.datacleaner.widgets.DCTaskPaneContainer;
 import org.datacleaner.widgets.properties.PropertyWidget;
@@ -186,9 +183,9 @@ public abstract class AbstractComponentBuilderPanel extends DCPanel implements C
         }
 
         final List<ConfiguredPropertyTaskPane> result = new ArrayList<>();
-        result.add(new ConfiguredPropertyTaskPane("Input columns", IconUtils.MODEL_COLUMN, inputProperties));
-        result.add(new ConfiguredPropertyTaskPane("Required properties", IconUtils.MENU_OPTIONS, requiredProperties));
-        result.add(new ConfiguredPropertyTaskPane("Optional properties (" + optionalProperties.size() + ")",
+        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.input.columns"), IconUtils.MODEL_COLUMN, inputProperties));
+        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.canvas.required.properties"), IconUtils.MENU_OPTIONS, requiredProperties));
+        result.add(new ConfiguredPropertyTaskPane(PropertyUtil.getProperty("datacleaner.ui.desktop.component.optional") + "(" + optionalProperties.size() + ")",
                 IconUtils.ACTION_EDIT, optionalProperties, false));
 
         return result;

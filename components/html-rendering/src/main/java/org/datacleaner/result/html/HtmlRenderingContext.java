@@ -27,6 +27,7 @@ import org.datacleaner.job.ComponentJob;
  * Represents the context of generating/rendering HTML results. This interface
  * provides access to utilities commonly used while generating HTML elements,
  * scripts etc.
+ * 表示生成/呈现HTML结果的上下文。该接口提供对生成HTML元素，脚本等时常用的实用程序的访问。
  */
 public interface HtmlRenderingContext {
 

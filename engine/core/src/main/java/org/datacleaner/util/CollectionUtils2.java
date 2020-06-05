@@ -36,7 +36,7 @@ import com.google.common.cache.CacheBuilder;
 /**
  * Additional (to {@link CollectionUtils} utility methods for common collection
  * or array operations.
- *
+ * 其他{@link CollectionUtils}实用程序方法，用于常见的收集或数组操作。
  *
  */
 public final class CollectionUtils2 {

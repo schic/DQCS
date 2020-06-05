@@ -24,14 +24,18 @@ import org.apache.metamodel.query.Query;
 /**
  * Interface for components that produce data streams as an output of their
  * work.
+ * 用于产生数据流作为其工作输出的组件的接口。
  *
  * Each output data stream has a {@link OutputDataStream} that describe the
  * metadata and structure of the output data stream.
+ * 每个输出数据流都有一个{@link OutputDataStream}，用于描述元数据和输出数据流的结构。
  *
  * For each output data stream that is relevant (consumed by one or more
  * components) the
  * {@link #initializeOutputDataStream(OutputDataStream, Query, OutputRowCollector)}
  * method is invoked at initialization time of this component.
+ * 对于每个相关的输出数据流（由一个或多个组件消耗），
+ * 在此组件的初始化时间将调用{@link #initializeOutputDataStream（OutputDataStream，Query，OutputRowCollector）}方法。
  */
 public interface HasOutputDataStreams {
 

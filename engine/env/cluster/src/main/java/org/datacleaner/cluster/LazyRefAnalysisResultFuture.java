@@ -36,6 +36,8 @@ import org.datacleaner.result.AnalysisResult;
 /**
  * An {@link AnalysisResultFuture} implementation which uses a {@link LazyRef}
  * for an {@link AnalysisResult} as the source of the result
+ * 一个{@link AnalysisResultFuture}实现，
+ * 它对{@link AnalysisResult}使用{@link LazyRef}作为结果的来源
  */
 public class LazyRefAnalysisResultFuture implements AnalysisResultFuture {
 

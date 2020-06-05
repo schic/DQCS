@@ -43,6 +43,7 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  * Panel that presents and edits a single {@link CoalesceUnit}.
+ * 显示和编辑单个{@link CoalesceUnit}的面板。
  */
 public class CoalesceUnitPanel extends DCPanel {
     private static final long serialVersionUID = 1L;

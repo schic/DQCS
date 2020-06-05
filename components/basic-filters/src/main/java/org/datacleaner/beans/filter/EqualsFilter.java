@@ -50,8 +50,8 @@ import org.datacleaner.util.ReflectionUtils;
 
 import com.google.common.base.Joiner;
 
-@Named("Equals")
-@Description("A filter that excludes values that are not equal (=) to specific set of valid values.")
+@Named("EqualsFilter.name")
+@Description("EqualsFilter.Description")
 @Categorized(FilterCategory.class)
 @Distributed()
 public class EqualsFilter implements QueryOptimizedFilter<EqualsFilter.Category>, HasLabelAdvice {

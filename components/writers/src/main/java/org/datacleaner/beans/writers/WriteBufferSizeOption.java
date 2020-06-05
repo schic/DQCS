@@ -24,6 +24,7 @@ import org.apache.metamodel.util.HasName;
 /**
  * An enum that represents typical user-selectable sizes for a
  * {@link WriteBuffer}
+ * 代表{@link WriteBuffer}的典型用户可选大小的枚举
  */
 public enum WriteBufferSizeOption implements HasName {
 
