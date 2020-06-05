@@ -36,7 +36,8 @@
 		<module>groovy</module>
 		<module>i18n</module>
 		<module>standard-components</module>
-	</modules>
+        <module>extension-analyzers</module>
+    </modules>
 
 	<dependencies>
 		<dependency>

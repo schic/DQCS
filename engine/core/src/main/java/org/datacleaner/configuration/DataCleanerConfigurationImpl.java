@@ -163,6 +163,7 @@ public class DataCleanerConfigurationImpl implements DataCleanerConfiguration {
         return _referenceDataCatalog;
     }
 
+    @Override
     public ServerInformationCatalog getServerInformationCatalog() {
         return _serverInformationCatalog;
     }
