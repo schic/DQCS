@@ -36,7 +36,8 @@
 		<module>groovy</module>
 		<module>i18n</module>
 		<module>standard-components</module>
-        <module>extension-analyzers</module>
+		<module>extensions-emailing</module>
+
     </modules>
 
 	<dependencies>

@@ -46,27 +46,26 @@ public class MainTest extends TestCase {
         final String hostname = "localhost";
 
         final boolean https = true;
-        final String port = "8443";
-        final String context = "/DataCleaner-monitor";
-        final String tenant = "DC";
+        final String port = "8080";
+        final String context = "/DataCleaner_monitor_ui_war_exploded";
+        final String tenant = "demo";
         final String username = "admin";
         final String datastore = "orderdb";
-        final String jobName = "Customer completeness";
+        final String jobName = "test";
 
         final String securityMode = "CAS";
-        final String casServerUrl = "https://localhost:8443/cas";
+        final String casServerUrl = "http://localhost:8080/cas";
 
         final String confLocation;
         final String jobLocation;
         if (StringUtils.isNullOrEmpty(jobName)) {
-            confLocation = "https://" + hostname + ":" + port + context + "/repository/" + tenant
-                    + "/launch-resources/conf.xml";
+            confLocation = "http://" + hostname + ":" + port + context + "/repository/" + tenant
+                    + "/conf.xml";
             jobLocation = null;
         } else {
-            confLocation = "https://" + hostname + ":" + port + context + "/repository/" + tenant
-                    + "/launch-resources/conf.xml?job=" + jobName.replaceAll(" ", "\\+");
-            jobLocation = "https://" + hostname + ":" + port + context + "/repository/" + tenant + "/jobs/" + jobName
-                    .replaceAll(" ", "\\+") + ".analysis.xml";
+            confLocation = "http://" + hostname + ":" + port + context + "/repository/" + tenant
+                    + "/conf.xml";
+            jobLocation = "http://" + hostname + ":" + port + context + "/repository/" + tenant + "/jobs/" + jobName + ".analysis.xml";
         }
         final String fullArguments =
                 "-conf " + confLocation + (jobLocation != null ? " -job " + jobLocation : "") + (StringUtils
