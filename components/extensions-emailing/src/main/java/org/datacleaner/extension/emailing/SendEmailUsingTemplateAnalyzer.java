@@ -18,6 +18,7 @@ import java.util.function.Function;
 
 @Named("SendEmailUsingTemplateAnalyzer.name")
 @Description("SendEmailUsingTemplateAnalyzer.Description")
+@Categorized(EmailingCategory.class)
 @Concurrent(true)
 public class SendEmailUsingTemplateAnalyzer implements Analyzer<SendEmailAnalyzerResult> {
 

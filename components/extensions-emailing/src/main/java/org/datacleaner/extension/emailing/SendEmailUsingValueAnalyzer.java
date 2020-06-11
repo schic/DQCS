@@ -28,6 +28,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 @Named("SendEmailUsingValueAnalyzer.name")
 @Description("SendEmailUsingValueAnalyzer.Description")
+@Categorized(value = EmailingCategory.class)
 @Concurrent(true)
 public class SendEmailUsingValueAnalyzer implements Analyzer<SendEmailAnalyzerResult> {
 
