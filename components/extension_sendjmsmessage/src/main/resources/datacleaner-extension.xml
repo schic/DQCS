@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://eobjects.org/datacleaner/extension/1.0">
+	<name>Send JMS Message extension</name>
+	<description>Java Message Service (JMS) extension for DataCleaner. Use it for sending JMS messages to a queue/topic.</description>
+	<package>org.datacleaner.extension.sendjmsmessage</package>
+	<icon>org/datacleaner/extension/sendjmsmessage/SendJMSMessageCategory.png</icon>
+</extension>

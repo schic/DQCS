@@ -8,6 +8,7 @@
         <artifactId>DataCleaner-components</artifactId>
         <version>5.7.1-SNAPSHOT</version>
     </parent>
+    <groupId>org.eobjects.datacleaner.extensions</groupId>
     <artifactId>DataCleaner-extensions-emailing</artifactId>
 
     <build>

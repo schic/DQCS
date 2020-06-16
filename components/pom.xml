@@ -37,7 +37,7 @@
 		<module>i18n</module>
 		<module>standard-components</module>
 		<module>extensions-emailing</module>
-
+		<module>extension_sendjmsmessage</module>
     </modules>
 
 	<dependencies>

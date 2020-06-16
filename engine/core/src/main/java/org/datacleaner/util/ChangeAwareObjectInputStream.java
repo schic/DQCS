@@ -230,6 +230,7 @@ public class ChangeAwareObjectInputStream extends LegacyDeserializationObjectInp
         addRenamedClass("org.datacleaner.result.SendEmailAnalyzerResult",
                 "org.datacleaner.extension.emailing.SendEmailAnalyzerResult");
         addRenamedPackage("org.datacleaner.emailing.beans", "org.datacleaner.extension.emailing");
+
     }
 
     public void addClassLoader(final ClassLoader classLoader) {
