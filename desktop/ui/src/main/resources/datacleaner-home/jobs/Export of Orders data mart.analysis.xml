@@ -61,7 +61,7 @@
         <analyzer>
             <descriptor ref="Create CSV file"/>
             <properties>
-                <property name="File" value="datastores/orders_w_dimensions.csv"/>
+                <property name="File" value="file://datastores/orders_w_dimensions.csv"/>
                 <property name="Separator char" value=";"/>
                 <property name="Quote char" value="&amp;quot;"/>
                 <property name="Escape char" value="\"/>

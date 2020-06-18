@@ -181,7 +181,7 @@ public abstract class AbstractDescriptorProvider implements DescriptorProvider {
 
         if (searchPrimaryNames) {
             for (final D descriptor : descriptors) {
-                final String displayName = descriptor.getDisplayName();
+                final String displayName = descriptor.getDisplayEnName();
                 if (name.equals(displayName)) {
                     return descriptor;
                 }

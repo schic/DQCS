@@ -114,6 +114,17 @@ class SimpleComponentDescriptor<B> extends AbstractDescriptor<B> implements Comp
         }
         return named.value();
     }
+
+    @Override
+    public String getDisplayEnName() {
+        final Named named = getAnnotation(Named.class);
+        if (named == null) {
+            return getComponentClass().getSimpleName();
+        }
+        return named.value();
+    }
+
+
     /**
      * 拦截组件描述  支持国际化
      * @return

@@ -87,6 +87,16 @@ public class PlaceholderComponentJob<C extends HasAnalyzerResult<?>> implements 
     }
 
     @Override
+    public String getDisplayEnName() {
+        // this is the 'descriptor' name, e.g. will be used for CSS styling
+        final Description desc = ReflectionUtils.getAnnotation(_componentClass, Description.class);
+        if (desc == null || StringUtils.isNullOrEmpty(desc.value())) {
+            return _componentClass.getSimpleName();
+        }
+        return desc.value();
+    }
+
+    @Override
     public C newInstance() {
         return null;
     }

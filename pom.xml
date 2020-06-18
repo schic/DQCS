@@ -778,12 +778,12 @@
                 <groupId>org.apache.metamodel</groupId>
                 <artifactId>MetaModel-elasticsearch-rest</artifactId>
                 <version>${metamodel.version}</version>
-<!--                <exclusions>-->
-<!--                    <exclusion>-->
-<!--                        <groupId>org.elasticsearch</groupId>-->
-<!--                        <artifactId>elasticsearch</artifactId>-->
-<!--                    </exclusion>-->
-<!--                </exclusions>-->
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.elasticsearch</groupId>
+                        <artifactId>elasticsearch</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.apache.metamodel</groupId>

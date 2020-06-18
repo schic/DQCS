@@ -50,6 +50,8 @@ public interface ComponentDescriptor<B> extends Comparable<ComponentDescriptor<?
      */
     String getDisplayName();
 
+    String getDisplayEnName();
+
     /**
      * Constructs an instance of this component
      *

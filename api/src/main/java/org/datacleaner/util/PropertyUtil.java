@@ -72,7 +72,7 @@ public class PropertyUtil {
 		}
 		String[] str = key.split(" ");
 		String name = StringUtils.join(str, "_");
-		return props.getProperty(name);
+		return props.getProperty(key);
 	}
 
 	public static String getProperty(String key, String defaultValue) {
@@ -81,6 +81,6 @@ public class PropertyUtil {
 		}
 		String[] str = key.split(" ");
 		String name = StringUtils.join(str, "_");
-		return props.getProperty(name, defaultValue);
+		return props.getProperty(key, defaultValue);
 	}
 }

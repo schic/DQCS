@@ -24,6 +24,7 @@ import javax.inject.Named;
 import org.apache.commons.lang.StringUtils;
 import org.datacleaner.api.Component;
 import org.datacleaner.api.ComponentSuperCategory;
+import org.datacleaner.util.EnPropertyUtil;
 import org.datacleaner.util.PropertyUtil;
 
 /**
@@ -58,7 +59,7 @@ abstract class AbstractComponentDescriptor<B> extends SimpleComponentDescriptor<
 			//String[] str = named.value().split(" ");
 			//String name = StringUtils.join(str, "_");
 			displayName = PropertyUtil.getProperty(named.value(),named.value());
-			System.out.println("以前名称：" + named.value() + "中文名称" + PropertyUtil.getProperty(named.value()));
+			//System.out.println("以前名称：" + named.value() + "中文名称" + PropertyUtil.getProperty(named.value()));
 		}
 
 		return displayName.trim();
@@ -70,6 +71,20 @@ abstract class AbstractComponentDescriptor<B> extends SimpleComponentDescriptor<
 			return determineDisplayName();
 		}
 		return _displayName;
+	}
+
+	@Override
+	public final String getDisplayEnName() {
+		final Class<B> componentClass = getComponentClass();
+		final Named named = getAnnotation(Named.class);
+		final String displayName;
+		if (named == null) {
+			displayName = componentClass.getSimpleName();
+		} else {
+			displayName = EnPropertyUtil.getProperty(named.value(),named.value());
+			}
+
+		return displayName.trim();
 	}
 
 	@Override

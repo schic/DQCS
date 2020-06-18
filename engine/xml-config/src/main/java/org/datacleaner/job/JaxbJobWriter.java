@@ -690,7 +690,7 @@ public class JaxbJobWriter implements JobWriter<OutputStream> {
 
     private void setDescriptor(final ComponentType componentType, final ComponentDescriptor<?> descriptor) {
         final DescriptorType descriptorType = new DescriptorType();
-        descriptorType.setRef(descriptor.getDisplayName());
+        descriptorType.setRef(descriptor.getDisplayEnName());
         componentType.setDescriptor(descriptorType);
     }
 }

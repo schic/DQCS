@@ -68,4 +68,45 @@ public class ApiStringUtils {
         return PropertyUtil.getProperty(sb.toString(),sb.toString());
         //return sb.toString();
     }
+    public static String explodeCamelEnCase(final String str, final boolean excludeGetOrSet) {
+        if (str == null) {
+            return "";
+        }
+        final StringBuilder sb = new StringBuilder(str.trim());
+        if (sb.length() > 1) {
+            if (excludeGetOrSet) {
+                if (str.startsWith("get") || str.startsWith("set")) {
+                    sb.delete(0, 3);
+                }
+            }
+
+            // Special handling for instance variables that have the "_" prefix
+            if (sb.charAt(0) == '_') {
+                sb.deleteCharAt(0);
+            }
+
+            // First character is set to uppercase
+            sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
+
+            boolean previousUpperCase = true;
+
+            for (int i = 1; i < sb.length(); i++) {
+                final char currentChar = sb.charAt(i);
+                if (!previousUpperCase) {
+                    if (Character.isUpperCase(currentChar)) {
+                        sb.setCharAt(i, Character.toLowerCase(currentChar));
+                        sb.insert(i, ' ');
+                        i++;
+                    }
+                } else {
+                    if (Character.isLowerCase(currentChar)) {
+                        previousUpperCase = false;
+                    }
+                }
+            }
+        }
+        //System.out.println(sb.toString());
+        return EnPropertyUtil.getProperty(sb.toString(),sb.toString());
+        //return sb.toString();
+    }
 }
