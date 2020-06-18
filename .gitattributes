@@ -1,3 +1,5 @@
 * text=auto
 *.sh		eol=lf
 universalJavaApplicationStub		eol=lf
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.war filter=lfs diff=lfs merge=lfs -text
