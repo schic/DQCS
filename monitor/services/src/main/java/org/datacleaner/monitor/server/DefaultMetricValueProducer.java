@@ -29,6 +29,7 @@ import org.datacleaner.monitor.job.MetricJobContext;
 import org.datacleaner.monitor.job.MetricJobEngine;
 import org.datacleaner.monitor.job.MetricValues;
 //import org.datacleaner.monitor.server.job.DataCleanerJobEngine;
+import org.datacleaner.monitor.server.job.DataCleanerJobEngine;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
 import org.datacleaner.monitor.shared.model.MetricIdentifier;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
@@ -67,11 +68,10 @@ public class DefaultMetricValueProducer implements MetricValueProducer {
         if (job == null) {
             logger.warn("Job {} does not exist. Cannot resolve job engine, so defaulting to DataCleanerJobEngine.",
                     jobName);
-            //jobEngine = _jobEngineManager.getJobEngineOfType(DataCleanerJobEngine.class);
+            jobEngine = _jobEngineManager.getJobEngineOfType(DataCleanerJobEngine.class);
         } else {
             jobEngine = job.getJobEngine();
         }
-        //return jobEngine.getMetricValues(job, resultContext, metricIdentifiers);
-        return null;
+        return jobEngine.getMetricValues(job, resultContext, metricIdentifiers);
     }
 }
