@@ -14,7 +14,7 @@
 
 	<datastore-catalog>
 		<jdbc-datastore name="orderdb"
-			description="Example database for use with DataCleaner">
+			description="用于DataCleaner的示例数据库">
 			<url>jdbc:hsqldb:res:orderdb;readonly=true</url>
 			<driver>org.hsqldb.jdbcDriver</driver>
 			<username>SA</username>
@@ -22,14 +22,14 @@
 		</jdbc-datastore>
 
 		<salesforce-datastore name="Salesforce.com"
-			description="Example connection to SFDC - credentials not provided">
+			description="SFDC连接示例-未提供凭据">
 			<username>username</username>
 			<password>password</password>
 			<security-token>token</security-token>
 		</salesforce-datastore>
 
 		<csv-datastore name="Customers"
-			description="Example CSV-file with representing customers' details">
+			description="表示客户详细信息的CSV文件示例">
 			<filename>datastores/customers.csv</filename>
 			<encoding>UTF8</encoding>
 			<quote-char>"</quote-char>

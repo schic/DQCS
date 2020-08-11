@@ -40,7 +40,7 @@
 		<intercept-url pattern="/referencedata" access="ROLE_USER" />
 		<intercept-url pattern="/repository" access="ROLE_USER" />
 		<intercept-url pattern="/query" access="ROLE_USER" />
-		
+
 		<http-basic />
 		<form-login login-page="/login" authentication-failure-url="/login?error=true" login-processing-url="/j_spring_security_check"
 			username-parameter="j_username" password-parameter="j_password"
@@ -49,18 +49,18 @@
 		<remember-me remember-me-parameter="rememberMe"
 			key="datacleaner.monitor.rememberMe" token-validity-seconds="31536000" />
 	</http>
-	
+
 	<global-method-security jsr250-annotations="enabled" />
 
 	<authentication-manager alias="authenticationManager">
 		<authentication-provider ref="authenticationProvider" />
 	</authentication-manager>
-	
+
 	<beans:bean id="authenticationProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
 		<beans:property name="userDetailsService" ref="userService" />
 		<beans:property name="authoritiesMapper" ref="authoritiesMapper" />
 	</beans:bean>
-	
+
 	<user-service id="userService">
 		<!-- demo tenant users -->
 		<user name="viewer" password="viewer" authorities="ROLE_VIEWER" />

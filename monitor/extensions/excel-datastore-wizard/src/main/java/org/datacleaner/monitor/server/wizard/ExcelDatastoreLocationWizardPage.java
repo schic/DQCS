@@ -65,13 +65,13 @@ public abstract class ExcelDatastoreLocationWizardPage extends AbstractFreemarke
         map.put("absolutePrefix", absolutePrefix);
 
         if (_newFile) {
-            map.put("introductionText", "What should be the server location of the Excel spreadsheet:");
-            map.put("repositoryText", "Copy it to a location in the repository:");
-            map.put("absoluteText", "Copy it to an absolute location on the server:");
+            map.put("introductionText", "Excel电子表格的服务器位置应该是什么：");
+            map.put("repositoryText", "将其复制到存储库中的某个位置：");
+            map.put("absoluteText", "将其复制到服务器上的绝对位置：");
         } else {
-            map.put("introductionText", "What is the server location of the Excel spreadsheet:");
-            map.put("repositoryText", "It's located in the repository:");
-            map.put("absoluteText", "It's at an absolute location on the server:");
+            map.put("introductionText", "Excel电子表格的服务器位置是什么：");
+            map.put("repositoryText", "它位于存储库中：");
+            map.put("absoluteText", "它在服务器上的绝对位置：");
         }
 
         return map;
@@ -82,7 +82,7 @@ public abstract class ExcelDatastoreLocationWizardPage extends AbstractFreemarke
             throws DCUserInputException {
         final List<String> locations = formParameters.get("location");
         if (locations == null || locations.isEmpty()) {
-            throw new DCUserInputException("Please select a location for the Excel spreadsheet");
+            throw new DCUserInputException("请选择Excel电子表格的位置");
         }
 
         final String location = locations.get(0);
@@ -92,7 +92,7 @@ public abstract class ExcelDatastoreLocationWizardPage extends AbstractFreemarke
             filepath = formParameters.get("filepath_repository").get(0);
             final RepositoryFolder tenantFolder = _wizardContext.getTenantContext().getTenantRootFolder();
             if (!(tenantFolder instanceof FileRepositoryFolder)) {
-                throw new DCUserInputException("Your repository type is not support for hosting raw data files");
+                throw new DCUserInputException("您的存储库类型不支持托管原始数据文件");
             }
 
             final FileRepositoryFolder fileRepositoryFolder = (FileRepositoryFolder) tenantFolder;
@@ -102,7 +102,7 @@ public abstract class ExcelDatastoreLocationWizardPage extends AbstractFreemarke
             filepath = formParameters.get("filepath_absolute").get(0);
             file = new File(filepath);
         } else {
-            throw new IllegalArgumentException("Invalid location value: " + location);
+            throw new IllegalArgumentException("无效的位置: " + location);
         }
 
         return nextPageController(filepath, file);
@@ -111,7 +111,7 @@ public abstract class ExcelDatastoreLocationWizardPage extends AbstractFreemarke
     /**
      * Invoked when the user has selected a file location on the server of the
      * Excel spreadsheet.
-     * 
+     *
      * @param filepath
      * @param file
      * @return

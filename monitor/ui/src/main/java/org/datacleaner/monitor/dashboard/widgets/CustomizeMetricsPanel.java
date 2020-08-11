@@ -79,9 +79,9 @@ public class CustomizeMetricsPanel extends FlowPanel {
     private void setJobMetrics(final JobMetrics jobMetrics) {
         clear();
 
-        final Button formulaMetricButton = DCButtons.defaultButton("glyphicon-scale", "Add metric formula");
-        formulaMetricButton.setTitle("Add a formula of metrics, comprising multiple child metrics in a calculation?");
-        formulaMetricButton.addStyleName("MetricFormulaButton");
+        final Button formulaMetricButton = DCButtons.defaultButton("glyphicon-scale", "添加度量公式");
+        formulaMetricButton.setTitle("添加一个度量公式，在计算中包含多个子度量?");
+        formulaMetricButton.addStyleName("度量公式");
         formulaMetricButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -97,7 +97,7 @@ public class CustomizeMetricsPanel extends FlowPanel {
         });
         add(formulaMetricButton);
 
-        final Label jobLabel = new Label("Showing available metrics from job '"
+        final Label jobLabel = new Label("显示可用的指标 '"
                 + _timelineDefinition.getJobIdentifier().getName() + "':");
         jobLabel.setStyleName("JobInformationLabel");
         add(jobLabel);

@@ -43,7 +43,7 @@ import com.google.gwt.user.client.ui.UIObject;
  * customize a job's properties.
  */
 public class CustomizeJobClickHandler implements ClickHandler {
-	
+
     private final SchedulePanel _schedulePanel;
     private final ScheduleDefinition _schedule;
     private final TenantIdentifier _tenant;
@@ -57,35 +57,35 @@ public class CustomizeJobClickHandler implements ClickHandler {
         _schedule = schedule;
         _service = service;
         _clientConfig = clientConfig;
-        
+
         _popup = new DCPopupPanel(null);
         _popup.setGlassEnabled(false);
         _popup.setAutoHideEnabled(true);
         _popup.getButtonPanel().setVisible(false);
     }
-    
+
     @Override
     public void onClick(ClickEvent event) {
         final JobIdentifier job = _schedulePanel.getSchedule().getJob();
         final MenuBar menuBar = new MenuBar(true);
 
-        menuBar.addItem("Execution History" ,new HistoryCommand(_schedule, _service, _tenant,_popup));
+        menuBar.addItem("执行历史记录" ,new HistoryCommand(_schedule, _service, _tenant,_popup));
 
         final boolean analysisJob = JobIdentifier.JOB_TYPE_ANALYSIS_JOB.equals(job.getType());
         if (analysisJob && _clientConfig.isWebstartAvailable()) {
             menuBar.addItem("Edit job", new EditJobCommand(_tenant, _schedule, _popup));
         }
 
-        menuBar.addItem("Rename job", new RenameJobCommand(_tenant, job, _popup));
-        menuBar.addItem("Copy job", new CopyJobCommand(_tenant, job, _popup));
-        menuBar.addItem("Delete job", new DeleteJobCommand(_tenant, job, _popup));
-        menuBar.addItem("Add Alert", new AddAlertCommand(_schedule, _service, _popup));
-        
+        menuBar.addItem("重命名", new RenameJobCommand(_tenant, job, _popup));
+        menuBar.addItem("复制工程", new CopyJobCommand(_tenant, job, _popup));
+        menuBar.addItem("删除工程", new DeleteJobCommand(_tenant, job, _popup));
+        menuBar.addItem("添加提示", new AddAlertCommand(_schedule, _service, _popup));
+
         if (analysisJob) {
             menuBar.addSeparator();
-            menuBar.addItem("View Job Definition", new ViewJobDefinitionCommand(_tenant, job, _popup));
+            menuBar.addItem("查看工程定义", new ViewJobDefinitionCommand(_tenant, job, _popup));
         }
-        
+
         _popup.setWidget(menuBar);
         _popup.showRelativeTo((UIObject) event.getSource());
     }

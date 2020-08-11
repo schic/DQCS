@@ -90,7 +90,7 @@ final class SalesforceDatastoreWizardSession extends AbstractDatastoreWizardSess
 		} catch (Exception e) {
 			logger.warn("Test connection for Salesforce.com failed", e);
 			String message = StringUtils.isNullOrEmpty(e.getMessage()) ? "Unknown error" : e.getMessage();
-			throw new DCUserInputException("Failed to verify connection: " + message);
+			throw new DCUserInputException("验证连接失败： " + message);
 		}
 		if (tableNames.isEmpty() || tableNames.size() == 0) {
 			throw new DCUserInputException("No tables/entities found in this Salesforce.com instance. This suggests an" +

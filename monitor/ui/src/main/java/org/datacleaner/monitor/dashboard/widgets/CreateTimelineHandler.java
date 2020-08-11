@@ -71,7 +71,7 @@ public class CreateTimelineHandler implements ClickHandler {
     }
 
     protected DCPopupPanel createPopup() {
-        final DCPopupPanel popup = new DCPopupPanel("Create timeline");
+        final DCPopupPanel popup = new DCPopupPanel("创建时间线");
         popup.addStyleName("CreateTimelinePopupPanel");
         return popup;
     }
@@ -105,7 +105,7 @@ public class CreateTimelineHandler implements ClickHandler {
         });
 
         final FlowPanel mainPanel = new FlowPanel();
-        mainPanel.add(new HeadingLabel("Select metrics to monitor"));
+        mainPanel.add(new HeadingLabel("选择要监视的指标"));
         mainPanel.add(customizeMetricsPanel);
         popup.setWidget(mainPanel);
         popup.removeButtons();

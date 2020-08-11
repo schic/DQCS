@@ -68,14 +68,14 @@ public abstract class DatastoreNameAndDescriptionWizardPage extends AbstractFree
         final String name = formParameters.get("name").get(0);
 
         if (StringUtils.isNullOrEmpty(name)) {
-            throw new DCUserInputException("Please provide a datastore name.");
+            throw new DCUserInputException("请提供数据存储名称。");
         }
 
         final TenantContext tenantContext = _context.getTenantContext();
 
         final Datastore datastore = tenantContext.getConfiguration().getDatastoreCatalog().getDatastore(name);
         if (datastore != null) {
-            throw new DCUserInputException("A datastore with the name '" + name + "' already exist.");
+            throw new DCUserInputException("名字为'" + name + "' 的数据已经存在");
         }
 
         final String description = formParameters.get("description").get(0);

@@ -10,15 +10,13 @@ abstract class SelectFieldGroupsPage(pageIndex: Int) extends WizardPageControlle
   override def getFormInnerHtml: String = {
     return <div>
              <p>
-               Checking completeness can be done with different levels of granularity. Either you can choose to have just one
-               big group of fields which you want to check for completeness, or you can choose to have individual groups of
-               fields for sets of connected fields. For instance, it might be meaningful ...
+               可以使用不同级别的粒度来检查完整性。您可以选择只包含一组要检查完整性的大字段，也可以选择为一组连接的字段选择单个字段组。例如，这可能是有意义的...
              </p>
              <ul>
-               <li>to consider fields for "given name" and "family name" as a single field group with the title "name".</li>
-               <li>to specify a field group for all required information and a field group for optional information.</li>
+               <li>将“给定名称”和“家族名称”的字段视为具有标题“名称”的单个字段组。</li>
+               <li>指定所有必需信息的字段组和可选信息的字段组。</li>
              </ul>
-             <p>Please specify how many groups of fields you wish to add to your analysis:</p>
+             <p>请指定您希望添加到分析中的字段组数：</p>
              <input type="text" value="2" name="num_field_groups"/>
            </div>.toString()
   }

@@ -1,29 +1,25 @@
 <div>
 
-	<p>Where is the Excel spreadsheet to add as a datastore?</p>
+	<p>将Excel电子表格添加到哪里作为数据存储？</p>
 
 	<div
 		style="margin: 10px; padding: 10px; background-color: #f4f4d3; border-radius: 5px;">
 		<input type="radio" name="source" value="existing"
-			id="source_radio_existing" /> <label for="source_radio_existing">The
-			file is already located on the server</label><br />
+			id="source_radio_existing" /> <label for="source_radio_existing">该文件已经在服务器上</label><br />
 
 		<p>
-			Use this option if you know the location of the file on the server.
-			For security reasons, only files with the suffix of <b>.xls</b> or <b>.xlsx</b>
-			will be accepted.
+			如果您知道文件在服务器上的位置，请使用此选项。出于安全原因，仅后缀为<b>.xls</b>或<b>.xlsx</b>的文件将被接受。
 		</p>
 	</div>
 
 	<div
 		style="margin: 10px; padding: 10px; background-color: #f4f4d3; border-radius: 5px;">
 		<input type="radio" name="source" value="upload"
-			id="source_radio_upload" /> <label for="source_radio_upload">I
-			want to upload the file to the server</label><br />
+			id="source_radio_upload" /> <label for="source_radio_upload">我想将文件上传到服务器</label><br />
 
 		<div id="excel_spreadsheet_upload_div">
 			<input type="file" name="excel_spreadsheet_upload" /> <input type="button"
-				value="upload now"
+				value="立即上传"
 				onclick="window.uploadFile('excel_spreadsheet_upload_div');" />
 		</div>
 	</div>

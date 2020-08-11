@@ -55,11 +55,11 @@ public class JobServicesIT {
         final String[] jobNames = {
                 "Sample custom job",
                 "Copy employees to customer table",
-                "Customer completeness",
+                "客户完整性",
                 "Customer profiling",
-                "product_profiling",
+                "产品描述",
         };
-        
+
         for (String name : jobNames) {
             testJob(name);
         }

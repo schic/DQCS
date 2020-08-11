@@ -8,7 +8,7 @@
 	<ui:define name="head">
 		<link rel="stylesheet" type="text/css"
 			href="#{request.contextPath}/stylesheets/login.css" />
-			
+
 		<c:if test="#{user.authenticated}">
 			<script type="text/javascript">
 				//<![CDATA[
@@ -23,7 +23,7 @@
 	<ui:define name="content">
 		<c:if test="#{not user.authenticated}">
 			<div class="LoginPage container">
-	
+
 				<c:if test="#{not empty param.error}">
 					<div class="alert alert-warning">Your login attempt was
 						unsuccessful. Please try again.</div>
@@ -33,14 +33,14 @@
 							#{SPRING_SECURITY_LAST_EXCEPTION.message}</div>
 					</c:if>
 				</c:if>
-	
+
 				<form action="j_spring_security_check" method="POST">
 					<div class="row">
 						<div class="col-xs-12 col-sm-8">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h3>
-										Sign in to <span class="blue">DataCleaner</span> <span
+										登录 <span class="blue">DataCleaner</span> <span
 											class="orange">monitor</span>
 									</h3>
 								</div>
@@ -48,43 +48,43 @@
 									<div class="form-group">
 										<label for="inputUsername" class="sr-only">Username</label> <input
 											name="j_username" type="text" id="inputUsername"
-											class="form-control" placeholder="Username"
+											class="form-control" placeholder="用户名"
 											required="required" autofocus="autofocus"
 											value="#{param['email']}" />
 									</div>
-	
+
 									<div class="form-group">
 										<label for="inputPassword" class="sr-only">Password</label> <input
 											name="j_password" type="password" id="inputPassword"
-											class="form-control" placeholder="Password"
+											class="form-control" placeholder="密码"
 											required="required" />
 									</div>
-	
+
 									<div class="checkbox">
 										<label> <input type="checkbox" name="rememberMe"
-											value="true" /> Remember me
+											value="true" /> 记住密码
 										</label>
 									</div>
-	
+
 									<input type="hidden" name="r" value="#{param['r']}" />
-	
+
 									<button class="btn btn-lg btn-primary btn-block" type="submit">
 										<span class="glyphicon glyphicon-log-in" aria-hidden="true" />
-										<span>Sign in</span>
+										<span>登录</span>
 									</button>
 								</div>
 							</div>
 						</div>
-	
+
 						<c:if test="#{monitorUIPreferences.showDemoAccounts}">
 							<div class="col-xs-12 col-sm-4">
 								<div class="panel panel-default">
-									<div class="panel-heading">Demo accounts</div>
+									<div class="panel-heading">模拟账户</div>
 									<div class="panel-body">
-										<p>Try logging in using any of these demo credentials:</p>
+										<p>尝试使用以下任何演示凭据登录:</p>
 										<ul>
-											<li>admin/admin: The administrator of the 'demo' tenant.</li>
-											<li>viewer/viewer: A dashboard viewer of the 'demo' tenant</li>
+											<li>admin/admin: “演示”工作得管理员.</li>
+											<li>viewer/viewer: “演示”工作的仪表板查看器</li>
 										</ul>
 									</div>
 								</div>
@@ -92,7 +92,7 @@
 						</c:if>
 					</div>
 				</form>
-	
+
 			</div>
 		</c:if>
 	</ui:define>

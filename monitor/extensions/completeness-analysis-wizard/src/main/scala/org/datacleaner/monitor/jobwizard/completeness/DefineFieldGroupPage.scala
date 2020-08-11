@@ -17,10 +17,10 @@ abstract class DefineFieldGroupPage(pageIndex: Int, fieldGroupIndex: Int, fieldG
   override def getFormInnerHtml: String = {
     return <div>
              <p>{
-               "Please define the name and the columns of field group no. " + (fieldGroupIndex + 1) + ":"
+               "请定义字段组" + (fieldGroupIndex + 1) + "的名称和列:"
              }</p>
-             <p>Field group name: <input name="field_group_name" value={ "Field group no. " + (fieldGroupIndex + 1) }/></p>
-             <p>Please select the source columns of the job:</p>
+             <p>字段组名称: <input name="field_group_name" value={ "Field group no. " + (fieldGroupIndex + 1) }/></p>
+             <p>请选择工程的源列：</p>
              <table>
                <tr>
                  <th>&nbsp;</th>
@@ -43,16 +43,16 @@ abstract class DefineFieldGroupPage(pageIndex: Int, fieldGroupIndex: Int, fieldG
   override def nextPageController(formParameters: java.util.Map[String, java.util.List[String]]): WizardPageController = {
     val fieldGroupName = formParameters.get("field_group_name").get(0);
     val columnNames = formParameters.get("columns");
-    
+
     if (columnNames == null || columnNames.size() == 0) {
       throw new DCUserInputException("Please select at least a single column for the field group");
     }
-    
+
     val columns = columnNames.map(name => selectedTable.getColumnByName(name));
 
     val completenessAnalyzer = analysisJobBuilder.addAnalyzer(classOf[CompletenessAnalyzer]);
     completenessAnalyzer.setName(fieldGroupName);
-    
+
     val conditions: Array[CompletenessAnalyzer.Condition] = Array();
 
     var i = 0;
@@ -82,7 +82,7 @@ abstract class DefineFieldGroupPage(pageIndex: Int, fieldGroupIndex: Int, fieldG
       }
     }
   }
-  
+
   def nextPageController(): WizardPageController;
-  
+
 }

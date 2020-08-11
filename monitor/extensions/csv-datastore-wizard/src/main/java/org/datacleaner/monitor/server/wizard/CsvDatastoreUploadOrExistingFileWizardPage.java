@@ -85,7 +85,7 @@ public abstract class CsvDatastoreUploadOrExistingFileWizardPage extends Abstrac
     /**
      * Invoked when the user continues to the next page, after selecting to use
      * a file that already exist on the server.
-     * 
+     *
      * @return
      */
     protected abstract WizardPageController nextPageControllerExisting();
@@ -93,7 +93,7 @@ public abstract class CsvDatastoreUploadOrExistingFileWizardPage extends Abstrac
     /**
      * Invoked when the user continues to the next page, after selecting to
      * upload a file to the server.
-     * 
+     *
      * @param filename
      *            the name of the file
      * @param tempFile
@@ -105,11 +105,11 @@ public abstract class CsvDatastoreUploadOrExistingFileWizardPage extends Abstrac
     private WizardPageController nextPageControllerUpload(Map<String, List<String>> formParameters) {
         final List<String> csvFileUploads = formParameters.get("csv_file_upload");
         if (csvFileUploads == null || csvFileUploads.isEmpty()) {
-            throw new DCUserInputException("Please upload a file before clicking 'Next'!");
+            throw new DCUserInputException("请在单击“下一步”之前上传文件！");
         }
         final String fileJsonString = csvFileUploads.get(0);
         if (StringUtils.isNullOrEmpty(fileJsonString)) {
-            throw new DCUserInputException("Please upload a file before clicking 'Next'!");
+            throw new DCUserInputException("请在单击“下一步”之前上传文件！");
         }
 
         final Map<String, String> fileJson = parseJson(fileJsonString);

@@ -11,12 +11,12 @@
 			<script type="text/javascript">
 			//<![CDATA[
 			    function confirmRemoveDatastore(datastore) {
-			    	if (confirm('Are you sure you wish to remove datastore "' + datastore + '"?\nRemoving the datastore may cause jobs to fail, if they depend on it.')) {
+			    	if (confirm('您是否确定删除"' + datastore + '"?\n如果工程依赖于数据存储，则重新删除数据存储可能会导致失败')) {
 			    		return true;
 			    	}
 			    	return false;
 			    }
-			    
+
 			    var datacleaner = {
 			    	onApiInitialized : function() {
 			    		$(document).ready(function() {
@@ -42,8 +42,7 @@
 				<div>
 					<button class="btn btn-primary"
 						onclick="datacleaner.startDatastoreWizard();">
-						<span class="glyphicon glyphicon-plus" aria-hidden="true" /> <span>Register
-							Datastore</span>
+						<span class="glyphicon glyphicon-plus" aria-hidden="true" /> <span>注册数据存储</span>
 					</button>
 				</div>
 
@@ -65,7 +64,7 @@
 										style="margin-left: 0.3em"
 										onclick="return confirmRemoveDatastore('#{ds.name}');">
 										<span class="glyphicon glyphicon-minus" aria-hidden="true" />
-										<span>Remove</span>
+										<span>移除</span>
 									</button>
 								</form>
 							</h:panelGroup>
@@ -75,7 +74,7 @@
 									onclick="window.location='repository/#{tenantContext.tenantId}/datastores/#{ds.name}.download'"
 									class="btn btn-default btn-sm">
 									<span class="glyphicon glyphicon-download" aria-hidden="true" />
-									<span>Download</span>
+									<span>下载</span>
 								</button>
 							</h:panelGroup>
 							<h:panelGroup
@@ -84,7 +83,7 @@
 								    onclick="datacleaner.startDatastoreWizard();"
 									class="btn btn-default btn-sm">
 									<span class="glyphicon glyphicon-edit" aria-hidden="true" />
-									<span>Edit</span>
+									<span>编辑</span>
 								</button>
 							</h:panelGroup>
 							<h:panelGroup rendered="#{user.jobEditor and monitorUIPreferences.showWebstartLaunchOptions}">
@@ -92,7 +91,7 @@
 									onclick="window.location='repository/#{tenantContext.tenantId}/datastores/#{ds.name}.analyze.jnlp'"
 									class="btn btn-default btn-sm">
 									<span class="glyphicon glyphicon-stats" aria-hidden="true" />
-									<span>Analyze</span>
+									<span>分析</span>
 								</button>
 							</h:panelGroup>
 							<h:panelGroup rendered="#{user.queryAllowed}">
@@ -102,7 +101,7 @@
 											onclick="window.open('query?ds=#{ds.name}&amp;gwt.codesvr=#{param['gwt.codesvr']}','_blank','location=no,width=770,height=400,toolbar=no,menubar=no');"
 											class="btn btn-default btn-sm">
 											<span class="glyphicon glyphicon-console" aria-hidden="true" />
-											<span>Query</span>
+											<span>查询</span>
 										</button>
 									</c:when>
 									<c:otherwise>
@@ -110,7 +109,7 @@
 											onclick="window.open('query?ds=#{ds.name}','_blank','location=no,width=770,height=400,toolbar=no,menubar=no');"
 											class="btn btn-default btn-sm">
 											<span class="glyphicon glyphicon-console" aria-hidden="true" />
-											<span>Query</span>
+											<span>查询</span>
 										</button>
 									</c:otherwise>
 								</c:choose>

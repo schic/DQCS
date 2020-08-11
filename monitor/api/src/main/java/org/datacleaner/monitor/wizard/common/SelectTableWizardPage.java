@@ -79,7 +79,7 @@ public abstract class SelectTableWizardPage extends AbstractFreemarkerWizardPage
     }
 
     protected String getPromptText() {
-        return "Please select the source table of the job:";
+        return "请选择作业的源表:";
     }
 
     @Override

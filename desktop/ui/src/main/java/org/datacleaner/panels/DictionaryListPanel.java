@@ -125,7 +125,7 @@ public class DictionaryListPanel extends DCPanel implements ReferenceDataChangeL
     private DCPanel createNewDictionariesPanel() {
 
         final JButton textFileDictionaryButton = createButton(IconUtils.DICTIONARY_TEXTFILE_IMAGEPATH,
-                "<html><b>Text file dictionary</b><br/>A dictionary based on a text file on your filesystem.</html>");
+                "<html><b>文本文件词典</b><br/>基于文件系统中文本文件的字典。</html>");
         textFileDictionaryButton.addActionListener(e -> {
             final Injector injector = _injectorBuilder.with(TextFileDictionary.class, null).createInjector();
             final TextFileDictionaryDialog dialog = injector.getInstance(TextFileDictionaryDialog.class);
@@ -133,7 +133,7 @@ public class DictionaryListPanel extends DCPanel implements ReferenceDataChangeL
         });
 
         final JButton simpleDictionaryButton = createButton(IconUtils.DICTIONARY_SIMPLE_IMAGEPATH,
-                "<html><b>Simple dictionary</b><br/>A dictionary written and stored directly in DataCleaner.</html>");
+                "<html><b>简易词典</b><br/>直接用数据清理器编写和存储的词典。</html>");
         simpleDictionaryButton.addActionListener(e -> {
             final Injector injector = _injectorBuilder.with(SimpleDictionary.class, null).createInjector();
             final SimpleDictionaryDialog dialog = injector.getInstance(SimpleDictionaryDialog.class);
@@ -141,17 +141,17 @@ public class DictionaryListPanel extends DCPanel implements ReferenceDataChangeL
         });
 
         final JButton datastoreDictionaryButton = createButton(IconUtils.DICTIONARY_DATASTORE_IMAGEPATH,
-                "<html><b>Datastore dictionary</b><br/>Dictionary based on a column in a datastore.</html>");
+                "<html><b>数据存储字典</b><br/>基于数据存储中列的字典。</html>");
         datastoreDictionaryButton.addActionListener(e -> {
             final Injector injector = _injectorBuilder.with(DatastoreDictionary.class, null).createInjector();
             final DatastoreDictionaryDialog dialog = injector.getInstance(DatastoreDictionaryDialog.class);
             dialog.open();
         });
 
-        final HelpIcon helpIcon = new HelpIcon("<b>Dictionaries</b><br>"
-                + "A dictionary is a set of values that grouped together represent a named set of values,"
-                + "for example valid values or blacklisted values for a given type of data.<br>"
-                + "Dictionaries can be used throughout DataCleaner for filtering, matching and more.");
+        final HelpIcon helpIcon = new HelpIcon("<b>辞典</b><br>"
+                + "字典是一组值，它们组合在一起表示一组命名值，"
+                + "例如，给定数据类型的有效值或黑名单值。<br>"
+                + "字典可以在整个DataCleaner中用于过滤、匹配等。");
 
         final DCPanel panel = DCPanel.flow(textFileDictionaryButton, simpleDictionaryButton, datastoreDictionaryButton,
                 Box.createHorizontalStrut(100), helpIcon);
@@ -216,12 +216,14 @@ public class DictionaryListPanel extends DCPanel implements ReferenceDataChangeL
             removeButton.setToolTipText("Remove dictionary");
             removeButton.addActionListener(e -> {
                 final int result = JOptionPane.showConfirmDialog(DictionaryListPanel.this,
-                        "Are you sure you wish to remove the dictionary '" + name + "'?", "Confirm remove",
+                        "你确定移除名叫 '" + name + "'的字典吗?", "确定移除",
                         JOptionPane.YES_NO_OPTION);
                 if (result == JOptionPane.YES_OPTION) {
                     _catalog.removeDictionary(dictionary);
                 }
             });
+
+
 
             final DCPanel dictionaryPanel = new DCPanel();
             dictionaryPanel.setBorder(WidgetUtils.BORDER_LIST_ITEM);
