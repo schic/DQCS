@@ -37,7 +37,7 @@ public class SampleJobsIT {
         final Map<String, String[]> expectedResultSets = new HashMap<>();
         expectedResultSets.put("RESULT: orderdb - CUSTOMERS (19 columns)", new String[] { "23 inserts executed" });
 
-        testJob("Copy employees to customer table", expectedResultSets);
+        testJob("将员工复制到客户表", expectedResultSets);
     }
 
     @Test
@@ -63,7 +63,7 @@ public class SampleJobsIT {
                 new String[] { "birthdate (as date)", "January", "February", "March", "April", "May", "June", "July",
                         "August", "September", "October", "November", "December" });
 
-        testJob("Customer age analysis", expectedResultSets);
+        testJob("客户年龄分析", expectedResultSets);
     }
 
     @Test
@@ -72,10 +72,10 @@ public class SampleJobsIT {
         expectedResultSets
                 .put("RESULT: output-Customers-correct-data.csv (15 columns) (70.0 =< Age in years =< 80.0=LOWER)",
                         new String[] { "inserts executed" });
-        expectedResultSets.put("RESULT: output-Customers-age-null-or-invalid.csv (15 columns) "
+        expectedResultSets.put("RESULT: 输出客户年龄为空或-无效.csv（15列） "
                         + "(FilterOutcome[category=HIGHER] OR FilterOutcome[category=NULL])",
-                new String[] { "inserts executed" });
-        testJob("Customer filtering", expectedResultSets);
+                new String[] { "执行插入" });
+        testJob("客户筛选", expectedResultSets);
     }
 
     @Test
@@ -130,7 +130,7 @@ public class SampleJobsIT {
                 new String[] { "CompletenessAnalyzerResult:", "- Row count: 5115", "- Valid row count: 5103",
                         "- Invalid row count: 12" });
 
-        testJob("Customer profiling", expectedResultSets);
+        testJob("客户概况", expectedResultSets);
     }
 
     @Test
@@ -139,7 +139,7 @@ public class SampleJobsIT {
         expectedResultSets.put("RESULT: Stacked area plot (13 columns)",
                 new String[] { "JavaStackedAreaAnalyzerResult:", "(no metrics)" });
 
-        testJob("Denormalize order totals and present as stacked area chart", expectedResultSets);
+        testJob("非规范化订单总计并显示为堆积面积图", expectedResultSets);
     }
 
     @Test
@@ -166,7 +166,7 @@ public class SampleJobsIT {
                 new String[] { "CategorizationResult:", "- Category count (Match):", "- Category count (Miss): 0",
                         "- Category count (Cached):" });
 
-        testJob("Export of Orders data mart", expectedResultSets);
+        testJob("订单数据集市导出", expectedResultSets);
     }
 
     @Test
@@ -268,7 +268,7 @@ public class SampleJobsIT {
                                 "- Value count (Data warehouse developer): 10", "- Value count (Sales): 5",
                                 "- Value count (Marketeer): 4" });
 
-        testJob("Job title analytics", expectedResultSets);
+        testJob("职位分析", expectedResultSets);
     }
 
     @Test
@@ -287,7 +287,7 @@ public class SampleJobsIT {
                 .put("RESULT: orderdb-people - incomplete-records (JOBTITLE,CUSTOMERNUMBER,CONTACTFIRSTNAME,CONTACTLASTNAME)",
                         new String[] { "1 inserts executed" });
 
-        testJob("OrderDB Customers and Employees union", expectedResultSets);
+        testJob("OrderDB客户和员工联合", expectedResultSets);
     }
 
     @Test
@@ -307,7 +307,7 @@ public class SampleJobsIT {
                         "- Value count (NY): 6", "- Value count (CT): 4", "- Value count (California): 3",
                         "- Value count (PA): 3" });
 
-        testJob("US Customer STATE check", expectedResultSets);
+        testJob("美国客户状态检查", expectedResultSets);
     }
 
     private void testJob(final String jobName, final Map<String, String[]> expectedResultSets) throws Exception {

@@ -67,7 +67,7 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
             return;
         }
 
-        getWizardPanel().setHeader("Register reference data: " + wizardIdentifier.getDisplayName());
+        getWizardPanel().setHeader("注册参考数据: " + wizardIdentifier.getDisplayName());
         setLoading();
 
         WizardServiceAsync wizardService = getWizardService();
@@ -77,7 +77,7 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
 
     private void showWizardSelection() {
         setLoading();
-        getWizardPanel().setHeader("Register reference data");
+        getWizardPanel().setHeader("注册参考数据");
         getWizardService().getReferenceDataWizardIdentifiers(_referenceDataType, getTenant(), getLocaleName(),
                 new DCAsyncCallback<List<WizardIdentifier>>() {
                     @Override
@@ -89,11 +89,11 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
 
     private void showWizardSelection(final List<WizardIdentifier> wizards) {
         final FlowPanel panel = new FlowPanel();
-        panel.add(new Label("Please select the type of reference data to register: "));
+        panel.add(new Label("请选择要注册的参考数据类型："));
         final List<RadioButton> radios = new ArrayList<>(wizards.size());
 
         if (wizards.isEmpty()) {
-            panel.add(new Label("(no reference data wizards available)"));
+            panel.add(new Label("(没有可用的参考数据向导)"));
         } else {
             for (final WizardIdentifier wizard : wizards) {
                 final RadioButton radio = new RadioButton("wizardIdentifier", wizard.getDisplayName());
@@ -114,7 +114,7 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
             public void onClick(ClickEvent event) {
                 for (int i = 0; i < radios.size(); i++) {
                     final RadioButton radio = radios.get(i);
-                    
+
                     if (radio.getValue()) {
                         final WizardIdentifier wizard = wizards.get(i);
                         setWizardIdentifier(wizard);
@@ -146,8 +146,8 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
 
         final FlowPanel contentPanel = new FlowPanel();
         contentPanel.addStyleName("WizardFinishedPanel");
-        contentPanel.add(new Label("New reference data was created! Wizard finished."));
-        contentPanel.add(new Label("Click 'Close' to return. "));
+        contentPanel.add(new Label("创建了新的参考数据！向导已完成。"));
+        contentPanel.add(new Label("单击“关闭”返回。"));
         setContent(contentPanel);
         getWizardPanel().getButtonPanel().clear();
         getWizardPanel().getButtonPanel().addButton(button);

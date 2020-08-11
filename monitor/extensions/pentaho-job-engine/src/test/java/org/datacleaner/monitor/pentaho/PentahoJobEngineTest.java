@@ -46,7 +46,7 @@ public class PentahoJobEngineTest extends TestCase {
     TenantContextFactory tenantContextFactory;
     TenantContext tenantContext;
     PentahoJobEngine jobEngine;
-    
+
     @Override
     protected void setUp() throws Exception {
         super.setUp();
@@ -58,23 +58,23 @@ public class PentahoJobEngineTest extends TestCase {
     }
 
     public void testWorkingWithMetrics() throws Exception {
-        PentahoJobContext job = jobEngine.getJobContext(tenantContext, new JobIdentifier("Sample Pentaho job"));
-        
+        PentahoJobContext job = jobEngine.getJobContext(tenantContext, new JobIdentifier("Pentaho作业示例"));
+
         JobMetrics metrics = job.getJobMetrics();
         assertNotNull(metrics);
-        
+
         List<MetricGroup> groups = metrics.getMetricGroups();
         assertEquals("[MetricGroup[Sample Pentaho job]]", groups.toString());
-        
+
         MetricIdentifier metric = groups.get(0).getMetric("Lines written");
         assertEquals("MetricIdentifier[analyzerInputName=null,metricDescriptorName=Lines written]", metric.toString());
-        
+
         ResultContext result = tenantContext.getResult("Sample Pentaho job-1364228636342");
-        
+
         Collection<InputColumn<?>> columns = jobEngine.getMetricParameterColumns(job, null);
-        
+
         assertEquals("[MockInputColumn[name=A], MockInputColumn[name=dummy]]", columns.toString());
-        
+
         List<MetricIdentifier> metricIdentifiers = new ArrayList<MetricIdentifier>();
         MetricIdentifier copy1 = metric.copy();
         copy1.setParamColumnName("dummy");
@@ -82,7 +82,7 @@ public class PentahoJobEngineTest extends TestCase {
         MetricIdentifier copy2 = metric.copy();
         copy2.setParamColumnName("A");
         metricIdentifiers.add(copy2);
-        
+
         MetricValues metricValues = jobEngine.getMetricValues(job, result, metricIdentifiers);
         assertEquals(result.getResultFile().getLastModified(), metricValues.getMetricDate().getTime());
         assertEquals("[100000000, 100000000]", metricValues.getValues().toString());

@@ -116,11 +116,11 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
         final Anchor createNewGroupAnchor = new Anchor();
         createNewGroupAnchor.setVisible(_isDashboardEditor);
         createNewGroupAnchor.setStyleName("CreateNewDashboardGroupAnchor");
-        createNewGroupAnchor.setText("New group");
+        createNewGroupAnchor.setText("新建分组");
         createNewGroupAnchor.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                String name = Window.prompt("Name of the new group?", "");
+                String name = Window.prompt("新建组名?", "");
                 boolean validName = name != null && name.trim().length() > 1;
                 if (validName) {
                     _service.addDashboardGroup(_tenant, name, new DCAsyncCallback<DashboardGroup>() {
@@ -130,7 +130,7 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
                         }
                     });
                 } else {
-                    Window.alert("Please provide a valid group name of at least 2 characters");
+                    Window.alert("请提供至少2个字符的有效组名");
                 }
             }
         });
@@ -170,7 +170,7 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
         if (historyToken != null && historyToken.startsWith(prefix)) {
             String jobName = historyToken.substring(prefix.length());
             jobName = URL.decodeQueryString(jobName);
-            
+
             GWT.log("Showing new timeline popup for job: " + jobName);
 
             final CreateTimelineHandler handler = new CreateTimelineHandler(_service, _tenant, _defaultGroupPanel);

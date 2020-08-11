@@ -31,7 +31,7 @@ import org.datacleaner.util.StringUtils;
 
 public abstract class FilePage extends AbstractFreemarkerWizardPage {
     public static final String TEMPLATE_PACKAGE = "/org/datacleaner/monitor/server/wizard/shared/file/";
-    
+
     private static final String PROPERTY_NAME = "name";
     private static final String PROPERTY_NAME_LABEL = "nameLabel";
     private static final String PROPERTY_ENCODING = "encoding";
@@ -41,23 +41,23 @@ public abstract class FilePage extends AbstractFreemarkerWizardPage {
     private static final String PROPERTY_FILE_NAME = "file_name";
     private static final String PROPERTY_SESSION_KEY = "session_key";
 
-    protected final FileWizardSession _session; 
-    
+    protected final FileWizardSession _session;
+
     public FilePage(FileWizardSession session) {
         _session = session;
     }
-    
+
     @Override
     public Integer getPageIndex() {
         return 0;
     }
-    
+
     @Override
     protected String getTemplateFilename() {
         _templateConfiguration.setClassForTemplateLoading(this.getClass(), TEMPLATE_PACKAGE);
         return "FilePage.html";
-    } 
-    
+    }
+
     @Override
     protected Map<String, Object> getFormModel() {
         final Map<String, Object> model = new HashMap<>();
@@ -69,24 +69,24 @@ public abstract class FilePage extends AbstractFreemarkerWizardPage {
 
         return model;
     }
-    
-    protected abstract String getNameLabel(); 
-    
+
+    protected abstract String getNameLabel();
+
     protected abstract void checkUniqueName(String name) throws DCUserInputException;
-    
+
     @Override
     public WizardPageController nextPageController(Map<String, List<String>> formParameters)
             throws DCUserInputException {
         storeFileProperties(formParameters, _session);
 
         return null;
-    } 
-    
+    }
+
     protected void storeFileProperties(Map<String, List<String>> formParameters, FileWizardSession session) {
         final String caseSensitive = getBoolean(formParameters, PROPERTY_CASE_SENSITIVE) ? "on" : "";
         final String name = getString(formParameters, PROPERTY_NAME);
         final String encoding = getString(formParameters, PROPERTY_ENCODING);
-        
+
         checkUniqueName(name);
 
         session.setName(name);
@@ -96,7 +96,7 @@ public abstract class FilePage extends AbstractFreemarkerWizardPage {
         final List<String> fileUploads = formParameters.get(PROPERTY_FILE);
 
         if (fileUploads == null || fileUploads.isEmpty() || StringUtils.isNullOrEmpty(fileUploads.get(0))) {
-            throw new DCUserInputException("Please upload a file before clicking 'Next'!");
+            throw new DCUserInputException("请在单击“下一步”之前上传文件！");
         }
 
         final Map<String, String> fileJson = parseJson(fileUploads.get(0));

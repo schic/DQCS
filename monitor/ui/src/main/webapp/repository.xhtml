@@ -8,9 +8,9 @@
 		<script type="text/javascript">
 			//<![CDATA[
 			function confirmUpload(fileType) {
-				if (confirm('Are you sure you wish to upload (and overwrite) the '
+				if (confirm('是否确定上传(覆盖)该 '
 						+ fileType
-						+ ' file?\nUploading a corrupt file may cause system ineffeciencies or even crashes.')) {
+						+ ' 文件?\n上传损坏的文件可能会导致系统失效甚至崩溃.')) {
 					return true;
 				}
 				return false;
@@ -32,45 +32,45 @@
 			<h:panelGroup
 				rendered="#{param['configuration_upload'] == 'Success'}">
 				<div class="alert alert-success">
-					Configuration file <a href="repository/#{user.tenant}/conf.xml"
-						target="_blank">conf.xml</a> uploaded successfully.
+					配置文件 <a href="repository/#{user.tenant}/conf.xml"
+						target="_blank">conf.xml</a> 上传成功.
 				</div>
 			</h:panelGroup>
-			
+
 			<h:panelGroup
 				rendered="#{param['job_upload'] == 'Success'}">
 				<div class="alert alert-success">
 					Job file <b>#{param['job_filename']}</b> uploaded successfully.
 				</div>
 			</h:panelGroup>
-			
+
 			<h:panelGroup rendered="#{user.configurationEditor and monitorUIPreferences.showConfXmlUploadOptions}">
 				<div class="panel panel-default panel-right">
-					<div class="panel-heading">Configuration file</div>
+					<div class="panel-heading">配置文件</div>
 					<div class="panel-body">
 						<p>
-							Upload new <a href="repository/#{user.tenant}/conf.xml"
-								target="_blank">conf.xml</a> file:
+							上传新的 <a href="repository/#{user.tenant}/conf.xml"
+								target="_blank">conf.xml</a> 文件:
 						</p>
 						<form action="repository/#{user.tenant}/conf.xml"
 							method="post" enctype="multipart/form-data">
-							 
+
 							<div class="input-group">
 								<span class="input-group-btn">
 									<span class="btn btn-primary btn-sm btn-file">
-										Browse … <input type="file" name="file" />
+										浏览 … <input type="file" name="file" />
 									</span>
 								</span>
 								<input type="text" class="form-control input-sm" readonly="readonly" />
 							</div>
-							
+
 							<div class="spacer-xs"></div>
-							
+
 							<button type="submit"
 								class="btn btn-warning btn-block"
 								onclick="return confirmUpload('configuration')">
 								<span class="glyphicon glyphicon-upload" aria-hidden="true" />
-								<span>Upload</span>
+								<span>上传</span>
 							</button>
 						</form>
 					</div>
@@ -79,41 +79,40 @@
 
 			<h:panelGroup rendered="#{user.admin and monitorUIPreferences.showRepositoryUploadOptions}">
 				<div class="panel panel-default panel-right">
-					<div class="panel-heading">Repository backup + restore</div>
+					<div class="panel-heading">存储库备份+恢复</div>
 					<div class="panel-body">
 						<p>
-							You can download <a href="repository/#{user.tenant}/zip">the
-								repository as a .zip file</a>. Use this as a backup or as a way to replicate a repository from one tenant to another.
+							你能下载 <a href="repository/#{user.tenant}/zip">这个存储库作为.zip文件</a>。 将其用作备份或将存储库从一个地方复制到另一个地方的方法。
 						</p>
-						<p>Restore repository by uploading a corresponding zip file:</p>
+						<p>通过相应的zip存储库上载文件:</p>
 						<div class="spacer-sm"></div>
-						
+
 						<form action="repository/#{user.tenant}/zip" method="post"
 							enctype="multipart/form-data">
-							
+
 							<div class="input-group">
 								<span class="input-group-btn">
 									<span class="btn btn-primary btn-file btn-sm">
-										Browse … <input type="file" name="file" />
+										浏览 … <input type="file" name="file" />
 									</span>
 								</span>
 								<input type="text" class="form-control input-sm" readonly="readonly" />
 							</div>
-							
+
 							<div class="spacer-xs"></div>
-							
+
 							<button type="submit"
 								class="btn btn-warning btn-block"
 								onclick="return confirmUpload('repository')">
 								<span class="glyphicon glyphicon-upload" aria-hidden="true" />
-								<span>Upload</span>
+								<span>上传</span>
 							</button>
 						</form>
 					</div>
 				</div>
 			</h:panelGroup>
 
-			<h2>Jobs</h2>
+			<h2>工程</h2>
 			<ul class="repositoryView">
 				<ui:repeat var="folder" value="#{tenantContext.jobFolder.folders}">
 					<li class="folder">#{folder.name}</li>
@@ -143,7 +142,7 @@
 				</ui:repeat>
 			</ul>
 
-			<h2>Timelines</h2>
+			<h2>时间表</h2>
 			<ul class="repositoryView">
 				<ui:repeat var="folder"
 					value="#{tenantContext.timelineFolder.folders}">
@@ -161,14 +160,14 @@
 			</ul>
 
 
-			<h2>Datastores</h2>
+			<h2>数据存储</h2>
 			<ul class="repositoryView">
 				<ui:repeat var="ds" value="#{jsfHelper.datastores}">
 					<li class="file DATASTORE">#{ds.name}</li>
 				</ui:repeat>
 			</ul>
 
-			<h2>Results</h2>
+			<h2>结果</h2>
 			<ul class="repositoryView">
 				<ui:repeat var="folder"
 					value="#{tenantContext.resultFolder.folders}">
@@ -190,13 +189,13 @@
 				</ui:repeat>
 			</ul>
 		</div>
-		
+
 		<div style="visibility: hidden; display: none">
 			<div id="UploadFileTemplateDiv">
 				<p>Replace job file:</p>
 				<div class="input-group">
 					<span class="input-group-btn"> <span
-						class="btn btn-primary btn-file btn-sm"> Browse … <input
+						class="btn btn-primary btn-file btn-sm"> 浏览 … <input
 							type="file" name="file" />
 					</span>
 					</span> <input type="text" class="form-control input-sm" readonly="readonly" />
@@ -204,7 +203,7 @@
 
 				<button type="submit" class="btn btn-primary btn-sm"
 					onclick="return confirmUpload(\'job\')">
-					<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>Upload</span>
+					<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>上传</span>
 				</button>
 
 			</div>

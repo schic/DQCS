@@ -54,7 +54,7 @@ public abstract class SelectJobPanel extends FlowPanel {
         _listBox.setMultipleSelect(false);
         addStyleName("SelectJobPanel");
 
-        add(new HeadingLabel("Select job to build timeline from"));
+        add(new HeadingLabel("选择要从中生成时间线的作业"));
         add(_loadingIndicator);
 
         _service.getJobs(_tenant, new DCAsyncCallback<List<JobIdentifier>>() {
@@ -78,7 +78,7 @@ public abstract class SelectJobPanel extends FlowPanel {
     }
 
     public Button createSelectButton() {
-        final Button button = DCButtons.primaryButton(null, "Select job");
+        final Button button = DCButtons.primaryButton(null, "选择");
         button.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

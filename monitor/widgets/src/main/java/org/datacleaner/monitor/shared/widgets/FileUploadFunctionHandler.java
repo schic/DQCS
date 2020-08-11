@@ -83,7 +83,7 @@ public class FileUploadFunctionHandler {
                     final JSONArray jsonFiles = jsonResponse.isObject().get("files").isArray();
                     final JSONValue jsonFile = jsonFiles.get(0);
                     final String jsonFileStr = jsonFile.toString();
-                    parent.setInnerHTML("<p>File uploaded!</p><input type='hidden' name='" + inputName + "' value='"
+                    parent.setInnerHTML("<p>文件已上传！</p><input type='hidden' name='" + inputName + "' value='"
                             + jsonFileStr + "' />");
                     rootPanel.remove(form);
                 } catch (Exception e) {

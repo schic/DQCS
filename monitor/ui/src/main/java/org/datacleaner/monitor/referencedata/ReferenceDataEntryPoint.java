@@ -38,9 +38,9 @@ public class ReferenceDataEntryPoint implements EntryPoint {
     private static final String DICTIONARIES_HTML_ID = "Dictionaries";
     private static final String SYNONYMS_HTML_ID = "Synonyms";
     private static final String PATTERNS_HTML_ID = "Patterns";
-    private static final String DICTIONARIES_TITLE = "Dictionaries";
-    private static final String SYNONYMS_TITLE = "Synonym catalogs";
-    private static final String PATTERNS_TITLE = "String patterns";
+    private static final String DICTIONARIES_TITLE = "辞典";
+    private static final String SYNONYMS_TITLE = "同义词目录";
+    private static final String PATTERNS_TITLE = "字符串模式";
 
     public void onModuleLoad() {
         GWT.setUncaughtExceptionHandler(ErrorHandler.getUncaughtExceptionHandler());
@@ -55,7 +55,7 @@ public class ReferenceDataEntryPoint implements EntryPoint {
         RootPanel.get(DICTIONARIES_HTML_ID).add(new LoadingIndicator());
         RootPanel.get(SYNONYMS_HTML_ID).add(new LoadingIndicator());
         RootPanel.get(PATTERNS_HTML_ID).add(new LoadingIndicator());
-        
+
         service.getDictionaries(tenantId, new DCAsyncCallback<Set<ReferenceDataItem>>() {
             @Override
             public void onSuccess(final Set<ReferenceDataItem> set) {

@@ -53,7 +53,7 @@ public abstract class JobNameWizardPage extends AbstractFreemarkerWizardPage {
     public Integer getPageIndex() {
         return _pageIndex;
     }
-    
+
     @Override
     protected Class<?> getTemplateFriendlyClass() {
         return JobNameWizardPage.class;
@@ -65,14 +65,14 @@ public abstract class JobNameWizardPage extends AbstractFreemarkerWizardPage {
         final String name = formParameters.get("name").get(0);
 
         if (StringUtils.isNullOrEmpty(name)) {
-            throw new DCUserInputException("Please provide a job name.");
+            throw new DCUserInputException("请提供工程名称。");
         }
 
         final TenantContext tenantContext = _context.getTenantContext();
 
         boolean exists = tenantContext.containsJob(name);
         if (exists) {
-            throw new DCUserInputException("A job with the name '" + name + "' already exist.");
+            throw new DCUserInputException("名称为 '" + name + "' 的工程已经存在。");
         }
 
         return nextPageController(name);

@@ -133,15 +133,15 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
         contentPanel.addStyleName("WizardFinishedPanel");
 
         if (jobName != null && clientConfig.isScheduleEditor()) {
-            	 
+
            	contentPanel.add(_loadingIndicator);
             setContent(contentPanel);
-                 
+
            	getSchedule(new Runnable() {
-           		
+
            		@Override
                 public void run() {
-           			
+
                     final Anchor triggerAnchor = createTriggerAnchor(jobName);
                     final Anchor schedulingAnchor = createSchedulingAnchor(jobName);
 
@@ -149,11 +149,11 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
                     // metrics on the dashboard" anchor as well. Add it?
 
                     contentPanel.remove(_loadingIndicator);
-                    
+
                     populateContentPanel(jobName, closeButton, contentPanel);
                     contentPanel.add(triggerAnchor);
                     contentPanel.add(schedulingAnchor);
-                    
+
                }
           	}, jobName);
       } else {
@@ -164,18 +164,18 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
 	private void populateContentPanel(final String jobName,
 			final Button closeButton, final FlowPanel contentPanel) {
 		if (jobName == null) {
-		    contentPanel.add(new Label("Job created! Wizard finished."));
+		    contentPanel.add(new Label("工程已创建! 向导完成。"));
 		} else {
-		    contentPanel.add(new Label("Job '" + jobName + "' created! Wizard finished."));
+		    contentPanel.add(new Label("工程 '" + jobName + "' 已创建! 向导完成。"));
 		}
-		contentPanel.add(new Label("Click 'Close' to return, or click one of the links below to start using the job."));
+		contentPanel.add(new Label("单击“关闭”返回，或单击下面的链接之一开始使用工程。"));
 		setContent(contentPanel);
 		getWizardPanel().getButtonPanel().clear();
 		getWizardPanel().getButtonPanel().addButton(closeButton);
 	}
 
     protected Anchor createSchedulingAnchor(String jobName) {
-        final Anchor anchor = new Anchor("Set up a job schedule");
+        final Anchor anchor = new Anchor("设定工程时间表");
         anchor.addStyleName("ScheduleJob");
         ClickHandler clickHandler = new CustomizeScheduleClickHandler(null, schedulingService, getTenant(),
                 _scheduleDefinitionForJob);
@@ -185,7 +185,7 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
     }
 
     protected Anchor createTriggerAnchor(String jobName) {
-        Anchor anchor = new Anchor("Run this job now");
+        Anchor anchor = new Anchor("立即执行这项工程");
         anchor.addStyleName("TriggerJob");
         ClickHandler clickHandler = new TriggerJobClickHandler(schedulingService, getTenant(),
                 _scheduleDefinitionForJob);
@@ -267,7 +267,7 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
             return;
         }
 
-        panel.add(new Label("Or select a different job type ..."));
+        panel.add(new Label("或者选择其他工程类型 ..."));
         for (final WizardIdentifier wizard : wizards) {
             final RadioButton radio = new RadioButton("initialSelection", wizard.getDisplayName());
             radio.addClickHandler(new ClickHandler() {
@@ -301,7 +301,7 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
 
     private void showDatastoreSelection(final FlowPanel panel, final List<DatastoreIdentifier> datastores,
             final List<RadioButton> radios) {
-        panel.add(new Label("Please select the source datastore of your job ..."));
+        panel.add(new Label("请给你的工程选择一个数据资源 ..."));
 
         for (final DatastoreIdentifier datastore : datastores) {
             final RadioButton radio = new RadioButton("initialSelection", datastore.getName());
@@ -344,7 +344,7 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
 
         final FlowPanel panel = new FlowPanel();
 
-        panel.add(new Label("Please select the type of job to build:"));
+        panel.add(new Label("请选择要生成的工程类型:"));
 
         final List<RadioButton> radios = new ArrayList<RadioButton>(wizards.size());
 
@@ -380,7 +380,7 @@ public class JobWizardController extends AbstractWizardController<WizardServiceA
                 }
 
                 // no job wizard is selected if we reach this point
-                throw new DCUserInputException("Please select a job type to create");
+                throw new DCUserInputException("请选择要创建的工程类型");
             }
         });
 

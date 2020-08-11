@@ -1,30 +1,27 @@
 <div>
 
-	<p>Where is the CSV file to add as a datastore?</p>
+	<p>要添加为数据存储的CSV文件在哪里？</p>
 
 	<div
 		style="margin: 10px; padding: 10px; background-color: #f4f4d3; border-radius: 5px;">
 		<input type="radio" name="source" value="existing"
-			id="source_radio_existing" /> <label for="source_radio_existing">The
-			file is located on the server / Hadoop cluster </label><br />
+			id="source_radio_existing" /> <label for="source_radio_existing">该文件位于服务器/Hadoop集群上</label><br />
 
 		<p>
-			Use this option if you know the location of the file on the server.
-			For security reasons, only files with the suffix of <b>.csv</b>, <b>.tsv</b> or <b>.txt</b>
-			will be accepted.
+			如果知道文件在服务器上的位置，请使用此选项。
+			出于安全原因，只接受后缀为<b>.csv</b>, <b>.tsv</b> 或 <b>.txt</b>的文件。
 		</p>
-		<p> Use this option for a file located on the <b> Hadoop cluster</b>. </p> 
+		<p> 对位于<b> Hadoop cluster</b>的文件使用此选项</p>
 	</div>
 
 	<div
 		style="margin: 10px; padding: 10px; background-color: #f4f4d3; border-radius: 5px;">
 		<input type="radio" name="source" value="upload"
-			id="source_radio_upload" /> <label for="source_radio_upload">I
-			want to upload the file to the server (max. 50mb)</label><br />
+			id="source_radio_upload" /> <label for="source_radio_upload">我想把文件上传到服务器（最大50mb）</label><br />
 
 		<div id="csv_file_upload_div">
 			<input type="file" name="csv_file_upload" /> <input type="button"
-				value="upload now"
+				value="立即上传"
 				onclick="window.uploadFile('csv_file_upload_div');" />
 		</div>
 	</div>

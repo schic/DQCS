@@ -93,7 +93,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
     private void showWizardSelection(final List<WizardIdentifier> wizards) {
         final FlowPanel panel = new FlowPanel();
 
-        panel.add(new Label("Please select the type of datastore to register:"));
+        panel.add(new Label("请选择要注册的数据存储类型："));
 
         final List<RadioButton> radios = new ArrayList<RadioButton>(wizards.size());
 
@@ -142,7 +142,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
     protected void wizardFinished(final String datastoreName) {
         final String encodedDatastoreName = URL.encodeQueryString(datastoreName);
 
-        final Button button = DCButtons.primaryButton(null, "Close");
+        final Button button = DCButtons.primaryButton(null, "关闭");
         button.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -151,7 +151,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
             }
         });
 
-        final Anchor jobWizardAnchor = new Anchor("Build a job for this datastore");
+        final Anchor jobWizardAnchor = new Anchor("为此数据存储建立工作");
         jobWizardAnchor.addStyleName("BuildJob");
         jobWizardAnchor.addClickHandler(new ClickHandler() {
             @Override
@@ -163,7 +163,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
             }
         });
 
-        final Anchor queryAnchor = new Anchor("Explore / query this datastore");
+        final Anchor queryAnchor = new Anchor("浏览/查询此数据存储");
         queryAnchor.addStyleName("QueryDatastore");
         queryAnchor.addClickHandler(new ClickHandler() {
             @Override
@@ -175,10 +175,10 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
 
         final FlowPanel contentPanel = new FlowPanel();
         contentPanel.addStyleName("WizardFinishedPanel");
-        contentPanel.add(new Label("Datastore '" + datastoreName + "' created! Wizard finished."));
+        contentPanel.add(new Label("数据存储区'" + datastoreName + "'已创建！向导完成。"));
 
         contentPanel.add(new Label(
-                "Click 'Close' to return, or click one of the links below to start using the datastore."));
+                "单击“关闭”返回，或单击下面的链接之一开始使用数据存储。"));
         contentPanel.add(jobWizardAnchor);
         contentPanel.add(queryAnchor);
 

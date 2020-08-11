@@ -109,7 +109,7 @@ public class QueryPanel extends FlowPanel {
                     public void onResponseReceived(Request request, Response response) {
                         _loadingIcon.setVisible(false);
                         if (response.getStatusCode() == 400) {
-                            ErrorHandler.showErrorDialog("Failed to handle query!", response.getStatusText(),
+                            ErrorHandler.showErrorDialog("无法处理查询!", response.getStatusText(),
                                     (String) null);
                             return;
                         }
@@ -132,12 +132,12 @@ public class QueryPanel extends FlowPanel {
 
         add(schemaPanel);
         add(new HeadingLabel("Query datastore: " + _datastore.getName()));
-        add(new Label("Please fill in your query below and click the 'Ok' button to execute it on the server."));
-        
+        add(new Label("请填写下面的查询语句并单击“确定”按钮在服务器上执行。"));
+
         final FlowPanel buttonPanel = new FlowPanel();
         buttonPanel.add(_queryTextArea);;
         buttonPanel.add(_executeQueryButton);
-        
+
         add(buttonPanel);
         add(_loadingIcon);
         add(_resultPanel);

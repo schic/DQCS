@@ -49,7 +49,7 @@ import com.google.gwt.user.client.ui.IsWidget;
  * provides controls for Wizard.
  * 它是面板生成器的抽象实现。
  * 此类可以根据用户输入创建类型为{@link WizardPanel}的向导面板。它还为向导提供控件。
- * 
+ *
  * @param <S>
  */
 public abstract class AbstractWizardController<S extends WizardNavigationServiceAsync> {
@@ -85,18 +85,18 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
         _loadingIndicator = new LoadingIndicator();
         _wizardPanel.setContent(_loadingIndicator);
 
-        _previousStepButton = DCButtons.defaultButton("glyphicon-menu-left", "Previous");
+        _previousStepButton = DCButtons.defaultButton("glyphicon-menu-left", "上一个");
         _previousStepButton.getElement().setId("wizardPreviousButton");
         _previousStepButton.setEnabled(false);
         _previousStepButton.addStyleName("wizard-navigation-button");
         _wizardPanel.getButtonPanel().addButton(_previousStepButton);
 
-        _nextStepButton = DCButtons.primaryButton("glyphicon-menu-right", "Next");
+        _nextStepButton = DCButtons.primaryButton("glyphicon-menu-right", "下一个");
         _nextStepButton.getElement().setId("wizardNextButton");
         _nextStepButton.addStyleName("wizard-navigation-button");
         _wizardPanel.getButtonPanel().addButton(_nextStepButton);
-        
-        final Button cancelButton = DCButtons.defaultButton(null, "Cancel");
+
+        final Button cancelButton = DCButtons.defaultButton(null, "取消");
         cancelButton.getElement().setId("wizardCancelButton");
         cancelButton.addClickHandler(new ClickHandler() {
             @Override
@@ -143,14 +143,14 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
     /**
      * Gets the number of steps to add before the wizard pages' steps in the
      * {@link WizardProgressBar}.
-     * 
+     *
      * @return
      */
     protected abstract int getStepsBeforeWizardPages();
 
     /**
      * Invoked when the wizard has finished.
-     * 
+     *
      * @param resultEntityName
      *            the resulting string object of the wizard. Usually identifies
      *            the name/id of the thing that was built with the wizard.
@@ -212,7 +212,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
                     final WizardProgressBar progressBar = _wizardPanel.getProgressBar();
                     progressBar.setSteps(steps);
                     progressBar.setProgress(stepIndex);
-                    
+
                     JavaScriptCallbacks.onWizardProgress(wizardDisplayName, stepIndex, steps);
                     _currentController = new FormWizardClientController(_wizardService, _tenant, page);
 
@@ -260,7 +260,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
 
     /**
      * Gets the {@link WizardIdentifier} of the wizard being controlled.
-     * 
+     *
      * @return
      */
     public WizardIdentifier getWizardIdentifier() {
@@ -269,7 +269,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
 
     /**
      * Sets the {@link WizardIdentifier} of the wizard being controlled.
-     * 
+     *
      * @param wizardIdentifier
      */
     public void setWizardIdentifier(WizardIdentifier wizardIdentifier) {
@@ -278,7 +278,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
 
     /**
      * Gets the wizard controlling service
-     * 
+     *
      * @return
      */
     public S getWizardService() {
@@ -287,7 +287,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
 
     /**
      * Gets the locale name for inclusion in many of the service requests.
-     * 
+     *
      * @return
      */
     protected String getLocaleName() {
@@ -298,7 +298,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
 
     /**
      * Returns the wizard panel instance
-     * 
+     *
      * @return
      */
     public WizardPanel getWizardPanel() {
@@ -307,7 +307,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
 
     /**
      * Gets the current tenant id.
-     * 
+     *
      * @return
      */
     public TenantIdentifier getTenant() {
@@ -317,7 +317,7 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
     /**
      * Closes (and hides) the wizard after finishing. Call this method from any
      * events that should hide the wizard after the job has finished.
-     * 
+     *
      * @param string
      */
     protected final void closeWizardAfterFinishing(String resultEntityName, String defaultUrlToGoTo) {

@@ -76,15 +76,15 @@ public abstract class CsvDatastoreLocationWizardPage extends AbstractFreemarkerW
         map.put("absolutePrefix", absolutePrefix);
 
         if (_newFile) {
-            map.put("introductionText", "What should be the server location of the CSV file:");
-            map.put("repositoryText", "Copy it to a location in the repository:");
-            map.put("absoluteText", "Copy it to an absolute location on the server:");
+            map.put("introductionText", "CSV文件的服务器位置应该在哪：");
+            map.put("repositoryText", "将其复制到存储库中的某个位置：");
+            map.put("absoluteText", "将其复制到服务器上的绝对位置：");
         } else {
-            map.put("introductionText", "What is the server location of the CSV file:");
-            map.put("repositoryText", "It's located in the repository:");
-            map.put("absoluteText", "It's at an absolute location on the server:");
+            map.put("introductionText", "CSV文件的服务器位置是什么：");
+            map.put("repositoryText", "它位于存储库中：");
+            map.put("absoluteText", "它在服务器上的绝对位置：");
             map.put("relativePrefix", "/datacleaner/");
-            map.put("relativeHadoopText", "It's a path on the Hadoop cluster:");
+            map.put("relativeHadoopText", "这是Hadoop集群上的路径：");
         }
 
         return map;
@@ -95,7 +95,7 @@ public abstract class CsvDatastoreLocationWizardPage extends AbstractFreemarkerW
             throws DCUserInputException {
         final List<String> locations = formParameters.get("location");
         if (locations == null || locations.isEmpty()) {
-            throw new DCUserInputException("Please select a location for the CSV file");
+            throw new DCUserInputException("请选择CSV文件的位置");
         }
 
         final String location = locations.get(0);
@@ -104,7 +104,7 @@ public abstract class CsvDatastoreLocationWizardPage extends AbstractFreemarkerW
             final String filepath = formParameters.get("filepath_repository").get(0);
             final RepositoryFolder tenantFolder = _wizardContext.getTenantContext().getTenantRootFolder();
             if (!(tenantFolder instanceof FileRepositoryFolder)) {
-                throw new DCUserInputException("Your repository type is not support for hosting raw data files");
+                throw new DCUserInputException("您的存储库类型不支持托管原始数据文件");
             }
 
             final FileRepositoryFolder fileRepositoryFolder = (FileRepositoryFolder) tenantFolder;
@@ -121,29 +121,29 @@ public abstract class CsvDatastoreLocationWizardPage extends AbstractFreemarkerW
             try {
                 uri = HadoopUtils.getFileSystem().getUri().resolve(path).toString();
             } catch (IOException e) {
-                throw new DCUserInputException("The Hadoop path does not exist");
+                throw new DCUserInputException("Hadoop路径不存在");
             }
             final EnvironmentBasedHadoopClusterInformation environmentBasedHadoopClusterInformation = new EnvironmentBasedHadoopClusterInformation(
                     "default", HadoopResource.DEFAULT_CLUSTERREFERENCE);
             if (!EnvironmentBasedHadoopClusterInformation.isConfigurationDirectoriesSpecified()) {
-                throw new DCUserInputException("HADOOP_CONF_DIR or/and SPARK_CONF_DIR are not defined");
+                throw new DCUserInputException("未定义HADOOP_CONF_DIR或/和SPARK_CONF_DIR");
             }
 
             logger.debug("Environment variable is", environmentBasedHadoopClusterInformation.getDescription());
             resource = new HadoopResource(uri, environmentBasedHadoopClusterInformation.getConfiguration(),
                     HadoopResource.DEFAULT_CLUSTERREFERENCE);
         } else {
-            throw new IllegalArgumentException("Invalid location value: " + location);
+            throw new IllegalArgumentException("无效的位置： " + location);
         }
 
-        logger.info("The resource path is  " + resource.getQualifiedPath());
+        logger.info("资源路径是 " + resource.getQualifiedPath());
         return nextPageController(resource);
     }
 
     /**
      * Invoked when the user has selected a file location on the server of the
      * CSV file.
-     * 
+     *
      * @param filepath
      * @param resource
      * @return

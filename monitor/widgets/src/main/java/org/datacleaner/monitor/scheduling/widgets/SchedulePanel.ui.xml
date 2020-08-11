@@ -26,22 +26,22 @@
 	<g:HTMLPanel styleName="SchedulePanel" addStyleNames="row">
 
 		<div class="col-sm-9 col-xs-8">
-		    
+
 			<div class="JobColumn">
 				<g:Label ui:field="jobLabel" />
 			</div>
-	
+
 			<div class="ScheduleColumn">
 				<span>Schedule:</span>
 				<g:Anchor ui:field="scheduleAnchor" />
 				<span class="AlertsColumn">
 					<g:FlowPanel ui:field="alertsPanel" />
-				</span>	
+				</span>
 			</div>
-		
+
 		</div>
-		
-		
+
+
 		<div class="col-sm-3 col-xs-4">
 			<div class="ActionsColumn">
 				<div class="btn-group btn-group-justified">
@@ -49,13 +49,13 @@
 						<g:Button title="Trigger this job to execute on the server now"
 							ui:field="executeButton" styleName="ExecuteButton">
 							<span class="glyphicon glyphicon-play" aria-hidden="true" />
-							<span>Execute</span>
+							<span>执行</span>
 						</g:Button>
 					</div>
 					<div class="btn-group">
 						<g:Button title="More options..." ui:field="moreButton">
 							<span class="glyphicon glyphicon-option-vertical" aria-hidden="true" />
-							<span>More</span>
+							<span>更多</span>
 						</g:Button>
 					</div>
 				</div>

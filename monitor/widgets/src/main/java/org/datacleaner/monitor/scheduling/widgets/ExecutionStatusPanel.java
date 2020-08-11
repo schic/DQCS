@@ -62,11 +62,11 @@ public class ExecutionStatusPanel extends FlowPanel {
 
         addStyleName("ExecutionStatusPanel");
 
-        _headerLabel = new HeadingLabel("Job '" + schedule.getJob().getName() + "' is executing...");
+        _headerLabel = new HeadingLabel("工程 '" + schedule.getJob().getName() + "' 正在执行...");
         add(_headerLabel);
         add(_loadingIndicator);
 
-        _detailsLink = new Anchor("Show execution details");
+        _detailsLink = new Anchor("显示执行详细信息");
         _detailsLink.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -98,10 +98,10 @@ public class ExecutionStatusPanel extends FlowPanel {
                     _loadingIndicator.setVisible(false);
                     _detailsLink.setVisible(false);
 
-                    _headerLabel.setText("Job finished!");
+                    _headerLabel.setText("工程完成!");
 
                     final ResultAnchor resultAnchor = new ResultAnchor(_tenant);
-                    resultAnchor.setResult(executionLog, "Show result");
+                    resultAnchor.setResult(executionLog, "显示结果");
                     add(resultAnchor);
                 } else {
                     // use the log panel to show errors etc.
@@ -113,7 +113,7 @@ public class ExecutionStatusPanel extends FlowPanel {
 
     public void showLogPanel() {
         _logPanel = new ExecutionLogPanel(_service, _tenant, _result, false);
-        _popupPanel.setHeader("Execution log: '" + _schedule.getJob().getName() + "'");
+        _popupPanel.setHeader("执行日志: '" + _schedule.getJob().getName() + "'");
         _popupPanel.setWidget(_logPanel);
         _popupPanel.center();
     }

@@ -197,7 +197,7 @@
 								</image>
 							</images>
 						</configuration>
-						
+
 						<executions>
 							<execution>
 								<id>start</id>
@@ -281,7 +281,7 @@
 			<artifactId>spark-launcher_2.11</artifactId>
 		</dependency>
 		<!-- DataCleaner monitor extensions -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-completeness-analysis-wizard</artifactId>
 			<version>${project.version}</version>
@@ -330,8 +330,8 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-referencedata-wizards</artifactId>
 			<version>${project.version}</version>
-		</dependency>
-		
+		</dependency>-->
+
 		<!-- JDBC drivers -->
 		<dependency>
 			<groupId>net.sourceforge.jtds</groupId>

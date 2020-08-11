@@ -61,27 +61,27 @@ public class DatastoreRemovalController {
 
         final Map<String, String> response = new TreeMap<String, String>();
         response.put("datastore", datastoreName);
-        response.put("action", "remove");
+        response.put("action", "删除");
 
         final TenantContext tenantContext = _contextFactory.getContext(tenant);
         if (tenantContext.getConfiguration().getDatastoreCatalog().getDatastore(datastoreName) == null) {
-            response.put("status", "FAILURE");
-            response.put("message", "No such datastore: " + datastoreName);
+            response.put("status", "失败");
+            response.put("message", "没有这样的数据存储: " + datastoreName);
             return response;
         }
 
         try {
             datastoreDao.removeDatastore(tenantContext, datastoreName);
         } catch (Exception e) {
-            logger.error("Removing datastore '" + datastoreName + "' from tenant '" + tenant
-                    + "'s configuration failed", e);
-            response.put("status", "FAILURE");
+            logger.error("从'" + tenant + "' 配置中删除 '" + datastoreName
+                    + "'失败", e);
+            response.put("status", "失败");
             response.put("message", e.getMessage());
             return response;
         }
 
-        response.put("status", "SUCCESS");
-        response.put("message", "Datastore was removed succesfully");
+        response.put("status", "成功");
+        response.put("message", "数据存储成功删除");
 
         logger.debug("Response payload: {}", response);
         return response;

@@ -84,7 +84,7 @@ public abstract class ExcelDatastoreUploadOrExistingFileWizardPage extends Abstr
     /**
      * Invoked when the user continues to the next page, after selecting to use
      * a file that already exist on the server.
-     * 
+     *
      * @return
      */
     protected abstract WizardPageController nextPageControllerExisting();
@@ -92,7 +92,7 @@ public abstract class ExcelDatastoreUploadOrExistingFileWizardPage extends Abstr
     /**
      * Invoked when the user continues to the next page, after selecting to
      * upload a file to the server.
-     * 
+     *
      * @param filename
      *            the name of the file
      * @param tempFile
@@ -104,11 +104,11 @@ public abstract class ExcelDatastoreUploadOrExistingFileWizardPage extends Abstr
     private WizardPageController nextPageControllerUpload(Map<String, List<String>> formParameters) {
         final List<String> excelSpreadsheetUploads = formParameters.get("excel_spreadsheet_upload");
         if (excelSpreadsheetUploads == null || excelSpreadsheetUploads.isEmpty()) {
-            throw new DCUserInputException("Please upload a file before clicking 'Next'!");
+            throw new DCUserInputException("请在单击“下一步”之前上传文件！");
         }
         final String fileJsonString = excelSpreadsheetUploads.get(0);
         if (StringUtils.isNullOrEmpty(fileJsonString)) {
-            throw new DCUserInputException("Please upload a file before clicking 'Next'!");
+            throw new DCUserInputException("请在单击“下一步”之前上传文件！");
         }
 
         final Map<String, String> fileJson = parseJson(fileJsonString);

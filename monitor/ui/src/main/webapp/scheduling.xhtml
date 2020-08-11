@@ -26,9 +26,9 @@
 				}
 
 				function confirmUpload(fileType) {
-					if (confirm('Are you sure you wish to upload (and overwrite) the '
+					if (confirm('你确定上传（覆盖）这个 '
 							+ fileType
-							+ ' file?\nUploading a corrupt file may cause system ineffeciencies or even crashes.')) {
+							+ ' 文件?\n上载损坏的文件可能会导致系统失效，甚至崩溃。')) {
 						return true;
 					}
 					return false;
@@ -46,26 +46,24 @@
 		<div id="SchedulingPage" class="container">
 			<h:panelGroup rendered="#{param['job_upload'] == 'Success'}">
 				<div class="alert alert-success">
-					File upload was successful: #{param['job_filename'].replace("%2C", ", ")} 
+					文件上传成功: #{param['job_filename'].replace("%2C", ", ")}
 				</div>
 			</h:panelGroup>
 			<h:panelGroup rendered="#{param['job_upload'] != null and param['job_upload'] != 'Success'}">
-				<div class="alert alert-danger">File upload was not successful. </div>
+				<div class="alert alert-danger">文件上传失败。 </div>
 			</h:panelGroup>
-		
+
 			<c:if test="#{user.scheduleEditor}">
 				<div>
 					<button class="btn btn-primary"
 						onclick="datacleaner.startJobWizard();">
-						<span class="glyphicon glyphicon-plus" aria-hidden="true" /> <span>Build
-							job</span>
+						<span class="glyphicon glyphicon-plus" aria-hidden="true" /> <span>新建工程</span>
 					</button>
 					<form action="repository/#{user.tenant}/jobs/multiple_upload"
 						method="post" enctype="multipart/form-data" class="form-inline" style="display: inline;"
 						id="uploadJobs">
 						<button class="btn btn-default" onclick="showUploadJobForm(this)" type="button">
-							<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>Upload
-								job</span>
+							<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>上传工程</span>
 						</button>
 					</form>
 				</div>
@@ -80,7 +78,7 @@
 			<div id="UploadFileTemplateDiv" style="display: inline-block;">
 				<div class="input-group">
 					<span class="input-group-btn"> <span
-						class="btn btn-primary btn-file"> Browse … <input
+						class="btn btn-primary btn-file"> 浏览 … <input
 							type="file" name="files" multiple="multiple" />
 					</span>
 					</span> <input type="text" class="form-control" readonly="readonly" />
@@ -88,7 +86,7 @@
 
 				<button type="submit" class="btn btn-primary"
 					onclick="return confirmUpload(\'job\')">
-					<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>Upload</span>
+					<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>上传</span>
 				</button>
 
 			</div>

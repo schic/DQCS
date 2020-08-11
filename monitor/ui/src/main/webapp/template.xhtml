@@ -30,7 +30,7 @@
 			href="#{request.contextPath}/stylesheets/buttons.css" />
 		<link rel="stylesheet" type="text/css"
 			href="#{request.contextPath}/stylesheets/datacleaner-styles.css" />
-			
+
 		<!-- old/deprecated styles.css files -->
 		<link rel="stylesheet" type="text/css"
 			href="#{request.contextPath}/styles.css" />
@@ -82,7 +82,7 @@
 						src="#{request.contextPath}/images/dc-logo-50.png" alt="[DC]" />
 					</a> <a class="navbar-brand" href="#{request.contextPath}/"> <span
 						class="visible-xs hidden-sm visible-md visible-lg">DataCleaner
-							monitor</span>
+							监视器</span>
 					</a>
 				</div>
 
@@ -97,12 +97,12 @@
 					<ul class="nav navbar-nav navbar-right">
 						<c:choose>
 							<c:when test="#{user.authenticated}">
-								<li><a>Welcome #{user.username} <span class="tenant">(#{user.tenant})</span></a>
+								<li><a>欢迎 #{user.username} <span class="tenant">(#{user.tenant})</span></a>
 								</li>
-								<li><a href="#{request.contextPath}/logout">Log out</a></li>
+								<li><a href="#{request.contextPath}/logout">退出</a></li>
 							</c:when>
 							<c:otherwise>
-								<li><a href="#{request.contextPath}/login">Sign in </a></li>
+								<li><a href="#{request.contextPath}/login">登录</a></li>
 							</c:otherwise>
 						</c:choose>
 					</ul>

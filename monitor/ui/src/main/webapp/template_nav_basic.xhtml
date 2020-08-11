@@ -8,7 +8,7 @@
 		<li
 			class="#{ (view.viewId == '/dashboard.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="dashboard" styleClass="DashboardTabTitle">
-				<h:outputText value="Dashboard" />
+				<h:outputText value="仪表板" />
 				<c:if test="#{param['gwt.codesvr'] != null}">
 					<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 				</c:if>
@@ -19,7 +19,7 @@
 		<li
 			class="#{ (view.viewId == '/scheduling.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="scheduling" styleClass="SchedulingTabTitle">
-				<h:outputText value="Scheduling" />
+				<h:outputText value="排程" />
 				<c:if test="#{param['gwt.codesvr'] != null}">
 					<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 				</c:if>
@@ -30,7 +30,7 @@
 		<li
 			class="#{ (view.viewId == '/datastores.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="datastores" styleClass="DatastoresTabTitle">
-				<h:outputText value="Datastores" />
+				<h:outputText value="资料存储库" />
 				<c:if test="#{param['gwt.codesvr'] != null}">
 					<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 				</c:if>
@@ -41,18 +41,18 @@
 		<li
 			class="#{ (view.viewId == '/referencedata.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="referencedata" styleClass="ReferenceDataTabTitle">
-				<h:outputText value="Reference data" />
+				<h:outputText value="参考资料" />
 				<c:if test="#{param['gwt.codesvr'] != null}">
 					<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 				</c:if>
 			</h:outputLink></li>
 	</c:if>
-	
+
 	<c:if test="#{user.configurationEditor or user.jobEditor}">
 		<li
 			class="#{ (view.viewId == '/repository.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="repository" styleClass="RepositoryTabTitle">
-				<h:outputText value="Repository" />
+				<h:outputText value="资料库" />
 				<c:if test="#{param['gwt.codesvr'] != null}">
 					<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 				</c:if>
