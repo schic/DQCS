@@ -1417,10 +1417,10 @@ public final class JaxbConfigurationReader implements ConfigurationReader<InputS
             DataCleanerConfigurationImpl configuration) {
         final String filename = getStringVariable("filename", datastoreType.getFilename());
         final Resource resource = _interceptor.createResource(filename, configuration);
-        
+
         return new ArffDatastore(name, resource);
     }
-    
+
     private char getChar(final String charString, final char ifNull, final char ifBlank) {
         if (charString == null) {
             return ifNull;

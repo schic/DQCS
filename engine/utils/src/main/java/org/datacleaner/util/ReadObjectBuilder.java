@@ -110,7 +110,7 @@ public final class ReadObjectBuilder<E extends Serializable> {
                 adaptor.deserialize(getField, _serializable);
             }
         } catch (final Exception e) {
-            logger.error("Could not deserialize object!", e);
+            logger.error("无法反序列化对象!", e);
             if (e instanceof IOException) {
                 throw (IOException) e;
             }
@@ -171,9 +171,9 @@ public final class ReadObjectBuilder<E extends Serializable> {
                 }
             }
         } catch (final IllegalAccessException e) {
-            logger.warn("Not allowed to access field: {}", fieldName);
+            logger.warn("不允许访问字段: {}", fieldName);
         } catch (final IllegalArgumentException e) {
-            logger.debug("No such field found in GetFields: {}", fieldName);
+            logger.debug("在获取字段中找不到这样的字段: {}", fieldName);
         }
     }
 }
