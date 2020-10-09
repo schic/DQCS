@@ -19,7 +19,7 @@
     Boston, MA  02110-1301  USA
 
 -->
-<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'navbar
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
 	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
 	<g:HTMLPanel>
