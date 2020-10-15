@@ -24,31 +24,31 @@ GitHub markdown pages and issues are used for developers and technical aspects o
 
 * api - 公共 API of DataCleaner. 创建你的扩展的主要的接口和声明 annotations.
 * resources -  DataCleaner的静态资源。
-* oss-branding - Icons and colors
-* testware - Useful classes for unit testing of DataCleaner and extension code.
+* oss-branding-图标和颜色
+* testware -有用的类，用于DataCleaner和扩展代码的单元测试。
 * engine
-  * core - The core engine piece which allows execution of jobs and components as per the API.
-  * xml-config - Contains utilities for reading and writing job files and configuration files of DataCleaner.
-  * env - Different/alternative environments that DataCleaner can run in, for instance Apache Spark or webapp-cluster
+  * core - 核心引擎部分，允许根据API执行作业和组件。
+  * xml-config - 包含用于读取和写入DataCleaner的作业文件和配置文件的实用程序。
+  * env - 可以在其中运行的不同/替代环境，例如Apache Spark或webapp-cluster
 * components
-  * ... - many sub modules containing built-in as well as additional components/extensions to use with DataCleaner.
-  * standard-components - a container-project that dependends on all components that are normally bundled in DataCleaner community edition.
+  * ... - 许多子模块包含内置的以及与DataCleaner一起使用的其他组件/扩展。
+  * standard-components - 一个容器项目，它依赖于通常在DataCleaner社区版中捆绑的所有组件。
 * desktop
-  * api - The public API for the DataCleaner desktop application.
-  * ui - The Swing-based user interface for desktop users
+  * api - DataCleaner桌面应用程序的公共API。
+  * ui - 桌面用户的基于Swing的用户界面
 * monitor
-  * api - the API classes and interfaces of DataCleaner monitor
-
-## Code style and formatting
+  * api - 监视器的API类和接口
+ 
+## 代码风格和格式化
 
 In the root of the project you can find 'Formatter-[IDE].xml' files which enable you to import the code formatting rules of the project into your IDE.
 
-## Continuous Integration
+## 持续集成
 
 There's a public build of DataCleaner that can be found on Travis CI:
 
 https://travis-ci.org/datacleaner/DataCleaner
 
-## License
+## 许可
 
 Licensed under the Lesser General Public License, see http://www.gnu.org/licenses/lgpl.txt
