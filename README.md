@@ -1,4 +1,4 @@
-# DataCleaner
+# DataCleaner（数据清洗机）
 
 [![Build Status: Linux](https://travis-ci.org/datacleaner/DataCleaner.svg?branch=master)](https://travis-ci.org/datacleaner/DataCleaner) [![Gitter chat](https://badges.gitter.im/datacleaner/community.png)](https://gitter.im/datacleaner/community)
 
@@ -6,24 +6,24 @@
 <img src="https://datacleaner.github.io/assets/dc-logo-100.png" alt="DataCleaner logo" />
 </div>
 
-The premier Open Source Data Quality solution.
+基于一流的数据质控解决方案DATACLEANER打造.
 
-DataCleaner is a Data Quality toolkit that allows you to profile, correct and enrich your data. People use it for ad-hoc analysis, recurring cleansing as well as a swiss-army knife in matching and Master Data Management solutions.
+DataCleaner 是一个帮助你生成数据概要、修正和丰富你的数据的工具集，我们可以使用它进行临时数据分析、主数据管理等。
 
 ## Where to go for end-user information?
 
-Please visit the DataCleaner community website https://datacleaner.github.io for downloads, news, documentation etc.
+请访问DataCleaner 社区网站 https://datacleaner.github.io 获取下载、新闻和文档信息。
 
 Visit our Gitter chat channel https://gitter.im/datacleaner/community for asking questions or discussions.
 
 GitHub markdown pages and issues are used for developers and technical aspects only.
 
-## Module structure
+## 模块结构
 
-The main application modules are:
+主要的应用模块包括:
 
-* api - The public API of DataCleaner. Mostly interfaces and annotations that you should use to build your own extensions.
-* resources - Static resources in DataCleaner
+* api - 公共 API of DataCleaner. 创建你的扩展的主要的接口和声明 annotations.
+* resources -  DataCleaner的静态资源。
 * oss-branding - Icons and colors
 * testware - Useful classes for unit testing of DataCleaner and extension code.
 * engine
