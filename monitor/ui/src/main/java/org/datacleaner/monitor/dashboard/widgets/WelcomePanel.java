@@ -45,8 +45,8 @@ public class WelcomePanel extends Composite {
     @UiField
     Button newTimelineButton;
 
-    @UiField
-    Button toggleWelcomeTextButton;
+    /*@UiField
+    Button toggleWelcomeTextButton;*/
 
     @UiField
     HTMLPanel welcomeTextPanel;
@@ -57,15 +57,15 @@ public class WelcomePanel extends Composite {
         initWidget(uiBinder.createAndBindUi(this));
 
         DCButtons.applyDefaultStyle(newTimelineButton);
-        DCButtons.applyPrimaryStyle(toggleWelcomeTextButton);
-        
-        toggleWelcomeTextButton.addClickHandler(new ClickHandler() {
+        // DCButtons.applyPrimaryStyle(toggleWelcomeTextButton);
+
+        /*toggleWelcomeTextButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 welcomeTextPanel.setVisible(!welcomeTextPanel.isVisible());
                 updateToggleButtonStyle();
             }
-        });
+        });*/
         updateToggleButtonStyle();
     }
 
@@ -76,11 +76,11 @@ public class WelcomePanel extends Composite {
 
     private void updateToggleButtonStyle() {
         if (welcomeTextPanel.isVisible()) {
-            toggleWelcomeTextButton.removeStyleName("collapsed");
-            toggleWelcomeTextButton.addStyleName("expanded");
+            // toggleWelcomeTextButton.removeStyleName("collapsed");
+            // toggleWelcomeTextButton.addStyleName("expanded");
         } else {
-            toggleWelcomeTextButton.removeStyleName("expanded");
-            toggleWelcomeTextButton.addStyleName("collapsed");
+            // toggleWelcomeTextButton.removeStyleName("expanded");
+            // toggleWelcomeTextButton.addStyleName("collapsed");
         }
     }
 

@@ -28,10 +28,10 @@
 				<span class="glyphicon glyphicon-plus" aria-hidden="true" />
 				<span>新建时间线图</span>
 			</g:Button>
-			<g:Button ui:field="toggleWelcomeTextButton" styleName="toggleWelcomeTextButton">
+			<!--<g:Button ui:field="toggleWelcomeTextButton" styleName="toggleWelcomeTextButton">
 				<span class="glyphicon glyphicon-info-sign" aria-hidden="true" />
 				<span>显示/隐藏 介绍</span>
-			</g:Button>
+			</g:Button>-->
 		</div>
 		<g:HTMLPanel ui:field="welcomeTextPanel" styleName="InfographicContainer">
 			<div class="InfographicPart InfographicIntro">
