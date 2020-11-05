@@ -1,21 +1,22 @@
 <ui:composition template="template.xhtml"
-	xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:ui="http://java.sun.com/jsf/facelets">
+				xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:c="http://java.sun.com/jsp/jstl/core"
+				xmlns:f="http://java.sun.com/jsf/core"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:ui="http://java.sun.com/jsf/facelets">
 
 	<ui:define name="head">
 		<link rel="stylesheet" type="text/css"
-			href="#{request.contextPath}/stylesheets/login.css" />
+			  href="#{request.contextPath}/stylesheets/login.css" />
 
 		<c:if test="#{user.authenticated}">
 			<script type="text/javascript">
-				//<![CDATA[
-				window.onload = function() {
-					window.location = "#{request.contextPath}/dashboard";
-				};
-				//]]>
+                //<![CDATA[
+                window.onload = function() {
+                    //window.location = "#{request.contextPath}/dashboard";
+                    window.location = "#{request.contextPath}/home";
+                };
+                //]]>
 			</script>
 		</c:if>
 	</ui:define>
@@ -62,7 +63,7 @@
 
 									<div class="checkbox">
 										<label> <input type="checkbox" name="rememberMe"
-											value="true" /> 记住密码
+													   value="true" /> 记住密码
 										</label>
 									</div>
 

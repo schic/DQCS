@@ -43,11 +43,12 @@ public class RewriteConfigurationProvider extends HttpConfigurationProvider {
                 .getContextPath() + "/login"));
 
         builder = addJoinRule(builder, "/login", "/login.jsf");
+        builder = addJoinRule(builder, "/home", "/home.jsf");
         builder = addJoinRule(builder, "/dashboard", "/dashboard.jsf");
         builder = addJoinRule(builder, "/scheduling", "/scheduling.jsf");
         builder = addJoinRule(builder, "/repository", "/repository.jsf");
         builder = addJoinRule(builder, "/datastores", "/datastores.jsf");
-        builder = addJoinRule(builder, "/referencedata","/referencedata.jsf"); 
+        builder = addJoinRule(builder, "/referencedata","/referencedata.jsf");
         builder = addJoinRule(builder, "/query", "/query.jsf");
 
         return builder;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans:beans xmlns="http://www.springframework.org/schema/security"
-	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			 xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns:context="http://www.springframework.org/schema/context"
+			 xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
@@ -34,6 +34,7 @@
 	<!-- Form based authentication for the web pages -->
 	<http realm="DataCleaner monitor">
 		<intercept-url pattern="/*.jsf" access="ROLE_USER" />
+		<intercept-url pattern="/home" access="ROLE_USER" />
 		<intercept-url pattern="/dashboard" access="ROLE_USER" />
 		<intercept-url pattern="/scheduling" access="ROLE_USER" />
 		<intercept-url pattern="/datastores" access="ROLE_USER" />
@@ -43,11 +44,11 @@
 
 		<http-basic />
 		<form-login login-page="/login" authentication-failure-url="/login?error=true" login-processing-url="/j_spring_security_check"
-			username-parameter="j_username" password-parameter="j_password"
-			default-target-url="/dashboard" />
+					username-parameter="j_username" password-parameter="j_password"
+					default-target-url="/home" />
 		<logout logout-url="/logout" />
 		<remember-me remember-me-parameter="rememberMe"
-			key="datacleaner.monitor.rememberMe" token-validity-seconds="31536000" />
+					 key="datacleaner.monitor.rememberMe" token-validity-seconds="31536000" />
 	</http>
 
 	<global-method-security jsr250-annotations="enabled" />
@@ -69,11 +70,11 @@
 	</user-service>
 
 	<beans:bean id="authoritiesMapper"
-		class="org.springframework.security.access.hierarchicalroles.RoleHierarchyAuthoritiesMapper">
+				class="org.springframework.security.access.hierarchicalroles.RoleHierarchyAuthoritiesMapper">
 		<beans:constructor-arg ref="roleHierarchy" />
 	</beans:bean>
 	<beans:bean id="roleHierarchy"
-		class="org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl">
+				class="org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl">
 		<beans:property name="hierarchy">
 			<beans:value>
 				ROLE_GOD>ROLE_ADMIN
@@ -93,7 +94,7 @@
 	</beans:bean>
 
 	<beans:bean name="tenantResolver" id="tenantResolver"
-		class="org.datacleaner.monitor.server.security.SingleTenantResolver">
+				class="org.datacleaner.monitor.server.security.SingleTenantResolver">
 		<beans:property name="tenantId" value="demo" />
 	</beans:bean>
 
