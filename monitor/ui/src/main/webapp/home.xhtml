@@ -7,61 +7,91 @@
 
 
 	<ui:define name="head">
-		<link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
-		<script src="/static/js/jquery-2.1.1.min.js"></script>
-		<script src="/static/js/bootstrap.min.js"></script>
-		<script src="/static/js/bootstrap-paginator.js"></script>
+		<meta charset="UTF-8"></meta>
+		<title>首页</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></link>
+		<link rel="stylesheet" href="./css/home.css"></link>
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://libs.baidu.com/jquery/1.3.2/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="./javascripts/home.js"></script>
 	</ui:define>
 
 	<ui:define name="content">
 		<div>
-			<div style="background-color: #2aabd2">
-				<div style="background-color: #2aabd2;width: 60%;float:left">
-					<span class="sp1">总体情况1</span><br/>
-					<span>任务总数</span>
-					<span>数据源</span>
-					<span>时间线分析</span>
+			<div style="background-color: #0080C0;width: 100%">
+				<div class="Row" style="background-color: #0080C0;width: 60%;float:left">
+					<p class="sp1">总体情况</p><br/>
+					<div class="Column">
+						<img src="images/u204.png" class="pc"/>
+						<span class="row1">任务总数</span><br/>
+						<span class="row1">#{tenantContext.jobNum}</span>
+					</div>
+
+					<div class="Column">
+						<img src="images/u204.png" class="pc"/>
+						<span class="row1">数据源</span><br/>
+						<span class="row1">#{jsfHelper.datastoresNum}</span>
+					</div>
+
+					<div class="Column">
+						<img src="images/u204.png" class="pc"/>
+						<span class="row1">时间线分析</span><br/>
+						<span class="row1">#{tenantContext.timelineFolder.groupsNum}</span>
+					</div>
+
 				</div>
-				<div style="background-color: #2aabd2;width: 39%;float:left;margin-left: 4px">
-					<span class="sp1">今日运行</span><br/>
-					<span>运行任务</span>
-					<span>运行结果</span>
+				<div class="Row" style="background-color: #0080C0;width: 39%;float:right;">
+					<p class="sp1">今日运行</p><br/>
+					<div class="Column">
+						<img src="images/u204.png" class="pc"/>
+						<span class="row1">运行任务</span><br/>
+						<span class="row1">#{tenantContext.resultFolder.filesNum}</span>
+					</div>
+
+					<div class="Column">
+						<img src="images/u204.png" class="pc"/>
+						<span class="row1">运行结果</span><br/>
+						<span class="row1">#{tenantContext.resultFolder.filesNumTd}</span>
+					</div>
+
 				</div>
 			</div>
-			<div>
-				<span>重点任务总览</span>
+			<div style="background-color: #0080C0;margin-top: 10px;clear:both">
+				<span></span>
 			</div>
-			<div>
-				<span>任务执行情况</span>
-				<div id="example" style="text-align: center"> <ul id="pageLimit"></ul> </div>
+			<div style="background-color: #0080C0;margin-top: 20px;clear:both;height: 200px">
+				<p class="sp1">重点任务总览</p>
+				<!--<p class="sp1">更多</p>-->
+				<input type="submit" value="添加" class="inp"/>
+				<div>
+					<input type="submit" value="更多..." class="inp2"/>
+				</div>
+
+			</div>
+			<div style="background-color: #0080C0;margin-top: 10px;clear:both">
+				<p class="sp1">任务执行情况</p>
+				<div class="ui-tab">
+					<!-- 具体消息内容 -->
+				</div>
+				<div class="paging">
+					<!-- 分页布局-->
+					<table>
+						<tr class="page-font">
+							<td><input type="submit" value="首页" width="24px" height="25px" class="firstPage" onclick="page_click(this)" /></td>
+							<td><input type="submit" value="下一页" width="27px" height="22px" class="beforePage" onclick="page_click(this)" /></td>
+							<td>|第<input type="button" class="currentPage" value="1" readonly="readonly"/>页</td>
+							<td>共<input type="button" class="totalPage" value="1" readonly="readonly"/>页|</td>
+							<td><input type="submit" value="上一页" width="27px" height="26px" class="nextPage" onclick="page_click(this)" /></td>
+							<td><input type="submit" value="尾页" width="27px" height="24px" class="lastPage" onclick="page_click(this)" /></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
-		<script>
-            $('#pageLimit').bootstrapPaginator({
-                currentPage: 1,//当前的请求页面。
-                totalPages: 20,//一共多少页。
-                size:"normal",//应该是页眉的大小。
-                bootstrapMajorVersion: 3,//bootstrap的版本要求。
-                alignment:"right",
-                numberOfPages:5,//一页列出多少数据。
-                itemTexts: function (type, page, current) {//如下的代码是将页眉显示的中文显示我们自定义的中文。
-                    switch (type) {
-                        case "first": return "首页";
-                        case "prev": return "上一页";
-                        case "next": return "下一页";
-                        case "last": return "末页";
-                        case "page": return page;
-                    }
-                }
-            });
-		</script>
 
-		<style>
-			.sp1{
-				color: white;
-				font-weight:bold
-			}
-		</style>
+
+
 	</ui:define>
 
 

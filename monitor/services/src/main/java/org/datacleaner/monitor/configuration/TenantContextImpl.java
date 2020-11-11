@@ -34,6 +34,7 @@ import org.datacleaner.monitor.job.JobEngine;
 import org.datacleaner.monitor.job.JobEngineManager;
 import org.datacleaner.monitor.shared.model.DatastoreIdentifier;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
+import org.datacleaner.monitor.shared.model.TenantIdentifier;
 import org.datacleaner.repository.Repository;
 import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
@@ -143,6 +144,9 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
             }
             throw new IllegalStateException(e);
         }
+    }
+    public int getJobNum() throws Exception {
+        return  getJobs().size();
     }
 
     @Override

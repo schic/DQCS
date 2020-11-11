@@ -1,0 +1,74 @@
+
+.sp1{
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+}
+.pc{
+    width: 40px;height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+.Column
+{
+    display: table-cell;
+    width: 10%;
+    /*background-color: red; !*Optional*!*/
+}
+.Row
+{
+    /*display: table;*/
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.row1{
+    color: white;
+}
+.inp{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;border:0px;
+    background-image: -webkit-linear-gradient(top,#C3D7E1,#168AC4);
+    outline:none;
+    cursor:pointer;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.inp2{
+    /*width: 40px;*/
+    /*height: 40px;*/
+    border:0px;
+    background-color: #0080C0;
+    outline:none;
+    cursor:pointer;
+    float: right;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+.title {
+    padding:5px;
+    background: #F7F7F7;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    color: #616161;
+    font-size: 16px;
+}
+
+.paging {
+    width: 1660px;
+    height: 40px;
+    background: #EFF3F8;
+    padding-top: 8px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+.page-font {
+    color: #292929;
+    font-size: 14px;
+}

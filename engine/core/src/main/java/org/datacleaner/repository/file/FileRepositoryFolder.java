@@ -22,7 +22,10 @@ package org.datacleaner.repository.file;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -107,6 +110,11 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
                 .map(directories, directory -> (RepositoryFolder) getChildCache().getUnchecked(directory));
     }
 
+    public int getGroupsNum(){
+        int num = this._file.list().length;
+        return num;
+    }
+
     @Override
     public RepositoryFile getLatestFile(final String prefix, final String extension) {
         final FileFilter baseFilter = createFileFilter(prefix, extension);
@@ -148,6 +156,55 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
     @Override
     public List<RepositoryFile> getFiles() {
         return getFiles(null, null);
+    }
+
+    public int getFilesNum(){
+        int num = 0;
+        int cf = 0;
+        List td = new ArrayList();
+        List<RepositoryFile> list = getFiles(null, null);
+        for (int i = 0;i<list.size();i++){
+            if (list.get(i).toString().endsWith("result.dat")){
+                String string = list.get(i).toString();
+                String date1 = string.substring(string.indexOf("-")+1,string.indexOf("-")+14);
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+                long date_temp = Long.valueOf(date1);
+                Date date = new Date();
+                String time = sdf.format(date);
+                date.setTime(date_temp);
+                if (new SimpleDateFormat().format(date).substring(0,8).equals(time.substring(2,10))){
+                    td.add(list.get(i).toString().substring(0,string.indexOf("-")));
+                }
+            }
+        }
+        for (int i = 0;i < td.size()-1;i ++){
+            for (int j = i + 1;j < td.size();j++){
+                if (td.get(i).equals(td.get(j))){
+                    cf ++;
+                }
+            }
+        }
+        return td.size()-cf+1;
+    }
+
+    public int getFilesNumTd(){
+        int num = 0;
+        List<RepositoryFile> list = getFiles(null, null);
+        for (int i = 0;i<list.size();i++){
+            if (list.get(i).toString().endsWith("result.dat")){
+                String string = list.get(i).toString();
+                String date1 = string.substring(string.indexOf("-")+1,string.indexOf("-")+14);
+                SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+                long date_temp = Long.valueOf(date1);
+                Date date = new Date();
+                String time = sdf.format(date);
+                date.setTime(date_temp);
+                if (new SimpleDateFormat().format(date).substring(0,8).equals(time.substring(2,10))){
+                    num++;
+                }
+            }
+        }
+        return num;
     }
 
     @Override

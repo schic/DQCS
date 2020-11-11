@@ -1,16 +1,16 @@
 /**
  * DataCleaner (community edition)
  * Copyright (C) 2014 Neopost - Customer Information Management
- *
+ * <p>
  * This copyrighted material is made available to anyone wishing to use, modify,
  * copy, or redistribute it subject to the terms and conditions of the GNU
  * Lesser General Public License, as published by the Free Software Foundation.
- *
+ * <p>
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
  * for more details.
- *
+ * <p>
  * You should have received a copy of the GNU Lesser General Public License
  * along with this distribution; if not, write to:
  * Free Software Foundation, Inc.
@@ -43,6 +43,8 @@ public class JsfHelper {
     @Autowired
     User user;
 
+
+
     public String getVersion() {
         return Version.getDistributionVersion();
     }
@@ -54,6 +56,11 @@ public class JsfHelper {
         DatastoreBeanWrapper[] datastoreBeanWrapper = prepareDatastoreWrappers(datastoreCatalog);
         return datastoreBeanWrapper;
     }
+
+    public int getDatastoresNum() {
+        return getDatastores().length;
+    }
+
 
     private DatastoreBeanWrapper[] prepareDatastoreWrappers(DatastoreCatalog datastoreCatalog) {
         final String[] datastoreNames = datastoreCatalog.getDatastoreNames();

@@ -53,6 +53,7 @@
 
 			<div class="datastoreList">
 				<ui:repeat var="ds" value="#{jsfHelper.datastores}">
+
 					<div
 						class="datastore #{ds.fileDatastore ? 'FileDatastore' : ''} #{ds.simpleClassName}">
 						<div class="btn-group right" role="group">

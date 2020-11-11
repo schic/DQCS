@@ -18,7 +18,7 @@
 		<li
 				class="#{ (view.viewId == '/dashboard.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="dashboard" styleClass="DashboardTabTitle">
-			<h:outputText value="仪表板" />
+			<h:outputText value="仪表盘" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>
