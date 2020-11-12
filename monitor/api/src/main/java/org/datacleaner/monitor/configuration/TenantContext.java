@@ -22,6 +22,7 @@ package org.datacleaner.monitor.configuration;
 import java.util.List;
 import java.util.Map;
 
+import com.mongodb.util.JSON;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.connection.DatastoreCatalog;
@@ -51,6 +52,7 @@ public interface TenantContext {
      * @return
      */
     public List<JobIdentifier> getJobs();
+    public String getJobsJson();
 
     /**
      * Gets a particular job by it's name.

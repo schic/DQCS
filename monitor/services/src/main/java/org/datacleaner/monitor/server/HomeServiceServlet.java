@@ -19,11 +19,7 @@
  */
 package org.datacleaner.monitor.server;
 
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.ServletException;
-
+import org.datacleaner.monitor.home.HomeService;
 import org.datacleaner.monitor.scheduling.SchedulingService;
 import org.datacleaner.monitor.scheduling.model.ExecutionIdentifier;
 import org.datacleaner.monitor.scheduling.model.ExecutionLog;
@@ -34,21 +30,22 @@ import org.datacleaner.monitor.shared.model.TenantIdentifier;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
 
+import javax.servlet.ServletException;
+import java.util.List;
+import java.util.Map;
+
 /**
  * Servlet wrapper/proxy for the {@link SchedulingService}. Passes all service
  * requests on to a delegate, see {@link #setDelegate(SchedulingService)} and
  * {@link #getDelegate()}.
  */
-public class SchedulingServiceServlet extends SecureGwtServlet implements SchedulingService {
+public class HomeServiceServlet  implements HomeService {
 
     private static final long serialVersionUID = 1L;
 
     private SchedulingService _delegate;
 
-    @Override
     public void init() throws ServletException {
-        super.init();
-
         if (_delegate == null) {
             WebApplicationContext applicationContext = ContextLoader.getCurrentWebApplicationContext();
             SchedulingService delegate = applicationContext.getBean(SchedulingService.class);
@@ -130,5 +127,4 @@ public class SchedulingServiceServlet extends SecureGwtServlet implements Schedu
 	public String getServerDate() {
 		return _delegate.getServerDate();
 	}
-
 }

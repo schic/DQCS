@@ -1,16 +1,16 @@
 /**
  * DataCleaner (community edition)
  * Copyright (C) 2014 Neopost - Customer Information Management
- *
+ * <p>
  * This copyrighted material is made available to anyone wishing to use, modify,
  * copy, or redistribute it subject to the terms and conditions of the GNU
  * Lesser General Public License, as published by the Free Software Foundation.
- *
+ * <p>
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
  * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
  * for more details.
- *
+ * <p>
  * You should have received a copy of the GNU Lesser General Public License
  * along with this distribution; if not, write to:
  * Free Software Foundation, Inc.
@@ -19,32 +19,46 @@
  */
 package org.datacleaner.monitor.configuration;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.io.InputStream;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
+import com.google.gwt.core.client.GWT;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.configuration.DataCleanerEnvironment;
 import org.datacleaner.configuration.InjectionManagerFactory;
 import org.datacleaner.monitor.job.JobContext;
 import org.datacleaner.monitor.job.JobEngine;
 import org.datacleaner.monitor.job.JobEngineManager;
-import org.datacleaner.monitor.shared.model.DatastoreIdentifier;
-import org.datacleaner.monitor.shared.model.JobIdentifier;
-import org.datacleaner.monitor.shared.model.TenantIdentifier;
+import org.datacleaner.monitor.scheduling.SchedulingService;
+import org.datacleaner.monitor.scheduling.SchedulingServiceAsync;
+import org.datacleaner.monitor.scheduling.model.ExecutionIdentifier;
+import org.datacleaner.monitor.scheduling.model.ExecutionLog;
+import org.datacleaner.monitor.scheduling.model.ExecutionStatus;
+import org.datacleaner.monitor.server.jaxb.JaxbException;
+import org.datacleaner.monitor.server.jaxb.JaxbExecutionLogReader;
+import org.datacleaner.monitor.shared.ClientConfig;
+import org.datacleaner.monitor.shared.DictionaryClientConfig;
+import org.datacleaner.monitor.shared.model.*;
 import org.datacleaner.repository.Repository;
 import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
+import org.datacleaner.util.FileFilters;
 import org.datacleaner.util.StringUtils;
+import org.eclipse.jetty.util.ajax.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.ContextLoader;
+import org.springframework.web.context.WebApplicationContext;
+
+import javax.annotation.security.RolesAllowed;
 
 /**
  * Default implementation of {@link TenantContext}.
@@ -59,6 +73,8 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
     private final ComponentStore _componentStore;
     private final JobEngineManager _jobEngineManager;
     private final LoadingCache<JobIdentifier, JobContext> _jobCache;
+    @Autowired
+    TenantContextFactory _tenantContextFactory;
 
     /**
      * Constructs the {@link TenantContext}.
@@ -73,7 +89,7 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
      * @param jobEngineManager
      */
     public TenantContextImpl(String tenantId, Repository repository, DataCleanerEnvironment environment,
-            JobEngineManager jobEngineManager) {
+                             JobEngineManager jobEngineManager) {
         _tenantId = tenantId;
         _repository = repository;
         _jobEngineManager = jobEngineManager;
@@ -126,6 +142,60 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
     }
 
     @Override
+    public String getJobsJson() {
+        final List<JobIdentifier> jobs = new ArrayList<JobIdentifier>();
+
+        final Collection<JobEngine<?>> jobEngines = _jobEngineManager.getJobEngines();
+        for (JobEngine<?> jobEngine : jobEngines) {
+            final List<JobIdentifier> jobEngineJobs = jobEngine.getJobs(this);
+            jobs.addAll(jobEngineJobs);
+        }
+
+        WebApplicationContext applicationContext = ContextLoader.getCurrentWebApplicationContext();
+        SchedulingService delegate = applicationContext.getBean(SchedulingService.class);
+/*
+         TenantContext tenantContext = _tenantContextFactory.getContext(getTenantId());
+*/
+        // ClientConfig clientConfig = new DictionaryClientConfig();
+
+
+        TenantIdentifier tenantContext = new TenantIdentifier(getTenantId());
+        ExecutionLog executionLog;
+        List jobIdentifiers = new ArrayList<>();
+
+        for (JobIdentifier jobIdentifier : jobs) {
+            List<ExecutionIdentifier> Executions = delegate.getAllExecutions(tenantContext, jobIdentifier);
+            for (ExecutionIdentifier ExecutionIdentifier : Executions) {
+                executionLog = delegate.getExecution(tenantContext, ExecutionIdentifier);
+                if (executionLog != null) {
+                    Map map = new HashMap();
+                    if(jobIdentifier.getName() != null){
+                        map.put("name", jobIdentifier.getName());
+                    } if(executionLog.getJobEndDate() != null){
+                        map.put("endTime", executionLog.getJobEndDate());
+                    } if(executionLog.getJobBeginDate() != null){
+                        map.put("beginTime", executionLog.getJobBeginDate());
+                    } if(executionLog.getExecutionStatus().name() != null){
+                        map.put("status", executionLog.getExecutionStatus().name());
+                    } if((executionLog.getJobEndDate() != null) && (executionLog.getJobBeginDate() != null)){
+                        map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
+                    }
+//
+//                    map.put("endTime", executionLog.getJobEndDate());
+//                    map.put("beginTime", executionLog.getJobBeginDate());
+//                    map.put("status", executionLog.getExecutionStatus().name());
+//                    map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
+
+                    jobIdentifiers.add(map);
+                }
+            }
+        }
+
+        return JSON.toString(jobIdentifiers);
+    }
+
+
+    @Override
     public JobContext getJob(JobIdentifier jobIdentifier) throws IllegalArgumentException {
         if (jobIdentifier == null) {
             throw new IllegalArgumentException("JobIdentifier cannot be null");
@@ -145,8 +215,9 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
             throw new IllegalStateException(e);
         }
     }
+
     public int getJobNum() throws Exception {
-        return  getJobs().size();
+        return getJobs().size();
     }
 
     @Override
@@ -192,7 +263,6 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
     public RepositoryFile getConfigurationFile() {
         return _configurationCache.getConfigurationFile();
     }
-
 
 
     @Override

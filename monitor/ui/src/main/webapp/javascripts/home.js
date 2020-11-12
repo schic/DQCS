@@ -1,7 +1,49 @@
-var totalPage = 10; //一共多少页
+/*var totalPage = 10; //一共多少页
 var currentPage = 1;//当前页码
-var information_lenght = []
+var information_lenght = []*/
+$(function(){
+    //根据窗口调整表格高度
+    $(window).resize(function() {
+        $('#mytab').bootstrapTable('resetView', {
+            height: tableHeight()
+        })
+    })
+    //bootstrapTable组件
 
+
+})
+
+function tableHeight() {
+    return $(window).height() - 140;
+}
+//列表行‘操作’按钮
+function AddFunctionAlty(value, row, index) {
+    return '<button id="TableView" type="button" class="btn btn-default">查看</button>'
+
+}
+//请求服务数据时所传查询参数
+function queryParams(params){
+    return{
+        pageSize: params.limit,
+        pageNum:params.pageNumber,
+        name:$('#searchName').val()
+    }
+}
+//点击新增按钮事件
+window.operateEvents = {
+    "click #TableView": function (e, value, row, index) {
+        window.location.href = "/getOneCadreInfo/" + row.id;//跳转新增页面
+    }
+}
+
+
+//查询按钮事件
+$('#search_btn').click(function () {
+    $('#mytab').bootstrapTable('refresh', {url: '/getOneCadreInfo/list'});//url为后台action
+})
+
+
+/*
 //前端获取后台数据并呈现方法
 function information_display() {
     var data = [
@@ -78,4 +120,4 @@ function page_click(item) {
         pageNumber = parseInt($(".currentPage").attr("value"));
         $(".currentPage").attr("value", totalPage)
     }
-}
+}*/

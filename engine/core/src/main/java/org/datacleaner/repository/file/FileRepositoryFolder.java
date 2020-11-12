@@ -23,10 +23,7 @@ import java.io.File;
 import java.io.FileFilter;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.metamodel.util.Action;
@@ -177,6 +174,8 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
                 }
             }
         }
+        System.out.println(td);
+
         for (int i = 0;i < td.size()-1;i ++){
             for (int j = i + 1;j < td.size();j++){
                 if (td.get(i).equals(td.get(j))){
@@ -184,7 +183,10 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
                 }
             }
         }
-        return td.size()-cf+1;
+
+        Set stringSet=new HashSet<>(td);
+
+        return stringSet.size();
     }
 
     public int getFilesNumTd(){
