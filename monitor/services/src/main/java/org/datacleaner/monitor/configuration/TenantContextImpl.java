@@ -20,6 +20,7 @@
 package org.datacleaner.monitor.configuration;
 
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -162,7 +163,7 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
         TenantIdentifier tenantContext = new TenantIdentifier(getTenantId());
         ExecutionLog executionLog;
         List jobIdentifiers = new ArrayList<>();
-
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         for (JobIdentifier jobIdentifier : jobs) {
             List<ExecutionIdentifier> Executions = delegate.getAllExecutions(tenantContext, jobIdentifier);
             for (ExecutionIdentifier ExecutionIdentifier : Executions) {
@@ -172,9 +173,11 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
                     if(jobIdentifier.getName() != null){
                         map.put("name", jobIdentifier.getName());
                     } if(executionLog.getJobEndDate() != null){
-                        map.put("endTime", executionLog.getJobEndDate());
+                        String endDate = formatter.format(executionLog.getJobEndDate());
+                        map.put("endTime", endDate);
                     } if(executionLog.getJobBeginDate() != null){
-                        map.put("beginTime", executionLog.getJobBeginDate());
+                        String beginDate = formatter.format(executionLog.getJobBeginDate());
+                        map.put("beginTime", beginDate);
                     } if(executionLog.getExecutionStatus().name() != null){
                         map.put("status", executionLog.getExecutionStatus().name());
                     } if((executionLog.getJobEndDate() != null) && (executionLog.getJobBeginDate() != null)){

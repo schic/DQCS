@@ -3,6 +3,8 @@
     color: white;
     font-weight:bold;
     font-size: 20px;
+    background-color: #0080C0;
+    margin-top: -0.5px;
 }
 .pc{
     width: 40px;height: 40px;
@@ -23,7 +25,7 @@
     border-spacing: 10px; /*Optional*/
 }
 .row1{
-    color: white;
+    color: black;
 }
 .inp{
     width: 80px;

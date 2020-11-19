@@ -15,7 +15,7 @@
 		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 -->
 		<!--<script src="https://libs.baidu.com/jquery/1.3.2/jquery.min.js"></script>-->
-		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 		<link rel="stylesheet" href="./stylesheets/bootstrap-table.min.css"/>
 		<script src="./javascripts/jquery-1.11.2.min.js"></script>
 		<script src="./javascripts/bootstrap-table.min.js"></script>
@@ -45,27 +45,49 @@
                                 {
                                     title : '任务名称',
                                     field : 'name',
-
+									halign :'center',
+									cellStyle(){
+										return{css:{"text-align": "center"}}
+									}
                                 },
                                 {
                                     title : '最近执行状态',
                                     field : 'status',
+									halign :'center',
+									cellStyle:function(value,row,index){
+										if (value=="SUCCESS"){
+											return {css:{"background-color":"green","text-align": "center"}}
+										}else if(value=="RUNNING"){
+											return {css:{"background-color":"#0080C0","text-align": "center"}}
+										}else {
+											return {css:{"background-color":"red","text-align": "center"}}
+										}
 
+									}
                                 },
                                 {
                                     title : '最近开始时间',
                                     field : 'beginTime',
-
+									halign :'center',
+									cellStyle(){
+                                    	return{css:{"text-align": "center"}}
+									}
                                 },
                                 {
                                     title : '最近结束时间',
                                     field : 'endTime',
-
+									halign :'center',
+									cellStyle(){
+										return{css:{"text-align": "center"}}
+									}
                                 },
                                 {
                                     title : '耗时（ms）',
                                     field : 'cost',
-
+									halign :'center',
+									cellStyle(){
+										return{css:{"text-align": "center"}}
+									}
                                 }
 							]
 						});
@@ -76,8 +98,8 @@
 
 	<ui:define name="content">
 		<div>
-			<div style="background-color: #0080C0;width: 100%">
-				<div class="Row" style="background-color: #0080C0;width: 60%;float:left">
+			<div style="width: 100%;margin-top: 40px">
+				<div class="Row" style="border:1px #000000   solid;width: 60%;float:left">
 					<p class="sp1">总体情况</p><br/>
 					<div class="Column">
 						<img src="images/u204.png" class="pc"/>
@@ -98,7 +120,7 @@
 					</div>
 
 				</div>
-				<div class="Row" style="background-color: #0080C0;width: 39%;float:right;">
+				<div class="Row" style="border:1px #000000   solid;width: 39%;float:right;">
 					<p class="sp1">今日运行</p><br/>
 					<div class="Column">
 						<img src="images/u204.png" class="pc"/>
@@ -117,21 +139,21 @@
 			<div style="background-color: #0080C0;margin-top: 10px;clear:both">
 				<span></span>
 			</div>
-			<div style="background-color: #0080C0;margin-top: 20px;clear:both;height: 200px">
+			<!--<div style="background-color: #0080C0;margin-top: 20px;clear:both;height: 200px">
 				<p class="sp1">重点任务总览</p>
-				<!--<p class="sp1">更多</p>-->
+				&lt;!&ndash;<p class="sp1">更多</p>&ndash;&gt;
 				<input type="submit" value="添加" class="inp"/>
 				<div>
 					<input type="submit" value="更多..." class="inp2" onclick="location.href='more.xhtml'"/>
 				</div>
 
-			</div>
+			</div>-->
 			<div id="RootPanelTarget"></div>
 
 
 
 <input id="jobsJson" value="#{tenantContext.jobsJson}" style="display: none"></input>
-			<div style="background-color: #0080C0;margin-top: 10px;clear:both;height: 680px">
+			<div style="background-color: #0080C0;margin-top: 60px;clear:both;height: 520px">
 
 				<p class="sp1">任务执行情况</p>
 

@@ -8,7 +8,7 @@
 		<li
 				class="#{ (view.viewId == '/home.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="home" styleClass="DashboardTabTitle">
-			<h:outputText value="DataCleaner监视器" />
+			<h:outputText value="DataCleaner首页" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>
