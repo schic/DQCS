@@ -58,6 +58,7 @@ import com.google.common.cache.LoadingCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
+import sun.security.ssl.Record;
 
 import javax.annotation.security.RolesAllowed;
 
@@ -142,8 +143,56 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
         return jobs;
     }
 
+    public static class JobIdentifiers {
+        private String name;
+        private String endTime;
+        private String beginTime;
+        private String status;
+        private String cost;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getEndTime() {
+            return endTime;
+        }
+
+        public void setEndTime(String endTime) {
+            this.endTime = endTime;
+        }
+
+        public String getBeginTime() {
+            return beginTime;
+        }
+
+        public void setBeginTime(String beginTime) {
+            this.beginTime = beginTime;
+        }
+
+        public String getStatus() {
+            return status;
+        }
+
+        public void setStatus(String status) {
+            this.status = status;
+        }
+
+        public String getCost() {
+            return cost;
+        }
+
+        public void setCost(String cost) {
+            this.cost = cost;
+        }
+    }
+
     @Override
-    public String getJobsJson() {
+    public String getJobsJson() throws Exception{
         final List<JobIdentifier> jobs = new ArrayList<JobIdentifier>();
 
         final Collection<JobEngine<?>> jobEngines = _jobEngineManager.getJobEngines();
@@ -170,18 +219,24 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
                 executionLog = delegate.getExecution(tenantContext, ExecutionIdentifier);
                 if (executionLog != null) {
                     Map map = new HashMap();
+                    JobIdentifiers jobIdentifiers1 = new JobIdentifiers();
                     if(jobIdentifier.getName() != null){
                         map.put("name", jobIdentifier.getName());
+                        jobIdentifiers1.setName(jobIdentifier.getName());
                     } if(executionLog.getJobEndDate() != null){
                         String endDate = formatter.format(executionLog.getJobEndDate());
                         map.put("endTime", endDate);
+                        jobIdentifiers1.setEndTime(endDate);
                     } if(executionLog.getJobBeginDate() != null){
                         String beginDate = formatter.format(executionLog.getJobBeginDate());
                         map.put("beginTime", beginDate);
+                        jobIdentifiers1.setBeginTime(beginDate);
                     } if(executionLog.getExecutionStatus().name() != null){
                         map.put("status", executionLog.getExecutionStatus().name());
+                        jobIdentifiers1.setStatus(executionLog.getExecutionStatus().name());
                     } if((executionLog.getJobEndDate() != null) && (executionLog.getJobBeginDate() != null)){
                         map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
+                        jobIdentifiers1.setCost(String.valueOf(executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime()));
                     }
 //
 //                    map.put("endTime", executionLog.getJobEndDate());
@@ -193,9 +248,22 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
                 }
             }
         }
+        for(int i=0;i<jobIdentifiers.size();i++){
+            for(int j=0;j<jobIdentifiers.size()-i-1;j++){
+                Map map = (Map) jobIdentifiers.get(j);
+                Map map2 = (Map) jobIdentifiers.get(j+1);
+                if(formatter.parse(map.get("beginTime").toString()).getTime() < formatter.parse(map2.get("beginTime").toString()).getTime()){
+                    Object o = jobIdentifiers.get(j);
+                    jobIdentifiers.set(j, jobIdentifiers.get(j+1));
+                    jobIdentifiers.set(j+1, o);
+                }
+            }
+        }
 
-        return JSON.toString(jobIdentifiers);
+
+            return JSON.toString(jobIdentifiers);
     }
+
 
 
     @Override

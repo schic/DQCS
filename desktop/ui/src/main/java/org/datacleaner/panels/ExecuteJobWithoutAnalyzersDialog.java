@@ -111,7 +111,7 @@ public class ExecuteJobWithoutAnalyzersDialog extends AbstractDialog {
 
         final DCLabel text3 = DCLabel.darkMultiLine("... Or cancel and modify the job?");
 
-        final JButton cancelButton = createButton("Cancel", IconUtils.ACTION_REMOVE_DARK);
+        final JButton cancelButton = createButton("取消", IconUtils.ACTION_REMOVE_DARK);
         cancelButton.addActionListener(e -> close());
 
         final DCPanel panel = new DCPanel();

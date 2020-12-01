@@ -129,16 +129,16 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         final FlowPanel panel = new FlowPanel();
         panel.addStyleName("HorizontalAxisOptionPanel");
 
-        panel.add(new HeadingLabel("Horizontal axis"));
+        panel.add(new HeadingLabel("水平轴"));
 
-        panel.add(new Label("Please select the appropriate time period for the horizontal axis."));
+        panel.add(new Label("请为横轴选择适当的时间段。"));
 
         panel.add(_timelineAllDatesRadio);
-        panel.add(createTimelineRadioSpecPanel(new Label("All observations will be included")));
+        panel.add(createTimelineRadioSpecPanel(new Label("所有观察结果都将包括在内")));
 
         panel.add(_timelineFromToRadio);
-        panel.add(createTimelineRadioSpecPanel(new Label("Begin date: "), _beginDatePicker));
-        panel.add(createTimelineRadioSpecPanel(new Label("End date: "), _endDatePicker));
+        panel.add(createTimelineRadioSpecPanel(new Label("开始日期: "), _beginDatePicker));
+        panel.add(createTimelineRadioSpecPanel(new Label("结束日期: "), _endDatePicker));
 
         panel.add(_timelineLastDaysRadio);
         panel.add(createTimelineRadioSpecPanel(_latestNumberOfDaysBox, new Label(" days")));
@@ -159,14 +159,14 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         final FlowPanel panel = new FlowPanel();
         panel.addStyleName("VerticalAxisOptionPanel");
 
-        panel.add(new HeadingLabel("Vertical axis"));
-        panel.add(new Label("Please select appropriate properties for the vertical axis layout."));
+        panel.add(new HeadingLabel("纵轴"));
+        panel.add(new Label("请为垂直轴布局选择适当的属性。"));
 
-        panel.add(createTimelineRadioSpecPanel(new Label("Height (pixels): "), _heightBox));
+        panel.add(createTimelineRadioSpecPanel(new Label("高度（像素）: "), _heightBox));
 
-        panel.add(createTimelineRadioSpecPanel(new Label("Maximum value: "), _maximumValue));
+        panel.add(createTimelineRadioSpecPanel(new Label("最大值: "), _maximumValue));
 
-        panel.add(createTimelineRadioSpecPanel(new Label("Minimum value: "), _minimumValueBox));
+        panel.add(createTimelineRadioSpecPanel(new Label("最小值: "), _minimumValueBox));
 
         panel.add(createTimelineRadioSpecPanel(_logScaleCheckBox));
 

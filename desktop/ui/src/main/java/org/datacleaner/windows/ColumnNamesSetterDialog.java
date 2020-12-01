@@ -87,8 +87,8 @@ public class ColumnNamesSetterDialog extends AbstractDialog {
             });
             _columnNamesTextFields.put(columnName, textField);
         }
-        _saveButton = WidgetFactory.createPrimaryButton("Save", IconUtils.ACTION_SAVE_BRIGHT);
-        _cancelButton = WidgetFactory.createDefaultButton("Cancel", IconUtils.ACTION_CANCEL);
+        _saveButton = WidgetFactory.createPrimaryButton("保存", IconUtils.ACTION_SAVE_BRIGHT);
+        _cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         _saveButton.addActionListener(e -> {
             // Update the value of column names list
             _columnNames = getNewColumnNames();

@@ -32,7 +32,8 @@
 -->
 		<script type="text/javascript">
 					$(document).ready(function() {
-					    console.log($("#jobsJson").val())
+					    console.log($.parseJSON($("#jobsJson").val()));
+
 						$('#mytab').bootstrapTable({
 							striped : false, //是否显示行间隔色
 							pageNumber : 1, //初始化加载第一页
@@ -102,19 +103,19 @@
 				<div class="Row" style="border:1px #000000   solid;width: 60%;float:left">
 					<p class="sp1">总体情况</p><br/>
 					<div class="Column">
-						<img src="images/u204.png" class="pc"/>
+						<img src="images/1.png" class="pc"/>
 						<span class="row1">任务总数</span><br/>
 						<span class="row1">#{tenantContext.jobNum}</span>
 					</div>
 
 					<div class="Column">
-						<img src="images/u204.png" class="pc"/>
+						<img src="images/2.png" class="pc"/>
 						<span class="row1">数据源</span><br/>
 						<span class="row1">#{jsfHelper.datastoresNum}</span>
 					</div>
 
 					<div class="Column">
-						<img src="images/u204.png" class="pc"/>
+						<img src="images/3.png" class="pc"/>
 						<span class="row1">时间线分析</span><br/>
 						<span class="row1">#{tenantContext.timelineFolder.groupsNum}</span>
 					</div>
@@ -123,13 +124,13 @@
 				<div class="Row" style="border:1px #000000   solid;width: 39%;float:right;">
 					<p class="sp1">今日运行</p><br/>
 					<div class="Column">
-						<img src="images/u204.png" class="pc"/>
+						<img src="images/4.png" class="pc"/>
 						<span class="row1">运行任务</span><br/>
 						<span class="row1">#{tenantContext.resultFolder.filesNum}</span>
 					</div>
 
 					<div class="Column">
-						<img src="images/u204.png" class="pc"/>
+						<img src="images/5.png" class="pc"/>
 						<span class="row1">运行结果</span><br/>
 						<span class="row1">#{tenantContext.resultFolder.filesNumTd}</span>
 					</div>
@@ -153,7 +154,7 @@
 
 
 <input id="jobsJson" value="#{tenantContext.jobsJson}" style="display: none"></input>
-			<div style="background-color: #0080C0;margin-top: 60px;clear:both;height: 520px">
+			<div style="background-color: #0080C0;margin-top: 50px;clear:both;height: 520px">
 
 				<p class="sp1">任务执行情况</p>
 

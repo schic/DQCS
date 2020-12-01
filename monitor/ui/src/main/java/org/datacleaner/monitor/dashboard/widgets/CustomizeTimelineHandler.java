@@ -105,8 +105,8 @@ public class CustomizeTimelineHandler implements ClickHandler {
                 .getChartOptions());
 
         final TabPanel tabPanel = new TabPanel();
-        tabPanel.add(_customizeMetricsPanel, "Metrics");
-        tabPanel.add(_customizeChartOptionsPanel, "Chart options");
+        tabPanel.add(_customizeMetricsPanel, "指标");
+        tabPanel.add(_customizeChartOptionsPanel, "图表选项");
         tabPanel.selectTab(0);
 
         return tabPanel;

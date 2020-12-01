@@ -52,7 +52,7 @@ public interface TenantContext {
      * @return
      */
     public List<JobIdentifier> getJobs();
-    public String getJobsJson();
+    public String getJobsJson() throws Exception;
 
     /**
      * Gets a particular job by it's name.

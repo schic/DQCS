@@ -85,7 +85,7 @@ public class TimelinePanel extends FlowPanel {
         _deleteButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                final boolean confirmation = Window.confirm("Are you sure you wish to delete this timeline?");
+                final boolean confirmation = Window.confirm("是否确实要删除此时间线？");
                 if (confirmation) {
                     if (_timelineIdentifier != null) {
                         _service.removeTimeline(_tenant, _timelineIdentifier, new DCAsyncCallback<Boolean>() {
@@ -212,7 +212,7 @@ public class TimelinePanel extends FlowPanel {
     private FlowPanel createButtonPanel() {
         final Button customizeButton = DCButtons.defaultButton("glyphicon-cog", null);
         customizeButton.setVisible(_isDashboardEditor);
-        customizeButton.setTitle("Customize timeline");
+        customizeButton.setTitle("自定义时间线");
         customizeButton.addClickHandler(new CustomizeTimelineHandler(_service, this));
 
         final Button copyButton = DCButtons.defaultButton("glyphicon-duplicate", null);

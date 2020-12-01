@@ -80,8 +80,8 @@ public class HdfsServerAddressDialog extends JComponent {
             _portField.setText(Integer.toString(port));
         }
 
-        _okButton = new JButton("OK");
-        _cancelButton = new JButton("Cancel");
+        _okButton = new JButton("同意");
+        _cancelButton = new JButton("取消");
 
         setLayout(new VerticalLayout(2));
         final DCPanel propertiesPanel = new DCPanel();

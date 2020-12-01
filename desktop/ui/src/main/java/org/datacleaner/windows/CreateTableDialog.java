@@ -204,7 +204,7 @@ public class CreateTableDialog extends AbstractDialog {
             CreateTableDialog.this.close();
         });
 
-        final JButton cancelButton = WidgetFactory.createDefaultButton("Cancel", IconUtils.ACTION_CANCEL);
+        final JButton cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         cancelButton.addActionListener(e -> CreateTableDialog.this.close());
 
         final JButton addColumnButton = WidgetFactory.createSmallButton("Add column", IconUtils.ACTION_ADD_DARK);

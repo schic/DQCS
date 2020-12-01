@@ -95,7 +95,7 @@ public class DirectConnectionHadoopClusterDialog extends AbstractDialog {
             }
         });
 
-        _cancelButton = WidgetFactory.createDefaultButton("Cancel", IconUtils.ACTION_CANCEL);
+        _cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         _cancelButton.addActionListener(e -> DirectConnectionHadoopClusterDialog.this.close());
 
         if (directConnection != null) {

@@ -96,7 +96,7 @@ public class ReorderColumnsActionListener implements ActionListener {
             dialog.dispose();
         });
 
-        final JButton cancelButton = WidgetFactory.createDefaultButton("Cancel", IconUtils.ACTION_CANCEL);
+        final JButton cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         cancelButton.addActionListener(e1 -> dialog.dispose());
 
         final DCPanel buttonPanel = DCPanel.flow(Alignment.CENTER, saveButton, cancelButton);

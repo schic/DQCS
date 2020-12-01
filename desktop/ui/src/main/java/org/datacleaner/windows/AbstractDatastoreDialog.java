@@ -97,7 +97,7 @@ public abstract class AbstractDatastoreDialog<D extends Datastore> extends Abstr
             dispose();
         });
 
-        _cancelButton = WidgetFactory.createDefaultButton("Cancel", IconUtils.ACTION_CANCEL);
+        _cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         _cancelButton.addActionListener(e -> AbstractDatastoreDialog.this.close());
 
         if (!DEFAULT_BANNER_IMAGE.equals(getDatastoreIconPath())) {

@@ -100,7 +100,7 @@ public class TableDefinitionDialog extends AbstractDialog {
             TableDefinitionDialog.this.dispose();
         });
 
-        final JButton cancelButton = WidgetFactory.createDefaultButton("Cancel", IconUtils.ACTION_CANCEL);
+        final JButton cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         cancelButton.addActionListener(e -> TableDefinitionDialog.this.dispose());
 
         final DCPanel buttonPanel = DCPanel.flow(Alignment.CENTER, saveButton, cancelButton);

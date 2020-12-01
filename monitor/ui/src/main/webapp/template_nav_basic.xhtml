@@ -8,7 +8,7 @@
 		<li
 				class="#{ (view.viewId == '/home.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="home" styleClass="DashboardTabTitle">
-			<h:outputText value="DataCleaner首页" />
+			<h:outputText value="首页" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>
@@ -40,7 +40,7 @@
 		<li
 				class="#{ (view.viewId == '/datastores.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="datastores" styleClass="DatastoresTabTitle">
-			<h:outputText value="资料存储库" />
+			<h:outputText value="数据源" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>

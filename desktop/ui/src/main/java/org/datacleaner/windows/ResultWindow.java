@@ -155,11 +155,11 @@ public final class ResultWindow extends AbstractWindow implements WindowListener
 
         final Border buttonBorder =
                 new CompoundBorder(WidgetUtils.BORDER_LIST_ITEM_SUBTLE, new EmptyBorder(10, 4, 10, 4));
-        _cancelButton = WidgetFactory.createDefaultButton("Cancel job", IconUtils.ACTION_STOP);
+        _cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_STOP);
         _cancelButton.setHorizontalAlignment(SwingConstants.LEFT);
         _cancelButton.setBorder(buttonBorder);
 
-        _saveResultsPopupButton = WidgetFactory.createDefaultPopupButton("Save results", IconUtils.ACTION_SAVE_DARK);
+        _saveResultsPopupButton = WidgetFactory.createDefaultPopupButton("保存结果", IconUtils.ACTION_SAVE_DARK);
         _saveResultsPopupButton.setHorizontalAlignment(SwingConstants.LEFT);
         _saveResultsPopupButton.setBorder(buttonBorder);
         _saveResultsPopupButton.setMenuPosition(MenuPosition.TOP);
