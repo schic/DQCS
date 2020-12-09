@@ -90,7 +90,7 @@ public class ReorderColumnsActionListener implements ActionListener {
 
         final JDialog dialog = new JDialog();
 
-        final JButton saveButton = WidgetFactory.createPrimaryButton("Save order", IconUtils.ACTION_SAVE_BRIGHT);
+        final JButton saveButton = WidgetFactory.createPrimaryButton("保存", IconUtils.ACTION_SAVE_BRIGHT);
         saveButton.addActionListener(e12 -> {
             saveReorderedValue(list);
             dialog.dispose();
@@ -174,7 +174,7 @@ public class ReorderColumnsActionListener implements ActionListener {
     }
 
     public void saveReorderedValue(final List<InputColumn<?>> list) {
-        logger.info("Saving reordered columns: {}", list);
+        logger.info("保存重新排序的列: {}", list);
 
         final InputColumn<?>[] newValue = list.toArray(new InputColumn[list.size()]);
         _callback.reorderColumns(newValue);

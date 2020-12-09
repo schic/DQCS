@@ -52,7 +52,7 @@ public class CustomizeTimelineHandler implements ClickHandler {
         _service = service;
         _timelinePanel = timelinePanel;
 
-        _popup = new DCPopupPanel("Customize timeline");
+        _popup = new DCPopupPanel("自定义时间线");
         _popup.addStyleName("CustomizeTimelinePopupPanel");
         _popup.addButton(createSaveButton());
         _popup.addButton(new CancelPopupButton(_popup));
@@ -70,13 +70,13 @@ public class CustomizeTimelineHandler implements ClickHandler {
     }
 
     private Button createSaveButton() {
-        final Button saveButton = DCButtons.primaryButton("glyphicon-save", "Save");
+        final Button saveButton = DCButtons.primaryButton("glyphicon-save", "保存");
         saveButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
                 final List<MetricIdentifier> selectedMetrics = _customizeMetricsPanel.getSelectedMetrics();
                 if (selectedMetrics == null || selectedMetrics.isEmpty()) {
-                    Window.alert("Please select one or more metrics to plot in the timeline");
+                    Window.alert("请选择一个或多个要在时间线中绘制的指标");
                     return;
                 }
 

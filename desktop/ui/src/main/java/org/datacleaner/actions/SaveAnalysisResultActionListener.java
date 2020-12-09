@@ -113,11 +113,11 @@ public class SaveAnalysisResultActionListener implements ActionListener {
                         details.append(" - ");
                         details.append(componentJobLabel);
                     }
-                    details.append("\n\nSee the log for error details.");
-                    details.append("\n\nDo you want to save the result without these elements?");
+                    details.append("\n\n有关错误详细信息，请参阅日志。");
+                    details.append("\n\n是否不保存这些元素的结果？");
 
                     final int confirmation = JOptionPane
-                            .showConfirmDialog(null, details.toString(), "Error writing result to file!",
+                            .showConfirmDialog(null, details.toString(), "将结果写入文件时出错！ ",
                                     JOptionPane.OK_CANCEL_OPTION, JOptionPane.ERROR_MESSAGE);
                     if (confirmation == JOptionPane.OK_OPTION) {
 

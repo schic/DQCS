@@ -171,7 +171,7 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
             String jobName = historyToken.substring(prefix.length());
             jobName = URL.decodeQueryString(jobName);
 
-            GWT.log("Showing new timeline popup for job: " + jobName);
+            GWT.log("显示作业的新时间线弹出窗口： " + jobName);
 
             final CreateTimelineHandler handler = new CreateTimelineHandler(_service, _tenant, _defaultGroupPanel);
             final DCPopupPanel popup = handler.createPopup();

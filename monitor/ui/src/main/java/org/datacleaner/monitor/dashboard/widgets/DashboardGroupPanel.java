@@ -101,7 +101,7 @@ public class DashboardGroupPanel extends FlowPanel {
             }
 
             _welcomePanel = null;
-            newTimelineButton = DCButtons.defaultButton("glyphicon-plus", "New timeline chart");
+            newTimelineButton = DCButtons.defaultButton("glyphicon-plus", "新建时间线图");
             
             final ButtonPanel buttonPanel = new ButtonPanel(false);
             buttonPanel.add(newTimelineButton);

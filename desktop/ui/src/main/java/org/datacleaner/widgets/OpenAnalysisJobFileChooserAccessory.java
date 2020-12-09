@@ -185,13 +185,13 @@ public class OpenAnalysisJobFileChooserAccessory extends DCPanel implements Prop
 
         final String jobName = _metadata.getJobName();
         if (jobName != null) {
-            _centerPanel.add(new JLabel("<html><b>Job name:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>作业名称:</b></html>"));
             _centerPanel.add(new JLabel(jobName));
             _centerPanel.add(Box.createVerticalStrut(separatorHeight));
         }
         final String jobDescription = _metadata.getJobDescription();
         if (jobDescription != null) {
-            _centerPanel.add(new JLabel("<html><b>Job description:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>作业描述:</b></html>"));
             final DCLabel descriptionLabel = DCLabel.darkMultiLine(jobDescription);
             descriptionLabel.setMaximumWidth(WIDTH);
             _centerPanel.add(descriptionLabel);
@@ -199,32 +199,32 @@ public class OpenAnalysisJobFileChooserAccessory extends DCPanel implements Prop
         }
         final String jobVersion = _metadata.getJobVersion();
         if (jobVersion != null) {
-            _centerPanel.add(new JLabel("<html><b>Job version:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>作业版本:</b></html>"));
             _centerPanel.add(new JLabel(jobVersion));
             _centerPanel.add(Box.createVerticalStrut(separatorHeight));
         }
         final String author = _metadata.getAuthor();
         if (author != null) {
-            _centerPanel.add(new JLabel("<html><b>Author:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>作者:</b></html>"));
             _centerPanel.add(new JLabel(author));
             _centerPanel.add(Box.createVerticalStrut(separatorHeight));
         }
         final Date createdDate = _metadata.getCreatedDate();
         if (createdDate != null) {
-            _centerPanel.add(new JLabel("<html><b>Created:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>创建:</b></html>"));
             _centerPanel.add(new JLabel(dateFormat.format(createdDate)));
             _centerPanel.add(Box.createVerticalStrut(separatorHeight));
         }
         final Date updatedDate = _metadata.getUpdatedDate();
         if (updatedDate != null) {
-            _centerPanel.add(new JLabel("<html><b>Updated:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>更新:</b></html>"));
             _centerPanel.add(new JLabel(dateFormat.format(updatedDate)));
             _centerPanel.add(Box.createVerticalStrut(separatorHeight));
         }
 
         final String datastoreName = _metadata.getDatastoreName();
 
-        _centerPanel.add(new JLabel("<html><b>Datastore:</b></html>"));
+        _centerPanel.add(new JLabel("<html><b>数据存储:</b></html>"));
         final JLabel datastoreLabel = new JLabel(datastoreName);
 
         final Datastore datastore = _configuration.getDatastoreCatalog().getDatastore(datastoreName);
@@ -240,7 +240,7 @@ public class OpenAnalysisJobFileChooserAccessory extends DCPanel implements Prop
 
         _centerPanel.add(datastoreLabel);
         _centerPanel.add(Box.createVerticalStrut(separatorHeight));
-        _centerPanel.add(new JLabel("<html><b>Source columns:</b></html>"));
+        _centerPanel.add(new JLabel("<html><b>源列:</b></html>"));
         final List<String> paths = _metadata.getSourceColumnPaths();
         for (final String path : paths) {
             final JLabel columnLabel = new JLabel(path);

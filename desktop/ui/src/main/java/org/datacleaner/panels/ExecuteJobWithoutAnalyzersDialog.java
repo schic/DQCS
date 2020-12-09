@@ -109,7 +109,7 @@ public class ExecuteJobWithoutAnalyzersDialog extends AbstractDialog {
         writeExcelButton
                 .addActionListener(createWriteDataActionListener(CreateExcelSpreadsheetAnalyzer.class, ".xlsx"));
 
-        final DCLabel text3 = DCLabel.darkMultiLine("... Or cancel and modify the job?");
+        final DCLabel text3 = DCLabel.darkMultiLine("... 或者取消并修改作业?");
 
         final JButton cancelButton = createButton("取消", IconUtils.ACTION_REMOVE_DARK);
         cancelButton.addActionListener(e -> close());

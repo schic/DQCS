@@ -176,7 +176,7 @@ public class DownloadFilesActionListener extends SwingWorker<FileObject[], Task>
      *            download has occurred gracefully.
      */
     public void cancelDownload(final boolean hideWindowImmediately) {
-        logger.info("Cancel of download requested");
+        logger.info("已请求取消下载");
         _cancelled = true;
 
         if (hideWindowImmediately && _downloadProgressWindow != null) {

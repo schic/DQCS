@@ -92,8 +92,8 @@ public final class SaveAnalysisJobActionListener implements ActionListener {
         } catch (final Exception e) {
             if (e instanceof NoResultProducingComponentsException) {
                 final int result = JOptionPane.showConfirmDialog(_window.toComponent(),
-                        "You job does not have any result-producing components in it, and is thus 'incomplete'. "
-                                + "Do you want to save it anyway?", "No result producing components in job",
+                        "您的作业中没有任何产生结果的组件，因此是“不完整的”。 "
+                                + "你想保存它吗？", "作业中没有产生结果的组件",
                         JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
                 if (result == JOptionPane.YES_OPTION) {
                     analysisJob = _analysisJobBuilder.toAnalysisJob(false);
@@ -105,8 +105,8 @@ public final class SaveAnalysisJobActionListener implements ActionListener {
                 if (LABEL_TEXT_SAVING_JOB.equals(detail)) {
                     detail = e.getMessage();
                 }
-                WidgetUtils.showErrorMessage("Errors in job",
-                        "Please fix the errors that exist in the job before saving it:\n\n" + detail, e);
+                WidgetUtils.showErrorMessage("作业中的错误",
+                        "保存作业之前，请修复作业中存在的错误:\n\n" + detail, e);
                 return;
             }
         }

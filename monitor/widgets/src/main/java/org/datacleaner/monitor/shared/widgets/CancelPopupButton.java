@@ -31,7 +31,7 @@ public class CancelPopupButton extends Button implements ClickHandler {
     private final DCPopupPanel _popup;
 
     public CancelPopupButton(DCPopupPanel popup) {
-        this(popup, "Cancel");
+        this(popup, "取消");
     }
     
     public CancelPopupButton(DCPopupPanel popup, String labelText) {

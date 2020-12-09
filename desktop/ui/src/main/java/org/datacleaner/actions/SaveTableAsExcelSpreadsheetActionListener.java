@@ -99,7 +99,7 @@ public final class SaveTableAsExcelSpreadsheetActionListener implements ActionLi
 
             @Override
             public String getWindowTitle() {
-                return "Save " + _table.getName() + " as Excel spreadsheet";
+                return "保存 " + _table.getName() + " as Excel spreadsheet";
             }
 
             @Override
@@ -120,7 +120,7 @@ public final class SaveTableAsExcelSpreadsheetActionListener implements ActionLi
 
             @Override
             protected String getBannerTitle() {
-                return "Save " + _table.getName() + "\nas Excel spreadsheet file";
+                return "保存 " + _table.getName() + "\nas Excel spreadsheet file";
             }
         };
 

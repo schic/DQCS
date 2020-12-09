@@ -81,7 +81,7 @@ import org.slf4j.LoggerFactory;
 
 public class HdfsUrlChooser extends JComponent {
     public enum OpenType {
-        LOAD("Open"), SAVE("Save");
+        LOAD("Open"), SAVE("保存");
 
         private final String _title;
 

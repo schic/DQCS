@@ -139,7 +139,7 @@ public abstract class MLRegressionTrainingAnalyzer extends MLTrainingAnalyzer<ML
                 final byte[] bytes = SerializationUtils.serialize(regressor);
                 Files.write(bytes, saveModelToFile);
             } catch (IOException e) {
-                throw new UncheckedIOException("Failed to save model to file: " + saveModelToFile, e);
+                throw new UncheckedIOException("未能将模型保存到文件：  " + saveModelToFile, e);
             }
         }
 

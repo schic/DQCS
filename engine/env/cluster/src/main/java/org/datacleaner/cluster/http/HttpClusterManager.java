@@ -182,7 +182,7 @@ public class HttpClusterManager implements ClusterManager {
             final StatusLine statusLine = response.getStatusLine();
             if (statusLine.getStatusCode() != 200) {
                 throw new IllegalStateException(
-                        "Slave server '" + slaveEndpoint + "' responded with an error to 'cancel' request: "
+                        "从服务器 '" + slaveEndpoint + "' 对“取消”请求的响应出现错误： "
                                 + statusLine.getReasonPhrase() + " (" + statusLine.getStatusCode() + ")");
             }
 
@@ -191,7 +191,7 @@ public class HttpClusterManager implements ClusterManager {
                 throw (RuntimeException) e;
             }
             throw new IllegalStateException(
-                    "Failed to fire cancel request to slave server '" + slaveEndpoint + "' for job id '" + slaveJobId
+                    "向从属服务器发出取消请求失败 '" + slaveEndpoint + "' 对于作业id '" + slaveJobId
                             + "'", e);
         }
     }
@@ -209,7 +209,7 @@ public class HttpClusterManager implements ClusterManager {
             errors.addAll(slaveErrors);
             return null;
         } else {
-            throw new IllegalStateException("Unexpected response payload: " + object);
+            throw new IllegalStateException("意外的响应负载：" + object);
         }
     }
 }

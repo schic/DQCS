@@ -151,7 +151,7 @@ public class TimelinePanel extends FlowPanel {
 
     private void updateHeader() {
         if (_timelineIdentifier == null) {
-            _header.setText("<new timeline>");
+            _header.setText("<新建时间线>");
         } else {
             _header.setText(_timelineIdentifier.getName());
         }

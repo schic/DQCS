@@ -80,7 +80,7 @@ public class LazyRefAnalysisResultFuture implements AnalysisResultFuture {
 
     @Override
     public void cancel() {
-        throw new UnsupportedOperationException("Cancel not supported for slave jobs");
+        throw new UnsupportedOperationException("从属作业不支持取消");
     }
 
     @Override

@@ -73,8 +73,8 @@ public class HomeOverviewPanel extends Composite {
         panel.addStyleName("ColumnHeaders");
         panel.addStyleName("row");
 
-        panel.add(createLabel("Job name", "col-sm-9", "col-xs-8"));
-        panel.add(createLabel("Actions", "col-sm-3", "col-xs-4"));
+        panel.add(createLabel("作业名称", "col-sm-9", "col-xs-8"));
+        panel.add(createLabel("动作", "col-sm-3", "col-xs-4"));
 
         return panel;
     }

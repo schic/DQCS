@@ -99,7 +99,7 @@ public final class SaveTableAsCsvFileActionListener implements ActionListener {
 
             @Override
             public String getWindowTitle() {
-                return "Save " + _table.getName() + " as CSV file";
+                return "保存 " + _table.getName() + " CSV ";
             }
 
             @Override
@@ -119,7 +119,7 @@ public final class SaveTableAsCsvFileActionListener implements ActionListener {
 
             @Override
             protected String getBannerTitle() {
-                return "Save " + _table.getName() + "\nas CSV file";
+                return "保存 " + _table.getName() + "\nCSV ";
             }
         };
 

@@ -53,10 +53,10 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
 
     public FileRepositoryFolder(final FileRepositoryFolder parent, final File file) {
         if (file == null) {
-            throw new IllegalArgumentException("File cannot be null");
+            throw new IllegalArgumentException("文件不能为空");
         }
         if (!file.exists()) {
-            throw new IllegalArgumentException("File does not exist: " + file);
+            throw new IllegalArgumentException("文件不存在：" + file);
         }
         _parent = parent;
         _file = file;
@@ -169,12 +169,11 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
                 Date date = new Date();
                 String time = sdf.format(date);
                 date.setTime(date_temp);
-                if (new SimpleDateFormat().format(date).substring(0,8).equals(time.substring(2,10))){
+                if (sdf.format(date).equals(time.substring(0,10))){
                     td.add(list.get(i).toString().substring(0,string.indexOf("-")));
                 }
             }
         }
-        System.out.println(td);
 
         for (int i = 0;i < td.size()-1;i ++){
             for (int j = i + 1;j < td.size();j++){
@@ -201,7 +200,7 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
                 Date date = new Date();
                 String time = sdf.format(date);
                 date.setTime(date_temp);
-                if (new SimpleDateFormat().format(date).substring(0,8).equals(time.substring(2,10))){
+                if (sdf.format(date).equals(time.substring(0,10))){
                     num++;
                 }
             }
@@ -212,7 +211,7 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
     @Override
     public RepositoryFile getFile(final String name) {
         if (name.indexOf('/') != -1 || name.indexOf('\\') != -1) {
-            throw new IllegalArgumentException("File name cannot contain slashes");
+            throw new IllegalArgumentException("文件名不能包含斜杠");
         }
 
         final File file = new File(_file, name);
@@ -234,7 +233,7 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
     @Override
     public RepositoryFolder getFolder(final String name) {
         if (name.indexOf('/') != -1 || name.indexOf('\\') != -1) {
-            throw new IllegalArgumentException("Folder name cannot contain slashes");
+            throw new IllegalArgumentException("文件夹名称不能包含斜杠");
         }
 
         final File file = new File(_file, name);
@@ -248,12 +247,12 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
     @Override
     public RepositoryFile createFile(final String name, final Action<OutputStream> writeCallback) {
         if (name.indexOf('/') != -1 || name.indexOf('\\') != -1) {
-            throw new IllegalArgumentException("File name cannot contain slashes");
+            throw new IllegalArgumentException("文件名不能包含斜杠");
         }
 
         final File file = new File(_file, name);
         if (file.exists()) {
-            throw new IllegalArgumentException("A file with the name '" + name + "' already exists");
+            throw new IllegalArgumentException("一个名为'" + name + "' 的文件已经存在");
         }
 
         final RepositoryFile repositoryFile = (RepositoryFile) getChildCache().getUnchecked(file);
@@ -266,7 +265,7 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
     public void delete() throws IllegalStateException {
         final boolean success = _file.delete();
         if (!success) {
-            throw new IllegalStateException("Could not delete directory: " + _file);
+            throw new IllegalStateException("无法删除目录：" + _file);
         }
         _parent.onDeleted(_file);
     }
@@ -284,11 +283,11 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
     public RepositoryFolder createFolder(final String name) {
         final File file = new File(_file, name);
         if (file.exists()) {
-            throw new IllegalArgumentException("Folder with name '" + name + "' already exists");
+            throw new IllegalArgumentException("名为'" + name + "' 的文件夹已经存在");
         }
         final boolean result = file.mkdir();
         if (!result) {
-            throw new IllegalStateException("Failed to create directory '" + name + "' within " + _file);
+            throw new IllegalStateException("创建目录失败'" + name + "' 在 " + _file);
         }
         return (RepositoryFolder) getChildCache().getUnchecked(file);
     }
