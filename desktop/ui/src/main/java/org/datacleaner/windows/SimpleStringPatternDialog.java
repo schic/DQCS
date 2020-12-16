@@ -72,8 +72,8 @@ public final class SimpleStringPatternDialog extends AbstractDialog {
         _catalog = catalog;
         _expressionNameField = WidgetFactory.createTextField("String pattern name");
         _expressionField = WidgetFactory.createTextField("Expression");
-        _resetButton = WidgetFactory.createSmallButton("Reset", IconUtils.ACTION_RESET);
-        _saveButton = WidgetFactory.createPrimaryButton("Save Pattern", IconUtils.ACTION_SAVE_BRIGHT);
+        _resetButton = WidgetFactory.createSmallButton("重置", IconUtils.ACTION_RESET);
+        _saveButton = WidgetFactory.createPrimaryButton("保存", IconUtils.ACTION_SAVE_BRIGHT);
     }
 
     public SimpleStringPatternDialog(final SimpleStringPattern stringPattern, final MutableReferenceDataCatalog catalog,
@@ -135,13 +135,13 @@ public final class SimpleStringPatternDialog extends AbstractDialog {
             final String expressionName = _expressionNameField.getText();
             if (StringUtils.isNullOrEmpty(expressionName)) {
                 JOptionPane.showMessageDialog(SimpleStringPatternDialog.this,
-                        "Please fill out the name of the string expression");
+                        "请填写字符串表达式的名称");
                 return;
             }
 
             final String expression = _expressionField.getText();
             if (StringUtils.isNullOrEmpty(expression)) {
-                JOptionPane.showMessageDialog(SimpleStringPatternDialog.this, "Please fill out the string expression");
+                JOptionPane.showMessageDialog(SimpleStringPatternDialog.this, "请填写字符串表达式");
                 return;
             }
             final SimpleStringPattern simpleStringPattern = new SimpleStringPattern(expressionName, expression);
@@ -164,7 +164,7 @@ public final class SimpleStringPatternDialog extends AbstractDialog {
         WidgetUtils.addToGridBag(_errorLabel, testitPanel, 0, row);
 
         row++;
-        final JLabel testInputLabel = DCLabel.bright("You can test your expression here");
+        final JLabel testInputLabel = DCLabel.bright("你可以在这里测试你的表达");
         testInputLabel.setIcon(imageManager.getImageIcon("images/actions/test-pattern.png"));
         testInputLabel.setFont(WidgetUtils.FONT_HEADER2);
         WidgetUtils.addToGridBag(testInputLabel, testitPanel, 0, row);

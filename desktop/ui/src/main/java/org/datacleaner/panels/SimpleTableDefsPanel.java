@@ -116,7 +116,7 @@ public class SimpleTableDefsPanel extends DCPanel {
         addButton.setText("Add table");
         addButton.addActionListener(e -> {
             final String tableName = JOptionPane
-                    .showInputDialog(SimpleTableDefsPanel.this, "What is the name of the table", "Add table",
+                    .showInputDialog(SimpleTableDefsPanel.this, "表的名称是什么", "添加表",
                             JOptionPane.QUESTION_MESSAGE);
             if (!StringUtils.isNullOrEmpty(tableName)) {
                 final SimpleTableDef tableDef = new SimpleTableDef(tableName, new String[0]);

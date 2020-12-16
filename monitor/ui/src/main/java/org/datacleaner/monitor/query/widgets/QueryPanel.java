@@ -131,7 +131,7 @@ public class QueryPanel extends FlowPanel {
         });
 
         add(schemaPanel);
-        add(new HeadingLabel("Query datastore: " + _datastore.getName()));
+        add(new HeadingLabel("查询数据存储: " + _datastore.getName()));
         add(new Label("请填写下面的查询语句并单击“确定”按钮在服务器上执行。"));
 
         final FlowPanel buttonPanel = new FlowPanel();

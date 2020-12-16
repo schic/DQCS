@@ -65,9 +65,9 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         super();
         final HorizontalAxisOption horizontalAxisOption = chartOptions.getHorizontalAxisOption();
 
-        _timelineAllDatesRadio = new RadioButton("timeline_scope_type", "All dates");
-        _timelineLastDaysRadio = new RadioButton("timeline_scope_type", "The latest .. days");
-        _timelineFromToRadio = new RadioButton("timeline_scope_type", "From ... to ...");
+        _timelineAllDatesRadio = new RadioButton("timeline_scope_type", "所有日期");
+        _timelineLastDaysRadio = new RadioButton("timeline_scope_type", "最近的...天");
+        _timelineFromToRadio = new RadioButton("timeline_scope_type", "从...到...");
 
         final Date beginDate = horizontalAxisOption.getBeginDate();
         final Date endDate = horizontalAxisOption.getEndDate();
@@ -101,7 +101,7 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         _maximumValue = new NumberTextBox();
         _maximumValue.setNumberValue(verticalAxisOption.getMaximumValue());
 
-        _logScaleCheckBox = new CheckBox("Logarithmic scale?");
+        _logScaleCheckBox = new CheckBox("对数标度?");
         _logScaleCheckBox.setValue(verticalAxisOption.isLogarithmicScale());
 
         addStyleName("CustomizeChartOptionsPanel");
@@ -141,7 +141,7 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         panel.add(createTimelineRadioSpecPanel(new Label("结束日期: "), _endDatePicker));
 
         panel.add(_timelineLastDaysRadio);
-        panel.add(createTimelineRadioSpecPanel(_latestNumberOfDaysBox, new Label(" days")));
+        panel.add(createTimelineRadioSpecPanel(_latestNumberOfDaysBox, new Label(" 天")));
 
         return panel;
     }

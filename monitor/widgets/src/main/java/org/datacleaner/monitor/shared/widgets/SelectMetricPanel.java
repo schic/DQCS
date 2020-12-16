@@ -188,7 +188,7 @@ public class SelectMetricPanel extends FlowPanel {
 
         final int index = _metricSelectionBox.getSelectedIndex();
         if (index == -1 || index == 0) {
-            throw new DCUserInputException("No metric selected");
+            throw new DCUserInputException("未选择指标");
         }
 
         final String metricName = _metricSelectionBox.getItemText(index);

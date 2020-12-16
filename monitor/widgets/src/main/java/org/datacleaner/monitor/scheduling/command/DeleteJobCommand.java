@@ -47,8 +47,8 @@ public class DeleteJobCommand implements Command {
 	@Override
 	public void execute() {
 		 _morePopup.hide();
-		 boolean delete = Window.confirm("Are you sure you want to delete the job '" + _job.getName()
-                 + "' and related schedule, results and timelines.");
+		 boolean delete = Window.confirm("是否确实要删除作业 '" + _job.getName()
+                 + "' 以及相关的时间表、结果和时间表.");
          if (delete) {
              final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".delete");
              final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);

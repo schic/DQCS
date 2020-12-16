@@ -78,9 +78,9 @@ public class DefineMetricPanel extends FlowPanel {
         // percentage calculation
         _formulaTextBox.setText("A * 100 / B");
 
-        _formulaCheckBox = new CheckBox("Metric formula?");
-        _formulaCheckBox.addStyleName("FormulaCheckBox");
-        _formulaCheckBox.setTitle("Let this metric be a formula, comprising multiple child metrics in a calculation?");
+        _formulaCheckBox = new CheckBox("公制公式?");
+        _formulaCheckBox.addStyleName("公式复选框");
+        _formulaCheckBox.setTitle("让这个度量是一个公式，在一个计算中包含多个子度量?");
         _formulaCheckBox.setValue(formulaBased);
 
         _formulaCheckBox.addValueChangeHandler(new ValueChangeHandler<Boolean>() {

@@ -50,13 +50,13 @@ public class CopyJobCommand implements Command {
 	@Override
 	public void execute() {
 		_morePopup.hide();
-		final String newJobName = Window.prompt("Enter new job name", _job.getName() + " (Copy)");
+		final String newJobName = Window.prompt("输入新作业名称", _job.getName() + " (Copy)");
 
         if (newJobName == null || newJobName.trim().length() == 0 || newJobName.equals(_job.getName())) {
             return;
         }
 
-        final DCPopupPanel popup = new DCPopupPanel("Copying...");
+        final DCPopupPanel popup = new DCPopupPanel("复制...");
         popup.setWidget(new LoadingIndicator());
         popup.center();
         popup.show();

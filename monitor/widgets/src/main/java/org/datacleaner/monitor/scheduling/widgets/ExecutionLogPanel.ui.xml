@@ -25,40 +25,40 @@
 	<g:HTMLPanel styleName="ExecutionLogPanel" addStyleNames="container-fluid">
 
 		<div class="row">
-			<span class="col-xs-3">Status:</span>
+			<span class="col-xs-3">状态:</span>
 			<g:Label styleName="col-xs-9" ui:field="statusLabel" />
 		</div>
 
 		<div class="row">
-			<span class="col-xs-3">Begin time:</span>
+			<span class="col-xs-3">开始时间:</span>
 			<g:Label styleName="col-xs-9" ui:field="beginTimeLabel" />
 		</div>
 
 		<div class="row">
-			<span class="col-xs-3">End time:</span>
+			<span class="col-xs-3">结束时间:</span>
 			<g:Label styleName="col-xs-9" ui:field="endTimeLabel" />
 		</div>
 
 
 		<div class="row">
-			<span class="col-xs-3">Trigger:</span>
+			<span class="col-xs-3">启动:</span>
 			<g:Label styleName="col-xs-9" ui:field="triggerLabel" />
 		</div>
 		
 		<div class="row">
-			<span class="col-xs-3">Triggered by:</span>
+			<span class="col-xs-3">被谁启动:</span>
 			<g:Label styleName="col-xs-9" ui:field="triggeredByLabel" />
 		</div>
 
 		<div class="row" style="margin-top: 25px;">
-			<span class="col-xs-12">Log output:</span>
+			<span class="col-xs-12">日志输出:</span>
 			<div class="col-xs-12 LogOutputPanel">
 				<g:Label styleName="LogOutputLabel" ui:field="logOutputLabel" />
 			</div>
 		</div>
 		
 		<div class="row" style="margin-top: 10px;">
-			<span class="col-xs-3">Result:</span>
+			<span class="col-xs-3">结果:</span>
 			<div class="col-xs-9">
 				<dc:LoadingIndicator ui:field="loadingIndicator" />
 				<g:Anchor styleName="FormValue" ui:field="resultAnchor" />

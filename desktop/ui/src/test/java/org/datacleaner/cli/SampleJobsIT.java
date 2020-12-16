@@ -46,7 +46,7 @@ public class SampleJobsIT {
         // TODO: Because of https://github.com/datacleaner/DataCleaner/issues/1596 we don't know the exact
         // pattern for the second match and therefore check it less strict then desirable. Revert it to a more
         // strict check once that issue has been fixed.
-        expectedResultSets.put("RESULT: Birthdate Patterns (birthdate)",
+        expectedResultSets.put("RESULT: 出生日期模式 (birthdate)",
                 new String[] { "Match count Sample", "####-##-##        4661", "##         427",
                         "a/a                 27" });
         expectedResultSets.put("RESULT: Number analyzer (Age in years)",

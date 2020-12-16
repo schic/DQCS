@@ -43,7 +43,7 @@ public class DefineMetricPopup extends DCPopupPanel {
 
     public DefineMetricPopup(final TenantIdentifier tenant, final JobMetrics jobMetrics, final MetricIdentifier metric,
             final boolean formulaOnly, final Handler handler) {
-        super("Define metric");
+        super("定义度量");
 
         final DefineMetricPanel panel = new DefineMetricPanel(tenant, jobMetrics, metric, formulaOnly);
 

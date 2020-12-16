@@ -66,7 +66,7 @@ public class AddAlertCommand implements Command {
             public void onSuccess(final JobMetrics jobMetrics) {
                 final DefineMetricPanel defineMetricPanel = new DefineMetricPanel(tenant, jobMetrics, null, false);
 
-                final DCPopupPanel popup = new DCPopupPanel("Create alert: Define metric to monitor");
+                final DCPopupPanel popup = new DCPopupPanel("创建警报：定义要监视的度量");
                 final Button nextButton = DCButtons.primaryButton("glyphicon-menu-right", "Next");
                 final CancelPopupButton cancelButton = new CancelPopupButton(popup);
                 

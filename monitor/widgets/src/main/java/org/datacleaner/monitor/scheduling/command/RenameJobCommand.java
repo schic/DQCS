@@ -51,12 +51,12 @@ public class RenameJobCommand implements Command {
 	@Override
 	public void execute() {
 		_morePopup.hide();
-		final String newName = Window.prompt("Enter job name", _job.getName());
+		final String newName = Window.prompt("输入作业名称", _job.getName());
         if (newName == null || newName.trim().length() == 0 || newName.equals(_job.getName())) {
             return;
         }
 
-        final DCPopupPanel popup = new DCPopupPanel("Renaming...");
+        final DCPopupPanel popup = new DCPopupPanel("重命名...");
         popup.setWidget(new LoadingIndicator());
         popup.center();
         popup.show();

@@ -6746,7 +6746,7 @@
 	      this.initBody(true);
 	    }
 	  }, {
-	    key: "remove",
+	    key: "去除",
 	    value: function remove(params) {
 	      var len = this.options.data.length;
 	      var i;
