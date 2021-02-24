@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<properties>
-        <dockerTomcatPort>8080</dockerTomcatPort>
+		<dockerTomcatPort>8080</dockerTomcatPort>
 	</properties>
 
 	<build>
@@ -281,7 +281,7 @@
 			<artifactId>spark-launcher_2.11</artifactId>
 		</dependency>
 		<!-- DataCleaner monitor extensions -->
-		<!--<dependency>
+		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-completeness-analysis-wizard</artifactId>
 			<version>${project.version}</version>
@@ -330,7 +330,7 @@
 			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-monitor-referencedata-wizards</artifactId>
 			<version>${project.version}</version>
-		</dependency>-->
+		</dependency>
 
 		<!-- JDBC drivers -->
 		<dependency>
