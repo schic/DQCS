@@ -201,7 +201,7 @@ public class ReferenceDataMatcherAnalyzerReducerTest {
         referenceDataMatcher.columns = new InputColumn<?>[] { jobTitleColumn };
         final File file = new File("src/test/resources/synonym_titles_test.txt");
         assertTrue(file.exists());
-        final TextFileSynonymCatalog jobTitlesCatalog = new TextFileSynonymCatalog("Job Titles", file, true, "UTF-8");
+        final TextFileSynonymCatalog jobTitlesCatalog = new TextFileSynonymCatalog("标题", file, true, "UTF-8");
         referenceDataMatcher.synonymCatalogs = new SynonymCatalog[] { jobTitlesCatalog };
         final AnalysisJob analysisJob = jobBuilder.toAnalysisJob();
         jobBuilder.close();

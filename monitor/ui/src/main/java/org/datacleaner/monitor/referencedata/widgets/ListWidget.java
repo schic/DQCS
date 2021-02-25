@@ -64,13 +64,13 @@ public class ListWidget extends VerticalPanel {
     }
 
     private Button createRemoveButton(final ReferenceDataItem.Type itemType, final String itemName) {
-        final Button button = new Button("Remove");
+        final Button button = new Button("删除");
         button.removeStyleName("gwt-Button");
         button.addStyleName("glyphicon glyphicon-minus btn btn-sm btn-danger");
         button.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(final ClickEvent clickEvent) {
-                if (Window.confirm("Do you really want to remove '" + itemName + "'?")) {
+                if (Window.confirm("是否确实要删除 '" + itemName + "'?")) {
                     final ReferenceDataServiceAsync service = GWT.create(ReferenceDataService.class);
                     service.removeItem(_tenant, itemType, itemName, new DCAsyncCallback<Boolean>() {
                         @Override
@@ -78,7 +78,7 @@ public class ListWidget extends VerticalPanel {
                             if (removedSuccessfully) {
                                 Window.Location.reload();
                             } else {
-                                Window.alert(itemName + " was not removed. ");
+                                Window.alert(itemName + " 未删除。 ");
                             }
                         }
                     });

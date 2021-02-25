@@ -62,12 +62,12 @@ public class DashboardGroupPanel extends FlowPanel {
 
         addStyleName("DashboardGroupPanel");
 
-        _removeGroupButton = DCButtons.dangerButton("glyphicon-minus", "Remove this group");
+        _removeGroupButton = DCButtons.dangerButton("glyphicon-minus", "删除此组");
         _removeGroupButton.setVisible(false);
         _removeGroupButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                final boolean confirmation = Window.confirm("Are you sure you wish to remove this group?");
+                final boolean confirmation = Window.confirm("确实要删除此组吗?");
                 if (confirmation) {
                     _service.removeDashboardGroup(_tenant, _group, new DCAsyncCallback<Boolean>() {
                         @Override
@@ -75,7 +75,7 @@ public class DashboardGroupPanel extends FlowPanel {
                             if (result != null && result.booleanValue()) {
                                 Window.Location.reload();
                             } else {
-                                Window.alert("Failed to remove group. Please check server logs for details.");
+                                Window.alert("未能删除组。有关详细信息，请查看服务器日志。");
                             }
                         }
                     });
@@ -86,7 +86,7 @@ public class DashboardGroupPanel extends FlowPanel {
         final Button newTimelineButton;
         if (displayInfomercial && group == null) {
             // this is the "default" group
-            add(new HeadingLabel("Welcome"));
+            add(new HeadingLabel("欢迎"));
             _welcomePanel = new WelcomePanel();
             newTimelineButton = _welcomePanel.getNewTimelineButton();
             add(_welcomePanel);

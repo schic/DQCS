@@ -518,7 +518,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
         boolean executeable = false;
 
         if (_datastore == null) {
-            setStatusLabelText("Welcome to DataCleaner " + Version.getDistributionVersion());
+            setStatusLabelText("欢迎来到 DataCleaner " + Version.getDistributionVersion());
             _statusLabel.setIcon(imageManager.getImageIcon(IconUtils.APPLICATION_ICON, IconUtils.ICON_SIZE_SMALL));
         } else {
             if (!_analysisJobBuilder.getSourceColumns().isEmpty()) {
@@ -526,15 +526,15 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
             }
             try {
                 if (_analysisJobBuilder.isConfigured(true)) {
-                    setStatusLabelText("Job is correctly configured");
+                    setStatusLabelText("作业配置正确");
                     setStatusLabelValid();
                 } else {
-                    setStatusLabelText("Job is not correctly configured");
+                    setStatusLabelText("作业配置不正确");
                     setStatusLabelWarning();
                 }
             } catch (final Exception ex) {
                 executeable = false;
-                logger.debug("Job not correctly configured", ex);
+                logger.debug("作业配置不正确", ex);
                 final String errorMessage;
                 if (ex instanceof UnconfiguredConfiguredPropertyException) {
                     final UnconfiguredConfiguredPropertyException unconfiguredConfiguredPropertyException =
@@ -552,7 +552,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
                 } else {
                     errorMessage = ex.getMessage();
                 }
-                setStatusLabelText("Job error status: " + errorMessage);
+                setStatusLabelText("作业错误状态: " + errorMessage);
                 setStatusLabelError();
             }
         }
@@ -671,7 +671,7 @@ public final class AnalysisJobBuilderWindowImpl extends AbstractWindow
                 return true;
             }
         } catch (final FileSystemException e) {
-            logger.warn("Error while determining if the job file already exists", e);
+            logger.warn("确定作业文件是否已存在?", e);
         }
 
         final InputStream lastSavedOutputStream = null;

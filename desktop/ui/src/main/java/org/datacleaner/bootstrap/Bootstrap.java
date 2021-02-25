@@ -98,7 +98,7 @@ public final class Bootstrap {
     }
 
     private void runInternal() throws FileSystemException {
-        logger.info("Welcome to DataCleaner {}", Version.getVersion());
+        logger.info("欢迎来到 DataCleaner {}", Version.getVersion());
 
         // determine whether to run in command line interface mode
         final boolean cliMode = _options.isCommandLineMode();
