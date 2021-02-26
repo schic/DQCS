@@ -96,7 +96,7 @@ public class SelectHadoopClusterDialog extends AbstractDialog {
             final Map<String, String> mappedServers) {
 
         if (serverInformationCatalog.containsServer(HadoopResource.DEFAULT_CLUSTERREFERENCE)) {
-            mappedServers.put("(default)", HadoopResource.DEFAULT_CLUSTERREFERENCE);
+            mappedServers.put("(默认)", HadoopResource.DEFAULT_CLUSTERREFERENCE);
         }
 
         final String[] serverNames = serverInformationCatalog.getServerNames();

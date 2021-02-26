@@ -86,9 +86,9 @@ public class InsertIntoTableAnalyzerTest extends TestCase {
                         + "MetricDescriptorImpl[name=Updates]]", metrics.toString());
 
         final WriteDataResult result = new WriteDataResultImpl(10, 5, null, null, null);
-        assertEquals(10, descriptor.getResultMetric("Inserts").getValue(result, null).intValue());
-        assertEquals(5, descriptor.getResultMetric("Updates").getValue(result, null).intValue());
-        assertEquals(0, descriptor.getResultMetric("Errornous rows").getValue(result, null).intValue());
+        assertEquals(10, descriptor.getResultMetric("插入").getValue(result, null).intValue());
+        assertEquals(5, descriptor.getResultMetric("更新").getValue(result, null).intValue());
+        assertEquals(0, descriptor.getResultMetric("错误的行").getValue(result, null).intValue());
     }
 
     public void testErrorHandlingToInvalidFile() throws Exception {

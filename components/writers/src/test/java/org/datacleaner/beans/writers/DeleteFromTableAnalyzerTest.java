@@ -81,9 +81,9 @@ public class DeleteFromTableAnalyzerTest {
         final Set<MetricDescriptor> metrics = descriptor.getResultMetrics();
         assertThat(metrics.size(), is(3));
         final WriteDataResult result = new WriteDataResultImpl(10, 5, null, null, null);
-        assertThat(descriptor.getResultMetric("Inserts").getValue(result, null).intValue(), is(10));
-        assertThat(descriptor.getResultMetric("Updates").getValue(result, null).intValue(), is(5));
-        assertThat(descriptor.getResultMetric("Errornous rows").getValue(result, null).intValue(), is(0));
+        assertThat(descriptor.getResultMetric("插入").getValue(result, null).intValue(), is(10));
+        assertThat(descriptor.getResultMetric("更新").getValue(result, null).intValue(), is(5));
+        assertThat(descriptor.getResultMetric("错误的行").getValue(result, null).intValue(), is(0));
     }
 
     @Test

@@ -69,7 +69,7 @@ public abstract class CsvDatastoreUploadOrExistingFileWizardPage extends Abstrac
             throws DCUserInputException {
         final List<String> sources = formParameters.get("source");
         if (sources == null || sources.isEmpty()) {
-            throw new DCUserInputException("Please select a source for the CSV file");
+            throw new DCUserInputException("请为CSV文件选择一个源");
         }
 
         final String source = sources.get(0);

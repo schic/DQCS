@@ -3373,7 +3373,7 @@
 	    return 'Clear Search';
 	  },
 	  formatNoMatches: function formatNoMatches() {
-	    return 'No matching records found';
+	    return '找不到匹配的记录';
 	  },
 	  formatPaginationSwitch: function formatPaginationSwitch() {
 	    return 'Hide/Show pagination';

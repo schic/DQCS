@@ -61,7 +61,7 @@ public class LegendClickHandler implements ClickHandler {
 
     private MenuBar populateLegendMenu(final PopupPanel popupPanel) {
         MenuBar popupMenuBar = new MenuBar(true);
-        MenuItem editMetricNameItem = new MenuItem("Edit metric name", true, new Command() {
+        MenuItem editMetricNameItem = new MenuItem("编辑度量名称", true, new Command() {
             @Override
             public void execute() {
                 popupPanel.hide();
@@ -70,7 +70,7 @@ public class LegendClickHandler implements ClickHandler {
         });
         popupMenuBar.addItem(editMetricNameItem);
 
-        MenuItem editLegendColorItem = new MenuItem("Change color", true, new Command() {
+        MenuItem editLegendColorItem = new MenuItem("改变颜色", true, new Command() {
             @Override
             public void execute() {
                 popupPanel.hide();
@@ -95,7 +95,7 @@ public class LegendClickHandler implements ClickHandler {
     }
 
     private Button configureSaveColorButton(final DCPopupPanel popUp, final SelectColorPanel selectColorPanel) {
-        Button saveButton = DCButtons.primaryButton("glyphicon-save", "Save");
+        Button saveButton = DCButtons.primaryButton("glyphicon-save", "保存");
         saveButton.setVisible(true);
         saveButton.setTitle("Save");
         saveButton.addStyleName("SaveButton");
@@ -115,7 +115,7 @@ public class LegendClickHandler implements ClickHandler {
     }
 
     private void showEditMetricNamePopup() {
-        final DCPopupPanel editMetricPopUp = new DCPopupPanel("Edit Metric Name");
+        final DCPopupPanel editMetricPopUp = new DCPopupPanel("编辑度量名称");
         final TextBox textBox = new TextBox();
         textBox.setText(_data);
         Button saveButton = configureSaveButton(editMetricPopUp, textBox);
@@ -128,7 +128,7 @@ public class LegendClickHandler implements ClickHandler {
     }
 
     private Button configureSaveButton(final DCPopupPanel popUp, final TextBox textBox) {
-        Button saveButton = DCButtons.primaryButton("glyphicon-save", "Save");
+        Button saveButton = DCButtons.primaryButton("glyphicon-save", "保存");
         saveButton.setVisible(true);
         saveButton.setTitle("Save");
         saveButton.addClickHandler(new ClickHandler() {

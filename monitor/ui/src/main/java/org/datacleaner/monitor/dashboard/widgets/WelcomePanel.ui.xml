@@ -34,7 +34,7 @@
 			</g:Button>-->
 		</div>
 		<g:HTMLPanel ui:field="welcomeTextPanel" styleName="InfographicContainer">
-			<div class="InfographicPart InfographicIntro">
+		<!--	<div class="InfographicPart InfographicIntro">
 				<h1>
 					欢迎来到
 					<span class="blue">DataCleaner</span>
@@ -60,7 +60,7 @@
 			<div class="InfographicPart InfographicConnect">
 				<h2>将DataCleaner连接到世界</h2>
 				<div class="Description">有了监视器，您可以安全地连接使用web服务将DataCleaner作业转移到其他业务流程，计划执行等。立即利用你的工作同时兼顾两者数据的批处理和实时处理。</div>
-			</div>
+			</div>-->
 		</g:HTMLPanel>
 	</g:HTMLPanel>
 </ui:UiBinder>

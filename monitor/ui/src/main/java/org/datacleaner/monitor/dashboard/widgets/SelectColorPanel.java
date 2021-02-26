@@ -44,12 +44,12 @@ public class SelectColorPanel extends FlowPanel {
 
     private void renderColorPanel() {
         addStyleName("SelectColorPanel");
-        HTML description = new HTML("<p>Please select one of the following approaches for determining the metric's color in the timeline.</p>");
+        HTML description = new HTML("<p>请选择以下方法之一来确定时间线中度量的颜色。</p>");
         description.setStyleName("alert alert-info");
         add(description);
-        _rbAutoSelectColor = new RadioButton("colorGroup", "Automatically apply a color");
-        _rbManualSelectColor = new RadioButton("colorGroup", "Select color from palette");
-        _rbChoosePredefinedColor = new RadioButton("colorGroup", "Choose predefined color");
+        _rbAutoSelectColor = new RadioButton("colorGroup", "自动应用颜色");
+        _rbManualSelectColor = new RadioButton("colorGroup", "从调色板中选择颜色");
+        _rbChoosePredefinedColor = new RadioButton("colorGroup", "选择预定义颜色");
         if ("".equals(_colorString) || _colorString == null) {
             _rbAutoSelectColor.setValue(true);
         } else {
