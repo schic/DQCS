@@ -78,6 +78,7 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
     @Autowired
     TenantContextFactory _tenantContextFactory;
 
+
     /**
      * Constructs the {@link TenantContext}.
      *
@@ -143,12 +144,72 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
         return jobs;
     }
 
+    public List getJobsName(){
+        List jobs = getJobs();
+        List jobsname = new ArrayList();
+        for (int i = 0; i < jobs.size(); i++) {
+            int strStartIndex = jobs.get(i).toString().indexOf("=");
+            int strEndIndex = jobs.get(i).toString().indexOf("]");
+            /* 开始截取 */
+            String result = jobs.get(i).toString().substring(strStartIndex+1, strEndIndex);
+            jobsname.add(result);
+        }
+        return jobsname;
+    }
+
     public static class JobIdentifiers {
         private String name;
         private String endTime;
         private String beginTime;
         private String status;
         private String cost;
+        private String resultId;
+        private String triggerType;
+        private String triggerBy;
+        private String url;
+
+        public String getResultId() {
+            return resultId;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+
+        public void setResultId(String resultId) {
+            this.resultId = resultId;
+        }
+
+        public String getTriggerType() {
+            return triggerType;
+        }
+
+        public void setTriggerType(String triggerType) {
+            this.triggerType = triggerType;
+        }
+
+        public String getTriggerBy() {
+            return triggerBy;
+        }
+
+        public void setTriggerBy(String triggerBy) {
+            this.triggerBy = triggerBy;
+        }
+
+        public String getLogOutput() {
+            return logOutput;
+        }
+
+        public void setLogOutput(String logOutput) {
+            this.logOutput = logOutput;
+        }
+
+        private String logOutput;
+
 
         public String getName() {
             return name;
@@ -238,12 +299,27 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
                         map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
                         jobIdentifiers1.setCost(String.valueOf(executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime()));
                     }
-//
-//                    map.put("endTime", executionLog.getJobEndDate());
-//                    map.put("beginTime", executionLog.getJobBeginDate());
-//                    map.put("status", executionLog.getExecutionStatus().name());
-//                    map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
-
+                    String resultId="";
+                    String url="";
+                    if(executionLog.getResultId() != null){
+                        resultId=executionLog.getResultId();
+//                        url = Urls.createRelativeUrl("repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat");
+//                        url = "/DataCleaner_monitor_ui_war/"+"repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat";
+                        url = "/repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat";
+                        map.put("resultId", resultId);
+                        jobIdentifiers1.setResultId(resultId);
+                        map.put("url", url);
+                        jobIdentifiers1.setUrl(url);
+                    } if(executionLog.getTriggerType().name() != null){
+                        map.put("triggerType", executionLog.getTriggerType().name()+" triggered");
+                        jobIdentifiers1.setTriggerType(executionLog.getTriggerType().name()+" triggered");
+                    } if(executionLog.getTriggeredBy() != null){
+                        map.put("triggerBy", executionLog.getTriggeredBy());
+                        jobIdentifiers1.setTriggerBy(executionLog.getTriggeredBy());
+                    } if(executionLog.getLogOutput() != null){
+                        map.put("logOutput", executionLog.getLogOutput());
+                        jobIdentifiers1.setLogOutput(executionLog.getLogOutput());
+                    }
                     jobIdentifiers.add(map);
                 }
             }
@@ -261,7 +337,7 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
         }
 
 
-            return JSON.toString(jobIdentifiers);
+        return JSON.toString(jobIdentifiers);
     }
 
 
