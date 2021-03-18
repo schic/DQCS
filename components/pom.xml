@@ -16,6 +16,7 @@
 		<module>basic-analyzers</module>
 		<module>data-structures</module>
 		<module>uniqueness</module>
+		<module>unleo</module>
 		<module>referential-integrity</module>
 		<module>json</module>
 		<module>mark-rows</module>
