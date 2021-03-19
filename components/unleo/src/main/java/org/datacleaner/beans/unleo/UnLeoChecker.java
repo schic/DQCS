@@ -120,9 +120,9 @@ public class UnLeoChecker implements Analyzer<CrosstabResult> {
         final CrosstabDimension columnDimension = new CrosstabDimension("Column");//构建维度1
         final CrosstabDimension weekdayDimension = new CrosstabDimension("day");//构建维度2
         int sum = list.size();
-        list.add(0,"Total amount of data");
-        list.add(1,"Days with data");
-        list.add(2,"Days without data");
+        list.add(0,"时间范围内数据总量");
+        list.add(1,"有数据的天数");
+        list.add(2,"没有数据的天数");
         weekdayDimension.addCategories(list);
         final Crosstab<Integer> crosstab = new Crosstab<>(Integer.class, columnDimension, weekdayDimension);
         for (final InputColumn<Date> col : dateColumns) {

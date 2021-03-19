@@ -125,6 +125,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.eobjects.datacleaner</groupId>
+			<artifactId>DataCleaner-jleo</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eobjects.datacleaner</groupId>
 			<artifactId>DataCleaner-groovy</artifactId>
 			<version>${project.version}</version>
 		</dependency>
