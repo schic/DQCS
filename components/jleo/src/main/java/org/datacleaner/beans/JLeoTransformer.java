@@ -1,40 +1,35 @@
-package org.datacleaner.beans;/**
- * @author Leo
- * @description 干嘛干嘛的
- * @date 2019/9/5 17:53
- **/
+package org.datacleaner.beans;
 
+import org.datacleaner.api.Categorized;
+import org.datacleaner.api.Configured;
+import org.datacleaner.api.InputRow;
+import org.datacleaner.api.OutputColumns;
+import javax.inject.Named;
 import org.datacleaner.api.*;
 import org.datacleaner.components.categories.LeoTransCategory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.inject.Named;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
 /**
  * @Description
- * @Author 10648
+ * @Author Leo
  * @Date 2021年3月1日
  **/
 @Named("闰年检查")
-@Description("检查时间字段所在年是否为闰年")
+@Description("检查某时间字段所在年是否为闰年")
 @Categorized(LeoTransCategory.class)
 public class JLeoTransformer implements Transformer {
 
-    public static final String PROPERTY_INPUTS_COLUMN = "Inputs column";
-    public static final String OUTPUT_COLUMN_NO_Leap_Year = "Next Leap year";
-    public static final String OUTPUT_COLUMN_Leap_Year = "Leap year";
-    private static final Logger logger = LoggerFactory.getLogger(JLeoTransformer.class);
-
+    public static final String PROPERTY_INPUTS_COLUMN = "输入列";
+    public static final String OUTPUT_COLUMN_NO_LEAP_YEAR = "距离下一个闰年";
+    public static final String OUTPUT_COLUMN_LEAP_YEAR = "是否闰年";
     /**
      * 为了从传入字段中读取数据，我们需要注入一个InputColumn<E>实例（或者一个数组）,其中<E>是传入字段的数据类型。
      * 为了注入，我们使用@Configured注解。
      */
     @Configured(PROPERTY_INPUTS_COLUMN)
-    @Description("Inputs column")
+    @Description("输入列")
     InputColumn<Date> _inputsColumn;
 
 
@@ -48,7 +43,7 @@ public class JLeoTransformer implements Transformer {
      */
     @Override
     public OutputColumns getOutputColumns() {
-        return new OutputColumns(String.class, OUTPUT_COLUMN_NO_Leap_Year, OUTPUT_COLUMN_Leap_Year);
+        return new OutputColumns(String.class, OUTPUT_COLUMN_NO_LEAP_YEAR, OUTPUT_COLUMN_LEAP_YEAR);
     }
 
     /**

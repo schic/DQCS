@@ -34,7 +34,7 @@ public interface PropertyWidget<E> {
 
     /**
      * Initializes the property widget with the initial value of the property
-     *
+     *      ----用属性的初始值初始化属性小部件
      * @param value
      */
     void initialize(E value);
@@ -43,6 +43,8 @@ public interface PropertyWidget<E> {
      * Gets the visual widget to show on the UI. This may (in special cases)
      * return null if the widget should not be shown, or if it is represented as
      * part of a different part of the UI.
+     *      ----获取要在UI上显示的可视小部件。如果小部件不应该被显示，
+     *      或者如果它被表示为UI的不同部分，那么它可能（在特殊情况下）返回null。
      *
      * @return
      */
@@ -51,7 +53,7 @@ public interface PropertyWidget<E> {
     /**
      * Gets the {@link ConfiguredPropertyDescriptor} that this
      * {@link PropertyWidget} is modelling.
-     *
+     *      ----获取此{@link PropertyWidget}正在建模的{@link ConfiguredPropertyDescriptor}。
      * @return
      */
     ConfiguredPropertyDescriptor getPropertyDescriptor();
@@ -65,19 +67,22 @@ public interface PropertyWidget<E> {
      * surrounding environment is not able to determine if it has changed or
      * not. The property widget should therefore investigate if the incoming
      * value does in deed differ from the existing.
+     *      ----如果小部件包含的值容易被另一方更改（通常是UI中用于填充值或类似内容的某种快捷方式），则在该小部件上调用。
+     *      请注意，当周围环境无法确定该小部件是否已更改时，有时也会调用此方法。
+     *      因此，property小部件应该调查传入值是否确实与现有值不同。
      */
     void onValueTouched(E value);
 
     /**
      * Determines if the property is set given the current state in the UI.
-     *
+     *      ----确定是否根据UI中的当前状态设置属性。
      * @return
      */
     boolean isSet();
 
     /**
      * Gets the current value of the property given the current state in the UI.
-     *
+     *      ----获取给定UI中当前状态的属性的当前值。
      * @return
      */
     E getValue();

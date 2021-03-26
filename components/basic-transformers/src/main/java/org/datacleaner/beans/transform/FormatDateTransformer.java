@@ -33,6 +33,9 @@ import org.datacleaner.api.OutputColumns;
 import org.datacleaner.api.Transformer;
 import org.datacleaner.components.categories.DateAndTimeCategory;
 
+/**
+ * 这是日期格式化  转换器。将日期字段 按照 yyyy-MM-dd HH:mm:ss 格式。最简单的转换器
+ */
 @Named("FormatDateTransformer.name")
 @Description("FormatDateTransformer.Description")
 @Categorized(DateAndTimeCategory.class)

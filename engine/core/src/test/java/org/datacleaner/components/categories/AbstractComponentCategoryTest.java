@@ -27,7 +27,6 @@ public class AbstractComponentCategoryTest extends TestCase {
         assertEquals("Scripting", new ScriptingCategory().getName());
         assertEquals("Text", new TextCategory().getName());
         assertEquals("Text", new TextCategory().toString());
-
         assertEquals("Conversion", new ConversionCategory().getName());
         assertEquals("Data structures", new DataStructuresCategory().getName());
         assertEquals("Date and time", new DateAndTimeCategory().getName());

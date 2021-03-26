@@ -1,9 +1,5 @@
-package org.datacleaner.beans;/**
- * @author Leo
- * @description 干嘛干嘛的
- * @date 2019/9/5 17:53
- **/
-
+package org.datacleaner.beans;
+import org.datacleaner.components.categories.LeoTransCategory;
 import org.datacleaner.data.MockInputColumn;
 import org.datacleaner.data.MockInputRow;
 import org.junit.Test;
@@ -14,7 +10,7 @@ import static junit.framework.TestCase.assertEquals;
 
 /**
  * @Description
- * @Author 10648
+ * @Author Leo
  * @Date 2021年1月11日14:32:51
  **/
 public class JLeoTransformerTest {
@@ -33,6 +29,7 @@ public class JLeoTransformerTest {
 
     @Test
     public void test2() {
+        System.out.println("===="+new LeoTransCategory().getName());
         final MockInputColumn<String> col = new MockInputColumn<>("Name", String.class);
 
         final JLeoHelloTransformer transformer = new JLeoHelloTransformer();

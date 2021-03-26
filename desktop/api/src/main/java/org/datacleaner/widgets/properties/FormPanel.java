@@ -36,7 +36,7 @@ import org.jdesktop.swingx.JXLabel;
 
 /**
  * A panel that lays out inputs of in a vertical form-like manner
- * 以垂直形式布置输入的面板
+ * 以垂直形式布置输入的面板  一种面板，以垂直的方式排列输入
  */
 public class FormPanel extends DCPanel {
 

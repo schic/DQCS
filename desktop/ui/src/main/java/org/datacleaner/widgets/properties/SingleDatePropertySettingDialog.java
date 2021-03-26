@@ -98,7 +98,7 @@ public class SingleDatePropertySettingDialog extends AbstractDialog {
         _todayPlusTextField = createTodayPlusTextField();
     }
 
-    private JButton createCloseButton() {
+    private JButton createCloseButton() {//这是日期选择小dialog最下面的close按钮   不是配置面板下面的close按钮
         final JButton closeButton = WidgetFactory.createPrimaryButton("Close", IconUtils.ACTION_SAVE_BRIGHT);
         closeButton.addActionListener(e -> {
             if (isParticularDateSpecified()) {
@@ -174,7 +174,7 @@ public class SingleDatePropertySettingDialog extends AbstractDialog {
     private JXDatePicker createDatePicker() {
         final JXDatePicker datePicker = new JXDatePicker();
         datePicker.setFormats(DATE_FORMAT);
-        datePicker.addActionListener(e -> {
+        datePicker.addActionListener(e -> {//第一次生成不会走事件监听；
             clearRadioGroup();
             updateWidget();
         });

@@ -38,11 +38,10 @@ import org.slf4j.LoggerFactory;
  * PropertyWidget接口的抽象实现。实现类最好：
  *
  * <ul>
- * <li>add(...) a single widget in the constructor.</li>在构造函数中add(...)一个小部件。
+ * <li>add(...) a single widget in the constructor.
  * <li>call fireValueChanged() each time the contents/value of the widget has
- * changed.</li>每次小部件的内容/值发生更改时，请调用fireValueChanged（）。
- * </ul>
- *
+ * changed.
+ *      ----<li>在构造函数中添加（…）一个小部件。<li>每次小部件的内容/值发生更改时调用fireValueChanged（）。
  * @param <E>
  */
 public abstract class AbstractPropertyWidget<E> extends MinimalPropertyWidget<E> {
@@ -51,8 +50,8 @@ public abstract class AbstractPropertyWidget<E> extends MinimalPropertyWidget<E>
 
     private final DCPanel _panel;
 
-    // counter which is used to indicate whether a "UI batchupdate" is running
-    // or not". Subclasses can fire batch
+    // counter which is used to indicate whether a "UI batchupdate" is running计数器，用于指示“UI batchupdate”是否正在运行
+    // or not". Subclasses can fire batch   子类可以触发批处理
     private volatile int _batchUpdateCounter;
 
     public AbstractPropertyWidget(final ComponentBuilder componentBuilder,
@@ -79,7 +78,7 @@ public abstract class AbstractPropertyWidget<E> extends MinimalPropertyWidget<E>
     /**
      * Executes a "widget batch update". Listeners and other effects of updating
      * individual parts of a widget may be turned off during batch updates.
-     *
+     *      ----执行“小部件批量更新”。在批量更新期间，可以关闭侦听器和更新小部件各个部分的其他效果。
      * @param action
      *            the action to execute
      */
@@ -186,7 +185,7 @@ public abstract class AbstractPropertyWidget<E> extends MinimalPropertyWidget<E>
 
     /**
      * Determines if the widget is currently visible.
-     *
+     *         ----确定小部件当前是否可见。
      * @return
      */
     protected boolean isVisible() {

@@ -8,11 +8,11 @@ import java.util.Random;
 
 /**
  * @Description
- * @Author 10648
+ * @Author Leo
  * @Date 2021年3月8日
  **/
 @Named("Hello示例")
-@Description("这是示例转换器，在name字段随机拼接问候语")
+@Description("这是示例转换器，在某字段前随机拼接问候语")
 @Categorized(LeoTransCategory.class)
 public class JLeoHelloTransformer implements Transformer {
 

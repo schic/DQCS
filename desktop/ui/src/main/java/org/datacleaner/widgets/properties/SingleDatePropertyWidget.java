@@ -65,7 +65,7 @@ public class SingleDatePropertyWidget extends AbstractPropertyWidget<Date> {
         return valueLabel;
     }
 
-    private JButton createChangeButton() {
+    private JButton createChangeButton() {//配置面板中的  select按钮
         final JButton changeButton = new JButton("Select");
         changeButton.addActionListener(e -> _settingDialog.setVisible(true));
         final Dimension buttonSize = new Dimension(100, 25);
