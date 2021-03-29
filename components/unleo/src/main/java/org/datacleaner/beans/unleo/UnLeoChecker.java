@@ -12,8 +12,8 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @Description 返回类型CrosstabResult，相对来说简单一点。就是一个两列，多行的一个表。呈现结果；
- * @Author 10648
+ * @Description 返回类型CrosstabResult，相对来说简单一点。就是一个多列，多行的一个表。呈现结果；
+ * @Author Leo
  * @Date 2021年1月15日
  **/
 @Named("数据日期分布")
@@ -31,12 +31,10 @@ public class UnLeoChecker implements Analyzer<CrosstabResult> {
      * <E>type参数定义感兴趣的数据类型，它还用于确定分析器支持哪些类型的数据类型。
      * 这个相当于注入字段数据，直接就可以使用了。如下，是输入的某一个或多个日期字段；
      */
-    @Alias("日期字段")
-    @Configured
+    @Configured("日期字段")
     InputColumn<Date>[] dateColumns;
 
-    @Alias("时间段")
-    @Configured
+    @Configured("时间段")
     MatchDateType _dateRange = MatchDateType.LAST_WEEK;
 
 

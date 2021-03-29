@@ -1,7 +1,5 @@
 package org.datacleaner.components.categories;
 
-import javax.inject.Named;
-
 /**
  * 增加一个自定义的左侧菜单目录
  * @Description
@@ -14,6 +12,6 @@ public class LeoTransCategory extends AbstractComponentCategory {
 
     @Override
     public String getName() {
-        return "拓展";
+        return "自定义拓展";
     }
 }
