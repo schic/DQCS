@@ -79,17 +79,17 @@ public class SparkJobContext implements Serializable {
             final URI customPropertiesPath, final JavaSparkContext sparkContext) {
         final HdfsHelper hdfsHelper = new HdfsHelper(sparkContext);
         _jobName = getAnalysisJobName(analysisJobXmlPath);
-        logger.info("Loading SparkJobContext for {} - job name '{}'", analysisJobXmlPath, _jobName);
+        logger.info("正在加载的SparkJobContext {} - 作业名称 '{}'", analysisJobXmlPath, _jobName);
 
         _configurationXml = hdfsHelper.readFile(dataCleanerConfigurationPath, true);
         if (Strings.isNullOrEmpty(_configurationXml)) {
             throw new IllegalArgumentException(
-                    "Failed to read content from configuration file: " + dataCleanerConfigurationPath);
+                    "无法从配置文件中读取内容: " + dataCleanerConfigurationPath);
         }
 
         _analysisJobXml = hdfsHelper.readFile(analysisJobXmlPath, true);
         if (Strings.isNullOrEmpty(_analysisJobXml)) {
-            throw new IllegalArgumentException("Failed to read content from job file: " + analysisJobXmlPath);
+            throw new IllegalArgumentException("无法从作业文件中读取内容: " + analysisJobXmlPath);
         }
 
         final String propertiesString = hdfsHelper.readFile(customPropertiesPath);

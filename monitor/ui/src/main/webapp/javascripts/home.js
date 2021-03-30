@@ -45,12 +45,12 @@ $('#search_btn').click(function () {
     $('#mytab').bootstrapTable('refresh', {url: '/getOneCadreInfo/list'});//url为后台action
 })
 
-function showdiv() {
-    document.getElementById('jobName').style.display = "inline";
+function showdiv(id) {
+    document.getElementById(id).style.display = "inline";
 }
 
-function hidediv() {
-    document.getElementById('jobName').style.display = "none";
+function hidediv(id) {
+    document.getElementById(id).style.display = "none";
 }
 
 

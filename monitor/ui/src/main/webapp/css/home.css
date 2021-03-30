@@ -19,14 +19,17 @@
 }
 
 .cs {
-    background: white;
-    top: 150px;
-    left: 150px;
+    background: antiquewhite;
+    /*top: event.clientY+20;*/
+    /*left: event.clientX+20;*/
     position: absolute;
     /*opacity: 0;*/
     display: none;
     font-size: 14px;
     z-index:9999;
+    border-radius: 4px;
+    /*left: event.x;*/
+    /*top: event.y;*/
 }
 
 .cent:hover .cs {

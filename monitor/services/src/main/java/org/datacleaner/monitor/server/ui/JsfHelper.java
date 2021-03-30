@@ -29,6 +29,9 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Component with convenience methods primarily intended to aid JSF/EL code
  * which is not always as expressive as Java.
@@ -61,6 +64,14 @@ public class JsfHelper {
         return getDatastores().length;
     }
 
+    public List getDatastoresName(){
+        DatastoreBeanWrapper[] datastores = getDatastores();
+        List datastoresName = new ArrayList();
+        for (int i = 0; i < datastores.length; i++) {
+            datastoresName.add(datastores[i].getName());
+        }
+        return datastoresName;
+    }
 
     private DatastoreBeanWrapper[] prepareDatastoreWrappers(DatastoreCatalog datastoreCatalog) {
         final String[] datastoreNames = datastoreCatalog.getDatastoreNames();

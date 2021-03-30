@@ -54,12 +54,12 @@
 					<p class="discrete">
 						使用
 						<i>cron</i>
-						语法，添加“seconds minutes hours day of month month of year day of week”。例：每天14:05是“0 5 14**？”
+						语法，添加“秒 分 钟 小时 年 月 日 星期日”。例：每天14:05是“0 5 14**？”
 
 					</p>
 					<p class="discrete">
 						或者使用关键字：
-						<i>@monthly，@daily，@hourly</i>。
+						<i>@每月，@每天，@每小时</i>。
 						（按“@”显示全部内容）。
 					</p>
 				</div>
@@ -105,6 +105,7 @@
 					name="runOnHadoop" />
 				
 				<div class="configurationPanel">
+
 					<p>作业将在Hadoop集群上运行 </p>
 				</div>
 			</div>

@@ -220,7 +220,7 @@
 				<div class="Row" style="border:1px #000000   solid;width: 60%;float:left">
 					<p class="sp1">总体情况</p><br/>
 					<div class="Column">
-						<div onmouseover="showdiv()" onmouseout="hidediv()">
+						<div onmouseover="showdiv('jobName')" onmouseout="hidediv('jobName')">
 							<img src="images/1.png" class="pc"/>
 						</div>
 						<span class="row1">任务总数</span><br/>
@@ -234,15 +234,31 @@
 					</div>
 
 					<div class="Column">
-						<img src="images/2.png" class="pc"/>
+						<div onmouseover="showdiv('datastoresName')" onmouseout="hidediv('datastoresName')">
+							<img src="images/2.png" class="pc"/>
+						</div>
 						<span class="row1">数据源</span><br/>
 						<span class="row1">#{jsfHelper.datastoresNum}</span>
+						<div class="cs" id="datastoresName">
+							<c:forEach items="#{jsfHelper.datastoresName}" var ="li">
+								<li style="height: 1px;text-decoration: underline">${li}</li>
+								<br/>
+							</c:forEach>
+						</div>
 					</div>
 
 					<div class="Column">
-						<img src="images/3.png" class="pc"/>
+						<div onmouseover="showdiv('groupsName')" onmouseout="hidediv('groupsName')">
+							<img src="images/3.png" class="pc"/>
+						</div>
 						<span class="row1">时间线分析</span><br/>
 						<span class="row1">#{tenantContext.timelineFolder.groupsNum}</span>
+						<div class="cs" id="groupsName">
+							<c:forEach items="#{tenantContext.timelineFolder.datastoresName}" var ="li">
+								<li style="height: 1px;text-decoration: underline">${li}</li>
+								<br/>
+							</c:forEach>
+						</div>
 					</div>
 
 				</div>

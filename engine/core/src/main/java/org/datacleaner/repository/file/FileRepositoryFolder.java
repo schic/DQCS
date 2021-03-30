@@ -112,6 +112,11 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
         return num;
     }
 
+    public List getDatastoresName(){
+        List<RepositoryFile> list = getFiles(null, null);
+        return list;
+    }
+
     @Override
     public RepositoryFile getLatestFile(final String prefix, final String extension) {
         final FileFilter baseFilter = createFileFilter(prefix, extension);
