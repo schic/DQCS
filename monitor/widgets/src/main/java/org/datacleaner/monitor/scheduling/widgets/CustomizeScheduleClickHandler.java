@@ -54,7 +54,7 @@ public class CustomizeScheduleClickHandler implements ClickHandler {
 
         final CustomizeSchedulePanel customizeSchedulePanel = new CustomizeSchedulePanel(_service, _tenant, _schedule);
 
-        final Button saveButton = DCButtons.primaryButton("glyphicon-save", "Save schedule");
+        final Button saveButton = DCButtons.primaryButton("glyphicon-save", "保存计划");
         saveButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

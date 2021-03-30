@@ -86,7 +86,7 @@ public class DashboardGroupPanel extends FlowPanel {
         final Button newTimelineButton;
         if (displayInfomercial && group == null) {
             // this is the "default" group
-            add(new HeadingLabel("欢迎"));
+            add(new HeadingLabel(""));
             _welcomePanel = new WelcomePanel();
             newTimelineButton = _welcomePanel.getNewTimelineButton();
             add(_welcomePanel);

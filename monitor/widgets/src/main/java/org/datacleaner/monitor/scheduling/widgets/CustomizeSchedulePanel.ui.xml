@@ -25,96 +25,87 @@
 
 	<g:HTMLPanel styleName="CustomizeSchedulePanel">
 		<div class="alert alert-info">
-			<p>You can configure the schedule of a job in a number of different
-				ways.</p>
+			<p>您可以通过多种不同的方式配置作业的计划。</p>
 			<p>
-				The most common way is by using a
-				<i>periodic trigger</i>
-				. Hereby your
-				job gets triggered at a periodic interval, determined
-				by the
-				scheduler.
+				最常用的方法是使用
+				<i>周期性触发器</i>
+				。因此，您的作业将按计划程序确定的周期间隔触发。
 			</p>
 			<p>
-				Alternatively you can set up a
-				<i>dependent trigger</i>
-				, where the job gets triggered once another job has finished
-				executing. This is convenient in order to connect a larger flow of
-				jobs in sequence.
+				或者，您可以设置一个
+				<i>从属触发器</i>
+				，在该触发器中，一旦另一个作业完成执行，就会触发该作业。这样便于按顺序连接更大的作业流。
 			</p>
 			<p>
-				Either you can select to only allow
-				<i>manual triggering</i>
-				of the job. In that case your job will not be automatically invoked,
-				but you can invoke it manually using this web application, or using
-				a web service invocation.
+				您可以选择仅允许
+				<i>手动触发</i>
+				作业。在这种情况下，不会自动调用作业，但可以使用此web应用程序或web服务调用手动调用作业。
 			</p>
 		</div>
 
 		<div class="triggerListPanel">
 			<div class="triggerPanel">
-				<g:RadioButton ui:field="periodicTriggerRadio" text="Periodic trigger"
+				<g:RadioButton ui:field="periodicTriggerRadio" text="周期触发 "
 					name="triggerTypeRadio" />
 				<div class="configurationPanel">
-					<p>Please provide a scheduling expression (cron syntax):</p>
+					<p>请提供调度表达式（cron语法）：</p>
 					<g:SuggestBox ui:field="periodicTriggerExpressionTextBox" styleName="form-control" />
 					<div id="periodicErrorMessage" class="text-danger"></div>
 					<p class="discrete">
-						Use
+						使用
 						<i>cron</i>
-						syntax by appending "seconds minutes hours day-of-month
-						month-of-year day-of-week". Example: Every day at 14:05 is "0 5 14
-						* * ?"
+						语法，添加“seconds minutes hours day of month month of year day of week”。例：每天14:05是“0 5 14**？”
+
 					</p>
 					<p class="discrete">
-						Or use a keyword:
-						<i>@monthly, @daily, @hourly.</i>
-						(Press '@' to show all).
+						或者使用关键字：
+						<i>@monthly，@daily，@hourly</i>。
+						（按“@”显示全部内容）。
 					</p>
 				</div>
 			</div>
 			<div class="triggerPanel">
-				<g:RadioButton ui:field="oneTimeTriggerRadio" text="One Time Schedule"
+				<g:RadioButton ui:field="oneTimeTriggerRadio" text="一次性时间表"
 					name="triggerTypeRadio" />
 				<div class="configurationPanel">
-					<p>Please provide a date for one time scheduling:</p>
+					<p>请提供一次性计划的日期： </p>
 					<dp:DateBox ui:field="dateBox" styleName="form-control" />
 					<div id="errorMessage" class="text-danger"></div>
 					<div id="serverDate" class="text-info"></div>
 				</div>
 			</div>
 			<div class="triggerPanel">
-				<g:RadioButton ui:field="dependentTriggerRadio" text="Dependent trigger"
+				<g:RadioButton ui:field="dependentTriggerRadio" text="从属触发器"
 					name="triggerTypeRadio" />
 				<div class="configurationPanel">
-					<p>Please select the preceding job that this job will run after:</p>
+					<p>请选择此作业将在其之后运行的上一个作业：</p>
 					<g:ListBox ui:field="dependentTriggerJobListBox" styleName="form-control" />
 				</div>
 			</div>
 			<div class="triggerPanel">
-				<g:RadioButton ui:field="hotFolderTriggerRadio" text="Hot Folder trigger"
+				<g:RadioButton ui:field="hotFolderTriggerRadio" text="热文件夹触发器"
 					name="triggerTypeRadio" />
 				<div class="configurationPanel">
-					<p>Please provide a folder or file on which a change will trigger a run of this job:</p>
+					<p>请提供更改将触发运行此作业的文件夹或文件：</p>
 					<g:TextBox ui:field="hotFolderTriggerLocation" styleName="form-control" />
 				</div>
 			</div>
 			</div>
 			<div class="triggerPanel">
-				<g:RadioButton ui:field="manualTriggerRadio" text="Manual trigger"
+				<g:RadioButton ui:field="manualTriggerRadio" text="手动触发器"
 					name="triggerTypeRadio" />
 				
 				<div class="configurationPanel">
-					<p>The job will not be automatically invoked.</p>
+					<p>不会自动调用作业。</p>
 				</div>
 			</div>
 			
 			<div class="triggerPanel">
-				<g:CheckBox ui:field="runOnHadoop" text="Run on Hadoop cluster"
+				<g:CheckBox ui:field="runOnHadoop" text="在Hadoop集群上运行 "
 					name="runOnHadoop" />
 				
 				<div class="configurationPanel">
-					<p>The job will run on Hadoop cluster</p>
+					<p>作业将在Hadoop集群上运行 </p>
 				</div>
 			</div>
 
