@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -62,11 +63,32 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
             return this == LEFT_JOIN_MAX_ONE;
         }
     }
+    public enum MatchTimeRange implements HasName {
+
+        LAST_WEEK("最近一周", String.class),
+        LAST_MONTH("最近一个月", String.class),
+        LAST_THREE_MONTHS("最近三个月", String.class),
+        LAST_HALF_YEAR("最近半年", String.class);
+
+
+        private final String _name;
+        private final Class<?> _outputClass;
+
+        MatchTimeRange(final String name, final Class<?> outputClass) {
+            _name = name;
+            _outputClass = outputClass;
+        }
+
+        @Override
+        public String getName() {
+            return _name;
+        }
+    }
     private static final Logger logger = LoggerFactory.getLogger(JLeoLookupTransformer.class);
     private static final String PROPERTY_NAME_DATASTORE = "Datastore";
     private static final String PROPERTY_NAME_SCHEMA_NAME = "Schema name";
     private static final String PROPERTY_NAME_TABLE_NAME = "Table name";
-    private final Cache<List<Object>, Object[]> cache = CollectionUtils2.createCache(10000, 5 * 60);
+    private final Cache<List<Object>, Object[]> cache = CollectionUtils2.createCache(10000, 10 * 60);
     @Inject
     @Configured(value = PROPERTY_NAME_DATASTORE)
     Datastore datastore;
@@ -80,16 +102,12 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     String[] conditionColumns ;//选中附表的字段
     @Inject
     @Configured("输出列")
-    @Description("输出列和输入列只显示在预览数据中")
     @ColumnProperty
     @MappedProperty(PROPERTY_NAME_TABLE_NAME)
     String[] outputColumns ;//outputColumn属性中选中的字段可能是多个字段
     @Inject
-    @Configured("附表日期字段")
-    @Description("从附表中勾选一个时间字段以便筛选附表时间范围内的数据")
-    @ColumnProperty
-    @MappedProperty(PROPERTY_NAME_TABLE_NAME)
-    String[] dateColumn ;
+    @Configured(value = "主表日期字段",required = false)
+    InputColumn<Date>[] tableADateFiled;
     @Inject
     @Configured(value = PROPERTY_NAME_SCHEMA_NAME)
     @Alias("Schema")
@@ -102,18 +120,18 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     @TableProperty
     @MappedProperty(PROPERTY_NAME_SCHEMA_NAME)
     String tableName;
-    @Inject
-    @Configured("缓存查找")
-    @Description("使用客户端缓存以避免使用相同的输入多次查找。")
+    //@Inject
+    //@Configured("缓存查找")
+    //@Description("使用客户端缓存以避免使用相同的输入多次查找。")
     boolean cacheLookups = true;
     @Inject
     @Configured("SQL语义")
     @Description("与SQL连接相比，哪种语义应用于查找。")
     JLeoLookupTransformer.JoinSemantic joinSemantic = JLeoLookupTransformer.JoinSemantic.LEFT_JOIN_MAX_ONE;
     @Inject
-    @Configured("附表日期范围")
-    @Description("根据附表勾选的时间字段确定想要筛选到的时间范围。如果不选择时间段，将全量查询")
-    String dateRangeString;
+    @Configured(value = "主表时间区间",required = false)
+    @Description("根据主表勾选的时间范围。用时间范围内数据到附表中去全量匹配")
+    JLeoLookupTransformer.MatchTimeRange matchTimeRange ;
     @Inject
     @Provided
     OutputRowCollector outputRowCollector;
@@ -132,13 +150,12 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     @Inject
     @Provided
     RowAnnotation missesTotal;
-    @Inject
-    @Provided
-    RowAnnotation cachedTotal;
+    //@Inject
+    //@Provided
+    //RowAnnotation cachedTotal;
 
     private Column[] queryOutputColumns;
     private Column[] queryConditionColumns;
-    private Column[] queryDateColumns;
     private DatastoreConnection datastoreConnection;
     private CompiledQuery lookUpQuery;
     private CompiledQuery dataTotalQuery;
@@ -146,24 +163,22 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     public JLeoLookupTransformer() {
     }
     public JLeoLookupTransformer(final Datastore datastore, final String schemaName, final String tableName,
-                                 final String[] conditionColumns, final InputColumn<?>[] conditionValues, final String[] outputColumns,
-                                 final boolean cacheLookups, final String[] dateColumn, final String dateRangeString) {
+                                 final String[] conditionColumns, final InputColumn<?>[] conditionValues,
+                                 final InputColumn<Date>[] tableADateFiled, String[] outputColumns) {
         this.datastore = datastore;
         this.schemaName = schemaName;
         this.tableName = tableName;
         this.conditionColumns = conditionColumns;
         this.conditionValues = conditionValues;
-        this.cacheLookups = cacheLookups;
+        this.tableADateFiled = tableADateFiled;
         this.outputColumns = outputColumns;
         this.joinSemantic = JLeoLookupTransformer.JoinSemantic.LEFT_JOIN_MAX_ONE;
-        this.dateColumn = dateColumn;
-        this.dateRangeString = dateRangeString;
+        this.matchTimeRange = null;
         annotationFactory = new DummyRowAnnotationFactory();
         tableATotal = annotationFactory.createAnnotation();
         tableBTotal = annotationFactory.createAnnotation();
         matchesTotal = annotationFactory.createAnnotation();
         missesTotal = annotationFactory.createAnnotation();
-        cachedTotal = annotationFactory.createAnnotation();
     }
 
     /**
@@ -202,7 +217,7 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     public void init() {
         datastoreConnection = datastore.openConnection();
         resetCachedColumns();
-        cache.invalidateAll();
+        //cache.invalidateAll();
         compileLookupQuery();
     }
 
@@ -217,30 +232,27 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     private void compileLookupQuery() {
         try {
             final Column[] queryOutputColumnss = getQueryOutputColumns(false);
-            final Column[] queryDateColumnss = getQueryDateColumns(false);
             final Column queryOutputColumn = queryOutputColumnss[0];
-            final Column queryDateColumn = queryDateColumnss[0];
             final Table table = queryOutputColumn.getTable();
-
+            //拼接sql
             Query queryTableB = new Query().from(table).select(queryOutputColumnss);
             Query queryTableBCount = new Query().from(table).selectCount();
+            //拼接sql的条件
             if (!isCarthesianProductMode()) {
                 final Column[] queryConditionColumnss = getQueryConditionColumns();
                 for (int i = 0; i < queryConditionColumnss.length; i++) {
                     queryTableB = queryTableB.where(queryConditionColumnss[i], OperatorType.EQUALS_TO, new QueryParameter());
                 }
-                if (!dateRangeString.isEmpty()){
-                    queryTableB = queryTableB.where(queryDateColumn,OperatorType.GREATER_THAN_OR_EQUAL,new QueryParameter());
-                    queryTableB = queryTableB.where(queryDateColumn, OperatorType.LESS_THAN,new QueryParameter());
-                }
             }
-
+            //拼接sql的分页
             if (joinSemantic == JLeoLookupTransformer.JoinSemantic.LEFT_JOIN_MAX_ONE) {
                 queryTableB = queryTableB.setMaxRows(1);
             }
+            //最终查询语句
             lookUpQuery = datastoreConnection.getDataContext().compileQuery(queryTableB);
             dataTotalQuery = datastoreConnection.getDataContext().compileQuery(queryTableBCount);
             DataSet dataSet = datastoreConnection.getDataContext().executeQuery(dataTotalQuery);
+            System.out.println("附表SQL======"+lookUpQuery.toSql());
             while (dataSet.next()){
                 Long aLong = (Long) dataSet.getRow().getValue(0);
                 annotationFactory.annotate(null,aLong.intValue(),tableBTotal);
@@ -277,19 +289,22 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
      * @param checkNames 是否检查/验证/调整这些列的名称
      * @return
      */
-    private Column[] getQueryDateColumns(final boolean checkNames) {
-        if (queryDateColumns == null) {
-            try (DatastoreConnection con = datastore.openConnection()) {
-                queryDateColumns = con.getSchemaNavigator().convertToColumns(schemaName, tableName, dateColumn);
-            }
-        } else if (checkNames) {
-            if (!isQueryDateColumnsUpdated()) {
-                queryDateColumns = null;
-                return getQueryDateColumns(false);
-            }
-        }
-        return queryDateColumns;
-    }
+    //private Column[] getQueryDateColumns(final boolean checkNames) {
+    //    if (tableADateFiled == null) {
+    //        if (dateColumn == null || dateColumn.length==0 ){
+    //            return new Column[0];
+    //        }
+    //        try (DatastoreConnection con = datastore.openConnection()) {
+    //            queryDateColumns = con.getSchemaNavigator().convertToColumns(schemaName, tableName, dateColumn);
+    //        }
+    //    } else if (checkNames) {
+    //        if (!isQueryDateColumnsUpdated()) {
+    //            queryDateColumns = null;
+    //            return getQueryDateColumns(false);
+    //        }
+    //    }
+    //    return queryDateColumns;
+    //}
 
     /**
      *  将客户端勾选到附表附表对应到主表的字段，String[]对象 转换为Column[]对象 一个或多个字段
@@ -334,22 +349,22 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
      *      检查当前（缓存的）输出列数组的有效性。
      * @return 如果当前列有效，则为true
      */
-    private boolean isQueryDateColumnsUpdated() {
-        if (queryDateColumns.length != 1) {
-            return false;
-        }
-        for (int i = 0; i < queryDateColumns.length; i++) {
-            final String expectedName = outputColumns[i];
-            final Column dateField= queryDateColumns[i];
-            if (tableName != null && !tableName.equals(dateField.getTable().getName())) {
-                return false;
-            }
-            if (!expectedName.equals(dateField.getName())) {
-                return false;
-            }
-        }
-        return true;
-    }
+    //private boolean isQueryDateColumnsUpdated() {
+    //    if (queryDateColumns.length != 1) {
+    //        return false;
+    //    }
+    //    for (int i = 0; i < queryDateColumns.length; i++) {
+    //        final String expectedName = outputColumns[i];
+    //        final Column dateField= queryDateColumns[i];
+    //        if (tableName != null && !tableName.equals(dateField.getTable().getName())) {
+    //            return false;
+    //        }
+    //        if (!expectedName.equals(dateField.getName())) {
+    //            return false;
+    //        }
+    //    }
+    //    return true;
+    //}
 
     /**
      * 附表是否勾选了对应于主表的字段
@@ -414,12 +429,11 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
                 if (logger.isDebugEnabled()) {
                     logger.debug("返回缓存的查找结果Returning cached lookup result: {}", Arrays.toString(result));
                 }
-                annotationFactory.annotate(inputRow, 1, cachedTotal);
+                //annotationFactory.annotate(inputRow, 1, cachedTotal);
             }
         } else {
             result = performQuery(inputRow, queryInput);
         }
-
         return result;
     }
 
@@ -432,17 +446,18 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     private Object[] performQuery(final InputRow row, final List<Object> queryInput) {
         try {
             final Column[] queryConditionColumnss = getQueryConditionColumns();
-
-            final Object[] parameterValues = new Object[queryConditionColumnss.length+2];
+            final Object[] parameterValues = getParameterValues(queryConditionColumnss);
             for (int i = 0; i < queryConditionColumnss.length; i++) {
                 parameterValues[i] = queryInput.get(i);
             }
-            if (!dateRangeString.isEmpty()){
-                int index = dateRangeString.lastIndexOf('|');
-                parameterValues[queryConditionColumns.length] = Timestamp.valueOf(dateRangeString.substring(0,index-1));
-                parameterValues[queryConditionColumns.length+1] = Timestamp.valueOf(dateRangeString.substring(index+1));
-            }
-
+            //if (dateColumn != null && dateColumn.length != 0){
+            //    if (matchTimeRange != null && matchTimeRange.getName() != ""){
+            //        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+            //        Date curretDate = new Date();
+            //        parameterValues[queryConditionColumns.length+1] = Timestamp.valueOf(dateFormat.format(curretDate));
+            //        parameterValues[queryConditionColumns.length] = Timestamp.valueOf(dateFormat.format(getRangeDay(curretDate)));
+            //    }
+            //}
             try (DataSet dataSet = datastoreConnection.getDataContext().executeQuery(lookUpQuery, parameterValues)) {
                 return handleDataSet(row, dataSet);
             }
@@ -450,6 +465,22 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
             logger.error("Error occurred while looking up based on conditions: " + queryInput, e);
             throw e;
         }
+    }
+
+    private Object[] getParameterValues(Column[] queryConditionColumnss) {
+        return new Object[queryConditionColumnss.length];
+    }
+
+    private Date getRangeDay(Date date){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        switch (matchTimeRange.getName()){
+            case "last half year" : calendar.add(Calendar.MONTH, -6);break;
+            case "last three months" : calendar.add(Calendar.MONTH, -3);break;
+            case "last month" : calendar.add(Calendar.MONTH, -1);break;
+            case "last week" : calendar.add(Calendar.WEEK_OF_MONTH, -1);break;
+        }
+        return calendar.getTime();
     }
 
     /**
@@ -502,11 +533,11 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         final Map<String, RowAnnotation> categories = new LinkedHashMap<>();
         categories.put("主表总数据量", tableATotal);
         categories.put("附表总数据量", tableBTotal);
-        categories.put("主表匹配量", matchesTotal);
-        categories.put("主表遗漏量", missesTotal);
-        if (cacheLookups) {
-            categories.put("缓存数据量", cachedTotal);
-        }
+        categories.put("主表成功数据量", matchesTotal);
+        categories.put("主表失败数据量", missesTotal);
+        //if (cacheLookups) {
+        //    categories.put("缓存数据量", cachedTotal);
+        //}
         return new CategorizationResult(annotationFactory, categories);
     }
 
@@ -524,7 +555,7 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
             datastoreConnection.close();
             datastoreConnection = null;
         }
-        cache.invalidateAll();
+        //cache.invalidateAll();
         queryOutputColumns = null;
         queryConditionColumns = null;
     }

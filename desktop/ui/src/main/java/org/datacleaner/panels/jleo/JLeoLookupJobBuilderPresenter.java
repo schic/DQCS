@@ -32,12 +32,14 @@ public class JLeoLookupJobBuilderPresenter extends TransformerComponentBuilderPa
     private final ConfiguredPropertyDescriptor _tableNameProperty;
     private final ConfiguredPropertyDescriptor _datastoreProperty;
     private final ConfiguredPropertyDescriptor _inputColumnArrayProperty;
+    private final ConfiguredPropertyDescriptor _inputDateColumnProperty;
     private final ConfiguredPropertyDescriptor _columnNameArrayProperty;
     private final ConfiguredPropertyDescriptor _outputColumnsProperty;
-    private final ConfiguredPropertyDescriptor _cacheLookupsProperty;
+    //private final ConfiguredPropertyDescriptor _cacheLookupsProperty;
     private final ConfiguredPropertyDescriptor _joinSemanticProperty;
-    private final ConfiguredPropertyDescriptor _dateColumnProperty;
-    private final ConfiguredPropertyDescriptor _dateRangeProperty;
+    //private final ConfiguredPropertyDescriptor _dateColumnProperty;
+    //private final ConfiguredPropertyDescriptor _dateRangeProperty;
+    private final ConfiguredPropertyDescriptor _matchTimeRangeProperty;
 
 
     public JLeoLookupJobBuilderPresenter(
@@ -56,10 +58,12 @@ public class JLeoLookupJobBuilderPresenter extends TransformerComponentBuilderPa
         _inputColumnArrayProperty = descriptor.getConfiguredProperty("主表字段");
         _columnNameArrayProperty = descriptor.getConfiguredProperty("附表字段");
         _outputColumnsProperty = descriptor.getConfiguredProperty("输出列");
-        _cacheLookupsProperty = descriptor.getConfiguredProperty("缓存查找");
+        //_cacheLookupsProperty = descriptor.getConfiguredProperty("缓存查找");
         _joinSemanticProperty = descriptor.getConfiguredProperty("SQL语义");
-        _dateColumnProperty = descriptor.getConfiguredProperty("附表日期字段");
-        _dateRangeProperty = descriptor.getConfiguredProperty("附表日期范围");
+        //_dateColumnProperty = descriptor.getConfiguredProperty("附表日期字段");
+        //_dateRangeProperty = descriptor.getConfiguredProperty("附表日期范围");
+        _inputDateColumnProperty = descriptor.getConfiguredProperty("主表日期字段");
+        _matchTimeRangeProperty = descriptor.getConfiguredProperty("主表时间区间");
 
         // the Datastore property      assert断言关键字；
         assert _datastoreProperty != null;
@@ -84,16 +88,17 @@ public class JLeoLookupJobBuilderPresenter extends TransformerComponentBuilderPa
                 new JLeoLookupOutputColumnsPropertyWidget(transformerJobBuilder, _outputColumnsProperty);
         _overriddenPropertyWidgets.put(_outputColumnsProperty, outputColumnsPropertyWidget);
 
+        assert _inputDateColumnProperty != null;
+        assert _inputDateColumnProperty.getType() == InputColumn[].class;
+        final JLeoInputDatePropertyWidget  inputDatePropertyWidget =
+                new JLeoInputDatePropertyWidget(transformerJobBuilder, _inputDateColumnProperty);
+        _overriddenPropertyWidgets.put(_inputDateColumnProperty, inputDatePropertyWidget);
 
-        final JLeoLookupDateColumnsPropertyWidget dateColumnPropertyWidget =
-                new JLeoLookupDateColumnsPropertyWidget(transformerJobBuilder, _dateColumnProperty);
-        _overriddenPropertyWidgets.put(_dateColumnProperty, dateColumnPropertyWidget);
-
-        //如何获取时间值 部件
-        LeoSingleDatePropertyWidget singleDatePropertyWidget =
-                new LeoSingleDatePropertyWidget(_dateRangeProperty, transformerJobBuilder, windowContext);
-        _overriddenPropertyWidgets.put(_dateRangeProperty, singleDatePropertyWidget);
-
+        //final JLeoLookupDateColumnsPropertyWidget dateColumnPropertyWidget =
+        //        new JLeoLookupDateColumnsPropertyWidget(transformerJobBuilder, _dateColumnProperty);
+        //_overriddenPropertyWidgets.put(_dateColumnProperty, dateColumnPropertyWidget);
+        //dateColumnPropertyWidget.addVisitableListener(item -> {//这里选中表触发事件，item已包含 数据表信息；
+        //});
 
         // the InputColumn<?>[] property
         assert _inputColumnArrayProperty != null;
@@ -117,14 +122,14 @@ public class JLeoLookupJobBuilderPresenter extends TransformerComponentBuilderPa
             //  选择附表时更新列组合框
             inputColumnsPropertyWidget.setTable(item);
             outputColumnsPropertyWidget.setTable(item);
-            dateColumnPropertyWidget.setTable(item);
+            //dateColumnPropertyWidget.setTable(item);
         });
 
         // initialize
         schemaNamePropertyWidget.setDatastore(datastorePropertyWidget.getValue());
         tableNamePropertyWidget.setSchema(datastorePropertyWidget.getValue(), schemaNamePropertyWidget.getSchema());
         outputColumnsPropertyWidget.setTable(tableNamePropertyWidget.getTable());
-        dateColumnPropertyWidget.setTable(tableNamePropertyWidget.getTable());
+        //dateColumnPropertyWidget.setTable(tableNamePropertyWidget.getTable());
         inputColumnsPropertyWidget.setTable(tableNamePropertyWidget.getTable());
     }
 
@@ -138,7 +143,7 @@ public class JLeoLookupJobBuilderPresenter extends TransformerComponentBuilderPa
                                 _inputColumnArrayProperty, _columnNameArrayProperty));
         final ConfiguredPropertyTaskPane outputMappingTaskPane =
                 new ConfiguredPropertyTaskPane("输出端映射", IconUtils.MENU_OPTIONS,
-                        Arrays.asList(_outputColumnsProperty, _joinSemanticProperty, _cacheLookupsProperty, _dateColumnProperty, _dateRangeProperty));
+                        Arrays.asList(_outputColumnsProperty, _joinSemanticProperty, _inputDateColumnProperty,_matchTimeRangeProperty));
 
         propertyTaskPanes.add(inputMappingTaskPane);
         propertyTaskPanes.add(outputMappingTaskPane);

@@ -13,7 +13,7 @@ import java.util.Random;
  **/
 @Named("Hello示例")
 @Description("这是示例转换器，在某字段前随机拼接问候语")
-@Categorized(LeoTransCategory.class)
+//@Categorized(LeoTransCategory.class)
 public class JLeoHelloTransformer implements Transformer {
 
     // REQUIRED: One or more InputColumn based 要求：基于一个或多个输入列

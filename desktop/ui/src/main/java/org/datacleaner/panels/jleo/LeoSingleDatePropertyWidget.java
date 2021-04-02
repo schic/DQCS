@@ -1,9 +1,11 @@
 package org.datacleaner.panels.jleo;
 
+import org.apache.metamodel.schema.Table;
 import org.datacleaner.bootstrap.WindowContext;
 import org.datacleaner.descriptors.ConfiguredPropertyDescriptor;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.panels.DCPanel;
+import org.datacleaner.widgets.DCComboBox;
 import org.datacleaner.widgets.properties.AbstractPropertyWidget;
 import org.jdesktop.swingx.HorizontalLayout;
 import org.jdesktop.swingx.JXDatePicker;
@@ -115,6 +117,17 @@ public class LeoSingleDatePropertyWidget extends AbstractPropertyWidget<String> 
             _valueLabel.setText(_dateStringMap.get(KEY_START).concat("||").concat(_dateStringMap.get(KEY_END)));
         }
         fireValueChanged();
+    }
+
+
+    private void CloseVisitable(){
+        _datePicker_start.setVisible(false);
+        _datePicker_end.setVisible(false);
+    }
+
+    private void OpenVisitable(){
+        _datePicker_start.setVisible(false);
+        _datePicker_end.setVisible(false);
     }
 
     private void createContent() {

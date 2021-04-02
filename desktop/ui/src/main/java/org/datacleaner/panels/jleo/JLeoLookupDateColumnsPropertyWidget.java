@@ -8,6 +8,7 @@ import org.apache.metamodel.util.MutableRef;
 import org.datacleaner.descriptors.ConfiguredPropertyDescriptor;
 import org.datacleaner.job.builder.ComponentBuilder;
 import org.datacleaner.panels.DCPanel;
+import org.datacleaner.widgets.DCComboBox;
 import org.datacleaner.widgets.SourceColumnComboBox;
 import org.datacleaner.widgets.properties.AbstractPropertyWidget;
 import org.jdesktop.swingx.VerticalLayout;
@@ -122,5 +123,14 @@ public class JLeoLookupDateColumnsPropertyWidget extends AbstractPropertyWidget<
             _comboBoxPanel.updateUI();
         }
     }
+
+    //public void addVisitableListener(final DCComboBox.Listener<Table> listener) {
+    //    for (final SourceColumnComboBox comboBox : _comboBoxes) {
+    //        comboBox.addListener(item -> fireValueChanged());
+    //    }
+    //}
+    //public void addListener(final DCComboBox.Listener<Table> listener) {
+    //    _listeners.add(listener);
+    //}
 
 }
