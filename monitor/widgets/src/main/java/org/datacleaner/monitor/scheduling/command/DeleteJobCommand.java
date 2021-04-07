@@ -39,6 +39,7 @@ public class DeleteJobCommand implements Command {
 	private DCPopupPanel _morePopup;
 	
 	public DeleteJobCommand(TenantIdentifier tenant,JobIdentifier jobIdentifier, DCPopupPanel morePopup) {
+        //delete,参数重新设置
 		_tenant = tenant;
 		_job = jobIdentifier; 
 		_morePopup = morePopup;

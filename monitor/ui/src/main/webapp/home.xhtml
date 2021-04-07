@@ -254,7 +254,7 @@
 						<span class="row1">时间线分析</span><br/>
 						<span class="row1">#{tenantContext.timelineFolder.groupsNum}</span>
 						<div class="cs" id="groupsName">
-							<c:forEach items="#{tenantContext.timelineFolder.datastoresName}" var ="li">
+							<c:forEach items="#{tenantContext.timelineFolder.groupsName}" var ="li">
 								<li style="height: 1px;text-decoration: underline">${li}</li>
 								<br/>
 							</c:forEach>
@@ -280,10 +280,10 @@
 			</div>
 			<div style="background-color: #0080C0;margin-top: 10px;clear:both">
 				<span></span>
-			</div>
+			</div> 
 			<!--<div style="background-color: #0080C0;margin-top: 20px;clear:both;height: 200px">
 				<p class="sp1">重点任务总览</p>
-				&lt;!&ndash;<p class="sp1">更多</p>&ndash;&gt;
+				&lt;!&ndash;<p class="sp1">更多</p>&ndash;&gt
 				<input type="submit" value="添加" class="inp"/>
 				<div>
 					<input type="submit" value="更多..." class="inp2" onclick="location.href='more.xhtml'"/>

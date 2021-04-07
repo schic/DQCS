@@ -140,6 +140,17 @@ public class ComponentStoreImpl implements ComponentStore {
         return true;
     }
 
+    //getAll ComponentName
+    public List<ComponentStoreHolder> getAll(){
+        List<ComponentStoreHolder> list = getList();
+        ArrayList list1 = new ArrayList();
+        for (int i = 0; i < list.size(); i++) {
+            list1.add(list.get(i).getComponentName());
+        }
+//        System.out.println(list1);
+        return list1;
+    }
+
 
     /**
      * Read all files from repository

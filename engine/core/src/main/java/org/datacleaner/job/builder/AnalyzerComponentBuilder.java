@@ -417,10 +417,18 @@ public final class AnalyzerComponentBuilder<A extends Analyzer<?>>
         }
     }
 
+    //全局变量
+//    ArrayList list = new ArrayList();
+
     @Override
     public void onRequirementChanged() {
         super.onRequirementChanged();
         final List<AnalyzerChangeListener> listeners = getAllListeners();
+//        for (int i = 0; i < listeners.size(); i++) {
+//            list.add(listeners.get(i).toString());
+//        }
+//        System.out.println(listeners);
+//        System.out.println(list);
         for (final AnalyzerChangeListener listener : listeners) {
             listener.onRequirementChanged(this);
         }

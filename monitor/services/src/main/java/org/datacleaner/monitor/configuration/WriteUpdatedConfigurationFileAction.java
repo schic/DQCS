@@ -27,6 +27,7 @@ import java.util.List;
 import javax.xml.bind.JAXBException;
 
 import org.apache.metamodel.util.Action;
+import org.apache.metamodel.util.FileHelper;
 import org.datacleaner.configuration.jaxb.Configuration;
 import org.datacleaner.configuration.jaxb.CustomElementType;
 import org.datacleaner.configuration.jaxb.DatastoreDictionaryType;
@@ -156,6 +157,16 @@ public class WriteUpdatedConfigurationFileAction extends AbstractJaxbAdaptor<Con
             if (!targetContainsSource) {
                 target.add(sourceObject);
             }
+        }
+    }
+
+    //bug
+    public void run1(OutputStream out) throws Exception {
+        InputStream in = getClass().getResourceAsStream("default-conf.xml");
+        try {
+            FileHelper.copy(in, out);
+        } finally {
+            FileHelper.safeClose(in);
         }
     }
 

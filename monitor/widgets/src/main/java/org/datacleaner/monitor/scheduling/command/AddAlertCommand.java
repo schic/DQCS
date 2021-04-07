@@ -50,6 +50,7 @@ public class AddAlertCommand implements Command {
 	private static final DescriptorServiceAsync descriptorService = GWT.create(DescriptorService.class);
 	
 	public AddAlertCommand(ScheduleDefinition schedule,SchedulingServiceAsync service, DCPopupPanel morePopup) {
+        //add,参数重新设置
 		_schedule = schedule;
 		_service = service;
 		_morePopup = morePopup;

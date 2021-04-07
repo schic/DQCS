@@ -112,9 +112,14 @@ public class FileRepositoryFolder extends AbstractRepositoryNode implements Repo
         return num;
     }
 
-    public List getDatastoresName(){
+    public List getGroupsName(){
         List<RepositoryFile> list = getFiles(null, null);
-        return list;
+        ArrayList list1 = new ArrayList();
+        for (int i = 0; i < list.size(); i++) {
+            String result = list.get(i).toString().substring(list.get(i).toString().lastIndexOf("/")+1,list.get(i).toString().indexOf("."));
+            list1.add(result);
+        }
+        return list1;
     }
 
     @Override

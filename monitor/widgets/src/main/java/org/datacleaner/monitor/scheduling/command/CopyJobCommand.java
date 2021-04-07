@@ -42,9 +42,10 @@ public class CopyJobCommand implements Command {
 	private DCPopupPanel _morePopup;
 	
 	public CopyJobCommand(TenantIdentifier tenant,JobIdentifier jobIdentifier, DCPopupPanel morePopup) {
-		_tenant = tenant;
-		_job = jobIdentifier; 
-		_morePopup = morePopup;
+	    //copy,参数重新设置
+        _job = jobIdentifier;
+        _tenant = tenant;
+        _morePopup = morePopup;
 	}
 	
 	@Override

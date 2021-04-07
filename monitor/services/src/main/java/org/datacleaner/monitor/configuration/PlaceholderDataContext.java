@@ -65,6 +65,10 @@ public class PlaceholderDataContext extends AbstractDataContext {
 		final String schemaName;
 		final String tableName;
 
+//		schemaName = "ceshi2";
+//		tableName = "ceshi";
+//		System.out.println(schemaName + ":::" + tableName);
+
 		if (schemaAndTableDelim == -1) {
 			schemaName = "schema";
 			if (prefix.isEmpty()) {
@@ -77,6 +81,7 @@ public class PlaceholderDataContext extends AbstractDataContext {
 			tableName = prefix.substring(schemaAndTableDelim + 1);
 		}
 
+//		System.out.println(schemaName + ":::" + tableName);
 		logger.info("Using schema name '{}' and table name '{}'", schemaName, tableName);
 
 		MutableSchema schema = new MutableSchema(schemaName);
