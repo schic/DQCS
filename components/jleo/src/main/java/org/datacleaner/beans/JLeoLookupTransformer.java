@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.sql.Timestamp;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -120,6 +121,8 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     @TableProperty
     @MappedProperty(PROPERTY_NAME_SCHEMA_NAME)
     String tableName;
+    private  Date startTime = null;
+    private  Date endTime = new Date();
     //@Inject
     //@Configured("缓存查找")
     //@Description("使用客户端缓存以避免使用相同的输入多次查找。")
@@ -141,6 +144,9 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
     @Inject
     @Provided
     RowAnnotation tableATotal;
+    @Inject
+    @Provided
+    RowAnnotation tableAInDateRangeTotal;
     @Inject
     @Provided
     RowAnnotation tableBTotal;
@@ -176,6 +182,7 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         this.matchTimeRange = null;
         annotationFactory = new DummyRowAnnotationFactory();
         tableATotal = annotationFactory.createAnnotation();
+        tableAInDateRangeTotal = annotationFactory.createAnnotation();
         tableBTotal = annotationFactory.createAnnotation();
         matchesTotal = annotationFactory.createAnnotation();
         missesTotal = annotationFactory.createAnnotation();
@@ -219,6 +226,9 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         resetCachedColumns();
         //cache.invalidateAll();
         compileLookupQuery();
+        if (tableADateFiled != null && matchTimeRange != null && matchTimeRange.getName() != "" && tableADateFiled.length != 0){
+            getStartTime(endTime);
+        }
     }
 
     private void resetCachedColumns() {
@@ -406,6 +416,15 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
      */
     @Override
     public Object[] transform(InputRow inputRow) {
+        annotationFactory.annotate(inputRow,1,tableATotal);
+
+        if (tableADateFiled != null && matchTimeRange != null && matchTimeRange.getName() != "" && tableADateFiled.length != 0){
+            Date rowDateValue = inputRow.getValue(tableADateFiled[0]);
+            if (rowDateValue.getTime() < startTime.getTime() || rowDateValue.getTime() > endTime.getTime()){
+                return new Object[0];
+            }
+        }
+
         final List<Object> queryInput;
         if (!isCarthesianProductMode()) {
             queryInput = new ArrayList<>(conditionValues.length);
@@ -450,14 +469,6 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
             for (int i = 0; i < queryConditionColumnss.length; i++) {
                 parameterValues[i] = queryInput.get(i);
             }
-            //if (dateColumn != null && dateColumn.length != 0){
-            //    if (matchTimeRange != null && matchTimeRange.getName() != ""){
-            //        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-            //        Date curretDate = new Date();
-            //        parameterValues[queryConditionColumns.length+1] = Timestamp.valueOf(dateFormat.format(curretDate));
-            //        parameterValues[queryConditionColumns.length] = Timestamp.valueOf(dateFormat.format(getRangeDay(curretDate)));
-            //    }
-            //}
             try (DataSet dataSet = datastoreConnection.getDataContext().executeQuery(lookUpQuery, parameterValues)) {
                 return handleDataSet(row, dataSet);
             }
@@ -471,16 +482,17 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         return new Object[queryConditionColumnss.length];
     }
 
-    private Date getRangeDay(Date date){
+    private Date getStartTime(Date date){
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         switch (matchTimeRange.getName()){
-            case "last half year" : calendar.add(Calendar.MONTH, -6);break;
-            case "last three months" : calendar.add(Calendar.MONTH, -3);break;
-            case "last month" : calendar.add(Calendar.MONTH, -1);break;
-            case "last week" : calendar.add(Calendar.WEEK_OF_MONTH, -1);break;
+            case "最近半年" : calendar.add(Calendar.MONTH, -6);break;
+            case "最近三个月" : calendar.add(Calendar.MONTH, -3);break;
+            case "最近一个月" : calendar.add(Calendar.MONTH, -1);break;
+            case "最近一周" : calendar.add(Calendar.WEEK_OF_MONTH, -1);break;
         }
-        return calendar.getTime();
+        startTime = calendar.getTime();
+        return startTime;
     }
 
     /**
@@ -493,7 +505,7 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         if (!dataSet.next()) {
             logger.info("主表的该行数据没有在附表找到关联数据Result of lookup: None!");
             annotationFactory.annotate(row, 1, missesTotal);
-            annotationFactory.annotate(row, 1, tableATotal);
+            annotationFactory.annotate(row, 1, tableAInDateRangeTotal);
 
             switch (this.joinSemantic) {
                 case LEFT_JOIN_MAX_ONE:
@@ -505,7 +517,7 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         }
 
         annotationFactory.annotate(row, 1, matchesTotal);
-        annotationFactory.annotate(row, 1, tableATotal);
+        annotationFactory.annotate(row, 1, tableAInDateRangeTotal);
 
         do {
             final Object[] result = dataSet.getRow().getValues();
@@ -533,6 +545,7 @@ public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAn
         final Map<String, RowAnnotation> categories = new LinkedHashMap<>();
         categories.put("主表总数据量", tableATotal);
         categories.put("附表总数据量", tableBTotal);
+        categories.put("主表时间范围内数据量", tableAInDateRangeTotal);
         categories.put("主表成功数据量", matchesTotal);
         categories.put("主表失败数据量", missesTotal);
         //if (cacheLookups) {
