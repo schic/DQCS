@@ -1,6 +1,8 @@
 package org.datacleaner.beans.unleo;
 
 import org.datacleaner.api.*;
+import org.datacleaner.components.categories.LeoTransCategory;
+import org.datacleaner.components.categories.LeoTransSuperCategory;
 import org.datacleaner.result.Crosstab;
 import org.datacleaner.result.CrosstabDimension;
 import org.datacleaner.result.CrosstabNavigator;
@@ -16,9 +18,10 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @Author Leo
  * @Date 2021年1月15日
  **/
-@Named("数据日期分布")
+@Named("数据连续性")
 @Description("这是自编写的Analyzer。目的是检查数据的某个日期字段在某时间段的分布。")
 @Concurrent(true)
+@Categorized(superCategory = LeoTransSuperCategory.class,value = LeoTransCategory.class)
 public class UnLeoChecker implements Analyzer<CrosstabResult> {
 
     /**

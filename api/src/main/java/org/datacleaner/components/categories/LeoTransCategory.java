@@ -12,6 +12,6 @@ public class LeoTransCategory extends AbstractComponentCategory {
 
     @Override
     public String getName() {
-        return "自定义拓展";
+        return "组件目录";
     }
 }

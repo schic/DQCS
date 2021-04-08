@@ -7,6 +7,8 @@ import org.datacleaner.api.OutputColumns;
 import javax.inject.Named;
 import org.datacleaner.api.*;
 import org.datacleaner.components.categories.LeoTransCategory;
+import org.datacleaner.components.categories.LeoTransSuperCategory;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -18,7 +20,7 @@ import java.util.Date;
  **/
 @Named("闰年检查")
 @Description("检查某时间字段所在年是否为闰年")
-@Categorized(LeoTransCategory.class)
+@Categorized(superCategory = LeoTransSuperCategory.class,value = LeoTransCategory.class)
 public class JLeoTransformer implements Transformer {
 
     public static final String PROPERTY_INPUTS_COLUMN = "输入列";

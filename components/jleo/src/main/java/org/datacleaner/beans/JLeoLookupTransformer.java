@@ -10,7 +10,9 @@ import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.Table;
 import org.apache.metamodel.util.HasName;
 import org.datacleaner.api.*;
+import org.datacleaner.components.categories.ImproveSuperCategory;
 import org.datacleaner.components.categories.LeoTransCategory;
+import org.datacleaner.components.categories.LeoTransSuperCategory;
 import org.datacleaner.connection.Datastore;
 import org.datacleaner.connection.DatastoreConnection;
 import org.datacleaner.result.CategorizationResult;
@@ -36,7 +38,7 @@ import java.util.*;
 @Named("主附表数据关联性")
 @Description("寻找主表与附表关联性数据转换器.可通过主附表相同的一个或多个字段全量筛选或部分筛选出具体数据.")
 @Concurrent(true)
-@Categorized(LeoTransCategory.class)
+@Categorized(superCategory = LeoTransSuperCategory.class,value = LeoTransCategory.class)
 public class JLeoLookupTransformer implements Transformer, HasLabelAdvice, HasAnalyzerResult<CategorizationResult> {
 
     public enum JoinSemantic implements HasName {
