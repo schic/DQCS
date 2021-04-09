@@ -51,7 +51,7 @@ public class FileFolderLaunchArtifactProvider implements LaunchArtifactProvider 
     public List<String> getJarFilenames() {
         String[] list = _libFolder.list(FileFilters.JAR);
         if (list == null || list.length == 0) {
-            logger.error("No JAR files found in launch artifact folder: {}", _libFolder);
+            logger.error("在启动工件文件夹中找不到JAR文件: {}", _libFolder);
             return Collections.emptyList();
         }
         return Arrays.asList(list);
@@ -65,10 +65,10 @@ public class FileFolderLaunchArtifactProvider implements LaunchArtifactProvider 
                 FileInputStream in = new FileInputStream(file);
                 return new BufferedInputStream(in);
             } catch (IOException e) {
-                throw new IllegalStateException("Could not read from file: " + file, e);
+                throw new IllegalStateException("无法读取文件: " + file, e);
             }
         }
-        throw new IllegalArgumentException("No such file: " + filename);
+        throw new IllegalArgumentException("没有这样的文件: " + filename);
     }
 
     @Override

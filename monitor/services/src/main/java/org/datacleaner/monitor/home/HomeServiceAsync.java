@@ -31,15 +31,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Async variant of {@link SchedulingService}.
+ * Async variant of {@link SchedulingService}.首页数据展示接口
  */
 public interface HomeServiceAsync {
 
-    void getSchedules(TenantIdentifier tenant, boolean loadProperties, 
-            AsyncCallback<List<ScheduleDefinition>> callback);
+    void getSchedules(TenantIdentifier tenant, boolean loadProperties, AsyncCallback<List<ScheduleDefinition>> callback);
 
-    void updateSchedule(TenantIdentifier tenant, ScheduleDefinition scheduleDefinition,
-            AsyncCallback<ScheduleDefinition> callback);
+    void updateSchedule(TenantIdentifier tenant, ScheduleDefinition scheduleDefinition, AsyncCallback<ScheduleDefinition> callback);
 
     void getLatestExecution(TenantIdentifier tenant, JobIdentifier job, AsyncCallback<ExecutionLog> callback);
 
@@ -52,11 +50,9 @@ public interface HomeServiceAsync {
     void triggerExecution(TenantIdentifier tenant, JobIdentifier job, Map<String, String> overrideProperties,
             AsyncCallback<ExecutionLog> callback);
 
-    void getDependentJobCandidates(TenantIdentifier tenant, ScheduleDefinition schedule,
-            AsyncCallback<List<JobIdentifier>> callback);
+    void getDependentJobCandidates(TenantIdentifier tenant, ScheduleDefinition schedule, AsyncCallback<List<JobIdentifier>> callback);
 
-    void getExecution(TenantIdentifier tenant, ExecutionIdentifier executionIdentifier,
-            AsyncCallback<ExecutionLog> callback);
+    void getExecution(TenantIdentifier tenant, ExecutionIdentifier executionIdentifier, AsyncCallback<ExecutionLog> callback);
 
     void removeSchedule(TenantIdentifier tenant, JobIdentifier job, AsyncCallback<Void> callback);
 

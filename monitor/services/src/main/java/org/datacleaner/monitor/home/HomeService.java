@@ -35,18 +35,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Service interface for the scheduling module
+ * Service interface for the scheduling module 首页数据展示service
  */
 @RemoteServiceRelativePath("../gwtrpc/homeService")
 public interface HomeService extends RemoteService {
 
     @RolesAllowed({ SecurityRoles.VIEWER, SecurityRoles.SCHEDULE_EDITOR })
-    public List<ScheduleDefinition> getSchedules(TenantIdentifier tenant, boolean loadProperties) 
-            throws DCSecurityException;
+    public List<ScheduleDefinition> getSchedules(TenantIdentifier tenant, boolean loadProperties) throws DCSecurityException;
 
     @RolesAllowed(SecurityRoles.SCHEDULE_EDITOR)
-    public ScheduleDefinition updateSchedule(TenantIdentifier tenant, ScheduleDefinition scheduleDefinition)
-            throws DCSecurityException;
+    public ScheduleDefinition updateSchedule(TenantIdentifier tenant, ScheduleDefinition scheduleDefinition) throws DCSecurityException;
 
     @RolesAllowed(SecurityRoles.SCHEDULE_EDITOR)
     public void removeSchedule(TenantIdentifier tenant, JobIdentifier job) throws DCSecurityException;
@@ -65,8 +63,7 @@ public interface HomeService extends RemoteService {
     public ExecutionLog getLatestExecution(TenantIdentifier tenant, JobIdentifier job) throws DCSecurityException;
 
     @RolesAllowed({ SecurityRoles.VIEWER, SecurityRoles.SCHEDULE_EDITOR })
-    public ScheduleDefinition getSchedule(final TenantIdentifier tenant, final JobIdentifier jobIdentifier)
-            throws DCSecurityException;
+    public ScheduleDefinition getSchedule(final TenantIdentifier tenant, final JobIdentifier jobIdentifier) throws DCSecurityException;
     
     @RolesAllowed(SecurityRoles.SCHEDULE_EDITOR)
     public String getServerDate();

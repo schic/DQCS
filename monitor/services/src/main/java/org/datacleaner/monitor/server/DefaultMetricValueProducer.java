@@ -66,7 +66,7 @@ public class DefaultMetricValueProducer implements MetricValueProducer {
         final MetricJobContext job = (MetricJobContext) tenantContext.getJob(jobName);
         final MetricJobEngine<? extends MetricJobContext> jobEngine;
         if (job == null) {
-            logger.warn("Job {} does not exist. Cannot resolve job engine, so defaulting to DataCleanerJobEngine.",
+            logger.warn("作业{}不存在。无法解析作业引擎，因此默认为DataCleanerJobEngine。",
                     jobName);
             jobEngine = _jobEngineManager.getJobEngineOfType(DataCleanerJobEngine.class);
         } else {

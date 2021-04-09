@@ -50,7 +50,7 @@ public class HomeServiceServlet  implements HomeService {
             WebApplicationContext applicationContext = ContextLoader.getCurrentWebApplicationContext();
             SchedulingService delegate = applicationContext.getBean(SchedulingService.class);
             if (delegate == null) {
-                throw new ServletException("No delegate found in application context!");
+                throw new ServletException("在应用程序上下文中找不到委托!");
             }
             _delegate = delegate;
         }
