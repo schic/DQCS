@@ -29,11 +29,6 @@ public class UnLeoChecker implements Analyzer<CrosstabResult> {
      */
     private final Map<InputColumn<Date>, Map<Integer, AtomicInteger>> distributionMap;
 
-    /**
-     *您需要使用@Configured注释注入一个或多个InputColumn<E>，以便使用传入的数据。
-     * <E>type参数定义感兴趣的数据类型，它还用于确定分析器支持哪些类型的数据类型。
-     * 这个相当于注入字段数据，直接就可以使用了。如下，是输入的某一个或多个日期字段；
-     */
     @Configured("日期字段")
     InputColumn<Date>[] dateColumns;
 

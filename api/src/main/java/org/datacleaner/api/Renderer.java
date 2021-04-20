@@ -43,6 +43,7 @@ public interface Renderer<I extends Renderable, O> {
      * Checks whether this renderer is capable of rendering a particular
      * renderable. This method allows renderers to respond to specific state
      * available in the renderables.
+     * 检查此渲染器是否能够渲染特定的可渲染对象。此方法允许渲染器响应可渲染文件中可用的特定状态。
      *
      * @param renderable
      * @return

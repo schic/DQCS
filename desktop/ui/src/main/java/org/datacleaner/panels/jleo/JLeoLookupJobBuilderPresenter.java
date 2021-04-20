@@ -35,10 +35,7 @@ public class JLeoLookupJobBuilderPresenter extends TransformerComponentBuilderPa
     private final ConfiguredPropertyDescriptor _inputDateColumnProperty;
     private final ConfiguredPropertyDescriptor _columnNameArrayProperty;
     private final ConfiguredPropertyDescriptor _outputColumnsProperty;
-    //private final ConfiguredPropertyDescriptor _cacheLookupsProperty;
     private final ConfiguredPropertyDescriptor _joinSemanticProperty;
-    //private final ConfiguredPropertyDescriptor _dateColumnProperty;
-    //private final ConfiguredPropertyDescriptor _dateRangeProperty;
     private final ConfiguredPropertyDescriptor _matchTimeRangeProperty;
 
 
