@@ -345,7 +345,7 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
     @Override
     public JobContext getJob(JobIdentifier jobIdentifier) throws IllegalArgumentException {
         if (jobIdentifier == null) {
-            throw new IllegalArgumentException("JobIdentifier cannot be null");
+            throw new IllegalArgumentException("JobIdentifier不能为空");
         }
 
         try {

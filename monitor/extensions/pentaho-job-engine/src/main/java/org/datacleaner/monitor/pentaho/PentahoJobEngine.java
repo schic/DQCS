@@ -345,18 +345,18 @@ public class PentahoJobEngine extends AbstractJobEngine<PentahoJobContext> imple
                     return true;
                 } else if ("ERROR".equalsIgnoreCase(result)) {
                     executionLogger.setStatusFailed(null, startTransUrl, new PentahoJobException(
-                            "The Carte service reported an 'ERROR' result when starting transformation"));
+                            "Carte服务在启动转换时报告了一个“错误”结果"));
                     return false;
                 } else {
                     executionLogger.setStatusFailed(null, startTransUrl, new PentahoJobException(
-                            "Encountered unexpected result from Carte when starting transformation: " + result));
+                            "启动转换时遇到来自Carte的意外结果： " + result));
                     return false;
                 }
             } else {
                 String responseString = EntityUtils.toString(response.getEntity());
                 executionLogger.log(responseString);
                 executionLogger.setStatusFailed(null, startTransUrl, new PentahoJobException(
-                        "Unexpected response status when starting transformation: " + statusCode));
+                        "启动转换时出现意外的响应状态：" + statusCode));
                 return false;
             }
         } finally {

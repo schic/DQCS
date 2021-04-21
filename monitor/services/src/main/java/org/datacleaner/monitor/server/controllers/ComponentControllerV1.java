@@ -395,7 +395,7 @@ public class ComponentControllerV1 {
         TenantContext tenantContext = _tenantContextFactory.getContext(tenant);
         boolean isHere = _componentCache.remove(id, tenantContext);
         if (!isHere) {
-            logger.warn("Instance of component {} not found in the cache and in the store", id);
+            logger.warn("在缓存和存储中找不到组件{}的实例", id);
             throw ComponentNotFoundException.createInstanceNotFound(id);
         }
     }

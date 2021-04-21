@@ -96,11 +96,11 @@ public final class DatastoreOutputWriterFactory {
                     try (Statement st = connection.createStatement()) {
                         st.execute("SHUTDOWN");
                     } catch (final SQLException e) {
-                        logger.error("Could not invoke SHUTDOWN", e);
+                        logger.error("无法关闭", e);
                     }
 
                 } catch (final SQLException e) {
-                    logger.error("Could not close connection", e);
+                    logger.error("无法关闭连接", e);
                     throw new IllegalStateException(e);
                 }
             }

@@ -73,7 +73,7 @@ public class DatastoreConnectionLease implements DatastoreConnection {
         if (changed) {
             _delegate.close();
         } else {
-            logger.warn("Connection is already closed, but close() was invoked!", new Throwable());
+            logger.warn("连接已关闭，但已调用关闭！", new Throwable());
         }
     }
 

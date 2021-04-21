@@ -95,7 +95,7 @@ public class TenantCheckFilter extends GenericFilterBean {
                         }
                     }
                 } else {
-                    logger.debug("Could not match any tenant id in servlet path: {}", path);
+                    logger.debug("无法匹配servlet路径中的任何租户id: {}", path);
                 }
             }
         }

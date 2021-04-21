@@ -206,7 +206,7 @@ public class OpenAnalysisJobActionListener implements ActionListener {
                 message = "<html>Failed to open job because of a missing component: " + e.getMessage() + "<br/><br/>"
                         + "This may happen if the job requires an extension that you do not have installed.</html>";
             }
-            WidgetUtils.showErrorMessage("Cannot open job", message);
+            WidgetUtils.showErrorMessage("无法打开作业", message);
 
             return null;
         } catch (final NoSuchDatastoreException e) {
@@ -243,10 +243,10 @@ public class OpenAnalysisJobActionListener implements ActionListener {
                 message = e.getMessage();
             }
 
-            WidgetUtils.showErrorMessage("Failed to validate job configuration", message, e);
+            WidgetUtils.showErrorMessage("无法验证作业配置", message, e);
             return null;
         } catch (final RuntimeException e) {
-            logger.error("Unexpected failure when opening job: {}", file, e);
+            logger.error("打开作业时意外失败: {}", file, e);
             throw e;
         }
     }
