@@ -1,0 +1,13 @@
+本周完成：质控web端汉化基本完成，发一个新版本。
+遇见问题：error: RPC failed; curl 56 OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+	fatal: the remote end hung up unexpectedly
+	fatal: early EOF
+	fatal: index-pack failed
+	上传下载github代码的时候报错。打包发布的时候编译有问题。
+	应该是墙的原因导致网速太慢，且项目有点大上传不上
+解决方法：提高git上传代码限制，增加缓存内存；
+	修改提交缓存大小为500M，或者更大的数字；
+	配置git的最低速度和最低速度时间：
+8.10：开会讨论接下来的目标，设定完成方案；汉化剩余部分
+8.11：由于之前为了提高开发效率，项目代码存在码云上面。
+          今天把代码合并到github上遇到问题，网上查阅大量资料解决问题，打包发布一个新版本。
