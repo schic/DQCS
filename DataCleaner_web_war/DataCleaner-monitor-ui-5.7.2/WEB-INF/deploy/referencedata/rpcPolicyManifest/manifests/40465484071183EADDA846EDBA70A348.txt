@@ -1,0 +1,2 @@
+serviceClass: org.datacleaner.monitor.referencedata.ReferenceDataService
+path: 2892220163FAB0ABCB6F7F951D474DC4.gwt.rpc

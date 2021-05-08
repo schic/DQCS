@@ -1,0 +1,4 @@
+# Module dashboard
+# RPC service class, partial path of RPC policy file
+org.datacleaner.monitor.dashboard.DashboardService, 2C1D4DC6CB319475EA9D2AFDA4FE3707.gwt.rpc
+org.datacleaner.monitor.shared.DescriptorService, 81FEBF54A34F6A30A1A5C5F9EBDAE0B6.gwt.rpc

@@ -1,0 +1,66 @@
+<!--
+
+    DataCleaner (community edition)
+    Copyright (C) 2014 Neopost - Customer Information Management
+
+    This copyrighted material is made available to anyone wishing to use, modify,
+    copy, or redistribute it subject to the terms and conditions of the GNU
+    Lesser General Public License, as published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+    or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License
+    for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this distribution; if not, write to:
+    Free Software Foundation, Inc.
+    51 Franklin Street, Fifth Floor
+    Boston, MA  02110-1301  USA
+
+-->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<g:HTMLPanel>
+		<div class="btn-group">
+			<g:Button ui:field="newTimelineButton">
+				<span class="glyphicon glyphicon-plus" aria-hidden="true" />
+				<span>新建时间线图</span>
+			</g:Button>
+			<!--<g:Button ui:field="toggleWelcomeTextButton" styleName="toggleWelcomeTextButton">
+				<span class="glyphicon glyphicon-info-sign" aria-hidden="true" />
+				<span>显示/隐藏 介绍</span>
+			</g:Button>-->
+		</div>
+		<g:HTMLPanel ui:field="welcomeTextPanel" styleName="InfographicContainer">
+		<!--	<div class="InfographicPart InfographicIntro">
+				<h1>
+					欢迎来到
+					<span class="blue">DataCleaner</span>
+					<span class="orange">监视器</span>
+				</h1>
+				<span class="ScrollDownTeaser">
+					<a href="#first_infographic_part">What is it?</a>
+				</span>
+			</div>
+			<div class="InfographicPart InfographicEvolution">
+				<a name="first_infographic_part"></a>
+				<h2>监视数据的演变</h2>
+				<div class="Description">DataCleaner DataCleaner 监视器帮助您可视化和探索数据的演变。用它来调查你的数据活动和管理数据质量。</div>
+			</div>
+			<div class="InfographicPart InfographicShare">
+				<h2>与所有人分享你的数据分析</h2>
+				<div class="Description">使用DataCleaner浏览，配置文件分析你的数据。使用监视器 Web应用程序共享它任何人，甚至定期设置自动分析间隔。</div>
+			</div>
+			<div class="InfographicPart InfographicImprove">
+				<h2>不断提高数据质量</h2>
+				<div class="Description">DataCleaner监视器编排和计划DataCleaner作业，用于清理和丰富数据。</div>
+			</div>
+			<div class="InfographicPart InfographicConnect">
+				<h2>将DataCleaner连接到世界</h2>
+				<div class="Description">有了监视器，您可以安全地连接使用web服务将DataCleaner作业转移到其他业务流程，计划执行等。立即利用你的工作同时兼顾两者数据的批处理和实时处理。</div>
+			</div>-->
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,2 @@
+serviceClass: org.datacleaner.monitor.shared.DescriptorService
+path: 81FEBF54A34F6A30A1A5C5F9EBDAE0B6.gwt.rpc

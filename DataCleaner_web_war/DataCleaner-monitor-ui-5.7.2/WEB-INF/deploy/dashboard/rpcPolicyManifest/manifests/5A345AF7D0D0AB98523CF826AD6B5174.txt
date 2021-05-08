@@ -1,0 +1,2 @@
+serviceClass: org.datacleaner.monitor.dashboard.DashboardService
+path: 2C1D4DC6CB319475EA9D2AFDA4FE3707.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: org.datacleaner.monitor.home.HomeService
+path: 5EC3304CDCDBCCC586F9C806FCEE1CD0.gwt.rpc

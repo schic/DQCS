@@ -1,2 +1,0 @@
-解压DataCleaner-5.7.1-SNAPSHOT.zip文件
-执行datacleaner.cmd脚本即可启动客户端程序

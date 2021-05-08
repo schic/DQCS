@@ -1,0 +1,6 @@
+# Module referencedata
+# RPC service class, partial path of RPC policy file
+org.datacleaner.monitor.shared.DatastoreService, 5A4819A3215C57044B82BA79057D033A.gwt.rpc
+org.datacleaner.monitor.referencedata.ReferenceDataService, 2892220163FAB0ABCB6F7F951D474DC4.gwt.rpc
+org.datacleaner.monitor.shared.WizardService, C29499835E42A3807FA8903BEC540BEA.gwt.rpc
+org.datacleaner.monitor.scheduling.SchedulingService, 9AE512292A4958F567670ACF9870E686.gwt.rpc

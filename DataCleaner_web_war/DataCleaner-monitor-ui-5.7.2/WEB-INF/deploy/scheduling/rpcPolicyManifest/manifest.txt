@@ -1,0 +1,4 @@
+# Module scheduling
+# RPC service class, partial path of RPC policy file
+org.datacleaner.monitor.scheduling.SchedulingService, 9AE512292A4958F567670ACF9870E686.gwt.rpc
+org.datacleaner.monitor.shared.DescriptorService, 81FEBF54A34F6A30A1A5C5F9EBDAE0B6.gwt.rpc

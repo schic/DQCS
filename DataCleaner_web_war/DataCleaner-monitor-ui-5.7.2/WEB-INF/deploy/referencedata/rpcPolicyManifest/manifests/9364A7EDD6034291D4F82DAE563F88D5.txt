@@ -1,0 +1,2 @@
+serviceClass: org.datacleaner.monitor.scheduling.SchedulingService
+path: 9AE512292A4958F567670ACF9870E686.gwt.rpc

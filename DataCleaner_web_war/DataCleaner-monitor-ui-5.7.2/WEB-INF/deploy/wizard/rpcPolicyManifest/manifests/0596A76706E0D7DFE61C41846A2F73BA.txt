@@ -1,0 +1,2 @@
+serviceClass: org.datacleaner.monitor.shared.DatastoreService
+path: 5A4819A3215C57044B82BA79057D033A.gwt.rpc
