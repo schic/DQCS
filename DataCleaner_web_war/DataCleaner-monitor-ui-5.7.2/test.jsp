@@ -7,7 +7,6 @@
     <%@ include file="/ta/inc.jsp" %>
 </head>
 <body>
-
 </body>
 </html>
 <script type="text/javascript">
