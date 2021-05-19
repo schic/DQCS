@@ -5,14 +5,14 @@
 				xmlns:ui="http://java.sun.com/jsf/facelets">
 
 	<c:if test="#{user.viewer}">
-		<li
-				class="#{ (view.viewId == '/home.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
-				value="home" styleClass="DashboardTabTitle">
+		<li class="#{ (view.viewId == '/home.xhtml') ? 'selected' : 'not-selected' }">
+			<h:outputLink value="home" styleClass="DashboardTabTitle">
 			<h:outputText value="首页" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>
-		</h:outputLink></li>
+			</h:outputLink>
+		</li>
 	</c:if>
 	<c:if test="#{user.viewer}">
 		<li
@@ -29,7 +29,7 @@
 		<li
 				class="#{ (view.viewId == '/scheduling.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="scheduling" styleClass="SchedulingTabTitle">
-			<h:outputText value="排程" />
+			<h:outputText value="工程" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>

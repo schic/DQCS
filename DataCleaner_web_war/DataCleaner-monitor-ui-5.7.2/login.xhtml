@@ -8,6 +8,8 @@
 	<ui:define name="head">
 		<link rel="stylesheet" type="text/css"
 			  href="#{request.contextPath}/stylesheets/login.css" />
+		<link rel="stylesheet" type="text/css"
+			  href="#{request.contextPath}/stylesheets/leo-styles.css" />
 
 		<c:if test="#{user.authenticated}">
 			<script type="text/javascript">
@@ -24,7 +26,6 @@
 	<ui:define name="content">
 		<c:if test="#{not user.authenticated}">
 			<div class="LoginPage container">
-
 				<c:if test="#{not empty param.error}">
 					<div class="alert alert-warning">Your login attempt was
 						unsuccessful. Please try again.</div>
@@ -36,8 +37,8 @@
 				</c:if>
 
 				<form action="j_spring_security_check" method="POST">
-					<div class="row">
-						<div class="col-xs-12 col-sm-8">
+					<div class="leorow">
+						<div class="leocol-xs-12">
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h3>
@@ -78,18 +79,18 @@
 						</div>
 
 						<c:if test="#{monitorUIPreferences.showDemoAccounts}">
-							<div class="col-xs-12 col-sm-4">
-								<div class="panel panel-default">
-									<div class="panel-heading">模拟账户</div>
-									<div class="panel-body">
-										<p>尝试使用以下任何演示凭据登录:</p>
-										<ul>
-											<li>admin/admin: “演示”工作得管理员.</li>
-											<li>viewer/viewer: “演示”工作的仪表板查看器</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+<!--							<div class="col-xs-12 col-sm-4">-->
+<!--								<div class="panel panel-default">-->
+<!--									<div class="panel-heading">模拟账户</div>-->
+<!--									<div class="panel-body">-->
+<!--										<p>尝试使用以下任何演示凭据登录:</p>-->
+<!--										<ul>-->
+<!--											<li>admin/admin: “演示”工作得管理员.</li>-->
+<!--											<li>viewer/viewer: “演示”工作的仪表板查看器</li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
 						</c:if>
 					</div>
 				</form>

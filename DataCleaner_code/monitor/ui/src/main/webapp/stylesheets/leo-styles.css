@@ -1,0 +1,52 @@
+.leorow {
+	text-align:center;
+	margin-right: -40px;
+	margin-left: -40px;
+}
+.leocol-xs-12{
+	position: relative;
+	/*min-height: 1px;*/
+	/*padding-right: 15px;*/
+	/*padding-left: 15px;*/
+	width: 32%;
+	text-align: center;
+	margin: 0 auto;
+}
+.leopanel-heading {
+	padding: 5px 5px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.leoh3 {
+	margin-top: 9px;
+	margin-bottom: 0px;
+	height: 50px;
+	font-size: 38px;
+}
+.leoblue {
+	color: #16c2f4;
+	width: 330px;
+	border-top-width: 1px;
+	margin-top: 1px;
+	padding-bottom: 1px;
+	border-bottom-width: 1px;
+	height: 36px;
+	margin-bottom: 1px;
+}
+.leonavbar-header {
+	margin-right: -15px;
+	margin-left: -15px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
