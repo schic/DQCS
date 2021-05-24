@@ -212,7 +212,7 @@ public class TimelinePanel extends FlowPanel {
     private FlowPanel createButtonPanel() {
         final Button customizeButton = DCButtons.defaultButton("glyphicon-cog", null);
         customizeButton.setVisible(_isDashboardEditor);
-        customizeButton.setTitle("自定义时间线");
+        customizeButton.setTitle("编辑");
         customizeButton.addClickHandler(new CustomizeTimelineHandler(_service, this));
 
         final Button copyButton = DCButtons.defaultButton("glyphicon-duplicate", null);

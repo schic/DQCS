@@ -120,7 +120,7 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
         createNewGroupAnchor.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                String name = Window.prompt("新建组名?", "");
+                String name = Window.prompt("给新建的分组取一个名字", "");
                 boolean validName = name != null && name.trim().length() > 1;
                 if (validName) {
                     _service.addDashboardGroup(_tenant, name, new DCAsyncCallback<DashboardGroup>() {

@@ -42,8 +42,8 @@
 		<dictionaries>
 		</dictionaries>
 		<synonym-catalogs>
-			<text-file-synonym-catalog name="Job titles"
-				description="Example synonym catalog used for standardizing job titles">
+			<text-file-synonym-catalog name="任务标题"
+				description="用于标准化任务的同义词目录示例">
 				<filename>datastores/job_title_synonyms.txt</filename>
 				<encoding>UTF8</encoding>
 				<case-sensitive>false</case-sensitive>

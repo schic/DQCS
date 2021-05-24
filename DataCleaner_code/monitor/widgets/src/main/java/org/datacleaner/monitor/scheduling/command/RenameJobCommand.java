@@ -51,7 +51,7 @@ public class RenameJobCommand implements Command {
 	@Override
 	public void execute() {
 		_morePopup.hide();
-		final String newName = Window.prompt("输入作业名称", _job.getName());
+		final String newName = Window.prompt("输入任务名称", _job.getName());
         if (newName == null || newName.trim().length() == 0 || newName.equals(_job.getName())) {
             return;
         }

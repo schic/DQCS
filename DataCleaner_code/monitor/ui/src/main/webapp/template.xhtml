@@ -73,11 +73,6 @@
 
         <nav class="navbar navbar-default navbar-inverse" role="navigation">
             <div class="container">
-                <div class="leonavbar-header">
-                    <c:if test="#{user.viewer}">
-                        <h:outputText value="数据质量管理系统"/>
-                    </c:if>
-                </div>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed"
                             data-toggle="collapse" data-target="#navbar">
@@ -85,16 +80,15 @@
                             class="icon-bar"></span> <span class="icon-bar"></span> <span
                             class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" style="padding: 0px"
-                       href="#{request.contextPath}/"> <img
-                            src="#{request.contextPath}/images/dc-logo-50.png" alt="[DC]"/>
+                    <a class="navbar-brand" style="padding: 0px" href="#{request.contextPath}/">
+                        <img src="#{request.contextPath}/images/dc-logo-50.png" alt="[DC]"/>
                     </a>
-                    <!--					<a class="navbar-brand" href="#{request.contextPath}/home.xhtml">-->
-                    <!--						<span class="visible-xs hidden-sm visible-md visible-lg">-->
-                    <!--							DataCleaner-->
-                    <!--							监视器-->
-                    <!--						</span>-->
-                    <!--					</a>-->
+<!--                        <a class="navbar-brand" href="#{request.contextPath}/home.xhtml">-->
+<!--                            <span class="visible-xs hidden-sm visible-md visible-lg">-->
+<!--                                DataCleaner-->
+<!--                                监视器-->
+<!--                            </span>-->
+<!--                        </a>-->
                 </div>
 
                 <div id="navbar" class="collapse navbar-collapse">

@@ -185,7 +185,7 @@ public class OpenAnalysisJobFileChooserAccessory extends DCPanel implements Prop
 
         final String jobName = _metadata.getJobName();
         if (jobName != null) {
-            _centerPanel.add(new JLabel("<html><b>作业名称:</b></html>"));
+            _centerPanel.add(new JLabel("<html><b>任务名称:</b></html>"));
             _centerPanel.add(new JLabel(jobName));
             _centerPanel.add(Box.createVerticalStrut(separatorHeight));
         }

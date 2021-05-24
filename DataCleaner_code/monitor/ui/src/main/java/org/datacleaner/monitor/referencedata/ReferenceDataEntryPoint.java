@@ -38,7 +38,7 @@ public class ReferenceDataEntryPoint implements EntryPoint {
     private static final String DICTIONARIES_HTML_ID = "Dictionaries";
     private static final String SYNONYMS_HTML_ID = "Synonyms";
     private static final String PATTERNS_HTML_ID = "Patterns";
-    private static final String DICTIONARIES_TITLE = "辞典";
+    private static final String DICTIONARIES_TITLE = "字典";
     private static final String SYNONYMS_TITLE = "同义词目录";
     private static final String PATTERNS_TITLE = "字符串模式";
 

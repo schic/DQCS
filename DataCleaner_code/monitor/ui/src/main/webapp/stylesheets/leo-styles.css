@@ -1,3 +1,24 @@
+.leocontainer {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+@media (min-width: 768px) {
+	.leocontainer {
+		width: 750px;
+	}
+}
+@media (min-width: 992px) {
+	.leocontainer {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.leocontainer {
+		width: 1170px;
+	}
+}
 .leorow {
 	text-align:center;
 	margin-right: -40px;

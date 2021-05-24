@@ -82,9 +82,9 @@
 					<div class="panel-heading">存储库备份+恢复</div>
 					<div class="panel-body">
 						<p>
-							你能下载 <a href="repository/#{user.tenant}/zip">这个存储库作为.zip文件</a>。 将其用作备份或将存储库从一个地方复制到另一个地方的方法。
+							你能下载 <a href="repository/#{user.tenant}/zip">这个zip格式的存储库压缩包</a>,将其用作备份或复制到另一个地方的方法。
 						</p>
-						<p>通过相应的zip存储库上载文件:</p>
+						<p>通过相应的zip存储库上传文件:</p>
 						<div class="spacer-sm"></div>
 
 						<form action="repository/#{user.tenant}/zip" method="post"
@@ -112,7 +112,7 @@
 				</div>
 			</h:panelGroup>
 
-			<h2>工程</h2>
+			<h2>任务</h2>
 			<ul class="repositoryView">
 				<ui:repeat var="folder" value="#{tenantContext.jobFolder.folders}">
 					<li class="folder">#{folder.name}</li>

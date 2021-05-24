@@ -15,21 +15,21 @@
 		</li>
 	</c:if>
 	<c:if test="#{user.viewer}">
-		<li
-				class="#{ (view.viewId == '/dashboard.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
-				value="dashboard" styleClass="DashboardTabTitle">
-			<h:outputText value="仪表盘" />
-			<c:if test="#{param['gwt.codesvr'] != null}">
-				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
-			</c:if>
-		</h:outputLink></li>
+		<li class="#{ (view.viewId == '/dashboard.xhtml') ? 'selected' : 'not-selected' }">
+			<h:outputLink value="dashboard" styleClass="DashboardTabTitle">
+				<h:outputText value="仪表盘" />
+				<c:if test="#{param['gwt.codesvr'] != null}">
+					<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
+				</c:if>
+			</h:outputLink>
+		</li>
 	</c:if>
 
 	<c:if test="#{user.scheduleEditor or user.jobEditor}">
 		<li
 				class="#{ (view.viewId == '/scheduling.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="scheduling" styleClass="SchedulingTabTitle">
-			<h:outputText value="工程" />
+			<h:outputText value="任务调度" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>

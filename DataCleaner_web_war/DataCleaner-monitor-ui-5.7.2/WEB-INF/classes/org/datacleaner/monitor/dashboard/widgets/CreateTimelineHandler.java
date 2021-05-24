@@ -105,7 +105,7 @@ public class CreateTimelineHandler implements ClickHandler {
         });
 
         final FlowPanel mainPanel = new FlowPanel();
-        mainPanel.add(new HeadingLabel("选择要监视的指标"));
+        mainPanel.add(new HeadingLabel("选择要监控的指标"));
         mainPanel.add(customizeMetricsPanel);
         popup.setWidget(mainPanel);
         popup.removeButtons();

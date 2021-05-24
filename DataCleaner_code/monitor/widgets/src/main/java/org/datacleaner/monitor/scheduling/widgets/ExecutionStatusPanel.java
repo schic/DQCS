@@ -62,7 +62,7 @@ public class ExecutionStatusPanel extends FlowPanel {
 
         addStyleName("ExecutionStatusPanel");
 
-        _headerLabel = new HeadingLabel("工程 '" + schedule.getJob().getName() + "' 正在执行...");
+        _headerLabel = new HeadingLabel("任务 '" + schedule.getJob().getName() + "' 正在执行...");
         add(_headerLabel);
         add(_loadingIndicator);
 
@@ -98,7 +98,7 @@ public class ExecutionStatusPanel extends FlowPanel {
                     _loadingIndicator.setVisible(false);
                     _detailsLink.setVisible(false);
 
-                    _headerLabel.setText("工程完成!");
+                    _headerLabel.setText("任务完成!");
 
                     final ResultAnchor resultAnchor = new ResultAnchor(_tenant);
                     resultAnchor.setResult(executionLog, "显示结果");

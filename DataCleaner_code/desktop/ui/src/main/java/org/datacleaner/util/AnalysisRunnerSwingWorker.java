@@ -75,7 +75,7 @@ public final class AnalysisRunnerSwingWorker extends SwingWorker<AnalysisResultF
                     resultFuture.cancel();
                 }
             } catch (final Exception e) {
-                logger.warn("未能取消作业", e);
+                logger.warn("未能取消任务", e);
             }
             break;
         case PENDING:

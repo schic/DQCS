@@ -67,7 +67,7 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
             return;
         }
 
-        getWizardPanel().setHeader("注册参考数据: " + wizardIdentifier.getDisplayName());
+        getWizardPanel().setHeader("注册字典参考数据: " + wizardIdentifier.getDisplayName());
         setLoading();
 
         WizardServiceAsync wizardService = getWizardService();
@@ -77,7 +77,7 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
 
     private void showWizardSelection() {
         setLoading();
-        getWizardPanel().setHeader("注册参考数据");
+        getWizardPanel().setHeader("注册字典参考数据");
         getWizardService().getReferenceDataWizardIdentifiers(_referenceDataType, getTenant(), getLocaleName(),
                 new DCAsyncCallback<List<WizardIdentifier>>() {
                     @Override

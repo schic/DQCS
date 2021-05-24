@@ -52,7 +52,7 @@ public class CustomizeTimelineHandler implements ClickHandler {
         _service = service;
         _timelinePanel = timelinePanel;
 
-        _popup = new DCPopupPanel("自定义时间线");
+        _popup = new DCPopupPanel("编辑");
         _popup.addStyleName("CustomizeTimelinePopupPanel");
         _popup.addButton(createSaveButton());
         _popup.addButton(new CancelPopupButton(_popup));

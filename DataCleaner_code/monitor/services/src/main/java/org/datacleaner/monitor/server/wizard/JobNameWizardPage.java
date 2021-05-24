@@ -65,14 +65,14 @@ public abstract class JobNameWizardPage extends AbstractFreemarkerWizardPage {
         final String name = formParameters.get("name").get(0);
 
         if (StringUtils.isNullOrEmpty(name)) {
-            throw new DCUserInputException("请提供工程名称。");
+            throw new DCUserInputException("请提供任务名称。");
         }
 
         final TenantContext tenantContext = _context.getTenantContext();
 
         boolean exists = tenantContext.containsJob(name);
         if (exists) {
-            throw new DCUserInputException("名称为 '" + name + "' 的工程已经存在。");
+            throw new DCUserInputException("名称为 '" + name + "' 的任务已经存在。");
         }
 
         return nextPageController(name);

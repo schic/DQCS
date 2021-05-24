@@ -148,7 +148,7 @@ public class DictionaryListPanel extends DCPanel implements ReferenceDataChangeL
             dialog.open();
         });
 
-        final HelpIcon helpIcon = new HelpIcon("<b>辞典</b><br>"
+        final HelpIcon helpIcon = new HelpIcon("<b>字典</b><br>"
                 + "字典是一组值，它们组合在一起表示一组命名值，"
                 + "例如，给定数据类型的有效值或黑名单值。<br>"
                 + "字典可以在整个DataCleaner中用于过滤、匹配等。");

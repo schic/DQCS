@@ -70,7 +70,7 @@ public class TimelinePanel extends FlowPanel {
 
         _saveButton = DCButtons.defaultButton("glyphicon-save", null);
         _saveButton.setVisible(isDashboardEditor);
-        _saveButton.setTitle("Save timeline");
+        _saveButton.setTitle("保存时间曲线");
         _saveButton.addClickHandler(new SaveTimelineClickHandler(_service, _tenant, this));
 
         if (_timelineIdentifier != null) {
@@ -81,7 +81,7 @@ public class TimelinePanel extends FlowPanel {
 
         _deleteButton = DCButtons.dangerButton("glyphicon-minus", null);
         _deleteButton.setVisible(isDashboardEditor);
-        _deleteButton.setTitle("Delete timeline");
+        _deleteButton.setTitle("删除时间曲线");
         _deleteButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -151,7 +151,7 @@ public class TimelinePanel extends FlowPanel {
 
     private void updateHeader() {
         if (_timelineIdentifier == null) {
-            _header.setText("<新建时间线>");
+            _header.setText("<未命名>");
         } else {
             _header.setText(_timelineIdentifier.getName());
         }
@@ -212,12 +212,12 @@ public class TimelinePanel extends FlowPanel {
     private FlowPanel createButtonPanel() {
         final Button customizeButton = DCButtons.defaultButton("glyphicon-cog", null);
         customizeButton.setVisible(_isDashboardEditor);
-        customizeButton.setTitle("自定义时间线");
+        customizeButton.setTitle("自定义时间曲线");
         customizeButton.addClickHandler(new CustomizeTimelineHandler(_service, this));
 
         final Button copyButton = DCButtons.defaultButton("glyphicon-duplicate", null);
         copyButton.setVisible(_isDashboardEditor);
-        copyButton.setTitle("Copy timeline");
+        copyButton.setTitle("复制时间曲线");
         copyButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

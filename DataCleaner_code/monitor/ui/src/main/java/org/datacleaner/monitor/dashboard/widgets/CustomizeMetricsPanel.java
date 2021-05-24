@@ -79,9 +79,9 @@ public class CustomizeMetricsPanel extends FlowPanel {
     private void setJobMetrics(final JobMetrics jobMetrics) {
         clear();
 
-        final Button formulaMetricButton = DCButtons.defaultButton("glyphicon-scale", "添加度量公式");
-        formulaMetricButton.setTitle("添加一个度量公式，在计算中包含多个子度量?");
-        formulaMetricButton.addStyleName("度量公式");
+        final Button formulaMetricButton = DCButtons.defaultButton("glyphicon-scale", "添加指标函数公式");
+        formulaMetricButton.setTitle("添加一个函数公式，在计算中包含多个子指标?");
+        formulaMetricButton.addStyleName("函数公式");
         formulaMetricButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

@@ -190,8 +190,8 @@ public class SchedulingOverviewPanel extends Composite {
         panel.addStyleName("ColumnHeaders");
         panel.addStyleName("row");
 
-        panel.add(createLabel("作业名称", "col-sm-9", "col-xs-8"));
-        panel.add(createLabel("动作", "col-sm-3", "col-xs-4"));
+        panel.add(createLabel("任务名称", "col-sm-9", "col-xs-8"));
+        panel.add(createLabel("操作", "col-sm-3", "col-xs-4"));
 
         return panel;
     }

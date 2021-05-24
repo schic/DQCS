@@ -61,7 +61,7 @@ public class LegendClickHandler implements ClickHandler {
 
     private MenuBar populateLegendMenu(final PopupPanel popupPanel) {
         MenuBar popupMenuBar = new MenuBar(true);
-        MenuItem editMetricNameItem = new MenuItem("编辑度量名称", true, new Command() {
+        MenuItem editMetricNameItem = new MenuItem("编辑指标名称", true, new Command() {
             @Override
             public void execute() {
                 popupPanel.hide();
@@ -115,7 +115,7 @@ public class LegendClickHandler implements ClickHandler {
     }
 
     private void showEditMetricNamePopup() {
-        final DCPopupPanel editMetricPopUp = new DCPopupPanel("编辑度量名称");
+        final DCPopupPanel editMetricPopUp = new DCPopupPanel("编辑指标名称");
         final TextBox textBox = new TextBox();
         textBox.setText(_data);
         Button saveButton = configureSaveButton(editMetricPopUp, textBox);

@@ -43,11 +43,11 @@ public class DefineMetricPopup extends DCPopupPanel {
 
     public DefineMetricPopup(final TenantIdentifier tenant, final JobMetrics jobMetrics, final MetricIdentifier metric,
             final boolean formulaOnly, final Handler handler) {
-        super("定义度量");
+        super("定义公式");
 
         final DefineMetricPanel panel = new DefineMetricPanel(tenant, jobMetrics, metric, formulaOnly);
 
-        final Button saveButton = DCButtons.primaryButton("glyphicon-save", "Save");
+        final Button saveButton = DCButtons.primaryButton("glyphicon-save", "保存");
         saveButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

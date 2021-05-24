@@ -29,7 +29,7 @@ public class DashboardGroup implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public static final String DEFAULT_GROUP_NAME = "(default)";
+    public static final String DEFAULT_GROUP_NAME = "(默认)";
 
     private String _name;
     private String _description;

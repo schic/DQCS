@@ -85,13 +85,13 @@ public abstract class AbstractWizardController<S extends WizardNavigationService
         _loadingIndicator = new LoadingIndicator();
         _wizardPanel.setContent(_loadingIndicator);
 
-        _previousStepButton = DCButtons.defaultButton("glyphicon-menu-left", "上一个");
+        _previousStepButton = DCButtons.defaultButton("glyphicon-menu-left", "上一步");
         _previousStepButton.getElement().setId("wizardPreviousButton");
         _previousStepButton.setEnabled(false);
         _previousStepButton.addStyleName("wizard-navigation-button");
         _wizardPanel.getButtonPanel().addButton(_previousStepButton);
 
-        _nextStepButton = DCButtons.primaryButton("glyphicon-menu-right", "下一个");
+        _nextStepButton = DCButtons.primaryButton("glyphicon-menu-right", "下一步");
         _nextStepButton.getElement().setId("wizardNextButton");
         _nextStepButton.addStyleName("wizard-navigation-button");
         _wizardPanel.getButtonPanel().addButton(_nextStepButton);

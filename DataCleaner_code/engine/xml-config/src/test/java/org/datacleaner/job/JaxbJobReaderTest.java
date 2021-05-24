@@ -97,7 +97,7 @@ public class JaxbJobReaderTest extends TestCase {
 
     // see #1196 - Synonym lookup changes has broken old jobs
     public void testReadJobWhereOutputColumnsHasBeenAddedToComponent() throws Exception {
-        final SynonymCatalog synonymCatalog = new SimpleSynonymCatalog("作业标题");
+        final SynonymCatalog synonymCatalog = new SimpleSynonymCatalog("任务标题");
         final Collection<SynonymCatalog> synonyms = Collections.singletonList(synonymCatalog);
         final ReferenceDataCatalog referenceDataCatalog =
                 new ReferenceDataCatalogImpl(Collections.emptyList(), synonyms, Collections.emptyList());

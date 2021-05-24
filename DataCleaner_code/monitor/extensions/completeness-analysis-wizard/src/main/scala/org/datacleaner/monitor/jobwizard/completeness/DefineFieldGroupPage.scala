@@ -20,7 +20,7 @@ abstract class DefineFieldGroupPage(pageIndex: Int, fieldGroupIndex: Int, fieldG
                "请定义字段组" + (fieldGroupIndex + 1) + "的名称和列:"
              }</p>
              <p>字段组名称: <input name="field_group_name" value={ "Field group no. " + (fieldGroupIndex + 1) }/></p>
-             <p>请选择工程的源列：</p>
+             <p>请选择任务的源列：</p>
              <table>
                <tr>
                  <th>&nbsp;</th>

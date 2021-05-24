@@ -78,7 +78,7 @@ public abstract class SelectJobPanel extends FlowPanel {
     }
 
     public Button createSelectButton() {
-        final Button button = DCButtons.primaryButton(null, "选择");
+        final Button button = DCButtons.primaryButton(null, "确定");
         button.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

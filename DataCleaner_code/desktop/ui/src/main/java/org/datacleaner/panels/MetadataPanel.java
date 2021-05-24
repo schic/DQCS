@@ -71,7 +71,7 @@ public class MetadataPanel extends DCPanel implements SourceColumnChangeListener
         setLayout(new VerticalLayout(40));
         setBorder(new EmptyBorder(10, 10, 10, 10));
 
-        _jobNameTextField = WidgetFactory.createTextField("作业名称", 30);
+        _jobNameTextField = WidgetFactory.createTextField("任务名称", 30);
         _jobNameTextField.getDocument().addDocumentListener(new DCDocumentListener() {
             @Override
             protected void onChange(final DocumentEvent event) {
@@ -79,7 +79,7 @@ public class MetadataPanel extends DCPanel implements SourceColumnChangeListener
                 _analysisJobBuilder.getAnalysisJobMetadata().setJobName(text);
             }
         });
-        _jobDescriptionTextField = WidgetFactory.createTextField("作业描述", 30);
+        _jobDescriptionTextField = WidgetFactory.createTextField("任务描述", 30);
         _jobDescriptionTextField.getDocument().addDocumentListener(new DCDocumentListener() {
             @Override
             protected void onChange(final DocumentEvent event) {

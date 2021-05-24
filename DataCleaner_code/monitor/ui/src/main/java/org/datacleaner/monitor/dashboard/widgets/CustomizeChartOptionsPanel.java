@@ -129,12 +129,12 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         final FlowPanel panel = new FlowPanel();
         panel.addStyleName("HorizontalAxisOptionPanel");
 
-        panel.add(new HeadingLabel("水平轴"));
+        panel.add(new HeadingLabel("横轴"));
 
         panel.add(new Label("请为横轴选择适当的时间段。"));
 
         panel.add(_timelineAllDatesRadio);
-        panel.add(createTimelineRadioSpecPanel(new Label("所有观察结果都将包括在内")));
+        panel.add(createTimelineRadioSpecPanel(new Label("所有结果都将包括在内")));
 
         panel.add(_timelineFromToRadio);
         panel.add(createTimelineRadioSpecPanel(new Label("开始日期: "), _beginDatePicker));
@@ -160,7 +160,7 @@ public class CustomizeChartOptionsPanel extends FlowPanel {
         panel.addStyleName("VerticalAxisOptionPanel");
 
         panel.add(new HeadingLabel("纵轴"));
-        panel.add(new Label("请为垂直轴布局选择适当的属性。"));
+        panel.add(new Label("请为纵轴布局选择适当的属性。"));
 
         panel.add(createTimelineRadioSpecPanel(new Label("高度（像素）: "), _heightBox));
 

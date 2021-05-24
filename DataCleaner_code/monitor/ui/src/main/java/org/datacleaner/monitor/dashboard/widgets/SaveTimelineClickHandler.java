@@ -51,9 +51,9 @@ public class SaveTimelineClickHandler implements ClickHandler {
         final boolean create;
         TimelineIdentifier timelineIdentifier = _timelinePanel.getTimelineIdentifier();
         if (timelineIdentifier == null) {
-            final String name = Window.prompt("时间线名称", "");
+            final String name = Window.prompt("时间曲线名称", "");
             if (name == null || name.trim().length() == 0) {
-                GWT.log("不是有效的时间线名称：" + name);
+                GWT.log("不是有效的时间曲线名称：" + name);
                 _timelinePanel.setTimelineDefinitionChanged();
                 return;
             }
@@ -73,7 +73,7 @@ public class SaveTimelineClickHandler implements ClickHandler {
                         @Override
                         public void onSuccess(TimelineIdentifier result) {
                             _timelinePanel.setTimelineIdentifier(result);
-                            Window.alert("已保存时间线 '" + result.getName() + "'");
+                            Window.alert("已保存时间曲线 '" + result.getName() + "'");
                         }
                     });
         } else {
@@ -81,7 +81,7 @@ public class SaveTimelineClickHandler implements ClickHandler {
                     new DCAsyncCallback<TimelineIdentifier>() {
                         @Override
                         public void onSuccess(TimelineIdentifier result) {
-                            Window.alert("已保存时间线 '" + result.getName() + "'");
+                            Window.alert("已保存时间曲线 '" + result.getName() + "'");
                         }
                     });
         }

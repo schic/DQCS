@@ -79,7 +79,7 @@ public class SparkJobContext implements Serializable {
             final URI customPropertiesPath, final JavaSparkContext sparkContext) {
         final HdfsHelper hdfsHelper = new HdfsHelper(sparkContext);
         _jobName = getAnalysisJobName(analysisJobXmlPath);
-        logger.info("正在加载的SparkJobContext {} - 作业名称 '{}'", analysisJobXmlPath, _jobName);
+        logger.info("正在加载的SparkJobContext {} - 任务名称 '{}'", analysisJobXmlPath, _jobName);
 
         _configurationXml = hdfsHelper.readFile(dataCleanerConfigurationPath, true);
         if (Strings.isNullOrEmpty(_configurationXml)) {

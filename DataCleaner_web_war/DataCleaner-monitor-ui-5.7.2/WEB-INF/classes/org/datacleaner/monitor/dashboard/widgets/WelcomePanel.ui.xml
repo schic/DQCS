@@ -26,7 +26,7 @@
 		<div class="btn-group">
 			<g:Button ui:field="newTimelineButton">
 				<span class="glyphicon glyphicon-plus" aria-hidden="true" />
-				<span>新建时间线图</span>
+				<span>新建时间曲线图</span>
 			</g:Button>
 			<!--<g:Button ui:field="toggleWelcomeTextButton" styleName="toggleWelcomeTextButton">
 				<span class="glyphicon glyphicon-info-sign" aria-hidden="true" />

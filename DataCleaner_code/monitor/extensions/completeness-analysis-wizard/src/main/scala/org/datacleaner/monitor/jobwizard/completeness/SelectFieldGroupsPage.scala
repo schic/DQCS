@@ -10,7 +10,7 @@ abstract class SelectFieldGroupsPage(pageIndex: Int) extends WizardPageControlle
   override def getFormInnerHtml: String = {
     return <div>
              <p>
-               可以使用不同级别的粒度来检查完整性。您可以选择只包含一组要检查完整性的大字段，也可以选择为一组连接的字段选择单个字段组。例如，这可能是有意义的...
+               可以使用不同级别的粒度来检查完整性。您可以选择只包含一组要检查完整性的大字段，也可以选择为一组连接的字段选择单个字段组。例如，
              </p>
              <ul>
                <li>将“给定名称”和“家族名称”的字段视为具有标题“名称”的单个字段组。</li>
