@@ -29,7 +29,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 /**
  * Factory for {@link TenantContext} objects which are provided typically to
- * render JSF pages.
+ * render JSF pages.{@link TenantContext}对象的工厂，通常用于呈现JSF页面。
  */
 @Component("tenantContext")
 @Scope(WebApplicationContext.SCOPE_REQUEST)

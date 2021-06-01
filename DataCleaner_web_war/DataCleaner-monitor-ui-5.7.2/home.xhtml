@@ -218,7 +218,7 @@
 		<div>
 			<div style="width: 100%;margin-top: 40px">
 				<div class="Row" style="border:1px #000000   solid;width: 60%;float:left">
-					<p class="sp1">总体情况</p><br/>
+					<p class="sp1">总体情况123</p><br/>
 					<div class="Column">
 						<div onmouseover="showdiv('jobName')" onmouseout="hidediv('jobName')">
 							<img src="images/1.png" class="pc"/>
@@ -293,8 +293,10 @@
 			<div id="RootPanelTarget"></div>
 
 
-
-			<input id="jobsJson" value="#{tenantContext.jobsJson}" style="display: none"></input>
+			<h:commandButton action="#{tenantContext.jobsJson}">
+				<f:ajax render="jobsJson"  event="blur" />
+			</h:commandButton>
+			<input id="jobsJson" value="" style="display: none"></input>
 			<div style="background-color: #0080C0;margin-top: 50px;clear:both;height: 520px">
 
 				<p class="sp1">任务执行情况</p>

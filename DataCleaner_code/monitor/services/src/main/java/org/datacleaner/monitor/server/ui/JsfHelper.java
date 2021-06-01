@@ -34,7 +34,7 @@ import java.util.List;
 
 /**
  * Component with convenience methods primarily intended to aid JSF/EL code
- * which is not always as expressive as Java.
+ * which is not always as expressive as Java.带有方便方法的组件主要用于帮助JSF/EL代码，而JSF/EL代码并不总是像Java那样具有表现力。
  */
 @Component("jsfHelper")
 @Scope(WebApplicationContext.SCOPE_REQUEST)

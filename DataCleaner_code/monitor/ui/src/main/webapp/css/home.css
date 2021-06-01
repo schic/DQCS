@@ -40,9 +40,12 @@
 .sp1 {
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 26px;
+    text-align: center;
     background-color: #0080C0;
-    margin-top: -0.5px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
 }
 
 .pc {
@@ -66,7 +69,7 @@
 }
 
 .row1 {
-    color: black;
+    color: #337ab7;
 }
 
 .inp {

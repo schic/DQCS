@@ -11,12 +11,9 @@
 
         <c:if test="#{user.authenticated}">
             <script type="text/javascript">
-                //<![CDATA[
                 window.onload = function () {
-                    //window.location = "#{request.contextPath}/dashboard";
                     window.location = "#{request.contextPath}/home";
                 };
-                //]]>
             </script>
         </c:if>
     </ui:define>
@@ -26,7 +23,7 @@
             <div class="LoginPage container">
 
                 <c:if test="#{not empty param.error}">
-                    <div class="alert alert-warning">您的登录尝试失败,请再试一次。</div>
+                    <div class="alert alert-warning" style="width: 290px;margin:0 auto;text-align:center;">您的登录尝试失败,请再试一次。</div>
                     <c:if test="#{not empty param.debug}">
                         <div class="alert alert-warning">
                             #{SPRING_SECURITY_LAST_EXCEPTION.getClass().simpleName}:
@@ -38,12 +35,12 @@
                     <div class="leorow">
                         <div class="leocol-xs-12">
                             <div class="panel panel-default">
-<!--                                <div class="leopanel-heading">-->
-<!--                                    <h3>登录<span class="blue">DataCleaner</span>-->
-<!--										<span class="orange">monitor</span>-->
-<!--                                    </h3>-->
-                                    <h3 class="leoh3"><span class="leoblue">数据质量管理系统</span></h3>
-<!--                                </div>-->
+                                <!--                                <div class="leopanel-heading">-->
+                                <!--                                    <h3>登录<span class="blue">DataCleaner</span>-->
+                                <!--										<span class="orange">monitor</span>-->
+                                <!--                                    </h3>-->
+                                <h3 class="leoh3"><span class="leoblue">数据质量管理系统</span></h3>
+                                <!--                                </div>-->
                                 <div class="panel-body">
                                     <div class="form-group">
                                         <label for="inputUsername" class="sr-only">Username</label> <input
@@ -62,8 +59,7 @@
 
                                     <div class="checkbox">
                                         <label>
-											<input type="checkbox" name="rememberMe"
-                                                       value="true"/> 记住密码
+                                            <input type="checkbox" name="rememberMe" value="true"/> 记住密码
                                         </label>
                                     </div>
 

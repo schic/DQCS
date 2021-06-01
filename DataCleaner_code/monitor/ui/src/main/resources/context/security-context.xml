@@ -19,9 +19,9 @@
 	<http pattern="/*.css" security="none" />
 	<http pattern="/repository/swagger.json" security="none" />
 
-	<!-- HTTP basic authentication for the repository RESTful services -->
+	<!-- HTTP basic authentication for the repository RESTful services 存储库RESTful服务的HTTP基本身份验证-->
 	<http pattern="/repository/**" realm="DataCleaner monitor">
-		<!-- We don't want to secure OPTIONS requests - this is why we need to name all other methods -->
+		<!-- We don't want to secure OPTIONS requests - this is why we need to name all other methods我们不想保护选项请求-这就是为什么我们需要命名所有其他方法 -->
 		<intercept-url pattern="/repository/**" access="ROLE_USER" method="GET"/>
 		<intercept-url pattern="/repository/**" access="ROLE_USER" method="POST"/>
 		<intercept-url pattern="/repository/**" access="ROLE_USER" method="PUT"/>
@@ -31,7 +31,7 @@
 		<http-basic />
 	</http>
 
-	<!-- Form based authentication for the web pages -->
+	<!-- Form based authentication for the web pages 基于表单的网页身份验证-->
 	<http realm="DataCleaner monitor">
 		<intercept-url pattern="/*.jsf" access="ROLE_USER" />
 		<intercept-url pattern="/home" access="ROLE_USER" />

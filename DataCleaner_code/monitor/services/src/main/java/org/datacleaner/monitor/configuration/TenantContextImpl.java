@@ -19,14 +19,11 @@
  */
 package org.datacleaner.monitor.configuration;
 
-import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
 
-import com.google.gwt.core.client.GWT;
 import org.datacleaner.configuration.DataCleanerConfiguration;
 import org.datacleaner.configuration.DataCleanerEnvironment;
 import org.datacleaner.configuration.InjectionManagerFactory;
@@ -34,19 +31,12 @@ import org.datacleaner.monitor.job.JobContext;
 import org.datacleaner.monitor.job.JobEngine;
 import org.datacleaner.monitor.job.JobEngineManager;
 import org.datacleaner.monitor.scheduling.SchedulingService;
-import org.datacleaner.monitor.scheduling.SchedulingServiceAsync;
 import org.datacleaner.monitor.scheduling.model.ExecutionIdentifier;
 import org.datacleaner.monitor.scheduling.model.ExecutionLog;
-import org.datacleaner.monitor.scheduling.model.ExecutionStatus;
-import org.datacleaner.monitor.server.jaxb.JaxbException;
-import org.datacleaner.monitor.server.jaxb.JaxbExecutionLogReader;
-import org.datacleaner.monitor.shared.ClientConfig;
-import org.datacleaner.monitor.shared.DictionaryClientConfig;
 import org.datacleaner.monitor.shared.model.*;
 import org.datacleaner.repository.Repository;
 import org.datacleaner.repository.RepositoryFile;
 import org.datacleaner.repository.RepositoryFolder;
-import org.datacleaner.util.FileFilters;
 import org.datacleaner.util.StringUtils;
 import org.eclipse.jetty.util.ajax.JSON;
 import org.slf4j.Logger;
@@ -58,9 +48,6 @@ import com.google.common.cache.LoadingCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
-import sun.security.ssl.Record;
-
-import javax.annotation.security.RolesAllowed;
 
 /**
  * Default implementation of {@link TenantContext}.
@@ -75,6 +62,7 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
     private final ComponentStore _componentStore;
     private final JobEngineManager _jobEngineManager;
     private final LoadingCache<JobIdentifier, JobContext> _jobCache;
+    private String leoJson;
     @Autowired
     TenantContextFactory _tenantContextFactory;
 
@@ -251,6 +239,25 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
             this.cost = cost;
         }
     }
+
+    public String getLeoJson() {
+        return leoJson;
+    }
+
+    public void setLeoJson(String leoJson) {
+        this.leoJson = leoJson;
+    }
+
+//    @Override
+//    public String getLeoJobsJson() throws Exception {
+//        String jobsJson = getJobsJson();
+//        if("".equals(jobsJson) || jobsJson ==null){
+//            return "[]";
+//        }else {
+//            leoJson = jobsJson;
+//        }
+//        return leoJson;
+//    }
 
     @Override
     public String getJobsJson() throws Exception{
