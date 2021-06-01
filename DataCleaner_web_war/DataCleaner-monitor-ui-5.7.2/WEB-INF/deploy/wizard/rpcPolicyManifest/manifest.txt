@@ -1,5 +1,0 @@
-# Module wizard
-# RPC service class, partial path of RPC policy file
-org.datacleaner.monitor.shared.DatastoreService, 5A4819A3215C57044B82BA79057D033A.gwt.rpc
-org.datacleaner.monitor.shared.WizardService, C29499835E42A3807FA8903BEC540BEA.gwt.rpc
-org.datacleaner.monitor.scheduling.SchedulingService, 9AE512292A4958F567670ACF9870E686.gwt.rpc

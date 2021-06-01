@@ -1,2 +1,0 @@
-serviceClass: org.datacleaner.monitor.shared.WizardService
-path: C29499835E42A3807FA8903BEC540BEA.gwt.rpc
