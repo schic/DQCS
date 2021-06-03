@@ -43,10 +43,6 @@ GitHub markdown pages and issues are used for developers and technical aspects o
 
 DataCleaner_code：DataCleaner5.7.1的源代码(支持中文)
 
-DataCleaner_desktop_zip:  DataCleaner5.7.1中文编译后文件，可直接点击cmd命令运行即客户端运行
-
-DataCleaner_web_war ：DataCleaner5.7.1的web端编译后war包，需部署才能使用
-
 ## 持续集成
 
 There's a public build of DataCleaner that can be found on Travis CI:
