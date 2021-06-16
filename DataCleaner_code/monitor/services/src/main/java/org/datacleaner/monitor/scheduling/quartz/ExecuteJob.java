@@ -54,6 +54,7 @@ import org.springframework.context.ApplicationEventPublisher;
 /**
  * Quartz job which encapsulates the process of executing a DataCleaner job and
  * writes the result to the repository.
+ * Quartz作业，它封装了执行DataCleaner作业的过程，并将结果写入存储库。
  * 
  * The {@link ExecuteJob} class is annotated with
  * {@link DisallowConcurrentExecution}. This ensures that Quartz will not run a
@@ -120,7 +121,7 @@ public class ExecuteJob extends AbstractQuartzJob {
 
     /**
      * Executes a DataCleaner job in the repository and stores the result.
-     * 
+     * 在存储库中执行DataCleaner作业并存储结果。
      * @param context
      *            the tenant's {@link TenantContext}
      * @param execution

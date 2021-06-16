@@ -29,12 +29,12 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Timer;
 
 /**
- * Helper class for polling updates to {@link ExecutionLog}s.
+ * Helper class for polling updates to {@link ExecutionLog}s.用于轮询{@link ExecutionLog}更新的帮助程序类。
  */
 public class ExecutionLogPoller {
 
     /**
-     * Callback interface of the poller
+     * Callback interface of the poller轮询器的回调接口
      */
     public static interface Callback {
         public void updateExecutionLog(ExecutionLog executionLog);

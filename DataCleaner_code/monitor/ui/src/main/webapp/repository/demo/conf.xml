@@ -3,11 +3,7 @@
 
 	<configuration-metadata>
 		<configuration-name>DataCleaner configuration</configuration-name>
-		<configuration-description>Configures DataCleaner's initial
-			environment.
-			This includes example datastores and example reference
-			data.
-		</configuration-description>
+		<configuration-description>配置DataCleaner的初始环境。这包括示例数据存储和示例引用数据。</configuration-description>
 		<configuration-version>4.0</configuration-version>
 		<author>DataCleaner.org</author>
 	</configuration-metadata>

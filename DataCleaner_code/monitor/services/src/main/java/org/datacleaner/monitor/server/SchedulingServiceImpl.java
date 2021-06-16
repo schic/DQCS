@@ -53,14 +53,11 @@ import org.datacleaner.monitor.job.ExecutionLogger;
 import org.datacleaner.monitor.job.JobContext;
 import org.datacleaner.monitor.job.JobEngine;
 import org.datacleaner.monitor.scheduling.SchedulingService;
-import org.datacleaner.monitor.scheduling.model.ExecutionIdentifier;
-import org.datacleaner.monitor.scheduling.model.ExecutionLog;
-import org.datacleaner.monitor.scheduling.model.ExecutionStatus;
-import org.datacleaner.monitor.scheduling.model.ScheduleDefinition;
-import org.datacleaner.monitor.scheduling.model.TriggerType;
+import org.datacleaner.monitor.scheduling.model.*;
 import org.datacleaner.monitor.scheduling.quartz.AbstractQuartzJob;
 import org.datacleaner.monitor.scheduling.quartz.ExecuteJob;
 import org.datacleaner.monitor.scheduling.quartz.ExecuteJobListener;
+import org.datacleaner.monitor.scheduling.quartz.LeoExecuteJob;
 import org.datacleaner.monitor.server.jaxb.JaxbException;
 import org.datacleaner.monitor.server.jaxb.JaxbExecutionLogReader;
 import org.datacleaner.monitor.server.jaxb.JaxbScheduleReader;
@@ -182,9 +179,9 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
         return _schedulingServiceConfiguration;
     }
 
-    @PostConstruct()
+    @PostConstruct()//@PostConstruct该注解被用来修饰一个非静态的void（）方法。被@PostConstruct修饰的方法会在服务器加载Servlet的时候运行，并且只会被服务器执行一次。PostConstruct在构造函数之后执行，init（）方法之前执行。
     public void initialize() {
-        // initialize tenants by scanning tenant folders
+        // initialize tenants by scanning tenant folders通过扫描工作目录初始化工作
         if (_schedulingServiceConfiguration.isTenantInitialization()) {
             final List<RepositoryFolder> tenantFolders = _repository.getFolders();
             for (RepositoryFolder tenantFolder : tenantFolders) {
@@ -197,6 +194,8 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
                 for (ScheduleDefinition schedule : schedules) {
                     initializeSchedule(schedule);
                 }
+                //自定义定时任务 写任务列表
+                initializeLeoSchedule();
             }
         }
 
@@ -381,6 +380,29 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
         return scheduleDefinition;
     }
 
+    private void initializeLeoSchedule() {
+        LeoScheduleDefinition schedule = new LeoScheduleDefinition();
+        try {
+            //定期触发
+            //定义一个job，并绑定到LeoExecuteJob的class对象
+            final JobDetail jobDetail = JobBuilder.newJob(LeoExecuteJob.class).withIdentity(schedule.getTriggerKeyName(), schedule.getTriggerKeyGroup())
+                    .storeDurably().build();
+            final String expression = schedule.get_cronExpression();
+            final CronExpression LeoCronExpression = toCronExpression(expression);
+            final CronScheduleBuilder cronSchedule = CronScheduleBuilder.cronSchedule(LeoCronExpression);
+            // 声明一个触发器
+            final CronTrigger trigger = TriggerBuilder.newTrigger().withIdentity(schedule.getTriggerKeyName(), schedule.getTriggerKeyGroup()).forJob(
+                    jobDetail).withSchedule(cronSchedule).startNow().build();
+
+            logger.info("Adding trigger to scheduler: {} | {}", schedule.getTriggerKeyName(), LeoCronExpression);
+            // 任务调度绑定 触发器trigger安排执行任务job
+            _scheduler.scheduleJob(jobDetail, trigger);
+        } catch (SchedulerException e) {
+            e.printStackTrace();
+            throw new IllegalStateException("创建任务列表的Json定时任务失败: " +e);
+        }
+    }
+
     private void initializeSchedule(final ScheduleDefinition schedule) {
         final JobIdentifier job = schedule.getJob();
 
@@ -393,15 +415,17 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
         try {
 
             final TriggerType triggerType = schedule.getTriggerType();
+            //如果是手动触发
             if (triggerType == TriggerType.MANUAL) {
                 logger.info("Not scheduling job: {} (manual trigger type)", jobName);
-            } else {
+            }
+            else {
                 final JobDetail jobDetail = JobBuilder.newJob(ExecuteJob.class).withIdentity(jobName, tenantId)
                         .storeDurably().build();
 
                 final JobDataMap jobDataMap = jobDetail.getJobDataMap();
                 jobDataMap.put(ExecuteJob.DETAIL_SCHEDULE_DEFINITION, schedule);
-
+                //如果是定期触发
                 if (triggerType == TriggerType.PERIODIC) {
                     // time based trigger
                     final String scheduleExpression = schedule.getCronExpression();
@@ -414,7 +438,7 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
                     _scheduler.scheduleJob(jobDetail, trigger);
 
                 }
-
+                //如果是一次性触发
                 else if (triggerType == TriggerType.ONETIME) {
                     final String scheduleDate = schedule.getDateForOneTimeSchedule();
                     final CronExpression cronExpression = toCronExpressionForOneTimeSchedule(scheduleDate);
@@ -427,7 +451,9 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
                                 cronExpression);
                         _scheduler.scheduleJob(jobDetail, trigger);
                     }
-                } else if (triggerType == TriggerType.HOTFOLDER) {
+                }
+                //如果是热加载
+                else if (triggerType == TriggerType.HOTFOLDER) {
                     final String hotFolder = schedule.getHotFolder();
                     
                     if (hotFolder != null) {
@@ -441,7 +467,8 @@ public class SchedulingServiceImpl implements SchedulingService, ApplicationCont
                     
                         logger.info("Adding hot folder {} as trigger for job {}", hotFolder, jobListenerName);
                     }
-                } else {
+                }
+                else {
                     // event based trigger (via a job listener)
                     _scheduler.addJob(jobDetail, true);
                     final ExecuteJobListener listener = new ExecuteJobListener(jobListenerName, schedule);

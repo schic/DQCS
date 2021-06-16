@@ -32,7 +32,7 @@ public class ExecutionLog extends ExecutionIdentifier implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    // metadata about the job and the trigger
+    // metadata about the job and the trigger作业和触发器的元数据
     private ScheduleDefinition _schedule;
     private JobIdentifier _job;
 

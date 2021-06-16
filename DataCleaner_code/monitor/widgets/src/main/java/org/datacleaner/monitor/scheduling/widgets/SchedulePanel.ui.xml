@@ -46,7 +46,7 @@
 			<div class="ActionsColumn">
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
-						<g:Button title="Trigger this job to execute on the server now"
+						<g:Button title="立即在服务器上执行该任务"
 							ui:field="executeButton" styleName="ExecuteButton">
 							<span class="glyphicon glyphicon-play" aria-hidden="true" />
 							<span>执行</span>

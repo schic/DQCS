@@ -33,6 +33,8 @@ import org.datacleaner.monitor.job.JobEngineManager;
 import org.datacleaner.monitor.scheduling.SchedulingService;
 import org.datacleaner.monitor.scheduling.model.ExecutionIdentifier;
 import org.datacleaner.monitor.scheduling.model.ExecutionLog;
+import org.datacleaner.monitor.scheduling.model.LeoExecutionData;
+import org.datacleaner.monitor.scheduling.quartz.LeoExecuteJob;
 import org.datacleaner.monitor.shared.model.*;
 import org.datacleaner.repository.Repository;
 import org.datacleaner.repository.RepositoryFile;
@@ -259,92 +261,99 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
 //        return leoJson;
 //    }
 
+//    @Override
+//    public String getJobsJson() throws Exception{
+//        final List<JobIdentifier> jobs = new ArrayList<JobIdentifier>();
+//
+//        final Collection<JobEngine<?>> jobEngines = _jobEngineManager.getJobEngines();
+//        for (JobEngine<?> jobEngine : jobEngines) {
+//            final List<JobIdentifier> jobEngineJobs = jobEngine.getJobs(this);
+//            jobs.addAll(jobEngineJobs);
+//        }
+//
+//        WebApplicationContext applicationContext = ContextLoader.getCurrentWebApplicationContext();
+//        SchedulingService delegate = applicationContext.getBean(SchedulingService.class);
+///*
+//         TenantContext tenantContext = _tenantContextFactory.getContext(getTenantId());
+//*/
+//        // ClientConfig clientConfig = new DictionaryClientConfig();
+//
+//
+//        TenantIdentifier tenantContext = new TenantIdentifier(getTenantId());
+//        ExecutionLog executionLog;
+//        List jobIdentifiers = new ArrayList<>();
+//        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        for (JobIdentifier jobIdentifier : jobs) {
+//            List<ExecutionIdentifier> Executions = delegate.getAllExecutions(tenantContext, jobIdentifier);
+//            for (ExecutionIdentifier ExecutionIdentifier : Executions) {
+//                executionLog = delegate.getExecution(tenantContext, ExecutionIdentifier);
+//                if (executionLog != null) {
+//                    Map map = new HashMap();
+//                    JobIdentifiers jobIdentifiers1 = new JobIdentifiers();
+//                    if(jobIdentifier.getName() != null){
+//                        map.put("name", jobIdentifier.getName());
+//                        jobIdentifiers1.setName(jobIdentifier.getName());
+//                    } if(executionLog.getJobEndDate() != null){
+//                        String endDate = formatter.format(executionLog.getJobEndDate());
+//                        map.put("endTime", endDate);
+//                        jobIdentifiers1.setEndTime(endDate);
+//                    } if(executionLog.getJobBeginDate() != null){
+//                        String beginDate = formatter.format(executionLog.getJobBeginDate());
+//                        map.put("beginTime", beginDate);
+//                        jobIdentifiers1.setBeginTime(beginDate);
+//                    } if(executionLog.getExecutionStatus().name() != null){
+//                        map.put("status", executionLog.getExecutionStatus().name());
+//                        jobIdentifiers1.setStatus(executionLog.getExecutionStatus().name());
+//                    } if((executionLog.getJobEndDate() != null) && (executionLog.getJobBeginDate() != null)){
+//                        map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
+//                        jobIdentifiers1.setCost(String.valueOf(executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime()));
+//                    }
+//                    String resultId="";
+//                    String url="";
+//                    if(executionLog.getResultId() != null){
+//                        resultId=executionLog.getResultId();
+////                        url = Urls.createRelativeUrl("repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat");
+////                        url = "/DataCleaner_monitor_ui_war/"+"repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat";
+//                        url = "/repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat";
+//                        map.put("resultId", resultId);
+//                        jobIdentifiers1.setResultId(resultId);
+//                        map.put("url", url);
+//                        jobIdentifiers1.setUrl(url);
+//                    } if(executionLog.getTriggerType().name() != null){
+//                        map.put("triggerType", executionLog.getTriggerType().name()+" triggered");
+//                        jobIdentifiers1.setTriggerType(executionLog.getTriggerType().name()+" triggered");
+//                    } if(executionLog.getTriggeredBy() != null){
+//                        map.put("triggerBy", executionLog.getTriggeredBy());
+//                        jobIdentifiers1.setTriggerBy(executionLog.getTriggeredBy());
+//                    } if(executionLog.getLogOutput() != null){
+//                        map.put("logOutput", executionLog.getLogOutput());
+//                        jobIdentifiers1.setLogOutput(executionLog.getLogOutput());
+//                    }
+//                    jobIdentifiers.add(map);
+//                }
+//            }
+//        }
+//        for(int i=0;i<jobIdentifiers.size();i++){
+//            for(int j=0;j<jobIdentifiers.size()-i-1;j++){
+//                Map map = (Map) jobIdentifiers.get(j);
+//                Map map2 = (Map) jobIdentifiers.get(j+1);
+//                if(formatter.parse(map.get("beginTime").toString()).getTime() < formatter.parse(map2.get("beginTime").toString()).getTime()){
+//                    Object o = jobIdentifiers.get(j);
+//                    jobIdentifiers.set(j, jobIdentifiers.get(j+1));
+//                    jobIdentifiers.set(j+1, o);
+//                }
+//            }
+//        }
+//
+//        System.out.println(JSON.toString(jobIdentifiers));
+//        return JSON.toString(jobIdentifiers);
+//    }
+
     @Override
     public String getJobsJson() throws Exception{
-        final List<JobIdentifier> jobs = new ArrayList<JobIdentifier>();
-
-        final Collection<JobEngine<?>> jobEngines = _jobEngineManager.getJobEngines();
-        for (JobEngine<?> jobEngine : jobEngines) {
-            final List<JobIdentifier> jobEngineJobs = jobEngine.getJobs(this);
-            jobs.addAll(jobEngineJobs);
-        }
-
-        WebApplicationContext applicationContext = ContextLoader.getCurrentWebApplicationContext();
-        SchedulingService delegate = applicationContext.getBean(SchedulingService.class);
-/*
-         TenantContext tenantContext = _tenantContextFactory.getContext(getTenantId());
-*/
-        // ClientConfig clientConfig = new DictionaryClientConfig();
-
-
-        TenantIdentifier tenantContext = new TenantIdentifier(getTenantId());
-        ExecutionLog executionLog;
-        List jobIdentifiers = new ArrayList<>();
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        for (JobIdentifier jobIdentifier : jobs) {
-            List<ExecutionIdentifier> Executions = delegate.getAllExecutions(tenantContext, jobIdentifier);
-            for (ExecutionIdentifier ExecutionIdentifier : Executions) {
-                executionLog = delegate.getExecution(tenantContext, ExecutionIdentifier);
-                if (executionLog != null) {
-                    Map map = new HashMap();
-                    JobIdentifiers jobIdentifiers1 = new JobIdentifiers();
-                    if(jobIdentifier.getName() != null){
-                        map.put("name", jobIdentifier.getName());
-                        jobIdentifiers1.setName(jobIdentifier.getName());
-                    } if(executionLog.getJobEndDate() != null){
-                        String endDate = formatter.format(executionLog.getJobEndDate());
-                        map.put("endTime", endDate);
-                        jobIdentifiers1.setEndTime(endDate);
-                    } if(executionLog.getJobBeginDate() != null){
-                        String beginDate = formatter.format(executionLog.getJobBeginDate());
-                        map.put("beginTime", beginDate);
-                        jobIdentifiers1.setBeginTime(beginDate);
-                    } if(executionLog.getExecutionStatus().name() != null){
-                        map.put("status", executionLog.getExecutionStatus().name());
-                        jobIdentifiers1.setStatus(executionLog.getExecutionStatus().name());
-                    } if((executionLog.getJobEndDate() != null) && (executionLog.getJobBeginDate() != null)){
-                        map.put("cost", executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime());
-                        jobIdentifiers1.setCost(String.valueOf(executionLog.getJobEndDate().getTime() - executionLog.getJobBeginDate().getTime()));
-                    }
-                    String resultId="";
-                    String url="";
-                    if(executionLog.getResultId() != null){
-                        resultId=executionLog.getResultId();
-//                        url = Urls.createRelativeUrl("repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat");
-//                        url = "/DataCleaner_monitor_ui_war/"+"repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat";
-                        url = "/repository/" + tenantContext.getId() + "/results/" + resultId + ".analysis.result.dat";
-                        map.put("resultId", resultId);
-                        jobIdentifiers1.setResultId(resultId);
-                        map.put("url", url);
-                        jobIdentifiers1.setUrl(url);
-                    } if(executionLog.getTriggerType().name() != null){
-                        map.put("triggerType", executionLog.getTriggerType().name()+" triggered");
-                        jobIdentifiers1.setTriggerType(executionLog.getTriggerType().name()+" triggered");
-                    } if(executionLog.getTriggeredBy() != null){
-                        map.put("triggerBy", executionLog.getTriggeredBy());
-                        jobIdentifiers1.setTriggerBy(executionLog.getTriggeredBy());
-                    } if(executionLog.getLogOutput() != null){
-                        map.put("logOutput", executionLog.getLogOutput());
-                        jobIdentifiers1.setLogOutput(executionLog.getLogOutput());
-                    }
-                    jobIdentifiers.add(map);
-                }
-            }
-        }
-        for(int i=0;i<jobIdentifiers.size();i++){
-            for(int j=0;j<jobIdentifiers.size()-i-1;j++){
-                Map map = (Map) jobIdentifiers.get(j);
-                Map map2 = (Map) jobIdentifiers.get(j+1);
-                if(formatter.parse(map.get("beginTime").toString()).getTime() < formatter.parse(map2.get("beginTime").toString()).getTime()){
-                    Object o = jobIdentifiers.get(j);
-                    jobIdentifiers.set(j, jobIdentifiers.get(j+1));
-                    jobIdentifiers.set(j+1, o);
-                }
-            }
-        }
-
-
-        return JSON.toString(jobIdentifiers);
+        LeoExecuteJob job = new LeoExecuteJob();
+        List<LeoExecutionData> jsonFileData = job.getJsonFileData(job.getDemoPath());
+        return jsonFileData.toString();
     }
 
 

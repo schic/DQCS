@@ -33,7 +33,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 
 /**
  * The {@link ClickHandler} invoked when the user clicks the 'trigger now'
- * button of a job.
+ * button of a job.当用户单击作业的“立即触发”按钮时，{@link ClickHandler}被调用。
  */
 public class TriggerJobClickHandler implements ClickHandler {
 

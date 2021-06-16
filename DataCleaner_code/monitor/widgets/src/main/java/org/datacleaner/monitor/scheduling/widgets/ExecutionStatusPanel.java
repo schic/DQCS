@@ -33,6 +33,8 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.FlowPanel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Simple panel for showing the status of a job, ie. through
@@ -85,8 +87,9 @@ public class ExecutionStatusPanel extends FlowPanel {
         });
         poller.start(execution);
     }
-
     public void jobStatusUpdated(ExecutionLog executionLog) {
+        System.out.println("=============================");
+        System.out.println(executionLog);
         _result = executionLog;
         if (_logPanel != null) {
             _logPanel.updateContent(executionLog);

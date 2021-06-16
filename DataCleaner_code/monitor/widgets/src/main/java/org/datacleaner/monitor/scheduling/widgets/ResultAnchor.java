@@ -26,7 +26,7 @@ import org.datacleaner.monitor.util.Urls;
 import com.google.gwt.user.client.ui.Anchor;
 
 /**
- * An anchor to a result report.
+ * An anchor to a result report.结果报告的锚定。
  */
 public class ResultAnchor extends Anchor {
     

@@ -45,7 +45,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Widget;
 
 /**
- * A panel which presents a schedule
+ * A panel which presents a schedule显示明细表的面板
  */
 public class SchedulePanel extends Composite {
 

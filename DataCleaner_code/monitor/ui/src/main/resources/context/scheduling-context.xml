@@ -7,7 +7,7 @@
 				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 				 http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<!-- A single node Quartz scheduler -->
+	<!-- A single node Quartz scheduler 单节点Quartz调度器-->
 	<bean id="scheduler"
 		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
 	</bean>

@@ -32,6 +32,7 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
 
 /**
  * Abstract quartz job which provides a few convenience methods for subclasses.
+ * 抽象quartz作业，为子类提供了一些方便的方法。
  */
 public abstract class AbstractQuartzJob extends QuartzJobBean implements Job {
 
@@ -50,7 +51,7 @@ public abstract class AbstractQuartzJob extends QuartzJobBean implements Job {
             }
             return applicationContext;
         } catch (SchedulerException e) {
-            logger.error("Couldn't retrieve ApplicationContext from scheduler context", e);
+            logger.error("无法从调度器上下文检索ApplicationContext", e);
             throw new IllegalStateException(e);
         }
     }

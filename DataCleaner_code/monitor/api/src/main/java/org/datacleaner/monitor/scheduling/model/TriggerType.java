@@ -25,6 +25,6 @@ package org.datacleaner.monitor.scheduling.model;
  * 表示{@link ExecutionLog}是手动还是自动触发（计划）。
  */
 public enum TriggerType {
-
+    //手动、定期、相关、一次性、热加载
     MANUAL, PERIODIC, DEPENDENT, ONETIME, HOTFOLDER
 }
