@@ -175,7 +175,7 @@ public class SchedulePanel extends Composite {
             scheduleAnchor.removeStyleName("discrete");
             break;
         case MANUAL:
-            scheduleAnchor.setText("Manually triggered");
+            scheduleAnchor.setText("手动设置触发");
             scheduleAnchor.addStyleName("discrete");
             break;
         case ONETIME :

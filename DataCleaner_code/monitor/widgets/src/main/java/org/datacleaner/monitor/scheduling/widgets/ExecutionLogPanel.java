@@ -134,20 +134,20 @@ public class ExecutionLogPanel extends Composite {
             if (triggerType != null) {
                 switch (triggerType) {
                 case PERIODIC:
-                    triggerLabel.setText("Scheduled: Periodic '" + executionLog.getSchedule().getCronExpression() + "'");
+                    triggerLabel.setText("预定: 周期 '" + executionLog.getSchedule().getCronExpression() + "'");
                     break;
                 case DEPENDENT:
-                    triggerLabel.setText("Scheduled: After '" + executionLog.getSchedule().getDependentJob().getName()
+                    triggerLabel.setText("预定: 之后 '" + executionLog.getSchedule().getDependentJob().getName()
                             + "'");
                     break;
                 case MANUAL:
-                    triggerLabel.setText("Manually triggered");
+                    triggerLabel.setText("手动设置触发");
                     break;
                 case ONETIME:
-                	triggerLabel.setText("Scheduled: OneTime '" + executionLog.getSchedule().getDateForOneTimeSchedule() + "'");
+                	triggerLabel.setText("预定: 一次 '" + executionLog.getSchedule().getDateForOneTimeSchedule() + "'");
                 	break;
                 case HOTFOLDER:
-                    triggerLabel.setText("Hot folder '" + executionLog.getSchedule().getHotFolder() + "' triggered");
+                    triggerLabel.setText("热文件夹 '" + executionLog.getSchedule().getHotFolder() + "' 触发");
                 }
             }
 

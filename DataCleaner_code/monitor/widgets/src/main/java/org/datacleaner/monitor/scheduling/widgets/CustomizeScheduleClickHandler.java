@@ -50,7 +50,7 @@ public class CustomizeScheduleClickHandler implements ClickHandler {
     }
     
     public void showSchedulingPopup() {
-        final DCPopupPanel popup = new DCPopupPanel("Customize schedule");
+        final DCPopupPanel popup = new DCPopupPanel("自定义计划");
 
         final CustomizeSchedulePanel customizeSchedulePanel = new CustomizeSchedulePanel(_service, _tenant, _schedule);
 

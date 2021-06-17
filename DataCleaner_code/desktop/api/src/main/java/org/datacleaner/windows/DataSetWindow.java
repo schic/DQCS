@@ -86,9 +86,9 @@ public class DataSetWindow extends AbstractWindow {
             final DataSet dataSet = dataContext.executeQuery(_query);
             return new DataSetTableModel(dataSet);
         };
-        _previousPageButton = WidgetFactory.createDefaultButton("Previous page", IconUtils.ACTION_BACK);
+        _previousPageButton = WidgetFactory.createDefaultButton("前一页", IconUtils.ACTION_BACK);
         _previousPageButton.setEnabled(false);
-        _nextPageButton = WidgetFactory.createDefaultButton("Next page", IconUtils.ACTION_FORWARD);
+        _nextPageButton = WidgetFactory.createDefaultButton("下一页", IconUtils.ACTION_FORWARD);
         _nextPageButton.setHorizontalTextPosition(SwingConstants.LEFT);
         _nextPageButton.setEnabled(false);
     }

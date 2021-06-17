@@ -68,7 +68,7 @@ public class AddAlertCommand implements Command {
                 final DefineMetricPanel defineMetricPanel = new DefineMetricPanel(tenant, jobMetrics, null, false);
 
                 final DCPopupPanel popup = new DCPopupPanel("创建警报：定义要监视的度量");
-                final Button nextButton = DCButtons.primaryButton("glyphicon-menu-right", "Next");
+                final Button nextButton = DCButtons.primaryButton("glyphicon-menu-right", "下一步");
                 final CancelPopupButton cancelButton = new CancelPopupButton(popup);
                 
                 nextButton.addClickHandler(new ClickHandler() {
@@ -81,17 +81,17 @@ public class AddAlertCommand implements Command {
                         final CustomizeAlertPanel customizeAlertPanel = new CustomizeAlertPanel(tenant, job, alert,
                                 jobMetrics);
 
-                        final Button saveButton =  DCButtons.primaryButton("glyphicon-save", "Save");
+                        final Button saveButton =  DCButtons.primaryButton("glyphicon-save", "保存");
                         saveButton.addClickHandler(new ClickHandler() {
                             @Override
                             public void onClick(ClickEvent event) {
-                                popup.setHeader("Create alert: Select alerting criteria");
+                                popup.setHeader("创建警报：选择警报条件");
                                 AlertDefinition alert = customizeAlertPanel.updateAlert();
                                 _schedule.getAlerts().add(alert);
                                 _service.updateSchedule(tenant, _schedule, new DCAsyncCallback<ScheduleDefinition>() {
                                     @Override
                                     public void onSuccess(ScheduleDefinition result) {
-                                        GWT.log("Succesfully added alert in schedule: " + result);
+                                        GWT.log("已成功在计划中添加警报: " + result);
                                         Window.Location.reload();
                                         
                                     }

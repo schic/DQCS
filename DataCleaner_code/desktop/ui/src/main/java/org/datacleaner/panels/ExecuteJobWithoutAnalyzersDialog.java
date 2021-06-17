@@ -97,10 +97,10 @@ public class ExecuteJobWithoutAnalyzersDialog extends AbstractDialog {
 
     @Override
     protected JComponent getDialogContent() {
-        final DCLabel text1 = DCLabel.darkMultiLine("Your job does not contain any analysis components!");
+        final DCLabel text1 = DCLabel.darkMultiLine("您的任务未包含任何分析组件！");
 
         final DCLabel text2 =
-                DCLabel.darkMultiLine("Would you like to run the current job and write the output data somewhere?");
+                DCLabel.darkMultiLine("是否要运行当前任务并将输出数据写入本地？");
 
         final JButton writeCsvButton = createButton("Write a CSV file", IconUtils.CSV_IMAGEPATH);
         writeCsvButton.addActionListener(createWriteDataActionListener(CreateCsvFileAnalyzer.class, ".csv"));

@@ -207,11 +207,11 @@ public class CreateTableDialog extends AbstractDialog {
         final JButton cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         cancelButton.addActionListener(e -> CreateTableDialog.this.close());
 
-        final JButton addColumnButton = WidgetFactory.createSmallButton("Add column", IconUtils.ACTION_ADD_DARK);
+        final JButton addColumnButton = WidgetFactory.createSmallButton("添加列", IconUtils.ACTION_ADD_DARK);
         addColumnButton.addActionListener(e -> addColumnDefinitionPanel());
 
         final JButton removeAllColumnsButton =
-                WidgetFactory.createSmallButton("Remove all columns", IconUtils.ACTION_REMOVE_DARK);
+                WidgetFactory.createSmallButton("移除所有列", IconUtils.ACTION_REMOVE_DARK);
         removeAllColumnsButton.setForeground(WidgetUtils.ADDITIONAL_COLOR_RED_BRIGHT);
         removeAllColumnsButton.addActionListener(e -> removeAllColumns());
 

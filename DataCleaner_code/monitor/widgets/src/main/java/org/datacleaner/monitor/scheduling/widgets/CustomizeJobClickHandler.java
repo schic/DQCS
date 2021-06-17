@@ -79,7 +79,7 @@ public class CustomizeJobClickHandler implements ClickHandler {
         menuBar.addItem("重命名", new RenameJobCommand(_tenant, job, _popup));
         menuBar.addItem("复制任务", new CopyJobCommand(_tenant, job, _popup));
         menuBar.addItem("删除任务", new DeleteJobCommand(_tenant, job, _popup));
-        menuBar.addItem("添加提示", new AddAlertCommand(_schedule, _service, _popup));
+//        menuBar.addItem("添加提示", new AddAlertCommand(_schedule, _service, _popup));
 
         if (analysisJob) {
             menuBar.addSeparator();

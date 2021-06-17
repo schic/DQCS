@@ -135,7 +135,7 @@ public class DirectoryBasedHadoopClusterDialog extends AbstractDialog {
             }
         });
 
-        final String saveButtonText = server == null ? "Register cluster" : "Save cluster";
+        final String saveButtonText = server == null ? "注册集群" : "保存集群";
         _saveButton = WidgetFactory.createPrimaryButton(saveButtonText, IconUtils.ACTION_SAVE_BRIGHT);
         _cancelButton = WidgetFactory.createDefaultButton("取消", IconUtils.ACTION_CANCEL);
         _cancelButton.addActionListener(e -> DirectoryBasedHadoopClusterDialog.this.close());
