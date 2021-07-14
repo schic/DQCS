@@ -31,7 +31,7 @@ final class FileDictionaryReferenceDataPage extends FilePage {
 
     @Override
     protected String getNameLabel() {
-        return "File dictionary name";
+        return "文件字典名称";
     }
 
     @Override

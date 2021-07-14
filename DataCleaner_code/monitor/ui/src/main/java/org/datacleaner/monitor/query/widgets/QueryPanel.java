@@ -80,7 +80,7 @@ public class QueryPanel extends FlowPanel {
 
         }
 
-        _executeQueryButton = DCButtons.primaryButton(null, "Ok");
+        _executeQueryButton = DCButtons.primaryButton(null, "确定");
         _executeQueryButton.addStyleName("btn-block");
 
         _loadingIcon = new LoadingIndicator();

@@ -55,14 +55,17 @@
 							field : 'status',
 							halign :'center',
 							cellStyle:function(value,row,index){
-								if (value=="SUCCESS"){
+								if (value==="SUCCESS"){
 									return {css:{"background-color":"green","text-align": "center"}}
-								}else if(value=="RUNNING"){
+								}else if(value==="RUNNING"){
 									return {css:{"background-color":"#0080C0","text-align": "center"}}
 								}else {
 									return {css:{"background-color":"red","text-align": "center"}}
 								}
 
+							},
+							formatter:function (value,row,index) {
+								return "SUCCESS"===value?"成功":("FAILURE"===value?"失败":("FAILURE"===value?"挂起":("RUNNING"===value?"运行中":"未知")));
 							}
 						},
 						{
@@ -251,7 +254,7 @@
 						<div onmouseover="showdiv('groupsName')" onmouseout="hidediv('groupsName')">
 							<img src="images/3.png" class="pc"/>
 						</div>
-						<span class="row1">时间线分析</span><br/>
+						<span class="row1">时间曲线分析</span><br/>
 						<span class="row1">#{tenantContext.timelineFolder.groupsNum}</span>
 						<div class="cs" id="groupsName">
 							<c:forEach items="#{tenantContext.timelineFolder.groupsName}" var ="li">
@@ -297,7 +300,7 @@
 			<input id="jobsJson" value="#{tenantContext.jobsJson}" style="display: none"></input>
 			<div style="background-color: #0080C0;margin-top: 50px;clear:both;height: 520px">
 
-				<p class="sp1">任务执行情况</p>
+				<p class="sp1">任务执行日志</p>
 
 				<table id="mytab" class="table table-hover" style="background-color: white"></table>
 

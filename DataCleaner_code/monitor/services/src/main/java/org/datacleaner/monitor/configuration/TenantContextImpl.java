@@ -350,9 +350,10 @@ public class TenantContextImpl extends AbstractTenantContext implements TenantCo
 //    }
 
     @Override
-    public String getJobsJson() throws Exception{
+    public String getJobsJson() {
         LeoExecuteJob job = new LeoExecuteJob();
         List<LeoExecutionData> jsonFileData = job.getJsonFileData(job.getDemoPath());
+        Collections.reverse(jsonFileData);
         return jsonFileData.toString();
     }
 

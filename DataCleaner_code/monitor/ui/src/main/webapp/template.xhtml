@@ -8,50 +8,57 @@
     <h:head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--        <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>DataCleaner monitor</title>
-
-        <link href='//fonts.googleapis.com/css?family=Muli:300,400'
-              rel='stylesheet' type='text/css'/>
-        <link href='//fonts.googleapis.com/css?family=Lato:700,900'
-              rel='stylesheet' type='text/css'/>
-
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/bootstrap-overrides.css"/>
-
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/main-elements.css"/>
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/footer.css"/>
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/buttons.css"/>
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/datacleaner-styles.css"/>
-
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/stylesheets/leo-styles.css"/>
-
+        <!--        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />-->
+        <meta name="viewport"
+              content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=0.9,user-scalable=no"/>
+        <title>数据质量控制管理系统</title>
+        <link href='//fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'/>
+        <link href='//fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/bootstrap-overrides.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/main-elements.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/buttons.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/datacleaner-styles.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/leo-styles.css"/>
         <!-- old/deprecated styles.css files -->
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/styles.css"/>
-        <link rel="stylesheet" type="text/css"
-              href="#{request.contextPath}/styles_additional.css"/>
-
-        <script type="text/javascript"
-                src="#{request.contextPath}/javascripts/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript"
-                src="#{request.contextPath}/javascripts/bootstrap.min.js"></script>
-        <script type="text/javascript"
-                src="#{request.contextPath}/javascripts/datacleaner-scripts.js"></script>
-
-        <link rel="shortcut icon"
-              href="#{request.contextPath}/images/favicon.png"/>
-
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/styles_additional.css"/>
+        <script type="text/javascript" src="#{request.contextPath}/javascripts/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/javascripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="#{request.contextPath}/javascripts/datacleaner-scripts.js"></script>
+        <link rel="shortcut icon" href="#{request.contextPath}/images/favicon.png"/>
         <script type="text/javascript">
-            //<![CDATA[
+            $(document).ready(function () {
+                var t = window.devicePixelRatio;
+                console.log("原本窗口缩放:"+t);
+                // if(t !== 1){
+                //     var tt = 1.645 - (0.6 * t);
+                //     console.log("调整后窗口缩放:"+t);
+                //     document.body.style.zoom = tt;
+                // }
+                // window.addEventListener('load', adaptation);
+                // window.addEventListener('resize', adaptation);
+                // function adaptation () {
+                //     var w = document.body.clientWidth;
+                //     var h = document.body.clientHeight;
+                //     var nw = 1920;
+                //     nh = 1080;
+                //     var left, top, scale;
+                //     if (w / h > nw / nh) {
+                //         scale = h / nh;
+                //         top = 0;
+                //         left = (w - nw * scale) / 2;
+                //     } else {
+                //         scale = w / nw;
+                //         left = 0;
+                //         top = (h - nh * scale) / 2;
+                //     }
+                //     document.getElementById('main').setAttribute('style', 'transform: scale('+ scale +');left:'+left+'px;top:'+top+'px;');
+                // }
+            });
             var dq_monitor_client_config = {
                 tenant_id: '#{user.tenant}',
                 dashboard_default_group: 'true',
@@ -62,33 +69,30 @@
                 role_dashboard_editor: '#{user.dashboardEditor}',
                 webstart_available: '#{monitorUIPreferences.showWebstartLaunchOptions}'
             }
-            //]]>
         </script>
-
         <ui:insert name="head"/>
     </h:head>
-    <h:body>
-        <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
-                style="position: absolute; width: 0; height: 0; border: 0"></iframe>
 
+    <h:body>
+        <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position: absolute; width: 0; height: 0; border: 0"></iframe>
         <nav class="navbar navbar-default navbar-inverse" role="navigation">
             <div class="container">
                 <div class="navbar-header" style="margin-left: -275px;">
-                    <button type="button" class="navbar-toggle collapsed"
-                            data-toggle="collapse" data-target="#navbar">
-                        <span class="sr-only">Toggle navigation</span> <span
-                            class="icon-bar"></span> <span class="icon-bar"></span> <span
-                            class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" style="padding: 0px" href="#{request.contextPath}/">
                         <img src="#{request.contextPath}/images/dc-logo-50.png" alt="[DC]"/>
                     </a>
-<!--                        <a class="navbar-brand" href="#{request.contextPath}/home666.xhtml">-->
-<!--                            <span class="visible-xs hidden-sm visible-md visible-lg">-->
-<!--                                DataCleaner-->
-<!--                                监视器-->
-<!--                            </span>-->
-<!--                        </a>-->
+                    <!--                        <a class="navbar-brand" href="#{request.contextPath}/home666.xhtml">-->
+                    <!--                            <span class="visible-xs hidden-sm visible-md visible-lg">-->
+                    <!--                                DataCleaner-->
+                    <!--                                监视器-->
+                    <!--                            </span>-->
+                    <!--                        </a>-->
                 </div>
 
                 <div id="navbar" class="collapse navbar-collapse" style="margin-left: -280px;margin-right: -200px;">
@@ -102,8 +106,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <c:choose>
                             <c:when test="#{user.authenticated}">
-                                <li><a>欢迎 #{user.username} <span class="tenant">(#{user.tenant})</span></a>
-                                </li>
+                                <li><a>欢迎 #{user.username} <span class="tenant">(#{user.tenant})</span></a></li>
                                 <li><a href="#{request.contextPath}/logout">退出</a></li>
                             </c:when>
                             <c:otherwise>
@@ -118,20 +121,16 @@
         </nav>
 
         <ui:insert name="content"/>
-
+        <div style="width: 100%;height: 146px;">
+        </div>
         <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-xs-12">
-                        <ui:include src="version-info.xhtml"/>
-                    </div>
+                    <div class="col-md-5 col-xs-12"><ui:include src="version-info.xhtml"/></div>
                     <div class="col-md-7 col-xs-12">
-                        <div style="text-align: right;">
-                            最成功的数据质量解决方案！技术支持
-                            <a onclick="recordOutboundLink(this,'outbound','neopost'); return false;"
-                               href="https://github.com/schic/DQCS" target="_blank">
-                                <img src="#{request.contextPath}/images/by_neopost_family.png"
-                                     alt="Powered by Neopost" style="padding-left: 1em"/>
+                        <div style="text-align: right;">最成功的数据质量解决方案！技术支持
+                            <a onclick="recordOutboundLink(this,'outbound','neopost'); return false;" href="https://github.com/schic/DQCS" target="_blank">
+                                <img src="#{request.contextPath}/images/by_neopost_family.png" alt="Powered by Neopost" style="padding-left: 1em"/>
                             </a>
                         </div>
                     </div>

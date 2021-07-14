@@ -60,7 +60,7 @@ public class DrillToProfilingResultSelectHandler {
         _item = item;
         _timelineDefinition = timelineDefinition;
         _timelineData = timelineData;
-        _popup = new DCPopupPanel("Inspect profiling result?");
+        _popup = new DCPopupPanel("查看分析结果？");
         _popup.addStyleName("DrillToProfilingResultPopupPanel");
     }
 
@@ -81,7 +81,7 @@ public class DrillToProfilingResultSelectHandler {
         final String url = Urls.createRelativeUrl("repository" + resultFilePath) + bookmark;
         GWT.log("Drill to result URL: " + url);
 
-        final Button showResultButton = DCButtons.primaryButton("glyphicon-stats", "Show results");
+        final Button showResultButton = DCButtons.primaryButton("glyphicon-stats", "显示结果");
         showResultButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -93,7 +93,7 @@ public class DrillToProfilingResultSelectHandler {
             }
         });
 
-        final Button showResultFullPageButton = DCButtons.defaultButton("glyphicon-stats", "Show results (new window)");
+        final Button showResultFullPageButton = DCButtons.defaultButton("glyphicon-stats", "显示结果(打开新窗口)");
         showResultFullPageButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
@@ -102,8 +102,8 @@ public class DrillToProfilingResultSelectHandler {
         });
 
         final SafeHtml labelHtml = new SafeHtmlBuilder().appendHtmlConstant(
-                "Do you wish to inspect the profiling result for ").appendEscaped(metricLabel).appendEscapedLines(
-                        "\ncollected at ").appendEscaped(formattedDate).appendHtmlConstant("?").toSafeHtml();
+                "是否要查看分析结果:").appendEscaped(metricLabel).appendHtmlConstant("报告").appendHtmlConstant(
+                        "\n-").appendEscaped(formattedDate).appendHtmlConstant("?").toSafeHtml();
 
         _popup.setWidget(new HTML(labelHtml));
         _popup.removeButtons();

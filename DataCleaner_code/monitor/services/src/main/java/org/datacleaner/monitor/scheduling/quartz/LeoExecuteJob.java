@@ -17,13 +17,15 @@ import java.util.*;
 
 public class LeoExecuteJob extends AbstractQuartzJob{
     @Override
-    protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+    protected void executeInternal(JobExecutionContext jobExecutionContext) {
         logger.info("====定时扫描任务结果日志启动====");
         String demoPath = getDemoPath();
         logger.info("==1.获取到当前demo目录路径: "+demoPath);
         createJsonFileyN(demoPath);
         List<LeoExecutionData> destJsonData = getJsonFileData(demoPath);
+        System.out.println(("==destJsonData=== " + destJsonData));
         List<LeoExecutionData> srcJsonData = compareData(demoPath,destJsonData);
+        System.out.println(("==srcJsonData=== " + srcJsonData));
         if (srcJsonData !=null && !srcJsonData.isEmpty()){
             writeJsonFile(demoPath,srcJsonData);
         }
@@ -57,14 +59,18 @@ public class LeoExecuteJob extends AbstractQuartzJob{
 
     public List<LeoExecutionData> getJsonFileData(String path) {
         logger.info("==2.读取dataTable.json文件内容!");
-        File jsonFile = new File(path + "/dataTable.json");
         List<LeoExecutionData> jsonList = new ArrayList<LeoExecutionData>();
         try {
+            File jsonFile = new File(path + "/dataTable.json");
             String jsonStr = FileUtils.readFileToString(jsonFile, "UTF-8");
             if (!"".equals(jsonStr) && !jsonStr.isEmpty())
             jsonList = JSON.parseArray(jsonStr, LeoExecutionData.class);
             logger.info("读取dataTable.json文件内容成功!!!");
-        } catch (IOException e) {
+        } catch (NullPointerException e) {
+            logger.error("dataTable.json文件还没有被创建!!!");
+        }catch (FileNotFoundException e) {
+            logger.error("dataTable.json文件还没有被创建!!!");
+        }catch (IOException e) {
             logger.error("读取dataTable.json文件内容失败!!!", e);
         }
         return jsonList;

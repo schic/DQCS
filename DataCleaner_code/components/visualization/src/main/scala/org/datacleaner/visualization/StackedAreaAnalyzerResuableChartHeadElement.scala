@@ -43,7 +43,7 @@ function draw_stacked_area_analyzer_chart(chartElement, chartData, retries) {
 }
 
 function draw_stacked_area_analyzer_chart_buttons(elem, plot, chartData, options, zoomed) {
-    var zoomOutButton = jQuery("<div class='stackedAreaChartButton' style='top:10px;'>Zoom out</div>")
+    var zoomOutButton = jQuery("<div class='stackedAreaChartButton' style='top:10px;'>缩小比例</div>")
     if (!zoomed) {
         zoomOutButton.hide();
     }

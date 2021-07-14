@@ -10,11 +10,15 @@
 		<link rel="stylesheet" type="text/css" href="#{request.contextPath}/stylesheets/referencedata.css" />
 		<c:if test="#{user.scheduleEditor}">
 			<script type="text/javascript">
-				//<![CDATA[
 				function showUploadJobForm(button) {
 					$(button).replaceWith($("#UploadFileTemplateDiv"));
 				}
-				//]]>
+				function showdiv(id) {
+					document.getElementById(id).style.display = "inline";
+				}
+				function hidediv(id) {
+					document.getElementById(id).style.display = "none";
+				}
 			</script>
 		</c:if>
 	</ui:define>
@@ -22,16 +26,41 @@
 	<ui:define name="content">
 		<div id="ReferenceDataPage" class="container">
 			<c:if test="#{user.configurationEditor}">
-				<button class="btn btn-primary" onclick="datacleaner.startReferenceDataWizard('dictionary');">
+				<button class="btn btn-primary" onclick="datacleaner.startReferenceDataWizard('dictionary');" onmouseover="showdiv('describe1')" onmouseout="hidediv('describe1')">
 					<span class="glyphicon glyphicon-plus" aria-hidden="true"/> <span>新建字典</span>
 				</button>
-				<button class="btn btn-primary" onclick="datacleaner.startReferenceDataWizard('synonym-catalog');">
+				<button class="btn btn-primary" onclick="datacleaner.startReferenceDataWizard('synonym-catalog');" onmouseover="showdiv('describe2')" onmouseout="hidediv('describe2')">
 					<span class="glyphicon glyphicon-plus" aria-hidden="true"/> <span>新建同义词目录</span>
 				</button>
-				<button class="btn btn-primary" onclick="datacleaner.startReferenceDataWizard('string-pattern');">
+				<button class="btn btn-primary" onclick="datacleaner.startReferenceDataWizard('string-pattern');" onmouseover="showdiv('describe3')" onmouseout="hidediv('describe3')">
 					<span class="glyphicon glyphicon-plus" aria-hidden="true"/> <span>新建字符串模式</span>
 				</button>
 				<div class="spacer"></div>
+				<div class="cs" id="describe1">
+					字典是参考数据列表，用于对照某些黑名单或白名单对值进行验证或分类,字典通常是可枚举的和有限的。<br/>
+					词典示例如下：<br/>
+					--产品类型字典，如“珠宝”、“男装”、“运动装”等。<br/>
+					--性别符号的字典，比如“M”、“F”或者“未知”。<br/>
+					--年龄组名称词典（如婴儿、儿童、年轻人、成熟人、老年人）<br/>
+					--两本男性和女性名字词典（以确定人的性别）
+				</div>
+				<div class="cs" id="describe2">
+					同义词目录是执行同义词替换的最简单也是最快的方法。<br/>
+					文本文件同义词目录是执行同义词替换的最简单也是最快的方法。<br/>
+					数据存储同义词目录允许您指定一个主术语列和多个同义词列。<br/>
+					同义词目录将通过搜索/查询数据存储查找同义词匹配项。<br/>
+					--示例如下：<br/>
+					M,Male,Man,Guy,Boy<br/>
+					F,Female,Woman,Girl<br/>
+					在上面的例子中，大多数典型的性别标记将被替换为“M”或“F”
+				</div>
+				<div class="cs" id="describe3">
+					字符串模式为它们可能符合或不符合的字符串值定义一个“模板”。<br/>
+					目前支持两种流行的字符串格式：<br/>
+
+					正则表达式是计算机科学中流行的一种通用字符串模式匹配语言。<br/>
+					简单的字符串模式，使用与模式工具分析器相同的语法。例如像这样的模式aaaa@aaaa.aaa，可以用来匹配典型的电子邮件地址。<br/>
+				</div>
 			</c:if>
 
 			<div id="RootPanelTarget">

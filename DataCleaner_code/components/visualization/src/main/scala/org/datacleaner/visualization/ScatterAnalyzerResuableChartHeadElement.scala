@@ -50,7 +50,7 @@ function draw_scatter_chart(chartElement, chartData, retries) {
 }
                 
 function draw_scatter_chart_buttons(elem, plot, chartData, options, zoomed) {
-    var zoomOutButton = jQuery("<div class='scatterChartButton' style='top:10px;'>Zoom out</div>")
+    var zoomOutButton = jQuery("<div class='scatterChartButton' style='top:10px;'>缩小比例</div>")
     if (!zoomed) {
         zoomOutButton.hide();
     }

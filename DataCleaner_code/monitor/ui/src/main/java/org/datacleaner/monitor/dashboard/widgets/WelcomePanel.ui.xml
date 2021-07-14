@@ -28,39 +28,38 @@
 				<span class="glyphicon glyphicon-plus" aria-hidden="true" />
 				<span>新建时间曲线图</span>
 			</g:Button>
+
 			<!--<g:Button ui:field="toggleWelcomeTextButton" styleName="toggleWelcomeTextButton">
 				<span class="glyphicon glyphicon-info-sign" aria-hidden="true" />
 				<span>显示/隐藏 介绍</span>
 			</g:Button>-->
+<!--			<div class="Description">(通过配置质控任务结果中需要关注的指标<br/>随着任务每次执行自动生成<br/>指标随时间变化的曲线图)</div>-->
 		</div>
 		<g:HTMLPanel ui:field="welcomeTextPanel" styleName="InfographicContainer">
-		<!--	<div class="InfographicPart InfographicIntro">
-				<h1>
-					欢迎来到
-					<span class="blue">DataCleaner</span>
-					<span class="orange">监视器</span>
-				</h1>
-				<span class="ScrollDownTeaser">
-					<a href="#first_infographic_part">What is it?</a>
-				</span>
-			</div>
+<!--			<div class="InfographicPart InfographicIntro">-->
+<!--				<h1>-->
+<!--					<span class="blue">DataCleaner</span>-->
+<!--					<span class="orange">时间曲线图</span>-->
+<!--				</h1>-->
+<!--			</div>-->
 			<div class="InfographicPart InfographicEvolution">
 				<a name="first_infographic_part"></a>
-				<h2>监视数据的演变</h2>
-				<div class="Description">DataCleaner DataCleaner 监视器帮助您可视化和探索数据的演变。用它来调查你的数据活动和管理数据质量。</div>
+				<h2>时间曲线图</h2>
+<!--				<div class="Description">DataCleaner DataCleaner 监视器帮助您可视化和探索数据的演变。用它来调查你的数据活动和管理数据质量。</div>-->
+				<div class="Description">通过配置质控任务结果中需要关注的指标随着任务每次执行自动生成指标随时间变化的曲线图.</div>
 			</div>
-			<div class="InfographicPart InfographicShare">
-				<h2>与所有人分享你的数据分析</h2>
-				<div class="Description">使用DataCleaner浏览，配置文件分析你的数据。使用监视器 Web应用程序共享它任何人，甚至定期设置自动分析间隔。</div>
-			</div>
-			<div class="InfographicPart InfographicImprove">
-				<h2>不断提高数据质量</h2>
-				<div class="Description">DataCleaner监视器编排和计划DataCleaner作业，用于清理和丰富数据。</div>
-			</div>
-			<div class="InfographicPart InfographicConnect">
-				<h2>将DataCleaner连接到世界</h2>
-				<div class="Description">有了监视器，您可以安全地连接使用web服务将DataCleaner作业转移到其他业务流程，计划执行等。立即利用你的工作同时兼顾两者数据的批处理和实时处理。</div>
-			</div>-->
+<!--			<div class="InfographicPart InfographicShare">-->
+<!--				<h2>与所有人分享你的数据分析</h2>-->
+<!--				<div class="Description">使用DataCleaner浏览，配置文件分析你的数据。使用监视器 Web应用程序共享它任何人，甚至定期设置自动分析间隔。</div>-->
+<!--			</div>-->
+<!--			<div class="InfographicPart InfographicImprove">-->
+<!--				<h2>不断提高数据质量</h2>-->
+<!--				<div class="Description">DataCleaner监视器编排和计划DataCleaner作业，用于清理和丰富数据。</div>-->
+<!--			</div>-->
+<!--			<div class="InfographicPart InfographicConnect">-->
+<!--				<h2>将DataCleaner连接到世界</h2>-->
+<!--				<div class="Description">有了监视器，您可以安全地连接使用web服务将DataCleaner作业转移到其他业务流程，计划执行等。立即利用你的工作同时兼顾两者数据的批处理和实时处理。</div>-->
+<!--			</div>-->
 		</g:HTMLPanel>
 	</g:HTMLPanel>
 </ui:UiBinder>

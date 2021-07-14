@@ -75,7 +75,7 @@ public class TimelinePanel extends FlowPanel {
 
         if (_timelineIdentifier != null) {
             // initially does not make sense to save an (unchanged) and
-            // identifyable timeline.
+            // identifyable timeline.最初保存（未更改）和 可识别的时间线。
             setTimelineDefinitionUnchanged();
         }
 
@@ -118,7 +118,7 @@ public class TimelinePanel extends FlowPanel {
     private void setLoading() {
         if (getWidgetCount() == 2) {
             if (getWidget(1) == _loadingIndicator) {
-                // the loading indicator is already showing correctly
+                // the loading indicator is already showing correctly 装载指示器已经正确显示
                 return;
             }
         }

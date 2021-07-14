@@ -72,7 +72,7 @@ import com.googlecode.gflot.client.options.TimeSeriesAxisOptions;
 /**
  * 
  * Gflot design implementation for TimeLines
- * 
+ * Gflot设计实施时间线
  */
 public class TimelineDesigner {
 
@@ -120,7 +120,7 @@ public class TimelineDesigner {
     private LegendPanel legendPanel;
 
     /**
-     * get legend Panel widget to be added to timeline
+     * get legend Panel widget to be added to timeline获取要添加到日程表的图例面板小部件
      * 
      * @return
      */
@@ -129,7 +129,7 @@ public class TimelineDesigner {
     }
 
     /**
-     * Create plot returns widget for TimeLine
+     * Create plot returns widget for TimeLine为日程表创建绘图返回小部件
      */
     public Widget createPlot() {
 
@@ -248,7 +248,7 @@ public class TimelineDesigner {
     }
 
     protected Widget createZoomOutButton(final PlotModel model, final PlotOptions plotOptions, final Integer height) {
-        final Anchor button = new Anchor("Zoom out");
+        final Anchor button = new Anchor("缩小比例");
         button.setStyleName("ZoomOutButton");
         button.addClickHandler(new ClickHandler() {
             @Override

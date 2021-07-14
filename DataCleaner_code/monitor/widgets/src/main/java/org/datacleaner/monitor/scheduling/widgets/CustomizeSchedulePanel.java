@@ -130,7 +130,7 @@ public class CustomizeSchedulePanel extends Composite {
                 periodicTriggerRadio.setValue(true);
                 Element elementById = DOM.getElementById("periodicErrorMessage");
                 if (periodicTriggerExpressionTextBox.getText().equals("")) {
-                    elementById.setInnerHTML("Specify cron expression for periodic scheduling");
+                    elementById.setInnerHTML("指定周期性调度的cron表达式");
                 } else {
                     elementById.setInnerHTML("");
                 }
@@ -148,7 +148,7 @@ public class CustomizeSchedulePanel extends Composite {
             public void onClick(ClickEvent event) {
                 oneTimeTriggerRadio.setValue(true);
                 Element elementByIdForDate = DOM.getElementById("serverDate");
-                elementByIdForDate.setInnerHTML("Server Time : " + serverDateAsString);
+                elementByIdForDate.setInnerHTML("服务时间 : " + serverDateAsString);
             }
         });
 
@@ -158,13 +158,13 @@ public class CustomizeSchedulePanel extends Composite {
             public void onChange(ChangeEvent event) {
                 Element elementById = DOM.getElementById("errorMessage");
                 if (dateBox.getValue() == null) {
-                    elementById.setInnerHTML("Select date for one time schedule");
+                    elementById.setInnerHTML("为执行计划选择日期");
                 }
                 else {
                     Date scheduleDate = dateBox.getValue();
                     elementById.setInnerHTML("");
                     if (scheduleDate.before(serverDate)) {
-                        elementById.setInnerHTML("Past date can not be selected for one time schedule");
+                        elementById.setInnerHTML("不能为执行计划选择过期时间");
                     }
                     else {
                         elementById.setInnerHTML("");
@@ -179,9 +179,9 @@ public class CustomizeSchedulePanel extends Composite {
             public void onClick(ClickEvent event) {
                 Element elementById = DOM.getElementById("errorMessage");
                 Element elementByIdForDate = DOM.getElementById("serverDate");
-                elementByIdForDate.setInnerHTML("Server Time : " + serverDateAsString);
+                elementByIdForDate.setInnerHTML("服务时间 : " + serverDateAsString);
                 if (dateBox.getValue() == null) {
-                    elementById.setInnerHTML("Select date for one time schedule");
+                    elementById.setInnerHTML("为执行计划选择日期");
                 }
             }
         });
@@ -194,7 +194,7 @@ public class CustomizeSchedulePanel extends Composite {
                 Element elementById = DOM.getElementById("errorMessage");
                 elementById.setInnerHTML("");
                 if (scheduleDate.before(serverDate)) {
-                    elementById.setInnerHTML("Past date can not be selected for one time schedule");
+                    elementById.setInnerHTML("不能为执行计划选择过期时间");
                 }
                 else {
                     elementById.setInnerHTML("");
@@ -272,19 +272,19 @@ public class CustomizeSchedulePanel extends Composite {
 
         if (periodicTriggerRadio.getValue()) {
             if (periodicTriggerExpressionTextBox.getText().equals("")) {
-                throw new DCUserInputException("Please specify a cron expression for periodic scheduling");
+                throw new DCUserInputException("请为执行计划指定cron表达式");
             } else {
                 _schedule.setCronExpression(periodicTriggerExpressionTextBox.getText());
             }
         }
         if (oneTimeTriggerRadio.getValue()) {
             if (dateBox.getValue() == null) {
-                throw new DCUserInputException("Please select a date for one time scheduling");
+                throw new DCUserInputException("为执行计划选择日期");
             }
             else {
                 Date scheduleDate = dateBox.getValue();
                 if (scheduleDate.before(serverDate)) {
-                    throw new DCUserInputException("Past date cannot be selected.Please select a date in future");
+                    throw new DCUserInputException("不能选择过去的日期。请选择将来的日期");
                 } else {
                     _schedule.setDateForOneTimeSchedule(dateBox.getTextBox().getText());
                 }
@@ -299,7 +299,7 @@ public class CustomizeSchedulePanel extends Composite {
         
         if (hotFolderTriggerRadio.getValue()) {
             if (hotFolderTriggerLocation.getValue() == null) {
-                throw new DCUserInputException("Please specify a file or folder as hot folder location");
+                throw new DCUserInputException("请指定文件或文件夹作为热文件夹位置");
             } else {
                 _schedule.setHotFolder(hotFolderTriggerLocation.getValue());
             }

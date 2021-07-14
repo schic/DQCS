@@ -124,8 +124,7 @@
 				</ui:repeat>
 				<ui:repeat var="file" value="#{tenantContext.jobFolder.files}">
 					<h:panelGroup rendered="#{file.type eq 'ANALYSIS_JOB'}">
-						<li class="file #{file.type}"><a
-							href="repository/#{user.tenant}/jobs/#{file.name}">#{file.name}</a>
+						<li class="file #{file.type}"><a href="repository/#{user.tenant}/jobs/#{file.name}" target="_blank">#{file.name}</a>
 							<h:panelGroup rendered="#{user.jobEditor}"
 								styleClass="uploadJobPanel">
 								<form action="repository/#{user.tenant}/jobs/#{file.name}"
@@ -144,18 +143,16 @@
 
 			<h2>时间表</h2>
 			<ul class="repositoryView">
-				<ui:repeat var="folder"
-					value="#{tenantContext.timelineFolder.folders}">
+				<ui:repeat var="folder" value="#{tenantContext.timelineFolder.folders}">
 					<li class="folder">#{folder.name}</li>
 					<ul>
 						<ui:repeat var="file" value="#{folder.files}">
-							<li class="file #{file.type}"><a
-								href="dashboard##{folder.name}">#{file.name}</a></li>
+							<li class="file #{file.type}"><a href="dashboard##{folder.name}" target="_blank">#{file.name}</a></li>
 						</ui:repeat>
 					</ul>
 				</ui:repeat>
 				<ui:repeat var="file" value="#{tenantContext.timelineFolder.files}">
-					<li class="file #{file.type}"><a href="dashboard">#{file.name}</a></li>
+					<li class="file #{file.type}"><a href="dashboard" target="_blank">#{file.name}</a></li>
 				</ui:repeat>
 			</ul>
 
@@ -167,10 +164,9 @@
 				</ui:repeat>
 			</ul>
 
-			<h2>结果文件</h2>
+			<h2>结果报告</h2>
 			<ul class="repositoryView">
-				<ui:repeat var="folder"
-					value="#{tenantContext.resultFolder.folders}">
+				<ui:repeat var="folder" value="#{tenantContext.resultFolder.folders}">
 					<li class="folder">#{folder.name}</li>
 					<ul>
 						<ui:repeat var="file" value="#{folder.files}">
@@ -180,8 +176,7 @@
 				</ui:repeat>
 				<ui:repeat var="file" value="#{tenantContext.resultFolder.files}">
 					<h:panelGroup rendered="#{file.type eq 'ANALYSIS_RESULT'}">
-						<li class="file #{file.type}"><a
-							href="repository/#{user.tenant}/results/#{file.name}">#{file.name}</a></li>
+						<li class="file #{file.type}"><a href="repository/#{user.tenant}/results/#{file.name}" target="_blank">#{file.name}</a></li>
 					</h:panelGroup>
 					<h:panelGroup rendered="#{file.type ne 'ANALYSIS_RESULT'}">
 						<li class="file #{file.type}">#{file.name}</li>

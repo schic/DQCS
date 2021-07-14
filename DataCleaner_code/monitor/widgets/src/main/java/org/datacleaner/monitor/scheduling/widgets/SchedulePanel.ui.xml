@@ -32,7 +32,7 @@
 			</div>
 
 			<div class="ScheduleColumn">
-				<span>Schedule:</span>
+				<span>预设:</span>
 				<g:Anchor ui:field="scheduleAnchor" />
 				<span class="AlertsColumn">
 					<g:FlowPanel ui:field="alertsPanel" />

@@ -29,7 +29,7 @@
 		<li
 				class="#{ (view.viewId == '/scheduling.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="scheduling" styleClass="SchedulingTabTitle">
-			<h:outputText value="任务调度" />
+			<h:outputText value="任务管理" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>
@@ -62,11 +62,18 @@
 		<li
 				class="#{ (view.viewId == '/repository.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
 				value="repository" styleClass="RepositoryTabTitle">
-			<h:outputText value="资料库" />
+			<h:outputText value="资料归档" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />
 			</c:if>
 		</h:outputLink></li>
+	</c:if>
+	<c:if test="#{user.configurationEditor or user.jobEditor}">
+		<li>
+			<h:outputLink value="https://github.com/schic/DQCS/releases/download/DataCleaner5.7.1_zh_0.2/DataCleaner5.7.1_desktop_zh_0.2.zip">
+			<h:outputText value="客户端下载" />
+			</h:outputLink>
+		</li>
 	</c:if>
 
 </ui:composition>

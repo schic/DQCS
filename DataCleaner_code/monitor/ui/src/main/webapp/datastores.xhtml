@@ -40,13 +40,11 @@
 
 			<c:if test="#{user.configurationEditor}">
 				<div>
-					<button class="btn btn-primary"
-						onclick="datacleaner.startDatastoreWizard();">
-						<span class="glyphicon glyphicon-plus" aria-hidden="true" /> <span>注册数据存储</span>
+					<button class="btn btn-primary" onclick="datacleaner.startDatastoreWizard();">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true" /> <span>创建数据源</span>
 					</button>
 				</div>
-
-				<div class="spacer"></div>
+				<div class="spacer">(用于创建数据源链接信息，可创建常见关系型数据库、CSV文件、Excel文件、xml文件、ElasticSearch存储等。)</div>
 			</c:if>
 
 			<div id="RootPanelTarget"></div>

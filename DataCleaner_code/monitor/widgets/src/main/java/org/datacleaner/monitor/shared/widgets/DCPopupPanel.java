@@ -30,7 +30,7 @@ import com.google.gwt.user.client.ui.Widget;
 
 /**
  * A {@link PopupPanel} which has a heading in the top and a button panel in the
- * bottom.
+ * bottom.一个{@link popupanel}，顶部有一个标题，底部有一个按钮面板。
  */
 public class DCPopupPanel extends PopupPanel {
 
