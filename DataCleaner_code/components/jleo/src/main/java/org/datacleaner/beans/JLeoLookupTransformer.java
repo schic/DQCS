@@ -10,7 +10,6 @@ import org.apache.metamodel.schema.Column;
 import org.apache.metamodel.schema.Table;
 import org.apache.metamodel.util.HasName;
 import org.datacleaner.api.*;
-import org.datacleaner.components.categories.ImproveSuperCategory;
 import org.datacleaner.components.categories.LeoTransCategory;
 import org.datacleaner.components.categories.LeoTransSuperCategory;
 import org.datacleaner.connection.Datastore;
@@ -25,9 +24,6 @@ import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.sql.Timestamp;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
