@@ -1,4 +1,4 @@
-# DataCleaner（数据清洗机）
+# 数据质量控制管理系统（基于DataCleaner）
 
 [![Build Status: Linux](https://travis-ci.org/datacleaner/DataCleaner.svg?branch=master)](https://travis-ci.org/datacleaner/DataCleaner) [![Gitter chat](https://badges.gitter.im/datacleaner/community.png)](https://gitter.im/datacleaner/community)
 
@@ -6,17 +6,9 @@
 <img src="https://datacleaner.github.io/assets/dc-logo-100.png" alt="DataCleaner logo" />
 </div>
 
-基于一流的数据质控解决方案DATACLEANER打造.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四川省数据质量控制管理系统项目是基于国外开源软件DataCleaner进行本地化改造和功能扩展。
+DataCleaner是一个数据质量分析，比较，验证和监督的软件。DataCleaner包括一个独立的图形化客户端程序和web应用，客户端程序负责进行复杂的任务配置用户界面分析，web负责应用任务调度、监控。
 
-DataCleaner 是一个帮助你生成数据概要、修正和丰富你的数据的工具集，我们可以使用它进行临时数据分析、主数据管理等。
-
-## Where to go for end-user information?
-
-请访问DataCleaner 社区网站 https://datacleaner.github.io 获取下载、新闻和文档信息。
-
-Visit our Gitter chat channel https://gitter.im/datacleaner/community for asking questions or discussions.
-
-GitHub markdown pages and issues are used for developers and technical aspects only.
 
 ## 模块结构
 
@@ -39,16 +31,10 @@ GitHub markdown pages and issues are used for developers and technical aspects o
 * monitor
   * api - 监视器的API类和接口
 
-## 目录说明
-
-DataCleaner_code：DataCleaner5.7.1的源代码(支持中文)
-
 ## 持续集成
 
-There's a public build of DataCleaner that can be found on Travis CI:
+Travis CI上有DataCleaner的构建日志:
 
 https://travis-ci.org/datacleaner/DataCleaner
 
-## 许可
 
-Licensed under the Lesser General Public License, see http://www.gnu.org/licenses/lgpl.txt
