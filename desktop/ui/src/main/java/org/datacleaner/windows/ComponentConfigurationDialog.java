@@ -166,7 +166,7 @@ public class ComponentConfigurationDialog extends AbstractDialog implements Comp
     protected JComponent getDialogContent() {
         final JComponent configurationComponent = _renderer.render(_componentBuilder).createJComponent();
 
-        final JButton closeButton = WidgetFactory.createPrimaryButton("Close", IconUtils.ACTION_CLOSE_BRIGHT);
+        final JButton closeButton = WidgetFactory.createPrimaryButton("关闭", IconUtils.ACTION_CLOSE_BRIGHT);
         closeButton.addActionListener(e -> ComponentConfigurationDialog.this.dispose());
 
         final DCPanel panel = new DCPanel(WidgetUtils.COLOR_WELL_BACKGROUND);

@@ -21,7 +21,6 @@
     <ui:define name="content">
         <c:if test="#{not user.authenticated}">
             <div class="LoginPage container">
-
                 <c:if test="#{not empty param.error}">
                     <div class="alert alert-warning" style="width: 290px;margin:0 auto;text-align:center;">您的登录尝试失败,请再试一次。</div>
                     <c:if test="#{not empty param.debug}">
@@ -34,7 +33,7 @@
                 <form action="j_spring_security_check" method="POST">
                     <div class="leorow">
                         <div class="leocol-xs-12">
-                            <div class="panel panel-default">
+                            <div class="panel panel-default" >
                                 <!--                                <div class="leopanel-heading">-->
                                 <!--                                    <h3>登录<span class="blue">DataCleaner</span>-->
                                 <!--										<span class="orange">monitor</span>-->

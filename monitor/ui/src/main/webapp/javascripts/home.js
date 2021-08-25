@@ -48,9 +48,31 @@ $('#search_btn').click(function () {
 function showdiv(id) {
     document.getElementById(id).style.display = "inline";
 }
+function showTotalJobs(id) {
+    document.getElementById(id).style.display = "inline";
+    $('#'+id+'').modal("show");
+}
 
 function hidediv(id) {
     document.getElementById(id).style.display = "none";
+}
+function showXml(obj) {
+    var jobName = obj.firstChild.textContent.toString();
+    var filesNamesList =  document.getElementById("filesNames").value;
+    var filesNames = filesNamesList.substring(1,filesNamesList.length-1);
+    var strs = filesNames.split(",");
+    for (var i=0;i<strs.length;i++ )// /demo/jobs/Copy employees to customer table.analysis.xml
+    {
+        var indexN1 = strs[i].lastIndexOf("/");
+        var indexN2 = strs[i].indexOf(".");
+        var filename = strs[i].substring(indexN1+1,indexN2);
+        if (strs[i].endsWith(".analysis.xml") && filename === jobName){
+            var usertenant = document.getElementById("usertenant").value;
+            var path = "repository/"+usertenant+"/jobs/"+strs[i].substring(indexN1+1);
+            obj.target= "_blank";
+            obj.href=path;
+        }
+    }
 }
 
 

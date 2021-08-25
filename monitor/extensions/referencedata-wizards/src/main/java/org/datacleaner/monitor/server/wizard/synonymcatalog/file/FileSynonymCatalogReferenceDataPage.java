@@ -31,7 +31,7 @@ final class FileSynonymCatalogReferenceDataPage extends FilePage {
     
     @Override
     protected String getNameLabel() {
-        return "File synonym catalog name";
+        return "文件同义词目录名";
     }
 
     @Override

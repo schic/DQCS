@@ -193,7 +193,7 @@ public class ErrorHandler {
             panel.add(textArea);
         }
 
-        final Button closeButton = DCButtons.primaryButton(null, "Close");
+        final Button closeButton = DCButtons.primaryButton(null, "关闭");
         closeButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

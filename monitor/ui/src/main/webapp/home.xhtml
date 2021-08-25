@@ -3,7 +3,7 @@
                 xmlns:c="http://java.sun.com/jsp/jstl/core"
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:h="http://java.sun.com/jsf/html"
-                xmlns:ui="http://java.sun.com/jsf/facelets">
+                xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:fn="http://java.sun.com/jsp/jstl/functions">
 
     <ui:define name="head">
         <meta charset="UTF-8"></meta>
@@ -16,95 +16,95 @@
         <script src="./javascripts/bootstrap.min.js"></script>
         <script src="./javascripts/home.js"></script>
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('#mytab').bootstrapTable({
-                    striped : false, //是否显示行间隔色
-                    pageNumber : 1, //初始化加载第一页
-                    pagination : true,//是否分页
-                    sidePagination : 'client',//server:服务器端分页|client：前端分页
-                    pageSize : 10,//单页记录数
-                    pageList : [ 5, 10, 20, 30 ,50],//可选择单页记录数
-                    data:JSON.parse($("#jobsJson").val()),
-                    columns : [
+                    striped: false, //是否显示行间隔色
+                    pageNumber: 1, //初始化加载第一页
+                    pagination: true,//是否分页
+                    sidePagination: 'client',//server:服务器端分页|client：前端分页
+                    pageSize: 10,//单页记录数
+                    pageList: [5, 10, 20, 30, 50],//可选择单页记录数
+                    data: JSON.parse($("#jobsJson").val()),
+                    columns: [
                         {
-                            title : '任务名称',
-                            field : 'name',
-                            halign :'center',
-                            cellStyle(){
-                                return{css:{"text-align": "center"}}
+                            title: '任务名称',
+                            field: 'name',
+                            halign: 'center',
+                            cellStyle() {
+                                return {css: {"text-align": "center"}}
                             }
                         },
                         {
-                            title : '最近执行状态',
-                            field : 'status',
-                            halign :'center',
-                            cellStyle:function(value,row,index){
-                                if (value==="SUCCESS"){
-                                    return {css:{"background-color":"green","text-align": "center"}}
-                                }else if(value==="RUNNING"){
-                                    return {css:{"background-color":"#0080C0","text-align": "center"}}
-                                }else {
-                                    return {css:{"background-color":"red","text-align": "center"}}
+                            title: '最近执行状态',
+                            field: 'status',
+                            halign: 'center',
+                            cellStyle: function (value, row, index) {
+                                if (value === "SUCCESS") {
+                                    return {css: {"background-color": "green", "text-align": "center"}}
+                                } else if (value === "RUNNING") {
+                                    return {css: {"background-color": "#0080C0", "text-align": "center"}}
+                                } else {
+                                    return {css: {"background-color": "red", "text-align": "center"}}
                                 }
                             },
-                            formatter:function (value,row,index) {
-                                return "SUCCESS"===value?"成功":("FAILURE"===value?"失败":("FAILURE"===value?"挂起":("RUNNING"===value?"运行中":"未知")));
+                            formatter: function (value, row, index) {
+                                return "SUCCESS" === value ? "成功" : ("FAILURE" === value ? "失败" : ("FAILURE" === value ? "挂起" : ("RUNNING" === value ? "运行中" : "未知")));
                             }
                         },
                         {
-                            title : '最近开始时间',
-                            field : 'beginTime',
-                            halign :'center',
-                            cellStyle(){
-                                return{css:{"text-align": "center"}}
+                            title: '最近开始时间',
+                            field: 'beginTime',
+                            halign: 'center',
+                            cellStyle() {
+                                return {css: {"text-align": "center"}}
                             }
                         },
                         {
-                            title : '最近结束时间',
-                            field : 'endTime',
-                            halign :'center',
-                            cellStyle(){
-                                return{css:{"text-align": "center"}}
+                            title: '最近结束时间',
+                            field: 'endTime',
+                            halign: 'center',
+                            cellStyle() {
+                                return {css: {"text-align": "center"}}
                             }
                         },
                         {
-                            title : '耗时（ms）',
-                            field : 'cost',
-                            halign :'center',
-                            cellStyle(){
-                                return{css:{"text-align": "center"}}
+                            title: '耗时（ms）',
+                            field: 'cost',
+                            halign: 'center',
+                            cellStyle() {
+                                return {css: {"text-align": "center"}}
                             }
                         },
                         {
-                            title : 'resultId',
-                            field : 'resultId',
+                            title: 'resultId',
+                            field: 'resultId',
                             visible: false
                         },
                         {
-                            title : 'triggerType',
-                            field : 'triggerType',
+                            title: 'triggerType',
+                            field: 'triggerType',
                             visible: false
                         },
                         {
-                            title : 'triggerBy',
-                            field : 'triggerBy',
+                            title: 'triggerBy',
+                            field: 'triggerBy',
                             visible: false
                         },
                         {
-                            title : 'logOutput',
-                            field : 'logOutput',
+                            title: 'logOutput',
+                            field: 'logOutput',
                             visible: false
                         },
                         {
-                            title : 'url',
-                            field : 'url',
+                            title: 'url',
+                            field: 'url',
                             visible: false
                         }
                     ],
-                    onClickCell: function(field, value, row, $element) {
-                        let hosturl=window.location.pathname;
-                        hosturl=hosturl.substring(0,hosturl.lastIndexOf('/'));
-                        $("#log_title").text('\''+row.name+'\'');
+                    onClickCell: function (field, value, row, $element) {
+                        let hosturl = window.location.pathname;
+                        hosturl = hosturl.substring(0, hosturl.lastIndexOf('/'));
+                        $("#log_title").text('\'' + row.name + '\'');
                         $("#log_status").text(row.status);
                         $("#log_beginTime").text(row.beginTime);
                         $("#log_endTime").text(row.endTime);
@@ -112,7 +112,7 @@
                         $("#log_triggerBy").text(row.triggerBy);
                         $("#log_logOutput").text(row.logOutput);
                         $("#log_resultId").text(row.resultId);
-                        $('#log_resultId').attr('href',hosturl+row.url);
+                        $('#log_resultId').attr('href', hosturl + row.url);
                         $('#myModal').modal("show");
                     }
                 });
@@ -127,45 +127,27 @@
                 <p class="sp1">总体情况</p><br/>
 
                 <div class="Column">
-                    <div onmouseover="showdiv('jobName')" onmouseout="hidediv('jobName')">
+                    <div onclick="showTotalJobs('myTotalJobs')">
                         <img src="images/1.png" class="pc"/>
                     </div>
                     <span class="row1">任务总数</span><br/>
                     <span class="row1">#{tenantContext.jobNum}</span>
-                    <div class="cs" id="jobName">
-                        <c:forEach items="#{tenantContext.jobsName}" var ="li">
-                            <li style="height: 1px;text-decoration: underline">${li}</li>
-                            <br/>
-                        </c:forEach>
-                    </div>
                 </div>
 
                 <div class="Column">
-                    <div onmouseover="showdiv('datastoresName')" onmouseout="hidediv('datastoresName')">
+                    <div onclick="showTotalJobs('myDatastores')">
                         <img src="images/2.png" class="pc"/>
                     </div>
                     <span class="row1">数据源</span><br/>
                     <span class="row1">#{jsfHelper.datastoresNum}</span>
-                    <div class="cs" id="datastoresName">
-                        <c:forEach items="#{jsfHelper.datastoresName}" var ="li">
-                            <li style="height: 1px;text-decoration: underline">${li}</li>
-                            <br/>
-                        </c:forEach>
-                    </div>
                 </div>
 
                 <div class="Column">
-                    <div onmouseover="showdiv('groupsName')" onmouseout="hidediv('groupsName')">
+                    <div onclick="showTotalJobs('myTimeLines')">
                         <img src="images/3.png" class="pc"/>
                     </div>
                     <span class="row1">时间曲线分析</span><br/>
                     <span class="row1">#{tenantContext.timelineFolder.groupsNum}</span>
-                    <div class="cs" id="groupsName">
-                        <c:forEach items="#{tenantContext.timelineFolder.groupsName}" var ="li">
-                            <li style="height: 1px;text-decoration: underline">${li}</li>
-                            <br/>
-                        </c:forEach>
-                    </div>
                 </div>
 
             </div>
@@ -191,7 +173,8 @@
             <span></span>
         </div>
 
-        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -207,27 +190,27 @@
 
                         <div class="row">
                             <span class="col-xs-3">状态:</span>
-                            <label class="col-xs-9" id="log_status" />
+                            <label class="col-xs-9" id="log_status"/>
                         </div>
 
                         <div class="row">
                             <span class="col-xs-3">开始时间:</span>
-                            <label class="col-xs-9" id="log_beginTime" />
+                            <label class="col-xs-9" id="log_beginTime"/>
                         </div>
 
                         <div class="row">
                             <span class="col-xs-3">结束时间:</span>
-                            <label class="col-xs-9" id="log_endTime" />
+                            <label class="col-xs-9" id="log_endTime"/>
                         </div>
 
                         <div class="row">
                             <span class="col-xs-3">启动:</span>
-                            <label class="col-xs-9" id="log_triggerType" />
+                            <label class="col-xs-9" id="log_triggerType"/>
                         </div>
 
                         <div class="row">
                             <span class="col-xs-3">被谁启动:</span>
-                            <label class="col-xs-9" id="log_triggerBy" />
+                            <label class="col-xs-9" id="log_triggerBy"/>
                         </div>
 
                         <div class="row">
@@ -238,7 +221,7 @@
                         <div class="row" style="margin-top: 25px;">
                             <span class="col-xs-3">结果:</span>
                             <div class="col-xs-9">
-                                <a class="FormValue" target="_blank" id="log_resultId" />
+                                <a class="FormValue" target="_blank" id="log_resultId"/>
                             </div>
                         </div>
 
@@ -250,9 +233,105 @@
                 </div>
             </div>
         </div>
-
-
-        <input id="jobsJson"  value="#{tenantContext.jobsJson}" style="display: none"></input>
+        <!--        <div class="modal fade bs-example-modal-lg" id="myTotalJobs" tabindex="-1" role="dialog"-->
+        <!--             aria-labelledby="myModalLabel">-->
+        <!--            <div class="modal-dialog" role="document">-->
+        <!--                <div class="modal-content">-->
+        <!--                    <div class="modal-header">-->
+        <!--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+        <!--                            <span aria-hidden="true">×</span>-->
+        <!--                        </button>-->
+        <!--                        <h4 class="modal-title" align="center" style="font-size: 20px;color: #16c2f4">任务总数</h4>-->
+        <!--                    </div>-->
+        <!--                    <div class="modal-body">-->
+        <!--                        <c:forEach items="#{tenantContext.jobsName}" var ="li">-->
+        <!--                            <div class="row" style="text-decoration: underline;margin-left: 20px">-->
+        <!--                                ${li}-->
+        <!--                            </div>-->
+        <!--                        </c:forEach>-->
+        <!--                    </div>-->
+        <!--                    <div class="modal-footer">-->
+        <!--                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <div class="modal fade bs-example-modal-lg" id="myTotalJobs" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" align="center" style="font-size: 20px;color: #16c2f4">任务总数</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="repositoryView">
+                            <c:forEach items="#{tenantContext.jobsName}" var="name">
+<!--                                <div class="row" style="text-decoration: underline;margin-left: 20px;color: #2aabd2"-->
+<!--                                     onclick="showXml(this.firstChild.textContent.toString())">-->
+<!--                                    ${name}-->
+<!--                                </div>-->
+                                <div class="row">
+                                    <a id="openXml" href="javascript:void(0);"
+                                       style="text-decoration: underline;margin-left:
+                                    20px;" onclick="showXml(this)" >${name}</a>
+                                </div>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-lg" id="myDatastores" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" align="center" style="font-size: 20px;color: #16c2f4">数据源</h4>
+                    </div>
+                    <div class="modal-body">
+                        <c:forEach items="#{jsfHelper.datastoresName}" var="li">
+                            <div class="row" style="text-decoration: underline;margin-left: 20px">${li}</div>
+                        </c:forEach>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-lg" id="myTimeLines" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" align="center" style="font-size: 20px;color: #16c2f4">时间曲线分析</h4>
+                    </div>
+                    <div class="modal-body">
+                        <c:forEach items="#{tenantContext.timelineFolder.groupsName}" var="li">
+                            <div class="row" style="text-decoration: underline;margin-left: 20px">${li}</div>
+                        </c:forEach>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input id="usertenant" value="#{user.tenant}" style="display: none"></input>
+        <input id="filesNames" value="#{tenantContext.jobFolder.files}" style="display: none"></input>
+        <input id="jobsJson" value="#{tenantContext.jobsJson}" style="display: none"></input>
         <div style="margin-top: 10px;clear:both;height: 520px">
             <p class="sp1">任务执行日志</p>
             <table id="mytab" class="table table-hover" style="background-color: white"></table>
