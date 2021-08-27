@@ -20,7 +20,7 @@
 /*  !*top: event.y;*!*/
 /*}*/
 .cs {
-  background: antiquewhite;
+  background: #ADD8E6;
   /*top: event.clientY+20;*/
   /*left: event.clientX+20;*/
   position: absolute;
