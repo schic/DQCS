@@ -25,12 +25,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.google.gwt.event.dom.client.KeyPressEvent;
+import com.google.gwt.event.dom.client.KeyPressHandler;
+import com.google.gwt.user.client.ui.*;
 import org.datacleaner.monitor.dashboard.DashboardServiceAsync;
 import org.datacleaner.monitor.dashboard.model.DashboardGroup;
+import org.datacleaner.monitor.dashboard.model.TimelineDefinition;
 import org.datacleaner.monitor.shared.ClientConfig;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
+import org.datacleaner.monitor.shared.model.MetricIdentifier;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
+import org.datacleaner.monitor.shared.widgets.CancelPopupButton;
+import org.datacleaner.monitor.shared.widgets.DCButtons;
 import org.datacleaner.monitor.shared.widgets.DCPopupPanel;
+import org.datacleaner.monitor.shared.widgets.HeadingLabel;
 import org.datacleaner.monitor.util.DCAsyncCallback;
 
 import com.google.gwt.core.client.GWT;
@@ -39,10 +47,6 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.http.client.URL;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Anchor;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.SimplePanel;
-import com.google.gwt.user.client.ui.Widget;
 
 /**
  * A panel which shows and let's the user select different dashboard
@@ -117,21 +121,37 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
         createNewGroupAnchor.setVisible(_isDashboardEditor);
         createNewGroupAnchor.setStyleName("CreateNewDashboardGroupAnchor");
         createNewGroupAnchor.setText("新建分组");
-        createNewGroupAnchor.addClickHandler(new ClickHandler() {
+        createNewGroupAnchor.addClickHandler(new ClickHandler(){
             @Override
             public void onClick(ClickEvent event) {
-                String name = Window.prompt("给新建的分组取一个名字", "");
-                boolean validName = name != null && name.trim().length() > 1;
-                if (validName) {
-                    _service.addDashboardGroup(_tenant, name, new DCAsyncCallback<DashboardGroup>() {
-                        @Override
-                        public void onSuccess(DashboardGroup result) {
-                            addGroup(result);
+                final DCPopupPanel popup = new DCPopupPanel("输入新建分组名");
+
+                final InputValuePanel inputValuePanel =new InputValuePanel(_service,_tenant);
+                popup.setWidget(inputValuePanel);
+
+                Button okButton = DCButtons.primaryButton(null, "确定");
+                okButton.addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent clickEvent) {
+                        String name = inputValuePanel.getInputValue();
+                        boolean validName = name != null && name.trim().length() > 1;
+                        if (validName) {
+                            _service.addDashboardGroup(_tenant, name, new DCAsyncCallback<DashboardGroup>() {
+                                @Override
+                                public void onSuccess(DashboardGroup result) {
+                                    addGroup(result);
+                                    popup.hide();
+                                }
+                            });
+                        } else {
+                            Window.alert("请提供至少2个字符的有效组名");
                         }
-                    });
-                } else {
-                    Window.alert("请提供至少2个字符的有效组名");
-                }
+                    }
+                });
+                popup.addButton(okButton);
+                popup.addButton(new CancelPopupButton(popup));
+                popup.center();
+                popup.show();
             }
         });
 

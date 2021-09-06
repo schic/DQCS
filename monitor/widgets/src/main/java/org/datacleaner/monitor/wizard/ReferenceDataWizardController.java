@@ -89,14 +89,6 @@ public class ReferenceDataWizardController extends AbstractWizardController<Wiza
 
     private void showWizardSelection(final List<WizardIdentifier> wizards) {
         final FlowPanel panel = new FlowPanel();
-        Label labelLeo = new Label("字典是参考数据列表，用于对照某些黑名单或白名单对值进行验证或分类,字典通常是可枚举的和有限的。\n" +
-                "\t词典示例如下：\n" +
-                "\t--产品类型字典，如“珠宝”、“男装”、“运动装”等。\n" +
-                "\t--性别符号的字典，比如“M”、“F”或者“未知”。\n" +
-                "\t--年龄组名称词典（如婴儿、儿童、年轻人、成熟人、老年人）\n" +
-                "\t--两本男性和女性名字词典（以确定人的性别）");
-        labelLeo.addStyleName("white-space:pre-wrap");
-        panel.add(labelLeo);
         panel.add(new Label("请选择要注册的参考数据类型："));
         final List<RadioButton> radios = new ArrayList<>(wizards.size());
 
