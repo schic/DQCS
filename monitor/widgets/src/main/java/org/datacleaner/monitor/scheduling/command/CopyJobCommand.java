@@ -19,12 +19,18 @@
  */
 package org.datacleaner.monitor.scheduling.command;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.ui.Button;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
+import org.datacleaner.monitor.shared.widgets.CancelPopupButton;
+import org.datacleaner.monitor.shared.widgets.DCButtons;
 import org.datacleaner.monitor.shared.widgets.DCPopupPanel;
 import org.datacleaner.monitor.shared.widgets.LoadingIndicator;
 import org.datacleaner.monitor.util.DCRequestBuilder;
 import org.datacleaner.monitor.util.DCRequestCallback;
+import org.datacleaner.monitor.util.ErrorHandler;
 import org.datacleaner.monitor.util.Urls;
 
 import com.google.gwt.http.client.Request;
@@ -51,29 +57,44 @@ public class CopyJobCommand implements Command {
 	@Override
 	public void execute() {
 		_morePopup.hide();
-		final String newJobName = Window.prompt("输入新的任务名称", _job.getName() + " (Copy)");
+        final DCPopupPanel popupTop = new DCPopupPanel("输入新的任务名称"+_job.getName() + " (复制)");
+//		final String newJobName = Window.prompt("输入新的任务名称", _job.getName() + " (Copy)");
+        final CopyJobPanel inputValuePanel =new CopyJobPanel();
+        popupTop.setWidget(inputValuePanel);
 
-        if (newJobName == null || newJobName.trim().length() == 0 || newJobName.equals(_job.getName())) {
-            return;
-        }
-
-        final DCPopupPanel popup = new DCPopupPanel("复制...");
-        popup.setWidget(new LoadingIndicator());
-        popup.center();
-        popup.show();
-
-        final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".copy");
-
-        final JSONObject payload = new JSONObject();
-        payload.put("name", new JSONString(newJobName));
-
-        final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);
-        requestBuilder.setHeader("Content-Type", "application/json");
-        requestBuilder.send(payload.toString(), new DCRequestCallback() {
+        Button okButton = DCButtons.primaryButton(null, "确定");
+        okButton.addClickHandler(new ClickHandler() {
             @Override
-            protected void onSuccess(Request request, Response response) {
-                Window.Location.reload();
+            public void onClick(ClickEvent clickEvent) {
+                String newJobName = inputValuePanel.getInputValue();
+                if (newJobName == null || newJobName.trim().length() == 0 || newJobName.equals(_job.getName())) {
+                    return;
+                }
+                final DCPopupPanel popup = new DCPopupPanel("任务正在复制中......");
+                popup.setWidget(new LoadingIndicator());
+                popup.center();
+                popup.show();
+
+                final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".copy");
+
+                final JSONObject payload = new JSONObject();
+                payload.put("name", new JSONString(newJobName));
+
+                final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);
+                requestBuilder.setHeader("Content-Type", "application/json");
+                requestBuilder.send(payload.toString(), new DCRequestCallback() {
+                    @Override
+                    protected void onSuccess(Request request, Response response) {
+                        popup.hide();
+                        Window.Location.reload();
+                    }
+                });
+                popupTop.hide();
             }
         });
+        popupTop.addButton(new CancelPopupButton(popupTop));
+        popupTop.addButton(okButton);
+        popupTop.center();
+        popupTop.show();
     }
 }

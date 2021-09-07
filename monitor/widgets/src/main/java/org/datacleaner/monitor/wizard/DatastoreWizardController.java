@@ -70,7 +70,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
             return;
         }
 
-        getWizardPanel().setHeader("Register datastore: " + wizardIdentifier.getDisplayName());
+        getWizardPanel().setHeader("注册数据存储: " + wizardIdentifier.getDisplayName());
         setLoading();
 
         WizardServiceAsync wizardService = getWizardService();
@@ -79,7 +79,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
 
     private void showWizardSelection() {
         setLoading();
-        getWizardPanel().setHeader("Register datastore");
+        getWizardPanel().setHeader("注册数据存储");
 
         getWizardService().getDatastoreWizardIdentifiers(getTenant(), getLocaleName(),
                 new DCAsyncCallback<List<WizardIdentifier>>() {
@@ -98,10 +98,10 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
         final List<RadioButton> radios = new ArrayList<RadioButton>(wizards.size());
 
         if (wizards == null || wizards.isEmpty()) {
-            panel.add(new Label("(no datastore wizards available)"));
+            panel.add(new Label("(没有可用的数据存储向导)"));
         } else {
             for (final WizardIdentifier wizard : wizards) {
-                final RadioButton radio = new RadioButton("wizardIdentifier", wizard.getDisplayName());
+                final RadioButton radio = new RadioButton("向导标识符", wizard.getDisplayName());
                 radio.addClickHandler(new ClickHandler() {
                     @Override
                     public void onClick(ClickEvent event) {
@@ -151,7 +151,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
             }
         });
 
-        final Anchor jobWizardAnchor = new Anchor("为此数据存储建立工作");
+        final Anchor jobWizardAnchor = new Anchor("为此数据存储创建工作");
         jobWizardAnchor.addStyleName("BuildJob");
         jobWizardAnchor.addClickHandler(new ClickHandler() {
             @Override
@@ -175,7 +175,7 @@ public class DatastoreWizardController extends AbstractWizardController<WizardSe
 
         final FlowPanel contentPanel = new FlowPanel();
         contentPanel.addStyleName("WizardFinishedPanel");
-        contentPanel.add(new Label("数据存储区'" + datastoreName + "'已创建！向导完成。"));
+        contentPanel.add(new Label("数据存储区'" + datastoreName + "'已创建向导完成!"));
 
         contentPanel.add(new Label(
                 "单击“关闭”返回，或单击下面的链接之一开始使用数据存储。"));

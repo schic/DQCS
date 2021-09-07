@@ -25,10 +25,7 @@ import org.datacleaner.monitor.dashboard.model.TimelineData;
 import org.datacleaner.monitor.dashboard.model.TimelineDefinition;
 import org.datacleaner.monitor.dashboard.model.TimelineIdentifier;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
-import org.datacleaner.monitor.shared.widgets.ButtonPanel;
-import org.datacleaner.monitor.shared.widgets.DCButtons;
-import org.datacleaner.monitor.shared.widgets.HeadingLabel;
-import org.datacleaner.monitor.shared.widgets.LoadingIndicator;
+import org.datacleaner.monitor.shared.widgets.*;
 import org.datacleaner.monitor.util.DCAsyncCallback;
 
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -85,18 +82,28 @@ public class TimelinePanel extends FlowPanel {
         _deleteButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                final boolean confirmation = Window.confirm("是否确实要删除此时间线？");
-                if (confirmation) {
-                    if (_timelineIdentifier != null) {
-                        _service.removeTimeline(_tenant, _timelineIdentifier, new DCAsyncCallback<Boolean>() {
-                            @Override
-                            public void onSuccess(Boolean result) {
-                                // do nothing
-                            }
-                        });
+                DCPopupPanel popup = new DCPopupPanel("确定要删除此时间线吗？");
+//                final boolean confirmation = Window.confirm("是否确实要删除此时间线？");
+                Button okButton = DCButtons.primaryButton(null, "确定");
+                okButton.addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent clickEvent) {
+                        if (_timelineIdentifier != null) {
+                            _service.removeTimeline(_tenant, _timelineIdentifier, new DCAsyncCallback<Boolean>() {
+                                @Override
+                                public void onSuccess(Boolean result) {
+                                    // do nothing
+                                }
+                            });
+                        }
+                        _timelineGroupPanel.removeTimelinePanel(TimelinePanel.this);
+                        popup.hide();
                     }
-                    _timelineGroupPanel.removeTimelinePanel(TimelinePanel.this);
-                }
+                });
+                popup.addButton(new CancelPopupButton(popup));
+                popup.addButton(okButton);
+                popup.center();
+                popup.show();
             }
         });
 

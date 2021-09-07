@@ -19,8 +19,13 @@
  */
 package org.datacleaner.monitor.scheduling.command;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.ui.Button;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
+import org.datacleaner.monitor.shared.widgets.CancelPopupButton;
+import org.datacleaner.monitor.shared.widgets.DCButtons;
 import org.datacleaner.monitor.shared.widgets.DCPopupPanel;
 import org.datacleaner.monitor.util.DCRequestBuilder;
 import org.datacleaner.monitor.util.DCRequestCallback;
@@ -48,18 +53,27 @@ public class DeleteJobCommand implements Command {
 	@Override
 	public void execute() {
 		 _morePopup.hide();
-		 boolean delete = Window.confirm("是否确实要删除任务 '" + _job.getName()
-                 + "' 以及相关的时间表、结果和时间表.");
-         if (delete) {
-             final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".delete");
-             final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);
-             requestBuilder.setHeader("Content-Type", "application/json");
-             requestBuilder.send("", new DCRequestCallback() {
-                 @Override
-                 protected void onSuccess(Request request, Response response) {
-                     Window.Location.reload();
-                 }
-             });
-         }
+        DCPopupPanel popup = new DCPopupPanel("确定要删除任务 '" + _job.getName()
+                + "' 以及相关的时间表、结果和时间表?");
+        Button okButton = DCButtons.primaryButton(null, "确定");
+        okButton.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent clickEvent) {
+                final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".delete");
+                final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);
+                requestBuilder.setHeader("Content-Type", "application/json");
+                requestBuilder.send("", new DCRequestCallback() {
+                    @Override
+                    protected void onSuccess(Request request, Response response) {
+                        Window.Location.reload();
+                    }
+                });
+                popup.hide();
+            }
+        });
+        popup.addButton(new CancelPopupButton(popup));
+        popup.addButton(okButton);
+        popup.center();
+        popup.show();
      }
 }

@@ -124,7 +124,7 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
         createNewGroupAnchor.addClickHandler(new ClickHandler(){
             @Override
             public void onClick(ClickEvent event) {
-                final DCPopupPanel popup = new DCPopupPanel("输入新建分组名");
+                final DCPopupPanel popup = new DCPopupPanel("请输入新建分组名称");
 
                 final InputValuePanel inputValuePanel =new InputValuePanel(_service,_tenant);
                 popup.setWidget(inputValuePanel);
@@ -148,8 +148,8 @@ public class DashboardGroupSelectionPanel extends FlowPanel {
                         }
                     }
                 });
-                popup.addButton(okButton);
                 popup.addButton(new CancelPopupButton(popup));
+                popup.addButton(okButton);
                 popup.center();
                 popup.show();
             }

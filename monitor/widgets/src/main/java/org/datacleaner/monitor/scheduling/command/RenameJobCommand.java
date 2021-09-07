@@ -19,14 +19,17 @@
  */
 package org.datacleaner.monitor.scheduling.command;
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.user.client.ui.Button;
+import org.datacleaner.monitor.dashboard.model.DashboardGroup;
 import org.datacleaner.monitor.shared.model.JobIdentifier;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
+import org.datacleaner.monitor.shared.widgets.CancelPopupButton;
+import org.datacleaner.monitor.shared.widgets.DCButtons;
 import org.datacleaner.monitor.shared.widgets.DCPopupPanel;
 import org.datacleaner.monitor.shared.widgets.LoadingIndicator;
-import org.datacleaner.monitor.util.DCRequestBuilder;
-import org.datacleaner.monitor.util.DCRequestCallback;
-import org.datacleaner.monitor.util.ErrorHandler;
-import org.datacleaner.monitor.util.Urls;
+import org.datacleaner.monitor.util.*;
 
 import com.google.gwt.http.client.Request;
 import com.google.gwt.http.client.RequestBuilder;
@@ -51,34 +54,48 @@ public class RenameJobCommand implements Command {
 	@Override
 	public void execute() {
 		_morePopup.hide();
-		final String newName = Window.prompt("输入任务名称", _job.getName());
-        if (newName == null || newName.trim().length() == 0 || newName.equals(_job.getName())) {
-            return;
-        }
+        DCPopupPanel popuptop = new DCPopupPanel("请重命名任务名称");
+        popuptop.setHeader("任务原名："+_job.getName());
+        final ReNamePanel inputValuePanel =new ReNamePanel();
+        popuptop.setWidget(inputValuePanel);
 
-        final DCPopupPanel popup = new DCPopupPanel("重命名...");
-        popup.setWidget(new LoadingIndicator());
-        popup.center();
-        popup.show();
-
-        final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".modify");
-
-        final JSONObject payload = new JSONObject();
-        payload.put("name", new JSONString(newName));
-
-        final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);
-        requestBuilder.setHeader("Content-Type", "application/json");
-        requestBuilder.send(payload.toString(), new DCRequestCallback() {
+        Button okButton = DCButtons.primaryButton(null, "确定");
+        okButton.addClickHandler(new ClickHandler() {
             @Override
-            protected void onSuccess(Request request, Response response) {
-                Window.Location.reload();
-            }
-            
-            @Override
-            public void onNonSuccesfullStatusCode(Request request, Response response, int statusCode, String statusText) {
-                popup.hide();
-                ErrorHandler.showErrorDialog(response.getText());
+            public void onClick(ClickEvent clickEvent) {
+                String newName = inputValuePanel.getInputValue();
+                if (newName == null || newName.trim().length() == 0 || newName.equals(_job.getName())) {
+                    return;
+                }
+                final DCPopupPanel popup = new DCPopupPanel("任务正在重命名中......");
+                popup.setWidget(new LoadingIndicator());
+                popup.center();
+                popup.show();
+                final String url = Urls.createRepositoryUrl(_tenant, "jobs/" + _job.getName() + ".modify");
+
+                final JSONObject payload = new JSONObject();
+                payload.put("name", new JSONString(newName));
+
+                final DCRequestBuilder requestBuilder = new DCRequestBuilder(RequestBuilder.POST, url);
+                requestBuilder.setHeader("Content-Type", "application/json");
+                requestBuilder.send(payload.toString(), new DCRequestCallback() {
+                    @Override
+                    protected void onSuccess(Request request, Response response) {
+                        Window.Location.reload();
+                    }
+
+                    @Override
+                    public void onNonSuccesfullStatusCode(Request request, Response response, int statusCode, String statusText) {
+                        popup.hide();
+                        ErrorHandler.showErrorDialog(response.getText());
+                    }
+                });
+                popuptop.hide();
             }
         });
+        popuptop.addButton(new CancelPopupButton(popuptop));
+        popuptop.addButton(okButton);
+        popuptop.center();
+        popuptop.show();
     }
 }
