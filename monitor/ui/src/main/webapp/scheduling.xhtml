@@ -25,12 +25,11 @@
 				}
 
 				function confirmUpload(fileType) {
-					if (confirm('你确定上传（覆盖）这个 '
-							+ fileType
-							+ ' 文件?\n上载损坏的文件可能会导致系统失效，甚至崩溃。')) {
-						return true;
+					var input1 = $("#fileInput1").val();
+					if(""=== input1 || input1.isEmpty){
+						return false;
 					}
-					return false;
+					return true;
 				}
 
 				function showUploadJobForm(button) {
@@ -76,15 +75,16 @@
 		<div style="visibility: hidden; display: none">
 			<div id="UploadFileTemplateDiv" style="display: inline-block;">
 				<div class="input-group">
-					<span class="input-group-btn"> <span
-						class="btn btn-primary btn-file"> 浏览 … <input
-							type="file" name="files" multiple="multiple" />
+					<span class="input-group-btn">
+						<span class="btn btn-primary btn-file"> 浏览 …
+						<input type="file" name="files" multiple="multiple" />
 					</span>
-					</span> <input type="text" class="form-control" readonly="readonly" />
+					</span>
+					<input id="fileInput1" type="text" class="form-control" readonly="readonly" />
 				</div>
 
 				<button type="submit" class="btn btn-primary"
-					onclick="return confirmUpload(\'job\')">
+					onclick="return confirmUpload('job')">
 					<span class="glyphicon glyphicon-upload" aria-hidden="true" /> <span>上传</span>
 				</button>
 

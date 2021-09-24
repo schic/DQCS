@@ -30,7 +30,7 @@ public class FlotChartLocator {
 
     public static final String SYSTEM_PROPERTY_FLOT_HOME = "org.datacleaner.flot.home";
 
-    private static final String DEFAULT_FLOT_HOME = "http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3";
+    private static final String DEFAULT_FLOT_HOME = "http://cdnjs.cat.net/ajax/libs/flot/0.8.3";
 
     /**
      * Gets the URL for the base flot library, typically named as "jquery.flot.min.js"

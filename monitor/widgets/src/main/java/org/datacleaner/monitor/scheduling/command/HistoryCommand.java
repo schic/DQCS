@@ -46,7 +46,8 @@ public class HistoryCommand implements Command {
 	public void execute() {
 		_morePopup.hide();
 		final DCPopupPanel popup = new DCPopupPanel("执行历史: '" + _schedule.getJob().getName() + "'");
-
+		popup.getElement().getStyle().setProperty("width", "800px");
+		popup.getElement().getStyle().setProperty("height", "542px");
         popup.setWidget(new JobHistoryPanel(_schedule.getJob(), _service, _tenant));
         popup.addButton(new CancelPopupButton(popup, "关闭", true));
         popup.center();

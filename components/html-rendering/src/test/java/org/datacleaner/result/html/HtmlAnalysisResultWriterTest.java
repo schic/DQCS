@@ -100,4 +100,12 @@ public class HtmlAnalysisResultWriterTest {
 
         Assert.assertEquals(expected.replaceAll("\r\n", "\n"), actual.replaceAll("\r\n", "\n"));
     }
+    @Test
+    public void testJs() throws IOException {
+//        Urls.createRelativeUrl()
+        String path = this.getClass().getResource("/").getPath();
+        System.out.println(path);
+        String path2 = path.substring(0, path.substring(0, path.substring(0, path.lastIndexOf("/")).lastIndexOf("/")).lastIndexOf("/"));
+        System.out.println(path2);
+    }
 }

@@ -49,7 +49,7 @@ public class TriggerJobClickHandler implements ClickHandler {
 
     public void showExecutionPopup() {
         final DCPopupPanel popupPanel = new DCPopupPanel("");
-
+        popupPanel.getElement().getStyle().setProperty("width", "500px");
         final ExecutionStatusPanel panel = new ExecutionStatusPanel(_service, _tenant, _schedule, popupPanel);
         
         popupPanel.setAutoHideEnabled(false);

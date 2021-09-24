@@ -88,8 +88,6 @@ public class ExecutionStatusPanel extends FlowPanel {
         poller.start(execution);
     }
     public void jobStatusUpdated(ExecutionLog executionLog) {
-        System.out.println("=============================");
-        System.out.println(executionLog);
         _result = executionLog;
         if (_logPanel != null) {
             _logPanel.updateContent(executionLog);

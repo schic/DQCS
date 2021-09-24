@@ -30,7 +30,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**
- * GWT Entry point for the Scheduling module
+ * GWT Entry point for the Scheduling module调度模块的GWT入口点
  */
 public class SchedulingEntryPoint implements EntryPoint {
 

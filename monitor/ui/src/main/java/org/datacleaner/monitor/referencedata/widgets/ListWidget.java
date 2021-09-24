@@ -25,6 +25,9 @@ import org.datacleaner.monitor.referencedata.ReferenceDataItem;
 import org.datacleaner.monitor.referencedata.ReferenceDataService;
 import org.datacleaner.monitor.referencedata.ReferenceDataServiceAsync;
 import org.datacleaner.monitor.shared.model.TenantIdentifier;
+import org.datacleaner.monitor.shared.widgets.CancelPopupButton;
+import org.datacleaner.monitor.shared.widgets.DCButtons;
+import org.datacleaner.monitor.shared.widgets.DCPopupPanel;
 import org.datacleaner.monitor.util.DCAsyncCallback;
 
 import com.google.gwt.core.client.GWT;
@@ -70,19 +73,41 @@ public class ListWidget extends VerticalPanel {
         button.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(final ClickEvent clickEvent) {
-                if (Window.confirm("是否确实要删除 '" + itemName + "'?")) {
-                    final ReferenceDataServiceAsync service = GWT.create(ReferenceDataService.class);
-                    service.removeItem(_tenant, itemType, itemName, new DCAsyncCallback<Boolean>() {
-                        @Override
-                        public void onSuccess(final Boolean removedSuccessfully) {
-                            if (removedSuccessfully) {
-                                Window.Location.reload();
-                            } else {
-                                Window.alert(itemName + " 未删除。 ");
+                final DCPopupPanel popup = new DCPopupPanel("确定要删除 '" + itemName + "' 吗?");
+                popup.addButton(new CancelPopupButton(popup));
+                Button okButton = DCButtons.primaryButton(null, "确定");
+                okButton.addClickHandler(new ClickHandler() {
+                    @Override
+                    public void onClick(ClickEvent clickEvent) {
+                        final ReferenceDataServiceAsync service = GWT.create(ReferenceDataService.class);
+                        service.removeItem(_tenant, itemType, itemName, new DCAsyncCallback<Boolean>() {
+                            @Override
+                            public void onSuccess(final Boolean removedSuccessfully) {
+                                if (removedSuccessfully) {
+                                    Window.Location.reload();
+                                } else {
+                                    Window.alert(itemName + " 未删除。 ");
+                                }
                             }
-                        }
-                    });
-                }
+                        });
+                    }
+                });
+                popup.addButton(okButton);
+                popup.center();
+                popup.show();
+//                if (Window.confirm("确定要删除 '" + itemName + "' 吗?")) {
+//                    final ReferenceDataServiceAsync service = GWT.create(ReferenceDataService.class);
+//                    service.removeItem(_tenant, itemType, itemName, new DCAsyncCallback<Boolean>() {
+//                        @Override
+//                        public void onSuccess(final Boolean removedSuccessfully) {
+//                            if (removedSuccessfully) {
+//                                Window.Location.reload();
+//                            } else {
+//                                Window.alert(itemName + " 未删除。 ");
+//                            }
+//                        }
+//                    });
+//                }
             }
         });
 

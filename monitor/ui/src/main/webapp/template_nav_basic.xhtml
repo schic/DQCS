@@ -37,9 +37,8 @@
 	</c:if>
 
 	<c:if test="#{user.configurationEditor or user.queryAllowed}">
-		<li
-				class="#{ (view.viewId == '/datastores.xhtml') ? 'selected' : 'not-selected' }"><h:outputLink
-				value="datastores" styleClass="DatastoresTabTitle">
+		<li class="#{ (view.viewId == '/datastores.xhtml') ? 'selected' : 'not-selected' }">
+			<h:outputLink value="datastores" styleClass="DatastoresTabTitle">
 			<h:outputText value="数据源" />
 			<c:if test="#{param['gwt.codesvr'] != null}">
 				<f:param name="gwt.codesvr" value="#{param['gwt.codesvr']}" />

@@ -7,7 +7,7 @@ class FlotChartLocatorTest extends AssertionsForJUnit {
 
   @Test
   def testBasicStuff = {
-    Assert.assertEquals("http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js", FlotChartLocator.getFlotBaseUrl);
+    Assert.assertEquals("http://cdnjs.cat.net/ajax/libs/flot/0.8.3/jquery.flot.min.js", FlotChartLocator.getFlotBaseUrl);
     
     FlotChartLocator.setFlotHome("../bar/");
     

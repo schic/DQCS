@@ -225,12 +225,12 @@ public class HtmlAnalysisResultWriter implements AnalysisResultWriter {
 
         writeBodyBegin(writer, context);
 
-        writer.write("<div class=\"analysisResultHeader\">");
+        writer.write("<div class=\"analysisResultHeader\" style=\"height: 40px;margin-top: 1px;\" >");
 
         if (_tabs) {
             // write a <ul> with all descriptors in it (a TOC)
             {
-                writer.write("<ul class=\"analysisResultToc\">");
+                writer.write("<ul class=\"analysisResultToc\" style=\"list-style-type: none;\" >");
                 ComponentDescriptor<?> lastDescriptor = null;
                 for (final Entry<ComponentJob, HtmlFragment> entry : htmlFragmentSet) {
                     final ComponentJob componentJob = entry.getKey();
@@ -240,7 +240,19 @@ public class HtmlAnalysisResultWriter implements AnalysisResultWriter {
                         final String iconSrc = wrapper.getIconSrc(22);
                         final String styleName = toStyleName(descriptor.getDisplayName());
                         writer.write("<li style=\"background-image: url(" + iconSrc
-                                + ")\"><a href=\"#analysisResultDescriptorGroup_" + styleName + "\">");
+                                + ");float: left;padding-left: 35px;margin-left: 50px;margin-top: 10px;font-size: " +
+                                "15px;\"><a style=\"height: 23px;\n" +
+                                "            line-height: 24px;\n" +
+                                "            padding: 0 11px;\n" +
+                                "            background: #282d2f;\n" +
+                                "            border: 1px #437580 solid;\n" +
+                                "            border-radius: 3px;\n" +
+                                "            display: inline-block;\n" +
+                                "            text-decoration: none;\n" +
+                                "            font-size: 15px;\n" +
+                                "            color: #93DDEC;\n" +
+                                "            outline: none;\"\n" +
+                                "   href=\"#analysisResultDescriptorGroup_" + styleName + "\">");
                         writer.write(context.escapeHtml(descriptor.getDisplayName()));
                         writer.write("</a></li>");
 
@@ -270,7 +282,7 @@ public class HtmlAnalysisResultWriter implements AnalysisResultWriter {
                     final String styleName = toStyleName(descriptor.getDisplayName());
                     writer.write("<div id=\"analysisResultDescriptorGroup_" + styleName
                             + "\" class=\"analysisResultDescriptorGroup " + toStyleName(descriptor.getDisplayName())
-                            + "\">");
+                            + "\" style=\"margin-top: 5px;\">");
 
                     lastDescriptor = descriptor;
                     descriptorGroupBegin = true;

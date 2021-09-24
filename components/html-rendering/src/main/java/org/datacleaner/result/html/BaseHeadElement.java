@@ -27,7 +27,7 @@ import java.net.URI;
  */
 public final class BaseHeadElement implements HeadElement {
 
-    public static final String CDNJS_URL = "https://cdnjs.cloudflare.com/ajax/libs/";
+    public static final String CDNJS_URL = "https://cdnjs.cat.net/ajax/libs/";
     private final String _resourcesDirectory;
 
     /**
@@ -49,13 +49,18 @@ public final class BaseHeadElement implements HeadElement {
 
     @Override
     public String toHtml(final HtmlRenderingContext context) {
-        String externalLibs = _resourcesDirectory + '/';
+        String externalLibs = _resourcesDirectory + '/';//"https://cdnjs.cloudflare.com/ajax/libs/"
 
         // If it is from an external server, a CDN is preferred.
         if (URI.create(_resourcesDirectory).isAbsolute()) {
             externalLibs = CDNJS_URL;
         }
-
+//        String path = this.getClass().getResource("/").getPath();
+//        String path2 = path.substring(0, path.substring(0, path.substring(0, path.lastIndexOf("/")).lastIndexOf("/")).lastIndexOf("/"));
+//        String host = Window.Location.getHost();
+//        System.out.println(host);
+//        String baseUrl = GWT.getHostPageBaseURL();
+//        System.out.println(baseUrl);
         // Here it would be logical to use the HTTP base tag, but unfortunately JQuery UI tabs doesn't work with that
         return "<link rel=\"shortcut icon\" href=\"" + _resourcesDirectory + "/analysis-result-icon.png\" />\n"
                 + "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + externalLibs
@@ -88,6 +93,6 @@ public final class BaseHeadElement implements HeadElement {
                 + "        'jquery.flot.time': 'flot/0.8.3/jquery.flot.time.min'\n" + "    }\n" + "};\n"
                 + "//]]>\n</script>" + "<script type=\"text/javascript\"" + "     src=\"" + externalLibs
                 + "require.js/2.2.0/require.js\"></script>" + "<script type=\"text/javascript\"" + "     src=\""
-                + _resourcesDirectory + "/analysis-result-v2.js\"></script>";
+                + _resourcesDirectory+"/analysis-result-v2.js\"></script>";
     }
 }

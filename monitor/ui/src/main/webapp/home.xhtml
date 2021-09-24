@@ -113,7 +113,12 @@
                         $("#log_logOutput").text(row.logOutput);
                         $("#log_resultId").text(row.resultId);
                         $('#log_resultId').attr('href', hosturl + row.url);
+                        $('#log_resultId').attr('target','_blank');
                         $('#myModal').modal("show");
+                        if("FAILURE" === row.status){
+                            $('#log_resultId').removeAttr('href');
+                            $('#log_resultId').removeAttr('target');
+                        }
                     }
                 });
             });
