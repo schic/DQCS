@@ -230,7 +230,7 @@ public class HtmlAnalysisResultWriter implements AnalysisResultWriter {
         if (_tabs) {
             // write a <ul> with all descriptors in it (a TOC)
             {
-                writer.write("<ul class=\"analysisResultToc\" style=\"list-style-type: none;\" >");
+                writer.write("<ul class=\"analysisResultToc\" style=\"list-style-type: none;height: 35px;width: 500px;\" >");
                 ComponentDescriptor<?> lastDescriptor = null;
                 for (final Entry<ComponentJob, HtmlFragment> entry : htmlFragmentSet) {
                     final ComponentJob componentJob = entry.getKey();
@@ -239,22 +239,36 @@ public class HtmlAnalysisResultWriter implements AnalysisResultWriter {
                         final ComponentDocumentationWrapper wrapper = new ComponentDocumentationWrapper(descriptor);
                         final String iconSrc = wrapper.getIconSrc(22);
                         final String styleName = toStyleName(descriptor.getDisplayName());
-                        writer.write("<li style=\"background-image: url(" + iconSrc
-                                + ");float: left;padding-left: 35px;margin-left: 50px;margin-top: 10px;font-size: " +
-                                "15px;\"><a style=\"height: 23px;\n" +
-                                "            line-height: 24px;\n" +
+//                        writer.write("<li style=\"background-image: url(" + iconSrc
+//                                + ");float: left;padding-left: 35px;\n" +
+//                                "margin-left: 50px;margin-top: 2px;\n" +
+//                                "font-size:15px;\"><a style=\"height: 23px;\n" +
+//                                "            line-height: 24px;\n" +
+//                                "            padding: 0 11px;\n" +
+//                                "            background: #282d2f;\n" +
+//                                "            border: 1px #437580 solid;\n" +
+//                                "            border-radius: 3px;\n" +
+//                                "            display: inline-block;\n" +
+//                                "            text-decoration: none;\n" +
+//                                "            font-size: 15px;\n" +
+//                                "            color: #93DDEC;\n" +
+//                                "            outline: none;\"\n" +
+//                                "   href=\"#analysisResultDescriptorGroup_" + styleName + "\">");
+                        writer.write("<a style=\"height: 25px;width: 120px;margin-left: 15px;margin-top: 3px;\n" +
+//                                "background-image: url(\""+iconSrc+"\");\n"+
+                                "            line-height: 25px;\n" +
                                 "            padding: 0 11px;\n" +
-                                "            background: #282d2f;\n" +
+                                "            background: #3c545e;\n" +
                                 "            border: 1px #437580 solid;\n" +
                                 "            border-radius: 3px;\n" +
                                 "            display: inline-block;\n" +
                                 "            text-decoration: none;\n" +
-                                "            font-size: 15px;\n" +
+                                "            font-size: 18px;text-align: center;\n" +
                                 "            color: #93DDEC;\n" +
                                 "            outline: none;\"\n" +
                                 "   href=\"#analysisResultDescriptorGroup_" + styleName + "\">");
                         writer.write(context.escapeHtml(descriptor.getDisplayName()));
-                        writer.write("</a></li>");
+                        writer.write("</a>");
 
                         lastDescriptor = descriptor;
                     }

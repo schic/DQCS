@@ -28,6 +28,7 @@ import java.net.URI;
 public final class BaseHeadElement implements HeadElement {
 
     public static final String CDNJS_URL = "https://cdnjs.cat.net/ajax/libs/";
+//    public static final String CDNJS_URL = "https://cdnjs.cloudflare.com/ajax/libs/";
     private final String _resourcesDirectory;
 
     /**
@@ -72,7 +73,7 @@ public final class BaseHeadElement implements HeadElement {
                 + "            deps: ['jquery']\n" + "        },\n" + "        'jquery.flot': {\n"
                 + "            deps: ['jquery'],\n" + "            exports: '$.plot'\n" + "        },\n"
                 + "        'jquery.flot.selection': {\n" + "            deps: ['jquery.flot']\n" + "        }\n"
-                + "    },\n" + "    paths: {\n" + "        'jquery': 'jquery/2.2.4/jquery.min',\n"
+                + "    },\n" + "    paths: {\n" + "        'jquery': 'jquery/3.6.0/jquery.min',\n"
                 + "        'jquery-ui': 'jqueryui/1.12.0/jquery-ui.min',\n"
                 + "        'excanvas': 'flot/0.8.3/excanvas.min',\n"
                 + "        'jquery.colorhelpers': 'flot/0.8.3/jquery.colorhelpers.min',\n"
