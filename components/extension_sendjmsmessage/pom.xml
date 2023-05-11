@@ -6,7 +6,7 @@
 		<version>5.7.1-SNAPSHOT</version>
 	</parent>
 	<properties>
-		<camel.version>2.15.2</camel.version>
+		<camel.version>3.6.0</camel.version>
 		<activemq.version>5.12.0</activemq.version>
 	</properties>
 	<artifactId>DataCleaner-sendjmsmessage</artifactId>
